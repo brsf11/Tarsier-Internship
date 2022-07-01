@@ -28,8 +28,15 @@
     <img src="../../Pics/week2/x86_local.png" width="100%">
   - x86_64 openEuler 远程测试  
     能够运行一部分测试，很多测试因为运行环境问题无法正确运行  
+    正确运行情况：
     <img src="../../Pics/week2/x86_remote_htop.png" width="100%">
-    <img src="../../Pics/week2/x86_remote_success.png" width="100%">
+    <img src="../../Pics/week2/x86_remote_success.png" width="100%">  
+    无法正确运行的情况：  
+    <img src="../../Pics/week2/x86_remote_failed.png" width="100%"> 
+    ```
+    oe_test_socket_git.sh: line 20: ../common/common_lib.sh: No such file or directory
+    oe_test_socket_git.sh: line 45: main: command not found
+    ```
   - RISC-V openEuler 本地测试  
     目前mugen的依赖存在问题，无法在RISC-V openEuler上直接运行测试
   - RISC-V openEuler 远程测试  
