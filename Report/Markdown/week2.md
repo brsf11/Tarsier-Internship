@@ -20,5 +20,14 @@
     bash mugen.sh -f testsuite -s
     ```
 - 运行环境  
-<img src="../../Pics/week2_env.png" width="100%">
+<img src="../../Pics/week2_env.png" width="80%">
 
+- 初步运行结果
+  - x86_64 openEuler 本地测试  
+    能够运行测试，但很多测试结果不正确，是测试框架运行环境的问题还是系统本身存在功能问题有待验证
+  - x86_64 openEuler 远程测试  
+    能够运行一部分测试，很多测试因为运行环境问题无法正确运行
+  - RISC-V openEuler 本地测试  
+    目前mugen的依赖存在问题，无法在RISC-V openEuler上直接运行测试
+  - RISC-V openEuler 远程测试  
+    同样无法运行执行测试，怀疑是QEMU的user网络模式下只有一个映射的ssh端口，导致mugen进行sftp传输时发生问题
