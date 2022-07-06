@@ -1,3 +1,4 @@
+# Firefox安装测试
 ## 1.安装QEMU
 - 1.1 Archlinux x86_64上直接通过pacman安装QEMU  
     ```shell
