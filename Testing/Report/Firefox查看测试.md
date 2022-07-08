@@ -12,7 +12,7 @@
     <img src="../Img/view/riscv_spec_page_arch_readermode.png">  
     - openEuler RISC-V firefox 97.0.1  
     <img src="../Img/view/riscv_spec_page_readermode.png"> 
-    - 使用前缀 `about:reader?url=` 强制进入阅读模式，可以看到进入阅读模式后图标变蓝  
+    - 使用前缀 ```about:reader?url=``` 强制进入阅读模式，可以看到进入阅读模式后图标变蓝  
     <img src="../Img/view/oe_forced_readermode.png">  
 
 ## 阅读模式测试
