@@ -135,4 +135,5 @@
     oe_test_target_emergency
     oe_test_target_first-boot-complete
     ```
+- osc测试套结果整理中  
     
