@@ -13,14 +13,29 @@
 ## 以补丁形式维护  
 - 基本想法  
     - RISC-V mugen主要需要修改测试套和测试例文件  
-    - 可以避免直接改变mugen中的代码，通过维护一套补丁，在运行测试前应用补丁，测试结束后可回退  
-    - 
-- 具体组织形式  
-- pros & cons  
-    - pros  
-    - 
-    - cons  
+    - 可以避免直接改变mugen中的代码，通过维护一套补丁，在运行测试前应用补丁，测试结束后可回退   
 ## 维护平行分支  
 - 基本想法  
-- 具体组织形式  
+    - 利用git的分支  
+    - 测试套和测试例的改写以及脚本更新等工作在riscv分支上完成  
+    - mugen/master更新merge到riscv分支  
+    - riscv分支使用单独的仓库  
+    - 如下图所示  
+        <img src="../Pic/riscv_branch.png">  
+- 演示  
+    - 托管仓库
+        - openEuler/mugen  
+        - mugen-riscv  
+    - 本地仓库  
+        - 只贡献给riscv分支   
+        - 合并mugen/master   
+    - riscv分支  
+        - 工具更新  
+        - 测试套整理  
+        - 测试例改写  
+        - 新测试编写  
+    - mugen/master合并  
+        - 无关RISC-V mugen的测试套/测试例增改（不用考虑合并冲突）  
+        - mugen框架的更新（需要测试可用性）  
+        - 与RISC-V有关的测试套/测试例增改（需要考虑合并冲突和更新后在RISC-V oE上的可用性）  
 - pros & cons  
