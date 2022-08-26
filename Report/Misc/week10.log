@@ -1,0 +1,80 @@
+brsf11@mugen-riscv-dev$python3 qemu_test.py -l lists/list_test -x 2
+Available mugen test suites num = 396
+Available riscv test suites num = 8
+total test targets num = 5
+Unavailable test targets:
+vim
+coreutils
+Available test targets:
+cpio-riscv
+git-riscv
+net-tools-riscv
+[12055, 12056]
+Formatting '/home/brsf11/Hdd/VirtualMachines/RISCVoE2203Testing20220818/img0.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=21474836480 backing_file=/home/brsf11/Hdd/VirtualMachines/RISCVoE2203Testing20220818/openeuler-qemu.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+Formatting '/home/brsf11/Hdd/VirtualMachines/RISCVoE2203Testing20220818/img1.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=21474836480 backing_file=/home/brsf11/Hdd/VirtualMachines/RISCVoE2203Testing20220818/openeuler-qemu.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+Yes!
+Yes!
+Fri Aug 26 14:31:15 2022 - INFO  - start to run testcase:oe_test_cpio.
+Fri Aug 26 14:32:07 2022 - INFO  - The case exit by code 0.
+Fri Aug 26 14:32:08 2022 - INFO  - End to run testcase:oe_test_cpio.
+Fri Aug 26 14:32:09 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Available mugen test suites num = 396
+Available riscv test suites num = 8
+total test targets num = 1
+Unavailable test targets:
+Available test targets:
+cpio-riscv
+Start to test target: cpio-riscv
+Target cpio-riscv tested 1 cases, failed 0 cases
+Json file generated at suite2cases_out/
+suite2cases_out/cpio-riscv.json
+Fri Aug 26 14:32:20 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/net-tools-riscv/oe_test_service_arp-ethers/2022-08-24-14:01:32.log......
+Fri Aug 26 14:32:20 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/cpio-riscv/oe_test_cpio/2022-08-26-14:31:15.log......
+Fri Aug 26 14:32:20 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/cpio-riscv/oe_test_cpio/2022-08-24-13:59:24.log......
+Fri Aug 26 14:32:20 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/git-riscv/oe_test_socket_git/2022-08-24-13:59:48.log......
+Fri Aug 26 14:32:26 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/suite2cases_out/cpio-riscv.json......
+Fri Aug 26 14:32:31 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/exec.log......
+Fri Aug 26 14:31:15 2022 - INFO  - start to run testcase:oe_test_socket_git.
+Fri Aug 26 14:33:30 2022 - INFO  - The case exit by code 0.
+Fri Aug 26 14:33:30 2022 - INFO  - End to run testcase:oe_test_socket_git.
+Fri Aug 26 14:33:31 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Available mugen test suites num = 396
+Available riscv test suites num = 8
+total test targets num = 1
+Unavailable test targets:
+Available test targets:
+git-riscv
+Start to test target: git-riscv
+Target git-riscv tested 1 cases, failed 0 cases
+Json file generated at suite2cases_out/
+suite2cases_out/git-riscv.json
+Formatting '/home/brsf11/Hdd/VirtualMachines/RISCVoE2203Testing20220818/img0.qcow2', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=21474836480 backing_file=/home/brsf11/Hdd/VirtualMachines/RISCVoE2203Testing20220818/openeuler-qemu.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+Fri Aug 26 14:33:43 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/net-tools-riscv/oe_test_service_arp-ethers/2022-08-24-14:01:32.log......
+Fri Aug 26 14:33:43 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/cpio-riscv/oe_test_cpio/2022-08-24-13:59:24.log......
+Fri Aug 26 14:33:43 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/git-riscv/oe_test_socket_git/2022-08-26-14:31:15.log......
+Fri Aug 26 14:33:43 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/git-riscv/oe_test_socket_git/2022-08-24-13:59:48.log......
+Fri Aug 26 14:33:48 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/suite2cases_out/git-riscv.json......
+Fri Aug 26 14:33:53 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/exec.log......
+Yes!
+Fri Aug 26 14:34:01 2022 - INFO  - start to run testcase:oe_test_service_arp-ethers.
+Fri Aug 26 14:34:48 2022 - INFO  - The case exit by code 0.
+Fri Aug 26 14:34:49 2022 - INFO  - End to run testcase:oe_test_service_arp-ethers.
+Fri Aug 26 14:34:49 2022 - INFO  - A total of 1 use cases were executed, with 1 successes and 0 failures.
+Available mugen test suites num = 396
+Available riscv test suites num = 8
+total test targets num = 1
+Unavailable test targets:
+Available test targets:
+net-tools-riscv
+Start to test target: net-tools-riscv
+Target net-tools-riscv tested 1 cases, failed 0 cases
+Json file generated at suite2cases_out/
+suite2cases_out/net-tools-riscv.json
+Fri Aug 26 14:35:01 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/net-tools-riscv/oe_test_service_arp-ethers/2022-08-24-14:01:32.log......
+Fri Aug 26 14:35:01 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/net-tools-riscv/oe_test_service_arp-ethers/2022-08-26-14:34:01.log......
+Fri Aug 26 14:35:01 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/cpio-riscv/oe_test_cpio/2022-08-24-13:59:24.log......
+Fri Aug 26 14:35:01 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/logs/git-riscv/oe_test_socket_git/2022-08-24-13:59:48.log......
+Fri Aug 26 14:35:07 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/suite2cases_out/net-tools-riscv.json......
+Fri Aug 26 14:35:12 2022 - INFO  - start to get file:/root/GitRepo/mugen-riscv/exec.log......
+brsf11@mugen-riscv-dev$
+
