@@ -1,0 +1,135 @@
+Fri Sep  9 07:40:05 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/get_test_device.py", line 127, in <module>
+    print(get_test_disk(args.node))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/get_test_device.py", line 98, in get_test_disk
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 07:40:10 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Job for iscsid.service failed because the control process exited with error code.
+See "systemctl status iscsid.service" and "journalctl -xeu iscsid.service" for details.
+iscsiadm: option requires an argument -- 'p'
+iscsiadm: discovery mode: option '-?' is not allowed/supported
+iscsiadm: No records found
+modprobe: FATAL: Module dm_multipath not found in directory /lib/modules/5.10.0
+Job for multipathd.service failed because the control process exited with error code.
+See "systemctl status multipathd.service" and "journalctl -xeu multipathd.service" for details.
+common_multipath-tools.sh: line 33: service: command not found
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+429.846125 | cannot get kernel dm version
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+430.043014 | cannot get kernel dm version
+modprobe: FATAL: Module dm_multipath not found in directory /lib/modules/5.10.0
+modprobe: FATAL: Module dm_multipath not found in directory /lib/modules/5.10.0
+common_multipath-tools.sh: line 62: service: command not found
+Note: Forwarding request to 'systemctl enable multipathd.service'.
+Created symlink /etc/systemd/system/sysinit.target.wants/multipathd.service → /usr/lib/systemd/system/multipathd.service.
+Created symlink /etc/systemd/system/sockets.target.wants/multipathd.socket → /usr/lib/systemd/system/multipathd.socket.
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:41:29 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:41:30 2022 - INFO  - Start to run test.
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+443.161698 | set open fds limit to 1073741816/1073741816
+443.163797 | loading /lib64/multipath/libchecktur.so checker
+443.167615 | checker tur: message table size = 3
+443.169031 | loading /lib64/multipath/libprioconst.so prioritizer
+443.172501 | _init_foreign: foreign library "nvme" is not enabled
+443.209294 | vda: device node name blacklisted
+443.213552 | loop0: device node name blacklisted
+443.215160 | loop1: device node name blacklisted
+443.217217 | loop2: device node name blacklisted
+443.218824 | loop3: device node name blacklisted
+443.220919 | loop4: device node name blacklisted
+443.222513 | loop5: device node name blacklisted
+443.224232 | loop6: device node name blacklisted
+443.225824 | loop7: device node name blacklisted
+443.226969 | multipath-tools v0.8.7 (09/08, 2021)
+443.227579 | libdevmapper version 1.02.181
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+443.263962 | cannot get kernel dm version
+443.265432 | unloading tur checker
+443.266533 | unloading const prioritizer
+Fri Sep  9 07:41:30 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 34
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+444.094043 | cannot get kernel dm version
+Fri Sep  9 07:41:31 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 36
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+444.921233 | cannot get kernel dm version
+Fri Sep  9 07:41:32 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 38
+445.636824 | '/dev/' is not a valid argument
+
+Fri Sep  9 07:41:33 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 40
+oe_test_multipath-tools_multipath_01.sh: line 43: service: command not found
+456.406077 | set open fds limit to 1073741816/1073741816
+456.408036 | loading /lib64/multipath/libchecktur.so checker
+456.411912 | checker tur: message table size = 3
+456.413930 | loading /lib64/multipath/libprioconst.so prioritizer
+456.418941 | _init_foreign: foreign library "nvme" is not enabled
+456.420202 | multipath-tools v0.8.7 (09/08, 2021)
+456.421090 | libdevmapper version 1.02.181
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+456.456642 | cannot get kernel dm version
+456.457889 | unloading tur checker
+456.458963 | unloading const prioritizer
+Fri Sep  9 07:41:44 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 46
+oe_test_multipath-tools_multipath_01.sh: line 49: service: command not found
+457.199689 | '/dev/' is not a valid argument
+
+Fri Sep  9 07:41:44 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 51
+grep: /etc/multipath/wwids: No such file or directory
+Fri Sep  9 07:41:45 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 53
+458.679856 | '/dev/' is not a valid argument
+Fri Sep  9 07:41:46 2022 - ERROR - oe_test_multipath-tools_multipath_01.sh line 57
+459.617128 | vda: device node name blacklisted
+459.622355 | loop0: device node name blacklisted
+459.624279 | loop1: device node name blacklisted
+459.625986 | loop2: device node name blacklisted
+459.627675 | loop3: device node name blacklisted
+459.629467 | loop4: device node name blacklisted
+459.631151 | loop5: device node name blacklisted
+459.632972 | loop6: device node name blacklisted
+459.634656 | loop7: device node name blacklisted
+459.636885 | libdevmapper version 1.02.181
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+Fri Sep  9 07:41:47 2022 - INFO  - End to run test.
+Fri Sep  9 07:41:47 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:41:48 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 07:41:50 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+iscsiadm: No matching sessions found
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+464.245045 | cannot get kernel dm version
+Fri Sep  9 07:42:11 2022 - INFO  - End to restore the test environment.

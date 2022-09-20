@@ -1,0 +1,26 @@
+Mon Sep 12 16:52:17 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:53:36 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:53:37 2022 - INFO  - Start testing...
+A dependency job for nfs-server.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:53:38 2022 - ERROR - nfs.service restart failed
+Mon Sep 12 16:53:39 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 16:53:45 2022 - ERROR - nfs.service restart failed
+Mon Sep 12 16:53:46 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+A dependency job for nfs-server.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:53:53 2022 - ERROR - nfs.service start failed
+Mon Sep 12 16:53:54 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 16:54:00 2022 - ERROR - nfs.service start failed
+Mon Sep 12 16:54:01 2022 - ERROR - ../common/common_lib.sh line 47
+Mon Sep 12 16:54:02 2022 - INFO  - Unit is indirect, ignoring.
+A dependency job for nfs-server.service failed. See 'journalctl -xe' for details.
+nfs-server.service is not active, cannot reload.
+Mon Sep 12 16:54:08 2022 - ERROR - nfs.service reload failed
+Mon Sep 12 16:54:09 2022 - ERROR - oe_test_service_nfs.sh line 35
+Mon Sep 12 16:54:10 2022 - ERROR - nfs.service reload causes the service status to change
+Mon Sep 12 16:54:11 2022 - ERROR - oe_test_service_nfs.sh line 37
+Mon Sep 12 16:54:11 2022 - INFO  - Finish test!
+Mon Sep 12 16:54:12 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:54:13 2022 - INFO  - start environment cleanup.
+nfs-server.service is not active, cannot reload.
+Mon Sep 12 16:54:52 2022 - INFO  - Finish environment cleanup!

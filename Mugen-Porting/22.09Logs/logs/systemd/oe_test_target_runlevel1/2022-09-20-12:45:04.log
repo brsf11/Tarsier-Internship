@@ -1,0 +1,11 @@
+Tue Sep 20 12:45:06 2022 - INFO  - Start to run test.
+     Active: active since Tue 2022-09-20 12:45:06 CST; 6s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:45:13 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:45:18 CST; 5s ago
+Tue Sep 20 12:45:25 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload runlevel1.target: Job type reload is not applicable for unit rescue.target.
+     Active: active since Tue 2022-09-20 12:45:18 CST; 6s ago
+Tue Sep 20 12:45:26 2022 - INFO  - End of the test.
+Tue Sep 20 12:45:27 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:45:27 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:45:28 2022 - INFO  - End of environmental preparation!

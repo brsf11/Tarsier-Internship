@@ -1,0 +1,15 @@
+Fri Sep  9 04:25:11 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:27:55 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:27:56 2022 - INFO  - Start to run test.
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+Usage: radsniff [options][stats options] -- [pcap files]
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+received,2,2021-03-11 15:49:10.324640,0.000,Access-Accept,../common/test.pcap,127.0.0.1,1812,127.0.0.1,37868,147,
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.323778 (1) Status-Server Id 147 ../common/test.pcap:127.0.0.1:37868 -> 127.0.0.1:1812 +0.000
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+Fri Sep  9 04:55:09 2022 - ERROR - Timeout : Command 'bash oe_test_freeradius_freeradius-utils_radsniff.sh' timed out after 1799.9989256310005 seconds
+radsniff: Failed opening pcap handle (stdin): truncated dump file; tried to read 4 file header bytes, only got 0
+Fri Sep  9 05:02:34 2022 - INFO  - Start to restore the test environment.

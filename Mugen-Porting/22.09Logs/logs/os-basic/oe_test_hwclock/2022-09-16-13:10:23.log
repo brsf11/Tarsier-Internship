@@ -1,0 +1,10 @@
+Fri Sep 16 13:10:25 2022 - INFO  - Start to pre test.
+Fri Sep 16 13:10:26 2022 - INFO  - End to pre test.
+Fri Sep 16 13:10:26 2022 - INFO  - Start to run test.
+2022-09-16 13:10:28.020055+08:00
+2019-10-21 21:17:02.755605+08:00
+Fri Sep 16 13:10:32 2022 - INFO  - End to run test.
+Fri Sep 16 13:10:33 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 13:10:34 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 01:10:25 PM CST 2022
+Fri Sep 16 13:10:26 2022 - INFO  - End to restore the test environment.

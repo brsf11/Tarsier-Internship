@@ -1,0 +1,18 @@
+Fri Sep  9 03:50:47 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 03:57:17 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 03:57:18 2022 - INFO  - Start to run test.
+root        1198       1 52 03:57 ?        00:00:00 radiusd -d /etc/raddb
+root        1210       1 51 03:57 ?        00:00:00 radiusd -D /usr/share/freeradius
+root        1220    1020  0 03:57 ?        00:00:00 radiusd -f
+  -d <raddb>    Set configuration directory (defaults to /etc/raddb).
+  -D <dictdir>  Set main dictionary directory (defaults to /usr/share/freeradius).
+Usage: radiusd [options]
+oe_test_freeradius_freeradius_radiusd.sh: line 27:  1220 Killed                  radiusd -f
+root        1232       1  0 03:57 ?        00:00:00 radiusd -i 127.0.0.1 -p 4490
+root        1244       1 49 03:57 ?        00:00:00 radiusd -l /tmp/test.log
+root        1257       1  7 03:57 ?        00:00:00 radiusd -n test
+Fri Sep  9 03:57:33 2022 - INFO  - End to run test.
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 19:  1282 Killed                  radiusd -s
+Fri Sep  9 03:57:34 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 03:57:34 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 03:57:55 2022 - INFO  - End to restore the test environment.

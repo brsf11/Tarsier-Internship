@@ -1,0 +1,31 @@
+Tue Sep 20 12:55:14 2022 - INFO  - Start testing...
+Failed to restart remote-veritysetup.target: Unit remote-veritysetup.target not found.
+Tue Sep 20 12:55:15 2022 - ERROR - remote-veritysetup.target restart failed
+Tue Sep 20 12:55:16 2022 - ERROR - ../common/common_lib.sh line 34
+Unit remote-veritysetup.target could not be found.
+Tue Sep 20 12:55:22 2022 - ERROR - remote-veritysetup.target restart failed
+Tue Sep 20 12:55:23 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop remote-veritysetup.target: Unit remote-veritysetup.target not loaded.
+Tue Sep 20 12:55:23 2022 - ERROR - remote-veritysetup.target stop failed
+Tue Sep 20 12:55:24 2022 - ERROR - ../common/common_lib.sh line 39
+Unit remote-veritysetup.target could not be found.
+Tue Sep 20 12:55:31 2022 - ERROR - remote-veritysetup.target stop failed
+Tue Sep 20 12:55:31 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start remote-veritysetup.target: Unit remote-veritysetup.target not found.
+Tue Sep 20 12:55:32 2022 - ERROR - remote-veritysetup.target start failed
+Tue Sep 20 12:55:32 2022 - ERROR - ../common/common_lib.sh line 44
+Unit remote-veritysetup.target could not be found.
+Tue Sep 20 12:55:39 2022 - ERROR - remote-veritysetup.target start failed
+Tue Sep 20 12:55:39 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for remote-veritysetup.target: No such file or directory
+Tue Sep 20 12:55:40 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start remote-veritysetup.target: Unit remote-veritysetup.target not found.
+Tue Sep 20 12:55:41 2022 - ERROR - Job type reload is not applicable for unit remote-veritysetup.target
+Tue Sep 20 12:55:42 2022 - ERROR - ../common/common_lib.sh line 91
+Unit remote-veritysetup.target could not be found.
+Unit remote-veritysetup.target could not be found.
+Tue Sep 20 12:55:42 2022 - INFO  - Finish test!
+Tue Sep 20 12:55:43 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:55:44 2022 - INFO  - Start environment cleanup.
+Failed to stop remote-veritysetup.target: Unit remote-veritysetup.target not loaded.
+Tue Sep 20 12:55:44 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,16 @@
+Tue Sep 20 12:23:41 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:23:42 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:23:43 2022 - INFO  - Start testing...
+Tue Sep 20 12:23:50 2022 - ERROR - systemd-journald-audit.socket restart failed
+Tue Sep 20 12:23:50 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+Tue Sep 20 12:24:03 2022 - ERROR - systemd-journald-audit.socket start failed
+Tue Sep 20 12:24:04 2022 - ERROR - ../common/common_lib.sh line 47
+Tue Sep 20 12:24:04 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-journald-audit.socket: Job type reload is not applicable for unit systemd-journald-audit.socket.
+     Active: inactive (dead)
+Sep 20 11:59:31 openEuler-riscv64 systemd[1]: Condition check resulted in Journal Audit Socket being skipped.
+Tue Sep 20 12:24:06 2022 - INFO  - Finish test!
+Tue Sep 20 12:24:06 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:24:07 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:24:08 2022 - INFO  - Finish environment cleanup!

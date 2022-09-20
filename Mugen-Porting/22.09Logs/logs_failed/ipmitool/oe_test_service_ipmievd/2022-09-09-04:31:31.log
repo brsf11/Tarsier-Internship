@@ -1,0 +1,44 @@
+Fri Sep  9 04:31:34 2022 - INFO  - Start environmental preparation.
+modprobe: FATAL: Module ipmi_watchdog not found in directory /lib/modules/5.10.0
+modprobe: FATAL: Module ipmi_poweroff not found in directory /lib/modules/5.10.0
+modprobe: FATAL: Module ipmi_devintf not found in directory /lib/modules/5.10.0
+modprobe: FATAL: Module ipmi_si  not found in directory /lib/modules/5.10.0
+modprobe: FATAL: Module ipmi_msghandler not found in directory /lib/modules/5.10.0
+Fri Sep  9 04:31:58 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:31:59 2022 - INFO  - Start testing...
+Failed to restart ipmievd.service: Unit ipmievd.service not found.
+Fri Sep  9 04:32:00 2022 - ERROR - ipmievd.service restart failed
+Fri Sep  9 04:32:00 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ipmievd.service could not be found.
+Fri Sep  9 04:32:07 2022 - ERROR - ipmievd.service restart failed
+Fri Sep  9 04:32:08 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ipmievd.service: Unit ipmievd.service not loaded.
+Fri Sep  9 04:32:08 2022 - ERROR - ipmievd.service stop failed
+Fri Sep  9 04:32:09 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ipmievd.service could not be found.
+Fri Sep  9 04:32:16 2022 - ERROR - ipmievd.service stop failed
+Fri Sep  9 04:32:16 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ipmievd.service: Unit ipmievd.service not found.
+Fri Sep  9 04:32:17 2022 - ERROR - ipmievd.service start failed
+Fri Sep  9 04:32:18 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ipmievd.service could not be found.
+Fri Sep  9 04:32:24 2022 - ERROR - ipmievd.service start failed
+Fri Sep  9 04:32:25 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ipmievd.service: No such file or directory
+Fri Sep  9 04:32:26 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ipmievd.service: Unit ipmievd.service not found.
+Fri Sep  9 04:32:27 2022 - ERROR - Job type reload is not applicable for unit ipmievd.service
+Fri Sep  9 04:32:27 2022 - ERROR - ../common/common_lib.sh line 91
+Unit ipmievd.service could not be found.
+Unit ipmievd.service could not be found.
+Fri Sep  9 04:32:28 2022 - INFO  - Finish test!
+Fri Sep  9 04:32:29 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:32:29 2022 - INFO  - start environment cleanup.
+Failed to stop ipmievd.service: Unit ipmievd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:36 ago on Fri 09 Sep 2022 04:29:21 AM CST.\nError: \n Problem: package ipmitool-1.8.18-17.oe2209.riscv64 requires net-snmp, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by net-snmp-1:5.9.1-2.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by net-snmp-1:5.9.1-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 04:32:33 2022 - INFO  - Finish environment cleanup!

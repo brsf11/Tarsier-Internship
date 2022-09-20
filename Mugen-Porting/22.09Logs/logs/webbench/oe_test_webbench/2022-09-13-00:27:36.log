@@ -1,0 +1,144 @@
+Tue Sep 13 00:27:39 2022 - INFO  - Start to config params of the case.
+Tue Sep 13 00:27:40 2022 - INFO  - End to config params of the case.
+Tue Sep 13 00:27:41 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 13 00:28:23 2022 - INFO  - End to prepare the test environment.
+Tue Sep 13 00:28:23 2022 - INFO  - Start to run test.
+webbench [option]... URL
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Tue Sep 13 00:28:24 2022 - ERROR - webbench Version Test -V FAILED
+Tue Sep 13 00:28:25 2022 - ERROR - oe_test_webbench.sh line 47
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Benchmarking: HEAD http://www.baidu.com/
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: OPTIONS http://www.baidu.com/ (using HTTP/1.1)
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: TRACE http://www.baidu.com/ (using HTTP/1.1)
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/0.9)
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Benchmarking: GET http://www.baidu.com/
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Benchmarking: GET http://www.baidu.com/ (using HTTP/1.1)
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+10 clients, running 5 sec, early socket close.
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+10 clients, running 5 sec, forcing reload.
+Webbench - Simple Web Benchmark 1.5
+Copyright (c) Radim Kolar 1997-2004, GPL Open Source Software.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+10 clients, running 5 sec, via proxy server www.baidu.com:80.
+Tue Sep 13 00:29:51 2022 - INFO  - End to run test.
+Tue Sep 13 00:29:52 2022 - ERROR - failed to execute the case.
+Tue Sep 13 00:29:53 2022 - INFO  - Start to restore the test environment.
+Tue Sep 13 00:30:11 2022 - INFO  - End to restore the test environment.

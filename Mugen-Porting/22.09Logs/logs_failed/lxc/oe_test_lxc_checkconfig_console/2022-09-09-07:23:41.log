@@ -1,0 +1,40 @@
+Fri Sep  9 07:23:44 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:24:10 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:24:10 2022 - INFO  - Start to run test.
+oe_test_lxc_checkconfig_console.sh: line 30: lxc-checkconfig: command not found
+Fri Sep  9 07:24:11 2022 - ERROR - Check lxc-checkconfig failed.
+Fri Sep  9 07:24:12 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 31
+Fri Sep  9 07:24:12 2022 - ERROR - Check lxc-checkpoint --help failed.
+Fri Sep  9 07:24:13 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 34
+Fri Sep  9 07:24:14 2022 - ERROR - Check lxc-checkpoint --usage failed.
+Fri Sep  9 07:24:15 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 36
+oe_test_lxc_checkconfig_console.sh: line 37: lxc-checkpoint: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:24:15 2022 - ERROR - Check lxc-checkpoint --version failed.
+Fri Sep  9 07:24:16 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 38
+oe_test_lxc_checkconfig_console.sh: line 40: lxc-config: command not found
+Fri Sep  9 07:24:17 2022 - ERROR - Check lxc-config -h failed.
+Fri Sep  9 07:24:18 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 41
+oe_test_lxc_checkconfig_console.sh: line 42: lxc-config: command not found
+Fri Sep  9 07:24:18 2022 - ERROR - Check lxc-config -l failed.
+Fri Sep  9 07:24:19 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 43
+Fri Sep  9 07:24:20 2022 - ERROR - Check lxc-console --help failed.
+Fri Sep  9 07:24:20 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 46
+Fri Sep  9 07:24:21 2022 - ERROR - Check lxc-console --usage failed.
+Fri Sep  9 07:24:22 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 48
+oe_test_lxc_checkconfig_console.sh: line 49: lxc-console: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:24:22 2022 - ERROR - Check lxc-console --version failed.
+Fri Sep  9 07:24:23 2022 - ERROR - oe_test_lxc_checkconfig_console.sh line 50
+Fri Sep  9 07:24:24 2022 - INFO  - End to run test.
+Fri Sep  9 07:24:24 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:24:25 2022 - INFO  - Start to restore the tet environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:12:17 ago on Fri 09 Sep 2022 07:11:50 AM CST.\nPackage tar-2:1.34-1.oe2209.riscv64 is already installed.\nError: \n Problem: package lxcfs-tools-0.3-26.oe2209.riscv64 requires iSulad, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides clibcni >= 2.0.7 needed by iSulad-2.0.15-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:24:28 2022 - INFO  - End to restore the tet environment.

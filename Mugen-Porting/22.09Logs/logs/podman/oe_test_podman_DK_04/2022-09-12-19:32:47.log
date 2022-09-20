@@ -1,0 +1,45 @@
+Mon Sep 12 19:32:49 2022 - INFO  - Start to prepare the test environment.
+../common/common_podman.sh: line 21: /etc/containers/registries.conf: No such file or directory
+oe_test_podman_DK_04.sh: line 24: podman: command not found
+oe_test_podman_DK_04.sh: line 25: podman: command not found
+Mon Sep 12 19:33:48 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:33:48 2022 - INFO  - Start to run test.
+oe_test_podman_DK_04.sh: line 31: docker: command not found
+Mon Sep 12 19:33:49 2022 - ERROR - oe_test_podman_DK_04.sh line 32
+oe_test_podman_DK_04.sh: line 33: docker: command not found
+Mon Sep 12 19:33:50 2022 - ERROR - oe_test_podman_DK_04.sh line 34
+oe_test_podman_DK_04.sh: line 35: docker: command not found
+Mon Sep 12 19:33:51 2022 - ERROR - oe_test_podman_DK_04.sh line 36
+oe_test_podman_DK_04.sh: line 37: docker: command not found
+Mon Sep 12 19:33:51 2022 - ERROR - oe_test_podman_DK_04.sh line 38
+oe_test_podman_DK_04.sh: line 39: docker: command not found
+Mon Sep 12 19:33:52 2022 - ERROR - oe_test_podman_DK_04.sh line 40
+oe_test_podman_DK_04.sh: line 41: docker: command not found
+Mon Sep 12 19:33:53 2022 - ERROR - oe_test_podman_DK_04.sh line 42
+oe_test_podman_DK_04.sh: line 43: docker: command not found
+Mon Sep 12 19:33:53 2022 - ERROR - oe_test_podman_DK_04.sh line 44
+oe_test_podman_DK_04.sh: line 45: docker: command not found
+Mon Sep 12 19:33:54 2022 - ERROR - oe_test_podman_DK_04.sh line 46
+oe_test_podman_DK_04.sh: line 47: docker: command not found
+Mon Sep 12 19:33:55 2022 - ERROR - oe_test_podman_DK_04.sh line 48
+oe_test_podman_DK_04.sh: line 49: docker: command not found
+ls: cannot access '/run/runc/': No such file or directory
+Mon Sep 12 19:33:55 2022 - ERROR - oe_test_podman_DK_04.sh line 50
+oe_test_podman_DK_04.sh: line 51: docker: command not found
+ls: cannot access '/run/runc/': No such file or directory
+Mon Sep 12 19:33:56 2022 - ERROR - oe_test_podman_DK_04.sh line 52
+oe_test_podman_DK_04.sh: line 53: docker: command not found
+Mon Sep 12 19:33:57 2022 - ERROR - oe_test_podman_DK_04.sh line 54
+Mon Sep 12 19:33:57 2022 - INFO  - End to run test.
+Mon Sep 12 19:33:58 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:33:59 2022 - INFO  - Start to restore the test environment.
+../common/common_podman.sh: line 33: podman: command not found
+../common/common_podman.sh: line 34: podman: command not found
+../common/common_podman.sh: line 35: podman: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:37:41 ago on Mon 12 Sep 2022 06:56:05 PM CST.\nError: \n Problem 1: conflicting requests\n  - nothing provides crun needed by podman-1:3.4.4-2.oe2209.riscv64\n Problem 2: package podman-docker-1:3.4.4-2.oe2209.noarch requires podman = 1:3.4.4-2.oe2209, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides crun needed by podman-1:3.4.4-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 19:34:02 2022 - INFO  - End to restore the test environment.

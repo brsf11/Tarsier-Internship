@@ -1,0 +1,39 @@
+Fri Sep  9 06:26:48 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 06:27:40 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 06:27:40 2022 - INFO  - Start to run test.
+See also: man ipsec <command> or ipsec <command> --help
+Linux Libreswan 4.5 (none) on 5.10.0
+/usr/libexec/ipsec
+Redirecting to: systemctl stop ipsec.service
+Redirecting to: systemctl start ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:28:03 2022 - ERROR - oe_test_libreswan_ipsec_01.sh line 37
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:28:04 2022 - ERROR - oe_test_libreswan_ipsec_01.sh line 39
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Redirecting to: systemctl restart ipsec.service
+Redirecting to: systemctl stop ipsec.service
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Checking that pluto is running                    	[FAILED]
++ grep -E -i 'ppid|pluto|ipsec'
+0     0    1698    1666  20   0   2756  1300 pipe_r S    ?          0:00              |               |   \_ grep -E -i ppid|pluto|ipsec
+0     0    1667     464  20   0  21576  1964 pipe_r S    ?          0:00              |               \_ grep pluto
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+-rwxr-xr-x 1 root root    3055 Aug  7 06:41 _plutorun
+-rwxr-xr-x 1 root root 1949248 Aug  7 06:42 pluto
+	ipsec auto [--showonly] [--asynchronous] --up connectionname \
+	ipsec auto [--showonly] [--asynchronous] --down connectionname
+	ipsec auto [--showonly] --{add|delete|replace|start} connectionname
+	ipsec auto [--showonly] --{route|unroute|ondemand} connectionname
+	ipsec auto [--showonly] --{ready|status}
+	ipsec auto [--showonly] --{fetchcrls|rereadcerts|rereadall|rereadsecrets}
+	ipsec auto [--showonly] [--utc] --{listpubkeys|listcerts|listcacerts}
+	ipsec auto [--showonly] [--utc] --{listcrls|listall}
+	ipsec auto [--showonly] [--utc] --checkpubkeys
+	ipsec auto [--showonly] [--utc] --purgeocsp
+Fri Sep  9 06:28:16 2022 - INFO  - End of the test.
+Fri Sep  9 06:28:17 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:28:17 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 06:28:37 2022 - INFO  - Finish restoring the test environment.

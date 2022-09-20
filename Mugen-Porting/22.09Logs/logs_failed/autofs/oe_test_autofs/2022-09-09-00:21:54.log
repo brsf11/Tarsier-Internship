@@ -1,0 +1,23 @@
+Fri Sep  9 00:21:57 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 00:22:03 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+A dependency job for nfs-server.service failed. See 'journalctl -xe' for details.
+common/common_autofs.sh: line 41: cd: /mnt01/nfs: No such file or directory
+Fri Sep  9 00:23:38 2022 - INFO  - Start to restore the test environment.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 00:23:41 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 00:24:08 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,12 @@
+Tue Sep 20 11:45:05 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 11:45:06 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 11:45:13 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 11:45:18 CST; 5s ago
+/etc/systemd/system/default.target.wants/hwclock-save.service
+Removed /etc/systemd/system/default.target.wants/hwclock-save.service.
+find: ‘/etc/systemd/system/default.target.wants/hwclock-save.service’: No such file or directory
+Failed to reload hwclock-save.service: Job type reload is not applicable for unit hwclock-save.service.
+     Active: active (exited) since Tue 2022-09-20 11:45:18 CST; 14s ago
+Tue Sep 20 11:45:34 2022 - INFO  - Finish test!
+Tue Sep 20 11:45:35 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:45:35 2022 - INFO  - oe_test_service_hwclock-save.sh post_test

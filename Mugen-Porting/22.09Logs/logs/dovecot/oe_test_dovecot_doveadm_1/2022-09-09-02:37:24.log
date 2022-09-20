@@ -1,0 +1,65 @@
+Fri Sep  9 02:37:26 2022 - INFO  - Start to prepare the database config.
+cp: cannot stat '/etc/dovecot/conf.d/10-ssl.conf': No such file or directory
+sed: can't read /etc/dovecot/conf.d/10-ssl.conf: No such file or directory
+Failed to restart dovecot.service: Unit dovecot.service not found.
+Fri Sep  9 02:37:57 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 02:37:57 2022 - INFO  - Start to run test.
+oe_test_dovecot_doveadm_1.sh: line 35: doveadm: command not found
+Fri Sep  9 02:37:58 2022 - ERROR - Check doveadm who detail failed.
+Fri Sep  9 02:37:59 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 36
+oe_test_dovecot_doveadm_1.sh: line 37: doveadm: command not found
+Fri Sep  9 02:37:59 2022 - ERROR - Check doveadm who verbose failed.
+Fri Sep  9 02:38:00 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 38
+oe_test_dovecot_doveadm_1.sh: line 39: doveadm: command not found
+Fri Sep  9 02:38:01 2022 - ERROR - Check doveadm who -1 failed.
+Fri Sep  9 02:38:01 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 40
+oe_test_dovecot_doveadm_1.sh: line 41: doveadm: command not found
+Fri Sep  9 02:38:02 2022 - ERROR - Check doveadm who 127.0.0.1 failed.
+Fri Sep  9 02:38:03 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 42
+oe_test_dovecot_doveadm_1.sh: line 43: doveadm: command not found
+Fri Sep  9 02:38:03 2022 - ERROR - Check doveadm who 0022 failed.
+Fri Sep  9 02:38:04 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 44
+oe_test_dovecot_doveadm_1.sh: line 46: doveadm: command not found
+oe_test_dovecot_doveadm_1.sh: line 47: doveadm: command not found
+Fri Sep  9 02:38:05 2022 - ERROR - Check doveadm pw failed.
+Fri Sep  9 02:38:05 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 48
+oe_test_dovecot_doveadm_1.sh: line 49: doveadm: command not found
+Fri Sep  9 02:38:06 2022 - ERROR - Check doveadm pw -p failed.
+Fri Sep  9 02:38:07 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 50
+oe_test_dovecot_doveadm_1.sh: line 51: doveadm: command not found
+Fri Sep  9 02:38:08 2022 - ERROR - Check doveadm pw -r failed.
+Fri Sep  9 02:38:08 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 53
+oe_test_dovecot_doveadm_1.sh: line 54: doveadm: command not found
+Fri Sep  9 02:38:09 2022 - ERROR - Check doveadm pw -u failed.
+Fri Sep  9 02:38:10 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 55
+oe_test_dovecot_doveadm_1.sh: line 56: doveadm: command not found
+Fri Sep  9 02:38:10 2022 - ERROR - Check doveadm pw -V failed.
+Fri Sep  9 02:38:11 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 57
+oe_test_dovecot_doveadm_1.sh: line 58: doveadm: command not found
+Fri Sep  9 02:38:12 2022 - ERROR - Check doveadm pw -s failed.
+Fri Sep  9 02:38:12 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 59
+oe_test_dovecot_doveadm_1.sh: line 61: doveadm: command not found
+Fri Sep  9 02:38:13 2022 - ERROR - Check doveadm log errors failed.
+Fri Sep  9 02:38:14 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 62
+oe_test_dovecot_doveadm_1.sh: line 63: doveadm: command not found
+Fri Sep  9 02:38:14 2022 - ERROR - Check doveadm log find failed.
+Fri Sep  9 02:38:15 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 64
+oe_test_dovecot_doveadm_1.sh: line 65: doveadm: command not found
+Fri Sep  9 02:38:16 2022 - ERROR - Check doveadm log reopen failed.
+Fri Sep  9 02:38:16 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 66
+oe_test_dovecot_doveadm_1.sh: line 67: doveadm: command not found
+Fri Sep  9 02:38:17 2022 - ERROR - Check doveadm log test failed.
+Fri Sep  9 02:38:18 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 68
+Fri Sep  9 02:38:18 2022 - INFO  - End to run test.
+Fri Sep  9 02:38:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:38:20 2022 - INFO  - Start to restore the test environment.
+Failed to stop dovecot.service: Unit dovecot.service not loaded.
+mv: cannot stat '/etc/dovecot/conf.d/10-ssl.conf.bak': No such file or directory
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:04:26 ago on Fri 09 Sep 2022 02:33:29 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 02:38:23 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,16 @@
+Tue Sep 20 12:29:14 2022 - INFO  - Start environment preparation.
+Warning: Stopping systemd-udevd.service, but it can still be activated by:
+  systemd-udevd-kernel.socket
+  systemd-udevd-control.socket
+Tue Sep 20 12:29:15 2022 - INFO  - Finish environment cleanup!
+Tue Sep 20 12:29:15 2022 - INFO  - Start testing...
+     Active: active (listening) since Tue 2022-09-20 12:29:16 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:29:22 CST; 5s ago
+     Active: active (listening) since Tue 2022-09-20 12:29:28 CST; 5s ago
+Tue Sep 20 12:29:34 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-udevd-control.socket: Job type reload is not applicable for unit systemd-udevd-control.socket.
+     Active: active (listening) since Tue 2022-09-20 12:29:28 CST; 6s ago
+Tue Sep 20 12:29:35 2022 - INFO  - Finish test!
+Tue Sep 20 12:29:36 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:29:36 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:29:37 2022 - INFO  - Finish environment cleanup!

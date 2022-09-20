@@ -1,0 +1,47 @@
+Mon Sep 12 19:03:01 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 19:04:15 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 19:04:16 2022 - INFO  - Start testing...
+Job for target.service failed because the control process exited with error code.
+See "systemctl status target.service" and "journalctl -xeu target.service" for details.
+Mon Sep 12 19:04:18 2022 - ERROR - target.service restart failed
+Mon Sep 12 19:04:19 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 19:04:26 2022 - ERROR - target.service restart failed
+Mon Sep 12 19:04:26 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 19:04:33 2022 - ERROR - target.service stop failed
+Mon Sep 12 19:04:34 2022 - ERROR - ../common/common_lib.sh line 42
+Job for target.service failed because the control process exited with error code.
+See "systemctl status target.service" and "journalctl -xeu target.service" for details.
+Mon Sep 12 19:04:36 2022 - ERROR - target.service start failed
+Mon Sep 12 19:04:37 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 19:04:43 2022 - ERROR - target.service start failed
+Mon Sep 12 19:04:44 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/target.service
+Removed /etc/systemd/system/multi-user.target.wants/target.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/target.service’: No such file or directory
+Sep 12 19:04:18 openEuler-riscv64 target[520]:     raise RTSLibError("Cannot mount configfs")
+Sep 12 19:04:18 openEuler-riscv64 target[520]: rtslib_fb.utils.RTSLibError: Cannot mount configfs
+Sep 12 19:04:18 openEuler-riscv64 target[520]: AttributeError: module 'kmod' has no attribute 'Kmod'
+Sep 12 19:04:18 openEuler-riscv64 target[520]:     errors = RTSRoot().restore_from_file(restore_file=from_file)
+Sep 12 19:04:18 openEuler-riscv64 target[520]:     except kmod.error.KmodError:
+Sep 12 19:04:18 openEuler-riscv64 target[520]: AttributeError: module 'kmod' has no attribute 'error'
+Sep 12 19:04:18 openEuler-riscv64 systemd[1]: target.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 19:04:18 openEuler-riscv64 systemd[1]: target.service: Failed with result 'exit-code'.
+Sep 12 19:04:18 openEuler-riscv64 systemd[1]: Failed to start Restore LIO kernel target configuration.
+Sep 12 19:04:35 openEuler-riscv64 target[542]:     raise RTSLibError("Cannot mount configfs")
+Sep 12 19:04:35 openEuler-riscv64 target[542]: rtslib_fb.utils.RTSLibError: Cannot mount configfs
+Sep 12 19:04:35 openEuler-riscv64 target[542]: AttributeError: module 'kmod' has no attribute 'Kmod'
+Sep 12 19:04:35 openEuler-riscv64 target[542]:     errors = RTSRoot().restore_from_file(restore_file=from_file)
+Sep 12 19:04:35 openEuler-riscv64 target[542]:     except kmod.error.KmodError:
+Sep 12 19:04:35 openEuler-riscv64 target[542]: AttributeError: module 'kmod' has no attribute 'error'
+Sep 12 19:04:35 openEuler-riscv64 systemd[1]: target.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 19:04:35 openEuler-riscv64 systemd[1]: target.service: Failed with result 'exit-code'.
+Sep 12 19:04:35 openEuler-riscv64 systemd[1]: Failed to start Restore LIO kernel target configuration.
+Mon Sep 12 19:04:53 2022 - ERROR - There is an error message for the log of target.service
+Mon Sep 12 19:04:54 2022 - ERROR - ../common/common_lib.sh line 28
+Job for target.service failed because the control process exited with error code.
+See "systemctl status target.service" and "journalctl -xeu target.service" for details.
+Failed to reload target.service: Job type reload is not applicable for unit target.service.
+Mon Sep 12 19:04:56 2022 - INFO  - Finish test!
+Mon Sep 12 19:04:57 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:04:58 2022 - INFO  - start environment cleanup.
+Mon Sep 12 19:05:34 2022 - INFO  - Finish environment cleanup!

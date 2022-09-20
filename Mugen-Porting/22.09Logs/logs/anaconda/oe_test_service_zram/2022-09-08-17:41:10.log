@@ -1,0 +1,41 @@
+Thu Sep  8 17:41:12 2022 - INFO  - Start environmental preparation.
+sed: can't read /usr/libexec/anaconda/zramswapon: No such file or directory
+Failed to start zram.service: Unit zram.service not found.
+Thu Sep  8 17:41:42 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:41:43 2022 - INFO  - Start testing...
+Failed to restart zram.service: Unit zram.service not found.
+Thu Sep  8 17:41:44 2022 - ERROR - zram.service restart failed
+Thu Sep  8 17:41:44 2022 - ERROR - ../common/common_lib.sh line 34
+Unit zram.service could not be found.
+Thu Sep  8 17:41:51 2022 - ERROR - zram.service restart failed
+Thu Sep  8 17:41:52 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop zram.service: Unit zram.service not loaded.
+Thu Sep  8 17:41:52 2022 - ERROR - zram.service stop failed
+Thu Sep  8 17:41:53 2022 - ERROR - ../common/common_lib.sh line 39
+Unit zram.service could not be found.
+Thu Sep  8 17:42:00 2022 - ERROR - zram.service stop failed
+Thu Sep  8 17:42:00 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start zram.service: Unit zram.service not found.
+Thu Sep  8 17:42:01 2022 - ERROR - zram.service start failed
+Thu Sep  8 17:42:02 2022 - ERROR - ../common/common_lib.sh line 44
+Unit zram.service could not be found.
+Thu Sep  8 17:42:09 2022 - ERROR - zram.service start failed
+Thu Sep  8 17:42:09 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for zram.service: No such file or directory
+Thu Sep  8 17:42:10 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start zram.service: Unit zram.service not found.
+Thu Sep  8 17:42:11 2022 - ERROR - Job type reload is not applicable for unit zram.service
+Thu Sep  8 17:42:12 2022 - ERROR - ../common/common_lib.sh line 91
+Unit zram.service could not be found.
+Unit zram.service could not be found.
+Thu Sep  8 17:42:13 2022 - INFO  - Finish test!
+Thu Sep  8 17:42:14 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:42:14 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/libexec/anaconda/zramswapon: No such file or directory
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:07:09 ago on Thu 08 Sep 2022 05:34:32 PM CST.\nError: \n Problem: package anaconda-core-33.19-43.oe2209.riscv64 requires python3-pwquality, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides python(abi) = 3.9 needed by python3-pwquality-1.4.4-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Thu Sep  8 17:42:18 2022 - INFO  - Finish environment cleanup!

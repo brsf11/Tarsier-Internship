@@ -1,0 +1,120 @@
+Fri Sep  9 07:22:16 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:22:24 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:22:31 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:22:32 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:22:33 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 31
+  Invaild device type /dev/.
+Fri Sep  9 07:22:34 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 33
+  No device found for /dev/.
+Fri Sep  9 07:22:35 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 35
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:36 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 38
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  striped: Required device-mapper target(s) not detected in your kernel.
+  Run `lvcreate --help' for more information.
+Fri Sep  9 07:22:37 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 40
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  striped: Required device-mapper target(s) not detected in your kernel.
+  Run `lvcreate --help' for more information.
+Fri Sep  9 07:22:38 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 42
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  striped: Required device-mapper target(s) not detected in your kernel.
+  Run `lvcreate --help' for more information.
+Fri Sep  9 07:22:39 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 44
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  striped: Required device-mapper target(s) not detected in your kernel.
+  Run `lvcreate --help' for more information.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:40 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 50
+  No device found for /dev/.
+Fri Sep  9 07:22:41 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 52
+Fri Sep  9 07:22:42 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 54
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:44 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 57
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:45 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 60
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:46 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 63
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:48 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 66
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:49 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 69
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:50 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 72
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:52 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 76
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:53 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 79
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:54 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 82
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:56 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 85
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:57 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 88
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:22:58 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 91
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:23:00 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 94
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:23:01 2022 - ERROR - oe_test_lvm2_vgcreate_001.sh line 97
+  Volume group "test" not found
+  Cannot process volume group test
+oe_test_lvm2_vgcreate_001.sh: line 100: ["22.09": command not found
+  vgcreate - Create a volume group
+Fri Sep  9 07:23:02 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:23:03 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:23:03 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:23:05 2022 - WARN  - no thing to do.
+Fri Sep  9 07:23:05 2022 - INFO  - Finish environment cleanup.

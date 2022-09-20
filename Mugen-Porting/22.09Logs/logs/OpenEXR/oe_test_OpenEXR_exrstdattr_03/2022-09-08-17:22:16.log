@@ -1,0 +1,34 @@
+Thu Sep  8 17:22:19 2022 - INFO  - Start to prepare the test environment.
+Thu Sep  8 17:23:19 2022 - INFO  - End to prepare the test environment.
+Thu Sep  8 17:23:19 2022 - INFO  - Start to run test.
+oe_test_OpenEXR_exrstdattr_03.sh: line 29: exrstdattr: command not found
+Thu Sep  8 17:23:20 2022 - ERROR - Check exrstdattr -wrapmodes failed.
+Thu Sep  8 17:23:21 2022 - ERROR - oe_test_OpenEXR_exrstdattr_03.sh line 30
+oe_test_OpenEXR_exrstdattr_03.sh: line 31: exrstdattr: command not found
+Thu Sep  8 17:23:21 2022 - ERROR - Check exrstdattr -pixelAspectRatio failed.
+Thu Sep  8 17:23:22 2022 - ERROR - oe_test_OpenEXR_exrstdattr_03.sh line 32
+oe_test_OpenEXR_exrstdattr_03.sh: line 33: exrstdattr: command not found
+Thu Sep  8 17:23:23 2022 - ERROR - Check exrstdattr -screenWindowWidth failed.
+Thu Sep  8 17:23:23 2022 - ERROR - oe_test_OpenEXR_exrstdattr_03.sh line 34
+oe_test_OpenEXR_exrstdattr_03.sh: line 35: exrstdattr: command not found
+Thu Sep  8 17:23:24 2022 - ERROR - Check exrstdattr -screenWindowCenter failed.
+Thu Sep  8 17:23:25 2022 - ERROR - oe_test_OpenEXR_exrstdattr_03.sh line 36
+oe_test_OpenEXR_exrstdattr_03.sh: line 37: exrstdattr: command not found
+Thu Sep  8 17:23:25 2022 - ERROR - Check exrstdattr -string failed.
+Thu Sep  8 17:23:26 2022 - ERROR - oe_test_OpenEXR_exrstdattr_03.sh line 38
+oe_test_OpenEXR_exrstdattr_03.sh: line 39: exrstdattr: command not found
+Thu Sep  8 17:23:27 2022 - ERROR - Check exrstdattr -float failed.
+Thu Sep  8 17:23:27 2022 - ERROR - oe_test_OpenEXR_exrstdattr_03.sh line 40
+oe_test_OpenEXR_exrstdattr_03.sh: line 41: exrstdattr: command not found
+Thu Sep  8 17:23:28 2022 - ERROR - Check exrstdattr -int failed.
+Thu Sep  8 17:23:29 2022 - ERROR - oe_test_OpenEXR_exrstdattr_03.sh line 42
+Thu Sep  8 17:23:29 2022 - INFO  - End to run test.
+Thu Sep  8 17:23:30 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:23:31 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:07:43 ago on Thu 08 Sep 2022 05:15:34 PM CST.\nError: \n Problem: package OpenEXR-devel-3.1.5-2.oe2209.riscv64 requires pkgconfig(Imath), but none of the providers can be installed\n  - package Imath-devel-3.1.4-1.oe2209.riscv64 requires boost-devel, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libquadmath-devel(riscv-64) needed by boost-devel-1.79.0-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Thu Sep  8 17:23:34 2022 - INFO  - End to restore the test environment.

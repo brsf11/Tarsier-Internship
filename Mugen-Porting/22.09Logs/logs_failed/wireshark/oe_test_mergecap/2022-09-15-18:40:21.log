@@ -1,0 +1,24 @@
+Thu Sep 15 18:40:24 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 18:45:40 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 18:45:41 2022 - INFO  - Start to run test.
+Usage: mergecap [options] -w <outfile>|- <infile> [<infile> ...]
+Mergecap (Wireshark) 3.6.3 (Git commit 6d348e4611e2)
+Thu Sep 15 19:10:22 2022 - ERROR - Timeout : Command 'bash oe_test_mergecap.sh' timed out after 1799.9994296180012 seconds
+Capturing on 'eth0'
+File: testfile1
+
+Packets: 2 
+Packets: 3 
+Packets: 5 
+Packets: 7 
+Packets: 9 
+Packets: 10 
+Packets: 12 
+Packets: 13 
+Packets: 15 
+Packets: 16 
+Packets: 18 
+Packets: 20 
+Packets captured: 20
+Packets received/dropped on interface 'eth0': 20/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Thu Sep 15 19:10:24 2022 - INFO  - Start to restore the test environment.

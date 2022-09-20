@@ -1,0 +1,28 @@
+Fri Sep  9 07:23:56 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:24:04 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:24:10 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:24:11 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:24:12 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 30
+Fri Sep  9 07:24:13 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 32
+  No device found for /dev/.
+Fri Sep  9 07:24:14 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 34
+Fri Sep  9 07:24:15 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 36
+Fri Sep  9 07:24:16 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 38
+Fri Sep  9 07:24:17 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 40
+Fri Sep  9 07:24:18 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 42
+Fri Sep  9 07:24:19 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 44
+Fri Sep  9 07:24:20 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 46
+Fri Sep  9 07:24:21 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 48
+Fri Sep  9 07:24:22 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 50
+Fri Sep  9 07:24:23 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 52
+Fri Sep  9 07:24:24 2022 - ERROR - oe_test_lvm2_vgdisplay_001.sh line 54
+  vgdisplay - Display volume group information
+Fri Sep  9 07:24:25 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:24:26 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:24:26 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:24:28 2022 - WARN  - no thing to do.
+Fri Sep  9 07:24:28 2022 - INFO  - Finish environment cleanup.

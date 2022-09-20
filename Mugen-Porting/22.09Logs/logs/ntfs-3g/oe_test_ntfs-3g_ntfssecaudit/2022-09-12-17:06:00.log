@@ -1,0 +1,198 @@
+Mon Sep 12 17:06:03 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+umount: /mnt/windows: not mounted.
+Mon Sep 12 17:07:15 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:07:16 2022 - INFO  - Start to run test.
+Usage:
+ntfssecaudit v2022.5.17 (libntfs-3g) - Audit security data on a NTFS Volume.
+No errors were found
+No errors were found
+No errors were found
+No errors were found
+Could not open "/dev/"
+Make sure "/dev/" is not mounted
+Could not open volume /dev/
+No errors were found
+Mon Sep 12 17:07:29 2022 - ERROR - Check ntfssecaudit -arv failed.
+Mon Sep 12 17:07:30 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 44
+Could not open "/dev/"
+Make sure "/dev/" is not mounted
+No errors were found
+Mon Sep 12 17:07:30 2022 - ERROR - Check ntfssecaudit -v failed.
+Mon Sep 12 17:07:31 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 46
+Could not open "/dev/"
+Make sure "/dev/" is not mounted
+No errors were found
+Mon Sep 12 17:07:32 2022 - ERROR - Check ntfssecaudit -rv failed.
+Mon Sep 12 17:07:32 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 48
+Could not open "/dev/"
+Make sure "/dev/" is not mounted
+Could not open volume /dev/
+Usage:
+   ntfssecaudit -t
+	run self-tests
+   ntfssecaudit -h [file]
+	display security descriptors within file
+   ntfssecaudit -a[rv] volume
+	audit the volume
+   ntfssecaudit [-v] volume file
+	display the security parameters of file
+   ntfssecaudit -r[v] volume directory
+	display the security parameters of files in directory
+   ntfssecaudit -b[v] volume directory
+        backup the security parameters of files in directory
+   ntfssecaudit -s[ev] volume [backupfile]
+        set the security parameters as indicated in backup file
+        with -e also set extra parameters (Windows attrib)
+   ntfssecaudit volume perms file
+	set the security parameters of file to perms
+   ntfssecaudit -r[v] volume perms directory
+	set the security parameters of files in directory to perms
+   ntfssecaudit -V
+        display version
+   ntfssecaudit -H
+        display usage
+ special cases, do not require being root :
+   ntfssecaudit -u mounted-file
+	get a user mapping proposal applicable to mounted file
+   ntfssecaudit [-v] mounted-file
+	display the security parameters of a mounted file
+   Notes: perms can be an octal mode or a Posix ACL description
+          volume is a partition designator (eg. /dev/sdb2)
+          -v is for verbose, -vv for very verbose
+No errors were found
+Mon Sep 12 17:07:33 2022 - ERROR - Check ntfssecaudit -bv failed.
+Mon Sep 12 17:07:34 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 50
+Could not open "/dev/"
+Make sure "/dev/" is not mounted
+Could not open volume /dev/
+Error code 21 : Is a directory
+Usage:
+   ntfssecaudit -t
+	run self-tests
+   ntfssecaudit -h [file]
+	display security descriptors within file
+   ntfssecaudit -a[rv] volume
+	audit the volume
+   ntfssecaudit [-v] volume file
+	display the security parameters of file
+   ntfssecaudit -r[v] volume directory
+	display the security parameters of files in directory
+   ntfssecaudit -b[v] volume directory
+        backup the security parameters of files in directory
+   ntfssecaudit -s[ev] volume [backupfile]
+        set the security parameters as indicated in backup file
+        with -e also set extra parameters (Windows attrib)
+   ntfssecaudit volume perms file
+	set the security parameters of file to perms
+   ntfssecaudit -r[v] volume perms directory
+	set the security parameters of files in directory to perms
+   ntfssecaudit -V
+        display version
+   ntfssecaudit -H
+        display usage
+ special cases, do not require being root :
+   ntfssecaudit -u mounted-file
+	get a user mapping proposal applicable to mounted file
+   ntfssecaudit [-v] mounted-file
+	display the security parameters of a mounted file
+   Notes: perms can be an octal mode or a Posix ACL description
+          volume is a partition designator (eg. /dev/sdb2)
+          -v is for verbose, -vv for very verbose
+No errors were found
+Mon Sep 12 17:07:35 2022 - ERROR - Check ntfssecaudit -sev failed.
+Mon Sep 12 17:07:35 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 52
+Could not open "/dev/"
+Make sure "/dev/" is not mounted
+Could not open volume /dev/
+Error code 21 : Is a directory
+Usage:
+   ntfssecaudit -t
+	run self-tests
+   ntfssecaudit -h [file]
+	display security descriptors within file
+   ntfssecaudit -a[rv] volume
+	audit the volume
+   ntfssecaudit [-v] volume file
+	display the security parameters of file
+   ntfssecaudit -r[v] volume directory
+	display the security parameters of files in directory
+   ntfssecaudit -b[v] volume directory
+        backup the security parameters of files in directory
+   ntfssecaudit -s[ev] volume [backupfile]
+        set the security parameters as indicated in backup file
+        with -e also set extra parameters (Windows attrib)
+   ntfssecaudit volume perms file
+	set the security parameters of file to perms
+   ntfssecaudit -r[v] volume perms directory
+	set the security parameters of files in directory to perms
+   ntfssecaudit -V
+        display version
+   ntfssecaudit -H
+        display usage
+ special cases, do not require being root :
+   ntfssecaudit -u mounted-file
+	get a user mapping proposal applicable to mounted file
+   ntfssecaudit [-v] mounted-file
+	display the security parameters of a mounted file
+   Notes: perms can be an octal mode or a Posix ACL description
+          volume is a partition designator (eg. /dev/sdb2)
+          -v is for verbose, -vv for very verbose
+No errors were found
+Mon Sep 12 17:07:36 2022 - ERROR - Check ntfssecaudit perms file failed.
+Mon Sep 12 17:07:37 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 54
+Could not open "/dev/"
+Make sure "/dev/" is not mounted
+Could not open volume /dev/
+Error code 21 : Is a directory
+Usage:
+   ntfssecaudit -t
+	run self-tests
+   ntfssecaudit -h [file]
+	display security descriptors within file
+   ntfssecaudit -a[rv] volume
+	audit the volume
+   ntfssecaudit [-v] volume file
+	display the security parameters of file
+   ntfssecaudit -r[v] volume directory
+	display the security parameters of files in directory
+   ntfssecaudit -b[v] volume directory
+        backup the security parameters of files in directory
+   ntfssecaudit -s[ev] volume [backupfile]
+        set the security parameters as indicated in backup file
+        with -e also set extra parameters (Windows attrib)
+   ntfssecaudit volume perms file
+	set the security parameters of file to perms
+   ntfssecaudit -r[v] volume perms directory
+	set the security parameters of files in directory to perms
+   ntfssecaudit -V
+        display version
+   ntfssecaudit -H
+        display usage
+ special cases, do not require being root :
+   ntfssecaudit -u mounted-file
+	get a user mapping proposal applicable to mounted file
+   ntfssecaudit [-v] mounted-file
+	display the security parameters of a mounted file
+   Notes: perms can be an octal mode or a Posix ACL description
+          volume is a partition designator (eg. /dev/sdb2)
+          -v is for verbose, -vv for very verbose
+No errors were found
+Mon Sep 12 17:07:37 2022 - ERROR - Check ntfssecaudit perms directory failed.
+Mon Sep 12 17:07:38 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 56
+Mon Sep 12 17:07:39 2022 - INFO  - End of the test.
+Mon Sep 12 17:07:39 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:07:40 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:08:06 2022 - INFO  - Finish restoring the test environment.

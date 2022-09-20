@@ -1,0 +1,29 @@
+Mon Sep 12 23:30:09 2022 - INFO  - Start testing...
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 23:30:10 2022 - ERROR - rsyslog.service restart failed
+Mon Sep 12 23:30:10 2022 - ERROR - ../common/common_lib.sh line 34
+Unit rsyslog.service could not be found.
+Mon Sep 12 23:30:17 2022 - ERROR - rsyslog.service restart failed
+Mon Sep 12 23:30:18 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop rsyslog.service: Unit rsyslog.service not loaded.
+Mon Sep 12 23:30:18 2022 - ERROR - rsyslog.service stop failed
+Mon Sep 12 23:30:19 2022 - ERROR - ../common/common_lib.sh line 39
+Unit rsyslog.service could not be found.
+Mon Sep 12 23:30:26 2022 - ERROR - rsyslog.service stop failed
+Mon Sep 12 23:30:27 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 23:30:28 2022 - ERROR - rsyslog.service start failed
+Mon Sep 12 23:30:28 2022 - ERROR - ../common/common_lib.sh line 44
+Unit rsyslog.service could not be found.
+Mon Sep 12 23:30:35 2022 - ERROR - rsyslog.service start failed
+Mon Sep 12 23:30:36 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for rsyslog.service: No such file or directory
+Mon Sep 12 23:30:37 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 23:30:38 2022 - ERROR - Job type reload is not applicable for unit rsyslog.service
+Mon Sep 12 23:30:39 2022 - ERROR - ../common/common_lib.sh line 91
+Unit rsyslog.service could not be found.
+Unit rsyslog.service could not be found.
+Mon Sep 12 23:30:40 2022 - INFO  - Finish test!
+Mon Sep 12 23:30:40 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:30:41 2022 - INFO  - oe_test_service_rsyslog.sh post_test

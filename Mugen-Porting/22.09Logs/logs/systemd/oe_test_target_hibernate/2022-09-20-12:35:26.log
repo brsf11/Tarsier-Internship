@@ -1,0 +1,6 @@
+Tue Sep 20 12:35:29 2022 - INFO  - Start testing...
+Tue Sep 20 12:35:30 2022 - INFO  - A special target unit for hibernating the system. This pulls in sleep.target.
+Tue Sep 20 12:35:31 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:35:31 2022 - INFO  - Finish test!
+Tue Sep 20 12:35:32 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:35:32 2022 - INFO  - oe_test_target_hibernate.sh post_test

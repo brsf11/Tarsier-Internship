@@ -1,0 +1,71 @@
+Fri Sep  9 07:21:27 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:21:40 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:21:47 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:21:47 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:21:48 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 31
+Fri Sep  9 07:21:49 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 33
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:21:50 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 35
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  striped: Required device-mapper target(s) not detected in your kernel.
+  Run `lvcreate --help' for more information.
+Fri Sep  9 07:21:51 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 37
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:21:52 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 39
+  TEST MODE: Metadata will NOT be updated and volumes will not be (de)activated.
+oe_test_lvm2_pvmove_001.sh: line 42: [22.09: command not found
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:21:53 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 49
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:22:00 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 52
+  WARNING: File locking is disabled.
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:22:01 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 54
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:22:02 2022 - ERROR - oe_test_lvm2_pvmove_001.sh line 56
+oe_test_lvm2_pvmove_001.sh: line 57: [22.09: command not found
+Fri Sep  9 07:22:03 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:22:04 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:22:04 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:22:06 2022 - WARN  - no thing to do.
+Fri Sep  9 07:22:07 2022 - INFO  - Finish environment cleanup.

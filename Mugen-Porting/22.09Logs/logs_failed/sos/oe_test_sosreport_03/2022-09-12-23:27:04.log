@@ -1,0 +1,154 @@
+Mon Sep 12 23:27:07 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:27:58 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 23:27:59 2022 - INFO  - Start to run test.
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --list-profiles'
+
+sosreport (version 4.0)
+
+The following profiles are available:
+
+ boot            devices, services, systemd, udev
+ container       cgroups, selinux
+ debug           hts
+ desktop         soundcard, x11
+ hardware        block, crypto, devices, hardware, kernel, logs, memory, 
+                 multipath, networking, networkmanager, ntb, openhpi, 
+                 pci, processor, scsi, soundcard, udev, usb, x11
+ identity        krb5, ldap, login, nis, pam, ssh, sudo
+ java            jars
+ kernel          ebpf, kernel, system
+ memory          memory, processor
+ network         ebpf, networking, networkmanager, openssl
+ openshift       selinux
+ packagemanager  dnf, rpm, yum
+ perl            perl
+ security        openssl, pam, selinux, ssh
+ services        nis, ntp, ssh, systemd, sysvipc
+ storage         block, devicemapper, filesys, logs, lvm2, md, 
+                 multipath, scsi, xfs
+ sysmgmt         dnf, ldap, yum
+ system          anacron, cgroups, console, cron, crypto, dbus, devices, 
+                 dnf, ebpf, hardware, host, i18n, kernel, krb5, kvm, 
+                 ldap, libraries, libvirt, login, logrotate, logs, 
+                 memory, multipath, networking, networkmanager, ntp, 
+                 openhpi, pam, pci, process, processor, release, rpm, 
+                 selinux, services, ssh, sudo, system, systemd, sysvipc, 
+                 udev, yum
+ virt            kvm, libvirt, xen
+ webserver       perl
+
+ 20 profiles, 63 plugins
+
+spawn sosreport --log-size 10
+
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --log-size 10'
+
+sosreport (version 4.0)
+
+This command will collect system configuration and diagnostic
+information from this OpenEuler system.
+
+For more information on the openEuler Project visit:
+
+  https://openeuler.org/
+
+The generated archive may contain data considered sensitive and its
+content should be reviewed by the originating organization before being
+passed to any third party.
+
+No changes will be made to system configuration.
+
+
+Press ENTER to continue, or CTRL-C to quit.
+Please enter the case id that you are generating this report for []: Mon Sep 12 23:30:45 2022 - ERROR - oe_test_sosreport_03.sh line 41
+spawn sosreport -n dnf,rpm,selinux,dovecot
+
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report -n dnf,rpm,selinux,dovecot'
+
+sosreport (version 4.0)
+
+This command will collect system configuration and diagnostic
+information from this OpenEuler system.
+
+For more information on the openEuler Project visit:
+
+  https://openeuler.org/
+
+The generated archive may contain data considered sensitive and its
+content should be reviewed by the originating organization before being
+passed to any third party.
+
+No changes will be made to system configuration.
+
+
+Press ENTER to continue, or CTRL-C to quit.
+Please enter the case id that you are generating this report for []: Mon Sep 12 23:33:05 2022 - ERROR - oe_test_sosreport_03.sh line 51
+spawn sosreport --no-report
+
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --no-report'
+
+sosreport (version 4.0)
+
+This command will collect system configuration and diagnostic
+information from this OpenEuler system.
+
+For more information on the openEuler Project visit:
+
+  https://openeuler.org/
+
+The generated archive may contain data considered sensitive and its
+content should be reviewed by the originating organization before being
+passed to any third party.
+
+No changes will be made to system configuration.
+
+
+Press ENTER to continue, or CTRL-C to quit.
+Please enter the case id that you are generating this report for []: Mon Sep 12 23:35:27 2022 - ERROR - oe_test_sosreport_03.sh line 61
+ls: cannot access '/var/tmp/sosreport-localhost-no-report-2022-09-12-*.tar.xz': No such file or directory
+tar: option requires an argument -- 'f'
+Try 'tar --help' or 'tar --usage' for more information.
+spawn sosreport --note testnote
+
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --note testnote'
+
+sosreport (version 4.0)
+
+This command will collect system configuration and diagnostic
+information from this OpenEuler system.
+
+For more information on the openEuler Project visit:
+
+  https://openeuler.org/
+
+The generated archive may contain data considered sensitive and its
+content should be reviewed by the originating organization before being
+passed to any third party.
+
+No changes will be made to system configuration.
+
+
+Press ENTER to continue, or CTRL-C to quit.
+Please enter the case id that you are generating this report for []: Mon Sep 12 23:37:49 2022 - ERROR - oe_test_sosreport_03.sh line 75
+Redirecting to 'sos report -o dnf,rpm,selinux,dovecot --batch --label only-plugins'
+sosreport (version 4.0)
+  Starting 1/4   dnf             [Running: dnf]
+  Starting 2/4   dovecot         [Running: dnf dovecot]
+  Starting 3/4   rpm             [Running: dnf dovecot rpm]
+  Starting 4/4   selinux         [Running: dnf dovecot rpm selinux]
+  Finishing plugins              [Running: dnf rpm selinux]
+  Finishing plugins              [Running: dnf selinux]
+  Finishing plugins              [Running: dnf]
+	/var/tmp/sosreport-openEuler-riscv64-only-plugins-2022-09-12-ewzmonk.tar.xz
+ Size	188.84KiB
+ md5	51be1e447a92dc81f9f239de4b2a3ed9
+Mon Sep 12 23:39:21 2022 - ERROR - oe_test_sosreport_03.sh line 79
+Mon Sep 12 23:39:22 2022 - INFO  - End of the test.
+Mon Sep 12 23:39:22 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:39:23 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:39:47 2022 - INFO  - Finish restoring the test environment.

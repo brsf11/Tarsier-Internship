@@ -1,0 +1,28 @@
+Mon Sep 12 22:43:12 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 22:43:30 2022 - INFO  - pkgs:(rubygem-bundler) is already installed
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Mon Sep 12 22:43:33 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:43:34 2022 - INFO  - Start to run test.
+Resolving dependencies...
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+The platform `test` is unknown to RubyGems and adding it will likely lead to resolution errors
+Resolving dependencies...
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Your platform is: riscv64-linux
+No ruby version specified
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+Updating files in vendor/cache
+Mon Sep 12 22:44:08 2022 - INFO  - End to run test.
+Mon Sep 12 22:44:09 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:44:10 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:44:10 2022 - WARN  - no thing to do.
+Mon Sep 12 22:44:11 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,29 @@
+Tue Sep 20 12:28:36 2022 - INFO  - Start testing...
+Failed to restart systemd-rfkill.socket: Unit systemd-rfkill.socket not found.
+Tue Sep 20 12:28:37 2022 - ERROR - systemd-rfkill.socket restart failed
+Tue Sep 20 12:28:37 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-rfkill.socket could not be found.
+Tue Sep 20 12:28:44 2022 - ERROR - systemd-rfkill.socket restart failed
+Tue Sep 20 12:28:44 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-rfkill.socket: Unit systemd-rfkill.socket not loaded.
+Tue Sep 20 12:28:45 2022 - ERROR - systemd-rfkill.socket stop failed
+Tue Sep 20 12:28:46 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-rfkill.socket could not be found.
+Tue Sep 20 12:28:52 2022 - ERROR - systemd-rfkill.socket stop failed
+Tue Sep 20 12:28:53 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-rfkill.socket: Unit systemd-rfkill.socket not found.
+Tue Sep 20 12:28:54 2022 - ERROR - systemd-rfkill.socket start failed
+Tue Sep 20 12:28:54 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-rfkill.socket could not be found.
+Tue Sep 20 12:29:01 2022 - ERROR - systemd-rfkill.socket start failed
+Tue Sep 20 12:29:01 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-rfkill.socket: No such file or directory
+Tue Sep 20 12:29:02 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-rfkill.socket: Unit systemd-rfkill.socket not found.
+Tue Sep 20 12:29:03 2022 - ERROR - Job type reload is not applicable for unit systemd-rfkill.socket
+Tue Sep 20 12:29:04 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-rfkill.socket could not be found.
+Unit systemd-rfkill.socket could not be found.
+Tue Sep 20 12:29:04 2022 - INFO  - Finish test!
+Tue Sep 20 12:29:05 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:29:06 2022 - INFO  - oe_test_socket_systemd-rfkill.sh post_test

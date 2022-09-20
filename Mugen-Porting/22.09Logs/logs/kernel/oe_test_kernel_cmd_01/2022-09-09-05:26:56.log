@@ -1,0 +1,25 @@
+Fri Sep  9 05:26:59 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 05:27:56 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 05:27:57 2022 - INFO  - Start to run test.
+Usage:	cpupower [-d|--debug] [-c|--cpu cpulist ] <command> [<args>]
+Usage:	cpupower [-d|--debug] [-c|--cpu cpulist ] <command> [<args>]
+analyzing CPU 0:
+Setting cpu: 0
+Error setting new values. Common errors:
+- Do you have proper administration rights? (super-user?)
+- Is the governor you requested available and modprobed?
+- Trying to set an invalid policy?
+- Trying to set a specific frequency, but userspace governor is not available,
+   for example because of hardware which cannot be set to a specific frequency
+   or because the userspace governor isn't loaded?
+Fri Sep  9 05:27:59 2022 - ERROR - oe_test_kernel_cmd_01.sh line 37
+Fri Sep  9 05:28:00 2022 - ERROR - oe_test_kernel_cmd_01.sh line 39
+invalid or unknown argument
+analyzing CPU 0:
+analyzing CPU 0:
+Usage: gpio-event-mon [options]...
+Usage: gpio-hammer [options]...
+Fri Sep  9 05:28:01 2022 - INFO  - End of the test.
+Fri Sep  9 05:28:01 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:28:02 2022 - INFO  - Start to restore the tet environment.
+Fri Sep  9 05:28:24 2022 - INFO  - Finish to restore the tet environment.

@@ -1,0 +1,29 @@
+Mon Sep 12 18:38:09 2022 - INFO  - Start testing...
+Failed to restart restorecond.service: Unit restorecond.service not found.
+Mon Sep 12 18:38:10 2022 - ERROR - restorecond.service restart failed
+Mon Sep 12 18:38:10 2022 - ERROR - ../common/common_lib.sh line 34
+Unit restorecond.service could not be found.
+Mon Sep 12 18:38:17 2022 - ERROR - restorecond.service restart failed
+Mon Sep 12 18:38:18 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop restorecond.service: Unit restorecond.service not loaded.
+Mon Sep 12 18:38:18 2022 - ERROR - restorecond.service stop failed
+Mon Sep 12 18:38:19 2022 - ERROR - ../common/common_lib.sh line 39
+Unit restorecond.service could not be found.
+Mon Sep 12 18:38:26 2022 - ERROR - restorecond.service stop failed
+Mon Sep 12 18:38:26 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start restorecond.service: Unit restorecond.service not found.
+Mon Sep 12 18:38:27 2022 - ERROR - restorecond.service start failed
+Mon Sep 12 18:38:28 2022 - ERROR - ../common/common_lib.sh line 44
+Unit restorecond.service could not be found.
+Mon Sep 12 18:38:34 2022 - ERROR - restorecond.service start failed
+Mon Sep 12 18:38:35 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for restorecond.service: No such file or directory
+Mon Sep 12 18:38:36 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start restorecond.service: Unit restorecond.service not found.
+Mon Sep 12 18:38:37 2022 - ERROR - Job type reload is not applicable for unit restorecond.service
+Mon Sep 12 18:38:37 2022 - ERROR - ../common/common_lib.sh line 91
+Unit restorecond.service could not be found.
+Unit restorecond.service could not be found.
+Mon Sep 12 18:38:38 2022 - INFO  - Finish test!
+Mon Sep 12 18:38:39 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:38:39 2022 - INFO  - oe_test_service_restorecond.sh post_test

@@ -1,0 +1,13 @@
+Thu Sep  8 17:46:30 2022 - INFO  - Start to prepare the test environment.
+Thu Sep  8 17:46:31 2022 - INFO  - End to prepare the test environment.
+Thu Sep  8 17:46:32 2022 - INFO  - Start to run test.
+top
+top
+Attribute "oe" has a 3 byte value for test
+# file: test
+user.oe="extra"
+
+Thu Sep  8 17:46:33 2022 - INFO  - End to run test.
+Thu Sep  8 17:46:33 2022 - INFO  - succeed to execute the case.
+Thu Sep  8 17:46:34 2022 - INFO  - Start to restore the test environment.
+Thu Sep  8 17:46:35 2022 - INFO  - End to restore the test environment.

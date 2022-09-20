@@ -1,0 +1,34 @@
+Fri Sep  9 04:02:13 2022 - INFO  - Start to prepare the database config.
+Fri Sep  9 04:02:39 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 04:02:40 2022 - INFO  - Start to run test.
+oe_test_gnome-shell.sh: line 31: gnome-shell: command not found
+Fri Sep  9 04:02:41 2022 - ERROR - Check gnome-shell --list-mode failed.
+Fri Sep  9 04:02:41 2022 - ERROR - oe_test_gnome-shell.sh line 32
+oe_test_gnome-shell.sh: line 33: gnome-shell: command not found
+Fri Sep  9 04:02:42 2022 - ERROR - Check gnome-shell --version failed.
+Fri Sep  9 04:02:43 2022 - ERROR - oe_test_gnome-shell.sh line 34
+oe_test_gnome-shell.sh: line 35: gnome-shell: command not found
+Fri Sep  9 04:02:44 2022 - ERROR - Check gnome-shell -h failed.
+Fri Sep  9 04:02:44 2022 - ERROR - oe_test_gnome-shell.sh line 36
+oe_test_gnome-shell.sh: line 37: gnome-shell: command not found
+Fri Sep  9 04:02:45 2022 - ERROR - Check gnome-shell --help-all failed.
+Fri Sep  9 04:02:46 2022 - ERROR - oe_test_gnome-shell.sh line 38
+oe_test_gnome-shell.sh: line 39: gnome-shell-perf-tool: command not found
+Fri Sep  9 04:02:47 2022 - ERROR - Check gnome-shell-perf-tool --version failed.
+Fri Sep  9 04:02:47 2022 - ERROR - oe_test_gnome-shell.sh line 40
+oe_test_gnome-shell.sh: line 41: gnome-shell-perf-tool: command not found
+Fri Sep  9 04:02:48 2022 - ERROR - Check gnome-shell-perf-tool -h failed.
+Fri Sep  9 04:02:49 2022 - ERROR - oe_test_gnome-shell.sh line 42
+oe_test_gnome-shell.sh: line 43: gnome-shell-extension-tool: command not found
+Fri Sep  9 04:02:50 2022 - ERROR - Check gnome-shell-extension-tool -h failed.
+Fri Sep  9 04:02:50 2022 - ERROR - oe_test_gnome-shell.sh line 44
+Fri Sep  9 04:02:51 2022 - INFO  - End to run test.
+Fri Sep  9 04:02:52 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:02:52 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:00:15 ago on Fri 09 Sep 2022 04:02:23 AM CST.\nNo match for argument: gnome-shell\nError: Unable to find a match: gnome-shell'
+Fri Sep  9 04:02:55 2022 - INFO  - End to restore the test environment.

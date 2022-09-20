@@ -1,0 +1,33 @@
+Mon Sep 12 19:35:14 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 19:36:48 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 19:36:48 2022 - INFO  - Start testing...
+Job for quota_nld.service failed because the control process exited with error code.
+See "systemctl status quota_nld.service" and "journalctl -xeu quota_nld.service" for details.
+Mon Sep 12 19:36:49 2022 - ERROR - quota_nld.service restart failed
+Mon Sep 12 19:36:50 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 19:36:57 2022 - ERROR - quota_nld.service restart failed
+Mon Sep 12 19:36:57 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 19:37:04 2022 - ERROR - quota_nld.service stop failed
+Mon Sep 12 19:37:05 2022 - ERROR - ../common/common_lib.sh line 42
+Job for quota_nld.service failed because the control process exited with error code.
+See "systemctl status quota_nld.service" and "journalctl -xeu quota_nld.service" for details.
+Mon Sep 12 19:37:06 2022 - ERROR - quota_nld.service start failed
+Mon Sep 12 19:37:06 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 19:37:13 2022 - ERROR - quota_nld.service start failed
+Mon Sep 12 19:37:14 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/quota_nld.service
+Removed /etc/systemd/system/multi-user.target.wants/quota_nld.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/quota_nld.service’: No such file or directory
+Sep 12 19:36:49 openEuler-riscv64 systemd[1]: quota_nld.service: Failed with result 'exit-code'.
+Sep 12 19:36:49 openEuler-riscv64 systemd[1]: Failed to start Disk quota netlink message daemon.
+Sep 12 19:37:05 openEuler-riscv64 systemd[1]: quota_nld.service: Failed with result 'exit-code'.
+Sep 12 19:37:05 openEuler-riscv64 systemd[1]: Failed to start Disk quota netlink message daemon.
+Mon Sep 12 19:37:23 2022 - ERROR - There is an error message for the log of quota_nld.service
+Mon Sep 12 19:37:24 2022 - ERROR - ../common/common_lib.sh line 28
+Job for quota_nld.service failed because the control process exited with error code.
+See "systemctl status quota_nld.service" and "journalctl -xeu quota_nld.service" for details.
+Failed to reload quota_nld.service: Job type reload is not applicable for unit quota_nld.service.
+Mon Sep 12 19:37:25 2022 - INFO  - Finish test!
+Mon Sep 12 19:37:26 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:37:27 2022 - INFO  - start environment cleanup.
+Mon Sep 12 19:37:54 2022 - INFO  - Finish environment cleanup!

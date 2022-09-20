@@ -1,0 +1,6 @@
+Tue Sep 20 12:48:27 2022 - INFO  - Start to run test.
+Tue Sep 20 12:48:28 2022 - INFO  - A special target unit that is pulled in by suspend.target, hibernate.target and hybrid-sleep.target and may be used to hook units into the sleep state logic.
+Tue Sep 20 12:48:29 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:48:29 2022 - INFO  - End of the test.
+Tue Sep 20 12:48:30 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:48:31 2022 - INFO  - oe_test_target_sleep.sh post_test

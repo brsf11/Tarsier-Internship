@@ -1,0 +1,48 @@
+Fri Sep  9 02:26:59 2022 - INFO  - Start to prepare the database config.
+Fri Sep  9 02:32:24 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 02:32:24 2022 - INFO  - Start to run test.
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+Fri Sep  9 02:56:57 2022 - ERROR - Timeout : Command 'bash oe_test_clamav_clamscan_2.sh' timed out after 1799.9993924930004 seconds

@@ -1,0 +1,20 @@
+Fri Sep  9 02:11:32 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:12:24 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:12:25 2022 - INFO  - Start testing...
+Fri Sep  9 02:12:32 2022 - ERROR - dbxtool.service restart failed
+Fri Sep  9 02:12:33 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+Fri Sep  9 02:12:46 2022 - ERROR - dbxtool.service start failed
+Fri Sep  9 02:12:46 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/dbxtool.service
+Removed /etc/systemd/system/multi-user.target.wants/dbxtool.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/dbxtool.service’: No such file or directory
+Failed to reload dbxtool.service: Job type reload is not applicable for unit dbxtool.service.
+     Active: inactive (dead)
+Sep 09 02:12:25 openEuler-riscv64 systemd[1]: Condition check resulted in Secure Boot DBX (blacklist) updater being skipped.
+Sep 09 02:12:39 openEuler-riscv64 systemd[1]: Condition check resulted in Secure Boot DBX (blacklist) updater being skipped.
+Sep 09 02:12:56 openEuler-riscv64 systemd[1]: Condition check resulted in Secure Boot DBX (blacklist) updater being skipped.
+Fri Sep  9 02:12:57 2022 - INFO  - Finish test!
+Fri Sep  9 02:12:58 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:12:58 2022 - INFO  - start environment cleanup.
+Fri Sep  9 02:13:14 2022 - INFO  - Finish environment cleanup!

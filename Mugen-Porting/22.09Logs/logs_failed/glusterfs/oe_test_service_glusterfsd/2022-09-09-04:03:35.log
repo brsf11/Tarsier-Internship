@@ -1,0 +1,35 @@
+Fri Sep  9 04:03:38 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 04:04:16 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:04:17 2022 - INFO  - Start testing...
+Failed to restart glusterfsd.service: Unit glusterfsd.service not found.
+Fri Sep  9 04:04:17 2022 - ERROR - glusterfsd.service restart failed
+Fri Sep  9 04:04:18 2022 - ERROR - ../common/common_lib.sh line 34
+Unit glusterfsd.service could not be found.
+Fri Sep  9 04:04:25 2022 - ERROR - glusterfsd.service restart failed
+Fri Sep  9 04:04:25 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop glusterfsd.service: Unit glusterfsd.service not loaded.
+Fri Sep  9 04:04:26 2022 - ERROR - glusterfsd.service stop failed
+Fri Sep  9 04:04:27 2022 - ERROR - ../common/common_lib.sh line 39
+Unit glusterfsd.service could not be found.
+Fri Sep  9 04:04:34 2022 - ERROR - glusterfsd.service stop failed
+Fri Sep  9 04:04:34 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start glusterfsd.service: Unit glusterfsd.service not found.
+Fri Sep  9 04:04:35 2022 - ERROR - glusterfsd.service start failed
+Fri Sep  9 04:04:36 2022 - ERROR - ../common/common_lib.sh line 44
+Unit glusterfsd.service could not be found.
+Fri Sep  9 04:04:43 2022 - ERROR - glusterfsd.service start failed
+Fri Sep  9 04:04:43 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for glusterfsd.service: No such file or directory
+Fri Sep  9 04:04:44 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start glusterfsd.service: Unit glusterfsd.service not found.
+Failed to reload glusterfsd.service: Unit glusterfsd.service not found.
+Fri Sep  9 04:04:45 2022 - ERROR - glusterfsd.service reload failed
+Fri Sep  9 04:04:46 2022 - ERROR - oe_test_service_glusterfsd.sh line 33
+Unit glusterfsd.service could not be found.
+Fri Sep  9 04:04:47 2022 - ERROR - glusterfsd.service reload causes the service status to change
+Fri Sep  9 04:04:47 2022 - ERROR - oe_test_service_glusterfsd.sh line 35
+Fri Sep  9 04:04:48 2022 - INFO  - Finish test!
+Fri Sep  9 04:04:49 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:04:49 2022 - INFO  - start environment cleanup.
+Failed to stop glusterfsd.service: Unit glusterfsd.service not loaded.
+Fri Sep  9 04:05:03 2022 - INFO  - Finish environment cleanup!

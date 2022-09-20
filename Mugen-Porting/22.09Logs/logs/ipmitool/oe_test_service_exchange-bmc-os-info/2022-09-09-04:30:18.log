@@ -1,0 +1,39 @@
+Fri Sep  9 04:30:21 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 04:30:51 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:30:52 2022 - INFO  - Start testing...
+Failed to restart exchange-bmc-os-info.service: Unit exchange-bmc-os-info.service not found.
+Fri Sep  9 04:30:52 2022 - ERROR - exchange-bmc-os-info.service restart failed
+Fri Sep  9 04:30:53 2022 - ERROR - ../common/common_lib.sh line 34
+Unit exchange-bmc-os-info.service could not be found.
+Fri Sep  9 04:30:59 2022 - ERROR - exchange-bmc-os-info.service restart failed
+Fri Sep  9 04:31:00 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop exchange-bmc-os-info.service: Unit exchange-bmc-os-info.service not loaded.
+Fri Sep  9 04:31:01 2022 - ERROR - exchange-bmc-os-info.service stop failed
+Fri Sep  9 04:31:01 2022 - ERROR - ../common/common_lib.sh line 39
+Unit exchange-bmc-os-info.service could not be found.
+Fri Sep  9 04:31:08 2022 - ERROR - exchange-bmc-os-info.service stop failed
+Fri Sep  9 04:31:09 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start exchange-bmc-os-info.service: Unit exchange-bmc-os-info.service not found.
+Fri Sep  9 04:31:09 2022 - ERROR - exchange-bmc-os-info.service start failed
+Fri Sep  9 04:31:10 2022 - ERROR - ../common/common_lib.sh line 44
+Unit exchange-bmc-os-info.service could not be found.
+Fri Sep  9 04:31:17 2022 - ERROR - exchange-bmc-os-info.service start failed
+Fri Sep  9 04:31:17 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for exchange-bmc-os-info.service: No such file or directory
+Fri Sep  9 04:31:18 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start exchange-bmc-os-info.service: Unit exchange-bmc-os-info.service not found.
+Fri Sep  9 04:31:19 2022 - ERROR - Job type reload is not applicable for unit exchange-bmc-os-info.service
+Fri Sep  9 04:31:20 2022 - ERROR - ../common/common_lib.sh line 91
+Unit exchange-bmc-os-info.service could not be found.
+Unit exchange-bmc-os-info.service could not be found.
+Fri Sep  9 04:31:21 2022 - INFO  - Finish test!
+Fri Sep  9 04:31:21 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:31:22 2022 - INFO  - start environment cleanup.
+Failed to stop exchange-bmc-os-info.service: Unit exchange-bmc-os-info.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:28 ago on Fri 09 Sep 2022 04:29:21 AM CST.\nError: \n Problem: package ipmitool-1.8.18-17.oe2209.riscv64 requires net-snmp, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by net-snmp-1:5.9.1-2.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by net-snmp-1:5.9.1-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 04:31:25 2022 - INFO  - Finish environment cleanup!

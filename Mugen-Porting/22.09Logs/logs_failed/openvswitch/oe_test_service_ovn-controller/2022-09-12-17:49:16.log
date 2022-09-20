@@ -1,0 +1,28 @@
+Mon Sep 12 17:49:18 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:49:42 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:49:43 2022 - INFO  - Start testing...
+oe_test_service_ovn-controller.sh: line 37: service: command not found
+Mon Sep 12 17:49:43 2022 - ERROR - ovn-controller.service restart failed
+Mon Sep 12 17:49:44 2022 - ERROR - oe_test_service_ovn-controller.sh line 38
+oe_test_service_ovn-controller.sh: line 39: service: command not found
+Mon Sep 12 17:49:44 2022 - ERROR - ovn-controller.service stop failed
+Mon Sep 12 17:49:45 2022 - ERROR - oe_test_service_ovn-controller.sh line 40
+oe_test_service_ovn-controller.sh: line 41: service: command not found
+Mon Sep 12 17:49:46 2022 - ERROR - ovn-controller.service start failed
+Mon Sep 12 17:49:46 2022 - ERROR - oe_test_service_ovn-controller.sh line 42
+oe_test_service_ovn-controller.sh: line 43: service: command not found
+Mon Sep 12 17:49:47 2022 - ERROR - ovn-controller.service start failed
+Mon Sep 12 17:49:48 2022 - ERROR - oe_test_service_ovn-controller.sh line 44
+Mon Sep 12 17:49:48 2022 - ERROR - ovn-controller.service reload failed
+Mon Sep 12 17:49:49 2022 - ERROR - oe_test_service_ovn-controller.sh line 48
+Mon Sep 12 17:49:50 2022 - INFO  - Finish test!
+Mon Sep 12 17:49:50 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:49:51 2022 - INFO  - start environment cleanup.
+oe_test_service_ovn-controller.sh: line 54: service: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:11:21 ago on Mon 12 Sep 2022 05:38:20 PM CST.\nNo match for argument: openvswitch-ovn-host\nError: Unable to find a match: openvswitch-ovn-host'
+Mon Sep 12 17:49:54 2022 - INFO  - Finish environment cleanup!

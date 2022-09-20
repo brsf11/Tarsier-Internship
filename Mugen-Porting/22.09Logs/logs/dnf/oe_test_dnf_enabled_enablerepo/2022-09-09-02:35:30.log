@@ -1,0 +1,17 @@
+Fri Sep  9 02:35:33 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:35:33 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:35:34 2022 - INFO  - Start to run test.
+Fri Sep  9 02:35:35 2022 - ERROR - oe_test_dnf_enabled_enablerepo.sh line 32
+Fri Sep  9 02:35:40 2022 - ERROR - oe_test_dnf_enabled_enablerepo.sh line 34
+Fri Sep  9 02:35:41 2022 - ERROR - oe_test_dnf_enabled_enablerepo.sh line 36
+Fri Sep  9 02:35:45 2022 - ERROR - oe_test_dnf_enabled_enablerepo.sh line 38
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No repositories available
+Fri Sep  9 02:35:54 2022 - ERROR - oe_test_dnf_enabled_enablerepo.sh line 44
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: Unknown repo: 'EPOL'
+Fri Sep  9 02:35:59 2022 - ERROR - oe_test_dnf_enabled_enablerepo.sh line 46
+Fri Sep  9 02:35:59 2022 - INFO  - End of the test.
+Fri Sep  9 02:36:00 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:36:01 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 02:36:01 2022 - INFO  - End of restore the test environment.

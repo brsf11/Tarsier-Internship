@@ -1,0 +1,52 @@
+Fri Sep  9 03:44:35 2022 - INFO  - Start environmental preparation.
+Failed to start mariadb.service: Unit mariadb.service not found.
+oe_test_service_garbd.sh: line 26: mysqladmin: command not found
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
+spawn mysql -u root -p123456
+couldn't execute "mysql": no such file or directory
+    while executing
+"spawn mysql -u root -p123456"
+Failed to restart mariadb.service: Unit mariadb.service not found.
+Fri Sep  9 03:45:05 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:45:06 2022 - INFO  - Start testing...
+Failed to restart garbd.service: Unit garbd.service not found.
+Fri Sep  9 03:45:07 2022 - ERROR - garbd.service restart failed
+Fri Sep  9 03:45:07 2022 - ERROR - ../common/common_lib.sh line 34
+Unit garbd.service could not be found.
+Fri Sep  9 03:45:14 2022 - ERROR - garbd.service restart failed
+Fri Sep  9 03:45:15 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop garbd.service: Unit garbd.service not loaded.
+Fri Sep  9 03:45:15 2022 - ERROR - garbd.service stop failed
+Fri Sep  9 03:45:16 2022 - ERROR - ../common/common_lib.sh line 39
+Unit garbd.service could not be found.
+Fri Sep  9 03:45:23 2022 - ERROR - garbd.service stop failed
+Fri Sep  9 03:45:23 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start garbd.service: Unit garbd.service not found.
+Fri Sep  9 03:45:24 2022 - ERROR - garbd.service start failed
+Fri Sep  9 03:45:25 2022 - ERROR - ../common/common_lib.sh line 44
+Unit garbd.service could not be found.
+Fri Sep  9 03:45:32 2022 - ERROR - garbd.service start failed
+Fri Sep  9 03:45:32 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for garbd.service: No such file or directory
+Fri Sep  9 03:45:33 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start garbd.service: Unit garbd.service not found.
+Fri Sep  9 03:45:34 2022 - ERROR - Job type reload is not applicable for unit garbd.service
+Fri Sep  9 03:45:35 2022 - ERROR - ../common/common_lib.sh line 91
+Unit garbd.service could not be found.
+Unit garbd.service could not be found.
+Fri Sep  9 03:45:36 2022 - INFO  - Finish test!
+Fri Sep  9 03:45:36 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:45:37 2022 - INFO  - start environment cleanup.
+Failed to stop garbd.service: Unit garbd.service not loaded.
+Failed to stop mariadb.service: Unit mariadb.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:28 ago on Fri 09 Sep 2022 03:42:35 AM CST.\nError: \n Problem 1: conflicting requests\n  - nothing provides mariadb-connector-c >= 3.0 needed by mariadb-4:10.5.16-1.oe2209.riscv64\n Problem 2: package mariadb-server-galera-4:10.5.16-1.oe2209.riscv64 requires mariadb-server(riscv-64) = 4:10.5.16-1.oe2209, but none of the providers can be installed\n  - package mariadb-server-4:10.5.16-1.oe2209.riscv64 requires mariadb(riscv-64), but none of the providers can be installed\n  - conflicting requests\n  - nothing provides mariadb-connector-c >= 3.0 needed by mariadb-4:10.5.16-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 03:45:41 2022 - INFO  - Finish environment cleanup!

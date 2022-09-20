@@ -1,0 +1,39 @@
+Mon Sep 12 19:30:37 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 19:31:16 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 19:31:16 2022 - INFO  - Start testing...
+Failed to restart qemu-pr-helper.service: Unit qemu-pr-helper.service not found.
+Mon Sep 12 19:31:17 2022 - ERROR - qemu-pr-helper.service restart failed
+Mon Sep 12 19:31:18 2022 - ERROR - ../common/common_lib.sh line 34
+Unit qemu-pr-helper.service could not be found.
+Mon Sep 12 19:31:24 2022 - ERROR - qemu-pr-helper.service restart failed
+Mon Sep 12 19:31:25 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop qemu-pr-helper.service: Unit qemu-pr-helper.service not loaded.
+Mon Sep 12 19:31:26 2022 - ERROR - qemu-pr-helper.service stop failed
+Mon Sep 12 19:31:27 2022 - ERROR - ../common/common_lib.sh line 39
+Unit qemu-pr-helper.service could not be found.
+Mon Sep 12 19:31:33 2022 - ERROR - qemu-pr-helper.service stop failed
+Mon Sep 12 19:31:34 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start qemu-pr-helper.service: Unit qemu-pr-helper.service not found.
+Mon Sep 12 19:31:35 2022 - ERROR - qemu-pr-helper.service start failed
+Mon Sep 12 19:31:35 2022 - ERROR - ../common/common_lib.sh line 44
+Unit qemu-pr-helper.service could not be found.
+Mon Sep 12 19:31:42 2022 - ERROR - qemu-pr-helper.service start failed
+Mon Sep 12 19:31:43 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for qemu-pr-helper.service: No such file or directory
+Mon Sep 12 19:31:43 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start qemu-pr-helper.service: Unit qemu-pr-helper.service not found.
+Mon Sep 12 19:31:44 2022 - ERROR - Job type reload is not applicable for unit qemu-pr-helper.service
+Mon Sep 12 19:31:45 2022 - ERROR - ../common/common_lib.sh line 91
+Unit qemu-pr-helper.service could not be found.
+Unit qemu-pr-helper.service could not be found.
+Mon Sep 12 19:31:46 2022 - INFO  - Finish test!
+Mon Sep 12 19:31:47 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:31:48 2022 - INFO  - start environment cleanup.
+Failed to stop qemu-pr-helper.service: Unit qemu-pr-helper.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:11:49 ago on Mon 12 Sep 2022 07:19:25 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libnuma.so.1()(64bit) needed by qemu-2:6.2.0-24.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.1)(64bit) needed by qemu-2:6.2.0-24.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 19:31:51 2022 - INFO  - Finish environment cleanup!

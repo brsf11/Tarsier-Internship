@@ -1,0 +1,60 @@
+Mon Sep 12 23:14:03 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 23:14:55 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:14:55 2022 - INFO  - Start testing...
+Job for strongswan-swanctl.service failed because the control process exited with error code.
+See "systemctl status strongswan-swanctl.service" and "journalctl -xeu strongswan-swanctl.service" for details.
+Mon Sep 12 23:14:57 2022 - ERROR - strongswan-swanctl.service restart failed
+Mon Sep 12 23:14:58 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 23:15:04 2022 - ERROR - strongswan-swanctl.service restart failed
+Mon Sep 12 23:15:05 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 23:15:12 2022 - ERROR - strongswan-swanctl.service stop failed
+Mon Sep 12 23:15:13 2022 - ERROR - ../common/common_lib.sh line 42
+Job for strongswan-swanctl.service failed because the control process exited with error code.
+See "systemctl status strongswan-swanctl.service" and "journalctl -xeu strongswan-swanctl.service" for details.
+Mon Sep 12 23:15:14 2022 - ERROR - strongswan-swanctl.service start failed
+Mon Sep 12 23:15:15 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 23:15:21 2022 - ERROR - strongswan-swanctl.service start failed
+Mon Sep 12 23:15:22 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/strongswan-swanctl.service
+Removed /etc/systemd/system/multi-user.target.wants/strongswan-swanctl.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/strongswan-swanctl.service’: No such file or directory
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: installing IKE bypass policy failed
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: installing IKE bypass policy failed
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: enabling UDP decapsulation for IPv6 on port 4500 failed
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: installing IKE bypass policy failed
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: installing IKE bypass policy failed
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: enabling UDP decapsulation for IPv4 on port 4500 failed
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: received netlink error: Operation not supported (95)
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: received netlink error: Operation not supported (95)
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: failed to load 1 critical plugin feature
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: received netlink error: Operation not supported (95)
+Sep 12 23:14:56 openEuler-riscv64 charon-systemd[1042]: received netlink error: Operation not supported (95)
+Sep 12 23:14:56 openEuler-riscv64 systemd[1]: strongswan-swanctl.service: Failed with result 'exit-code'.
+Sep 12 23:14:56 openEuler-riscv64 systemd[1]: Failed to start strongSwan IPsec IKEv1/IKEv2 daemon using swanctl.
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: installing IKE bypass policy failed
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: installing IKE bypass policy failed
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: enabling UDP decapsulation for IPv6 on port 4500 failed
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: installing IKE bypass policy failed
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: installing IKE bypass policy failed
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: enabling UDP decapsulation for IPv4 on port 4500 failed
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: received netlink error: Operation not supported (95)
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: received netlink error: Operation not supported (95)
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: failed to load 1 critical plugin feature
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: received netlink error: Operation not supported (95)
+Sep 12 23:15:13 openEuler-riscv64 charon-systemd[1059]: received netlink error: Operation not supported (95)
+Sep 12 23:15:13 openEuler-riscv64 systemd[1]: strongswan-swanctl.service: Failed with result 'exit-code'.
+Sep 12 23:15:13 openEuler-riscv64 systemd[1]: Failed to start strongSwan IPsec IKEv1/IKEv2 daemon using swanctl.
+Mon Sep 12 23:15:32 2022 - ERROR - There is an error message for the log of strongswan-swanctl.service
+Mon Sep 12 23:15:33 2022 - ERROR - ../common/common_lib.sh line 28
+Job for strongswan-swanctl.service failed because the control process exited with error code.
+See "systemctl status strongswan-swanctl.service" and "journalctl -xeu strongswan-swanctl.service" for details.
+strongswan-swanctl.service is not active, cannot reload.
+Mon Sep 12 23:15:39 2022 - ERROR - strongswan-swanctl.service reload failed
+Mon Sep 12 23:15:40 2022 - ERROR - oe_test_service_strongswan-swanctl.sh line 36
+Mon Sep 12 23:15:41 2022 - ERROR - strongswan-swanctl.service reload causes the service status to change
+Mon Sep 12 23:15:42 2022 - ERROR - oe_test_service_strongswan-swanctl.sh line 38
+Mon Sep 12 23:15:43 2022 - INFO  - Finish test!
+Mon Sep 12 23:15:43 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:15:44 2022 - INFO  - start environment cleanup.
+strongswan-swanctl.service is not active, cannot reload.
+Mon Sep 12 23:16:06 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,25 @@
+Mon Sep 12 16:32:11 2022 - INFO  - Start environmental preparation.
+modprobe: FATAL: Module blocklayoutdriver not found in directory /lib/modules/5.10.0
+Mon Sep 12 16:33:37 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:33:37 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 16:33:38 CST; 6s ago
+Mon Sep 12 16:33:50 2022 - ERROR - nfs-blkmap.service stop failed
+Mon Sep 12 16:33:51 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Mon 2022-09-12 16:33:51 CST; 5s ago
+/etc/systemd/system/nfs-client.target.wants/nfs-blkmap.service
+Removed /etc/systemd/system/nfs-client.target.wants/nfs-blkmap.service.
+find: ‘/etc/systemd/system/nfs-client.target.wants/nfs-blkmap.service’: No such file or directory
+Sep 12 16:33:38 openEuler-riscv64 systemd[1]: nfs-blkmap.service: Failed to parse PID from file /run/blkmapd.pid: Invalid argument
+Sep 12 16:33:38 openEuler-riscv64 blkmapd[1247]: open pipe file /var/lib/nfs/rpc_pipefs/nfs/blocklayout failed: No such file or directory
+Sep 12 16:33:44 openEuler-riscv64 systemd[1]: nfs-blkmap.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 16:33:44 openEuler-riscv64 systemd[1]: nfs-blkmap.service: Failed with result 'exit-code'.
+Sep 12 16:33:51 openEuler-riscv64 systemd[1]: nfs-blkmap.service: Failed to parse PID from file /run/blkmapd.pid: Invalid argument
+Sep 12 16:33:51 openEuler-riscv64 blkmapd[1260]: open pipe file /var/lib/nfs/rpc_pipefs/nfs/blocklayout failed: No such file or directory
+Mon Sep 12 16:34:08 2022 - ERROR - There is an error message for the log of nfs-blkmap.service
+Mon Sep 12 16:34:08 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload nfs-blkmap.service: Job type reload is not applicable for unit nfs-blkmap.service.
+     Active: active (running) since Mon 2022-09-12 16:33:51 CST; 17s ago
+Mon Sep 12 16:34:10 2022 - INFO  - Finish test!
+Mon Sep 12 16:34:10 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:34:11 2022 - INFO  - start environment cleanup.
+Mon Sep 12 16:34:46 2022 - INFO  - Finish environment cleanup!

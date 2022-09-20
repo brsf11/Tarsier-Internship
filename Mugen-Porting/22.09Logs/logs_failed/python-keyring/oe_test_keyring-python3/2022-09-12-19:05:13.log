@@ -1,0 +1,47 @@
+Mon Sep 12 19:05:16 2022 - INFO  - Start to prepare the test environment.
+WARNING: Running pip install with root privileges is generally not a good idea. Try `pip3 install --user` instead.
+Collecting keyrings.alt
+  Using cached keyrings.alt-4.2.0-py3-none-any.whl (20 kB)
+Requirement already satisfied: jaraco.classes in /usr/local/lib/python3.10/site-packages (from keyrings.alt) (3.2.2)
+Requirement already satisfied: more-itertools in /usr/local/lib/python3.10/site-packages (from jaraco.classes->keyrings.alt) (8.14.0)
+Installing collected packages: keyrings.alt
+Successfully installed keyrings.alt-4.2.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Mon Sep 12 19:06:15 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 19:06:16 2022 - INFO  - Start to run test.
+oe_test_keyring-python3.sh: line 33: keyring-python3: command not found
+Mon Sep 12 19:06:17 2022 - ERROR - oe_test_keyring-python3.sh line 34
+oe_test_keyring-python3.sh: line 35: keyring-python3: command not found
+Mon Sep 12 19:06:18 2022 - ERROR - oe_test_keyring-python3.sh line 36
+spawn keyring-python3 set system username -b keyrings.alt.file.PlaintextKeyring
+couldn't execute "keyring-python3": no such file or directory
+    while executing
+"spawn keyring-python3 set system username -b keyrings.alt.file.PlaintextKeyring"
+oe_test_keyring-python3.sh: line 43: keyring-python3: command not found
+Mon Sep 12 19:06:22 2022 - ERROR - oe_test_keyring-python3.sh line 44
+spawn keyring-python3 del system username -b keyrings.alt.file.PlaintextKeyring
+couldn't execute "keyring-python3": no such file or directory
+    while executing
+"spawn keyring-python3 del system username -b keyrings.alt.file.PlaintextKeyring"
+oe_test_keyring-python3.sh: line 50: keyring-python3: command not found
+Mon Sep 12 19:06:23 2022 - ERROR - oe_test_keyring-python3.sh line 51
+spawn keyring-python3 set system username -b keyrings.alt.file.PlaintextKeyring -p demo
+couldn't execute "keyring-python3": no such file or directory
+    while executing
+"spawn keyring-python3 set system username -b keyrings.alt.file.PlaintextKeyring -p demo"
+oe_test_keyring-python3.sh: line 57: keyring-python3: command not found
+Mon Sep 12 19:06:24 2022 - ERROR - oe_test_keyring-python3.sh line 58
+spawn keyring-python3 del system username -b keyrings.alt.file.PlaintextKeyring -p demo
+couldn't execute "keyring-python3": no such file or directory
+    while executing
+"spawn keyring-python3 del system username -b keyrings.alt.file.PlaintextKeyring -p demo"
+oe_test_keyring-python3.sh: line 64: keyring-python3: command not found
+Mon Sep 12 19:06:24 2022 - ERROR - oe_test_keyring-python3.sh line 65
+Mon Sep 12 19:06:25 2022 - INFO  - End of the test.
+Mon Sep 12 19:06:26 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:06:26 2022 - INFO  - Start to restore the test environment.
+Found existing installation: keyrings.alt 4.2.0
+Uninstalling keyrings.alt-4.2.0:
+  Successfully uninstalled keyrings.alt-4.2.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Mon Sep 12 19:06:46 2022 - INFO  - Finish restoring the test environment.

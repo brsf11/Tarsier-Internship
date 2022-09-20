@@ -1,0 +1,32 @@
+Fri Sep  9 04:37:43 2022 - INFO  - Start to prepare the test environment.
+Command line is not complete. Try option "help"
+Fri Sep  9 04:38:20 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:38:20 2022 - INFO  - Start to run test.
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 04:38:24 2022 - ERROR - oe_test_ipvs_ADD_01.sh line 37
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 04:38:25 2022 - ERROR - oe_test_ipvs_ADD_01.sh line 38
+Fri Sep  9 04:38:26 2022 - INFO  - End to run test.
+Fri Sep  9 04:38:26 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:38:27 2022 - INFO  - Start to restore the test environment.
+Command line is not complete. Try option "help"
+Fri Sep  9 04:38:43 2022 - INFO  - End to restore the test environment.

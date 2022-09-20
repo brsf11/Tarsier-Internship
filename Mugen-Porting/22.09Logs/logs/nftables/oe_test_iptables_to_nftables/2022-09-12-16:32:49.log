@@ -1,0 +1,16 @@
+Mon Sep 12 16:32:52 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:34:18 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:34:18 2022 - INFO  - Start executing testcase.
+iptables-translate/1.8.7 Failed to initialize nft: Protocol not supported
+Mon Sep 12 16:34:20 2022 - ERROR - use iptables-translate failed
+Mon Sep 12 16:34:21 2022 - ERROR - oe_test_iptables_to_nftables.sh line 31
+iptables-translate-restore/1.8.7 Failed to initialize nft: Protocol not supported
+Mon Sep 12 16:34:22 2022 - ERROR - exec 'iptables-restore-translate -f /etc/sysconfig/iptables' failed
+Mon Sep 12 16:34:23 2022 - ERROR - oe_test_iptables_to_nftables.sh line 33
+iptables-translate-restore/1.8.7 Failed to initialize nft: Protocol not supported
+Mon Sep 12 16:34:25 2022 - ERROR - exec 'ptables-restore-translate -f /tmp/iptables.dump' failed
+Mon Sep 12 16:34:26 2022 - ERROR - oe_test_iptables_to_nftables.sh line 36
+Mon Sep 12 16:34:26 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 16:34:27 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:34:28 2022 - INFO  - start environment cleanup.
+Mon Sep 12 16:34:44 2022 - INFO  - Finish environment cleanup!

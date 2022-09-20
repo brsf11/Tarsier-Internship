@@ -1,0 +1,10 @@
+Mon Sep 12 19:56:37 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 20:01:18 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 20:01:19 2022 - INFO  - Start to run test.
+Building up file structure...
+Insert custom filters...
+Qt Help Generator version 1.0 (Qt 5.15.2)
+Mon Sep 12 20:01:22 2022 - INFO  - End to run test.
+Mon Sep 12 20:01:22 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 20:01:23 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 20:02:02 2022 - INFO  - End to restore the test environment.

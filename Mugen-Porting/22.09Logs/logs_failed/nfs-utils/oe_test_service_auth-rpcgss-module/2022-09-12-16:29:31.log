@@ -1,0 +1,33 @@
+Mon Sep 12 16:29:34 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:30:57 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:30:58 2022 - INFO  - Start testing...
+Job for auth-rpcgss-module.service failed because the control process exited with error code.
+See "systemctl status auth-rpcgss-module.service" and "journalctl -xeu auth-rpcgss-module.service" for details.
+Mon Sep 12 16:30:59 2022 - ERROR - auth-rpcgss-module.service restart failed
+Mon Sep 12 16:31:00 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 16:31:06 2022 - ERROR - auth-rpcgss-module.service restart failed
+Mon Sep 12 16:31:07 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 16:31:14 2022 - ERROR - auth-rpcgss-module.service stop failed
+Mon Sep 12 16:31:15 2022 - ERROR - ../common/common_lib.sh line 42
+Job for auth-rpcgss-module.service failed because the control process exited with error code.
+See "systemctl status auth-rpcgss-module.service" and "journalctl -xeu auth-rpcgss-module.service" for details.
+Mon Sep 12 16:31:16 2022 - ERROR - auth-rpcgss-module.service start failed
+Mon Sep 12 16:31:16 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 16:31:23 2022 - ERROR - auth-rpcgss-module.service start failed
+Mon Sep 12 16:31:24 2022 - ERROR - ../common/common_lib.sh line 47
+Mon Sep 12 16:31:25 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 12 16:30:58 openEuler-riscv64 systemd[1]: auth-rpcgss-module.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 16:30:58 openEuler-riscv64 systemd[1]: auth-rpcgss-module.service: Failed with result 'exit-code'.
+Sep 12 16:30:58 openEuler-riscv64 systemd[1]: Failed to start Kernel Module supporting RPCSEC_GSS.
+Sep 12 16:31:15 openEuler-riscv64 systemd[1]: auth-rpcgss-module.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 16:31:15 openEuler-riscv64 systemd[1]: auth-rpcgss-module.service: Failed with result 'exit-code'.
+Sep 12 16:31:15 openEuler-riscv64 systemd[1]: Failed to start Kernel Module supporting RPCSEC_GSS.
+Mon Sep 12 16:31:25 2022 - ERROR - There is an error message for the log of auth-rpcgss-module.service
+Mon Sep 12 16:31:26 2022 - ERROR - ../common/common_lib.sh line 28
+Job for auth-rpcgss-module.service failed because the control process exited with error code.
+See "systemctl status auth-rpcgss-module.service" and "journalctl -xeu auth-rpcgss-module.service" for details.
+Failed to reload auth-rpcgss-module.service: Job type reload is not applicable for unit auth-rpcgss-module.service.
+Mon Sep 12 16:31:27 2022 - INFO  - Finish test!
+Mon Sep 12 16:31:28 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:31:29 2022 - INFO  - start environment cleanup.
+Mon Sep 12 16:32:01 2022 - INFO  - Finish environment cleanup!

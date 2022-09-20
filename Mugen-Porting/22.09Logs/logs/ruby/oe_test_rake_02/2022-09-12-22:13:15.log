@@ -1,0 +1,32 @@
+Mon Sep 12 22:13:18 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 22:14:30 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 22:14:31 2022 - INFO  - Start to run test.
+hello
+hello
+Turned off alarm. Would have liked 5 more minutes, though.
+Turned off alarm. Would have liked 5 more minutes, though.
+Turned off alarm. Would have liked 5 more minutes, though.
+Turned off alarm. Would have liked 5 more minutes, though.
+Turned off alarm. Would have liked 5 more minutes, though.
+spawn rake root:clean_tmp -j 4
+Delete ./tmp/file1? y
+y
+Delete ./tmp/file2? Delete ./tmp/file3? y
+q
+Turned off alarm. Would have liked 5 more minutes, though.
+** Invoke morning:ready_for_the_day (first_time)
+** Invoke morning:turn_off_alarm (first_time)
+** Execute (dry run) morning:turn_off_alarm
+** Invoke morning:groom_myself (first_time)
+** Execute (dry run) morning:groom_myself
+** Invoke morning:make_coffee (first_time)
+** Execute (dry run) morning:make_coffee
+** Invoke morning:walk_dog (first_time)
+** Execute (dry run) morning:walk_dog
+** Execute (dry run) morning:ready_for_the_day
+Turned off alarm. Would have liked 5 more minutes, though.
+No Rakefile found (looking for: rakefile, Rakefile, rakefile.rb, Rakefile.rb)
+Mon Sep 12 22:14:56 2022 - INFO  - End of the test.
+Mon Sep 12 22:14:57 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:14:58 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:15:21 2022 - INFO  - Finish restoring the test environment.

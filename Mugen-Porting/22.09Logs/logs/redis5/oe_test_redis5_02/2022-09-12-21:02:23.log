@@ -1,0 +1,22 @@
+Mon Sep 12 21:02:25 2022 - INFO  - Start to prepare the test environment!
+Mon Sep 12 21:03:29 2022 - INFO  - End to prepare the test environment!
+Mon Sep 12 21:03:30 2022 - INFO  - Start executing testcase!
+     Active: active (running) since Mon 2022-09-12 21:03:28 CST; 1s ago
+Mon Sep 12 21:03:39 2022 - ERROR - oe_test_redis5_02.sh line 32
+Mon Sep 12 21:03:44 2022 - ERROR - oe_test_redis5_02.sh line 34
+Mon Sep 12 21:03:45 2022 - ERROR - oe_test_redis5_02.sh line 36
+redis-cli 5.0.14
+spawn redis-cli -h 127.0.0.1 -p 6379
+[6ndump.rdb
+[offset 43622378] Checksum OK
+[offset 43622378] \o/ RDB looks OK! \o/
+OK
+OK
+Empty file: /var/lib/redis/appendonly.aof
+Mon Sep 12 21:04:30 2022 - ERROR - oe_test_redis5_02.sh line 68
+root        1274    1176  0 21:04 ?        00:00:00 grep 1271
+Mon Sep 12 21:04:31 2022 - INFO  - End of testcase execution!
+Mon Sep 12 21:04:31 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:04:32 2022 - INFO  - Start environment cleanup.
+oe_test_redis5_02.sh: line 79: kill: (1271) - No such process
+Mon Sep 12 21:04:58 2022 - INFO  - Finish environment cleanup.

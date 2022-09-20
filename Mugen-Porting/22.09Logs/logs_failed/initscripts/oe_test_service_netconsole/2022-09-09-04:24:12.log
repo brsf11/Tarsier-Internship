@@ -1,0 +1,36 @@
+Fri Sep  9 04:24:15 2022 - INFO  - Start environmental preparation.
+Failed to start rsyslog.service: Unit rsyslog.service not found.
+Fri Sep  9 04:24:51 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:24:52 2022 - INFO  - Start testing...
+Job for netconsole.service failed because the control process exited with error code.
+See "systemctl status netconsole.service" and "journalctl -xeu netconsole.service" for details.
+Fri Sep  9 04:24:53 2022 - ERROR - netconsole.service restart failed
+Fri Sep  9 04:24:54 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Sep  9 04:25:01 2022 - ERROR - netconsole.service restart failed
+Fri Sep  9 04:25:02 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 04:25:08 2022 - ERROR - netconsole.service stop failed
+Fri Sep  9 04:25:09 2022 - ERROR - ../common/common_lib.sh line 42
+Job for netconsole.service failed because the control process exited with error code.
+See "systemctl status netconsole.service" and "journalctl -xeu netconsole.service" for details.
+Fri Sep  9 04:25:10 2022 - ERROR - netconsole.service start failed
+Fri Sep  9 04:25:11 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Sep  9 04:25:18 2022 - ERROR - netconsole.service start failed
+Fri Sep  9 04:25:18 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/netconsole.service
+Removed /etc/systemd/system/multi-user.target.wants/netconsole.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/netconsole.service’: No such file or directory
+Sep 09 04:24:53 openEuler-riscv64 systemd[1]: netconsole.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 04:24:53 openEuler-riscv64 systemd[1]: netconsole.service: Failed with result 'exit-code'.
+Sep 09 04:24:53 openEuler-riscv64 systemd[1]: Failed to start Initializes network console logging of kernel messages.
+Sep 09 04:25:10 openEuler-riscv64 systemd[1]: netconsole.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 04:25:10 openEuler-riscv64 systemd[1]: netconsole.service: Failed with result 'exit-code'.
+Sep 09 04:25:10 openEuler-riscv64 systemd[1]: Failed to start Initializes network console logging of kernel messages.
+Fri Sep  9 04:25:28 2022 - ERROR - There is an error message for the log of netconsole.service
+Fri Sep  9 04:25:29 2022 - ERROR - ../common/common_lib.sh line 28
+Job for netconsole.service failed because the control process exited with error code.
+See "systemctl status netconsole.service" and "journalctl -xeu netconsole.service" for details.
+Failed to reload netconsole.service: Job type reload is not applicable for unit netconsole.service.
+Fri Sep  9 04:25:31 2022 - INFO  - Finish test!
+Fri Sep  9 04:25:31 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:25:32 2022 - INFO  - start environment cleanup.
+Fri Sep  9 04:25:49 2022 - INFO  - Finish environment cleanup!

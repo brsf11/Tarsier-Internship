@@ -1,0 +1,24 @@
+Fri Sep  9 06:54:45 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 06:55:29 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 06:55:29 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 06:55:30 CST; 6s ago
+Warning: Stopping lldpad.service, but it can still be activated by:
+  lldpad.socket
+     Active: inactive (dead) since Fri 2022-09-09 06:55:36 CST; 6s ago
+     Active: active (running) since Fri 2022-09-09 06:55:42 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/lldpad.service
+/etc/systemd/system/sockets.target.wants/lldpad.socket
+Removed /etc/systemd/system/sockets.target.wants/lldpad.socket.
+Removed /etc/systemd/system/multi-user.target.wants/lldpad.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/lldpad.service’: No such file or directory
+find: ‘/etc/systemd/system/sockets.target.wants/lldpad.socket’: No such file or directory
+Sep 09 06:55:36 openEuler-riscv64 lldpad[521]: init_ports: Error adding device sit0
+Fri Sep  9 06:55:58 2022 - ERROR - There is an error message for the log of lldpad.service
+Fri Sep  9 06:55:59 2022 - ERROR - ../common/common_lib.sh line 28
+     Active: active (running) since Fri 2022-09-09 06:55:42 CST; 21s ago
+Fri Sep  9 06:56:05 2022 - INFO  - Finish test!
+Fri Sep  9 06:56:06 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:56:06 2022 - INFO  - start environment cleanup.
+Warning: Stopping lldpad.service, but it can still be activated by:
+  lldpad.socket
+Fri Sep  9 06:56:29 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,94 @@
+Fri Sep  9 07:06:26 2022 - INFO  - Start environmental preparation.
+WARNING: Running pip install with root privileges is generally not a good idea. Try `pip3 install --user` instead.
+Collecting rpmfluff
+  Downloading rpmfluff-0.6.1.tar.gz (70 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pycdlib
+  Downloading pycdlib-1.13.0-py2.py3-none-any.whl (211 kB)
+Collecting ansible_runner
+  Downloading ansible_runner-2.2.1-py3-none-any.whl (78 kB)
+Collecting pyyaml
+  Downloading PyYAML-6.0.tar.gz (124 kB)
+  Installing build dependencies: started
+  Installing build dependencies: still running...
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: six in /usr/lib/python3.10/site-packages (from ansible_runner) (1.16.0)
+Collecting pexpect>=4.5
+  Downloading pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting packaging
+  Downloading packaging-21.3-py3-none-any.whl (40 kB)
+Collecting python-daemon
+  Downloading python_daemon-2.3.1-py2.py3-none-any.whl (34 kB)
+Collecting ptyprocess>=0.5
+  Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /usr/lib/python3.10/site-packages (from packaging->ansible_runner) (3.0.7)
+Collecting docutils
+  Downloading docutils-0.19-py3-none-any.whl (570 kB)
+Collecting lockfile>=0.10
+  Downloading lockfile-0.12.2-py2.py3-none-any.whl (13 kB)
+Requirement already satisfied: setuptools in /usr/lib/python3.10/site-packages (from python-daemon->ansible_runner) (60.9.3)
+Using legacy 'setup.py install' for rpmfluff, since package 'wheel' is not installed.
+Building wheels for collected packages: pyyaml
+  Building wheel for pyyaml (pyproject.toml): started
+  Building wheel for pyyaml (pyproject.toml): finished with status 'done'
+  Created wheel for pyyaml: filename=PyYAML-6.0-cp310-cp310-linux_riscv64.whl size=45332 sha256=c7d1ba5d95dcb3414f343aa7859563f3bffa458d867b0dd816ed5cfecbc69cc0
+  Stored in directory: /root/.cache/pip/wheels/1d/f3/b4/4aea0992adbed14b36ce9c3857d3707c762a4374479230685d
+Successfully built pyyaml
+Installing collected packages: ptyprocess, lockfile, docutils, pyyaml, python-daemon, pexpect, packaging, rpmfluff, pycdlib, ansible-runner
+    Running setup.py install for rpmfluff: started
+    Running setup.py install for rpmfluff: finished with status 'done'
+Successfully installed ansible-runner-2.2.1 docutils-0.19 lockfile-0.12.2 packaging-21.3 pexpect-4.8.0 ptyprocess-0.7.0 pycdlib-1.13.0 python-daemon-2.3.1 pyyaml-6.0 rpmfluff-0.6.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Fri Sep  9 07:11:22 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:11:23 2022 - INFO  - Start testing...
+Failed to restart lorax-composer.service: Unit lorax-composer.service not found.
+Fri Sep  9 07:11:23 2022 - ERROR - lorax-composer.service restart failed
+Fri Sep  9 07:11:24 2022 - ERROR - ../common/common_lib.sh line 34
+Unit lorax-composer.service could not be found.
+Fri Sep  9 07:11:31 2022 - ERROR - lorax-composer.service restart failed
+Fri Sep  9 07:11:32 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop lorax-composer.service: Unit lorax-composer.service not loaded.
+Fri Sep  9 07:11:33 2022 - ERROR - lorax-composer.service stop failed
+Fri Sep  9 07:11:34 2022 - ERROR - ../common/common_lib.sh line 39
+Unit lorax-composer.service could not be found.
+Fri Sep  9 07:11:40 2022 - ERROR - lorax-composer.service stop failed
+Fri Sep  9 07:11:41 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start lorax-composer.service: Unit lorax-composer.service not found.
+Fri Sep  9 07:11:42 2022 - ERROR - lorax-composer.service start failed
+Fri Sep  9 07:11:43 2022 - ERROR - ../common/common_lib.sh line 44
+Unit lorax-composer.service could not be found.
+Fri Sep  9 07:11:50 2022 - ERROR - lorax-composer.service start failed
+Fri Sep  9 07:11:50 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for lorax-composer.service: No such file or directory
+Fri Sep  9 07:11:51 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start lorax-composer.service: Unit lorax-composer.service not found.
+Fri Sep  9 07:11:52 2022 - ERROR - Job type reload is not applicable for unit lorax-composer.service
+Fri Sep  9 07:11:53 2022 - ERROR - ../common/common_lib.sh line 91
+Unit lorax-composer.service could not be found.
+Unit lorax-composer.service could not be found.
+Fri Sep  9 07:11:54 2022 - INFO  - Finish test!
+Fri Sep  9 07:11:55 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:11:56 2022 - INFO  - start environment cleanup.
+Failed to stop lorax-composer.service: Unit lorax-composer.service not loaded.
+Found existing installation: rpmfluff 0.6.1
+Uninstalling rpmfluff-0.6.1:
+  Successfully uninstalled rpmfluff-0.6.1
+Found existing installation: pycdlib 1.13.0
+Uninstalling pycdlib-1.13.0:
+  Successfully uninstalled pycdlib-1.13.0
+Found existing installation: ansible-runner 2.2.1
+Uninstalling ansible-runner-2.2.1:
+  Successfully uninstalled ansible-runner-2.2.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:21 ago on Fri 09 Sep 2022 07:06:36 AM CST.\nError: \n Problem: package anaconda-tui-33.19-43.oe2209.riscv64 requires anaconda-core = 33.19-43.oe2209, but none of the providers can be installed\n  - package lorax-composer-33.6-6.oe2209.riscv64 requires anaconda-tui, but none of the providers can be installed\n  - package anaconda-core-33.19-43.oe2209.riscv64 requires python3-pwquality, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides python(abi) = 3.9 needed by python3-pwquality-1.4.4-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:12:07 2022 - INFO  - Finish environment cleanup!

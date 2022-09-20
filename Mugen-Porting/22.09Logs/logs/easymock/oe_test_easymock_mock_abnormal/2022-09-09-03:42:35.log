@@ -1,0 +1,8 @@
+Fri Sep  9 03:42:38 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 03:46:04 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 03:46:05 2022 - INFO  - Start to run test.
+java.lang.RuntimeException: The id is not exist
+Fri Sep  9 03:46:24 2022 - INFO  - End to run test.
+Fri Sep  9 03:46:25 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 03:46:25 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 03:46:51 2022 - INFO  - End to restore the test environment.

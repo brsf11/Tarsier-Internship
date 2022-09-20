@@ -1,0 +1,3 @@
+oe_test_iperf3_command_client
+oe_test_iperf3_command_clientAndShared
+oe_test_iperf3_command_serverAndBase

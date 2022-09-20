@@ -1,0 +1,63 @@
+Mon Sep 12 22:22:02 2022 - INFO  - Start to prepare the test environment.
+Successfully installed webrick-1.7.0
+Parsing documentation for webrick-1.7.0
+Installing ri documentation for webrick-1.7.0
+Done installing documentation for webrick after 10 seconds
+1 gem installed
+Mon Sep 12 22:32:03 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 22:32:04 2022 - INFO  - Start to run test.
+Usage: ri [options] [name ...]
+ri 6.3.3
+spawn ri --server
+[2022-09-12 22:32:13] INFO  WEBrick 1.7.0
+[2022-09-12 22:32:13] INFO  ruby 3.0.3 (2021-11-24) [riscv64-linux]
+[2022-09-12 22:32:13] INFO  WEBrick::HTTPServer#start: pid=1894 port=8214
+^C[2022-09-12 22:32:14] INFO  going to shutdown ...
+[2022-09-12 22:32:14] INFO  WEBrick::HTTPServer#start done.
+[2022-09-12 22:32:13] INFO  WEBrick 1.7.0
+[2022-09-12 22:32:13] INFO  ruby 3.0.3 (2021-11-24) [riscv64-linux]
+[2022-09-12 22:32:13] INFO  WEBrick::HTTPServer#start: pid=1894 port=8214
+^C[2022-09-12 22:32:14] INFO  going to shutdown ...
+[2022-09-12 22:32:14] INFO  WEBrick::HTTPServer#start done.
+/usr/share/ri/system
+/usr/share/ri/site
+spawn ri --profile
+<internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': [1mcannot load such file -- profile ([1;4mLoadError[m[1m)[m
+	from <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:404:in `initialize'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `new'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `run'
+	from /usr/share/gems/gems/rdoc-6.3.3/exe/ri:12:in `<top (required)>'
+	from /usr/bin/ri:23:in `load'
+	from /usr/bin/ri:23:in `<main>'
+expect: spawn id exp4 not open
+    while executing
+"expect eof"
+<internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': [1mcannot load such file -- profile ([1;4mLoadError[m[1m)[m
+	from <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:404:in `initialize'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `new'
+	from /usr/share/gems/gems/rdoc-6.3.3/lib/rdoc/ri/driver.rb:389:in `run'
+	from /usr/share/gems/gems/rdoc-6.3.3/exe/ri:12:in `<top (required)>'
+	from /usr/bin/ri:23:in `load'
+	from /usr/bin/ri:23:in `<main>'
+expect: spawn id exp4 not open
+
+Generating RI format into /root/GitRepo/mugen-riscv/testcases/cli-test/ruby/oe_test_ri/doc...
+Parsing sources...
+{:ancestors=>{"Customer"=>["Object"]},
+ :attributes=>{},
+ :class_methods=>{"Customer"=>["new"]},
+ :c_class_variables=>{},
+ :c_singleton_class_variables=>{},
+ :encoding=>#<Encoding:UTF-8>,
+ :instance_methods=>{"Customer"=>["display_details", "total_no_of_customers"]},
+ :main=>nil,
+ :modules=>["Customer"],
+ :pages=>[],
+ :title=>nil}
+Mon Sep 12 22:32:26 2022 - INFO  - End of the test.
+Mon Sep 12 22:32:27 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:32:28 2022 - INFO  - Start to restore the test environment.
+Successfully uninstalled webrick-1.7.0
+Mon Sep 12 22:32:45 2022 - INFO  - Finish restoring the test environment.

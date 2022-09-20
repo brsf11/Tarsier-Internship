@@ -1,0 +1,10 @@
+Tue Sep 20 12:20:26 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 12:20:27 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:20:33 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 12:20:40 CST; 5s ago
+Tue Sep 20 12:20:47 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-vconsole-setup.service: Job type reload is not applicable for unit systemd-vconsole-setup.service.
+     Active: active (exited) since Tue 2022-09-20 12:20:40 CST; 6s ago
+Tue Sep 20 12:20:48 2022 - INFO  - Finish test!
+Tue Sep 20 12:20:48 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:20:49 2022 - INFO  - oe_test_service_systemd-vconsole-setup.sh post_test

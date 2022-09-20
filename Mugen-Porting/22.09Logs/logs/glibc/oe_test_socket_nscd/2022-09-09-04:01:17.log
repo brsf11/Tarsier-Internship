@@ -1,0 +1,15 @@
+Fri Sep  9 04:01:20 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 04:01:51 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:01:52 2022 - INFO  - Start to run test.
+     Active: active (listening) since Fri 2022-09-09 04:01:52 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Fri 2022-09-09 04:02:05 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/nscd.socket
+Removed /etc/systemd/system/sockets.target.wants/nscd.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/nscd.socket’: No such file or directory
+Failed to reload nscd.socket: Job type reload is not applicable for unit nscd.socket.
+     Active: active (listening) since Fri 2022-09-09 04:02:05 CST; 15s ago
+Fri Sep  9 04:02:21 2022 - INFO  - End of the test.
+Fri Sep  9 04:02:22 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 04:02:23 2022 - INFO  - start environment cleanup.
+Fri Sep  9 04:02:37 2022 - INFO  - Finish environment cleanup!

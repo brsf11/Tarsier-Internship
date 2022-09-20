@@ -1,0 +1,29 @@
+Fri Sep  9 00:43:56 2022 - INFO  - Start testing...
+Failed to restart chronyd.service: Unit chronyd.service not found.
+Fri Sep  9 00:43:57 2022 - ERROR - chronyd.service restart failed
+Fri Sep  9 00:43:57 2022 - ERROR - ../common/common_lib.sh line 34
+Unit chronyd.service could not be found.
+Fri Sep  9 00:44:04 2022 - ERROR - chronyd.service restart failed
+Fri Sep  9 00:44:05 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop chronyd.service: Unit chronyd.service not loaded.
+Fri Sep  9 00:44:05 2022 - ERROR - chronyd.service stop failed
+Fri Sep  9 00:44:06 2022 - ERROR - ../common/common_lib.sh line 39
+Unit chronyd.service could not be found.
+Fri Sep  9 00:44:13 2022 - ERROR - chronyd.service stop failed
+Fri Sep  9 00:44:13 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start chronyd.service: Unit chronyd.service not found.
+Fri Sep  9 00:44:14 2022 - ERROR - chronyd.service start failed
+Fri Sep  9 00:44:15 2022 - ERROR - ../common/common_lib.sh line 44
+Unit chronyd.service could not be found.
+Fri Sep  9 00:44:22 2022 - ERROR - chronyd.service start failed
+Fri Sep  9 00:44:22 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for chronyd.service: No such file or directory
+Fri Sep  9 00:44:23 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start chronyd.service: Unit chronyd.service not found.
+Fri Sep  9 00:44:24 2022 - ERROR - Job type reload is not applicable for unit chronyd.service
+Fri Sep  9 00:44:25 2022 - ERROR - ../common/common_lib.sh line 91
+Unit chronyd.service could not be found.
+Unit chronyd.service could not be found.
+Fri Sep  9 00:44:26 2022 - INFO  - Finish test!
+Fri Sep  9 00:44:26 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:44:27 2022 - INFO  - oe_test_service_chronyd.sh post_test

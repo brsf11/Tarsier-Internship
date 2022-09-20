@@ -1,0 +1,29 @@
+Fri Sep  9 04:30:41 2022 - INFO  - Start testing...
+Failed to restart iprupdate.service: Unit iprupdate.service not found.
+Fri Sep  9 04:30:41 2022 - ERROR - iprupdate.service restart failed
+Fri Sep  9 04:30:42 2022 - ERROR - ../common/common_lib.sh line 34
+Unit iprupdate.service could not be found.
+Fri Sep  9 04:30:49 2022 - ERROR - iprupdate.service restart failed
+Fri Sep  9 04:30:49 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop iprupdate.service: Unit iprupdate.service not loaded.
+Fri Sep  9 04:30:50 2022 - ERROR - iprupdate.service stop failed
+Fri Sep  9 04:30:51 2022 - ERROR - ../common/common_lib.sh line 39
+Unit iprupdate.service could not be found.
+Fri Sep  9 04:30:57 2022 - ERROR - iprupdate.service stop failed
+Fri Sep  9 04:30:58 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start iprupdate.service: Unit iprupdate.service not found.
+Fri Sep  9 04:30:59 2022 - ERROR - iprupdate.service start failed
+Fri Sep  9 04:30:59 2022 - ERROR - ../common/common_lib.sh line 44
+Unit iprupdate.service could not be found.
+Fri Sep  9 04:31:06 2022 - ERROR - iprupdate.service start failed
+Fri Sep  9 04:31:06 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for iprupdate.service: No such file or directory
+Fri Sep  9 04:31:07 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start iprupdate.service: Unit iprupdate.service not found.
+Fri Sep  9 04:31:08 2022 - ERROR - Job type reload is not applicable for unit iprupdate.service
+Fri Sep  9 04:31:09 2022 - ERROR - ../common/common_lib.sh line 91
+Unit iprupdate.service could not be found.
+Unit iprupdate.service could not be found.
+Fri Sep  9 04:31:10 2022 - INFO  - Finish test!
+Fri Sep  9 04:31:10 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:31:11 2022 - INFO  - oe_test_service_iprupdate.sh post_test

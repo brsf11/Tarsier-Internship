@@ -1,0 +1,19 @@
+Fri Sep  9 00:52:05 2022 - INFO  - Start to run test.
+oe_test_audit_monitor_dictionary_access.sh: line 25: service: command not found
+oe_test_audit_monitor_dictionary_access.sh: line 26: auditctl: command not found
+Fri Sep  9 00:52:05 2022 - ERROR - delete failed
+Fri Sep  9 00:52:06 2022 - ERROR - oe_test_audit_monitor_dictionary_access.sh line 27
+oe_test_audit_monitor_dictionary_access.sh: line 28: auditctl: command not found
+Fri Sep  9 00:52:07 2022 - ERROR - add failed
+Fri Sep  9 00:52:07 2022 - ERROR - oe_test_audit_monitor_dictionary_access.sh line 29
+oe_test_audit_monitor_dictionary_access.sh: line 30: auditctl: command not found
+Fri Sep  9 00:52:08 2022 - ERROR - change failed
+Fri Sep  9 00:52:09 2022 - ERROR - oe_test_audit_monitor_dictionary_access.sh line 31
+oe_test_audit_monitor_dictionary_access.sh: line 37: ausearch: command not found
+Fri Sep  9 00:52:11 2022 - ERROR - ausearch failed
+Fri Sep  9 00:52:12 2022 - ERROR - oe_test_audit_monitor_dictionary_access.sh line 38
+Fri Sep  9 00:52:13 2022 - INFO  - End to run test.
+Fri Sep  9 00:52:13 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:52:14 2022 - INFO  - Start to restore the test environment.
+oe_test_audit_monitor_dictionary_access.sh: line 44: auditctl: command not found
+Fri Sep  9 00:52:15 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,16 @@
+Fri Sep  9 03:29:01 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 03:29:02 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:29:03 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:29:04 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:29:05 2022 - ERROR - oe_test_firewalld_block_icmp.sh line 39
+sudo: firewall-cmd: command not found
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:29:06 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:29:06 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 03:29:07 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:29:08 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 03:29:09 2022 - INFO  - Finish environment cleanup!

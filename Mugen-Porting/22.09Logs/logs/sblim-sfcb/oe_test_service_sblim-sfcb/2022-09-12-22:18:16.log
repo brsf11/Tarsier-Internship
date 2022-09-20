@@ -1,0 +1,15 @@
+Mon Sep 12 22:18:19 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 22:19:46 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 22:19:46 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 22:19:47 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Mon 2022-09-12 22:19:59 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/sblim-sfcb.service
+Removed /etc/systemd/system/multi-user.target.wants/sblim-sfcb.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/sblim-sfcb.service’: No such file or directory
+Failed to reload sblim-sfcb.service: Job type reload is not applicable for unit sblim-sfcb.service.
+     Active: active (running) since Mon 2022-09-12 22:19:59 CST; 15s ago
+Mon Sep 12 22:20:15 2022 - INFO  - Finish test!
+Mon Sep 12 22:20:16 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:20:17 2022 - INFO  - start environment cleanup.
+Mon Sep 12 22:20:40 2022 - INFO  - Finish environment cleanup!

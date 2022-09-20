@@ -1,0 +1,13 @@
+Fri Sep  9 03:48:46 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 03:48:47 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:48:48 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:48:49 2022 - ERROR - oe_test_firewalld_start_status.sh line 31
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:48:50 2022 - ERROR - oe_test_firewalld_start_status.sh line 33
+Unit firewalld.service could not be found.
+Fri Sep  9 03:48:51 2022 - ERROR - oe_test_firewalld_start_status.sh line 35
+Fri Sep  9 03:48:51 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 03:48:52 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:48:53 2022 - INFO  - oe_test_firewalld_start_status.sh post_test

@@ -1,0 +1,28 @@
+Mon Sep 12 17:45:33 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:47:44 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:47:44 2022 - INFO  - Start testing...
+oe_test_service_ovs-vswitchd.sh: line 37: service: command not found
+Mon Sep 12 17:47:45 2022 - ERROR - ovs-vswitchd.service restart failed
+Mon Sep 12 17:47:46 2022 - ERROR - oe_test_service_ovs-vswitchd.sh line 38
+oe_test_service_ovs-vswitchd.sh: line 39: service: command not found
+Mon Sep 12 17:47:46 2022 - ERROR - ovs-vswitchd.service stop failed
+Mon Sep 12 17:47:47 2022 - ERROR - oe_test_service_ovs-vswitchd.sh line 40
+oe_test_service_ovs-vswitchd.sh: line 41: service: command not found
+Mon Sep 12 17:47:48 2022 - ERROR - ovs-vswitchd.service start failed
+Mon Sep 12 17:47:48 2022 - ERROR - oe_test_service_ovs-vswitchd.sh line 42
+oe_test_service_ovs-vswitchd.sh: line 43: service: command not found
+Mon Sep 12 17:47:49 2022 - ERROR - ovs-vswitchd.service start failed
+Mon Sep 12 17:47:49 2022 - ERROR - oe_test_service_ovs-vswitchd.sh line 44
+oe_test_service_ovs-vswitchd.sh: line 47: service: command not found
+oe_test_service_ovs-vswitchd.sh: line 50: service: command not found
+Mon Sep 12 17:47:55 2022 - ERROR - ovs-vswitchd.service reload failed
+Mon Sep 12 17:47:55 2022 - ERROR - oe_test_service_ovs-vswitchd.sh line 51
+oe_test_service_ovs-vswitchd.sh: line 52: service: command not found
+Mon Sep 12 17:47:56 2022 - ERROR - ovs-vswitchd.service reload causes the service status to change
+Mon Sep 12 17:47:57 2022 - ERROR - oe_test_service_ovs-vswitchd.sh line 53
+Mon Sep 12 17:47:58 2022 - INFO  - Finish test!
+Mon Sep 12 17:47:58 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:47:59 2022 - INFO  - start environment cleanup.
+oe_test_service_ovs-vswitchd.sh: line 61: service: command not found
+oe_test_service_ovs-vswitchd.sh: line 62: service: command not found
+Mon Sep 12 17:49:09 2022 - INFO  - Finish environment cleanup!

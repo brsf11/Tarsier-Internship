@@ -1,0 +1,10 @@
+Fri Sep 16 14:51:20 2022 - INFO  - Start to run test.
+------ Shared Memory Segments --------
+STAT
+%CPU
+%MEM
+grep: Invalid range end
+Fri Sep 16 14:51:21 2022 - ERROR - oe_test_system_monitor_share_total.sh line 33
+Fri Sep 16 14:51:22 2022 - INFO  - End to run test.
+Fri Sep 16 14:51:23 2022 - ERROR - failed to execute the case.
+Fri Sep 16 14:51:23 2022 - INFO  - oe_test_system_monitor_share_total.sh post_test

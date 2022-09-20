@@ -1,0 +1,10 @@
+Fri Sep  9 04:04:49 2022 - INFO  - Start environmental preparation.
+Failed to start grub-boot-indeterminate.service: Unit grub-boot-indeterminate.service not found.
+Fri Sep  9 04:04:50 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:04:51 2022 - INFO  - Start testing...
+Unit grub-boot-indeterminate.service could not be found.
+Failed to get unit file state for grub-boot-indeterminate.service: No such file or directory
+Fri Sep  9 04:04:52 2022 - INFO  - Unit is indirect, ignoring.
+Fri Sep  9 04:04:53 2022 - INFO  - Finish test!
+Fri Sep  9 04:04:53 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 04:04:54 2022 - INFO  - oe_test_service_grub-boot-indeterminate.sh post_test

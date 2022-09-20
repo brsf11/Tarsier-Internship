@@ -1,0 +1,8 @@
+Mon Sep 12 17:25:28 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:25:29 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:25:30 2022 - INFO  - Start to run test.
+oe_test_socket_sshd.sh: line 30: test_execution: command not found
+oe_test_socket_sshd.sh: line 31: test_reload: command not found
+Mon Sep 12 17:25:31 2022 - INFO  - End of the test.
+Mon Sep 12 17:25:31 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 17:25:32 2022 - INFO  - oe_test_socket_sshd.sh post_test

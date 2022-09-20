@@ -1,0 +1,20 @@
+Fri Sep 16 14:48:39 2022 - INFO  - Start to prepare the test environment.
+oe_test_net_ncat.sh: line 24: iptables: command not found
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 14:49:43 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 14:49:43 2022 - INFO  - End to prepare the test environment.
+Start executing testcase.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 14:49:44 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 14:49:45 2022 - ERROR - oe_test_net_ncat.sh line 35
+Ncat: You must specify a host to connect to. QUITTING.
+Fri Sep 16 14:49:45 2022 - ERROR - oe_test_net_ncat.sh line 37
+Fri Sep 16 14:49:46 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r root@:/root/ncat_log .
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep 16 14:49:47 2022 - ERROR - Failed in remote SCP operation: 1
+grep: ncat_log: No such file or directory
+Fri Sep 16 14:49:48 2022 - ERROR - Missing actual error code.
+End of testcase execution.
+Fri Sep 16 14:49:48 2022 - ERROR - failed to execute the case.
+Fri Sep 16 14:49:49 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 14:50:20 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 14:50:21 2022 - INFO  - End to restore the test environment.

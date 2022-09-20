@@ -1,0 +1,13 @@
+Tue Sep 20 12:18:49 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:18:50 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:18:51 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 12:18:51 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:18:57 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 12:19:03 CST; 117ms ago
+Tue Sep 20 12:19:04 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-update-done.service: Job type reload is not applicable for unit systemd-update-done.service.
+     Active: active (exited) since Tue 2022-09-20 12:19:03 CST; 1s ago
+Tue Sep 20 12:19:05 2022 - INFO  - Finish test!
+Tue Sep 20 12:19:06 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:19:06 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:19:07 2022 - INFO  - Finish environment cleanup!

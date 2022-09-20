@@ -1,0 +1,48 @@
+Mon Sep 12 18:47:41 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 18:48:27 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:48:28 2022 - INFO  - Start to run test.
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:28 2022 - ERROR - No option test fails
+Mon Sep 12 18:48:29 2022 - ERROR - oe_test_procinfo_02.sh line 47
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:30 2022 - ERROR - Option test -b fails
+Mon Sep 12 18:48:30 2022 - ERROR - oe_test_procinfo_02.sh line 51
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:31 2022 - ERROR - Option test -s fails
+Mon Sep 12 18:48:32 2022 - ERROR - oe_test_procinfo_02.sh line 54
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:32 2022 - ERROR - Option test -m fails
+Mon Sep 12 18:48:33 2022 - ERROR - oe_test_procinfo_02.sh line 57
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:34 2022 - ERROR - Option test -a fails
+Mon Sep 12 18:48:34 2022 - ERROR - oe_test_procinfo_02.sh line 60
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:35 2022 - ERROR - Option test -i fails
+Mon Sep 12 18:48:36 2022 - ERROR - oe_test_procinfo_02.sh line 63
+spawn procinfo -n1
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:37 2022 - ERROR - Option test -nN fails
+Mon Sep 12 18:48:37 2022 - ERROR - oe_test_procinfo_02.sh line 69
+spawn procinfo -d
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:38 2022 - ERROR - Option test -d fails
+Mon Sep 12 18:48:39 2022 - ERROR - oe_test_procinfo_02.sh line 75
+spawn procinfo -D
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:40 2022 - ERROR - Option test -D fails
+Mon Sep 12 18:48:40 2022 - ERROR - oe_test_procinfo_02.sh line 81
+spawn procinfo -SD
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:41 2022 - ERROR - Option test -S fails
+Mon Sep 12 18:48:42 2022 - ERROR - oe_test_procinfo_02.sh line 87
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:48:42 2022 - ERROR - Option test -r fails
+Mon Sep 12 18:48:43 2022 - ERROR - oe_test_procinfo_02.sh line 90
+Mon Sep 12 18:48:44 2022 - ERROR - Option test -Ffile fails
+Mon Sep 12 18:48:44 2022 - ERROR - oe_test_procinfo_02.sh line 93
+This is procinfo version 18 (2001-03-02)
+usage: procinfo [-fsmadiDSbhv] [-nN] [-Ffile]
+Mon Sep 12 18:48:45 2022 - INFO  - End to run test.
+Mon Sep 12 18:48:46 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:48:47 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 18:48:57 2022 - INFO  - End to restore the test environment.

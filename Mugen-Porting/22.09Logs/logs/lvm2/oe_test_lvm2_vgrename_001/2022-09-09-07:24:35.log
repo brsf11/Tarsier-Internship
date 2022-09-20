@@ -1,0 +1,38 @@
+Fri Sep  9 07:24:38 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:24:46 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:24:53 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:24:54 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:24:55 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 30
+Fri Sep  9 07:24:56 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 32
+  No device found for /dev/.
+Fri Sep  9 07:24:57 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 34
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:24:58 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 36
+Fri Sep  9 07:24:59 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 38
+  No command with matching syntax recognised.  Run 'vgrename --help' for more information.
+Fri Sep  9 07:25:00 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 42
+Fri Sep  9 07:25:01 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 44
+  Volume group "new" not found
+  Cannot process volume group new
+Fri Sep  9 07:25:02 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 46
+Fri Sep  9 07:25:03 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 48
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:25:04 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 50
+Fri Sep  9 07:25:05 2022 - ERROR - oe_test_lvm2_vgrename_001.sh line 52
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  LVM version:     2.03.14(2) (2021-10-20)
+  vgrename - Rename a volume group
+Fri Sep  9 07:25:06 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:25:07 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:25:07 2022 - INFO  - Start environment cleanup.
+  Volume group "new" not found
+  Cannot process volume group new
+  No device found for /dev/.
+Fri Sep  9 07:25:09 2022 - WARN  - no thing to do.
+Fri Sep  9 07:25:09 2022 - INFO  - Finish environment cleanup.

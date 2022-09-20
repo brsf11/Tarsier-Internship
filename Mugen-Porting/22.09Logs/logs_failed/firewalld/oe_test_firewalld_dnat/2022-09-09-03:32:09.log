@@ -1,0 +1,84 @@
+Fri Sep  9 03:32:12 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:32:20 2022 - INFO  - pkgs:(net-tools) is already installed
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:32:21 2022 - ERROR - Failed in remote CMD operation:1
+Failed to start firewalld.service: Unit firewalld.service not found.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/get_test_device.py", line 125, in <module>
+    print(get_test_nic(args.node))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/get_test_device.py", line 41, in get_test_nic
+    exitcode, tmpfile = rpm_manage.rpm_install(pkgs="lshw", node=node)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:17 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:33:18 2022 - INFO  - Start executing testcase.
+SIOCSIFADDR: No such device
+: ERROR while getting interface flags: No such device
+SIOCSIFNETMASK: No such device
+: ERROR while getting interface flags: No such device
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:33:20 2022 - ERROR - Failed in remote CMD operation:1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:33:23 2022 - ERROR - Failed in remote CMD operation:1
+net.ipv4.ip_forward = 1
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:24 2022 - ERROR - oe_test_firewalld_dnat.sh line 49
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:25 2022 - ERROR - oe_test_firewalld_dnat.sh line 51
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:26 2022 - ERROR - oe_test_firewalld_dnat.sh line 53
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:27 2022 - ERROR - oe_test_firewalld_dnat.sh line 55
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:28 2022 - ERROR - oe_test_firewalld_dnat.sh line 57
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:28 2022 - ERROR - oe_test_firewalld_dnat.sh line 59
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:29 2022 - ERROR - oe_test_firewalld_dnat.sh line 61
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:30 2022 - ERROR - oe_test_firewalld_dnat.sh line 63
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:31 2022 - ERROR - oe_test_firewalld_dnat.sh line 65
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:32 2022 - ERROR - oe_test_firewalld_dnat.sh line 67
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:33 2022 - ERROR - oe_test_firewalld_dnat.sh line 69
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:34 2022 - ERROR - oe_test_firewalld_dnat.sh line 71
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:35 2022 - ERROR - oe_test_firewalld_dnat.sh line 73
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:35 2022 - ERROR - oe_test_firewalld_dnat.sh line 75
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:36 2022 - ERROR - oe_test_firewalld_dnat.sh line 77
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:33:37 2022 - ERROR - oe_test_firewalld_dnat.sh line 80
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:33:38 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:33:39 2022 - ERROR - oe_test_firewalld_dnat.sh line 82
+Fri Sep  9 03:33:40 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 03:33:41 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:33:41 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Failed to start firewalld.service: Unit firewalld.service not found.
+Warning: Executing wildcard deletion to stay compatible with old scripts.
+         Explicitly specify the prefix length (192.168.100.1/32) to avoid this warning.
+         This special behaviour is likely to disappear in further releases,
+         fix your scripts!
+Cannot find device ""
+Failed to stop httpd.service: Unit httpd.service not loaded.
+Fri Sep  9 03:33:45 2022 - WARN  - no thing to do.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:33:45 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:33:46 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,10 @@
+oe_test_service_plymouth-halt
+oe_test_service_plymouth-kexec
+oe_test_service_plymouth-poweroff
+oe_test_service_plymouth-quit
+oe_test_service_plymouth-quit-wait
+oe_test_service_plymouth-read-write
+oe_test_service_plymouth-reboot
+oe_test_service_plymouth-start
+oe_test_service_plymouth-switch-root
+oe_test_service_systemd-ask-password-plymouth

@@ -1,0 +1,33 @@
+Mon Sep 12 22:06:09 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 22:07:07 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 22:07:08 2022 - INFO  - Start to run test.
+puts Prime.each(10).to_a.join(", ");
+2, 3, 5, 7
+puts "Hello World!";Hello World!
+nil
+nil
+puts "Hello World!";Hello World!
+puts "Hello World!";Hello World!
+hello.rb(main):001:0> #!/usr/bin/ruby
+=> nil
+hello.rb(main):002:0> 
+hello.rb(main):003:0> puts "Hello World!";Hello World!
+=> nil
+hello.rb(main):003:0> 
+    ==>nil
+puts "Hello World!";Hello World!
+    ==>nil
+hello.rb(main):001:0> #!/usr/bin/ruby
+nil
+hello.rb(main):002:0> 
+hello.rb(main):003:0> puts "Hello World!";Hello World!
+nil
+hello.rb(main):003:0> 
+hello.rb(main):001:0> #!/usr/bin/ruby
+hello.rb(main):002:0> 
+hello.rb(main):003:0> puts "Hello World!";Hello World!
+hello.rb(main):003:0> 
+Mon Sep 12 22:07:47 2022 - INFO  - End of the test.
+Mon Sep 12 22:07:48 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:07:48 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:08:12 2022 - INFO  - Finish restoring the test environment.

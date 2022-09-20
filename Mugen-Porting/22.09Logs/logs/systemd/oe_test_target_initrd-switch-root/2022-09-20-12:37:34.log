@@ -1,0 +1,8 @@
+Tue Sep 20 12:37:36 2022 - INFO  - Start testing...
+     Active: active since Tue 2022-09-20 11:45:45 CST; 51min ago
+Tue Sep 20 12:37:37 2022 - ERROR - There is an error for the status of initrd-switch-root.target
+Tue Sep 20 12:37:38 2022 - ERROR - ../common/common_lib.sh line 54
+Tue Sep 20 12:37:39 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:37:39 2022 - INFO  - Finish test!
+Tue Sep 20 12:37:40 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:37:41 2022 - INFO  - oe_test_target_initrd-switch-root.sh post_test

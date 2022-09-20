@@ -1,0 +1,22 @@
+Fri Sep  9 06:50:53 2022 - INFO  - Start environmental preparation.
+oe_test_service_ptp4l.sh: line 25: ethtool: command not found
+Fri Sep  9 06:51:48 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 06:51:48 2022 - INFO  - Start testing...
+Fri Sep  9 06:51:55 2022 - ERROR - ptp4l.service restart failed
+Fri Sep  9 06:51:56 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 06:52:03 2022 - ERROR - ptp4l.service stop failed
+Fri Sep  9 06:52:04 2022 - ERROR - ../common/common_lib.sh line 42
+Fri Sep  9 06:52:10 2022 - ERROR - ptp4l.service start failed
+Fri Sep  9 06:52:11 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/ptp4l.service
+Removed /etc/systemd/system/multi-user.target.wants/ptp4l.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ptp4l.service’: No such file or directory
+Sep 09 06:51:48 openEuler-riscv64 systemd[1]: ptp4l.service: Failed with result 'exit-code'.
+Sep 09 06:52:04 openEuler-riscv64 systemd[1]: ptp4l.service: Failed with result 'exit-code'.
+Fri Sep  9 06:52:21 2022 - ERROR - There is an error message for the log of ptp4l.service
+Fri Sep  9 06:52:22 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload ptp4l.service: Job type reload is not applicable for unit ptp4l.service.
+Fri Sep  9 06:52:23 2022 - INFO  - Finish test!
+Fri Sep  9 06:52:24 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:52:25 2022 - INFO  - start environment cleanup.
+Fri Sep  9 06:52:47 2022 - INFO  - Finish environment cleanup!

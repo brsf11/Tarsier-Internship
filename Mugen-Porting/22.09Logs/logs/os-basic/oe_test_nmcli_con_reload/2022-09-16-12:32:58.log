@@ -1,0 +1,6 @@
+Fri Sep 16 12:33:00 2022 - INFO  - Start to config params of the case.
+
+Fri Sep 16 12:33:45 2022 - INFO  - Start to restore the test environment.
+Error: No connection specified.
+sed: -e expression #1, char 0: no previous regular expression
+Fri Sep 16 12:33:46 2022 - INFO  - End to restore the test environment.

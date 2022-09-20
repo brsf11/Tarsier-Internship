@@ -1,0 +1,30 @@
+Mon Sep 12 19:08:39 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 19:09:42 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 19:09:42 2022 - INFO  - Start testing...
+A dependency job for qemu-guest-agent.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 19:09:43 2022 - ERROR - qemu-guest-agent.service restart failed
+Mon Sep 12 19:09:44 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 19:09:50 2022 - ERROR - qemu-guest-agent.service restart failed
+Mon Sep 12 19:09:51 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+A dependency job for qemu-guest-agent.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 19:19:58 2022 - ERROR - qemu-guest-agent.service start failed
+Mon Sep 12 19:19:59 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 19:20:05 2022 - ERROR - qemu-guest-agent.service start failed
+Mon Sep 12 19:20:06 2022 - ERROR - ../common/common_lib.sh line 47
+Mon Sep 12 19:20:07 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 12 19:09:42 openEuler-riscv64 systemd[1]: Dependency failed for QEMU Guest Agent.
+Sep 12 19:09:42 openEuler-riscv64 systemd[1]: qemu-guest-agent.service: Job qemu-guest-agent.service/start failed with result 'dependency'.
+Sep 12 19:19:57 openEuler-riscv64 systemd[1]: Dependency failed for QEMU Guest Agent.
+Sep 12 19:19:57 openEuler-riscv64 systemd[1]: qemu-guest-agent.service: Job qemu-guest-agent.service/start failed with result 'dependency'.
+Mon Sep 12 19:20:08 2022 - ERROR - There is an error message for the log of qemu-guest-agent.service
+Mon Sep 12 19:20:08 2022 - ERROR - ../common/common_lib.sh line 28
+A dependency job for qemu-guest-agent.service failed. See 'journalctl -xe' for details.
+Failed to reload qemu-guest-agent.service: Job type reload is not applicable for unit qemu-guest-agent.service.
+     Active: inactive (dead)
+Mon Sep 12 19:30:10 2022 - ERROR - qemu-guest-agent.service reload causes the service status to change
+Mon Sep 12 19:30:11 2022 - ERROR - ../common/common_lib.sh line 95
+Mon Sep 12 19:30:11 2022 - INFO  - Finish test!
+Mon Sep 12 19:30:12 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:30:13 2022 - INFO  - start environment cleanup.
+Mon Sep 12 19:30:28 2022 - INFO  - Finish environment cleanup!

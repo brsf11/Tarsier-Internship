@@ -1,0 +1,32 @@
+Mon Sep 12 21:45:22 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 21:46:09 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:46:10 2022 - INFO  - Start to run test.
+spawn su - postgres
+su: user postgres does not exist or the user entry does not contain all the required fields
+initdb
+send: spawn id exp3 not open
+    while executing
+"send "pg_ctl -D /var/lib/pgsql/data -l logfile start\n""
+oe_test_rsyslog_function_postgreSQL.sh: line 48: /usr/share/doc/rsyslog/pgsql-createDB.sql: No such file or directory
+Mon Sep 12 21:46:11 2022 - ERROR - oe_test_rsyslog_function_postgreSQL.sh line 49
+oe_test_rsyslog_function_postgreSQL.sh: line 50: /etc/rsyslog.d/test.conf: No such file or directory
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:46:12 2022 - ERROR - oe_test_rsyslog_function_postgreSQL.sh line 55
+spawn psql -U rsyslog -d Syslog
+couldn't execute "psql": no such file or directory
+    while executing
+"spawn psql -U rsyslog -d Syslog"
+Mon Sep 12 21:46:19 2022 - ERROR - oe_test_rsyslog_function_postgreSQL.sh line 66
+cat: /opt/test.csv: No such file or directory
+Mon Sep 12 21:46:20 2022 - ERROR - oe_test_rsyslog_function_postgreSQL.sh line 69
+Mon Sep 12 21:46:20 2022 - INFO  - End to run test.
+Mon Sep 12 21:46:21 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:46:22 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:05:32 ago on Mon 12 Sep 2022 09:40:36 PM CST.\nNo match for argument: postgresql\nNo match for argument: postgresql-server\nError: Unable to find a match: postgresql postgresql-server'
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:46:25 2022 - INFO  - End to restore the test environment.

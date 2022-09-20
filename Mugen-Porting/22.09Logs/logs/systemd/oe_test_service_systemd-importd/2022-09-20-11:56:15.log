@@ -1,0 +1,33 @@
+Tue Sep 20 11:56:18 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 11:57:08 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 11:57:09 2022 - INFO  - Start testing...
+Failed to restart systemd-importd.service: Unit systemd-importd.service not found.
+Tue Sep 20 11:57:10 2022 - ERROR - systemd-importd.service restart failed
+Tue Sep 20 11:57:10 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-importd.service could not be found.
+Tue Sep 20 11:57:17 2022 - ERROR - systemd-importd.service restart failed
+Tue Sep 20 11:57:18 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-importd.service: Unit systemd-importd.service not loaded.
+Tue Sep 20 11:57:18 2022 - ERROR - systemd-importd.service stop failed
+Tue Sep 20 11:57:19 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-importd.service could not be found.
+Tue Sep 20 11:57:25 2022 - ERROR - systemd-importd.service stop failed
+Tue Sep 20 11:57:26 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-importd.service: Unit systemd-importd.service not found.
+Tue Sep 20 11:57:27 2022 - ERROR - systemd-importd.service start failed
+Tue Sep 20 11:57:27 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-importd.service could not be found.
+Tue Sep 20 11:57:34 2022 - ERROR - systemd-importd.service start failed
+Tue Sep 20 11:57:34 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-importd.service: No such file or directory
+Tue Sep 20 11:57:35 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-importd.service: Unit systemd-importd.service not found.
+Tue Sep 20 11:57:36 2022 - ERROR - Job type reload is not applicable for unit systemd-importd.service
+Tue Sep 20 11:57:37 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-importd.service could not be found.
+Unit systemd-importd.service could not be found.
+Tue Sep 20 11:57:37 2022 - INFO  - Finish test!
+Tue Sep 20 11:57:38 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:57:39 2022 - INFO  - Start environment cleanup.
+oe_test_service_systemd-importd.sh: line 37: systemcyl: command not found
+Tue Sep 20 11:57:53 2022 - INFO  - Finish environment cleanup!

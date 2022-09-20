@@ -1,0 +1,11 @@
+Mon Sep 12 21:47:30 2022 - INFO  - Start to run test.
+oe_test_rsyslog_function_rainerscript.sh: line 23: /etc/rsyslog.d/test.conf: No such file or directory
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:47:31 2022 - ERROR - oe_test_rsyslog_function_rainerscript.sh line 27
+grep: /var/log/test: No such file or directory
+Mon Sep 12 21:47:36 2022 - ERROR - oe_test_rsyslog_function_rainerscript.sh line 33
+Mon Sep 12 21:47:36 2022 - INFO  - End to run test.
+Mon Sep 12 21:47:37 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:47:38 2022 - INFO  - Start to restore the test environment.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:47:39 2022 - INFO  - End to restore the test environment.

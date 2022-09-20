@@ -1,0 +1,17 @@
+Tue Sep 20 11:51:32 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 11:51:32 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 11:51:38 CST; 5s ago
+     Active: active (running) since Tue 2022-09-20 11:51:44 CST; 6s ago
+Tue Sep 20 11:51:51 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 20 11:51:32 openEuler-riscv64 systemctl[3244]: Failed to stop systemd-ask-password-plymouth.path: Unit systemd-ask-password-plymouth.path not loaded.
+Sep 20 11:51:32 openEuler-riscv64 systemctl[3244]: Failed to stop systemd-ask-password-plymouth.service: Unit systemd-ask-password-plymouth.service not loaded.
+Sep 20 11:51:44 openEuler-riscv64 systemctl[3260]: Failed to stop systemd-ask-password-plymouth.path: Unit systemd-ask-password-plymouth.path not loaded.
+Sep 20 11:51:44 openEuler-riscv64 systemctl[3260]: Failed to stop systemd-ask-password-plymouth.service: Unit systemd-ask-password-plymouth.service not loaded.
+Tue Sep 20 11:51:52 2022 - ERROR - There is an error message for the log of systemd-ask-password-wall.service
+Tue Sep 20 11:51:52 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload systemd-ask-password-wall.service: Job type reload is not applicable for unit systemd-ask-password-wall.service.
+     Active: active (running) since Tue 2022-09-20 11:51:44 CST; 8s ago
+Tue Sep 20 11:51:53 2022 - INFO  - Finish test!
+Tue Sep 20 11:51:54 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:51:54 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:51:55 2022 - INFO  - Finish environment cleanup!

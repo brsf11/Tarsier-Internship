@@ -1,0 +1,23 @@
+Fri Sep  9 00:38:41 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 00:40:53 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 00:40:54 2022 - INFO  - Start testing...
+Fri Sep  9 00:41:01 2022 - ERROR - cachefilesd.service restart failed
+Fri Sep  9 00:41:02 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 00:41:09 2022 - ERROR - cachefilesd.service stop failed
+Fri Sep  9 00:41:09 2022 - ERROR - ../common/common_lib.sh line 42
+Fri Sep  9 00:41:16 2022 - ERROR - cachefilesd.service start failed
+Fri Sep  9 00:41:17 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/cachefilesd.service
+Removed /etc/systemd/system/multi-user.target.wants/cachefilesd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/cachefilesd.service’: No such file or directory
+Sep 09 00:40:55 openEuler-riscv64 systemd[1]: cachefilesd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 00:40:55 openEuler-riscv64 systemd[1]: cachefilesd.service: Failed with result 'exit-code'.
+Sep 09 00:41:10 openEuler-riscv64 systemd[1]: cachefilesd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 00:41:10 openEuler-riscv64 systemd[1]: cachefilesd.service: Failed with result 'exit-code'.
+Fri Sep  9 00:41:27 2022 - ERROR - There is an error message for the log of cachefilesd.service
+Fri Sep  9 00:41:27 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload cachefilesd.service: Job type reload is not applicable for unit cachefilesd.service.
+Fri Sep  9 00:41:29 2022 - INFO  - Finish test!
+Fri Sep  9 00:41:29 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:41:30 2022 - INFO  - start environment cleanup.
+Fri Sep  9 00:42:03 2022 - INFO  - Finish environment cleanup!

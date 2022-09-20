@@ -1,0 +1,37 @@
+Mon Sep 12 22:48:02 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 22:49:30 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 22:49:31 2022 - INFO  - Start testing...
+Job for spawn-fcgi.service failed because the control process exited with error code.
+See "systemctl status spawn-fcgi.service" and "journalctl -xeu spawn-fcgi.service" for details.
+Mon Sep 12 22:49:32 2022 - ERROR - spawn-fcgi.service restart failed
+Mon Sep 12 22:49:32 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 22:49:39 2022 - ERROR - spawn-fcgi.service restart failed
+Mon Sep 12 22:49:40 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 22:49:47 2022 - ERROR - spawn-fcgi.service stop failed
+Mon Sep 12 22:49:47 2022 - ERROR - ../common/common_lib.sh line 42
+Job for spawn-fcgi.service failed because the control process exited with error code.
+See "systemctl status spawn-fcgi.service" and "journalctl -xeu spawn-fcgi.service" for details.
+Mon Sep 12 22:49:48 2022 - ERROR - spawn-fcgi.service start failed
+Mon Sep 12 22:49:49 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 22:49:55 2022 - ERROR - spawn-fcgi.service start failed
+Mon Sep 12 22:49:56 2022 - ERROR - ../common/common_lib.sh line 47
+spawn-fcgi.service is not a native service, redirecting to systemd-sysv-install.
+spawn-fcgi.service is not a native service, redirecting to systemd-sysv-install.
+Sep 12 22:49:31 openEuler-riscv64 systemd[1]: spawn-fcgi.service: Control process exited, code=exited, status=1/FAILURE
+Sep 12 22:49:31 openEuler-riscv64 systemd[1]: spawn-fcgi.service: Failed with result 'exit-code'.
+Sep 12 22:49:31 openEuler-riscv64 systemd[1]: Failed to start LSB: Start and stop FastCGI processes.
+Sep 12 22:49:47 openEuler-riscv64 systemd[1]: spawn-fcgi.service: Control process exited, code=exited, status=1/FAILURE
+Sep 12 22:49:47 openEuler-riscv64 systemd[1]: spawn-fcgi.service: Failed with result 'exit-code'.
+Sep 12 22:49:47 openEuler-riscv64 systemd[1]: Failed to start LSB: Start and stop FastCGI processes.
+Mon Sep 12 22:50:15 2022 - ERROR - There is an error message for the log of spawn-fcgi.service
+Mon Sep 12 22:50:15 2022 - ERROR - oe_test_service_spawn-fcgi.sh line 45
+spawn-fcgi.service is not active, cannot reload.
+oe_test_service_spawn-fcgi.sh: line 48: test: -ne: unary operator expected
+Mon Sep 12 22:50:16 2022 - ERROR - spawn-fcgi.service reload failed
+Mon Sep 12 22:50:17 2022 - ERROR - oe_test_service_spawn-fcgi.sh line 49
+Mon Sep 12 22:50:18 2022 - ERROR - spawn-fcgi.service reload causes the service status to change
+Mon Sep 12 22:50:19 2022 - ERROR - oe_test_service_spawn-fcgi.sh line 51
+Mon Sep 12 22:50:20 2022 - INFO  - Finish test!
+Mon Sep 12 22:50:20 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:50:21 2022 - INFO  - start environment cleanup.
+Mon Sep 12 22:51:01 2022 - INFO  - Finish environment cleanup!

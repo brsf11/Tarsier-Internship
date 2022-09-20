@@ -1,0 +1,18 @@
+Mon Sep 12 19:38:03 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 19:39:13 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 19:39:13 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 19:39:14 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Mon 2022-09-12 19:39:26 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/rpc-rquotad.service
+/etc/systemd/system/nfs-server.service.wants/rpc-rquotad.service
+Removed /etc/systemd/system/nfs-server.service.wants/rpc-rquotad.service.
+Removed /etc/systemd/system/multi-user.target.wants/rpc-rquotad.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/rpc-rquotad.service’: No such file or directory
+find: ‘/etc/systemd/system/nfs-server.service.wants/rpc-rquotad.service’: No such file or directory
+Failed to reload rpc-rquotad.service: Job type reload is not applicable for unit rpc-rquotad.service.
+     Active: active (running) since Mon 2022-09-12 19:39:26 CST; 15s ago
+Mon Sep 12 19:39:43 2022 - INFO  - Finish test!
+Mon Sep 12 19:39:43 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 19:39:44 2022 - INFO  - start environment cleanup.
+Mon Sep 12 19:40:00 2022 - INFO  - Finish environment cleanup!

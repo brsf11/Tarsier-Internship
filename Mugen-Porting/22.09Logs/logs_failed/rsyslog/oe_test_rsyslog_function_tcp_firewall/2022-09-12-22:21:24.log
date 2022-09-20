@@ -1,0 +1,23 @@
+Mon Sep 12 22:21:27 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 22:21:45 2022 - INFO  - pkgs:(net-tools) is already installed
+sed: can't read /etc/sysconfig/iptables: No such file or directory
+Failed to restart iptables.service: Unit iptables.service not found.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 22:21:47 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 22:21:47 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:21:48 2022 - INFO  - Start to run test.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:21:49 2022 - ERROR - oe_test_rsyslog_function_tcp_firewall.sh line 37
+Mon Sep 12 22:21:50 2022 - ERROR - oe_test_rsyslog_function_tcp_firewall.sh line 39
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 22:21:51 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 22:21:51 2022 - ERROR - oe_test_rsyslog_function_tcp_firewall.sh line 46
+Mon Sep 12 22:22:13 2022 - ERROR - oe_test_rsyslog_function_tcp_firewall.sh line 49
+Mon Sep 12 22:22:14 2022 - INFO  - End to run test.
+Mon Sep 12 22:22:15 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:22:15 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:22:16 2022 - WARN  - no thing to do.
+sed: can't read /etc/sysconfig/iptables: No such file or directory
+Mon Sep 12 22:22:17 2022 - ERROR - oe_test_rsyslog_function_tcp_firewall.sh line 57
+Failed to restart iptables.service: Unit iptables.service not found.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 22:22:18 2022 - ERROR - Failed in remote CMD operation:1
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:22:19 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,12 @@
+Thu Sep  8 17:30:08 2022 - INFO  - Start environmental preparation.
+0022
+Thu Sep  8 17:30:09 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:30:09 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+getfacl: Removing leading '/' from absolute path names
+getfacl: Removing leading '/' from absolute path names
+Thu Sep  8 17:30:13 2022 - INFO  - Finish testcase execution.
+Thu Sep  8 17:30:14 2022 - INFO  - succeed to execute the case.
+Thu Sep  8 17:30:14 2022 - INFO  - start environment cleanup.
+Thu Sep  8 17:30:17 2022 - INFO  - Finish environment cleanup!

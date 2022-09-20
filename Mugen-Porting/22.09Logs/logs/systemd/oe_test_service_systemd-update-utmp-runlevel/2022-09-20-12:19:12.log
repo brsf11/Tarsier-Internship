@@ -1,0 +1,7 @@
+Tue Sep 20 12:19:15 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:19:16 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:19:16 2022 - INFO  - Start testing...
+Tue Sep 20 12:19:17 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:19:18 2022 - INFO  - Finish test!
+Tue Sep 20 12:19:18 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:19:19 2022 - INFO  - oe_test_service_systemd-update-utmp-runlevel.sh post_test

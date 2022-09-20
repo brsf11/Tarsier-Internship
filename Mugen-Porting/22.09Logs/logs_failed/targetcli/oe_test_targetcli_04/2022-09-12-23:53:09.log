@@ -1,0 +1,60 @@
+Mon Sep 12 23:53:11 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:54:00 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 23:54:01 2022 - INFO  - Start to run test.
+Mon Sep 12 23:54:06 2022 - ERROR - oe_test_targetcli_04.sh line 32
+Usage: /usr/bin/targetcli [--version|--help|CMD|--disable-daemon]
+  --version		Print version
+  --help		Print this information
+  --disable-daemon	Turn-off the global auto use daemon flag
+oe_test_targetcli_04.sh: line 39: [: missing `]'
+Mon Sep 12 23:54:14 2022 - ERROR - oe_test_targetcli_04.sh line 69
+Mon Sep 12 23:54:19 2022 - ERROR - oe_test_targetcli_04.sh line 71
+Mon Sep 12 23:54:23 2022 - ERROR - oe_test_targetcli_04.sh line 73
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:54:28 2022 - ERROR - oe_test_targetcli_04.sh line 75
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/tpg1> " {send "exit\r"}"
+Mon Sep 12 23:54:33 2022 - ERROR - oe_test_targetcli_04.sh line 84
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:54:38 2022 - ERROR - oe_test_targetcli_04.sh line 86
+Mon Sep 12 23:54:43 2022 - ERROR - oe_test_targetcli_04.sh line 88
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:54:52 2022 - ERROR - oe_test_targetcli_04.sh line 92
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "> " {send "exit\r"}"
+Mon Sep 12 23:54:57 2022 - ERROR - oe_test_targetcli_04.sh line 101
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:55:01 2022 - ERROR - oe_test_targetcli_04.sh line 103
+Mon Sep 12 23:55:06 2022 - ERROR - oe_test_targetcli_04.sh line 105
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:55:11 2022 - ERROR - oe_test_targetcli_04.sh line 107
+Mon Sep 12 23:55:16 2022 - ERROR - oe_test_targetcli_04.sh line 109
+/usr/bin/targetcli version 2.1.54
+Mon Sep 12 23:55:24 2022 - ERROR - oe_test_targetcli_04.sh line 113
+Mon Sep 12 23:55:29 2022 - ERROR - oe_test_targetcli_04.sh line 115
+Mon Sep 12 23:55:33 2022 - ERROR - oe_test_targetcli_04.sh line 117
+Mon Sep 12 23:55:38 2022 - ERROR - oe_test_targetcli_04.sh line 119
+Mon Sep 12 23:55:42 2022 - ERROR - oe_test_targetcli_04.sh line 121
+Mon Sep 12 23:55:47 2022 - ERROR - oe_test_targetcli_04.sh line 123
+Mon Sep 12 23:55:55 2022 - ERROR - oe_test_targetcli_04.sh line 126
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:56:04 2022 - ERROR - oe_test_targetcli_04.sh line 130
+grep: /etc/target/saveconfig.json: No such file or directory
+Mon Sep 12 23:56:05 2022 - ERROR - oe_test_targetcli_04.sh line 132
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:56:14 2022 - ERROR - oe_test_targetcli_04.sh line 135
+Mon Sep 12 23:56:18 2022 - ERROR - oe_test_targetcli_04.sh line 137
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:56:27 2022 - ERROR - oe_test_targetcli_04.sh line 141
+Mon Sep 12 23:56:32 2022 - ERROR - oe_test_targetcli_04.sh line 143
+Mon Sep 12 23:56:33 2022 - INFO  - End of the test.
+Mon Sep 12 23:56:33 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:56:34 2022 - INFO  - Start to restore the test environment.
+module 'kmod' has no attribute 'error'
+Mon Sep 12 23:56:59 2022 - INFO  - Finish restoring the test environment.

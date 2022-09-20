@@ -1,0 +1,22 @@
+Fri Sep  9 03:35:05 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:35:54 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:35:55 2022 - INFO  - Start testing...
+Fri Sep  9 03:36:02 2022 - ERROR - bmc-watchdog.service restart failed
+Fri Sep  9 03:36:03 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 03:36:10 2022 - ERROR - bmc-watchdog.service stop failed
+Fri Sep  9 03:36:11 2022 - ERROR - ../common/common_lib.sh line 42
+Fri Sep  9 03:36:18 2022 - ERROR - bmc-watchdog.service start failed
+Fri Sep  9 03:36:18 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/bmc-watchdog.service
+Removed /etc/systemd/system/multi-user.target.wants/bmc-watchdog.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/bmc-watchdog.service’: No such file or directory
+Sep 09 03:35:57 openEuler-riscv64 systemd[1]: bmc-watchdog.service: Failed with result 'core-dump'.
+Sep 09 03:36:12 openEuler-riscv64 systemd[1]: bmc-watchdog.service: Failed with result 'core-dump'.
+Fri Sep  9 03:36:28 2022 - ERROR - There is an error message for the log of bmc-watchdog.service
+Fri Sep  9 03:36:29 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload bmc-watchdog.service: Job type reload is not applicable for unit bmc-watchdog.service.
+     Active: active (running) since Fri 2022-09-09 03:36:30 CST; 330ms ago
+Fri Sep  9 03:36:31 2022 - INFO  - Finish test!
+Fri Sep  9 03:36:31 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:36:32 2022 - INFO  - start environment cleanup.
+Fri Sep  9 03:36:49 2022 - INFO  - Finish environment cleanup!

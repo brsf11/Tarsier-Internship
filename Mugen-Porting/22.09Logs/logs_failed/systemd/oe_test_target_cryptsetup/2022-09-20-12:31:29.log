@@ -1,0 +1,29 @@
+Tue Sep 20 12:31:31 2022 - INFO  - Start testing...
+Failed to restart cryptsetup.target: Unit cryptsetup.target not found.
+Tue Sep 20 12:31:32 2022 - ERROR - cryptsetup.target restart failed
+Tue Sep 20 12:31:33 2022 - ERROR - ../common/common_lib.sh line 34
+Unit cryptsetup.target could not be found.
+Tue Sep 20 12:31:39 2022 - ERROR - cryptsetup.target restart failed
+Tue Sep 20 12:31:40 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop cryptsetup.target: Unit cryptsetup.target not loaded.
+Tue Sep 20 12:31:40 2022 - ERROR - cryptsetup.target stop failed
+Tue Sep 20 12:31:41 2022 - ERROR - ../common/common_lib.sh line 39
+Unit cryptsetup.target could not be found.
+Tue Sep 20 12:31:48 2022 - ERROR - cryptsetup.target stop failed
+Tue Sep 20 12:31:48 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start cryptsetup.target: Unit cryptsetup.target not found.
+Tue Sep 20 12:31:49 2022 - ERROR - cryptsetup.target start failed
+Tue Sep 20 12:31:50 2022 - ERROR - ../common/common_lib.sh line 44
+Unit cryptsetup.target could not be found.
+Tue Sep 20 12:31:56 2022 - ERROR - cryptsetup.target start failed
+Tue Sep 20 12:31:57 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for cryptsetup.target: No such file or directory
+Tue Sep 20 12:31:57 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start cryptsetup.target: Unit cryptsetup.target not found.
+Tue Sep 20 12:31:58 2022 - ERROR - Job type reload is not applicable for unit cryptsetup.target
+Tue Sep 20 12:31:59 2022 - ERROR - ../common/common_lib.sh line 91
+Unit cryptsetup.target could not be found.
+Unit cryptsetup.target could not be found.
+Tue Sep 20 12:32:00 2022 - INFO  - Finish test!
+Tue Sep 20 12:32:00 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:32:01 2022 - INFO  - oe_test_target_cryptsetup.sh post_test

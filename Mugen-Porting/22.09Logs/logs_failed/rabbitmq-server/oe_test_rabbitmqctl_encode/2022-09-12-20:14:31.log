@@ -1,0 +1,77 @@
+Mon Sep 12 20:14:34 2022 - INFO  - Start environmental preparation.
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Mon Sep 12 20:19:33 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:19:33 2022 - INFO  - Start testing...
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: timeout (timed out)
+  * suggestion: check if host 'openEuler-riscv64' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-105-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: av2ZVs+OcNLeW5X6o/s1BA==
+
+Mon Sep 12 20:20:23 2022 - ERROR - oe_test_rabbitmqctl_encode.sh line 35
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * node rabbit@openEuler-riscv64 up, 'rabbit' application running
+
+Current node details:
+ * node name: 'rabbitmqcli-487-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: av2ZVs+OcNLeW5X6o/s1BA==
+
+Mon Sep 12 20:20:59 2022 - ERROR - oe_test_rabbitmqctl_encode.sh line 40
+Setting disk free limit on rabbit@openEuler-riscv64 to 2.0 times the total RAM ...
+{encrypted,<<"y+RoAV963Pk5RUNGmIAAr3KHf9L7+pcJs/ieL+QuS9QgzDJkxLkpGKdlsA7sKVUo">>}
+<<"guest">>
+<<"guest">>
+[sha,sha224,sha256,sha384,sha512,sha3_224,sha3_256,sha3_384,sha3_512,blake2b,
+ aes_128_cfb128,aes_128_cfb8,des_cfb,des_cbc,rc4,aes_ige256,aes_256_ctr,
+ aes_192_ctr,aes_128_ctr,des_ede3_cfb,des_ede3_cbc,aes_128_cbc]
+Mon Sep 12 20:22:13 2022 - INFO  - Finish test!
+Mon Sep 12 20:22:14 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:22:15 2022 - INFO  - start environment cleanup.
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Mon Sep 12 20:23:22 2022 - INFO  - Finish environment cleanup!

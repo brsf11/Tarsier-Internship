@@ -1,0 +1,19 @@
+Tue Sep 20 11:37:05 2022 - INFO  - Start testing...
+Tue Sep 20 11:37:12 2022 - ERROR - console-getty.service restart failed
+Tue Sep 20 11:37:13 2022 - ERROR - ../common/common_lib.sh line 37
+Tue Sep 20 11:37:19 2022 - ERROR - console-getty.service stop failed
+Tue Sep 20 11:37:20 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Tue 2022-09-20 11:37:20 CST; 5s ago
+/etc/systemd/system/getty.target.wants/console-getty.service
+Removed /etc/systemd/system/getty.target.wants/console-getty.service.
+find: ‘/etc/systemd/system/getty.target.wants/console-getty.service’: No such file or directory
+Sep 20 11:37:08 openEuler-riscv64 systemd[1]: console-getty.service: Failed with result 'start-limit-hit'.
+Sep 20 11:37:08 openEuler-riscv64 systemd[1]: Failed to start Console Getty.
+Tue Sep 20 11:37:35 2022 - ERROR - There is an error message for the log of console-getty.service
+Tue Sep 20 11:37:36 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload console-getty.service: Job type reload is not applicable for unit console-getty.service.
+     Active: active (running) since Tue 2022-09-20 11:37:20 CST; 16s ago
+Tue Sep 20 11:37:37 2022 - INFO  - Finish test!
+Tue Sep 20 11:37:38 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:37:39 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:37:39 2022 - INFO  - Finish environment cleanup!

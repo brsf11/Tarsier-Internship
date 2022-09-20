@@ -1,0 +1,15 @@
+Fri Sep  9 03:49:24 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:49:59 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:50:00 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 03:50:00 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-09 03:50:13 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/gmond.service
+Removed /etc/systemd/system/multi-user.target.wants/gmond.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/gmond.service’: No such file or directory
+Failed to reload gmond.service: Job type reload is not applicable for unit gmond.service.
+     Active: active (running) since Fri 2022-09-09 03:50:13 CST; 16s ago
+Fri Sep  9 03:50:29 2022 - INFO  - Finish test!
+Fri Sep  9 03:50:30 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 03:50:31 2022 - INFO  - start environment cleanup.
+Fri Sep  9 03:50:50 2022 - INFO  - Finish environment cleanup!

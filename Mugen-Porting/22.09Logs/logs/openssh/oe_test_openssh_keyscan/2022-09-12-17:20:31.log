@@ -1,0 +1,13 @@
+Mon Sep 12 17:20:34 2022 - INFO  - Start to run test.
+Mon Sep 12 17:20:35 2022 - ERROR - oe_test_openssh_keyscan.sh line 23
+Mon Sep 12 17:20:35 2022 - ERROR - oe_test_openssh_keyscan.sh line 25
+Mon Sep 12 17:20:36 2022 - ERROR - oe_test_openssh_keyscan.sh line 27
+# localhost:22 SSH-2.0-OpenSSH_8.8
+# localhost:22 SSH-2.0-OpenSSH_8.8
+# localhost:22 SSH-2.0-OpenSSH_8.8
+# localhost:22 SSH-2.0-OpenSSH_8.8
+# localhost:22 SSH-2.0-OpenSSH_8.8
+localhost ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILO/RqFeSlk/zBEw77T8wqWoDobwkakYqfUoeRqlo+Kc
+Mon Sep 12 17:20:38 2022 - INFO  - End to run test.
+Mon Sep 12 17:20:38 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:20:39 2022 - INFO  - oe_test_openssh_keyscan.sh post_test

@@ -1,0 +1,45 @@
+Fri Sep  9 07:25:58 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:26:24 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:26:25 2022 - INFO  - Start to run test.
+oe_test_lxc_stop_top.sh: line 30: lxc-create: command not found
+Fri Sep  9 07:26:25 2022 - ERROR - Failed to set up container.
+Fri Sep  9 07:26:26 2022 - ERROR - oe_test_lxc_stop_top.sh line 31
+Fri Sep  9 07:26:27 2022 - ERROR - Check lxc-stop --help failed.
+Fri Sep  9 07:26:27 2022 - ERROR - oe_test_lxc_stop_top.sh line 33
+Fri Sep  9 07:26:28 2022 - ERROR - Check lxc-stop --usage failed.
+Fri Sep  9 07:26:29 2022 - ERROR - oe_test_lxc_stop_top.sh line 35
+oe_test_lxc_stop_top.sh: line 36: lxc-stop: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:26:30 2022 - ERROR - Check lxc-stop --version failed.
+Fri Sep  9 07:26:30 2022 - ERROR - oe_test_lxc_stop_top.sh line 37
+oe_test_lxc_stop_top.sh: line 38: lxc-start: command not found
+Fri Sep  9 07:26:31 2022 - ERROR - Check lxc-start -n failed.
+Fri Sep  9 07:26:32 2022 - ERROR - oe_test_lxc_stop_top.sh line 39
+oe_test_lxc_stop_top.sh: line 40: lxc-stop: command not found
+Fri Sep  9 07:26:32 2022 - ERROR - Check lxc-stop -n failed.
+Fri Sep  9 07:26:33 2022 - ERROR - oe_test_lxc_stop_top.sh line 41
+oe_test_lxc_stop_top.sh: line 42: lxc-info: command not found
+Fri Sep  9 07:26:34 2022 - ERROR - Check lxc-info failed.
+Fri Sep  9 07:26:34 2022 - ERROR - oe_test_lxc_stop_top.sh line 43
+Fri Sep  9 07:26:35 2022 - ERROR - Check lxc-top --help failed.
+Fri Sep  9 07:26:36 2022 - ERROR - oe_test_lxc_stop_top.sh line 46
+Fri Sep  9 07:26:36 2022 - ERROR - Check lxc-top --usage failed.
+Fri Sep  9 07:26:37 2022 - ERROR - oe_test_lxc_stop_top.sh line 48
+oe_test_lxc_stop_top.sh: line 49: lxc-top: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:26:38 2022 - ERROR - Check lxc-top --version failed.
+Fri Sep  9 07:26:39 2022 - ERROR - oe_test_lxc_stop_top.sh line 50
+Fri Sep  9 07:26:39 2022 - INFO  - End to run test.
+Fri Sep  9 07:26:40 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:26:41 2022 - INFO  - Start to restore the tet environment.
+oe_test_lxc_stop_top.sh: line 56: lxc-stop: command not found
+oe_test_lxc_stop_top.sh: line 57: lxc-destroy: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:14:31 ago on Fri 09 Sep 2022 07:11:50 AM CST.\nPackage tar-2:1.34-1.oe2209.riscv64 is already installed.\nError: \n Problem: package lxcfs-tools-0.3-26.oe2209.riscv64 requires iSulad, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides clibcni >= 2.0.7 needed by iSulad-2.0.15-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:26:44 2022 - INFO  - End to restore the tet environment.

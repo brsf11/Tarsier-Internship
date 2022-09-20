@@ -1,0 +1,46 @@
+Fri Sep  9 02:55:46 2022 - INFO  - Start to prepare the test environment.
+Failed to start etcd.service: Unit etcd.service not found.
+Fri Sep  9 02:56:09 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 02:56:10 2022 - INFO  - Start to run test.
+Unit etcd.service could not be found.
+Fri Sep  9 02:56:11 2022 - ERROR - Check etcd.service start failed
+Fri Sep  9 02:56:11 2022 - ERROR - oe_test_etcd_01.sh line 30
+Fri Sep  9 02:56:12 2022 - ERROR - Check etcd --help failed.
+Fri Sep  9 02:56:13 2022 - ERROR - oe_test_etcd_01.sh line 32
+oe_test_etcd_01.sh: line 33: etcd: command not found
+oe_test_etcd_01.sh: line 33: test: : unary operator expected
+Fri Sep  9 02:56:13 2022 - ERROR - Check etcd --version failed.
+Fri Sep  9 02:56:14 2022 - ERROR - oe_test_etcd_01.sh line 34
+oe_test_etcd_01.sh: line 35: etcdctl: command not found
+oe_test_etcd_01.sh: line 35: test: : unary operator expected
+Fri Sep  9 02:56:15 2022 - ERROR - Check etcdctl version failed.
+Fri Sep  9 02:56:15 2022 - ERROR - oe_test_etcd_01.sh line 36
+oe_test_etcd_01.sh: line 37: etcdctl: command not found
+Fri Sep  9 02:56:16 2022 - ERROR - Check etcdctl help failed.
+Fri Sep  9 02:56:17 2022 - ERROR - oe_test_etcd_01.sh line 38
+oe_test_etcd_01.sh: line 39: etcdctl: command not found
+Fri Sep  9 02:56:18 2022 - ERROR - Check etcdctl --endpoints put command failed.
+Fri Sep  9 02:56:18 2022 - ERROR - oe_test_etcd_01.sh line 40
+oe_test_etcd_01.sh: line 41: etcdctl: command not found
+Fri Sep  9 02:56:19 2022 - ERROR - Check etcdctl --endpoints get command failed.
+Fri Sep  9 02:56:20 2022 - ERROR - oe_test_etcd_01.sh line 42
+oe_test_etcd_01.sh: line 43: etcdctl: command not found
+Fri Sep  9 02:56:20 2022 - ERROR - Check etcdctl --endpoints get -w=json command failed.
+Fri Sep  9 02:56:21 2022 - ERROR - oe_test_etcd_01.sh line 44
+oe_test_etcd_01.sh: line 45: etcdctl: command not found
+Fri Sep  9 02:56:22 2022 - ERROR - Check etcdctl --endpoints del command failed.
+Fri Sep  9 02:56:22 2022 - ERROR - oe_test_etcd_01.sh line 46
+oe_test_etcd_01.sh: line 47: etcdctl: command not found
+Fri Sep  9 02:56:23 2022 - ERROR - Check etcdctl --endpoints del command failed.
+Fri Sep  9 02:56:24 2022 - ERROR - oe_test_etcd_01.sh line 48
+Fri Sep  9 02:56:24 2022 - INFO  - End to run test.
+Fri Sep  9 02:56:25 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:56:26 2022 - INFO  - Start to restore the test environment.
+Failed to stop etcd.service: Unit etcd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:01:38 ago on Fri 09 Sep 2022 02:54:29 AM CST.\nNo match for argument: etcd\nError: Unable to find a match: etcd'
+Fri Sep  9 02:56:29 2022 - INFO  - End to restore the test environment.

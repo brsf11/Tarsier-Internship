@@ -1,0 +1,19 @@
+Mon Sep 12 22:23:40 2022 - INFO  - Start to run test.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:23:41 2022 - ERROR - oe_test_rsyslog_function_wildcard.sh line 25
+grep: /var/log/test: No such file or directory
+Mon Sep 12 22:23:46 2022 - ERROR - oe_test_rsyslog_function_wildcard.sh line 30
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:23:47 2022 - ERROR - oe_test_rsyslog_function_wildcard.sh line 33
+logger: unknown facility name: new
+grep: /var/log/test: No such file or directory
+Mon Sep 12 22:23:52 2022 - ERROR - Missing actual error code.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:23:53 2022 - ERROR - oe_test_rsyslog_function_wildcard.sh line 40
+grep: /var/log/test: No such file or directory
+Mon Sep 12 22:23:57 2022 - ERROR - oe_test_rsyslog_function_wildcard.sh line 46
+Mon Sep 12 22:23:58 2022 - INFO  - End to run test.
+Mon Sep 12 22:23:59 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:23:59 2022 - INFO  - Start to restore the test environment.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:24:00 2022 - INFO  - End to restore the test environment.

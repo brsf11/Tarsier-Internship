@@ -1,0 +1,25 @@
+Fri Sep 16 12:54:02 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file tuned.service does not exist.
+mkdir: cannot create directory ‘/etc/tuned/my-profile’: No such file or directory
+oe_test_disk_tuned_new.sh: line 26: tuned-adm: command not found
+oe_test_disk_tuned_new.sh: line 35: /etc/tuned/my-profile/tuned.conf: No such file or directory
+Fri Sep 16 12:55:04 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:55:05 2022 - INFO  - Start to run test.
+oe_test_disk_tuned_new.sh: line 41: tuned-adm: command not found
+Fri Sep 16 12:55:06 2022 - ERROR - oe_test_disk_tuned_new.sh line 42
+oe_test_disk_tuned_new.sh: line 43: tuned-adm: command not found
+Fri Sep 16 12:55:06 2022 - ERROR - oe_test_disk_tuned_new.sh line 44
+oe_test_disk_tuned_new.sh: line 45: tuned-adm: command not found
+Fri Sep 16 12:55:07 2022 - ERROR - oe_test_disk_tuned_new.sh line 46
+oe_test_disk_tuned_new.sh: line 47: tuned-adm: command not found
+Fri Sep 16 12:55:08 2022 - ERROR - oe_test_disk_tuned_new.sh line 48
+Fri Sep 16 12:55:08 2022 - INFO  - End to run test.
+Fri Sep 16 12:55:09 2022 - ERROR - failed to execute the case.
+Fri Sep 16 12:55:10 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 1:12:52 ago on Fri 16 Sep 2022 11:42:11 AM CST.\nError: \n Problem: package tuned-2.10.0-10.oe2209.noarch requires virt-what, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides dmidecode needed by virt-what-1.21-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep 16 12:55:12 2022 - INFO  - End to restore the test environment.

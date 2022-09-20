@@ -1,0 +1,49 @@
+Mon Sep 12 19:24:03 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 19:27:18 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:27:19 2022 - INFO  - Start to run test.
+pmprobe version 5.3.5
+disk.dev.write 1
+disk.dev.write 1
+pmcd.pid 1
+pmprobe: pmLoadDerivedConfig failed: No such file or directory
+Usage: pmprobe [options] [metricname ...]
+
+General options:
+  -a FILE, --archive=FILE
+                        metrics source is a PCP log archive
+  -h HOST, --host=HOST  metrics source is PMCD on host
+  --container=NAME      specify an individual container to be queried
+  --derived=FILE        load derived metric definitions from FILE(s)
+  -L, --local-PMDA      metrics source is local connection to a PMDA
+  -K SPEC, --spec-local=SPEC
+                        optional additional PMDA spec for local connection
+  -n FILE, --namespace=FILE
+                        use an alternative PMNS
+  -O TIME, --origin=TIME
+                        initial sample time within the time window
+  -Z TZ, --timezone=TZ  set reporting timezone
+  -z, --hostzone        set reporting timezone to local time of metrics source
+  -d, --version         display version number and exit
+  -?, --help            show this usage message and exit
+
+Protocol options:
+  -b N, --batch=N       fetch at most N metrics at a time [128]
+
+Reporting options:
+  -f, --force           report all pmGetIndom or pmGetInDomArchive instances
+  -F, --faster          assume given metric names are PMNS leaf nodes
+  -I, --external        list external instance names
+  -i, --internal        list internal instance numbers
+  -V, --verbose         report PDU operations (verbose)
+  -v, --values          list metric values
+Mon Sep 12 19:27:30 2022 - ERROR - oe_test_pmprobe_01.sh line 40
+disk.dev.write 1
+disk.dev.write 1
+disk.dev.write 1
+disk.dev.write 1
+Mon Sep 12 19:27:31 2022 - INFO  - End to run test.
+Mon Sep 12 19:27:32 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:27:32 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 19:28:19 2022 - INFO  - End to restore the test environment.

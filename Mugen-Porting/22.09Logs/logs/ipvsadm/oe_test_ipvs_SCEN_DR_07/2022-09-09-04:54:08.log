@@ -1,0 +1,59 @@
+Fri Sep  9 04:54:10 2022 - INFO  - Start to prepare the test environment.
+Failed to start httpd.service: Unit httpd.service not found.
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+Command line is not complete. Try option "help"
+oe_test_ipvs_SCEN_DR_07.sh: line 28: ipvsadm: command not found
+oe_test_ipvs_SCEN_DR_07.sh: line 29: ipvsadm: command not found
+oe_test_ipvs_SCEN_DR_07.sh: line 30: ipvsadm: command not found
+oe_test_ipvs_SCEN_DR_07.sh: line 31: ipvsadm: command not found
+oe_test_ipvs_SCEN_DR_07.sh: line 32: ipvsadm: command not found
+oe_test_ipvs_SCEN_DR_07.sh: line 34: ipvsadm-save: command not found
+Fri Sep  9 04:54:55 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:54:55 2022 - INFO  - Start to run test.
+Fri Sep  9 04:54:56 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:54:57 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r ../common/LVS_DR_RIP_config.sh @:/tmp/LVS_DR_RIP_config.sh
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 04:54:58 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:54:59 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:55:00 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:55:00 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r ../common/LVS_DR_RIP_config.sh @:/tmp/LVS_DR_RIP_config.sh
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 04:55:01 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:55:02 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:55:03 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:55:04 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r ../common/GET_CURL_RESULT.sh @:/tmp/GET_CURL_RESULT.sh
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 04:55:05 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:55:05 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:55:06 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:55:07 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/result_curl.txt ./result_curl.txt
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 04:55:08 2022 - ERROR - Failed in remote SCP operation: 1
+grep: ./result_curl.txt: No such file or directory
+Fri Sep  9 04:55:09 2022 - ERROR - Missing actual error code.
+grep: ./result_curl.txt: No such file or directory
+Fri Sep  9 04:55:09 2022 - ERROR - Missing actual error code.
+Fri Sep  9 04:55:10 2022 - INFO  - End to run test.
+Fri Sep  9 04:55:11 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 04:55:11 2022 - INFO  - Start to restore the test environment.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Failed to stop httpd.service: Unit httpd.service not loaded.
+oe_test_ipvs_SCEN_DR_07.sh: line 57: ipvsadm: command not found
+Command line is not complete. Try option "help"
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:16:38 ago on Fri 09 Sep 2022 04:37:53 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:55:15 2022 - ERROR - Failed in remote CMD operation:1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:55:16 2022 - ERROR - Failed in remote CMD operation:1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:55:16 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:55:17 2022 - INFO  - End to restore the test environment.

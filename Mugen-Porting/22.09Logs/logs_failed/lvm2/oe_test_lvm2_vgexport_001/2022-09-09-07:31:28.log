@@ -1,0 +1,78 @@
+Fri Sep  9 07:31:31 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:31:45 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:31:53 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:31:54 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:31:55 2022 - ERROR - create PV failed
+Fri Sep  9 07:31:55 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 30
+Fri Sep  9 07:31:56 2022 - ERROR - create PV failed
+Fri Sep  9 07:31:57 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 32
+  No device found for /dev/.
+Fri Sep  9 07:31:58 2022 - ERROR - create VG failed
+Fri Sep  9 07:31:59 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 34
+Fri Sep  9 07:32:00 2022 - ERROR - create VG failed
+Fri Sep  9 07:32:00 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 36
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:01 2022 - ERROR - failed to export VG test
+Fri Sep  9 07:32:02 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 38
+  Volume group "test" not found
+  Cannot process volume group test
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:03 2022 - ERROR - failed to export VG test
+Fri Sep  9 07:32:04 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 41
+  Volume group "test" not found
+  Cannot process volume group test
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:05 2022 - ERROR - failed to export VG test --reportformat basic
+Fri Sep  9 07:32:06 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 44
+  Volume group "test" not found
+  Cannot process volume group test
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:07 2022 - ERROR - failed to export VG test --reportformat basic
+Fri Sep  9 07:32:08 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 47
+  Volume group "test" not found
+  Cannot process volume group test
+  VG name on command line not found in list of VGs: test
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:09 2022 - ERROR - failed to export VG test -v
+Fri Sep  9 07:32:10 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 50
+  Volume group "test" not found
+  Cannot process volume group test
+  TEST MODE: Metadata will NOT be updated and volumes will not be (de)activated.
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:11 2022 - ERROR - failed to export VG test -t
+Fri Sep  9 07:32:12 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 53
+  Volume group "test" not found
+  Cannot process volume group test
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:13 2022 - ERROR - failed to export VG test -q
+Fri Sep  9 07:32:14 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 56
+  vgexport - Unregister volume group(s) from the system
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  LVM version:     2.03.14(2) (2021-10-20)
+  Volume group "test" not found
+  Cannot process volume group test
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:15 2022 - ERROR - failed to export VG test -d
+Fri Sep  9 07:32:16 2022 - ERROR - oe_test_lvm2_vgexport_001.sh line 63
+Fri Sep  9 07:32:17 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:32:17 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:32:18 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:32:20 2022 - WARN  - no thing to do.
+Fri Sep  9 07:32:20 2022 - INFO  - Finish environment cleanup.

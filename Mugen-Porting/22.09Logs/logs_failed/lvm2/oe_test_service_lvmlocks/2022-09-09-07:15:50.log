@@ -1,0 +1,41 @@
+Fri Sep  9 07:15:53 2022 - INFO  - Start environmental preparation.
+Failed to start lvmlockd.service: Unit lvmlockd.service not found.
+Fri Sep  9 07:16:28 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:16:29 2022 - INFO  - Start testing...
+Failed to restart lvmlocks.service: Unit lvmlocks.service not found.
+Fri Sep  9 07:16:30 2022 - ERROR - lvmlocks.service restart failed
+Fri Sep  9 07:16:30 2022 - ERROR - ../common/common_lib.sh line 34
+Unit lvmlocks.service could not be found.
+Fri Sep  9 07:16:37 2022 - ERROR - lvmlocks.service restart failed
+Fri Sep  9 07:16:37 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop lvmlocks.service: Unit lvmlocks.service not loaded.
+Fri Sep  9 07:16:38 2022 - ERROR - lvmlocks.service stop failed
+Fri Sep  9 07:16:39 2022 - ERROR - ../common/common_lib.sh line 39
+Unit lvmlocks.service could not be found.
+Fri Sep  9 07:16:46 2022 - ERROR - lvmlocks.service stop failed
+Fri Sep  9 07:16:46 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start lvmlocks.service: Unit lvmlocks.service not found.
+Fri Sep  9 07:16:47 2022 - ERROR - lvmlocks.service start failed
+Fri Sep  9 07:16:48 2022 - ERROR - ../common/common_lib.sh line 44
+Unit lvmlocks.service could not be found.
+Fri Sep  9 07:16:55 2022 - ERROR - lvmlocks.service start failed
+Fri Sep  9 07:16:55 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for lvmlocks.service: No such file or directory
+Fri Sep  9 07:16:56 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start lvmlocks.service: Unit lvmlocks.service not found.
+Fri Sep  9 07:16:57 2022 - ERROR - Job type reload is not applicable for unit lvmlocks.service
+Fri Sep  9 07:16:58 2022 - ERROR - ../common/common_lib.sh line 91
+Unit lvmlocks.service could not be found.
+Unit lvmlocks.service could not be found.
+Fri Sep  9 07:16:59 2022 - INFO  - Finish test!
+Fri Sep  9 07:16:59 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:17:00 2022 - INFO  - start environment cleanup.
+Failed to stop lvmlockd.service: Unit lvmlockd.service not loaded.
+Failed to stop lvmlocks.service: Unit lvmlocks.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:05:23 ago on Fri 09 Sep 2022 07:11:04 AM CST.\nNo match for argument: lvm2-lockd\nError: Unable to find a match: lvm2-lockd'
+Fri Sep  9 07:17:03 2022 - INFO  - Finish environment cleanup!

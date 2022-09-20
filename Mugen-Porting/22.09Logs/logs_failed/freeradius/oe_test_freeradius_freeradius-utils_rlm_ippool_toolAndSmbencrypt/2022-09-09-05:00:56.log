@@ -1,0 +1,26 @@
+Fri Sep  9 05:00:59 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 05:01:07 2022 - INFO  - pkgs:(freeradius freeradius-utils) is already installed
+ln: failed to create symbolic link '/etc/raddb/mods-enabled/ippool': No such file or directory
+sed: can't read /etc/raddb/sites-enabled/default: No such file or directory
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Fri Sep  9 05:01:10 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 05:01:10 2022 - INFO  - Start to run test.
+Fri Sep  9 05:01:11 2022 - ERROR - rlm_ippool_tool -n execution failed.
+Fri Sep  9 05:01:12 2022 - ERROR - oe_test_freeradius_freeradius-utils_rlm_ippool_toolAndSmbencrypt.sh line 37
+Fri Sep  9 05:01:12 2022 - ERROR - rlm_ippool_tool -a execution failed.
+Fri Sep  9 05:01:13 2022 - ERROR - oe_test_freeradius_freeradius-utils_rlm_ippool_toolAndSmbencrypt.sh line 39
+Fri Sep  9 05:01:14 2022 - ERROR - rlm_ippool_tool -c execution failed.
+Fri Sep  9 05:01:15 2022 - ERROR - oe_test_freeradius_freeradius-utils_rlm_ippool_toolAndSmbencrypt.sh line 41
+Fri Sep  9 05:01:15 2022 - ERROR - rlm_ippool_tool -v execution failed.
+Fri Sep  9 05:01:16 2022 - ERROR - oe_test_freeradius_freeradius-utils_rlm_ippool_toolAndSmbencrypt.sh line 46
+Fri Sep  9 05:01:17 2022 - ERROR - rlm_ippool_tool -o execution failed.
+Fri Sep  9 05:01:17 2022 - ERROR - oe_test_freeradius_freeradius-utils_rlm_ippool_toolAndSmbencrypt.sh line 48
+Fri Sep  9 05:01:18 2022 - ERROR - rlm_ippool_tool -u execution failed.
+Fri Sep  9 05:01:19 2022 - ERROR - oe_test_freeradius_freeradius-utils_rlm_ippool_toolAndSmbencrypt.sh line 51
+LM Hash			 	NT Hash
+Fri Sep  9 05:01:20 2022 - INFO  - End to run test.
+Fri Sep  9 05:01:20 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:01:21 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 05:01:21 2022 - WARN  - no thing to do.
+Fri Sep  9 05:01:22 2022 - INFO  - End to restore the test environment.

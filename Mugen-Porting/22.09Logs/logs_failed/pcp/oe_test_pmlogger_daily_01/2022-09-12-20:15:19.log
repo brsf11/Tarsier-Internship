@@ -1,0 +1,14 @@
+Mon Sep 12 20:15:22 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 20:18:52 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 20:18:53 2022 - INFO  - Start to run test.
+Mon Sep 12 20:21:15 2022 - ERROR - oe_test_pmlogger_daily_01.sh line 38
+=== compressing PCP archives for host local: ===
+Mon Sep 12 20:21:22 2022 - ERROR - oe_test_pmlogger_daily_01.sh line 42
+Mon Sep 12 20:22:53 2022 - ERROR - oe_test_pmlogger_daily_01.sh line 48
+Mon Sep 12 20:22:54 2022 - INFO  - End to run test.
+Mon Sep 12 20:22:55 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:22:55 2022 - INFO  - Start to restore the test environment.
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Mon Sep 12 20:23:44 2022 - INFO  - End to restore the test environment.

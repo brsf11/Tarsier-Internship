@@ -1,0 +1,37 @@
+Fri Sep  9 04:06:37 2022 - INFO  - Start environmental preparation.
+spawn /usr/share/glusterfs/scripts/setup-thin-arbiter.sh -s
+couldn't execute "/usr/share/glusterfs/scripts/setup-thin-arbiter.sh": no such file or directory
+    while executing
+"spawn  /usr/share/glusterfs/scripts/setup-thin-arbiter.sh -s"
+Fri Sep  9 04:07:11 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:07:12 2022 - INFO  - Start testing...
+Failed to restart gluster-ta-volume.service: Unit gluster-ta-volume.service not found.
+Fri Sep  9 04:07:13 2022 - ERROR - gluster-ta-volume.service restart failed
+Fri Sep  9 04:07:13 2022 - ERROR - ../common/common_lib.sh line 34
+Unit gluster-ta-volume.service could not be found.
+Fri Sep  9 04:07:20 2022 - ERROR - gluster-ta-volume.service restart failed
+Fri Sep  9 04:07:21 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop gluster-ta-volume.service: Unit gluster-ta-volume.service not loaded.
+Fri Sep  9 04:07:21 2022 - ERROR - gluster-ta-volume.service stop failed
+Fri Sep  9 04:07:22 2022 - ERROR - ../common/common_lib.sh line 39
+Unit gluster-ta-volume.service could not be found.
+Fri Sep  9 04:07:29 2022 - ERROR - gluster-ta-volume.service stop failed
+Fri Sep  9 04:07:29 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start gluster-ta-volume.service: Unit gluster-ta-volume.service not found.
+Fri Sep  9 04:07:30 2022 - ERROR - gluster-ta-volume.service start failed
+Fri Sep  9 04:07:31 2022 - ERROR - ../common/common_lib.sh line 44
+Unit gluster-ta-volume.service could not be found.
+Fri Sep  9 04:07:37 2022 - ERROR - gluster-ta-volume.service start failed
+Fri Sep  9 04:07:38 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for gluster-ta-volume.service: No such file or directory
+Fri Sep  9 04:07:39 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start gluster-ta-volume.service: Unit gluster-ta-volume.service not found.
+Fri Sep  9 04:07:40 2022 - ERROR - Job type reload is not applicable for unit gluster-ta-volume.service
+Fri Sep  9 04:07:41 2022 - ERROR - ../common/common_lib.sh line 91
+Unit gluster-ta-volume.service could not be found.
+Unit gluster-ta-volume.service could not be found.
+Fri Sep  9 04:07:42 2022 - INFO  - Finish test!
+Fri Sep  9 04:07:43 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:07:43 2022 - INFO  - start environment cleanup.
+Failed to stop gluster-ta-volume.service: Unit gluster-ta-volume.service not loaded.
+Fri Sep  9 04:08:07 2022 - INFO  - Finish environment cleanup!

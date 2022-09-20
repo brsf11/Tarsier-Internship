@@ -1,0 +1,18 @@
+Fri Sep  9 01:29:04 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:33:17 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:33:18 2022 - INFO  - Start to run test.
+     Active: active since Fri 2022-09-09 01:33:18 CST; 5s ago
+     Active: inactive (dead) since Fri 2022-09-09 01:33:24 CST; 5s ago
+     Active: active since Fri 2022-09-09 01:33:30 CST; 5s ago
+find: ‘/etc/systemd/system/ceph.target.wants/ceph-rbd-mirror.target’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/ceph-rbd-mirror.target’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/ceph-rbd-mirror.target → /usr/lib/systemd/system/ceph-rbd-mirror.target.
+Created symlink /etc/systemd/system/ceph.target.wants/ceph-rbd-mirror.target → /usr/lib/systemd/system/ceph-rbd-mirror.target.
+/etc/systemd/system/ceph.target.wants/ceph-rbd-mirror.target
+/etc/systemd/system/multi-user.target.wants/ceph-rbd-mirror.target
+Failed to reload ceph-rbd-mirror.target: Job type reload is not applicable for unit ceph-rbd-mirror.target.
+     Active: active since Fri 2022-09-09 01:33:30 CST; 15s ago
+Fri Sep  9 01:33:47 2022 - INFO  - End of the test.
+Fri Sep  9 01:33:48 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 01:33:48 2022 - INFO  - start environment cleanup.
+Fri Sep  9 01:34:45 2022 - INFO  - Finish environment cleanup!

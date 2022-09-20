@@ -1,0 +1,51 @@
+Fri Sep  9 01:08:02 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+ls: cannot access '/etc/systemd/system/tangd.socket.d': No such file or directory
+oe_test_install_clevis.sh: line 31: firewall-cmd: command not found
+oe_test_install_clevis.sh: line 32: firewall-cmd: command not found
+Fri Sep  9 01:08:29 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:08:30 2022 - INFO  - Start executing testcase.
+Failed to enable unit: Unit file tangd.socket does not exist.
+Fri Sep  9 01:08:31 2022 - ERROR - Failed to systemctl enable tangd.socket
+Fri Sep  9 01:08:32 2022 - ERROR - oe_test_install_clevis.sh line 42
+Fri Sep  9 01:08:37 2022 - ERROR - Failed to display the 'Listen' property of tangd.socket
+Fri Sep  9 01:08:38 2022 - ERROR - oe_test_install_clevis.sh line 45
+Failed to start tangd.socket: Unit tangd.socket not found.
+Fri Sep  9 01:08:40 2022 - ERROR - Failed to start tangd.socket service
+Fri Sep  9 01:08:41 2022 - ERROR - oe_test_install_clevis.sh line 48
+oe_test_install_clevis.sh: line 49: cd: /var/db/tang: No such file or directory
+ls: cannot access '/var/db/tang': No such file or directory
+oe_test_install_clevis.sh: line 54: /usr/libexec/tangd-keygen: No such file or directory
+Fri Sep  9 01:08:42 2022 - ERROR - Failed to generate a new key using the /var/db/Tang d-keygen command on the Tang server
+Fri Sep  9 01:08:42 2022 - ERROR - oe_test_install_clevis.sh line 55
+oe_test_install_clevis.sh: line 57: tang-show-keys: command not found
+Fri Sep  9 01:08:43 2022 - ERROR - Failed to check whether the Tang server advertises the signature key from the new key pair
+Fri Sep  9 01:08:44 2022 - ERROR - oe_test_install_clevis.sh line 58
+Failed to restart tangd.socket: Unit tangd.socket not found.
+Fri Sep  9 01:08:46 2022 - ERROR - Failed to restart tangd.socket service
+Fri Sep  9 01:08:47 2022 - ERROR - oe_test_install_clevis.sh line 61
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 8009 after 29 ms: Connection refused
+Fri Sep  9 01:08:50 2022 - ERROR - Failed to transfer data to adv.jws file
+Fri Sep  9 01:08:50 2022 - ERROR - oe_test_install_clevis.sh line 64
+oe_test_install_clevis.sh: line 66: clevis: command not found
+Fri Sep  9 01:08:53 2022 - ERROR - Failed to encrypt file
+Fri Sep  9 01:08:54 2022 - ERROR - oe_test_install_clevis.sh line 67
+oe_test_install_clevis.sh: line 69: clevis: command not found
+Fri Sep  9 01:08:56 2022 - ERROR - Failed to decrypt file
+Fri Sep  9 01:08:57 2022 - ERROR - oe_test_install_clevis.sh line 70
+Fri Sep  9 01:08:58 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 01:08:58 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:08:59 2022 - INFO  - start environment cleanup.
+Failed to stop tangd.socket: Unit tangd.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:05:37 ago on Fri 09 Sep 2022 01:02:50 AM CST.\nError: \n Problem: package firewalld-1.0.2-3.oe2209.noarch requires python3-firewall = 1.0.2-3.oe2209, but none of the providers can be installed\n  - package python3-firewall-1.0.2-3.oe2209.noarch requires python3-nftables, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides python(abi) = 3.9 needed by python3-nftables-1:1.0.0-1.oe2203.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+oe_test_install_clevis.sh: line 79: firewall-cmd: command not found
+oe_test_install_clevis.sh: line 80: firewall-cmd: command not found
+Fri Sep  9 01:09:02 2022 - INFO  - Finish environment cleanup!

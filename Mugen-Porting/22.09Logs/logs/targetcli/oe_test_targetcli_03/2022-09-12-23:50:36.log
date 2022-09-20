@@ -1,0 +1,45 @@
+Mon Sep 12 23:50:39 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:51:53 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 23:51:54 2022 - INFO  - Start to run test.
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "backstores/fileio create disk1 /disks 140M\r"}"
+Mon Sep 12 23:51:59 2022 - ERROR - oe_test_targetcli_03.sh line 46
+Mon Sep 12 23:52:00 2022 - ERROR - oe_test_targetcli_03.sh line 48
+grep: ./saveconfig.json: No such file or directory
+Mon Sep 12 23:52:00 2022 - ERROR - oe_test_targetcli_03.sh line 50
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp3 not open
+    while executing
+"expect "/>" {send "backstores/fileio/ delete disk1\r"}"
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "backstores/fileio create disk1 /disks 140M\r"}"
+Mon Sep 12 23:52:13 2022 - ERROR - oe_test_targetcli_03.sh line 71
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "restoreconfig ./saveconfig.json\r"}"
+Mon Sep 12 23:52:22 2022 - ERROR - oe_test_targetcli_03.sh line 83
+Mon Sep 12 23:52:27 2022 - ERROR - oe_test_targetcli_03.sh line 85
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp3 not open
+    while executing
+"expect "/>" {send "backstores/fileio/ delete disk1\r"}"
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "sessions\r"}"
+Mon Sep 12 23:52:40 2022 - ERROR - oe_test_targetcli_03.sh line 104
+Mon Sep 12 23:52:41 2022 - INFO  - End of the test.
+Mon Sep 12 23:52:42 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:52:42 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:53:02 2022 - INFO  - Finish restoring the test environment.

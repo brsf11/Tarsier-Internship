@@ -1,0 +1,19 @@
+Fri Sep  9 03:47:33 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:48:22 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:48:23 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 03:48:23 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-09 03:48:35 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/gmetad.service
+Removed /etc/systemd/system/multi-user.target.wants/gmetad.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/gmetad.service’: No such file or directory
+Sep 09 03:48:23 openEuler-riscv64 gmetad[617]: Process XML (my cluster): XML_ParseBuffer() error at line 189:
+Sep 09 03:48:35 openEuler-riscv64 gmetad[635]: Process XML (my cluster): XML_ParseBuffer() error at line 189:
+Fri Sep  9 03:48:51 2022 - ERROR - There is an error message for the log of gmetad.service
+Fri Sep  9 03:48:52 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload gmetad.service: Job type reload is not applicable for unit gmetad.service.
+     Active: active (running) since Fri 2022-09-09 03:48:35 CST; 16s ago
+Fri Sep  9 03:48:53 2022 - INFO  - Finish test!
+Fri Sep  9 03:48:54 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:48:54 2022 - INFO  - start environment cleanup.
+Fri Sep  9 03:49:15 2022 - INFO  - Finish environment cleanup!

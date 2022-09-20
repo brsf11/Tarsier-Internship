@@ -1,0 +1,10 @@
+Tue Sep 20 12:34:01 2022 - INFO  - Start testing...
+     Active: active since Tue 2022-09-20 12:34:01 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:34:07 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:34:13 CST; 5s ago
+Tue Sep 20 12:34:19 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload getty.target: Job type reload is not applicable for unit getty.target.
+     Active: active since Tue 2022-09-20 12:34:13 CST; 7s ago
+Tue Sep 20 12:34:20 2022 - INFO  - Finish test!
+Tue Sep 20 12:34:21 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:34:22 2022 - INFO  - oe_test_target_getty.sh post_test

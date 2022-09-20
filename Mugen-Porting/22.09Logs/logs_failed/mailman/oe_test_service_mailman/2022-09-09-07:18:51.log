@@ -1,0 +1,43 @@
+Fri Sep  9 07:18:54 2022 - INFO  - Start environmental preparation.
+spawn /usr/lib/mailman/bin/newlist mailman
+couldn't execute "/usr/lib/mailman/bin/newlist": no such file or directory
+    while executing
+"spawn /usr/lib/mailman/bin/newlist mailman"
+Fri Sep  9 07:19:33 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:19:34 2022 - INFO  - Start testing...
+Failed to restart mailman.service: Unit mailman.service not found.
+Fri Sep  9 07:19:35 2022 - ERROR - mailman.service restart failed
+Fri Sep  9 07:19:36 2022 - ERROR - ../common/common_lib.sh line 34
+Unit mailman.service could not be found.
+Fri Sep  9 07:19:43 2022 - ERROR - mailman.service restart failed
+Fri Sep  9 07:19:43 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop mailman.service: Unit mailman.service not loaded.
+Fri Sep  9 07:19:44 2022 - ERROR - mailman.service stop failed
+Fri Sep  9 07:19:45 2022 - ERROR - ../common/common_lib.sh line 39
+Unit mailman.service could not be found.
+Fri Sep  9 07:19:52 2022 - ERROR - mailman.service stop failed
+Fri Sep  9 07:19:52 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start mailman.service: Unit mailman.service not found.
+Fri Sep  9 07:19:53 2022 - ERROR - mailman.service start failed
+Fri Sep  9 07:19:54 2022 - ERROR - ../common/common_lib.sh line 44
+Unit mailman.service could not be found.
+Fri Sep  9 07:20:01 2022 - ERROR - mailman.service start failed
+Fri Sep  9 07:20:01 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for mailman.service: No such file or directory
+Fri Sep  9 07:20:02 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start mailman.service: Unit mailman.service not found.
+sed: can't read /usr/lib/systemd/system/mailman.service: No such file or directory
+Failed to reload mailman.service: Unit mailman.service not found.
+Fri Sep  9 07:20:08 2022 - ERROR - mailman.service reload failed
+Fri Sep  9 07:20:08 2022 - ERROR - oe_test_service_mailman.sh line 51
+Unit mailman.service could not be found.
+Fri Sep  9 07:20:09 2022 - ERROR - mailman.service reload causes the service status to change
+Fri Sep  9 07:20:10 2022 - ERROR - oe_test_service_mailman.sh line 53
+Fri Sep  9 07:20:11 2022 - INFO  - Finish test!
+Fri Sep  9 07:20:11 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:20:12 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/mailman.service: No such file or directory
+Failed to reload mailman.service: Unit mailman.service not found.
+Failed to stop mailman.service: Unit mailman.service not loaded.
+oe_test_service_mailman.sh: line 63: /usr/lib/mailman/bin/rmlist: No such file or directory
+Fri Sep  9 07:20:17 2022 - INFO  - Finish environment cleanup!

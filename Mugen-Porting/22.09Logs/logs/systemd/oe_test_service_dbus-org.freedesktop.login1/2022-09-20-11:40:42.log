@@ -1,0 +1,10 @@
+Tue Sep 20 11:40:45 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 11:40:46 CST; 6s ago
+     Active: inactive (dead) since Tue 2022-09-20 11:40:52 CST; 5s ago
+     Active: active (running) since Tue 2022-09-20 11:40:58 CST; 5s ago
+Tue Sep 20 11:41:05 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload dbus-org.freedesktop.login1.service: Job type reload is not applicable for unit systemd-logind.service.
+     Active: active (running) since Tue 2022-09-20 11:40:58 CST; 7s ago
+Tue Sep 20 11:41:06 2022 - INFO  - Finish test!
+Tue Sep 20 11:41:07 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:41:07 2022 - INFO  - oe_test_service_dbus-org.freedesktop.login1.sh post_test

@@ -1,0 +1,10 @@
+Tue Sep 20 12:13:52 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 12:13:52 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:13:58 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 12:14:04 CST; 5s ago
+Tue Sep 20 12:14:11 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-sysctl.service: Job type reload is not applicable for unit systemd-sysctl.service.
+     Active: active (exited) since Tue 2022-09-20 12:14:04 CST; 6s ago
+Tue Sep 20 12:14:12 2022 - INFO  - Finish test!
+Tue Sep 20 12:14:12 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:14:13 2022 - INFO  - oe_test_service_systemd-sysctl.sh post_test

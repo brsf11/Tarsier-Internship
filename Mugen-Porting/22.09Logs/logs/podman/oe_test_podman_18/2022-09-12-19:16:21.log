@@ -1,0 +1,49 @@
+Mon Sep 12 19:16:23 2022 - INFO  - Start to prepare the test environment.
+../common/common_podman.sh: line 21: /etc/containers/registries.conf: No such file or directory
+oe_test_podman_18.sh: line 24: podman: command not found
+oe_test_podman_18.sh: line 25: podman: command not found
+Mon Sep 12 19:17:10 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:17:11 2022 - INFO  - Start to run test.
+oe_test_podman_18.sh: line 31: podman: command not found
+oe_test_podman_18.sh: line 31: podman: command not found
+Mon Sep 12 19:17:11 2022 - ERROR - oe_test_podman_18.sh line 32
+oe_test_podman_18.sh: line 33: podman: command not found
+Mon Sep 12 19:17:12 2022 - ERROR - oe_test_podman_18.sh line 34
+spawn podman login docker.io
+couldn't execute "podman": no such file or directory
+    while executing
+"spawn podman login docker.io "
+Mon Sep 12 19:17:13 2022 - ERROR - oe_test_podman_18.sh line 46
+oe_test_podman_18.sh: line 48: podman: command not found
+Mon Sep 12 19:17:14 2022 - ERROR - oe_test_podman_18.sh line 49
+spawn podman login --authfile authdir/myauths.json docker.io
+couldn't execute "podman": no such file or directory
+    while executing
+"spawn podman login --authfile authdir/myauths.json docker.io"
+Mon Sep 12 19:17:15 2022 - ERROR - oe_test_podman_18.sh line 61
+oe_test_podman_18.sh: line 63: podman: command not found
+Mon Sep 12 19:17:16 2022 - ERROR - oe_test_podman_18.sh line 64
+spawn podman login -u umohnani docker.io
+couldn't execute "podman": no such file or directory
+    while executing
+"spawn podman login -u umohnani docker.io"
+spawn podman login --tls-verify=false docker.io
+couldn't execute "podman": no such file or directory
+    while executing
+"spawn podman login --tls-verify=false docker.io"
+Mon Sep 12 19:17:17 2022 - ERROR - oe_test_podman_18.sh line 88
+oe_test_podman_18.sh: line 89: podman: command not found
+Mon Sep 12 19:17:18 2022 - ERROR - oe_test_podman_18.sh line 90
+Mon Sep 12 19:17:18 2022 - INFO  - End to run test.
+Mon Sep 12 19:17:19 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:17:19 2022 - INFO  - Start to restore the test environment.
+../common/common_podman.sh: line 33: podman: command not found
+../common/common_podman.sh: line 34: podman: command not found
+../common/common_podman.sh: line 35: podman: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:21:04 ago on Mon 12 Sep 2022 06:56:05 PM CST.\nError: \n Problem 1: conflicting requests\n  - nothing provides crun needed by podman-1:3.4.4-2.oe2209.riscv64\n Problem 2: package podman-docker-1:3.4.4-2.oe2209.noarch requires podman = 1:3.4.4-2.oe2209, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides crun needed by podman-1:3.4.4-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 19:17:23 2022 - INFO  - End to restore the test environment.

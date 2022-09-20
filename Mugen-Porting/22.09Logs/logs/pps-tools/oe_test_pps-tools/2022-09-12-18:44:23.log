@@ -1,0 +1,43 @@
+Mon Sep 12 18:44:25 2022 - INFO  - Start to prepare the test environment.
+make -C /lib/modules/5.10.0/build M=`pwd` modules
+make[1]: *** /lib/modules/5.10.0/build: No such file or directory.  Stop.
+make: *** [Makefile:5: all] Error 2
+insmod: ERROR: could not load module pps-ktimer1.ko: No such file or directory
+insmod: ERROR: could not load module pps-ktimer2.ko: No such file or directory
+Mon Sep 12 18:53:49 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:53:50 2022 - INFO  - Start to run test.
+grep: /sys/class/pps//*/name: No such file or directory
+grep: /sys/class/pps//*/path: No such file or directory
+Mon Sep 12 18:53:51 2022 - ERROR - ppsfind command failed
+Mon Sep 12 18:53:52 2022 - ERROR - oe_test_pps-tools.sh line 68
+Mon Sep 12 18:53:56 2022 - ERROR - ppstest command failed
+Mon Sep 12 18:53:57 2022 - ERROR - oe_test_pps-tools.sh line 74
+ioctl(TIOCSETD): Invalid argument
+Mon Sep 12 18:54:01 2022 - ERROR - ppsldisc command failed
+Mon Sep 12 18:54:02 2022 - ERROR - oe_test_pps-tools.sh line 81
+Mon Sep 12 18:54:06 2022 - ERROR - ppswatch -a command failed
+Mon Sep 12 18:54:07 2022 - ERROR - oe_test_pps-tools.sh line 88
+Mon Sep 12 18:54:11 2022 - ERROR - ppswatch -c command failed
+Mon Sep 12 18:54:12 2022 - ERROR - oe_test_pps-tools.sh line 94
+unable to open device "/dev/pps0" (No such file or directory)
+trying PPS source "/dev/pps0"
+Mon Sep 12 18:54:13 2022 - ERROR - ppswatch -fa command failed
+Mon Sep 12 18:54:14 2022 - ERROR - oe_test_pps-tools.sh line 99
+unable to open device "/dev/pps0" (No such file or directory)
+trying PPS source "/dev/pps0"
+Mon Sep 12 18:54:14 2022 - ERROR - ppswatch -Fa command failed
+Mon Sep 12 18:54:15 2022 - ERROR - oe_test_pps-tools.sh line 102
+unable to open device "/dev/pps0" (No such file or directory)
+trying PPS source "/dev/pps0"
+Mon Sep 12 18:54:16 2022 - ERROR - ppswatch -fc command failed
+Mon Sep 12 18:54:16 2022 - ERROR - oe_test_pps-tools.sh line 105
+unable to open device "/dev/pps0" (No such file or directory)
+trying PPS source "/dev/pps0"
+Mon Sep 12 18:54:17 2022 - ERROR - ppswatch -Fc command failed
+Mon Sep 12 18:54:18 2022 - ERROR - oe_test_pps-tools.sh line 108
+Mon Sep 12 18:54:18 2022 - INFO  - End to run test.
+Mon Sep 12 18:54:19 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:54:19 2022 - INFO  - Start to restore the test environment.
+rmmod: ERROR: Module pps_ktimer1 is not currently loaded
+rmmod: ERROR: Module pps_ktimer2 is not currently loaded
+Mon Sep 12 18:56:09 2022 - INFO  - End to restore the test environment.

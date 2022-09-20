@@ -1,0 +1,4 @@
+oe_test_service_storm-logviewer
+oe_test_service_storm-nimbus
+oe_test_service_storm-supervisor
+oe_test_service_storm-ui

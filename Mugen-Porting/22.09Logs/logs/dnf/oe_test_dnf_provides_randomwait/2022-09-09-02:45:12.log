@@ -1,0 +1,65 @@
+Fri Sep  9 02:45:14 2022 - INFO  - Start to prepare the test environment.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Fri Sep  9 02:45:45 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:45:46 2022 - INFO  - Start to run test.
+usage: dnf install [-c [config file]] [-q] [-v] [--version]
+                   [--installroot [path]] [--nodocs] [--noplugins]
+                   [--enableplugin [plugin]] [--disableplugin [plugin]]
+                   [--releasever RELEASEVER] [--setopt SETOPTS]
+                   [--skip-broken] [-h] [--allowerasing] [-b | --nobest] [-C]
+                   [-R [minutes]] [-d [debug level]] [--debugsolver]
+                   [--showduplicates] [-e ERRORLEVEL] [--obsoletes]
+                   [--rpmverbosity [debug level name]] [-y] [--assumeno]
+                   [--enablerepo [repo]] [--disablerepo [repo] | --repo
+                   [repo]] [--enable | --disable] [-x [package]]
+                   [--disableexcludes [repo]] [--repofrompath [repo,path]]
+                   [--noautoremove] [--nogpgcheck] [--color COLOR] [--refresh]
+                   [-4] [-6] [--destdir DESTDIR] [--downloadonly]
+                   [--comment COMMENT] [--bugfix] [--enhancement]
+                   [--newpackage] [--security] [--advisory ADVISORY]
+                   [--bz BUGZILLA] [--cve CVES]
+                   [--sec-severity {Critical,Important,Moderate,Low}]
+                   [--forcearch ARCH]
+                   PACKAGE [PACKAGE ...]
+dnf install: error: the following arguments are required: PACKAGE
+Fri Sep  9 02:45:51 2022 - ERROR - oe_test_dnf_provides_randomwait.sh line 34
+rpm: no arguments given for query
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+usage: dnf provides [-c [config file]] [-q] [-v] [--version]
+                    [--installroot [path]] [--nodocs] [--noplugins]
+                    [--enableplugin [plugin]] [--disableplugin [plugin]]
+                    [--releasever RELEASEVER] [--setopt SETOPTS]
+                    [--skip-broken] [-h] [--allowerasing] [-b | --nobest] [-C]
+                    [-R [minutes]] [-d [debug level]] [--debugsolver]
+                    [--showduplicates] [-e ERRORLEVEL] [--obsoletes]
+                    [--rpmverbosity [debug level name]] [-y] [--assumeno]
+                    [--enablerepo [repo]] [--disablerepo [repo] | --repo
+                    [repo]] [--enable | --disable] [-x [package]]
+                    [--disableexcludes [repo]] [--repofrompath [repo,path]]
+                    [--noautoremove] [--nogpgcheck] [--color COLOR]
+                    [--refresh] [-4] [-6] [--destdir DESTDIR] [--downloadonly]
+                    [--comment COMMENT] [--bugfix] [--enhancement]
+                    [--newpackage] [--security] [--advisory ADVISORY]
+                    [--bz BUGZILLA] [--cve CVES]
+                    [--sec-severity {Critical,Important,Moderate,Low}]
+                    [--forcearch ARCH]
+                    PROVIDE [PROVIDE ...]
+dnf provides: error: the following arguments are required: PROVIDE
+Fri Sep  9 02:45:57 2022 - ERROR - oe_test_dnf_provides_randomwait.sh line 38
+oe_test_dnf_provides_randomwait.sh: line 43: /usr/bin/time: No such file or directory
+Fri Sep  9 02:46:06 2022 - ERROR - oe_test_dnf_provides_randomwait.sh line 44
+cat: time.log: No such file or directory
+(standard_in) 1: syntax error
+Fri Sep  9 02:46:06 2022 - ERROR - oe_test_dnf_provides_randomwait.sh line 46
+Fri Sep  9 02:46:12 2022 - ERROR - oe_test_dnf_provides_randomwait.sh line 48
+Fri Sep  9 02:46:13 2022 - INFO  - End of the test.
+Fri Sep  9 02:46:14 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:46:14 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Warning: failed loading \'/etc/yum.repos.d/openEuler.repo\', skipping.\nError: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".'
+Fri Sep  9 02:46:17 2022 - INFO  - End of restore the test environment.

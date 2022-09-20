@@ -1,0 +1,13 @@
+Tue Sep 20 12:14:21 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:14:22 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:14:22 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 12:14:23 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:14:29 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 12:14:35 CST; 5s ago
+Tue Sep 20 12:14:41 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-sysusers.service: Job type reload is not applicable for unit systemd-sysusers.service.
+     Active: active (exited) since Tue 2022-09-20 12:14:35 CST; 6s ago
+Tue Sep 20 12:14:42 2022 - INFO  - Finish test!
+Tue Sep 20 12:14:43 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:14:44 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:14:45 2022 - INFO  - Finish environment cleanup!

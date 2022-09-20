@@ -1,0 +1,11 @@
+Tue Sep 20 11:40:13 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 11:40:14 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-20 11:40:27 CST; 5s ago
+Tue Sep 20 11:40:33 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload dbus-org.freedesktop.locale1.service: Job type reload is not applicable for unit systemd-localed.service.
+     Active: active (running) since Tue 2022-09-20 11:40:27 CST; 7s ago
+Tue Sep 20 11:40:34 2022 - INFO  - Finish test!
+Tue Sep 20 11:40:35 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:40:36 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:40:36 2022 - INFO  - Finish environment cleanup!

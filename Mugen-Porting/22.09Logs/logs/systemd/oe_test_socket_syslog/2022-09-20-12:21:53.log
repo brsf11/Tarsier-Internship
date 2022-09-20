@@ -1,0 +1,30 @@
+Tue Sep 20 12:21:55 2022 - INFO  - Start environmental preparation.
+Failed to stop rsyslog.service: Unit rsyslog.service not loaded.
+Tue Sep 20 12:22:00 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:22:01 2022 - INFO  - Start testing...
+Job failed. See "journalctl -xe" for details.
+Tue Sep 20 12:22:02 2022 - ERROR - syslog.socket restart failed
+Tue Sep 20 12:22:03 2022 - ERROR - ../common/common_lib.sh line 34
+Tue Sep 20 12:22:09 2022 - ERROR - syslog.socket restart failed
+Tue Sep 20 12:22:10 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+Job failed. See "journalctl -xe" for details.
+Tue Sep 20 12:22:16 2022 - ERROR - syslog.socket start failed
+Tue Sep 20 12:22:17 2022 - ERROR - ../common/common_lib.sh line 44
+Tue Sep 20 12:22:24 2022 - ERROR - syslog.socket start failed
+Tue Sep 20 12:22:24 2022 - ERROR - ../common/common_lib.sh line 47
+Tue Sep 20 12:22:25 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 20 12:22:01 openEuler-riscv64 systemd[1]: Failed to listen on Syslog Socket.
+Sep 20 12:22:16 openEuler-riscv64 systemd[1]: Failed to listen on Syslog Socket.
+Tue Sep 20 12:22:26 2022 - ERROR - There is an error message for the log of syslog.socket
+Tue Sep 20 12:22:26 2022 - ERROR - ../common/common_lib.sh line 28
+Job failed. See "journalctl -xe" for details.
+Failed to reload syslog.socket: Job type reload is not applicable for unit syslog.socket.
+     Active: inactive (dead)
+Tue Sep 20 12:22:27 2022 - ERROR - syslog.socket reload causes the service status to change
+Tue Sep 20 12:22:28 2022 - ERROR - ../common/common_lib.sh line 95
+Tue Sep 20 12:22:29 2022 - INFO  - Finish test!
+Tue Sep 20 12:22:29 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:22:30 2022 - INFO  - Start environment cleanup.
+Failed to start rsyslog.service: Unit rsyslog.service not found.
+Tue Sep 20 12:22:35 2022 - INFO  - Finish environment cleanup!

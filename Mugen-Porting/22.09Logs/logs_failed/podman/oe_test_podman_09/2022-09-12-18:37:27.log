@@ -1,0 +1,11 @@
+Mon Sep 12 18:37:29 2022 - INFO  - Start to prepare the test environment.
+../common/common_podman.sh: line 21: /etc/containers/registries.conf: No such file or directory
+oe_test_podman_09.sh: line 24: podman: command not found
+oe_test_podman_09.sh: line 25: podman: command not found
+Mon Sep 12 18:38:22 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:38:23 2022 - INFO  - Start to run test.
+oe_test_podman_09.sh: line 31: podman: command not found
+oe_test_podman_09.sh: line 32: podman: command not found
+Mon Sep 12 18:38:23 2022 - ERROR - oe_test_podman_09.sh line 33
+oe_test_podman_09.sh: line 34: podman: command not found
+Mon Sep 12 19:07:27 2022 - ERROR - Timeout : Command 'bash oe_test_podman_09.sh' timed out after 1799.999478782 seconds

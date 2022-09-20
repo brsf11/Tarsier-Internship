@@ -1,0 +1,30 @@
+Mon Sep 12 16:44:59 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:46:13 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:46:14 2022 - INFO  - Start testing...
+A dependency job for nfs-mountd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:46:15 2022 - ERROR - nfs-mountd.service restart failed
+Mon Sep 12 16:46:16 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 16:46:22 2022 - ERROR - nfs-mountd.service restart failed
+Mon Sep 12 16:46:23 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+A dependency job for nfs-mountd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:46:30 2022 - ERROR - nfs-mountd.service start failed
+Mon Sep 12 16:46:31 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 16:46:37 2022 - ERROR - nfs-mountd.service start failed
+Mon Sep 12 16:46:38 2022 - ERROR - ../common/common_lib.sh line 47
+Mon Sep 12 16:46:39 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 12 16:46:14 openEuler-riscv64 systemd[1]: Dependency failed for NFS Mount Daemon.
+Sep 12 16:46:14 openEuler-riscv64 systemd[1]: nfs-mountd.service: Job nfs-mountd.service/start failed with result 'dependency'.
+Sep 12 16:46:29 openEuler-riscv64 systemd[1]: Dependency failed for NFS Mount Daemon.
+Sep 12 16:46:29 openEuler-riscv64 systemd[1]: nfs-mountd.service: Job nfs-mountd.service/start failed with result 'dependency'.
+Mon Sep 12 16:46:40 2022 - ERROR - There is an error message for the log of nfs-mountd.service
+Mon Sep 12 16:46:40 2022 - ERROR - ../common/common_lib.sh line 28
+A dependency job for nfs-mountd.service failed. See 'journalctl -xe' for details.
+Failed to reload nfs-mountd.service: Job type reload is not applicable for unit nfs-mountd.service.
+     Active: inactive (dead)
+Mon Sep 12 16:46:42 2022 - ERROR - nfs-mountd.service reload causes the service status to change
+Mon Sep 12 16:46:42 2022 - ERROR - ../common/common_lib.sh line 95
+Mon Sep 12 16:46:43 2022 - INFO  - Finish test!
+Mon Sep 12 16:46:44 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:46:44 2022 - INFO  - start environment cleanup.
+Mon Sep 12 16:47:09 2022 - INFO  - Finish environment cleanup!

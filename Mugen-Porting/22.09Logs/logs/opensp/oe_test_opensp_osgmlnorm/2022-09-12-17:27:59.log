@@ -1,0 +1,66 @@
+Mon Sep 12 17:28:02 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 17:28:54 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:28:55 2022 - INFO  - Start to run test.
+osgmlnorm:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osgmlnorm:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osgmlnorm:normal.sgml:3:5:E: element "HTML" undefined
+osgmlnorm:normal.sgml:4:8:E: element "HEAD" undefined
+osgmlnorm:normal.sgml:5:12:E: element "TITLE" undefined
+osgmlnorm:normal.sgml:7:8:E: element "BODY" undefined
+osgmlnorm:normal.sgml:8:8:E: element "P" undefined
+   <BODY>      <P>Hello world!
+   <BODY>      <P>Hello world!
+Usage: osgmlnorm [OPTION] SYSID...
+osgmlnorm:E: cannot find "SYSTEM"; tried "SYSTEM", "/usr/share/sgml/SYSTEM", "/usr/share/xml/SYSTEM"
+osgmlnorm:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osgmlnorm:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osgmlnorm:normal.sgml:3:5:E: element "HTML" undefined
+osgmlnorm:normal.sgml:4:8:E: element "HEAD" undefined
+osgmlnorm:normal.sgml:5:12:E: element "TITLE" undefined
+osgmlnorm:normal.sgml:7:8:E: element "BODY" undefined
+osgmlnorm:normal.sgml:8:8:E: element "P" undefined
+   <BODY>      <P>Hello world!
+osgmlnorm:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osgmlnorm:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osgmlnorm:normal.sgml:3:5:E: element "HTML" undefined
+osgmlnorm:normal.sgml:4:8:E: element "HEAD" undefined
+osgmlnorm:normal.sgml:5:12:E: element "TITLE" undefined
+osgmlnorm:normal.sgml:7:8:E: element "BODY" undefined
+osgmlnorm:normal.sgml:8:8:E: element "P" undefined
+   <BODY>      <P>Hello world!
+osgmlnorm:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osgmlnorm:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osgmlnorm:normal.sgml:3:5:E: element "HTML" undefined
+osgmlnorm:normal.sgml:4:8:E: element "HEAD" undefined
+osgmlnorm:normal.sgml:5:12:E: element "TITLE" undefined
+osgmlnorm:normal.sgml:7:8:E: element "BODY" undefined
+osgmlnorm:normal.sgml:8:8:E: element "P" undefined
+   <BODY>      <P>Hello world!
+osgmlnorm:./testdir/normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osgmlnorm:./testdir/normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osgmlnorm:./testdir/normal.sgml:3:5:E: element "HTML" undefined
+osgmlnorm:./testdir/normal.sgml:4:8:E: element "HEAD" undefined
+osgmlnorm:./testdir/normal.sgml:5:12:E: element "TITLE" undefined
+osgmlnorm:./testdir/normal.sgml:7:8:E: element "BODY" undefined
+osgmlnorm:./testdir/normal.sgml:8:8:E: element "P" undefined
+   <BODY>      <P>Hello world!
+osgmlnorm:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osgmlnorm:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osgmlnorm:normal.sgml:3:5:E: element "HTML" undefined
+osgmlnorm:normal.sgml:4:8:E: element "HEAD" undefined
+osgmlnorm:normal.sgml:5:12:E: element "TITLE" undefined
+osgmlnorm:normal.sgml:7:8:E: element "BODY" undefined
+osgmlnorm:normal.sgml:8:8:E: element "P" undefined
+   <BODY>      <P>Hello world!
+osgmlnorm:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osgmlnorm:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osgmlnorm:normal.sgml:3:5:E: element "HTML" undefined
+osgmlnorm:normal.sgml:4:8:E: element "HEAD" undefined
+osgmlnorm:normal.sgml:5:12:E: element "TITLE" undefined
+osgmlnorm:normal.sgml:7:8:E: element "BODY" undefined
+osgmlnorm:normal.sgml:8:8:E: element "P" undefined
+<HTML>   <HEAD>      <TITLE>My first HTML document</TITLE>   </HEAD>   <BODY>      <P>Hello world!   </P></BODY></HTML>Mon Sep 12 17:40:27 2022 - ERROR - oe_test_opensp_osgmlnorm.sh line 52
+Mon Sep 12 17:40:28 2022 - INFO  - End of the test.
+Mon Sep 12 17:40:29 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:40:29 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 17:40:51 2022 - INFO  - Finish restoring the test environment.

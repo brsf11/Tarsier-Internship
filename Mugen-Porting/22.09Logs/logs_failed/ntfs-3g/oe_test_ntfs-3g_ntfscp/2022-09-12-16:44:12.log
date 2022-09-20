@@ -1,0 +1,261 @@
+Mon Sep 12 16:44:15 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 16:45:25 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:45:26 2022 - INFO  - Start to run test.
+Usage: ntfscp [options] device src_file dest_file
+ntfscp v2022.5.17 (libntfs-3g) - Copy file to an NTFS volume.
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+ERROR: couldn't mount volume: Is a directory
+Mon Sep 12 16:45:27 2022 - ERROR - Check ntfscp --attribute failed.
+Mon Sep 12 16:45:27 2022 - ERROR - oe_test_ntfs-3g_ntfscp.sh line 39
+ntfs-3g: Failed to access volume '/dev//mnt/windows': No such file or directory
+
+ntfs-3g 2022.5.17 integrated FUSE 28 - Third Generation NTFS Driver
+		Configuration type 7, XATTRS are on, POSIX ACLS are on
+
+Copyright (C) 2005-2007 Yura Pakhuchiy
+Copyright (C) 2006-2009 Szabolcs Szakacsits
+Copyright (C) 2007-2021 Jean-Pierre Andre
+Copyright (C) 2009-2020 Erik Larsson
+
+Usage:    ntfs-3g [-o option[,...]] <device|image_file> <mount_point>
+
+Options:  ro (read-only mount), windows_names, uid=, gid=,
+          umask=, fmask=, dmask=, streams_interface=.
+          Please see the details in the manual (type: man ntfs-3g).
+
+Example: ntfs-3g /dev/sda1 /mnt/windows
+
+Plugin path: /usr/lib64/ntfs-3g
+
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+Mon Sep 12 16:45:28 2022 - ERROR - Check file failed.
+Mon Sep 12 16:45:29 2022 - ERROR - common/common_lib.sh line 38
+umount: test.txt: not mounted.
+You must specify a source file.
+
+Usage: ntfscp [options] device src_file dest_file
+
+    -a, --attribute NUM   Write to this attribute
+    -i, --inode           Treat dest_file as inode number
+    -f, --force           Use less caution
+    -h, --help            Print this help
+    -m, --min_fragments   Do minimal fragmentation
+    -N, --attr-name NAME  Write to attribute with this name
+    -n, --no-action       Do not write to disk
+    -q, --quiet           Less output
+    -t, --timestamp       Copy the modification time
+    -V, --version         Version information
+    -v, --verbose         More output
+
+Developers' email address: ntfs-3g-devel@lists.sf.net
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+
+Mon Sep 12 16:45:29 2022 - ERROR - Check ntfscp --attr-name failed.
+Mon Sep 12 16:45:30 2022 - ERROR - oe_test_ntfs-3g_ntfscp.sh line 42
+ntfs-3g: Failed to access volume '/dev/test.txt': No such file or directory
+
+ntfs-3g 2022.5.17 integrated FUSE 28 - Third Generation NTFS Driver
+		Configuration type 7, XATTRS are on, POSIX ACLS are on
+
+Copyright (C) 2005-2007 Yura Pakhuchiy
+Copyright (C) 2006-2009 Szabolcs Szakacsits
+Copyright (C) 2007-2021 Jean-Pierre Andre
+Copyright (C) 2009-2020 Erik Larsson
+
+Usage:    ntfs-3g [-o option[,...]] <device|image_file> <mount_point>
+
+Options:  ro (read-only mount), windows_names, uid=, gid=,
+          umask=, fmask=, dmask=, streams_interface=.
+          Please see the details in the manual (type: man ntfs-3g).
+
+Example: ntfs-3g /dev/sda1 /mnt/windows
+
+Plugin path: /usr/lib64/ntfs-3g
+
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+Mon Sep 12 16:45:31 2022 - ERROR - Check file failed.
+Mon Sep 12 16:45:31 2022 - ERROR - common/common_lib.sh line 38
+rm: it is dangerous to operate recursively on '/'
+rm: use --no-preserve-root to override this failsafe
+umount: bad usage
+Try 'umount --help' for more information.
+You must specify a source file.
+
+Usage: ntfscp [options] device src_file dest_file
+
+    -a, --attribute NUM   Write to this attribute
+    -i, --inode           Treat dest_file as inode number
+    -f, --force           Use less caution
+    -h, --help            Print this help
+    -m, --min_fragments   Do minimal fragmentation
+    -N, --attr-name NAME  Write to attribute with this name
+    -n, --no-action       Do not write to disk
+    -q, --quiet           Less output
+    -t, --timestamp       Copy the modification time
+    -V, --version         Version information
+    -v, --verbose         More output
+
+Developers' email address: ntfs-3g-devel@lists.sf.net
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+
+Mon Sep 12 16:45:32 2022 - ERROR - Check ntfscp --no-action failed.
+Mon Sep 12 16:45:33 2022 - ERROR - oe_test_ntfs-3g_ntfscp.sh line 45
+You must specify a source file.
+
+Usage: ntfscp [options] device src_file dest_file
+
+    -a, --attribute NUM   Write to this attribute
+    -i, --inode           Treat dest_file as inode number
+    -f, --force           Use less caution
+    -h, --help            Print this help
+    -m, --min_fragments   Do minimal fragmentation
+    -N, --attr-name NAME  Write to attribute with this name
+    -n, --no-action       Do not write to disk
+    -q, --quiet           Less output
+    -t, --timestamp       Copy the modification time
+    -V, --version         Version information
+    -v, --verbose         More output
+
+Developers' email address: ntfs-3g-devel@lists.sf.net
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+
+Mon Sep 12 16:45:34 2022 - ERROR - Check ntfscp --force failed.
+Mon Sep 12 16:45:34 2022 - ERROR - oe_test_ntfs-3g_ntfscp.sh line 47
+ntfs-3g: No mountpoint is specified.
+
+ntfs-3g 2022.5.17 integrated FUSE 28 - Third Generation NTFS Driver
+		Configuration type 7, XATTRS are on, POSIX ACLS are on
+
+Copyright (C) 2005-2007 Yura Pakhuchiy
+Copyright (C) 2006-2009 Szabolcs Szakacsits
+Copyright (C) 2007-2021 Jean-Pierre Andre
+Copyright (C) 2009-2020 Erik Larsson
+
+Usage:    ntfs-3g [-o option[,...]] <device|image_file> <mount_point>
+
+Options:  ro (read-only mount), windows_names, uid=, gid=,
+          umask=, fmask=, dmask=, streams_interface=.
+          Please see the details in the manual (type: man ntfs-3g).
+
+Example: ntfs-3g /dev/sda1 /mnt/windows
+
+Plugin path: /usr/lib64/ntfs-3g
+
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+Mon Sep 12 16:45:35 2022 - ERROR - Check file failed.
+Mon Sep 12 16:45:36 2022 - ERROR - common/common_lib.sh line 38
+rm: it is dangerous to operate recursively on '/'
+rm: use --no-preserve-root to override this failsafe
+umount: bad usage
+Try 'umount --help' for more information.
+You must specify a source file.
+
+Usage: ntfscp [options] device src_file dest_file
+
+    -a, --attribute NUM   Write to this attribute
+    -i, --inode           Treat dest_file as inode number
+    -f, --force           Use less caution
+    -h, --help            Print this help
+    -m, --min_fragments   Do minimal fragmentation
+    -N, --attr-name NAME  Write to attribute with this name
+    -n, --no-action       Do not write to disk
+    -q, --quiet           Less output
+    -t, --timestamp       Copy the modification time
+    -V, --version         Version information
+    -v, --verbose         More output
+
+Developers' email address: ntfs-3g-devel@lists.sf.net
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+
+Mon Sep 12 16:45:36 2022 - ERROR - Check ntfscp --quiet failed.
+Mon Sep 12 16:45:37 2022 - ERROR - oe_test_ntfs-3g_ntfscp.sh line 50
+ntfs-3g: No mountpoint is specified.
+
+ntfs-3g 2022.5.17 integrated FUSE 28 - Third Generation NTFS Driver
+		Configuration type 7, XATTRS are on, POSIX ACLS are on
+
+Copyright (C) 2005-2007 Yura Pakhuchiy
+Copyright (C) 2006-2009 Szabolcs Szakacsits
+Copyright (C) 2007-2021 Jean-Pierre Andre
+Copyright (C) 2009-2020 Erik Larsson
+
+Usage:    ntfs-3g [-o option[,...]] <device|image_file> <mount_point>
+
+Options:  ro (read-only mount), windows_names, uid=, gid=,
+          umask=, fmask=, dmask=, streams_interface=.
+          Please see the details in the manual (type: man ntfs-3g).
+
+Example: ntfs-3g /dev/sda1 /mnt/windows
+
+Plugin path: /usr/lib64/ntfs-3g
+
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+Mon Sep 12 16:45:38 2022 - ERROR - Check file failed.
+Mon Sep 12 16:45:38 2022 - ERROR - common/common_lib.sh line 38
+rm: it is dangerous to operate recursively on '/'
+rm: use --no-preserve-root to override this failsafe
+umount: bad usage
+Try 'umount --help' for more information.
+You must specify a source file.
+
+Usage: ntfscp [options] device src_file dest_file
+
+    -a, --attribute NUM   Write to this attribute
+    -i, --inode           Treat dest_file as inode number
+    -f, --force           Use less caution
+    -h, --help            Print this help
+    -m, --min_fragments   Do minimal fragmentation
+    -N, --attr-name NAME  Write to attribute with this name
+    -n, --no-action       Do not write to disk
+    -q, --quiet           Less output
+    -t, --timestamp       Copy the modification time
+    -V, --version         Version information
+    -v, --verbose         More output
+
+Developers' email address: ntfs-3g-devel@lists.sf.net
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+
+Mon Sep 12 16:45:39 2022 - ERROR - Check ntfscp --verbose failed.
+Mon Sep 12 16:45:40 2022 - ERROR - oe_test_ntfs-3g_ntfscp.sh line 53
+ntfs-3g: No mountpoint is specified.
+
+ntfs-3g 2022.5.17 integrated FUSE 28 - Third Generation NTFS Driver
+		Configuration type 7, XATTRS are on, POSIX ACLS are on
+
+Copyright (C) 2005-2007 Yura Pakhuchiy
+Copyright (C) 2006-2009 Szabolcs Szakacsits
+Copyright (C) 2007-2021 Jean-Pierre Andre
+Copyright (C) 2009-2020 Erik Larsson
+
+Usage:    ntfs-3g [-o option[,...]] <device|image_file> <mount_point>
+
+Options:  ro (read-only mount), windows_names, uid=, gid=,
+          umask=, fmask=, dmask=, streams_interface=.
+          Please see the details in the manual (type: man ntfs-3g).
+
+Example: ntfs-3g /dev/sda1 /mnt/windows
+
+Plugin path: /usr/lib64/ntfs-3g
+
+News, support and information:  https://github.com/tuxera/ntfs-3g/
+Mon Sep 12 16:45:40 2022 - ERROR - Check file failed.
+Mon Sep 12 16:45:41 2022 - ERROR - common/common_lib.sh line 38
+rm: it is dangerous to operate recursively on '/'
+rm: use --no-preserve-root to override this failsafe
+umount: bad usage
+Try 'umount --help' for more information.
+Mon Sep 12 16:45:42 2022 - INFO  - End of the test.
+Mon Sep 12 16:45:43 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:45:43 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:45:54 2022 - INFO  - Finish restoring the test environment.

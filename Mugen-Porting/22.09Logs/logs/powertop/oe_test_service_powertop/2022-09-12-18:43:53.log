@@ -1,0 +1,10 @@
+Mon Sep 12 18:43:56 2022 - INFO  - Start environmental preparation.
+Failed to start powertop.service: Unit powertop.service not found.
+Mon Sep 12 18:43:56 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:43:57 2022 - INFO  - Start testing...
+Unit powertop.service could not be found.
+Failed to get unit file state for powertop.service: No such file or directory
+Mon Sep 12 18:43:58 2022 - INFO  - Unit is indirect, ignoring.
+Mon Sep 12 18:43:59 2022 - INFO  - Finish test!
+Mon Sep 12 18:43:59 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 18:44:00 2022 - INFO  - oe_test_service_powertop.sh post_test

@@ -1,0 +1,15 @@
+Mon Sep 12 23:34:04 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:35:04 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 23:35:04 2022 - INFO  - Start to run test.
+ * changes to this file unless you know what you are doing--modify the SWIG
+extern int my_mod(int x, int y);
+SWIGEXPORT jint JNICALL Java_exampleJNI_my_1mod(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
+  result = (int)my_mod(arg1,arg2);
+oe_test_swig_10.sh: line 43: example.java: command not found
+Mon Sep 12 23:35:08 2022 - ERROR - oe_test_swig_10.sh line 49
+Files example_wrap.c and example_wrap.c-bak differ
+/usr/share/swig/4.0.2
+Mon Sep 12 23:35:09 2022 - INFO  - End to run test.
+Mon Sep 12 23:35:10 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:35:11 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:35:31 2022 - INFO  - End to restore the test environment.

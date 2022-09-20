@@ -1,0 +1,16 @@
+Fri Sep 16 14:15:19 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 16 14:16:16 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 14:16:16 2022 - INFO  - Start to run test.
+NetworkMa 291 root   24u  IPv4   1265      0t0  UDP openEuler-riscv64:bootpc->_gateway:bootps 
+sshd     335 root    4u  IPv4   3042      0t0  TCP openEuler-riscv64:ssh->_gateway:56962 (ESTABLISHED)
+sshd     348 root    4u  IPv4   3042      0t0  TCP openEuler-riscv64:ssh->_gateway:56962 (ESTABLISHED)
+sshd    9246 root    3u  IPv4  24137      0t0  TCP *:ssh (LISTEN)
+sshd    9246 root    4u  IPv6  24139      0t0  TCP *:ssh (LISTEN)
+sshd     335 root    4u  IPv4   3042      0t0  TCP openEuler-riscv64:ssh->_gateway:56962 (ESTABLISHED)
+sshd     348 root    4u  IPv4   3042      0t0  TCP openEuler-riscv64:ssh->_gateway:56962 (ESTABLISHED)
+sshd    9246 root    3u  IPv4  24137      0t0  TCP *:ssh (LISTEN)
+sshd    9246 root    4u  IPv6  24139      0t0  TCP *:ssh (LISTEN)
+Fri Sep 16 14:16:53 2022 - INFO  - End to run test.
+Fri Sep 16 14:16:54 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 14:16:54 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 14:17:13 2022 - INFO  - End to restore the test environment.

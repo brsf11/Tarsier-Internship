@@ -1,0 +1,35 @@
+Tue Sep 13 01:02:40 2022 - INFO  - Start to prepare the test environment.
+--2022-09-13 01:03:18--  https://gitlab.gnome.org/GNOME/yelp-tools/-/blob/master/help/C/yelp-new.page
+Resolving gitlab.gnome.org (gitlab.gnome.org)... 8.43.85.27, 2620:52:3:1:5054:ff:fe8f:413d
+Connecting to gitlab.gnome.org (gitlab.gnome.org)|8.43.85.27|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘yelp-new.page’
+
+     0K .......... .......... .......... .......... ..........  165K
+    50K .......... .......... .......                          4.97M=0.3s
+
+2022-09-13 01:03:23 (252 KB/s) - ‘yelp-new.page’ saved [79824]
+
+Tue Sep 13 01:03:23 2022 - INFO  - End to prepare the test environment.
+Tue Sep 13 01:03:24 2022 - INFO  - Start to run test.
+oe_test_yelp-new.sh: line 32: yelp-new: command not found
+Tue Sep 13 01:03:25 2022 - ERROR - stub failed
+Tue Sep 13 01:03:26 2022 - ERROR - oe_test_yelp-new.sh line 33
+Tue Sep 13 01:03:27 2022 - ERROR - find first failed
+Tue Sep 13 01:03:27 2022 - ERROR - oe_test_yelp-new.sh line 35
+oe_test_yelp-new.sh: line 36: yelp-new: command not found
+Tue Sep 13 01:03:28 2022 - ERROR - tmpl failed
+Tue Sep 13 01:03:29 2022 - ERROR - oe_test_yelp-new.sh line 37
+Tue Sep 13 01:03:29 2022 - ERROR - find second failed
+Tue Sep 13 01:03:30 2022 - ERROR - oe_test_yelp-new.sh line 39
+Tue Sep 13 01:03:31 2022 - INFO  - End to run test.
+Tue Sep 13 01:03:31 2022 - ERROR - failed to execute the case.
+Tue Sep 13 01:03:32 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:17:28 ago on Tue 13 Sep 2022 12:45:49 AM CST.\nError: \n Problem: package yelp-2:42.1-1.oe2209.riscv64 requires libwebkit2gtk-4.0.so.37()(64bit), but none of the providers can be installed\n  - package webkit2gtk3-2.36.3-1.oe2209.riscv64 requires libenchant-2.so.2()(64bit), but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libhunspell-1.7.so.0()(64bit) needed by enchant2-2.2.15-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Tue Sep 13 01:03:35 2022 - INFO  - End to restore the test environment.

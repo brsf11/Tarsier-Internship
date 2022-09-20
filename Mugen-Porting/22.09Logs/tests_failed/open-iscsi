@@ -1,0 +1,5 @@
+oe_test_open-iscsi_iscsiadm
+oe_test_open-iscsi_iscsistart_iscsiuio
+oe_test_service_iscsid
+oe_test_service_iscsiuio
+oe_test_socket_iscsiuio

@@ -1,0 +1,29 @@
+Fri Sep  9 03:43:14 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 03:43:15 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:43:16 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:43:17 2022 - ERROR - oe_test_firewalld_richrule_blacklist.sh line 32
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:43:18 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:43:18 2022 - ERROR - oe_test_firewalld_richrule_blacklist.sh line 35
+oe_test_firewalld_richrule_blacklist.sh: line 33: nc: command not found
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:43:19 2022 - ERROR - oe_test_firewalld_richrule_blacklist.sh line 41
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:43:20 2022 - ERROR - Failed in remote CMD operation:1
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:43:21 2022 - ERROR - oe_test_firewalld_richrule_blacklist.sh line 47
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:43:21 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:43:22 2022 - ERROR - oe_test_firewalld_richrule_blacklist.sh line 50
+oe_test_firewalld_richrule_blacklist.sh: line 48: nc: command not found
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:43:23 2022 - ERROR - oe_test_firewalld_richrule_blacklist.sh line 56
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:43:24 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:43:25 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 03:43:25 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:43:26 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 03:43:28 2022 - WARN  - no thing to do.
+Fri Sep  9 03:43:28 2022 - INFO  - Finish environment cleanup!

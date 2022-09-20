@@ -1,0 +1,15 @@
+Fri Sep  9 07:46:11 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 07:46:43 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:46:44 2022 - INFO  - Start to run test.
+     Active: active (listening) since Fri 2022-09-09 07:46:44 CST; 6s ago
+     Active: inactive (dead) since Fri 2022-09-09 07:46:50 CST; 5s ago
+     Active: active (listening) since Fri 2022-09-09 07:46:56 CST; 5s ago
+/etc/systemd/system/sockets.target.wants/multipathd.socket
+Removed /etc/systemd/system/sockets.target.wants/multipathd.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/multipathd.socket’: No such file or directory
+Failed to reload multipathd.socket: Job type reload is not applicable for unit multipathd.socket.
+     Active: active (listening) since Fri 2022-09-09 07:46:56 CST; 15s ago
+Fri Sep  9 07:47:12 2022 - INFO  - End of the test.
+Fri Sep  9 07:47:13 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 07:47:14 2022 - INFO  - start environment cleanup.
+Fri Sep  9 07:47:30 2022 - INFO  - Finish environment cleanup!

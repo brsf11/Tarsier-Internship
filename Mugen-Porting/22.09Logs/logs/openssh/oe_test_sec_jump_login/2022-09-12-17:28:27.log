@@ -1,0 +1,27 @@
+Mon Sep 12 17:28:30 2022 - INFO  - Start executing testcase.
+spawn ssh remote-server1
+/root/.ssh/config line 7: no argument after keyword "hostname"
+/root/.ssh/config: terminating, 1 bad configuration options
+expect: spawn id exp3 not open
+    while executing
+"expect {
+            "password" {
+                send "openEuler12#$\r"
+            }
+        }"
+Mon Sep 12 17:28:31 2022 - ERROR - oe_test_sec_jump_login.sh line 41
+spawn ssh remote-server2 11
+/root/.ssh/config line 7: no argument after keyword "hostname"
+/root/.ssh/config: terminating, 1 bad configuration options
+expect: spawn id exp3 not open
+    while executing
+"expect {
+            "password" {
+                send "\r"
+            }
+        }"
+Mon Sep 12 17:28:32 2022 - ERROR - oe_test_sec_jump_login.sh line 59
+Mon Sep 12 17:28:32 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 17:28:33 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:28:34 2022 - INFO  - start environment cleanup.
+Mon Sep 12 17:28:34 2022 - INFO  - Finish environment cleanup!

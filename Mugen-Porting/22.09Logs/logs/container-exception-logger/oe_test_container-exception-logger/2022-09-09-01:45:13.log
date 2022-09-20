@@ -1,0 +1,19 @@
+Fri Sep  9 01:45:16 2022 - INFO  - Start environmental preparation.
+oe_test_container-exception-logger.sh: line 29: openEuler-docker.riscv64.tar.xz: No such file or directory
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+Fri Sep  9 01:47:44 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:47:45 2022 - INFO  - Start testing...
+Fri Sep  9 01:47:47 2022 - ERROR - test failed without option
+Fri Sep  9 01:47:47 2022 - ERROR - oe_test_container-exception-logger.sh line 45
+Fri Sep  9 01:47:49 2022 - ERROR - test failed with option --help
+Fri Sep  9 01:47:49 2022 - ERROR - oe_test_container-exception-logger.sh line 48
+Fri Sep  9 01:47:51 2022 - ERROR - test failed with option --no-tag
+Fri Sep  9 01:47:52 2022 - ERROR - oe_test_container-exception-logger.sh line 51
+Fri Sep  9 01:47:53 2022 - ERROR - test failed with option --tag
+Fri Sep  9 01:47:54 2022 - ERROR - oe_test_container-exception-logger.sh line 54
+Fri Sep  9 01:47:54 2022 - INFO  - Finish test!
+Fri Sep  9 01:47:55 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:47:56 2022 - INFO  - start environment cleanup.
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+Fri Sep  9 01:48:19 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,28 @@
+Fri Sep  9 06:41:25 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 06:54:04 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 06:54:05 2022 - INFO  - Start to run test.
+Usage: rmic <options> <class names>
+Usage: rmid <options>
+Activation.main: warning: sun.rmi.activation.execPolicy system
+property unspecified and no ExecPermissions/ExecOptionPermissions
+granted; subsequent activation attempts may fail due to unsuccessful
+ExecPermission/ExecOptionPermission permission checks.  For
+documentation on how to configure rmid security, refer to:
+
+http://java.sun.com/j2se/1.4/docs/tooldocs/solaris/rmid.html
+http://java.sun.com/j2se/1.4/docs/tooldocs/win32/rmid.html
+
+activation daemon shut down
+portlog
+portlog/Version_Number
+portlog/Snapshot.1
+portlog/Logfile.1
+Usage: rmiregistry <options> <port>
+Usage: schemagen [-options ...] <java files> 
+schemagen 2.2.8-b130911.1802
+schemagen full version "2.2.8-b130911.1802"
+use: serialver [-classpath classpath] [-show] [classname...]
+Fri Sep  9 06:54:27 2022 - INFO  - End to run test.
+Fri Sep  9 06:54:28 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 06:54:28 2022 - INFO  - Need't to restore the tet environment.
+Fri Sep  9 06:55:26 2022 - INFO  - End to restore the test environment.

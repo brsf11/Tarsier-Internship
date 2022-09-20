@@ -1,0 +1,32 @@
+Fri Sep 16 11:35:27 2022 - INFO  - Start to prepare the test environment.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep 16 11:36:04 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 11:36:05 2022 - INFO  - Start to run test.
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Fri Sep 16 11:36:06 2022 - ERROR - oe_test_server_squid_proxy.sh line 31
+grep: /etc/squid/squid.conf: No such file or directory
+sed: can't read /etc/squid/squid.conf: No such file or directory
+oe_test_server_squid_proxy.sh: line 34: firewall-cmd: command not found
+Fri Sep 16 11:36:06 2022 - ERROR - oe_test_server_squid_proxy.sh line 35
+oe_test_server_squid_proxy.sh: line 36: firewall-cmd: command not found
+Fri Sep 16 11:36:07 2022 - ERROR - oe_test_server_squid_proxy.sh line 37
+Failed to enable unit: Unit file squid.service does not exist.
+Fri Sep 16 11:36:08 2022 - ERROR - oe_test_server_squid_proxy.sh line 39
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 3128 after 26 ms: Connection refused
+Fri Sep 16 11:36:11 2022 - ERROR - oe_test_server_squid_proxy.sh line 42
+ls: cannot access 'baidu': No such file or directory
+Fri Sep 16 11:36:12 2022 - ERROR - oe_test_server_squid_proxy.sh line 44
+Fri Sep 16 11:36:12 2022 - INFO  - End to run test.
+Fri Sep 16 11:36:13 2022 - ERROR - failed to execute the case.
+Fri Sep 16 11:36:14 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 22:18:11 ago on Thu 15 Sep 2022 01:17:52 PM CST.\nNo match for argument: squid\nError: Unable to find a match: squid'
+Fri Sep 16 11:36:16 2022 - INFO  - End to restore the test environment.

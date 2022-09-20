@@ -1,0 +1,23 @@
+Fri Sep  9 07:25:18 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:25:36 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:25:44 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:25:45 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:25:46 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 30
+Fri Sep  9 07:25:47 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 32
+Fri Sep  9 07:25:48 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 34
+Fri Sep  9 07:25:49 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 36
+Fri Sep  9 07:25:50 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 38
+Fri Sep  9 07:25:51 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 40
+  /dev/vda1         ---     0     0 
+Fri Sep  9 07:25:52 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 44
+Fri Sep  9 07:25:53 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 46
+Fri Sep  9 07:25:54 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 48
+Fri Sep  9 07:25:55 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 50
+Fri Sep  9 07:25:56 2022 - ERROR - oe_test_lvm2_pvdisplay_001.sh line 52
+Fri Sep  9 07:25:56 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:25:57 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:25:58 2022 - INFO  - Start environment cleanup.
+  No device found for /dev/.
+Fri Sep  9 07:25:59 2022 - WARN  - no thing to do.
+Fri Sep  9 07:25:59 2022 - INFO  - Finish environment cleanup.

@@ -1,0 +1,39 @@
+Tue Sep 13 00:23:30 2022 - INFO  - Start environmental preparation.
+Tue Sep 13 00:23:58 2022 - INFO  - End of environmental preparation!
+Tue Sep 13 00:23:59 2022 - INFO  - Start testing...
+Failed to restart vdo.service: Unit vdo.service not found.
+Tue Sep 13 00:23:59 2022 - ERROR - vdo.service restart failed
+Tue Sep 13 00:24:00 2022 - ERROR - ../common/common_lib.sh line 34
+Unit vdo.service could not be found.
+Tue Sep 13 00:24:07 2022 - ERROR - vdo.service restart failed
+Tue Sep 13 00:24:07 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop vdo.service: Unit vdo.service not loaded.
+Tue Sep 13 00:24:08 2022 - ERROR - vdo.service stop failed
+Tue Sep 13 00:24:09 2022 - ERROR - ../common/common_lib.sh line 39
+Unit vdo.service could not be found.
+Tue Sep 13 00:24:16 2022 - ERROR - vdo.service stop failed
+Tue Sep 13 00:24:16 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start vdo.service: Unit vdo.service not found.
+Tue Sep 13 00:24:17 2022 - ERROR - vdo.service start failed
+Tue Sep 13 00:24:18 2022 - ERROR - ../common/common_lib.sh line 44
+Unit vdo.service could not be found.
+Tue Sep 13 00:24:24 2022 - ERROR - vdo.service start failed
+Tue Sep 13 00:24:25 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for vdo.service: No such file or directory
+Tue Sep 13 00:24:26 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start vdo.service: Unit vdo.service not found.
+Tue Sep 13 00:24:27 2022 - ERROR - Job type reload is not applicable for unit vdo.service
+Tue Sep 13 00:24:28 2022 - ERROR - ../common/common_lib.sh line 91
+Unit vdo.service could not be found.
+Unit vdo.service could not be found.
+Tue Sep 13 00:24:29 2022 - INFO  - Finish test!
+Tue Sep 13 00:24:29 2022 - ERROR - failed to execute the case.
+Tue Sep 13 00:24:30 2022 - INFO  - start environment cleanup.
+Failed to stop vdo.service: Unit vdo.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:16 ago on Tue 13 Sep 2022 12:23:40 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides kmod-kvdo >= 6.2 needed by vdo-6.2.0.298-14.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Tue Sep 13 00:24:33 2022 - INFO  - Finish environment cleanup!

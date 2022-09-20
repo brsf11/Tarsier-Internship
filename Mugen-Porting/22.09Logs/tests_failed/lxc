@@ -1,0 +1,12 @@
+oe_test_service_lxc-net
+oe_test_lxc_create_attach
+oe_test_lxc_ls_monitor
+oe_test_lxc_unfreeze_destroy
+oe_test_lxc_autostart_cgroup
+oe_test_lxc_device_copy
+oe_test_lxc_snapshot_start
+oe_test_lxc_unshare_update
+oe_test_lxc_checkconfig_console
+oe_test_lxc_execute_freeze
+oe_test_lxc_stop_top
+oe_test_lxc_info

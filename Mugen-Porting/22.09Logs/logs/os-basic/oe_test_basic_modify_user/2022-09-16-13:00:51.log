@@ -1,0 +1,12 @@
+Fri Sep 16 13:00:53 2022 - INFO  - Start environment preparation.
+useradd warning: testuser's uid 555 outside of the UID_MIN 1000 and UID_MAX 60000 range.
+Fri Sep 16 13:00:57 2022 - INFO  - Environmental preparation is over.
+Fri Sep 16 13:00:57 2022 - INFO  - Start executing testcase!
+666
+72
+Usage: usermod [options] LOGIN
+Fri Sep 16 13:00:59 2022 - INFO  - End of testcase execution!
+Fri Sep 16 13:01:00 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 13:01:00 2022 - INFO  - start environment cleanup.
+userdel: group testuser not removed because it is not the primary group of user testuser.
+Fri Sep 16 13:01:02 2022 - INFO  - Finish environment cleanup.

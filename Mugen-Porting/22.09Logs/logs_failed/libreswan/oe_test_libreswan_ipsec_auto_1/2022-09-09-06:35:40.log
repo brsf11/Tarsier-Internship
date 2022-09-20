@@ -1,0 +1,54 @@
+Fri Sep  9 06:35:43 2022 - INFO  - Start to prepare the database config.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 06:36:40 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 06:36:41 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r ./common/test-vm.secrets @:/etc/ipsec.d
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 06:36:42 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:36:43 2022 - ERROR - Failed in remote CMD operation:1
+Redirecting to: systemctl restart ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:36:49 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 06:36:50 2022 - INFO  - Start to run test.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:36:50 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 06:36:52 2022 - ERROR - Check ipsec auto --add failed.
+Fri Sep  9 06:36:52 2022 - ERROR - oe_test_libreswan_ipsec_auto_1.sh line 34
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:36:54 2022 - ERROR - Check ipsec auto --up failed.
+Fri Sep  9 06:36:54 2022 - ERROR - oe_test_libreswan_ipsec_auto_1.sh line 38
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:36:55 2022 - ERROR - Check ipsec auto --status failed.
+Fri Sep  9 06:36:56 2022 - ERROR - oe_test_libreswan_ipsec_auto_1.sh line 40
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:36:58 2022 - ERROR - Check ipsec auto --down failed.
+Fri Sep  9 06:36:58 2022 - ERROR - oe_test_libreswan_ipsec_auto_1.sh line 46
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:37:00 2022 - ERROR - Check ipsec auto --delete failed.
+Fri Sep  9 06:37:00 2022 - ERROR - oe_test_libreswan_ipsec_auto_1.sh line 48
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:37:02 2022 - ERROR - Check ipsec auto --listall failed.
+Fri Sep  9 06:37:02 2022 - ERROR - oe_test_libreswan_ipsec_auto_1.sh line 52
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:37:04 2022 - ERROR - Check ipsec auto --status --config failed.
+Fri Sep  9 06:37:04 2022 - ERROR - oe_test_libreswan_ipsec_auto_1.sh line 56
+Fri Sep  9 06:37:05 2022 - INFO  - End to run test.
+Fri Sep  9 06:37:06 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:37:07 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:37:08 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 06:37:31 2022 - INFO  - End to restore the test environment.

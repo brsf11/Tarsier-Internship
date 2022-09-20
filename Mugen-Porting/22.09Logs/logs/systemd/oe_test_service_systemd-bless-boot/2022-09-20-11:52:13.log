@@ -1,0 +1,8 @@
+Tue Sep 20 11:52:15 2022 - INFO  - Start testing...
+Tue Sep 20 11:52:16 2022 - INFO  - systemd-bless-boot.service is a system service that marks the current boot process as successful. 
+Unit systemd-bless-boot.service could not be found.
+Failed to get unit file state for systemd-bless-boot.service: No such file or directory
+Tue Sep 20 11:52:17 2022 - INFO  - Unit is indirect, ignoring.
+Tue Sep 20 11:52:17 2022 - INFO  - Finish test!
+Tue Sep 20 11:52:18 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:52:19 2022 - INFO  - oe_test_service_systemd-bless-boot.sh post_test

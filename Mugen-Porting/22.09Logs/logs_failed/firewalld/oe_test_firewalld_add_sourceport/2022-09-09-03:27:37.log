@@ -1,0 +1,15 @@
+Fri Sep  9 03:27:40 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:27:41 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:27:42 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:27:43 2022 - ERROR - oe_test_firewalld_add_sourceport.sh line 32
+sudo: firewall-cmd: command not found
+Fri Sep  9 03:27:44 2022 - ERROR - oe_test_firewalld_add_sourceport.sh line 34
+Fri Sep  9 03:27:44 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 03:27:45 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:27:46 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 03:27:47 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,67 @@
+Thu Sep 15 18:00:32 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 18:00:41 2022 - INFO  - pkgs:(wireshark) is already installed
+Thu Sep 15 18:00:43 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 18:00:43 2022 - INFO  - Start to run test.
+Usage: editcap [options] ... <infile> <outfile> [ <packet#>[-<packet#>] ... ]
+Editcap (Wireshark) 3.6.3 (Git commit 6d348e4611e2)
+Capturing on 'eth0'
+File: testfile1
+
+Packets: 2 
+Packets: 3 
+Packets: 4 
+Packets: 6 
+Packets: 8 
+Packets: 12 
+Packets: 15 
+Packets: 18 
+Packets: 19 
+Packets: 20 
+Packets captured: 20
+Packets received/dropped on interface 'eth0': 20/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+oe_test_editcap_01.sh: line 36: capinfos: command not found
+Thu Sep 15 18:09:25 2022 - ERROR - oe_test_editcap_01.sh line 37
+oe_test_editcap_01.sh: line 38: editcap: command not found
+Thu Sep 15 18:09:25 2022 - ERROR - oe_test_editcap_01.sh line 39
+oe_test_editcap_01.sh: line 40: capinfos: command not found
+Thu Sep 15 18:09:26 2022 - ERROR - oe_test_editcap_01.sh line 41
+grep: testfile2: No such file or directory
+Thu Sep 15 18:09:32 2022 - ERROR - oe_test_editcap_01.sh line 44
+oe_test_editcap_01.sh: line 45: capinfos: command not found
+Thu Sep 15 18:09:33 2022 - ERROR - oe_test_editcap_01.sh line 46
+oe_test_editcap_01.sh: line 48: editcap: command not found
+Thu Sep 15 18:09:38 2022 - ERROR - oe_test_editcap_01.sh line 49
+oe_test_editcap_01.sh: line 50: capinfos: command not found
+Thu Sep 15 18:09:38 2022 - ERROR - oe_test_editcap_01.sh line 51
+oe_test_editcap_01.sh: line 52: editcap: command not found
+Thu Sep 15 18:09:39 2022 - ERROR - oe_test_editcap_01.sh line 53
+oe_test_editcap_01.sh: line 54: capinfos: command not found
+Thu Sep 15 18:09:40 2022 - ERROR - oe_test_editcap_01.sh line 55
+oe_test_editcap_01.sh: line 56: editcap: command not found
+Thu Sep 15 18:09:40 2022 - ERROR - oe_test_editcap_01.sh line 57
+oe_test_editcap_01.sh: line 58: capinfos: command not found
+Thu Sep 15 18:09:41 2022 - ERROR - oe_test_editcap_01.sh line 59
+oe_test_editcap_01.sh: line 61: capinfos: command not found
+Thu Sep 15 18:09:48 2022 - ERROR - oe_test_editcap_01.sh line 62
+oe_test_editcap_01.sh: line 63: editcap: command not found
+Thu Sep 15 18:09:48 2022 - ERROR - oe_test_editcap_01.sh line 64
+oe_test_editcap_01.sh: line 65: capinfos: command not found
+Thu Sep 15 18:09:49 2022 - ERROR - oe_test_editcap_01.sh line 66
+oe_test_editcap_01.sh: line 68: capinfos: command not found
+Thu Sep 15 18:09:56 2022 - ERROR - oe_test_editcap_01.sh line 69
+oe_test_editcap_01.sh: line 70: editcap: command not found
+Thu Sep 15 18:09:56 2022 - ERROR - oe_test_editcap_01.sh line 71
+oe_test_editcap_01.sh: line 72: capinfos: command not found
+Thu Sep 15 18:09:57 2022 - ERROR - oe_test_editcap_01.sh line 73
+oe_test_editcap_01.sh: line 74: dumpcap: command not found
+oe_test_editcap_01.sh: line 76: capinfos: command not found
+Thu Sep 15 18:10:04 2022 - ERROR - oe_test_editcap_01.sh line 77
+oe_test_editcap_01.sh: line 78: editcap: command not found
+Thu Sep 15 18:10:04 2022 - ERROR - oe_test_editcap_01.sh line 79
+oe_test_editcap_01.sh: line 80: capinfos: command not found
+Thu Sep 15 18:10:05 2022 - ERROR - oe_test_editcap_01.sh line 81
+Thu Sep 15 18:10:06 2022 - INFO  - End of the test.
+Thu Sep 15 18:10:06 2022 - ERROR - failed to execute the case.
+Thu Sep 15 18:10:07 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 18:10:08 2022 - WARN  - no thing to do.
+Thu Sep 15 18:10:08 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,5 @@
+Mon Sep 12 21:45:11 2022 - INFO  - Start to prepare the test environment.
+oe_test_rsyslog_function_imfile.sh: line 23: /etc/rsyslog.d/test: No such file or directory
+Mon Sep 12 21:45:12 2022 - INFO  - Start to restore the test environment.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:45:13 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,38 @@
+Fri Sep  9 02:35:21 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:35:47 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:35:48 2022 - INFO  - Start to run test.
+Failed to restart dovecot.socket: Unit dovecot.socket not found.
+Fri Sep  9 02:35:49 2022 - ERROR - dovecot.socket restart failed
+Fri Sep  9 02:35:49 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dovecot.socket could not be found.
+Fri Sep  9 02:35:56 2022 - ERROR - dovecot.socket restart failed
+Fri Sep  9 02:35:57 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dovecot.socket: Unit dovecot.socket not loaded.
+Fri Sep  9 02:35:57 2022 - ERROR - dovecot.socket stop failed
+Fri Sep  9 02:35:58 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dovecot.socket could not be found.
+Fri Sep  9 02:36:05 2022 - ERROR - dovecot.socket stop failed
+Fri Sep  9 02:36:05 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dovecot.socket: Unit dovecot.socket not found.
+Fri Sep  9 02:36:06 2022 - ERROR - dovecot.socket start failed
+Fri Sep  9 02:36:07 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dovecot.socket could not be found.
+Fri Sep  9 02:36:13 2022 - ERROR - dovecot.socket start failed
+Fri Sep  9 02:36:14 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dovecot.socket: No such file or directory
+Fri Sep  9 02:36:15 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dovecot.socket: Unit dovecot.socket not found.
+Fri Sep  9 02:36:16 2022 - ERROR - oe_test_socket_dovecot.sh line 33
+Unit dovecot.socket could not be found.
+Fri Sep  9 02:36:17 2022 - ERROR - oe_test_socket_dovecot.sh line 35
+Fri Sep  9 02:36:17 2022 - INFO  - End of the test.
+Fri Sep  9 02:36:18 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:36:19 2022 - INFO  - start environment cleanup.
+Failed to stop dovecot.socket: Unit dovecot.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:16 ago on Fri 09 Sep 2022 02:33:29 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 02:36:22 2022 - INFO  - Finish environment cleanup!

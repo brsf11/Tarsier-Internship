@@ -1,0 +1,5 @@
+oe_test_service_glusterd
+oe_test_service_glustereventsd
+oe_test_service_glusterfsd
+oe_test_service_glusterfssharedstorage
+oe_test_service_gluster-ta-volume

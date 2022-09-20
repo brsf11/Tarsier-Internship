@@ -1,0 +1,12 @@
+Fri Sep  9 05:17:21 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 05:17:50 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 05:17:50 2022 - INFO  - Start to run test.
+oe_test_jetty_start.sh: line 28: cd: /usr/share/jetty/demo-base: No such file or directory
+Fri Sep  9 05:17:51 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:18 ago on Fri 09 Sep 2022 05:17:30 AM CST.\nError: \n Problem: package jetty-9.4.15-9.oe2209.noarch requires jetty-osgi-boot-jsp = 9.4.15-9.oe2209, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides mvn(org.eclipse.osgi:org.eclipse.osgi.services) needed by jetty-osgi-boot-jsp-9.4.15-9.oe2209.noarch\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 05:17:54 2022 - INFO  - Finish restoring the test environment.

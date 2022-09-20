@@ -1,0 +1,46 @@
+Tue Sep 20 12:03:11 2022 - INFO  - Start environmental preparation.
+sed: can't read /etc/systemd/journal-upload.conf: No such file or directory
+sed: can't read /usr/lib/systemd/system/systemd-journal-remote.service: No such file or directory
+Failed to restart systemd-journal-remote.service: Unit systemd-journal-remote.service not found.
+Tue Sep 20 12:03:47 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:03:48 2022 - INFO  - Start testing...
+Failed to restart systemd-journal-upload.service: Unit systemd-journal-upload.service not found.
+Tue Sep 20 12:03:49 2022 - ERROR - systemd-journal-upload.service restart failed
+Tue Sep 20 12:03:49 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-journal-upload.service could not be found.
+Tue Sep 20 12:03:56 2022 - ERROR - systemd-journal-upload.service restart failed
+Tue Sep 20 12:03:57 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-journal-upload.service: Unit systemd-journal-upload.service not loaded.
+Tue Sep 20 12:03:57 2022 - ERROR - systemd-journal-upload.service stop failed
+Tue Sep 20 12:03:58 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-journal-upload.service could not be found.
+Tue Sep 20 12:04:05 2022 - ERROR - systemd-journal-upload.service stop failed
+Tue Sep 20 12:04:05 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-journal-upload.service: Unit systemd-journal-upload.service not found.
+Tue Sep 20 12:04:06 2022 - ERROR - systemd-journal-upload.service start failed
+Tue Sep 20 12:04:06 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-journal-upload.service could not be found.
+Tue Sep 20 12:04:13 2022 - ERROR - systemd-journal-upload.service start failed
+Tue Sep 20 12:04:14 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-journal-upload.service: No such file or directory
+Tue Sep 20 12:04:14 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-journal-upload.service: Unit systemd-journal-upload.service not found.
+Tue Sep 20 12:04:15 2022 - ERROR - Job type reload is not applicable for unit systemd-journal-upload.service
+Tue Sep 20 12:04:16 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-journal-upload.service could not be found.
+Unit systemd-journal-upload.service could not be found.
+Tue Sep 20 12:04:17 2022 - INFO  - Finish test!
+Tue Sep 20 12:04:17 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:04:18 2022 - INFO  - Start environment cleanup.
+sed: can't read /etc/systemd/journal-upload.conf: No such file or directory
+sed: can't read /usr/lib/systemd/system/systemd-journal-remote.service: No such file or directory
+Failed to stop systemd-journal-remote.service: Unit systemd-journal-remote.service not loaded.
+Failed to stop systemd-journal-upload.service: Unit systemd-journal-upload.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:25:51 ago on Tue 20 Sep 2022 11:37:51 AM CST.\nNo match for argument: systemd-journal-remote\nError: Unable to find a match: systemd-journal-remote'
+oe_test_service_systemd-journal-upload.sh: line 51: [: =: unary operator expected
+Tue Sep 20 12:04:25 2022 - INFO  - Finish environment cleanup!

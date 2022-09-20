@@ -1,0 +1,39 @@
+Tue Sep 20 12:26:43 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:27:17 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:27:18 2022 - INFO  - Start testing...
+Failed to restart systemd-journal-remote.socket: Unit systemd-journal-remote.socket not found.
+Tue Sep 20 12:27:18 2022 - ERROR - systemd-journal-remote.socket restart failed
+Tue Sep 20 12:27:19 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-journal-remote.socket could not be found.
+Tue Sep 20 12:27:25 2022 - ERROR - systemd-journal-remote.socket restart failed
+Tue Sep 20 12:27:26 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-journal-remote.socket: Unit systemd-journal-remote.socket not loaded.
+Tue Sep 20 12:27:27 2022 - ERROR - systemd-journal-remote.socket stop failed
+Tue Sep 20 12:27:27 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-journal-remote.socket could not be found.
+Tue Sep 20 12:27:34 2022 - ERROR - systemd-journal-remote.socket stop failed
+Tue Sep 20 12:27:34 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-journal-remote.socket: Unit systemd-journal-remote.socket not found.
+Tue Sep 20 12:27:35 2022 - ERROR - systemd-journal-remote.socket start failed
+Tue Sep 20 12:27:36 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-journal-remote.socket could not be found.
+Tue Sep 20 12:27:42 2022 - ERROR - systemd-journal-remote.socket start failed
+Tue Sep 20 12:27:43 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-journal-remote.socket: No such file or directory
+Tue Sep 20 12:27:43 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-journal-remote.socket: Unit systemd-journal-remote.socket not found.
+Tue Sep 20 12:27:44 2022 - ERROR - Job type reload is not applicable for unit systemd-journal-remote.socket
+Tue Sep 20 12:27:45 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-journal-remote.socket could not be found.
+Unit systemd-journal-remote.socket could not be found.
+Tue Sep 20 12:27:46 2022 - INFO  - Finish test!
+Tue Sep 20 12:27:46 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:27:47 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-journal-remote.socket: Unit systemd-journal-remote.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:49:25 ago on Tue 20 Sep 2022 11:37:51 AM CST.\nNo match for argument: systemd-journal-remote\nError: Unable to find a match: systemd-journal-remote'
+Tue Sep 20 12:27:50 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,71 @@
+Mon Sep 12 17:30:22 2022 - INFO  - Start to config params of the case.
+Mon Sep 12 17:30:23 2022 - INFO  - End to config params of the case.
+Mon Sep 12 17:30:23 2022 - INFO  - Start to prepare the test environment.
+Generating RSA private key, 2048 bit long modulus (2 primes)
+.....................................................................+++++
+....................+++++
+e is 65537 (0x010001)
+-----BEGIN RSA PRIVATE KEY-----
+spawn openssl req -x509 -key /etc/pki/CA/private/cakey.pem -days 365 -out /etc/pki/CA/cacert.pem -new
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [AU]:CN
+State or Province Name (full name) [Some-State]:shanxi
+Locality Name (eg, city) []:xian
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:openEuler
+Organizational Unit Name (eg, section) []:develop
+Common Name (e.g. server FQDN or YOUR name) []:www.openeuler.org
+Email Address []:public@openeuler.io
+into your certificate request.
+-----BEGIN CERTIFICATE-----
+mkdir: cannot create directory ‘/etc/httpd/ssl’: No such file or directory
+genrsa: Can't open "/etc/httpd/ssl/httpd.key" for writing, No such file or directory
+Mon Sep 12 17:31:02 2022 - ERROR - common/common_openssl.sh line 68
+grep: /etc/httpd/ssl/httpd.key: No such file or directory
+Mon Sep 12 17:31:03 2022 - ERROR - common/common_openssl.sh line 70
+couldn't open "/etc/httpd/ssl/testlog2": no such file or directory
+    while executing
+"log_file /etc/httpd/ssl/testlog2"
+grep: /etc/httpd/ssl/testlog2: No such file or directory
+Mon Sep 12 17:31:04 2022 - ERROR - common/common_openssl.sh line 96
+grep: /etc/httpd/ssl/httpd.csr: No such file or directory
+Mon Sep 12 17:31:04 2022 - ERROR - common/common_openssl.sh line 98
+couldn't open "/etc/httpd/ssl/testlog3": no such file or directory
+    while executing
+"log_file /etc/httpd/ssl/testlog3"
+grep: /etc/httpd/ssl/testlog3: No such file or directory
+Mon Sep 12 17:31:05 2022 - ERROR - common/common_openssl.sh line 115
+grep: /etc/httpd/ssl/httpd.crt: No such file or directory
+Mon Sep 12 17:31:06 2022 - ERROR - common/common_openssl.sh line 117
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
+sed: can't read /etc/httpd/conf.d/ssl.conf: No such file or directory
+sed: can't read /etc/httpd/conf/httpd.conf: No such file or directory
+sed: can't read /etc/httpd/conf/httpd.conf: No such file or directory
+cp: cannot stat '/usr/share/httpd/noindex/index.html': No such file or directory
+setenforce: SELinux is disabled
+Mon Sep 12 17:31:07 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 17:31:08 2022 - INFO  - Start to run test.
+Failed to restart httpd.service: Unit httpd.service not found.
+Mon Sep 12 17:31:08 2022 - ERROR - oe_test_openssl_delete_configuration_file.sh line 43
+Unit httpd.service could not be found.
+Mon Sep 12 17:31:09 2022 - ERROR - oe_test_openssl_delete_configuration_file.sh line 45
+curl: (7) Failed to connect to www.openeuler.org port 443 after 23 ms: Connection refused
+Mon Sep 12 17:31:10 2022 - INFO  - End to run test.
+Mon Sep 12 17:31:11 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:31:11 2022 - INFO  - Start to restore the test environment.
+mv: cannot stat '/etc/pki/tls/openssl.cnf.bak': No such file or directory
+Failed to stop httpd.service: Unit httpd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:54 ago on Mon 12 Sep 2022 05:29:05 PM CST.\nError: \n Problem 1: conflicting requests\n  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64\n Problem 2: package mod_ssl-1:2.4.51-6.oe2209.riscv64 requires httpd-mmn = 20120211riscv64, but none of the providers can be installed\n  - package mod_ssl-1:2.4.51-6.oe2209.riscv64 requires httpd = 2.4.51-6.oe2209, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 17:31:15 2022 - INFO  - End to restore the test environment.

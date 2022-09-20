@@ -1,0 +1,10 @@
+Thu Sep  8 17:31:25 2022 - INFO  - Start to prepare the test environment.
+Thu Sep  8 17:31:34 2022 - INFO  - pkgs:(acl) is already installed
+Thu Sep  8 17:31:35 2022 - INFO  - End to prepare the test environment.
+Thu Sep  8 17:31:35 2022 - INFO  - Start to run test.
+oe_test_acl_getfacl.sh: line 179: curr_path: command not found
+Thu Sep  8 17:31:37 2022 - INFO  - End to run test.
+Thu Sep  8 17:31:38 2022 - INFO  - succeed to execute the case.
+Thu Sep  8 17:31:39 2022 - INFO  - Start to restore the test environment.
+Thu Sep  8 17:31:39 2022 - WARN  - no thing to do.
+Thu Sep  8 17:31:40 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,37 @@
+Fri Sep  9 06:50:53 2022 - INFO  - Start to prepare the database config.
+Redirecting to: systemctl restart ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:52:01 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 06:52:02 2022 - INFO  - Start to run test.
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:03 2022 - ERROR - Check ipsec whack --status failed.
+Fri Sep  9 06:52:04 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 34
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:05 2022 - ERROR - Check ipsec whack --trafficstatus failed.
+Fri Sep  9 06:52:05 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 36
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:06 2022 - ERROR - Check ipsec whack --globalstatus failed.
+Fri Sep  9 06:52:07 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 38
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:08 2022 - ERROR - Check ipsec whack --clearstats failed.
+Fri Sep  9 06:52:09 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 40
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:09 2022 - ERROR - Check ipsec whack --shuntstatus failed.
+Fri Sep  9 06:52:10 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 42
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:11 2022 - ERROR - Check ipsec whack --fipsstatus failed.
+Fri Sep  9 06:52:12 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 44
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:13 2022 - ERROR - Check ipsec whack --briefstatus failed.
+Fri Sep  9 06:52:14 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 46
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:15 2022 - ERROR - Check ipsec whack --showstates failed.
+Fri Sep  9 06:52:15 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 48
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:52:16 2022 - ERROR - Check ipsec whack --addresspoolstatus failed.
+Fri Sep  9 06:52:17 2022 - ERROR - oe_test_libreswan_ipsec_whack_2.sh line 50
+Fri Sep  9 06:52:18 2022 - INFO  - End to run test.
+Fri Sep  9 06:52:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:52:20 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 06:52:42 2022 - INFO  - End to restore the test environment.

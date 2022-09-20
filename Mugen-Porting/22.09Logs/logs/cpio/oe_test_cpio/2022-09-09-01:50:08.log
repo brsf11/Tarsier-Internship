@@ -1,0 +1,18 @@
+Fri Sep  9 01:50:11 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 01:50:21 2022 - INFO  - pkgs:(cpio) is already installed
+Fri Sep  9 01:50:22 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 01:50:23 2022 - INFO  - Start to run test.
+Fri Sep  9 01:50:23 2022 - INFO  - test cpio -o option
+3 blocks
+Fri Sep  9 01:50:24 2022 - INFO  - test cpio -t option
+3 blocks
+Fri Sep  9 01:50:25 2022 - INFO  - test cpio -I option
+3 blocks
+Fri Sep  9 01:50:26 2022 - INFO  - test cpio -i option
+3 blocks
+Fri Sep  9 01:50:27 2022 - INFO  - test cpio -u option
+3 blocks
+Fri Sep  9 01:50:27 2022 - INFO  - End of the test.
+Fri Sep  9 01:50:28 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 01:50:29 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 01:50:29 2022 - INFO  - Finish restoring the test environment.

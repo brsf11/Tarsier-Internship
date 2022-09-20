@@ -1,0 +1,59 @@
+Fri Sep  9 06:45:16 2022 - INFO  - Start to prepare the database config.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 06:46:17 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 06:46:17 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r ./common/test-vm.secrets @:/etc/ipsec.d
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 06:46:18 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:46:19 2022 - ERROR - Failed in remote CMD operation:1
+Redirecting to: systemctl restart ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:46:25 2022 - ERROR - Failed in remote CMD operation:1
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:46:27 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 06:46:28 2022 - INFO  - Start to run test.
+ipsec showhostkey: authentication of "NSS Certificate DB" failed
+FATAL ERROR: ipsec showhostkey: NSS: could not authenticate slot
+Fri Sep  9 06:46:29 2022 - ERROR - Check ipsec pluto --dump failed.
+Fri Sep  9 06:46:30 2022 - ERROR - oe_test_libreswan_ipsec_showhostkey_nss.sh line 39
+ipsec showhostkey: authentication of "NSS Certificate DB" failed
+FATAL ERROR: ipsec showhostkey: NSS: could not authenticate slot
+Fri Sep  9 06:46:31 2022 - ERROR - Check ipsec pluto --list failed.
+Fri Sep  9 06:46:32 2022 - ERROR - oe_test_libreswan_ipsec_showhostkey_nss.sh line 41
+ipsec showhostkey: authentication of "NSS Certificate DB" failed
+FATAL ERROR: ipsec showhostkey: NSS: could not authenticate slot
+Fri Sep  9 06:46:33 2022 - ERROR - Check ipsec pluto --left failed.
+Fri Sep  9 06:46:34 2022 - ERROR - oe_test_libreswan_ipsec_showhostkey_nss.sh line 46
+/usr/libexec/ipsec/showhostkey: option '--ckaid' requires an argument
+Usage: showhostkey [ --verbose ] [ --debug ]
+        { --version | --dump | --list | --left | --right |
+                --ipseckey [ --precedence <precedence> ] 
+                [ --gateway <gateway> ] }
+        [ --rsaid <rsaid> | --ckaid <ckaid> ]
+        [ --nssdir <nssdir> ] [ --password <password> ]
+Fri Sep  9 06:46:34 2022 - ERROR - Check ipsec pluto --ipseckey failed.
+Fri Sep  9 06:46:35 2022 - ERROR - oe_test_libreswan_ipsec_showhostkey_nss.sh line 48
+key4.db
+Error opening input terminal for read
+pk12util: File Open failed: : PR_FILE_NOT_FOUND_ERROR: File not found
+Fri Sep  9 06:46:38 2022 - INFO  - End to run test.
+Fri Sep  9 06:46:39 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:46:40 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:46:41 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 06:47:03 2022 - INFO  - End to restore the test environment.

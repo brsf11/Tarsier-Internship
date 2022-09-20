@@ -1,0 +1,31 @@
+Mon Sep 12 17:23:40 2022 - INFO  - Start to run test.
+spawn ssh @ ip a
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+expect: spawn id exp4 not open
+    while executing
+"expect {
+            "password" {
+                send "\r"
+            }
+        }"
+Mon Sep 12 17:23:41 2022 - ERROR - oe_test_openssh_ssh_command.sh line 37
+Mon Sep 12 17:23:41 2022 - ERROR - oe_test_openssh_ssh_command.sh line 39
+spawn ssh -l ip a
+The authenticity of host 'a (127.0.0.2)' can't be established.
+ED25519 key fingerprint is SHA256:FlutiferylfbBbFVUi8EMNSZaS0inbaa5SI3r1xHpMc.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'a' (ED25519) to the list of known hosts.
+ip@a's password: 
+Permission denied, please try again.
+ip@a's password: Mon Sep 12 17:23:55 2022 - ERROR - oe_test_openssh_ssh_command.sh line 57
+Mon Sep 12 17:23:55 2022 - INFO  - End to run test.
+Mon Sep 12 17:23:56 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:23:57 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 17:23:57 2022 - INFO  - End to restore the test environment.

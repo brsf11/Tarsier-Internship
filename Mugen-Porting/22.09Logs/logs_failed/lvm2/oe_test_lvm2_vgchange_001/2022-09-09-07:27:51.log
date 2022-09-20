@@ -1,0 +1,75 @@
+Fri Sep  9 07:27:53 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:28:11 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:28:19 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:28:19 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:28:21 2022 - ERROR - create PV failed
+Fri Sep  9 07:28:21 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 31
+Fri Sep  9 07:28:22 2022 - ERROR - create PV failed
+Fri Sep  9 07:28:23 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 33
+  No device found for /dev/.
+Fri Sep  9 07:28:24 2022 - ERROR - create VG failed
+Fri Sep  9 07:28:25 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 35
+Fri Sep  9 07:28:25 2022 - ERROR - create VG failed
+Fri Sep  9 07:28:26 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 37
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:27 2022 - ERROR - vgchange logicalvolume size failed
+Fri Sep  9 07:28:28 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 39
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  striped: Required device-mapper target(s) not detected in your kernel.
+  Run `lvcreate --help' for more information.
+Fri Sep  9 07:28:29 2022 - ERROR - create LV failed
+Fri Sep  9 07:28:29 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 41
+Fri Sep  9 07:28:31 2022 - ERROR - Maximum number of logical volumes (1) reached
+Fri Sep  9 07:28:31 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 43
+Fri Sep  9 07:28:32 2022 - ERROR - set maxphysicalvolumes failed
+Fri Sep  9 07:28:33 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 45
+  No device found for /dev/.
+Fri Sep  9 07:28:34 2022 - ERROR - create PV failed
+Fri Sep  9 07:28:35 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 47
+Fri Sep  9 07:28:36 2022 - ERROR - vgextend failed
+Fri Sep  9 07:28:36 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 49
+  Volume group "lv" not found
+  Cannot process volume group lv
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:37 2022 - ERROR - lvremove failed
+Fri Sep  9 07:28:38 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 51
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:39 2022 - ERROR - vgchange -u failed
+Fri Sep  9 07:28:40 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 53
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:41 2022 - ERROR - vgchange --resizeable no failed
+Fri Sep  9 07:28:41 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 55
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:42 2022 - ERROR - vgchange --resizeable yes failed
+Fri Sep  9 07:28:43 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 57
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:44 2022 - ERROR - vgchange add tag failed
+Fri Sep  9 07:28:45 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 59
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:46 2022 - ERROR - vgchange del tag failed
+Fri Sep  9 07:28:46 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 61
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:28:47 2022 - ERROR - vgchange --vgmetadatacopies all failed
+Fri Sep  9 07:28:48 2022 - ERROR - oe_test_lvm2_vgchange_001.sh line 63
+oe_test_lvm2_vgchange_001.sh: line 64: [22.09: command not found
+Fri Sep  9 07:28:49 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:28:49 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:28:50 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:28:51 2022 - WARN  - no thing to do.
+Fri Sep  9 07:28:52 2022 - INFO  - Finish environment cleanup.

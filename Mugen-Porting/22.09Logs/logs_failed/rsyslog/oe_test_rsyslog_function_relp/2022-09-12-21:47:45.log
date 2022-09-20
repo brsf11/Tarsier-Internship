@@ -1,0 +1,31 @@
+Mon Sep 12 21:47:48 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Failed to stop iptables.service: Unit iptables.service not loaded.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:49:05 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:49:06 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:49:07 2022 - INFO  - Start to run test.
+tcp        0      0 0.0.0.0:20514           0.0.0.0:*               LISTEN      1674/rsyslogd       
+tcp6       0      0 :::20514                :::*                    LISTEN      1674/rsyslogd       
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:49:18 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:49:19 2022 - ERROR - oe_test_rsyslog_function_relp.sh line 46
+Mon Sep 12 21:49:41 2022 - ERROR - oe_test_rsyslog_function_relp.sh line 49
+Mon Sep 12 21:49:41 2022 - INFO  - End to run test.
+Mon Sep 12 21:49:42 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:49:43 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:50:11 2022 - ERROR - Failed in remote CMD operation:1
+Failed to start iptables.service: Unit iptables.service not found.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:50:12 2022 - INFO  - End to restore the test environment.

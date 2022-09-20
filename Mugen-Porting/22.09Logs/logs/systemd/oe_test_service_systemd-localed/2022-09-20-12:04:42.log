@@ -1,0 +1,11 @@
+Tue Sep 20 12:04:45 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 12:04:46 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-20 12:04:58 CST; 5s ago
+Tue Sep 20 12:05:05 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-localed.service: Job type reload is not applicable for unit systemd-localed.service.
+     Active: active (running) since Tue 2022-09-20 12:04:58 CST; 7s ago
+Tue Sep 20 12:05:06 2022 - INFO  - Finish test!
+Tue Sep 20 12:05:07 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:05:07 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:05:08 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,83 @@
+Thu Sep 15 16:04:19 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 16:10:30 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 16:10:31 2022 - INFO  - Start to run test.
+Usage: capinfos [options] <infile> ...
+Capinfos (Wireshark) 3.6.3 (Git commit 6d348e4611e2)
+Capturing on 'eth0'
+File: testfile1
+
+Packets: 2 
+Packets: 4 
+Packets: 5 
+Packets: 7 
+Packets: 8 
+Packets: 9 
+Packets: 10 
+Packets: 12 
+Packets: 16 
+Packets: 20 
+Packets captured: 20
+Packets received/dropped on interface 'eth0': 20/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+File type:           Wireshark/... - pcapng
+File encapsulation:  Ethernet
+Interface #0 info:
+File name:           testfile1
+File timestamp precision:  nanoseconds (9)
+Capture oper-sys:    Linux 5.10.0
+Capture application: Dumpcap (Wireshark) 3.6.3 (Git commit 6d348e4611e2)
+Thu Sep 15 16:34:17 2022 - ERROR - Timeout : Command 'bash oe_test_capinfos.sh' timed out after 1799.9994007 seconds
+Capturing on 'eth0'
+File: testfile17
+
+Packets: 2 
+Packets: 4 
+Packets: 7 
+Packets: 9 
+Packets: 10 
+Packets: 12 
+Packets: 14 
+Packets: 16 
+Packets: 18 
+Packets: 20 
+Packets captured: 20
+Packets received/dropped on interface 'eth0': 20/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Thu Sep 15 16:34:24 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 16:36:29 2022 - INFO  - Finish restoring the test environment.
+Thu Sep 15 16:36:30 2022 - ERROR - oe_test_capinfos.sh line 48
+oe_test_capinfos.sh: line 49: capinfos: command not found
+Thu Sep 15 16:36:31 2022 - ERROR - oe_test_capinfos.sh line 50
+oe_test_capinfos.sh: line 51: capinfos: command not found
+Thu Sep 15 16:36:31 2022 - ERROR - oe_test_capinfos.sh line 52
+oe_test_capinfos.sh: line 53: capinfos: command not found
+Thu Sep 15 16:36:32 2022 - ERROR - oe_test_capinfos.sh line 54
+oe_test_capinfos.sh: line 55: capinfos: command not found
+Thu Sep 15 16:36:33 2022 - ERROR - oe_test_capinfos.sh line 56
+oe_test_capinfos.sh: line 57: capinfos: command not found
+Thu Sep 15 16:36:33 2022 - ERROR - oe_test_capinfos.sh line 58
+oe_test_capinfos.sh: line 59: capinfos: command not found
+Thu Sep 15 16:36:34 2022 - ERROR - oe_test_capinfos.sh line 60
+oe_test_capinfos.sh: line 61: capinfos: command not found
+Thu Sep 15 16:36:35 2022 - ERROR - oe_test_capinfos.sh line 62
+oe_test_capinfos.sh: line 63: capinfos: command not found
+Thu Sep 15 16:36:35 2022 - ERROR - oe_test_capinfos.sh line 64
+oe_test_capinfos.sh: line 65: capinfos: command not found
+Thu Sep 15 16:36:36 2022 - ERROR - oe_test_capinfos.sh line 66
+oe_test_capinfos.sh: line 67: capinfos: command not found
+Thu Sep 15 16:36:37 2022 - ERROR - oe_test_capinfos.sh line 68
+oe_test_capinfos.sh: line 69: capinfos: command not found
+Thu Sep 15 16:36:37 2022 - ERROR - oe_test_capinfos.sh line 70
+oe_test_capinfos.sh: line 71: capinfos: command not found
+Thu Sep 15 16:36:38 2022 - ERROR - oe_test_capinfos.sh line 72
+oe_test_capinfos.sh: line 73: capinfos: command not found
+oe_test_capinfos.sh: line 75: capinfos: command not found
+Thu Sep 15 16:36:39 2022 - ERROR - oe_test_capinfos.sh line 76
+oe_test_capinfos.sh: line 77: capinfos: command not found
+Thu Sep 15 16:36:39 2022 - ERROR - oe_test_capinfos.sh line 78
+oe_test_capinfos.sh: line 79: capinfos: command not found
+Thu Sep 15 16:36:40 2022 - ERROR - oe_test_capinfos.sh line 80
+oe_test_capinfos.sh: line 81: capinfos: command not found
+Thu Sep 15 16:36:41 2022 - ERROR - oe_test_capinfos.sh line 82
+Thu Sep 15 16:36:41 2022 - INFO  - End of the test.
+Thu Sep 15 16:36:42 2022 - ERROR - failed to execute the case.
+Thu Sep 15 16:36:43 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 16:36:51 2022 - INFO  - Finish restoring the test environment.

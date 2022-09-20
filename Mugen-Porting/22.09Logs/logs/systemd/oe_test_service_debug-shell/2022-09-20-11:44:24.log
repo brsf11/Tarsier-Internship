@@ -1,0 +1,13 @@
+Tue Sep 20 11:44:27 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 11:44:27 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-20 11:44:39 CST; 5s ago
+/etc/systemd/system/sysinit.target.wants/debug-shell.service
+Removed /etc/systemd/system/sysinit.target.wants/debug-shell.service.
+find: ‘/etc/systemd/system/sysinit.target.wants/debug-shell.service’: No such file or directory
+Failed to reload debug-shell.service: Job type reload is not applicable for unit debug-shell.service.
+     Active: active (running) since Tue 2022-09-20 11:44:39 CST; 14s ago
+Tue Sep 20 11:44:55 2022 - INFO  - Finish test!
+Tue Sep 20 11:44:56 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:44:56 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:44:57 2022 - INFO  - Finish environment cleanup!

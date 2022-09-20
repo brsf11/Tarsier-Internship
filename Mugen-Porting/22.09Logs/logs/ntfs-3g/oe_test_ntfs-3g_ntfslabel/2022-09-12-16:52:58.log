@@ -1,0 +1,56 @@
+Mon Sep 12 16:53:01 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 16:53:52 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:53:52 2022 - INFO  - Start to run test.
+Usage: ntfslabel [options] device [label]
+ntfslabel v2022.5.17 (libntfs-3g) - Display, or set, the label for an NTFS Volume.
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:53:53 2022 - ERROR - Check ntfslabel --no-action failed
+Mon Sep 12 16:53:54 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 35
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:53:54 2022 - ERROR - Check ntfslabel --force failed
+Mon Sep 12 16:53:55 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 37
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:53:56 2022 - ERROR - Check ntfslabel --new-serial failed
+Mon Sep 12 16:53:56 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 39
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:53:57 2022 - ERROR - Check ntfslabel --new-half-serial failed
+Mon Sep 12 16:53:58 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 41
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:53:59 2022 - ERROR - Check ntfslabel --quiet failed
+Mon Sep 12 16:53:59 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 43
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:54:00 2022 - ERROR - Check ntfslabel --verbose failed
+Mon Sep 12 16:54:01 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 45
+Usage: ntfscmp [OPTIONS] DEVICE1 DEVICE2
+ntfscmp v2022.5.17 (libntfs-3g)
+ntfscmp v2022.5.17 (libntfs-3g)
+Mon Sep 12 16:54:02 2022 - ERROR - Check ntfscmp --verbose failed
+Mon Sep 12 16:54:03 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 53
+Mon Sep 12 16:54:04 2022 - INFO  - End of the test.
+Mon Sep 12 16:54:04 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:54:05 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:54:17 2022 - INFO  - Finish restoring the test environment.

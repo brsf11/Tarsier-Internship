@@ -1,0 +1,39 @@
+Mon Sep 12 23:11:43 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 23:12:48 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:12:48 2022 - INFO  - Start to run test.
+Failed to restart sssd-kcm.socket: Unit sssd-kcm.socket not found.
+Mon Sep 12 23:12:49 2022 - ERROR - sssd-kcm.socket restart failed
+Mon Sep 12 23:12:50 2022 - ERROR - ../common/common_lib.sh line 34
+Unit sssd-kcm.socket could not be found.
+Mon Sep 12 23:12:57 2022 - ERROR - sssd-kcm.socket restart failed
+Mon Sep 12 23:12:57 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop sssd-kcm.socket: Unit sssd-kcm.socket not loaded.
+Mon Sep 12 23:12:58 2022 - ERROR - sssd-kcm.socket stop failed
+Mon Sep 12 23:12:59 2022 - ERROR - ../common/common_lib.sh line 39
+Unit sssd-kcm.socket could not be found.
+Mon Sep 12 23:13:05 2022 - ERROR - sssd-kcm.socket stop failed
+Mon Sep 12 23:13:06 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start sssd-kcm.socket: Unit sssd-kcm.socket not found.
+Mon Sep 12 23:13:07 2022 - ERROR - sssd-kcm.socket start failed
+Mon Sep 12 23:13:08 2022 - ERROR - ../common/common_lib.sh line 44
+Unit sssd-kcm.socket could not be found.
+Mon Sep 12 23:13:15 2022 - ERROR - sssd-kcm.socket start failed
+Mon Sep 12 23:13:15 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for sssd-kcm.socket: No such file or directory
+Mon Sep 12 23:13:16 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start sssd-kcm.socket: Unit sssd-kcm.socket not found.
+Mon Sep 12 23:13:17 2022 - ERROR - Job type reload is not applicable for unit sssd-kcm.socket
+Mon Sep 12 23:13:18 2022 - ERROR - ../common/common_lib.sh line 91
+Unit sssd-kcm.socket could not be found.
+Unit sssd-kcm.socket could not be found.
+Mon Sep 12 23:13:19 2022 - INFO  - End of the test.
+Mon Sep 12 23:13:20 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:13:20 2022 - INFO  - start environment cleanup.
+Failed to stop sssd-kcm.socket: Unit sssd-kcm.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:12:59 ago on Mon 12 Sep 2022 10:59:47 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libsmbclient.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libsmbclient.so.0(SMBCLIENT_0.1.0)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-krb5pac.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-krb5pac.so.0(NDR_KRB5PAC_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-nbt.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-nbt.so.0(NDR_NBT_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-standard.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_0.0.6)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_1.0.0)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libsamba-util.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 23:13:24 2022 - INFO  - Finish environment cleanup!

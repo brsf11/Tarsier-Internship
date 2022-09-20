@@ -1,0 +1,7 @@
+Tue Sep 20 12:55:03 2022 - INFO  - Start testing...
+Failed to restart first-boot-complete.target: Operation refused, unit first-boot-complete.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to start first-boot-complete.target: Operation refused, unit first-boot-complete.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Tue Sep 20 12:55:04 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:55:05 2022 - INFO  - Finish test!
+Tue Sep 20 12:55:05 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:55:06 2022 - INFO  - oe_test_target_first-boot-complete.sh post_test

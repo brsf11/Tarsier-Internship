@@ -1,0 +1,18 @@
+Mon Sep 12 19:28:28 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 19:31:40 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:31:41 2022 - INFO  - Start to run test.
+Note: timezone set to "TZ=Africa/Lagos"
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+disk.dev.write 1
+disk.dev.write 1
+disk.dev.write 1
+disk.dev.write 1 "vda"
+disk.dev.write 1 ?0
+disk.dev.write 1
+disk.dev.write 1 53382
+Mon Sep 12 19:31:43 2022 - INFO  - End to run test.
+Mon Sep 12 19:31:43 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 19:31:44 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 19:32:53 2022 - INFO  - End to restore the test environment.

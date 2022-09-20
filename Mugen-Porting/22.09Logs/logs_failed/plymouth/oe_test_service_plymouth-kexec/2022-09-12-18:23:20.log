@@ -1,0 +1,39 @@
+Mon Sep 12 18:23:22 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:24:28 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:24:28 2022 - INFO  - Start testing...
+Failed to restart plymouth-kexec.service: Unit plymouth-kexec.service not found.
+Mon Sep 12 18:24:29 2022 - ERROR - plymouth-kexec.service restart failed
+Mon Sep 12 18:24:30 2022 - ERROR - ../common/common_lib.sh line 34
+Unit plymouth-kexec.service could not be found.
+Mon Sep 12 18:24:36 2022 - ERROR - plymouth-kexec.service restart failed
+Mon Sep 12 18:24:37 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop plymouth-kexec.service: Unit plymouth-kexec.service not loaded.
+Mon Sep 12 18:24:38 2022 - ERROR - plymouth-kexec.service stop failed
+Mon Sep 12 18:24:38 2022 - ERROR - ../common/common_lib.sh line 39
+Unit plymouth-kexec.service could not be found.
+Mon Sep 12 18:24:45 2022 - ERROR - plymouth-kexec.service stop failed
+Mon Sep 12 18:24:45 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start plymouth-kexec.service: Unit plymouth-kexec.service not found.
+Mon Sep 12 18:24:46 2022 - ERROR - plymouth-kexec.service start failed
+Mon Sep 12 18:24:47 2022 - ERROR - ../common/common_lib.sh line 44
+Unit plymouth-kexec.service could not be found.
+Mon Sep 12 18:24:53 2022 - ERROR - plymouth-kexec.service start failed
+Mon Sep 12 18:24:54 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for plymouth-kexec.service: No such file or directory
+Mon Sep 12 18:24:55 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start plymouth-kexec.service: Unit plymouth-kexec.service not found.
+Mon Sep 12 18:24:56 2022 - ERROR - Job type reload is not applicable for unit plymouth-kexec.service
+Mon Sep 12 18:24:56 2022 - ERROR - ../common/common_lib.sh line 91
+Unit plymouth-kexec.service could not be found.
+Unit plymouth-kexec.service could not be found.
+Mon Sep 12 18:24:57 2022 - INFO  - Finish test!
+Mon Sep 12 18:24:58 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:24:59 2022 - INFO  - start environment cleanup.
+Failed to stop plymouth-kexec.service: Unit plymouth-kexec.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:21 ago on Mon 12 Sep 2022 06:22:05 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by plymouth-0.9.5-4.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 18:25:02 2022 - INFO  - Finish environment cleanup!

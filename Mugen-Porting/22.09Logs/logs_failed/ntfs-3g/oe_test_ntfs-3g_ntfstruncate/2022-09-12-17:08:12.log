@@ -1,0 +1,45 @@
+Mon Sep 12 17:08:14 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 17:08:56 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:08:56 2022 - INFO  - Start to run test.
+Usage: ntfstruncate [options] device inode [attr-type [attr-name]] new-length
+ntfstruncate v2022.5.17 (libntfs-3g)
+ntfstruncate v2022.5.17 (libntfs-3g)
+Error reading bootsector: Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:08:57 2022 - ERROR - Check ntfstruncate -n failed.
+Mon Sep 12 17:08:58 2022 - ERROR - oe_test_ntfs-3g_ntfstruncate.sh line 35
+ntfstruncate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:08:59 2022 - ERROR - Check ntfstruncate -f failed.
+Mon Sep 12 17:08:59 2022 - ERROR - oe_test_ntfs-3g_ntfstruncate.sh line 37
+ntfstruncate v2022.5.17 (libntfs-3g)
+ntfstruncate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:09:00 2022 - ERROR - Check ntfstruncate -v failed.
+Mon Sep 12 17:09:01 2022 - ERROR - oe_test_ntfs-3g_ntfstruncate.sh line 41
+ntfstruncate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:09:01 2022 - ERROR - Check ntfstruncate -vv failed.
+Mon Sep 12 17:09:02 2022 - ERROR - oe_test_ntfs-3g_ntfstruncate.sh line 43
+ntfstruncate v2022.5.17 (libntfs-3g)
+Mon Sep 12 17:09:03 2022 - INFO  - End of the test.
+Mon Sep 12 17:09:03 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:09:04 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:09:15 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,19 @@
+Mon Sep 12 18:47:31 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 18:50:59 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:50:59 2022 - INFO  - Start to run test.
+disk.dev.write
+disk.dev.write
+Error: disk.dev.write: Unknown metric name
+Mon Sep 12 18:51:00 2022 - ERROR - oe_test_pminfo_02.sh line 36
+Note: timezone set to "TZ=Africa/Lagos"
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+disk.dev.write
+    Data Type: 64-bit unsigned int  InDom: 60.1 0xf000001
+    inst [0 or "vda"] value 25766
+    inst [0 or "vda"] value 25766
+Mon Sep 12 18:51:02 2022 - INFO  - End to run test.
+Mon Sep 12 18:51:03 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:51:03 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 18:51:57 2022 - INFO  - End to restore the test environment.

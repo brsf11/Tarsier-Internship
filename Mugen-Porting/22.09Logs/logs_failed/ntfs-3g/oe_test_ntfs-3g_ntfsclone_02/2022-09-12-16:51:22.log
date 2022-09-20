@@ -1,0 +1,60 @@
+Mon Sep 12 16:51:25 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 16:52:26 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:52:26 2022 - INFO  - Start to run test.
+Mon Sep 12 16:52:27 2022 - ERROR - Check ntfsclone --new-serial failed.
+Mon Sep 12 16:52:28 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 31
+Mon Sep 12 16:52:28 2022 - ERROR - Check ntfsclone --new-half-serial failed.
+Mon Sep 12 16:52:29 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 33
+Mon Sep 12 16:52:30 2022 - ERROR - Check ntfsclone --preserve-timestamps failed.
+Mon Sep 12 16:52:30 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 35
+Mon Sep 12 16:52:31 2022 - ERROR - Check ntfsclone --quiet failed.
+Mon Sep 12 16:52:32 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 37
+Mon Sep 12 16:52:33 2022 - ERROR - Check ntfsclone --force failed.
+Mon Sep 12 16:52:33 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 39
+Mon Sep 12 16:52:34 2022 - ERROR - Check ntfsclone --full-logfile failed.
+Mon Sep 12 16:52:35 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 41
+Usage: ntfsfix [options] device
+ntfsfix v2022.5.17
+Error opening '/dev/': Is a directory
+Error opening '/dev/': Is a directory
+Failed to startup volume: Is a directory
+Error opening '/dev/': Is a directory
+Volume is corrupt. You should run chkdsk.
+Mon Sep 12 16:52:35 2022 - ERROR - Check ntfsfix --clear-bad-sectors failed.
+Mon Sep 12 16:52:36 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 47
+Error opening '/dev/': Is a directory
+Error opening '/dev/': Is a directory
+Failed to startup volume: Is a directory
+Error opening '/dev/': Is a directory
+Volume is corrupt. You should run chkdsk.
+Mon Sep 12 16:52:37 2022 - ERROR - Check ntfsfix --clear-dirty failed.
+Mon Sep 12 16:52:37 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 49
+Error reading bootsector: Is a directory
+Error reading bootsector: Is a directory
+Failed to startup volume: Is a directory
+Error reading bootsector: Is a directory
+Volume is corrupt. You should run chkdsk.
+Mon Sep 12 16:52:38 2022 - ERROR - Check ntfsfix --no-action failed.
+Mon Sep 12 16:52:39 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_02.sh line 51
+Mon Sep 12 16:52:39 2022 - INFO  - End of the test.
+Mon Sep 12 16:52:40 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:52:41 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:52:52 2022 - INFO  - Finish restoring the test environment.

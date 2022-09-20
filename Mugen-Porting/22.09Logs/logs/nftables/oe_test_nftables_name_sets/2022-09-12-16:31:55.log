@@ -1,0 +1,28 @@
+Mon Sep 12 16:31:58 2022 - INFO  - Start to config params of the case.
+oe_test_nftables_name_sets.sh: line 27: nft: command not found
+oe_test_nftables_name_sets.sh: line 28: nft: command not found
+Mon Sep 12 16:31:58 2022 - INFO  - End to config params of the case.
+Mon Sep 12 16:31:59 2022 - INFO  - Start executing testcase.
+oe_test_nftables_name_sets.sh: line 34: nft: command not found
+oe_test_nftables_name_sets.sh: line 35: nft: command not found
+oe_test_nftables_name_sets.sh: line 36: nft: command not found
+oe_test_nftables_name_sets.sh: line 37: nft: command not found
+Mon Sep 12 16:32:00 2022 - ERROR - exec add individual_set failed
+Mon Sep 12 16:32:01 2022 - ERROR - oe_test_nftables_name_sets.sh line 38
+oe_test_nftables_name_sets.sh: line 40: nft: command not found
+oe_test_nftables_name_sets.sh: line 41: nft: command not found
+Mon Sep 12 16:32:01 2022 - ERROR - exec add multi_set failed
+Mon Sep 12 16:32:02 2022 - ERROR - oe_test_nftables_name_sets.sh line 42
+oe_test_nftables_name_sets.sh: line 44: nft: command not found
+oe_test_nftables_name_sets.sh: line 45: nft: command not found
+Mon Sep 12 16:32:03 2022 - ERROR - exec add element individual_set failed
+Mon Sep 12 16:32:04 2022 - ERROR - oe_test_nftables_name_sets.sh line 46
+oe_test_nftables_name_sets.sh: line 48: nft: command not found
+oe_test_nftables_name_sets.sh: line 49: nft: command not found
+Mon Sep 12 16:32:04 2022 - ERROR - exec add element multi_set failed
+Mon Sep 12 16:32:05 2022 - ERROR - oe_test_nftables_name_sets.sh line 50
+Mon Sep 12 16:32:06 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 16:32:06 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:32:07 2022 - INFO  - start environment cleanup.
+oe_test_nftables_name_sets.sh: line 56: nft: command not found
+Mon Sep 12 16:32:08 2022 - INFO  - Finish environment cleanup!

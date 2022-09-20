@@ -1,0 +1,37 @@
+Fri Sep  9 02:12:27 2022 - INFO  - Start environmental preparation.
+cp: cannot stat '/etc/dhcp/dhcpd6.conf': No such file or directory
+Cannot find device ""
+Fri Sep  9 02:12:27 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:12:28 2022 - INFO  - Start testing...
+Failed to restart dhcpd6.service: Unit dhcpd6.service not found.
+Fri Sep  9 02:12:29 2022 - ERROR - dhcpd6.service restart failed
+Fri Sep  9 02:12:30 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dhcpd6.service could not be found.
+Fri Sep  9 02:12:36 2022 - ERROR - dhcpd6.service restart failed
+Fri Sep  9 02:12:37 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dhcpd6.service: Unit dhcpd6.service not loaded.
+Fri Sep  9 02:12:38 2022 - ERROR - dhcpd6.service stop failed
+Fri Sep  9 02:12:38 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dhcpd6.service could not be found.
+Fri Sep  9 02:12:45 2022 - ERROR - dhcpd6.service stop failed
+Fri Sep  9 02:12:46 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dhcpd6.service: Unit dhcpd6.service not found.
+Fri Sep  9 02:12:46 2022 - ERROR - dhcpd6.service start failed
+Fri Sep  9 02:12:47 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dhcpd6.service could not be found.
+Fri Sep  9 02:12:54 2022 - ERROR - dhcpd6.service start failed
+Fri Sep  9 02:12:54 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dhcpd6.service: No such file or directory
+Fri Sep  9 02:12:55 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dhcpd6.service: Unit dhcpd6.service not found.
+Fri Sep  9 02:12:56 2022 - ERROR - Job type reload is not applicable for unit dhcpd6.service
+Fri Sep  9 02:12:57 2022 - ERROR - ../common/common_lib.sh line 91
+Unit dhcpd6.service could not be found.
+Unit dhcpd6.service could not be found.
+Fri Sep  9 02:12:58 2022 - INFO  - Finish test!
+Fri Sep  9 02:12:59 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:12:59 2022 - INFO  - start environment cleanup.
+Failed to stop dhcpd6.service: Unit dhcpd6.service not loaded.
+mv: cannot stat '/etc/dhcp/dhcpd6.bak': No such file or directory
+Cannot find device ""
+Fri Sep  9 02:13:00 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,9 @@
+Fri Sep  9 04:05:41 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:07:32 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:07:32 2022 - INFO  - Start to run test.
+test		Not found
+Usage: rad_counter --file=<counter filename> [OPTION...]
+Fri Sep  9 04:07:36 2022 - INFO  - End to run test.
+Fri Sep  9 04:07:37 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 04:07:38 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 04:07:59 2022 - INFO  - End to restore the test environment.

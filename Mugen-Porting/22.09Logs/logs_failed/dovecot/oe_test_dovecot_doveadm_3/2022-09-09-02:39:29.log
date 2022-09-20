@@ -1,0 +1,52 @@
+Fri Sep  9 02:39:32 2022 - INFO  - Start to prepare the database config.
+Failed to restart dovecot.service: Unit dovecot.service not found.
+useradd: warning: the home directory /home/testuser already exists.
+useradd: Not copying any file from skel directory into it.
+Creating mailbox file: File exists
+Fri Sep  9 02:40:02 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 02:40:03 2022 - INFO  - Start to run test.
+oe_test_dovecot_doveadm_3.sh: line 35: doveadm: command not found
+Fri Sep  9 02:40:04 2022 - ERROR - Check doveadm process status failed.
+Fri Sep  9 02:40:05 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 36
+oe_test_dovecot_doveadm_3.sh: line 37: doveadm: command not found
+Fri Sep  9 02:40:05 2022 - ERROR - Check doveadm user failed.
+Fri Sep  9 02:40:06 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 38
+oe_test_dovecot_doveadm_3.sh: line 39: doveadm: command not found
+Fri Sep  9 02:40:07 2022 - ERROR - Check doveadm stats dump failed.
+Fri Sep  9 02:40:07 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 40
+spawn doveadm zlibconnect 127.0.0.1 110
+couldn't execute "doveadm": no such file or directory
+    while executing
+"spawn doveadm zlibconnect 127.0.0.1 110"
+Fri Sep  9 02:40:08 2022 - ERROR - Check doveadm zlibconnect failed.
+Fri Sep  9 02:40:09 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 45
+oe_test_dovecot_doveadm_3.sh: line 46: doveadm: command not found
+Fri Sep  9 02:40:10 2022 - ERROR - Check doveadm service status failed.
+Fri Sep  9 02:40:10 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 47
+oe_test_dovecot_doveadm_3.sh: line 48: doveadm: command not found
+Fri Sep  9 02:40:11 2022 - ERROR - Check doveadm service stop doveadm failed.
+Fri Sep  9 02:40:12 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 49
+oe_test_dovecot_doveadm_3.sh: line 50: doveadm: command not found
+Fri Sep  9 02:40:12 2022 - ERROR - Check doveadm oldstats reset failed.
+Fri Sep  9 02:40:13 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 51
+oe_test_dovecot_doveadm_3.sh: line 52: doveadm: command not found
+Fri Sep  9 02:40:14 2022 - ERROR - Check doveadm penalty failed.
+Fri Sep  9 02:40:14 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 53
+oe_test_dovecot_doveadm_3.sh: line 55: sievec: command not found
+Fri Sep  9 02:40:15 2022 - ERROR - Check doveadm sievec -c failed.
+Fri Sep  9 02:40:16 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 56
+oe_test_dovecot_doveadm_3.sh: line 57: sievec: command not found
+Fri Sep  9 02:40:16 2022 - ERROR - Check doveadm sievec -d -D failed.
+Fri Sep  9 02:40:17 2022 - ERROR - oe_test_dovecot_doveadm_3.sh line 58
+Fri Sep  9 02:40:18 2022 - INFO  - End to run test.
+Fri Sep  9 02:40:18 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:40:19 2022 - INFO  - Start to restore the test environment.
+Failed to stop doveadm.service: Unit doveadm.service not loaded.
+Failed to stop dovecot.service: Unit dovecot.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:06:31 ago on Fri 09 Sep 2022 02:33:29 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 02:40:24 2022 - INFO  - End to restore the test environment.

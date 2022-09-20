@@ -1,0 +1,47 @@
+Mon Sep 12 16:47:33 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:38 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:48:39 2022 - INFO  - Start to run test.
+Usage: mkntfs [options] device [number-of-sectors]
+mkntfs v2022.5.17 (libntfs-3g)
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:39 2022 - ERROR - Check mkfs.ntfs --fast failed.
+Mon Sep 12 16:48:40 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 35
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:41 2022 - ERROR - Check mkfs.ntfs --quick failed.
+Mon Sep 12 16:48:42 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 37
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:42 2022 - ERROR - Check mkfs.ntfs --label failed.
+Mon Sep 12 16:48:43 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 39
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:44 2022 - ERROR - Check mkfs.ntfs --enable-compression failed.
+Mon Sep 12 16:48:44 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 41
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:45 2022 - ERROR - Check mkfs.ntfs --no-indexing failed.
+Mon Sep 12 16:48:46 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 43
+/dev/ is not a block device.
+Refusing to make a filesystem here!
+Running in READ-ONLY mode!
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:47 2022 - ERROR - Check mkfs.ntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.
+Mon Sep 12 16:48:47 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 47
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:48 2022 - ERROR - Check mkfs.ntfs --quiet failed.
+Mon Sep 12 16:48:49 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 49
+Could not open /dev/: Is a directory
+Mon Sep 12 16:48:49 2022 - ERROR - Check mkfs.ntfs --verbose failed.
+Mon Sep 12 16:48:50 2022 - ERROR - oe_test_ntfs-3g_mkfs.ntfs.sh line 51
+This program is free software, released under the GNU General Public License
+Mon Sep 12 16:48:51 2022 - INFO  - End of the test.
+Mon Sep 12 16:48:51 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:48:52 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:49:13 2022 - INFO  - Finish restoring the test environment.

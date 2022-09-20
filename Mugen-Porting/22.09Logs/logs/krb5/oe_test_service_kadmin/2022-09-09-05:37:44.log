@@ -1,0 +1,32 @@
+Fri Sep  9 05:37:47 2022 - INFO  - Start environmental preparation.
+spawn kdb5_util create -s
+Loading random data
+Initializing database '/var/kerberos/krb5kdc/principal' for realm 'EXAMPLE.COM',
+master key name 'K/M@EXAMPLE.COM'
+You will be prompted for the database Master Password.
+It is important that you NOT FORGET this password.
+Enter KDC database master key: 
+Re-enter KDC database master key to verify: 
+Failed to start sssd-kcm.service: Unit sssd-kcm.service not found.
+No policy specified for rootadmin@EXAMPLE.COM; defaulting to no policy
+Authenticating as principal root/admin@EXAMPLE.COM with password.
+Enter password for principal "rootadmin@EXAMPLE.COM": 
+Re-enter password for principal "rootadmin@EXAMPLE.COM": 
+Principal "rootadmin@EXAMPLE.COM" created.
+Fri Sep  9 05:38:50 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 05:38:50 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 05:38:52 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-09 05:39:05 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/kadmin.service
+Removed /etc/systemd/system/multi-user.target.wants/kadmin.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/kadmin.service’: No such file or directory
+Sep 09 05:39:05 nfs.server.com systemd[1]: kadmin.service: Failed to parse PID from file /run/kadmind.pid: Invalid argument
+Fri Sep  9 05:39:21 2022 - ERROR - There is an error message for the log of kadmin.service
+Fri Sep  9 05:39:21 2022 - ERROR - ../common/common_lib.sh line 28
+     Active: active (running) since Fri 2022-09-09 05:39:05 CST; 21s ago
+Fri Sep  9 05:39:27 2022 - INFO  - Finish test!
+Fri Sep  9 05:39:28 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:39:28 2022 - INFO  - start environment cleanup.
+Failed to stop sssd-kcm.service: Unit sssd-kcm.service not loaded.
+Fri Sep  9 05:39:51 2022 - INFO  - Finish environment cleanup!

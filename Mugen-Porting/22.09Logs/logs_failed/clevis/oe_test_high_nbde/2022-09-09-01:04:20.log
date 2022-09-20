@@ -1,0 +1,95 @@
+Fri Sep  9 01:04:23 2022 - INFO  - Start loading data!
+Fri Sep  9 01:04:31 2022 - INFO  - Loading data is complete!
+Fri Sep  9 01:04:32 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+fdisk: cannot open /dev/: Is a directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+ls: cannot access '/mnt/test_encrypted': No such file or directory
+ls: cannot access '/etc/systemd/system/tangd.socket.d': No such file or directory
+Fri Sep  9 01:06:50 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:06:50 2022 - INFO  - Start executing testcase.
+Cannot open device /dev/1.
+Fri Sep  9 01:06:51 2022 - ERROR - Disk encryption failed
+Fri Sep  9 01:06:52 2022 - ERROR - oe_test_high_nbde.sh line 45
+Device /dev/1 does not exist or access denied.
+Fri Sep  9 01:06:53 2022 - ERROR - Disk mapping failed
+Fri Sep  9 01:06:54 2022 - ERROR - oe_test_high_nbde.sh line 47
+mke2fs 1.46.4 (18-Aug-2021)
+The file /dev/mapper/test_encrypted does not exist and no size was specified.
+mount: /mnt/test_encrypted: special device /dev/mapper/test_encrypted does not exist.
+Fri Sep  9 01:06:55 2022 - ERROR - Disk mount failed
+Fri Sep  9 01:06:55 2022 - ERROR - oe_test_high_nbde.sh line 50
+Device /dev/1 does not exist or access denied.
+Fri Sep  9 01:06:56 2022 - ERROR - Backup luksHeader information failed
+Fri Sep  9 01:06:57 2022 - ERROR - oe_test_high_nbde.sh line 52
+Created symlink /etc/systemd/system/multi-user.target.wants/tangd.socket → /usr/lib/systemd/system/tangd.socket.
+Listen=[::]:8009 (Stream)
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 01:07:14 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 01:07:16 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 01:07:17 2022 - ERROR - Failed in remote CMD operation:1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   618  100   618    0     0   1750      0 --:--:-- --:--:-- --:--:--  1850
+spawn luksmeta init -n -d /dev/1
+Device /dev/1 does not exist or access denied.
+Unable to open device (/dev/1): Block device required
+Device /dev/1 does not exist or access denied.
+Unable to open device (/dev/1): Block device required
+extra characters after close-brace
+    while executing
+"spawn clevis luks bind -d /dev/1 sss '{"t":1,"pins":{"tang":[{"url":"http://127.0.0.1:8009"},"
+spawn clevis luks unbind -d /dev/1 -s 1
+Device /dev/1 does not exist or access denied.
+/dev/1 is not a LUKS device!
+Fri Sep  9 01:07:21 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 01:07:22 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:07:23 2022 - INFO  - start environment cleanup.
+umount: /mnt/test_encrypted: not mounted.
+Cannot initialize device-mapper. Is dm_mod kernel module loaded?
+mke2fs 1.46.4 (18-Aug-2021)
+The file /dev/1 does not exist and no size was specified.
+fdisk: cannot open /dev/: Is a directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 134, in rpm_remove
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 01:07:52 2022 - ERROR - Failed in remote CMD operation:1
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Fri Sep  9 01:07:53 2022 - INFO  - Finish environment cleanup!

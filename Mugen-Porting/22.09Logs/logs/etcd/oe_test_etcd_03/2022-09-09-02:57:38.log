@@ -1,0 +1,64 @@
+Fri Sep  9 02:57:41 2022 - INFO  - Start to prepare the test environment.
+Failed to start etcd.service: Unit etcd.service not found.
+Fri Sep  9 02:58:06 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 02:58:07 2022 - INFO  - Start to run test.
+Unit etcd.service could not be found.
+Fri Sep  9 02:58:08 2022 - ERROR - Check etcd.service start failed
+Fri Sep  9 02:58:09 2022 - ERROR - oe_test_etcd_03.sh line 29
+spawn etcdctl user add root
+couldn't execute "etcdctl": no such file or directory
+    while executing
+"spawn etcdctl user add root"
+Fri Sep  9 02:58:10 2022 - ERROR - Check etcdctl user add failed.
+Fri Sep  9 02:58:11 2022 - ERROR - oe_test_etcd_03.sh line 41
+spawn etcdctl user add test
+couldn't execute "etcdctl": no such file or directory
+    while executing
+"spawn etcdctl user add test"
+Fri Sep  9 02:58:12 2022 - ERROR - Check etcdctl user add failed.
+Fri Sep  9 02:58:12 2022 - ERROR - oe_test_etcd_03.sh line 52
+oe_test_etcd_03.sh: line 53: etcdctl: command not found
+Fri Sep  9 02:58:13 2022 - ERROR - Check etcdctl auth enable failed.
+Fri Sep  9 02:58:14 2022 - ERROR - oe_test_etcd_03.sh line 54
+oe_test_etcd_03.sh: line 55: etcdctl: command not found
+Fri Sep  9 02:58:15 2022 - ERROR - Check etcdctl role add failed.
+Fri Sep  9 02:58:16 2022 - ERROR - oe_test_etcd_03.sh line 56
+oe_test_etcd_03.sh: line 57: etcdctl: command not found
+Fri Sep  9 02:58:16 2022 - ERROR - Check etcdctl user grant-role failed.
+Fri Sep  9 02:58:17 2022 - ERROR - oe_test_etcd_03.sh line 58
+oe_test_etcd_03.sh: line 59: etcdctl: command not found
+Fri Sep  9 02:58:18 2022 - ERROR - Check etcdctl role grant-permission failed.
+Fri Sep  9 02:58:19 2022 - ERROR - oe_test_etcd_03.sh line 60
+oe_test_etcd_03.sh: line 61: etcdctl: command not found
+Fri Sep  9 02:58:20 2022 - ERROR - Check etcdctl put failed.
+Fri Sep  9 02:58:20 2022 - ERROR - oe_test_etcd_03.sh line 62
+oe_test_etcd_03.sh: line 63: etcdctl: command not found
+Fri Sep  9 02:58:21 2022 - ERROR - Check etcdctl get --user failed.
+Fri Sep  9 02:58:22 2022 - ERROR - oe_test_etcd_03.sh line 64
+oe_test_etcd_03.sh: line 65: etcdctl: command not found
+Fri Sep  9 02:58:23 2022 - ERROR - Check etcdctl user list failed.
+Fri Sep  9 02:58:23 2022 - ERROR - oe_test_etcd_03.sh line 66
+oe_test_etcd_03.sh: line 67: etcdctl: command not found
+Fri Sep  9 02:58:24 2022 - ERROR - Check etcdctl user deletel failed.
+Fri Sep  9 02:58:25 2022 - ERROR - oe_test_etcd_03.sh line 68
+oe_test_etcd_03.sh: line 69: etcdctl: command not found
+oe_test_etcd_03.sh: line 71: etcdctl: command not found
+Fri Sep  9 02:58:26 2022 - ERROR - Check etcdctl role deletel failed.
+Fri Sep  9 02:58:27 2022 - ERROR - oe_test_etcd_03.sh line 72
+oe_test_etcd_03.sh: line 73: etcdctl: command not found
+Fri Sep  9 02:58:28 2022 - ERROR - Check etcdctl auth disable failed.
+Fri Sep  9 02:58:28 2022 - ERROR - oe_test_etcd_03.sh line 74
+oe_test_etcd_03.sh: line 75: etcdctl: command not found
+Fri Sep  9 02:58:29 2022 - ERROR - Check etcdctl user del failed.
+Fri Sep  9 02:58:30 2022 - ERROR - oe_test_etcd_03.sh line 76
+Fri Sep  9 02:58:31 2022 - INFO  - End to run test.
+Fri Sep  9 02:58:31 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:58:32 2022 - INFO  - Start to restore the test environment.
+Failed to stop etcd.service: Unit etcd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:03:36 ago on Fri 09 Sep 2022 02:54:29 AM CST.\nNo match for argument: etcd\nError: Unable to find a match: etcd'
+Fri Sep  9 02:58:36 2022 - INFO  - End to restore the test environment.

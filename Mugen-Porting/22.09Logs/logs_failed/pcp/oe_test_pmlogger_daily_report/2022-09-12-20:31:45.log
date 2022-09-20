@@ -1,0 +1,31 @@
+Mon Sep 12 20:31:48 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 20:34:50 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 20:34:51 2022 - INFO  - Start to run test.
+oe_test_pmlogger_daily_report.sh: line 29: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:51 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 30
+Mon Sep 12 20:34:52 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 32
+oe_test_pmlogger_daily_report.sh: line 33: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:53 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 34
+oe_test_pmlogger_daily_report.sh: line 35: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:54 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 36
+oe_test_pmlogger_daily_report.sh: line 37: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:54 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 38
+grep: dailyReport.txt: No such file or directory
+Mon Sep 12 20:34:55 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 40
+oe_test_pmlogger_daily_report.sh: line 41: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:56 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 42
+oe_test_pmlogger_daily_report.sh: line 43: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:56 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 44
+Mon Sep 12 20:34:57 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 46
+oe_test_pmlogger_daily_report.sh: line 47: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:58 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 48
+oe_test_pmlogger_daily_report.sh: line 49: /usr/libexec/pcp/bin/pmlogger_daily_report: No such file or directory
+Mon Sep 12 20:34:59 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 50
+grep: /var/log/pcp/pmlogger/pmlogger_daily_report.log: No such file or directory
+Mon Sep 12 20:34:59 2022 - ERROR - oe_test_pmlogger_daily_report.sh line 52
+Mon Sep 12 20:35:00 2022 - INFO  - End to run test.
+Mon Sep 12 20:35:01 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:35:01 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 20:36:00 2022 - INFO  - End to restore the test environment.

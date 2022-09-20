@@ -1,0 +1,18 @@
+Fri Sep  9 01:56:50 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:56:51 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:56:51 2022 - INFO  - Start to run testcase:oe_test_crontabs.
+     Active: inactive (dead) since Fri 2022-09-09 01:56:52 CST; 143ms ago
+* * * * * /bin/ls
+./test.sh
+./oe_test_crontabs.sh
+debug flags enabled: proc
+Cannot obtain SELinux process context
+Fri Sep  9 01:56:53 2022 - ERROR - Failed option: -s
+Fri Sep  9 01:56:54 2022 - ERROR - oe_test_crontabs.sh line 51
+crontab: really delete root's crontab? no crontab for root
+127.0.0.1
+cronie 1.5.7
+Fri Sep  9 01:56:55 2022 - INFO  - End to run testcase:oe_test_crontabs.
+Fri Sep  9 01:56:55 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:56:56 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 01:56:57 2022 - INFO  - End to restore the test environment.

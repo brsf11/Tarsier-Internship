@@ -1,0 +1,35 @@
+Fri Sep  9 04:56:45 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:56:52 2022 - INFO  - pkgs:(freeradius freeradius-utils) is already installed
+oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh: line 34: /etc/raddb/users: No such file or directory
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Fri Sep  9 04:56:56 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:56:57 2022 - INFO  - Start to run test.
+Fri Sep  9 04:57:13 2022 - ERROR - radtest -d execution failed.
+Fri Sep  9 04:57:14 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 45
+Fri Sep  9 04:57:30 2022 - ERROR - radtest -t execution failed.
+Fri Sep  9 04:57:31 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 47
+Fri Sep  9 04:57:47 2022 - ERROR - radtest -P execution failed.
+Fri Sep  9 04:57:48 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 49
+Fri Sep  9 04:58:10 2022 - ERROR - radtest -x execution failed.
+Fri Sep  9 04:58:11 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 51
+Fri Sep  9 04:58:27 2022 - ERROR - radtest -4 execution failed.
+Fri Sep  9 04:58:28 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 53
+Sent Access-Request Id 82 from [::]:37687 to [::1]:1812 length 87
+Sent Access-Request Id 82 from [::]:37687 to [::1]:1812 length 87
+Sent Access-Request Id 82 from [::]:37687 to [::1]:1812 length 87
+touch: cannot touch '/var/log/radius/radutmp': No such file or directory
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:58:46 2022 - ERROR - radwho -c execution failed.
+Fri Sep  9 04:58:46 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 59
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:58:47 2022 - ERROR - radwho -d execution failed.
+Fri Sep  9 04:58:48 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 61
+radwho: Error reading /var/log/radius/radutmp: No such file or directory
+Fri Sep  9 04:58:49 2022 - ERROR - radwho -F execution failed.
+Fri Sep  9 04:58:50 2022 - ERROR - oe_test_freeradius_freeradius-utils_radtestAndRadwho.sh line 63
+Fri Sep  9 04:58:50 2022 - INFO  - End to run test.
+Fri Sep  9 04:58:51 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:58:52 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 04:58:52 2022 - WARN  - no thing to do.
+Fri Sep  9 04:58:53 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,27 @@
+Mon Sep 12 22:56:10 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+CREATE TABLE COMPANY(
+        ID INT PRIMARY KEY     NOT NULL,
+        NAME    TEXT    NOT NULL,
+        AGE     INT     NOT NULL,
+        ADDRESS CHAR(50),
+        SALARY  REAL    CHECK(SALARY > 0)
+        );
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE COMPANY(
+   ...>         ID INT PRIMARY KEY     NOT NULL,
+   ...>         NAME    TEXT    NOT NULL,
+   ...>         AGE     INT     NOT NULL,
+   ...>         ADDRESS CHAR(50),
+   ...>         SALARY  REAL    CHECK(SALARY > 0)
+   ...>         );
+sqlite> .read ../common/insert.txt
+sqlite> .output ./output.txt
+sqlite> SELECT avg(age) FROM COMPANY;
+sqlite> SELECT sum(age) FROM COMPANY;
+sqlite> .quit
+Mon Sep 12 22:56:14 2022 - INFO  - End to run test.
+Mon Sep 12 22:56:15 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:56:15 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:56:16 2022 - INFO  - End to restore the test environment.

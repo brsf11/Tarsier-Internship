@@ -1,0 +1,21 @@
+Mon Sep 12 16:40:23 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 16:42:19 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 16:42:20 2022 - INFO  - Start to run test.
+Hello,Kitty
+Hello,Kitty
+Hello,Kitty
+Hello,Kitty
+spawn node --debug-port 65500
+Welcome to Node.js v16.14.2.
+Type ".help" for more information.
+[1G[0J> [3Gconsole.log('Hello,Kitty');
+Hello,Kitty
+undefined
+[1G[0J> [3G.exitHello,Kitty
+Hello,Kitty
+Hello,Kitty
+Hello,Kitty
+Mon Sep 12 16:42:52 2022 - INFO  - End to run test.
+Mon Sep 12 16:42:52 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 16:42:53 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 16:43:13 2022 - INFO  - End to restore the test environment.

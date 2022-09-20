@@ -1,0 +1,31 @@
+Fri Sep  9 04:20:49 2022 - INFO  - Start testing...
+Failed to restart import-state.service: Unit import-state.service not found.
+Fri Sep  9 04:20:50 2022 - ERROR - import-state.service restart failed
+Fri Sep  9 04:20:51 2022 - ERROR - ../common/common_lib.sh line 34
+Unit import-state.service could not be found.
+Fri Sep  9 04:20:58 2022 - ERROR - import-state.service restart failed
+Fri Sep  9 04:20:58 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop import-state.service: Unit import-state.service not loaded.
+Fri Sep  9 04:20:59 2022 - ERROR - import-state.service stop failed
+Fri Sep  9 04:21:00 2022 - ERROR - ../common/common_lib.sh line 39
+Unit import-state.service could not be found.
+Fri Sep  9 04:21:07 2022 - ERROR - import-state.service stop failed
+Fri Sep  9 04:21:08 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start import-state.service: Unit import-state.service not found.
+Fri Sep  9 04:21:09 2022 - ERROR - import-state.service start failed
+Fri Sep  9 04:21:09 2022 - ERROR - ../common/common_lib.sh line 44
+Unit import-state.service could not be found.
+Fri Sep  9 04:21:16 2022 - ERROR - import-state.service start failed
+Fri Sep  9 04:21:17 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for import-state.service: No such file or directory
+Fri Sep  9 04:21:17 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start import-state.service: Unit import-state.service not found.
+Fri Sep  9 04:21:18 2022 - ERROR - Job type reload is not applicable for unit import-state.service
+Fri Sep  9 04:21:19 2022 - ERROR - ../common/common_lib.sh line 91
+Unit import-state.service could not be found.
+Unit import-state.service could not be found.
+Fri Sep  9 04:21:20 2022 - INFO  - Finish test!
+Fri Sep  9 04:21:21 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:21:21 2022 - INFO  - start environment cleanup.
+Failed to stop import-state.service: Unit import-state.service not loaded.
+Fri Sep  9 04:21:22 2022 - INFO  - Finish environment cleanup!

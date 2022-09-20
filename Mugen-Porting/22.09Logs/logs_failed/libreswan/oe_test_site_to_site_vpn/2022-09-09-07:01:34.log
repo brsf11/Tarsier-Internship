@@ -1,0 +1,105 @@
+Fri Sep  9 07:01:37 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 07:02:50 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:02:51 2022 - INFO  - Start executing testcase.
+Created symlink /etc/systemd/system/multi-user.target.wants/ipsec.service → /usr/lib/systemd/system/ipsec.service.
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 07:03:00 2022 - ERROR - oe_test_site_to_site_vpn.sh line 33
+oe_test_site_to_site_vpn.sh: line 34: firewall-cmd: command not found
+Fri Sep  9 07:03:01 2022 - ERROR - oe_test_site_to_site_vpn.sh line 35
+oe_test_site_to_site_vpn.sh: line 36: firewall-cmd: command not found
+Fri Sep  9 07:03:02 2022 - ERROR - oe_test_site_to_site_vpn.sh line 37
+Command line is not complete. Try option "help"
+FATAL ERROR: ipsec showhostkey: NSS: initialization using read-only database "sql:/var/lib/ipsec/nss" failed: SEC_ERROR 18 (0x12): security library: bad database.
+Fri Sep  9 07:03:05 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:03:06 2022 - ERROR - oe_test_site_to_site_vpn.sh line 44
+Fri Sep  9 07:03:09 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:03:10 2022 - ERROR - oe_test_site_to_site_vpn.sh line 46
+Fri Sep  9 07:03:13 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:03:14 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:03:14 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/key.txt /tmp
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 07:03:15 2022 - ERROR - Failed in remote SCP operation: 1
+cat: /tmp/key.txt: No such file or directory
+Fri Sep  9 07:03:18 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:03:19 2022 - ERROR - oe_test_site_to_site_vpn.sh line 52
+Fri Sep  9 07:03:20 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:03:21 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/rsa.txt /tmp
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 07:03:22 2022 - ERROR - Failed in remote SCP operation: 1
+cat: /tmp/rsa.txt: No such file or directory
+Fri Sep  9 07:03:25 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:03:26 2022 - ERROR - oe_test_site_to_site_vpn.sh line 57
+Fri Sep  9 07:03:27 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:03:28 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/right_mask.txt /tmp
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 07:03:29 2022 - ERROR - Failed in remote SCP operation: 1
+Fri Sep  9 07:03:31 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:03:32 2022 - ERROR - oe_test_site_to_site_vpn.sh line 60
+Fri Sep  9 07:03:33 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:03:34 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/right6_mask.txt /tmp
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 07:03:35 2022 - ERROR - Failed in remote SCP operation: 1
+cat: /tmp/right_mask.txt: No such file or directory
+cat: /tmp/right6_mask.txt: No such file or directory
+Fri Sep  9 07:03:36 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:03:37 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/ipsec.d/my_site-to-site.conf @:/etc/ipsec.d/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 07:03:38 2022 - ERROR - Failed in remote SCP operation: 1
+cannot load config '/etc/ipsec.conf': /etc/ipsec.d/my_site-to-site.conf:4: syntax error [255.0.0.0/24]
+Fri Sep  9 07:03:39 2022 - ERROR - add mysubnet failed
+Fri Sep  9 07:03:40 2022 - ERROR - oe_test_site_to_site_vpn.sh line 71
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Redirecting to: systemctl start ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 07:03:43 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 07:03:44 2022 - ERROR - up mysubnet failed
+Fri Sep  9 07:03:44 2022 - ERROR - oe_test_site_to_site_vpn.sh line 77
+Fri Sep  9 07:03:47 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:03:47 2022 - ERROR - oe_test_site_to_site_vpn.sh line 79
+Fri Sep  9 07:03:48 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 07:03:49 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:03:49 2022 - INFO  - start environment cleanup.
+oe_test_site_to_site_vpn.sh: line 86: firewall-cmd: command not found
+oe_test_site_to_site_vpn.sh: line 87: firewall-cmd: command not found
+Fri Sep  9 07:03:52 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 134, in rpm_remove
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 07:04:19 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:04:20 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,9 @@
+Mon Sep 12 23:31:36 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:32:30 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 23:32:30 2022 - INFO  - Start to run test.
+SWIG:1: Warning 123: dangerous, use -nodefaultctor, -nodefaultdtor instead.
+/* Put header files here or function declarations like below */
+Mon Sep 12 23:32:35 2022 - INFO  - End to run test.
+Mon Sep 12 23:32:36 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 23:32:37 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:32:49 2022 - INFO  - End to restore the test environment.

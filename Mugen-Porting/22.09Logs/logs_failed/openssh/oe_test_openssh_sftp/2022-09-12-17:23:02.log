@@ -1,0 +1,25 @@
+Mon Sep 12 17:23:05 2022 - INFO  - Start to prepare the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:23:05 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:23:06 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 17:23:07 2022 - INFO  - Start to run test.
+spawn sftp root@
+ssh: Could not resolve hostname : Name or service not known
+Connection closed.  
+Connection closed
+expect: spawn id exp3 not open
+    while executing
+"expect {
+        "*password:" {
+            send "\r"
+        }
+    }"
+Mon Sep 12 17:23:08 2022 - ERROR - oe_test_openssh_sftp.sh line 68
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:23:09 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:23:09 2022 - ERROR - oe_test_openssh_sftp.sh line 72
+grep: /home/hostname: No such file or directory
+Mon Sep 12 17:23:10 2022 - ERROR - oe_test_openssh_sftp.sh line 74
+Mon Sep 12 17:23:11 2022 - INFO  - End to run test.
+Mon Sep 12 17:23:11 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:23:12 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:23:13 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:23:13 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,15 @@
+Mon Sep 12 23:51:33 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 23:52:10 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:52:10 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 23:52:11 CST; 6s ago
+Warning: Stopping tftp.service, but it can still be activated by:
+  tftp.socket
+     Active: inactive (dead) since Mon 2022-09-12 23:52:17 CST; 6s ago
+     Active: active (running) since Mon 2022-09-12 23:52:23 CST; 5s ago
+Mon Sep 12 23:52:30 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload tftp.service: Job type reload is not applicable for unit tftp.service.
+     Active: active (running) since Mon 2022-09-12 23:52:23 CST; 7s ago
+Mon Sep 12 23:52:31 2022 - INFO  - Finish test!
+Mon Sep 12 23:52:32 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 23:52:32 2022 - INFO  - start environment cleanup.
+Mon Sep 12 23:52:47 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,53 @@
+Fri Sep  9 02:57:07 2022 - INFO  - Start to prepare the database config.
+Fri Sep  9 02:57:15 2022 - INFO  - pkgs:(clamav) is already installed
+mkdir: cannot create directory ‘test_virus_collection’: File exists
+Fri Sep  9 02:57:17 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 02:57:18 2022 - INFO  - Start to run test.
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+oe_test_clamav_clamscan_3.sh: line 38: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:45 2022 - ERROR - Check clamscan --allmatch test_virus_collection --include=REGEX --include-dir=REGEX --max-htmlnotags 5 --max-scriptnormalize 5 failed.
+Fri Sep  9 02:59:46 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 39
+oe_test_clamav_clamscan_3.sh: line 40: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:47 2022 - ERROR - Check clamscan -z test_virus_collection --cross-fs /opt --max-filesize 1024 --max-ziptypercg 5 failed.
+Fri Sep  9 02:59:48 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 41
+oe_test_clamav_clamscan_3.sh: line 42: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:48 2022 - ERROR - Check clamscan --follow-dir-symlinks 0 --max-scansize 1024 failed.
+Fri Sep  9 02:59:49 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 43
+oe_test_clamav_clamscan_3.sh: line 44: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:50 2022 - ERROR - Check clamscan --follow-file-symlinks 0 --max-files 1024 --max-ziptypercg 5 failed.
+Fri Sep  9 02:59:50 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 45
+oe_test_clamav_clamscan_3.sh: line 46: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:51 2022 - ERROR - Check clamscan --file-list /opt --exclude-dir=REGEX --max-partitions 5 --max-iconspe 5 failed.
+Fri Sep  9 02:59:52 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 47
+oe_test_clamav_clamscan_3.sh: line 48: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:52 2022 - ERROR - Check clamscan --bytecode test_virus_collection --bytecode-timeout 50 --max-rechwp3 5 failed.
+Fri Sep  9 02:59:53 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 49
+oe_test_clamav_clamscan_3.sh: line 50: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:54 2022 - ERROR - Check clamscan --bytecode-unsigned test_virus_collection --statistics bytecode --pcre-match-limit 5 failed.
+Fri Sep  9 02:59:54 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 51
+oe_test_clamav_clamscan_3.sh: line 52: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:55 2022 - ERROR - Check clamscan --detect-pua test_virus_collection  --pcre-recmatch-limit 5 --phishing-sigs test_virus_collection --statistics pcre failed.
+Fri Sep  9 02:59:56 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 53
+oe_test_clamav_clamscan_3.sh: line 54: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:56 2022 - ERROR - Check clamscan --include-pua=CAT --detect-structured test_virus_collection --structured-ssn-format=2 --pcre-max-filesize 5 --statistics none failed.
+Fri Sep  9 02:59:57 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 55
+oe_test_clamav_clamscan_3.sh: line 56: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:58 2022 - ERROR - Check clamscan --structured-ssn-count 1 --structured-cc-count 1 --scan-mail test_virus_collection --disable-cache failed.
+Fri Sep  9 02:59:58 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 57
+oe_test_clamav_clamscan_3.sh: line 58: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 02:59:59 2022 - ERROR - Check clamscan --phishing-scan-urls test_virus_collection --heuristic-alerts test_virus_collection --heuristic-scan-precedence test_virus_collection failed.
+Fri Sep  9 03:00:00 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 59
+oe_test_clamav_clamscan_3.sh: line 60: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 03:00:00 2022 - ERROR - Check clamscan --normalize test_virus_collection --scan-pe test_virus_collection --alert-encrypted-doc test_virus_collection --alert-macros test_virus_collection failed.
+Fri Sep  9 03:00:01 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 61
+oe_test_clamav_clamscan_3.sh: line 62: /usr/bin/clamscan: No such file or directory
+Fri Sep  9 03:00:02 2022 - ERROR - Check clamscan --alert-phishing-ssl test_virus_collection --alert-phishing-cloak test_virus_collection --alert-partition-intersection test_virus_collection --nocerts --dumpcerts --max-scantime 100 failed.
+Fri Sep  9 03:00:02 2022 - ERROR - oe_test_clamav_clamscan_3.sh line 63
+Fri Sep  9 03:00:03 2022 - INFO  - End to run test.
+Fri Sep  9 03:00:04 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:00:04 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 03:00:05 2022 - WARN  - no thing to do.
+Fri Sep  9 03:00:06 2022 - INFO  - End to restore the test environment.

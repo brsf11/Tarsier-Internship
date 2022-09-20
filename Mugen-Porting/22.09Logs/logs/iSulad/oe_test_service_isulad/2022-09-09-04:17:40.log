@@ -1,0 +1,43 @@
+Fri Sep  9 04:17:43 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 04:18:11 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:18:12 2022 - INFO  - Start testing...
+Failed to restart isulad.service: Unit isulad.service not found.
+Fri Sep  9 04:18:13 2022 - ERROR - isulad.service restart failed
+Fri Sep  9 04:18:14 2022 - ERROR - ../common/common_lib.sh line 34
+Unit isulad.service could not be found.
+Fri Sep  9 04:18:20 2022 - ERROR - isulad.service restart failed
+Fri Sep  9 04:18:21 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop isulad.service: Unit isulad.service not loaded.
+Fri Sep  9 04:18:22 2022 - ERROR - isulad.service stop failed
+Fri Sep  9 04:18:22 2022 - ERROR - ../common/common_lib.sh line 39
+Unit isulad.service could not be found.
+Fri Sep  9 04:18:29 2022 - ERROR - isulad.service stop failed
+Fri Sep  9 04:18:29 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start isulad.service: Unit isulad.service not found.
+Fri Sep  9 04:18:30 2022 - ERROR - isulad.service start failed
+Fri Sep  9 04:18:31 2022 - ERROR - ../common/common_lib.sh line 44
+Unit isulad.service could not be found.
+Fri Sep  9 04:18:38 2022 - ERROR - isulad.service start failed
+Fri Sep  9 04:18:38 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for isulad.service: No such file or directory
+Fri Sep  9 04:18:39 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start isulad.service: Unit isulad.service not found.
+sed: can't read /usr/lib/systemd/system/isulad.service: No such file or directory
+Failed to reload isulad.service: Unit isulad.service not found.
+Fri Sep  9 04:18:45 2022 - ERROR - isulad.service reload failed
+Fri Sep  9 04:18:46 2022 - ERROR - oe_test_service_isulad.sh line 35
+Unit isulad.service could not be found.
+Fri Sep  9 04:18:46 2022 - ERROR - isulad.service reload causes the service status to change
+Fri Sep  9 04:18:47 2022 - ERROR - oe_test_service_isulad.sh line 37
+Fri Sep  9 04:18:48 2022 - INFO  - Finish test!
+Fri Sep  9 04:18:48 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:18:49 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/isulad.service: No such file or directory
+Failed to reload isulad.service: Unit isulad.service not found.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:17 ago on Fri 09 Sep 2022 04:17:53 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides clibcni >= 2.0.7 needed by iSulad-2.0.15-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 04:18:56 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,44 @@
+Mon Sep 12 21:08:48 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Unit firewalld.service could not be found.
+Mon Sep 12 21:09:57 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 21:09:59 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+sed: can't read /etc/ganglia/gmetad.conf: No such file or directory
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 43: service: command not found
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 44: service: command not found
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 45: service: command not found
+Mon Sep 12 21:10:13 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 21:11:14 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:11:15 2022 - INFO  - Start to run test.
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 55: ganglia2pcp: command not found
+Mon Sep 12 21:11:16 2022 - ERROR - oe_test_pcp_pcp-import-ganglia2pcp.sh line 56
+grep: gangpcp.index: No such file or directory
+Mon Sep 12 21:11:16 2022 - ERROR - oe_test_pcp_pcp-import-ganglia2pcp.sh line 58
+Mon Sep 12 21:11:17 2022 - ERROR - oe_test_pcp_pcp-import-ganglia2pcp.sh line 60
+Mon Sep 12 21:11:18 2022 - INFO  - End to run test.
+Mon Sep 12 21:11:19 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:11:19 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 2:42:09 ago on Mon 12 Sep 2022 06:27:42 PM CST.\nError: \n Problem 1: conflicting requests\n  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64\n Problem 2: package ganglia-web-3.7.5-2.oe2209.riscv64 requires php, but none of the providers can be installed\n  - package php-8.1.1-5.oe2209.riscv64 requires httpd-mmn = 20120211riscv64, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 68: [: -eq: unary operator expected
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 71: [: -eq: unary operator expected
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 74: [: -eq: unary operator expected
+oe_test_pcp_pcp-import-ganglia2pcp.sh: line 77: [: -eq: unary operator expected
+Mon Sep 12 21:11:23 2022 - INFO  - End to restore the test environment.

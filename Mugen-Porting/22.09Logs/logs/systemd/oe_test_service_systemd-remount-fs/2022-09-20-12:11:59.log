@@ -1,0 +1,10 @@
+Tue Sep 20 12:12:02 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 12:12:02 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:12:08 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 12:12:14 CST; 5s ago
+Tue Sep 20 12:12:21 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload systemd-remount-fs.service: Job type reload is not applicable for unit systemd-remount-fs.service.
+     Active: active (exited) since Tue 2022-09-20 12:12:14 CST; 7s ago
+Tue Sep 20 12:12:22 2022 - INFO  - Finish test!
+Tue Sep 20 12:12:22 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:12:23 2022 - INFO  - oe_test_service_systemd-remount-fs.sh post_test

@@ -1,0 +1,42 @@
+Fri Sep  9 06:16:38 2022 - INFO  - Start to prepare the test environment.
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+2912
+Fri Sep  9 06:17:27 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 06:17:28 2022 - INFO  - Start to run test.
+	 --concurrency=
+	 --debug 
+	 --quiet 
+	 --execute-number=
+	 --flag 
+	 --flush 
+	 --help 
+	 --initial-load=
+	 --non-blocking 
+		Set TCP up to use non-blocking IO.
+	 --servers=
+	 --tcp-nodelay 
+	 --test=
+	 --verbose 
+	 --version 
+	 --binary 
+	 --udp 
+memslap v1.0
+	Threads connecting to servers 1
+	Threads connecting to servers 3
+	Threads connecting to servers 1
+	Took 6.279 seconds to load data
+	Threads connecting to servers 1
+	Took 0.018 seconds to load data
+	Threads connecting to servers 1
+	Took 6.156 seconds to load data
+	Threads connecting to servers 1
+	Took 5.823 seconds to load data
+	Threads connecting to servers 1
+	Took 6.169 seconds to load data
+	Threads connecting to servers 1
+	Took 6.033 seconds to read data
+Fri Sep  9 06:19:29 2022 - INFO  - End of the test.
+Fri Sep  9 06:19:30 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 06:19:31 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 06:19:49 2022 - INFO  - Finish restoring the test environment.

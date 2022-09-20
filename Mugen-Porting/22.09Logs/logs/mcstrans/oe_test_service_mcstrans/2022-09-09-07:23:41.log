@@ -1,0 +1,23 @@
+Fri Sep  9 07:23:44 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 07:24:21 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:24:22 2022 - INFO  - Start testing...
+Fri Sep  9 07:24:29 2022 - ERROR - mcstrans.service restart failed
+Fri Sep  9 07:24:29 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+Fri Sep  9 07:24:43 2022 - ERROR - mcstrans.service start failed
+Fri Sep  9 07:24:43 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/mcstrans.service
+Removed /etc/systemd/system/multi-user.target.wants/mcstrans.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/mcstrans.service’: No such file or directory
+Failed to reload mcstrans.service: Job type reload is not applicable for unit mcstrans.service.
+     Active: inactive (dead)
+Sep 09 07:22:52 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Sep 09 07:23:06 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Sep 09 07:23:14 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Sep 09 07:24:22 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Sep 09 07:24:36 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Sep 09 07:24:53 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Fri Sep  9 07:24:54 2022 - INFO  - Finish test!
+Fri Sep  9 07:24:55 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:24:56 2022 - INFO  - start environment cleanup.
+Fri Sep  9 07:25:11 2022 - INFO  - Finish environment cleanup!

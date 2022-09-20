@@ -1,0 +1,214 @@
+Mon Sep 12 20:03:14 2022 - INFO  - Start environmental preparation.
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 20:06:48 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 20:06:49 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:06:49 2022 - INFO  - Start testing...
+Stopping rabbit application on node rabbit@rabbitmq1 ...
+Error: unable to perform an operation on node 'rabbit@rabbitmq2'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@rabbitmq2
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@rabbitmq2]
+
+rabbit@rabbitmq2:
+  * connected to epmd (port 4369) on rabbitmq2
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: nxdomain (non-existing domain)
+  * suggestion: check if host 'rabbitmq2' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-877-rabbit@rabbitmq1'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: zYbeRcYz2dJcVuXpbTmNQg==
+
+Clustering node rabbit@rabbitmq1 with rabbit@rabbitmq2
+Starting node rabbit@rabbitmq1 ...
+Mon Sep 12 20:07:40 2022 - ERROR - oe_test_rabbitmqctl_cluster.sh line 61
+Stopping rabbit application on node rabbit@rabbitmq2 ...
+Error: unable to perform an operation on node 'rabbit@rabbitmq2'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@rabbitmq2
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@rabbitmq2]
+
+rabbit@rabbitmq2:
+  * connected to epmd (port 4369) on rabbitmq2
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: nxdomain (non-existing domain)
+  * suggestion: check if host 'rabbitmq2' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-711-rabbit@rabbitmq1'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: zYbeRcYz2dJcVuXpbTmNQg==
+
+Error:
+{:not_a_cluster_node, 'The node selected is not in the cluster.'}
+Removing node rabbit@rabbitmq2 from the cluster
+Error: unable to perform an operation on node 'rabbit@rabbitmq2'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@rabbitmq2
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@rabbitmq2]
+
+rabbit@rabbitmq2:
+  * connected to epmd (port 4369) on rabbitmq2
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: nxdomain (non-existing domain)
+  * suggestion: check if host 'rabbitmq2' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-491-rabbit@rabbitmq1'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: zYbeRcYz2dJcVuXpbTmNQg==
+
+Starting node rabbit@rabbitmq2 ...
+Error: unable to perform an operation on node 'rabbit@rabbitmq2'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@rabbitmq2
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@rabbitmq2]
+
+rabbit@rabbitmq2:
+  * connected to epmd (port 4369) on rabbitmq2
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: nxdomain (non-existing domain)
+  * suggestion: check if host 'rabbitmq2' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-620-rabbit@rabbitmq1'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: zYbeRcYz2dJcVuXpbTmNQg==
+
+Stopping rabbit application on node rabbit@rabbitmq1 ...
+Error: unable to perform an operation on node 'rabbit@rabbitmq2'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@rabbitmq2
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@rabbitmq2]
+
+rabbit@rabbitmq2:
+  * connected to epmd (port 4369) on rabbitmq2
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: nxdomain (non-existing domain)
+  * suggestion: check if host 'rabbitmq2' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-850-rabbit@rabbitmq1'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: zYbeRcYz2dJcVuXpbTmNQg==
+
+Clustering node rabbit@rabbitmq1 with rabbit@rabbitmq2
+Starting node rabbit@rabbitmq1 ...
+Mon Sep 12 20:10:31 2022 - ERROR - oe_test_rabbitmqctl_cluster.sh line 74
+Stopping rabbit application on node rabbit@rabbitmq1 ...
+Turning rabbit@rabbitmq1 into a disc node
+Starting node rabbit@rabbitmq1 ...
+Mon Sep 12 20:11:05 2022 - ERROR - oe_test_rabbitmqctl_cluster.sh line 80
+Stopping rabbit application on node rabbit@rabbitmq1 ...
+Error: unable to perform an operation on node 'rabbit@rabbitmq2'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@rabbitmq2
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@rabbitmq2]
+
+rabbit@rabbitmq2:
+  * connected to epmd (port 4369) on rabbitmq2
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: nxdomain (non-existing domain)
+  * suggestion: check if host 'rabbitmq2' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-137-rabbit@rabbitmq1'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: zYbeRcYz2dJcVuXpbTmNQg==
+
+Will seed rabbit@rabbitmq1 from rabbit@rabbitmq2 on next start
+Starting node rabbit@rabbitmq1 ...
+Setting cluster name to mycluster ...
+Mon Sep 12 20:13:23 2022 - INFO  - Finish test!
+Mon Sep 12 20:13:24 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:13:25 2022 - INFO  - start environment cleanup.
+oe_test_rabbitmqctl_cluster.sh: line 97: kill: `': not a pid or valid job spec
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 20:14:24 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 20:14:25 2022 - INFO  - Finish environment cleanup!

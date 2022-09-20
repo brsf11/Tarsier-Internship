@@ -1,0 +1,66 @@
+Mon Sep 12 17:41:00 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 17:41:49 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:41:50 2022 - INFO  - Start to run test.
+ospam:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+ospam:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+ospam:normal.sgml:3:5:E: element "HTML" undefined
+ospam:normal.sgml:4:8:E: element "HEAD" undefined
+ospam:normal.sgml:5:12:E: element "TITLE" undefined
+ospam:normal.sgml:7:8:E: element "BODY" undefined
+ospam:normal.sgml:8:8:E: element "P" undefined
+      <P>Hello world!
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+   </HEAD>
+   <BODY>
+      <P>Hello world!
+   </BODY>
+</HTML>
+Mon Sep 12 17:44:24 2022 - ERROR - oe_test_opensp_ospam_spam.sh line 35
+Usage: ospam [OPTION] SYSID...
+      <P>Hello world!
+ospam:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+ospam:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+ospam:normal.sgml:3:5:E: element "HTML" undefined
+ospam:normal.sgml:4:8:E: element "HEAD" undefined
+ospam:normal.sgml:5:12:E: element "TITLE" undefined
+ospam:normal.sgml:7:8:E: element "BODY" undefined
+ospam:normal.sgml:8:8:E: element "P" undefined
+      <P>Hello world!
+ospam:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+ospam:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+ospam:normal.sgml:3:5:E: element "HTML" undefined
+ospam:normal.sgml:4:8:E: element "HEAD" undefined
+ospam:normal.sgml:5:12:E: element "TITLE" undefined
+ospam:normal.sgml:7:8:E: element "BODY" undefined
+ospam:normal.sgml:8:8:E: element "P" undefined
+      <P>Hello world!
+ospam:./testdir/normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+ospam:./testdir/normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+ospam:./testdir/normal.sgml:3:5:E: element "HTML" undefined
+ospam:./testdir/normal.sgml:4:8:E: element "HEAD" undefined
+ospam:./testdir/normal.sgml:5:12:E: element "TITLE" undefined
+ospam:./testdir/normal.sgml:7:8:E: element "BODY" undefined
+ospam:./testdir/normal.sgml:8:8:E: element "P" undefined
+      <P>Hello world!
+ospam:normal.sgml:2:44:274013946200.2311:E: error connecting to "www.w3.org" (Connection refused)
+ospam:normal.sgml:2:44:274013946200.323:E: DTD did not contain element declaration for document type name
+ospam:normal.sgml:3:5:274013946200.76:E: element "HTML" undefined
+ospam:normal.sgml:4:8:274013946200.76:E: element "HEAD" undefined
+ospam:normal.sgml:5:12:274013946200.76:E: element "TITLE" undefined
+ospam:normal.sgml:7:8:274013946200.76:E: element "BODY" undefined
+ospam:normal.sgml:8:8:274013946200.76:E: element "P" undefined
+      <P>Hello world!
+ospam:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+ospam:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+ospam:normal.sgml:3:5:E: element "HTML" undefined
+ospam:normal.sgml:4:8:E: element "HEAD" undefined
+ospam:normal.sgml:5:12:E: element "TITLE" undefined
+ospam:normal.sgml:7:8:E: element "BODY" undefined
+ospam:normal.sgml:8:8:E: element "P" undefined
+      <P>Hello world!
+Mon Sep 12 17:52:09 2022 - INFO  - End of the test.
+Mon Sep 12 17:52:09 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:52:10 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 17:52:32 2022 - INFO  - Finish restoring the test environment.

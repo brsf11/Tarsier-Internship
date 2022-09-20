@@ -1,0 +1,38 @@
+Fri Sep  9 04:25:15 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 04:25:46 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:25:47 2022 - INFO  - Start to run test.
+iperf 3.10.1 (cJSON 1.7.13)
+iperf 3.10.1 (cJSON 1.7.13)
+Usage: iperf3 [-s|-c host] [options]
+Usage: iperf3 [-s|-c host] [options]
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+tcp6       0      0 :::5201                 :::*                    LISTEN      802/iperf3          
+Fri Sep  9 04:25:51 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:25:52 2022 - ERROR - iperf3 -c serverIP execution failed.
+Fri Sep  9 04:25:53 2022 - ERROR - oe_test_iperf3_command_serverAndBase.sh line 46
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 164:   802 Killed                  iperf3 -s
+tcp6       0      0 :::8004                 :::*                    LISTEN      817/iperf3          
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 164:   817 Killed                  iperf3 -s -p "${rdport}"
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 39:   823 Killed                  iperf3 -s -I /tmp/iperf3_pid
+Fri Sep  9 04:26:00 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:26:01 2022 - ERROR - iperf3 -s -1 execution failed.
+Fri Sep  9 04:26:02 2022 - ERROR - oe_test_iperf3_command_serverAndBase.sh line 64
+Fri Sep  9 04:26:03 2022 - INFO  - End to run test.
+Fri Sep  9 04:26:03 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:26:04 2022 - INFO  - Start to restore the test environment.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 04:26:21 2022 - INFO  - End to restore the test environment.

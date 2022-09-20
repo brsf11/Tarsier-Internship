@@ -1,0 +1,71 @@
+Fri Sep  9 06:56:45 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 06:57:33 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 06:57:34 2022 - INFO  - Start testing...
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:57:39 2022 - ERROR - ipsec.service restart failed
+Fri Sep  9 06:57:40 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Sep  9 06:57:47 2022 - ERROR - ipsec.service restart failed
+Fri Sep  9 06:57:48 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 06:57:55 2022 - ERROR - ipsec.service stop failed
+Fri Sep  9 06:57:55 2022 - ERROR - ../common/common_lib.sh line 42
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:58:00 2022 - ERROR - ipsec.service start failed
+Fri Sep  9 06:58:01 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Sep  9 06:58:08 2022 - ERROR - ipsec.service start failed
+Fri Sep  9 06:58:09 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/ipsec.service
+Removed /etc/systemd/system/multi-user.target.wants/ipsec.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ipsec.service’: No such file or directory
+Sep 09 06:57:38 openEuler-riscv64 _stackmanager[23648]: FAILURE in loading XFRM IPsec stack
+Sep 09 06:57:38 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:57:38 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:57:38 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'exit-code'.
+Sep 09 06:57:38 openEuler-riscv64 systemd[1]: Failed to start Internet Key Exchange (IKE) Protocol Daemon for IPsec.
+Sep 09 06:57:43 openEuler-riscv64 _stackmanager[23791]: FAILURE in loading XFRM IPsec stack
+Sep 09 06:57:43 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:57:43 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:57:43 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'exit-code'.
+Sep 09 06:57:43 openEuler-riscv64 systemd[1]: Failed to start Internet Key Exchange (IKE) Protocol Daemon for IPsec.
+Sep 09 06:57:47 openEuler-riscv64 _stackmanager[23935]: FAILURE in loading XFRM IPsec stack
+Sep 09 06:57:47 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:57:47 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:57:47 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'exit-code'.
+Sep 09 06:57:47 openEuler-riscv64 systemd[1]: Failed to start Internet Key Exchange (IKE) Protocol Daemon for IPsec.
+Sep 09 06:57:48 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:57:48 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'signal'.
+Sep 09 06:57:59 openEuler-riscv64 _stackmanager[24100]: FAILURE in loading XFRM IPsec stack
+Sep 09 06:57:59 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:00 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:00 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'exit-code'.
+Sep 09 06:58:00 openEuler-riscv64 systemd[1]: Failed to start Internet Key Exchange (IKE) Protocol Daemon for IPsec.
+Sep 09 06:58:04 openEuler-riscv64 _stackmanager[24243]: FAILURE in loading XFRM IPsec stack
+Sep 09 06:58:04 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:04 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:04 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'exit-code'.
+Sep 09 06:58:05 openEuler-riscv64 systemd[1]: Failed to start Internet Key Exchange (IKE) Protocol Daemon for IPsec.
+Sep 09 06:58:09 openEuler-riscv64 _stackmanager[24387]: FAILURE in loading XFRM IPsec stack
+Sep 09 06:58:09 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:09 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:09 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'exit-code'.
+Sep 09 06:58:09 openEuler-riscv64 systemd[1]: Failed to start Internet Key Exchange (IKE) Protocol Daemon for IPsec.
+Sep 09 06:58:13 openEuler-riscv64 _stackmanager[24534]: FAILURE in loading XFRM IPsec stack
+Sep 09 06:58:14 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:14 openEuler-riscv64 systemd[1]: ipsec.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 06:58:14 openEuler-riscv64 systemd[1]: ipsec.service: Failed with result 'exit-code'.
+Sep 09 06:58:14 openEuler-riscv64 systemd[1]: Failed to start Internet Key Exchange (IKE) Protocol Daemon for IPsec.
+Fri Sep  9 06:58:19 2022 - ERROR - There is an error message for the log of ipsec.service
+Fri Sep  9 06:58:20 2022 - ERROR - ../common/common_lib.sh line 28
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Failed to reload ipsec.service: Job type reload is not applicable for unit ipsec.service.
+Fri Sep  9 06:58:28 2022 - ERROR - ipsec.service reload failed
+Fri Sep  9 06:58:29 2022 - ERROR - oe_test_service_ipsec.sh line 35
+Fri Sep  9 06:58:30 2022 - ERROR - ipsec.service reload causes the service status to change
+Fri Sep  9 06:58:31 2022 - ERROR - oe_test_service_ipsec.sh line 37
+Fri Sep  9 06:58:32 2022 - INFO  - Finish test!
+Fri Sep  9 06:58:33 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:58:33 2022 - INFO  - start environment cleanup.
+Failed to reload ipsec.service: Job type reload is not applicable for unit ipsec.service.
+Fri Sep  9 06:59:01 2022 - INFO  - Finish environment cleanup!

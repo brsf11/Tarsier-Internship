@@ -1,0 +1,39 @@
+Mon Sep 12 18:26:23 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:27:26 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:27:27 2022 - INFO  - Start to run test.
+Failed to restart io.podman.socket: Unit io.podman.socket not found.
+Mon Sep 12 18:27:27 2022 - ERROR - io.podman.socket restart failed
+Mon Sep 12 18:27:28 2022 - ERROR - ../common/common_lib.sh line 34
+Unit io.podman.socket could not be found.
+Mon Sep 12 18:27:35 2022 - ERROR - io.podman.socket restart failed
+Mon Sep 12 18:27:36 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop io.podman.socket: Unit io.podman.socket not loaded.
+Mon Sep 12 18:27:36 2022 - ERROR - io.podman.socket stop failed
+Mon Sep 12 18:27:37 2022 - ERROR - ../common/common_lib.sh line 39
+Unit io.podman.socket could not be found.
+Mon Sep 12 18:27:43 2022 - ERROR - io.podman.socket stop failed
+Mon Sep 12 18:27:44 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start io.podman.socket: Unit io.podman.socket not found.
+Mon Sep 12 18:27:45 2022 - ERROR - io.podman.socket start failed
+Mon Sep 12 18:27:46 2022 - ERROR - ../common/common_lib.sh line 44
+Unit io.podman.socket could not be found.
+Mon Sep 12 18:27:52 2022 - ERROR - io.podman.socket start failed
+Mon Sep 12 18:27:53 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for io.podman.socket: No such file or directory
+Mon Sep 12 18:27:54 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start io.podman.socket: Unit io.podman.socket not found.
+Mon Sep 12 18:27:54 2022 - ERROR - Job type reload is not applicable for unit io.podman.socket
+Mon Sep 12 18:27:55 2022 - ERROR - ../common/common_lib.sh line 91
+Unit io.podman.socket could not be found.
+Unit io.podman.socket could not be found.
+Mon Sep 12 18:27:56 2022 - INFO  - End of the test.
+Mon Sep 12 18:27:57 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:27:57 2022 - INFO  - start environment cleanup.
+Failed to stop io.podman.socket: Unit io.podman.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:46 ago on Mon 12 Sep 2022 06:25:38 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides crun needed by podman-1:3.4.4-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 18:28:00 2022 - INFO  - Finish environment cleanup!

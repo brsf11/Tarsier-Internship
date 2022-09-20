@@ -1,0 +1,26 @@
+Mon Sep 12 23:32:58 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:33:33 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 23:33:34 2022 - INFO  - Start to run test.
+  typedef long long __int64;
+typedef enum {
+typedef struct {
+SWIG Version 4.0.2
+/* attribute recognised by some compilers to avoid 'unused' warnings */
+#   pragma warning(disable : 4505) /* unreferenced local function has been removed */
+ * are aware a variable isn't used.  So we just silence that warning.
+# pragma warning disable 592
+ * are aware a variable isn't used.  So we just silence that warning.
+  SWIG_JavaOutOfMemoryError = 1,
+  SWIG_JavaOutOfMemoryError = 1,
+  SWIG_JavaUnknownError,
+    { SWIG_JavaOutOfMemoryError, "java/lang/OutOfMemoryError" },
+    { SWIG_JavaUnknownError,  "java/lang/UnknownError" },
+    { (SWIG_JavaExceptionCodes)0,  "java/lang/UnknownError" }
+#ifndef SWIG_MSC_UNSUPPRESS_4505
+#   pragma warning(disable : 4505) /* unreferenced local function has been removed */
+<?xml version="1.0" ?> 
+ * tclrun.swg
+Mon Sep 12 23:33:42 2022 - INFO  - End to run test.
+Mon Sep 12 23:33:43 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 23:33:44 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:33:55 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,107 @@
+Fri Sep  9 07:38:14 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/get_test_device.py", line 127, in <module>
+    print(get_test_disk(args.node))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/get_test_device.py", line 98, in get_test_disk
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 07:38:19 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Job for iscsid.service failed because the control process exited with error code.
+See "systemctl status iscsid.service" and "journalctl -xeu iscsid.service" for details.
+iscsiadm: option requires an argument -- 'p'
+iscsiadm: discovery mode: option '-?' is not allowed/supported
+iscsiadm: No records found
+modprobe: FATAL: Module dm_multipath not found in directory /lib/modules/5.10.0
+Job for multipathd.service failed because the control process exited with error code.
+See "systemctl status multipathd.service" and "journalctl -xeu multipathd.service" for details.
+common_multipath-tools.sh: line 33: service: command not found
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+311.342017 | cannot get kernel dm version
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+311.508582 | cannot get kernel dm version
+modprobe: FATAL: Module dm_multipath not found in directory /lib/modules/5.10.0
+modprobe: FATAL: Module dm_multipath not found in directory /lib/modules/5.10.0
+common_multipath-tools.sh: line 62: service: command not found
+Note: Forwarding request to 'systemctl enable multipathd.service'.
+Created symlink /etc/systemd/system/sysinit.target.wants/multipathd.service → /usr/lib/systemd/system/multipathd.service.
+Created symlink /etc/systemd/system/sockets.target.wants/multipathd.socket → /usr/lib/systemd/system/multipathd.socket.
+Fri Sep  9 07:39:23 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:39:24 2022 - INFO  - Start to run test.
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+317.670023 | cannot get kernel dm version
+Fri Sep  9 07:39:25 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 31
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+318.457958 | cannot get kernel dm version
+Fri Sep  9 07:39:26 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 33
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+319.255523 | cannot get kernel dm version
+Fri Sep  9 07:39:26 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 35
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+320.009355 | cannot get kernel dm version
+Fri Sep  9 07:39:27 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 37
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+320.771680 | cannot get kernel dm version
+Fri Sep  9 07:39:28 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 39
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+321.521933 | cannot get kernel dm version
+Fri Sep  9 07:39:29 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 41
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+322.299447 | cannot get kernel dm version
+Fri Sep  9 07:39:29 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 43
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+323.074004 | cannot get kernel dm version
+Fri Sep  9 07:39:30 2022 - ERROR - oe_test_multipath-tools_mpathpersist.sh line 45
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+323.854049 | cannot get kernel dm version
+Fri Sep  9 07:39:31 2022 - INFO  - End to run test.
+Fri Sep  9 07:39:32 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:39:32 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 07:39:35 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+iscsiadm: No matching sessions found
+/dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+328.620869 | cannot get kernel dm version
+Fri Sep  9 07:39:56 2022 - INFO  - End to restore the test environment.

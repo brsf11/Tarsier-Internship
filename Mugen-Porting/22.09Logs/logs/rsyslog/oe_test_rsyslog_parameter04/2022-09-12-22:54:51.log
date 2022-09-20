@@ -1,0 +1,18 @@
+Mon Sep 12 22:54:53 2022 - INFO  - Start to prepare the test environment.
+Failed to stop rsyslog.service: Unit rsyslog.service not loaded.
+Mon Sep 12 22:54:54 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:54:55 2022 - INFO  - Start to run test.
+Failed to start rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:54:56 2022 - ERROR - oe_test_rsyslog_parameter04.sh line 31
+Mon Sep 12 22:54:56 2022 - ERROR - oe_test_rsyslog_parameter04.sh line 33
+oe_test_rsyslog_parameter04.sh: line 34: rsyslogd: command not found
+Mon Sep 12 22:54:57 2022 - ERROR - oe_test_rsyslog_parameter04.sh line 35
+Mon Sep 12 22:54:58 2022 - ERROR - oe_test_rsyslog_parameter04.sh line 36
+cat: /var/log/test: No such file or directory
+Mon Sep 12 22:55:00 2022 - ERROR - oe_test_rsyslog_parameter04.sh line 38
+Mon Sep 12 22:55:01 2022 - INFO  - End to run test.
+Mon Sep 12 22:55:01 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:55:02 2022 - INFO  - Start to restore the test environment.
+kill: not enough arguments
+Failed to start rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:55:03 2022 - INFO  - End to restore the test environment.

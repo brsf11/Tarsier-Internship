@@ -1,0 +1,38 @@
+Fri Sep  9 06:45:48 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 06:46:31 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 06:46:32 2022 - INFO  - Start testing...
+Failed to restart lighttpd.service: Unit lighttpd.service not found.
+Fri Sep  9 06:46:32 2022 - ERROR - lighttpd.service restart failed
+Fri Sep  9 06:46:33 2022 - ERROR - ../common/common_lib.sh line 34
+Unit lighttpd.service could not be found.
+Fri Sep  9 06:46:40 2022 - ERROR - lighttpd.service restart failed
+Fri Sep  9 06:46:41 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop lighttpd.service: Unit lighttpd.service not loaded.
+Fri Sep  9 06:46:41 2022 - ERROR - lighttpd.service stop failed
+Fri Sep  9 06:46:42 2022 - ERROR - ../common/common_lib.sh line 39
+Unit lighttpd.service could not be found.
+Fri Sep  9 06:46:49 2022 - ERROR - lighttpd.service stop failed
+Fri Sep  9 06:46:50 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start lighttpd.service: Unit lighttpd.service not found.
+Fri Sep  9 06:46:50 2022 - ERROR - lighttpd.service start failed
+Fri Sep  9 06:46:51 2022 - ERROR - ../common/common_lib.sh line 44
+Unit lighttpd.service could not be found.
+Fri Sep  9 06:46:58 2022 - ERROR - lighttpd.service start failed
+Fri Sep  9 06:46:59 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for lighttpd.service: No such file or directory
+Fri Sep  9 06:46:59 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start lighttpd.service: Unit lighttpd.service not found.
+Fri Sep  9 06:47:00 2022 - ERROR - Job type reload is not applicable for unit lighttpd.service
+Fri Sep  9 06:47:01 2022 - ERROR - ../common/common_lib.sh line 91
+Unit lighttpd.service could not be found.
+Unit lighttpd.service could not be found.
+Fri Sep  9 06:47:02 2022 - INFO  - Finish test!
+Fri Sep  9 06:47:03 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:47:04 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:31 ago on Fri 09 Sep 2022 06:45:58 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by lighttpd-1.4.53-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by lighttpd-1.4.53-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 06:47:07 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,11 @@
+Tue Sep 20 12:18:08 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 12:18:09 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:18:15 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 12:18:21 CST; 5s ago
+Tue Sep 20 12:18:27 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-udev-settle.service: Job type reload is not applicable for unit systemd-udev-settle.service.
+     Active: active (exited) since Tue 2022-09-20 12:18:21 CST; 7s ago
+Tue Sep 20 12:18:28 2022 - INFO  - Finish test!
+Tue Sep 20 12:18:29 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:18:30 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:18:30 2022 - INFO  - Finish environment cleanup!

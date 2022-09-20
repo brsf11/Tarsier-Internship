@@ -1,0 +1,20 @@
+Tue Sep 20 11:58:01 2022 - INFO  - Start testing...
+Tue Sep 20 11:58:08 2022 - ERROR - systemd-initctl.service restart failed
+Tue Sep 20 11:58:08 2022 - ERROR - ../common/common_lib.sh line 37
+Tue Sep 20 11:58:15 2022 - ERROR - systemd-initctl.service stop failed
+Tue Sep 20 11:58:15 2022 - ERROR - ../common/common_lib.sh line 42
+Tue Sep 20 11:58:22 2022 - ERROR - systemd-initctl.service start failed
+Tue Sep 20 11:58:23 2022 - ERROR - ../common/common_lib.sh line 47
+Tue Sep 20 11:58:24 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 20 11:58:01 openEuler-riscv64 systemd[1]: systemd-initctl.service: Main process exited, code=exited, status=1/FAILURE
+Sep 20 11:58:01 openEuler-riscv64 systemd[1]: systemd-initctl.service: Failed with result 'exit-code'.
+Sep 20 11:58:16 openEuler-riscv64 systemd[1]: systemd-initctl.service: Main process exited, code=exited, status=1/FAILURE
+Sep 20 11:58:16 openEuler-riscv64 systemd[1]: systemd-initctl.service: Failed with result 'exit-code'.
+Tue Sep 20 11:58:24 2022 - ERROR - There is an error message for the log of systemd-initctl.service
+Tue Sep 20 11:58:25 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload systemd-initctl.service: Job type reload is not applicable for unit systemd-initctl.service.
+Tue Sep 20 11:58:26 2022 - INFO  - Finish test!
+Tue Sep 20 11:58:27 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:58:27 2022 - INFO  - Start environment cleanup.
+oe_test_service_systemd-initctl.sh: line 31: systemcyl: command not found
+Tue Sep 20 11:58:28 2022 - INFO  - Finish environment cleanup!

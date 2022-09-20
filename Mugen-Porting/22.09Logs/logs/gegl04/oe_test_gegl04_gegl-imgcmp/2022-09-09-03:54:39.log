@@ -1,0 +1,15 @@
+Fri Sep  9 03:54:42 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 03:55:06 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 03:55:07 2022 - INFO  - Start to run test.
+oe_test_gegl04_gegl-imgcmp.sh: line 28: gegl-imgcmp: command not found
+Fri Sep  9 03:55:07 2022 - ERROR - oe_test_gegl04_gegl-imgcmp.sh line 29
+Fri Sep  9 03:55:08 2022 - INFO  - End of the test.
+Fri Sep  9 03:55:09 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:55:09 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:00:56 ago on Fri 09 Sep 2022 03:54:09 AM CST.\nNo match for argument: gegl04\nError: Unable to find a match: gegl04'
+Fri Sep  9 03:55:12 2022 - INFO  - Finish restoring the test environment.

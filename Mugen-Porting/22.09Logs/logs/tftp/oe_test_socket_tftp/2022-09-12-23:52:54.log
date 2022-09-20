@@ -1,0 +1,15 @@
+Mon Sep 12 23:52:56 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 23:53:34 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:53:35 2022 - INFO  - Start to run test.
+     Active: active (listening) since Mon 2022-09-12 23:53:35 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Mon 2022-09-12 23:53:48 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/tftp.socket
+Removed /etc/systemd/system/sockets.target.wants/tftp.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/tftp.socket’: No such file or directory
+Failed to reload tftp.socket: Job type reload is not applicable for unit tftp.socket.
+     Active: active (listening) since Mon 2022-09-12 23:53:48 CST; 15s ago
+Mon Sep 12 23:54:04 2022 - INFO  - End of the test.
+Mon Sep 12 23:54:05 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 23:54:05 2022 - INFO  - start environment cleanup.
+Mon Sep 12 23:54:31 2022 - INFO  - Finish environment cleanup!

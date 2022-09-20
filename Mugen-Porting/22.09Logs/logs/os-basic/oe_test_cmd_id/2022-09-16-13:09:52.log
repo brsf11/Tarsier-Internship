@@ -1,0 +1,10 @@
+Fri Sep 16 13:09:55 2022 - INFO  - Start to pre test.
+Fri Sep 16 13:09:55 2022 - INFO  - Start to pre test.
+Fri Sep 16 13:09:56 2022 - INFO  - Start to run test.
+uid=0(root) gid=0(root) groups=0(root)
+0
+0
+Usage: id [OPTION]... [USER]...
+Fri Sep 16 13:09:57 2022 - INFO  - End to run test.
+Fri Sep 16 13:09:57 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 13:09:58 2022 - INFO  - oe_test_cmd_id.sh post_test

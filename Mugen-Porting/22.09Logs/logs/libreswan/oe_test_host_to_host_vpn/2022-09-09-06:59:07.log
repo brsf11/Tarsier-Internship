@@ -1,0 +1,94 @@
+Fri Sep  9 06:59:10 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 07:00:00 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:00:01 2022 - INFO  - Start executing testcase.
+Created symlink /etc/systemd/system/multi-user.target.wants/ipsec.service → /usr/lib/systemd/system/ipsec.service.
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 07:00:10 2022 - ERROR - oe_test_host_to_host_vpn.sh line 33
+NSS database already initialised - aborted
+To wipe the old NSS database, issue: rm /var/lib/ipsec/nss/*.db
+Fri Sep  9 07:00:11 2022 - ERROR - oe_test_host_to_host_vpn.sh line 35
+oe_test_host_to_host_vpn.sh: line 36: firewall-cmd: command not found
+Fri Sep  9 07:00:12 2022 - ERROR - oe_test_host_to_host_vpn.sh line 37
+oe_test_host_to_host_vpn.sh: line 38: firewall-cmd: command not found
+Fri Sep  9 07:00:13 2022 - ERROR - oe_test_host_to_host_vpn.sh line 39
+ipsec showhostkey: No keys found
+Fri Sep  9 07:00:17 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:00:17 2022 - ERROR - oe_test_host_to_host_vpn.sh line 44
+Fri Sep  9 07:00:20 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:00:21 2022 - ERROR - oe_test_host_to_host_vpn.sh line 46
+Fri Sep  9 07:00:23 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:00:24 2022 - ERROR - oe_test_host_to_host_vpn.sh line 48
+Fri Sep  9 07:00:25 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:00:26 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/key.txt /tmp
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 07:00:27 2022 - ERROR - Failed in remote SCP operation: 1
+cat: /tmp/key.txt: No such file or directory
+Fri Sep  9 07:00:29 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:00:31 2022 - ERROR - oe_test_host_to_host_vpn.sh line 53
+Fri Sep  9 07:00:31 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:00:32 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/rsa.txt /tmp
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 07:00:33 2022 - ERROR - Failed in remote SCP operation: 1
+cat: /tmp/rsa.txt: No such file or directory
+Fri Sep  9 07:00:34 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 07:00:35 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/ipsec.d/my_host-to-host.conf @:/etc/ipsec.d/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 07:00:36 2022 - ERROR - Failed in remote SCP operation: 1
+Failed to load connection right= is not set
+Fri Sep  9 07:00:37 2022 - ERROR - oe_test_host_to_host_vpn.sh line 63
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Redirecting to: systemctl start ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 07:00:49 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 07:00:50 2022 - ERROR - oe_test_host_to_host_vpn.sh line 69
+Fri Sep  9 07:00:53 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:00:54 2022 - ERROR - oe_test_host_to_host_vpn.sh line 71
+Fri Sep  9 07:00:54 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 07:00:55 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:00:56 2022 - INFO  - start environment cleanup.
+oe_test_host_to_host_vpn.sh: line 79: firewall-cmd: command not found
+oe_test_host_to_host_vpn.sh: line 80: firewall-cmd: command not found
+usage: ssh_cmd.py [-h] --cmd CMD [--node NODE] [--ip IP] [--password PASSWORD]
+                  [--port PORT] [--user USER] [--timeout TIMEOUT]
+ssh_cmd.py: error: the following arguments are required: --cmd
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 134, in rpm_remove
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+usage: ssh_cmd.py [-h] --cmd CMD [--node NODE] [--ip IP] [--password PASSWORD]
+                  [--port PORT] [--user USER] [--timeout TIMEOUT]
+ssh_cmd.py: error: the following arguments are required: --cmd
+Fri Sep  9 07:01:27 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,15 @@
+Mon Sep 12 21:31:01 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 21:31:51 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 21:31:52 2022 - INFO  - Start testing...
+     Active: active (listening) since Mon 2022-09-12 21:31:52 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Mon 2022-09-12 21:32:04 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/rrdcached.socket
+Removed /etc/systemd/system/sockets.target.wants/rrdcached.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/rrdcached.socket’: No such file or directory
+Failed to reload rrdcached.socket: Job type reload is not applicable for unit rrdcached.socket.
+     Active: active (listening) since Mon 2022-09-12 21:32:04 CST; 15s ago
+Mon Sep 12 21:32:20 2022 - INFO  - Finish test!
+Mon Sep 12 21:32:21 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 21:32:21 2022 - INFO  - start environment cleanup.
+Mon Sep 12 21:32:38 2022 - INFO  - Finish environment cleanup!

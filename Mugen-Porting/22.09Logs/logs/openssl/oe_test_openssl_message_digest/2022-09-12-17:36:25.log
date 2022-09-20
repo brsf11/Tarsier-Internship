@@ -1,0 +1,7 @@
+Mon Sep 12 17:36:28 2022 - INFO  - Start to run test.
+SHA1(file.txt)= 31576571adb0e194fb555882b43b2b1e7cfdc856
+SHA1(file.txt)= 31576571adb0e194fb555882b43b2b1e7cfdc856
+Mon Sep 12 17:36:29 2022 - INFO  - End to run test.
+Mon Sep 12 17:36:29 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 17:36:30 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 17:36:31 2022 - INFO  - End to restore the test environment.

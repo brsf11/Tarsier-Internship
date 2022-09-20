@@ -1,0 +1,29 @@
+Fri Sep  9 02:21:24 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:22:22 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 02:22:23 2022 - INFO  - Start to run test.
+Operation aborted.
+package tree is not installed
+Removing:
+Error: 
+ Problem: conflicting requests
+  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64
+Fri Sep  9 02:23:04 2022 - ERROR - oe_test_dnf_assumeno_autoremove.sh line 40
+Error: 
+ Problem: conflicting requests
+  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64
+Fri Sep  9 02:23:11 2022 - ERROR - oe_test_dnf_assumeno_autoremove.sh line 42
+Metadata cache created.
+Last metadata expiration check: 0:00:06 ago on Fri 09 Sep 2022 02:23:17 AM CST.
+kernel-0:5.10-6.oe2203.riscv64
+kernel-0:5.10-6.oe2203.src
+kernel-0:5.10-6.oe2209.riscv64
+kernel-0:5.10-6.oe2209.src
+kernel-0:5.10.0-7.oe2209.riscv64
+kernel-0:5.10.0-7.oe2209.src
+15 files removed
+Error: Cache-only enabled but no cache for 'mainline'
+Fri Sep  9 02:23:33 2022 - INFO  - End of the test.
+Fri Sep  9 02:23:33 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:23:34 2022 - INFO  - Start to restore the test environment.
+0 files removed
+Fri Sep  9 02:24:01 2022 - INFO  - Finish restoring the test environment.

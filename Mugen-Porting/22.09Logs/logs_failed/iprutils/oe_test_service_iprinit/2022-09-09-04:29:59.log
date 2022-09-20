@@ -1,0 +1,29 @@
+Fri Sep  9 04:30:01 2022 - INFO  - Start testing...
+Failed to restart iprinit.service: Unit iprinit.service not found.
+Fri Sep  9 04:30:02 2022 - ERROR - iprinit.service restart failed
+Fri Sep  9 04:30:03 2022 - ERROR - ../common/common_lib.sh line 34
+Unit iprinit.service could not be found.
+Fri Sep  9 04:30:09 2022 - ERROR - iprinit.service restart failed
+Fri Sep  9 04:30:10 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop iprinit.service: Unit iprinit.service not loaded.
+Fri Sep  9 04:30:11 2022 - ERROR - iprinit.service stop failed
+Fri Sep  9 04:30:11 2022 - ERROR - ../common/common_lib.sh line 39
+Unit iprinit.service could not be found.
+Fri Sep  9 04:30:18 2022 - ERROR - iprinit.service stop failed
+Fri Sep  9 04:30:19 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start iprinit.service: Unit iprinit.service not found.
+Fri Sep  9 04:30:19 2022 - ERROR - iprinit.service start failed
+Fri Sep  9 04:30:20 2022 - ERROR - ../common/common_lib.sh line 44
+Unit iprinit.service could not be found.
+Fri Sep  9 04:30:26 2022 - ERROR - iprinit.service start failed
+Fri Sep  9 04:30:27 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for iprinit.service: No such file or directory
+Fri Sep  9 04:30:28 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start iprinit.service: Unit iprinit.service not found.
+Fri Sep  9 04:30:29 2022 - ERROR - Job type reload is not applicable for unit iprinit.service
+Fri Sep  9 04:30:30 2022 - ERROR - ../common/common_lib.sh line 91
+Unit iprinit.service could not be found.
+Unit iprinit.service could not be found.
+Fri Sep  9 04:30:31 2022 - INFO  - Finish test!
+Fri Sep  9 04:30:31 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:30:32 2022 - INFO  - oe_test_service_iprinit.sh post_test

@@ -1,0 +1,39 @@
+Fri Sep  9 01:46:12 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:46:59 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:47:00 2022 - INFO  - Start to run test.
+Failed to restart spausedd.service: Unit spausedd.service not found.
+Fri Sep  9 01:47:01 2022 - ERROR - spausedd.service restart failed
+Fri Sep  9 01:47:02 2022 - ERROR - ../common/common_lib.sh line 34
+Unit spausedd.service could not be found.
+Fri Sep  9 01:47:08 2022 - ERROR - spausedd.service restart failed
+Fri Sep  9 01:47:09 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop spausedd.service: Unit spausedd.service not loaded.
+Fri Sep  9 01:47:10 2022 - ERROR - spausedd.service stop failed
+Fri Sep  9 01:47:10 2022 - ERROR - ../common/common_lib.sh line 39
+Unit spausedd.service could not be found.
+Fri Sep  9 01:47:17 2022 - ERROR - spausedd.service stop failed
+Fri Sep  9 01:47:18 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start spausedd.service: Unit spausedd.service not found.
+Fri Sep  9 01:47:18 2022 - ERROR - spausedd.service start failed
+Fri Sep  9 01:47:19 2022 - ERROR - ../common/common_lib.sh line 44
+Unit spausedd.service could not be found.
+Fri Sep  9 01:47:26 2022 - ERROR - spausedd.service start failed
+Fri Sep  9 01:47:26 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for spausedd.service: No such file or directory
+Fri Sep  9 01:47:27 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start spausedd.service: Unit spausedd.service not found.
+Fri Sep  9 01:47:28 2022 - ERROR - Job type reload is not applicable for unit spausedd.service
+Fri Sep  9 01:47:29 2022 - ERROR - ../common/common_lib.sh line 91
+Unit spausedd.service could not be found.
+Unit spausedd.service could not be found.
+Fri Sep  9 01:47:30 2022 - INFO  - End of the test.
+Fri Sep  9 01:47:30 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:47:31 2022 - INFO  - start environment cleanup.
+Failed to stop spausedd.service: Unit spausedd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:00:26 ago on Fri 09 Sep 2022 01:46:32 AM CST.\nNo match for argument: spausedd\nError: Unable to find a match: spausedd'
+Fri Sep  9 01:47:34 2022 - INFO  - Finish environment cleanup!

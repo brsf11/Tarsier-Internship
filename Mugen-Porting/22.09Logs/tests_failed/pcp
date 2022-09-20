@@ -1,0 +1,16 @@
+oe_test_pmevent_02
+oe_test_pminfo_02
+oe_test_pmlogcheck_pmlogmv
+oe_test_pmprobe_01
+oe_test_pmval_02
+oe_test_pmhostname_pmlock_pmlogger_check
+oe_test_pmlogger_daily_01
+oe_test_pmlogger_daily_02
+oe_test_pmlogger_daily_report
+oe_test_pcp_atop_01
+oe_test_pcp_atop_02
+oe_test_pcp_pcp-import-collectl2pcp
+oe_test_pcp_pcp-import-ganglia2pcp
+oe_test_service_pmie
+oe_test_service_pmmgr
+oe_test_service_pmwebd

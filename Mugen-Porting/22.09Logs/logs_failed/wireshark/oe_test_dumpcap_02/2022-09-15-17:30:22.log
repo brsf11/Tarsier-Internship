@@ -1,0 +1,41 @@
+Thu Sep 15 17:30:25 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 17:30:42 2022 - INFO  - pkgs:(wireshark) is already installed
+Thu Sep 15 17:30:43 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 17:30:43 2022 - INFO  - Start to run test.
+Capturing on 'eth0'
+File: testfile6
+
+Packets: 2 
+Packets captured: 2
+Packets received/dropped on interface 'eth0': 2/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Number of packets:   2
+Capturing on 'eth0'
+File: testfile7
+
+Packets captured: 0
+Packets received/dropped on interface 'eth0': 0/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (0.0%)
+Capture duration:    n/a
+Capturing on 'eth0'
+File: testfile8
+
+Packets: 1 
+Packets: 3 
+Packets: 5 
+Packets: 7 
+Packets captured: 7
+Packets received/dropped on interface 'eth0': 7/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+File size:           1,120 bytes
+Thu Sep 15 18:00:23 2022 - ERROR - Timeout : Command 'bash oe_test_dumpcap_02.sh' timed out after 1799.9994912929997 seconds
+Capturing on 'eth0'
+File: testfile9_00001_20220915174629
+
+Packets: 2 
+Packets: 3 
+Packets: 6 File: testfile9_00002_20220915175646
+
+Packets: 8 
+Packets: 10 
+Packets: 12 
+Packets captured: 12
+Packets received/dropped on interface 'eth0': 12/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Thu Sep 15 18:00:26 2022 - INFO  - Start to restore the test environment.

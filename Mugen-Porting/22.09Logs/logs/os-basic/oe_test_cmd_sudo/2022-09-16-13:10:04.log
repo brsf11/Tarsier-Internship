@@ -1,0 +1,16 @@
+Fri Sep 16 13:10:06 2022 - INFO  - Start to prepare the test environment.
+Changing password for user test.
+passwd: all authentication tokens updated successfully.
+Fri Sep 16 13:10:09 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 13:10:10 2022 - INFO  - Start to run test.
+User root may run the following commands on openEuler-riscv64:
+User test may run the following commands on openEuler-riscv64:
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+usage: sudo [-ABbEHknPS] [-r role] [-t type] [-C num] [-D directory] [-g group]
+usage: sudo -e [-ABknS] [-r role] [-t type] [-C num] [-D directory] [-g group]
+Fri Sep 16 13:10:13 2022 - INFO  - End to run test.
+Fri Sep 16 13:10:14 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 13:10:15 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 13:10:17 2022 - INFO  - End to restore the test environment.

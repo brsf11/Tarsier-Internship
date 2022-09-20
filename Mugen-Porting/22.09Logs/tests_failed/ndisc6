@@ -1,0 +1,9 @@
+oe_test_ndisc6_addr2name
+oe_test_ndisc6_name2addr
+oe_test_ndisc6_ndisc6
+oe_test_ndisc6_rdisc6
+oe_test_ndisc6_rdnssd
+oe_test_ndisc6_rltraceroute6
+oe_test_ndisc6_tcpspray
+oe_test_ndisc6_tcptraceroute6
+oe_test_ndisc6_tracert6

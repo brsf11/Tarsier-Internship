@@ -1,0 +1,31 @@
+Fri Sep  9 02:43:42 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:43:43 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:43:44 2022 - INFO  - Start testing...
+Failed to restart dracut-shutdown.service: Unit dracut-shutdown.service not found.
+Fri Sep  9 02:43:44 2022 - ERROR - dracut-shutdown.service restart failed
+Fri Sep  9 02:43:45 2022 - ERROR - oe_test_service_dracut-shutdown.sh line 32
+Unit dracut-shutdown.service could not be found.
+Fri Sep  9 02:43:52 2022 - ERROR - dracut-shutdown.service restart failed
+Fri Sep  9 02:43:52 2022 - ERROR - oe_test_service_dracut-shutdown.sh line 35
+Failed to stop dracut-shutdown.service: Unit dracut-shutdown.service not loaded.
+Fri Sep  9 02:43:53 2022 - ERROR - dracut-shutdown.service stop failed
+Fri Sep  9 02:43:54 2022 - ERROR - oe_test_service_dracut-shutdown.sh line 37
+Unit dracut-shutdown.service could not be found.
+Fri Sep  9 02:44:00 2022 - ERROR - dracut-shutdown.service stop failed
+Fri Sep  9 02:44:01 2022 - ERROR - oe_test_service_dracut-shutdown.sh line 40
+Failed to start dracut-shutdown.service: Unit dracut-shutdown.service not found.
+Fri Sep  9 02:44:02 2022 - ERROR - dracut-shutdown.service start failed
+Fri Sep  9 02:44:02 2022 - ERROR - oe_test_service_dracut-shutdown.sh line 43
+Unit dracut-shutdown.service could not be found.
+Fri Sep  9 02:44:09 2022 - ERROR - dracut-shutdown.service start failed
+Fri Sep  9 02:44:10 2022 - ERROR - oe_test_service_dracut-shutdown.sh line 46
+Failed to get unit file state for dracut-shutdown.service: No such file or directory
+Fri Sep  9 02:44:10 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dracut-shutdown.service: Unit dracut-shutdown.service not found.
+Fri Sep  9 02:44:11 2022 - ERROR - Job type reload is not applicable for unit dracut-shutdown.service
+Fri Sep  9 02:44:12 2022 - ERROR - ../common/common_lib.sh line 91
+Unit dracut-shutdown.service could not be found.
+Unit dracut-shutdown.service could not be found.
+Fri Sep  9 02:44:13 2022 - INFO  - Finish test!
+Fri Sep  9 02:44:14 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:44:14 2022 - INFO  - oe_test_service_dracut-shutdown.sh post_test

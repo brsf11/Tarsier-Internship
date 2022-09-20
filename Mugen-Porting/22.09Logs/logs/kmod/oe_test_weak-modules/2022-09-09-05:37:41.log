@@ -1,0 +1,45 @@
+Fri Sep  9 05:37:44 2022 - INFO  - Start to run test.
+Usage: weak-modules [options] {--add-modules|--remove-modules}
+weak-modules [options] {--add-kernel|--remove-kernel} {kernel-release}
+--add-modules
+        Add a list of modules read from standard input. Create
+        symlinks in compatible kernel's weak-updates/ directory.
+        The list of modules is read from standard input.
+
+--remove-modules
+        Remove compatibility symlinks from weak-updates/ directories
+        for a list of modules.  The list of modules is read from
+        standard input. Note: it doesn't attempt to locate any
+        compatible modules to replace those being removed.
+
+--add-kernel
+        Add compatibility symlinks for all compatible modules to the
+        specified or running kernel.
+
+--remove-kernel
+        Remove all compatibility symlinks for the specified or current
+        kernel.
+
+--no-initramfs
+        Do not generate an initramfs.
+
+--verbose
+        Print the commands executed.
+
+--dry-run
+        Do not create/remove any files.
+weak-modules: could not find dracut at /usr/bin/dracut
+Fri Sep  9 05:37:54 2022 - ERROR - oe_test_weak-modules.sh line 28
+weak-modules: could not find dracut at /usr/bin/dracut
+Fri Sep  9 05:37:55 2022 - ERROR - oe_test_weak-modules.sh line 30
+weak-modules: could not find dracut at /usr/bin/dracut
+Fri Sep  9 05:37:56 2022 - ERROR - oe_test_weak-modules.sh line 32
+weak-modules: could not find dracut at /usr/bin/dracut
+Fri Sep  9 05:37:57 2022 - ERROR - oe_test_weak-modules.sh line 34
+weak-modules: could not find dracut at /usr/bin/dracut
+Fri Sep  9 05:37:58 2022 - ERROR - oe_test_weak-modules.sh line 36
+weak-modules: could not find dracut at /usr/bin/dracut
+Fri Sep  9 05:37:58 2022 - ERROR - oe_test_weak-modules.sh line 38
+Fri Sep  9 05:37:59 2022 - INFO  - End of the test.
+Fri Sep  9 05:38:00 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:38:01 2022 - INFO  - oe_test_weak-modules.sh post_test

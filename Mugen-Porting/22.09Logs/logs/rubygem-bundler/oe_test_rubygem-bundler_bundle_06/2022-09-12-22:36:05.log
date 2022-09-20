@@ -1,0 +1,19 @@
+Mon Sep 12 22:36:07 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 22:36:25 2022 - INFO  - pkgs:(rubygem-bundler) is already installed
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Mon Sep 12 22:36:30 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:36:31 2022 - INFO  - Start to run test.
+Bundler version 2.2.33 (2021-12-07 commit 9b5e2a350b)
+Bundler version 2.2.33 (2021-12-07 commit 9b5e2a350b)
+Bundler version 2.2.33 (2021-12-07 commit 9b5e2a350b)
+  bundle version
+The Gemfile's dependencies are satisfied
+The Gemfile's dependencies are satisfied
+       bundle COMMAND [--no-color] [--verbose] [ARGS]
+       bundle COMMAND [--no-color] [--verbose] [ARGS]
+       bundle COMMAND [--no-color] [--verbose] [ARGS]
+Mon Sep 12 22:37:02 2022 - INFO  - End to run test.
+Mon Sep 12 22:37:02 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:37:03 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:37:04 2022 - WARN  - no thing to do.
+Mon Sep 12 22:37:05 2022 - INFO  - End to restore the test environment.

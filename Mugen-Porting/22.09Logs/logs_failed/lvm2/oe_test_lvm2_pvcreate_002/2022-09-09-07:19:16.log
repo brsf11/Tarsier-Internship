@@ -1,0 +1,40 @@
+Fri Sep  9 07:19:19 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:19:37 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:19:44 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:19:44 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:19:46 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 31
+  No device found for /dev/.
+Fri Sep  9 07:19:47 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 33
+Fri Sep  9 07:19:48 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 35
+  No device found for /dev/.
+Fri Sep  9 07:19:49 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 37
+  No device found for /dev/.
+Fri Sep  9 07:19:49 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 39
+  No device found for /dev/.
+Fri Sep  9 07:19:50 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 41
+  No device found for /dev/.
+Fri Sep  9 07:19:52 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 43
+  WARNING: File locking is disabled.
+  No device found for /dev/.
+Fri Sep  9 07:19:53 2022 - ERROR - oe_test_lvm2_pvcreate_002.sh line 45
+  pvcreate - Initialize physical volume(s) for use by LVM
+        e.g. PV, VG, LV, Size, Number, String, Tag.
+        LV
+        Logical Volume name. See lvm(8) for valid names. An LV positional
+        arg generally includes the VG name and LV name, e.g. VG/LV.
+        LV followed by _<type> indicates that an LV of the given type is
+        The _new suffix indicates that the LV name is new.
+        tags in place of a VG, LV or PV.
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  LVM version:     2.03.14(2) (2021-10-20)
+oe_test_lvm2_pvcreate_002.sh: line 50: ["22.09": command not found
+Fri Sep  9 07:19:54 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:19:54 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:19:55 2022 - INFO  - Start environment cleanup.
+  No device found for /dev/.
+Fri Sep  9 07:19:56 2022 - WARN  - no thing to do.
+Fri Sep  9 07:19:57 2022 - INFO  - Finish environment cleanup.

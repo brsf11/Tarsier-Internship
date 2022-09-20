@@ -1,0 +1,12 @@
+Fri Sep  9 05:36:21 2022 - INFO  - Start to run test.
+Usage:
+	kmod [options] command [command_options]
+kmod version 29
+Usage:
+	help [options] command [command_options]
+Module                  Size  Used by
+Warning: /lib/modules/5.10.0/modules.devname not found - ignoring
+Fri Sep  9 05:36:22 2022 - ERROR - oe_test_kmod.sh line 33
+Fri Sep  9 05:36:23 2022 - INFO  - End of the test.
+Fri Sep  9 05:36:24 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:36:25 2022 - INFO  - oe_test_kmod.sh post_test

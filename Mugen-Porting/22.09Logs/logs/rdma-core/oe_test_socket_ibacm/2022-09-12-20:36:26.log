@@ -1,0 +1,34 @@
+Mon Sep 12 20:36:29 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 20:37:48 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:37:48 2022 - INFO  - Start testing...
+Job failed. See "journalctl -xe" for details.
+Mon Sep 12 20:37:49 2022 - ERROR - ibacm.socket restart failed
+Mon Sep 12 20:37:50 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 20:37:57 2022 - ERROR - ibacm.socket restart failed
+Mon Sep 12 20:37:57 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 20:38:04 2022 - ERROR - ibacm.socket stop failed
+Mon Sep 12 20:38:04 2022 - ERROR - ../common/common_lib.sh line 42
+Job failed. See "journalctl -xe" for details.
+Mon Sep 12 20:38:05 2022 - ERROR - ibacm.socket start failed
+Mon Sep 12 20:38:06 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 20:38:13 2022 - ERROR - ibacm.socket start failed
+Mon Sep 12 20:38:13 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/sockets.target.wants/ibacm.socket
+Removed /etc/systemd/system/sockets.target.wants/ibacm.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/ibacm.socket’: No such file or directory
+Sep 12 20:37:49 openEuler-riscv64 systemd[1]: ibacm.socket: Failed to create listening socket (rdma 4): Protocol not supported
+Sep 12 20:37:49 openEuler-riscv64 systemd[1]: ibacm.socket: Failed to listen on sockets: Protocol not supported
+Sep 12 20:37:49 openEuler-riscv64 systemd[1]: ibacm.socket: Failed with result 'resources'.
+Sep 12 20:37:49 openEuler-riscv64 systemd[1]: Failed to listen on Socket for InfiniBand Address Cache Manager Daemon.
+Sep 12 20:38:05 openEuler-riscv64 systemd[1]: ibacm.socket: Failed to create listening socket (rdma 4): Protocol not supported
+Sep 12 20:38:05 openEuler-riscv64 systemd[1]: ibacm.socket: Failed to listen on sockets: Protocol not supported
+Sep 12 20:38:05 openEuler-riscv64 systemd[1]: ibacm.socket: Failed with result 'resources'.
+Sep 12 20:38:05 openEuler-riscv64 systemd[1]: Failed to listen on Socket for InfiniBand Address Cache Manager Daemon.
+Mon Sep 12 20:38:23 2022 - ERROR - There is an error message for the log of ibacm.socket
+Mon Sep 12 20:38:24 2022 - ERROR - ../common/common_lib.sh line 28
+Job failed. See "journalctl -xe" for details.
+Failed to reload ibacm.socket: Job type reload is not applicable for unit ibacm.socket.
+Mon Sep 12 20:38:25 2022 - INFO  - Finish test!
+Mon Sep 12 20:38:26 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:38:27 2022 - INFO  - start environment cleanup.
+Mon Sep 12 20:38:44 2022 - INFO  - Finish environment cleanup!

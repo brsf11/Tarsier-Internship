@@ -1,0 +1,495 @@
+Fri Sep 16 11:27:37 2022 - INFO  - Start to run test.
+18984     291 NetworkManager  /usr/sbin/NetworkManager --  0.9
+11928     411 python3         python3 mugen_riscv.py -f o  0.9
+11016       1 systemd         /sbin/init                  12.0
+10488    1021 python3         python3 /root/GitRepo/mugen 23.0
+ 7372     223 systemd-journal /usr/lib/systemd/systemd-jo  0.7
+ 7352     335 sshd            sshd: root [priv]            0.2
+ 7260     244 systemd-udevd   /usr/lib/systemd/systemd-ud  0.8
+ 6268     295 sshd            sshd: /usr/sbin/sshd -D [li  0.1
+ 6000     968 sudo            sudo bash mugen.sh -f os-ba  2.6
+ 5140     287 systemd-logind  /usr/lib/systemd/systemd-lo  1.0
+ 4768     348 sshd            sshd: root@pts/0             0.2
+ 4412     838 ntpd            /usr/sbin/ntpd -u ntp:ntp -  0.5
+ 3976     285 dbus-daemon     /usr/bin/dbus-daemon --syst  2.3
+ 3636     353 bash            -bash                        0.2
+ 3500     974 bash            bash mugen.sh -f os-basic -  2.6
+ 3064    1022 bash            bash oe_test_system_monitor  6.0
+ 3012     967 sh              sh -c sudo bash mugen.sh -f  0.5
+ 2460     299 crond           /usr/sbin/crond -n           0.0
+ 1992     304 agetty          /sbin/agetty -o -p -- \u --  0.0
+ 1988     302 agetty          /sbin/agetty -o -p -- \u --  0.0
+ 1528     300 agetty          /sbin/agetty -o -p -- \u --  0.0
+ 1448    1032 sort            sort -nrk1                   0.0
+ 1320    1031 ps              ps -eo rsz,pid,comm,args,pc  0.0
+  696     969 tee             tee -a exec.log              0.3
+  RSZ     PID COMMAND         COMMAND                     %CPU
+    0       9 rcu_tasks_trace [rcu_tasks_trace]            0.0
+    0      97 cryptd          [cryptd]                     0.0
+    0      96 kworker/0:1-mm_ [kworker/0:1-mm_percpu_wq]   0.0
+    0      95 pdecrypt_serial [pdecrypt_serial]            0.0
+    0      94 pencrypt_serial [pencrypt_serial]            0.0
+    0       8 mm_percpu_wq    [mm_percpu_wq]               0.0
+    0       7 kworker/u16:0-e [kworker/u16:0-events_unbou  0.0
+    0       6 kworker/0:0H-ev [kworker/0:0H-events_highpr  0.0
+    0       5 kworker/0:0-eve [kworker/0:0-events]         0.0
+    0      54 kcompactd0      [kcompactd0]                 0.0
+    0      53 writeback       [writeback]                  0.0
+    0      52 oom_reaper      [oom_reaper]                 0.0
+    0      51 khungtaskd      [khungtaskd]                 0.0
+    0      50 netns           [netns]                      0.0
+    0       4 rcu_par_gp      [rcu_par_gp]                 0.0
+    0      49 kdevtmpfs       [kdevtmpfs]                  0.0
+    0      48 kworker/7:0H-kb [kworker/7:0H-kblockd]       0.0
+    0      47 kworker/7:0-eve [kworker/7:0-events]         0.0
+    0      46 ksoftirqd/7     [ksoftirqd/7]                0.0
+    0      45 migration/7     [migration/7]                0.0
+    0      44 cpuhp/7         [cpuhp/7]                    0.0
+    0      43 kworker/6:0H-kb [kworker/6:0H-kblockd]       0.0
+    0      42 kworker/6:0-cgr [kworker/6:0-cgroup_pidlist  0.0
+    0      41 ksoftirqd/6     [ksoftirqd/6]                0.0
+    0     410 kworker/4:3-eve [kworker/4:3-events]         0.0
+    0      40 migration/6     [migration/6]                0.0
+    0     409 kworker/4:2-mm_ [kworker/4:2-mm_percpu_wq]   0.0
+    0       3 rcu_gp          [rcu_gp]                     0.0
+    0      39 cpuhp/6         [cpuhp/6]                    0.0
+    0      38 kworker/5:0H-kb [kworker/5:0H-kblockd]       0.0
+    0      37 kworker/5:0-cgr [kworker/5:0-cgroup_pidlist  0.0
+    0      36 ksoftirqd/5     [ksoftirqd/5]                0.0
+    0      35 migration/5     [migration/5]                0.0
+    0      34 cpuhp/5         [cpuhp/5]                    0.0
+    0      33 kworker/4:0H-kb [kworker/4:0H-kblockd]       0.0
+    0     334 kworker/6:3-eve [kworker/6:3-events]         0.0
+    0     333 kworker/6:2-cgr [kworker/6:2-cgroup_pidlist  0.0
+    0      32 kworker/4:0-eve [kworker/4:0-events]         0.0
+    0     329 kworker/7:3     [kworker/7:3]                0.0
+    0     328 kworker/7:2-cgr [kworker/7:2-cgroup_pidlist  0.0
+    0      31 ksoftirqd/4     [ksoftirqd/4]                0.0
+    0      30 migration/4     [migration/4]                0.0
+    0       2 kthreadd        [kthreadd]                   0.0
+    0      29 cpuhp/4         [cpuhp/4]                    0.0
+    0      28 kworker/3:0H-ev [kworker/3:0H-events_highpr  0.0
+    0      27 kworker/3:0-eve [kworker/3:0-events]         0.0
+    0      26 ksoftirqd/3     [ksoftirqd/3]                0.0
+    0     265 kworker/3:1H-kb [kworker/3:1H-kblockd]       0.0
+    0     262 kworker/0:2-eve [kworker/0:2-events]         0.0
+    0      25 migration/3     [migration/3]                0.0
+    0      24 cpuhp/3         [cpuhp/3]                    0.0
+    0     240 kworker/5:3-mm_ [kworker/5:3-mm_percpu_wq]   0.0
+    0      23 kworker/2:0H-kb [kworker/2:0H-kblockd]       0.0
+    0     235 kworker/5:2-cgr [kworker/5:2-cgroup_pidlist  0.0
+    0     234 kworker/4:1H-kb [kworker/4:1H-kblockd]       0.0
+    0     232 kworker/u16:2   [kworker/u16:2]              0.0
+    0      22 kworker/2:0-eve [kworker/2:0-events]         0.0
+    0      21 ksoftirqd/2     [ksoftirqd/2]                0.0
+    0     211 kworker/7:1H-kb [kworker/7:1H-kblockd]       0.0
+    0      20 migration/2     [migration/2]                0.0
+    0      19 cpuhp/2         [cpuhp/2]                    0.0
+    0     199 kworker/6:1H-kb [kworker/6:1H-kblockd]       0.0
+    0     197 kworker/2:1H-kb [kworker/2:1H-kblockd]       0.0
+    0     195 kworker/5:1H-kb [kworker/5:1H-kblockd]       0.0
+    0     194 kworker/1:2-eve [kworker/1:2-events]         0.0
+    0     193 ext4-rsv-conver [ext4-rsv-conver]            0.0
+    0     192 jbd2/vda1-8     [jbd2/vda1-8]                0.0
+    0     191 kworker/7:1-mm_ [kworker/7:1-mm_percpu_wq]   0.0
+    0     190 kworker/4:1-cgr [kworker/4:1-cgroup_pidlist  0.0
+    0      18 kworker/1:0H-kb [kworker/1:0H-kblockd]       0.0
+    0     189 kworker/3:1-mm_ [kworker/3:1-mm_percpu_wq]   0.0
+    0     188 kworker/2:1-mm_ [kworker/2:1-mm_percpu_wq]   0.0
+    0     187 ipv6_addrconf   [ipv6_addrconf]              0.0
+    0     186 uas             [uas]                        0.0
+    0     185 kworker/1:1-mm_ [kworker/1:1-mm_percpu_wq]   0.0
+    0     184 kworker/1:1H-kb [kworker/1:1H-kblockd]       0.0
+    0     183 kworker/u16:1-f [kworker/u16:1-flush-254:0]  0.0
+    0     182 hwrng           [hwrng]                      0.0
+    0     181 kworker/6:1-mm_ [kworker/6:1-mm_percpu_wq]   0.0
+    0     180 khvcd           [khvcd]                      0.0
+    0      17 kworker/1:0-usb [kworker/1:0-usb_hub_wq]     0.0
+    0     176 nfsiod          [nfsiod]                     0.0
+    0     175 kswapd0         [kswapd0]                    0.0
+    0     174 xprtiod         [xprtiod]                    0.0
+    0     173 kworker/u17:0   [kworker/u17:0]              0.0
+    0     172 kworker/0:1H-kb [kworker/0:1H-kblockd]       0.0
+    0     171 rpciod          [rpciod]                     0.0
+    0     170 kworker/5:1-cgr [kworker/5:1-cgroup_pidlist  0.0
+    0      16 ksoftirqd/1     [ksoftirqd/1]                0.0
+    0     169 ata_sff         [ata_sff]                    0.0
+    0     168 kblockd         [kblockd]                    0.0
+    0      15 migration/1     [migration/1]                0.0
+    0      14 cpuhp/1         [cpuhp/1]                    0.0
+    0      13 cpuhp/0         [cpuhp/0]                    0.0
+    0      12 migration/0     [migration/0]                0.0
+    0      11 rcu_sched       [rcu_sched]                  0.3
+    0      10 ksoftirqd/0     [ksoftirqd/0]                0.0
+%CPU     PID COMMAND         COMMAND
+ 6.5    1022 bash            bash oe_test_system_monitor_process.sh
+ 2.6     974 bash            bash mugen.sh -f os-basic -r oe_test_system_monitor_process
+ 2.6     968 sudo            sudo bash mugen.sh -f os-basic -r oe_test_system_monitor_process
+23.3    1021 python3         python3 /root/GitRepo/mugen-riscv/libs/locallibs/sleep_wait.py --time 30m --cmd bash oe_test_system_monitor_process.sh --mode 1
+ 2.3     285 dbus-daemon     /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+12.0       1 systemd         /sbin/init
+ 1.0     287 systemd-logind  /usr/lib/systemd/systemd-logind
+ 0.9     411 python3         python3 mugen_riscv.py -f os-basic -m -g
+ 0.9     291 NetworkManager  /usr/sbin/NetworkManager --no-daemon
+ 0.8     244 systemd-udevd   /usr/lib/systemd/systemd-udevd
+ 0.7     223 systemd-journal /usr/lib/systemd/systemd-journald
+ 0.5     967 sh              sh -c sudo bash mugen.sh -f os-basic -r oe_test_system_monitor_process 2>&1 | tee -a exec.log
+ 0.5     838 ntpd            /usr/sbin/ntpd -u ntp:ntp -g
+ 0.3     969 tee             tee -a exec.log
+ 0.3      11 rcu_sched       [rcu_sched]
+ 0.2     353 bash            -bash
+ 0.2     348 sshd            sshd: root@pts/0
+ 0.2     335 sshd            sshd: root [priv]
+ 0.1     295 sshd            sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+ 0.0       9 rcu_tasks_trace [rcu_tasks_trace]
+ 0.0      97 cryptd          [cryptd]
+ 0.0      96 kworker/0:1-mm_ [kworker/0:1-mm_percpu_wq]
+ 0.0      95 pdecrypt_serial [pdecrypt_serial]
+ 0.0      94 pencrypt_serial [pencrypt_serial]
+ 0.0       8 mm_percpu_wq    [mm_percpu_wq]
+ 0.0       7 kworker/u16:0-e [kworker/u16:0-events_unbound]
+ 0.0       6 kworker/0:0H-ev [kworker/0:0H-events_highpri]
+ 0.0       5 kworker/0:0-eve [kworker/0:0-events]
+ 0.0      54 kcompactd0      [kcompactd0]
+ 0.0      53 writeback       [writeback]
+ 0.0      52 oom_reaper      [oom_reaper]
+ 0.0      51 khungtaskd      [khungtaskd]
+ 0.0      50 netns           [netns]
+ 0.0       4 rcu_par_gp      [rcu_par_gp]
+ 0.0      49 kdevtmpfs       [kdevtmpfs]
+ 0.0      48 kworker/7:0H-kb [kworker/7:0H-kblockd]
+ 0.0      47 kworker/7:0-eve [kworker/7:0-events]
+ 0.0      46 ksoftirqd/7     [ksoftirqd/7]
+ 0.0      45 migration/7     [migration/7]
+ 0.0      44 cpuhp/7         [cpuhp/7]
+ 0.0      43 kworker/6:0H-kb [kworker/6:0H-kblockd]
+ 0.0      42 kworker/6:0-cgr [kworker/6:0-cgroup_pidlist_destroy]
+ 0.0      41 ksoftirqd/6     [ksoftirqd/6]
+ 0.0     410 kworker/4:3-eve [kworker/4:3-events]
+ 0.0      40 migration/6     [migration/6]
+ 0.0     409 kworker/4:2-mm_ [kworker/4:2-mm_percpu_wq]
+ 0.0       3 rcu_gp          [rcu_gp]
+ 0.0      39 cpuhp/6         [cpuhp/6]
+ 0.0      38 kworker/5:0H-kb [kworker/5:0H-kblockd]
+ 0.0      37 kworker/5:0-cgr [kworker/5:0-cgroup_pidlist_destroy]
+ 0.0      36 ksoftirqd/5     [ksoftirqd/5]
+ 0.0      35 migration/5     [migration/5]
+ 0.0      34 cpuhp/5         [cpuhp/5]
+ 0.0      33 kworker/4:0H-kb [kworker/4:0H-kblockd]
+ 0.0     334 kworker/6:3-eve [kworker/6:3-events]
+ 0.0     333 kworker/6:2-cgr [kworker/6:2-cgroup_pidlist_destroy]
+ 0.0      32 kworker/4:0-eve [kworker/4:0-events]
+ 0.0     329 kworker/7:3     [kworker/7:3]
+ 0.0     328 kworker/7:2-cgr [kworker/7:2-cgroup_pidlist_destroy]
+ 0.0      31 ksoftirqd/4     [ksoftirqd/4]
+ 0.0      30 migration/4     [migration/4]
+ 0.0     304 agetty          /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyS0 vt220
+ 0.0     302 agetty          /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 hvc0 vt220
+ 0.0     300 agetty          /sbin/agetty -o -p -- \u --noclear tty1 linux
+ 0.0       2 kthreadd        [kthreadd]
+ 0.0      29 cpuhp/4         [cpuhp/4]
+ 0.0     299 crond           /usr/sbin/crond -n
+ 0.0      28 kworker/3:0H-ev [kworker/3:0H-events_highpri]
+ 0.0      27 kworker/3:0-eve [kworker/3:0-events]
+ 0.0      26 ksoftirqd/3     [ksoftirqd/3]
+ 0.0     265 kworker/3:1H-kb [kworker/3:1H-kblockd]
+ 0.0     262 kworker/0:2-eve [kworker/0:2-events]
+ 0.0      25 migration/3     [migration/3]
+ 0.0      24 cpuhp/3         [cpuhp/3]
+ 0.0     240 kworker/5:3-mm_ [kworker/5:3-mm_percpu_wq]
+ 0.0      23 kworker/2:0H-kb [kworker/2:0H-kblockd]
+ 0.0     235 kworker/5:2-cgr [kworker/5:2-cgroup_pidlist_destroy]
+ 0.0     234 kworker/4:1H-kb [kworker/4:1H-kblockd]
+ 0.0     232 kworker/u16:2   [kworker/u16:2]
+ 0.0      22 kworker/2:0-eve [kworker/2:0-events]
+ 0.0      21 ksoftirqd/2     [ksoftirqd/2]
+ 0.0     211 kworker/7:1H-kb [kworker/7:1H-kblockd]
+ 0.0      20 migration/2     [migration/2]
+ 0.0      19 cpuhp/2         [cpuhp/2]
+ 0.0     199 kworker/6:1H-kb [kworker/6:1H-kblockd]
+ 0.0     197 kworker/2:1H-kb [kworker/2:1H-kblockd]
+ 0.0     195 kworker/5:1H-kb [kworker/5:1H-kblockd]
+ 0.0     194 kworker/1:2-eve [kworker/1:2-events]
+ 0.0     193 ext4-rsv-conver [ext4-rsv-conver]
+ 0.0     192 jbd2/vda1-8     [jbd2/vda1-8]
+ 0.0     191 kworker/7:1-mm_ [kworker/7:1-mm_percpu_wq]
+ 0.0     190 kworker/4:1-cgr [kworker/4:1-cgroup_pidlist_destroy]
+ 0.0      18 kworker/1:0H-kb [kworker/1:0H-kblockd]
+ 0.0     189 kworker/3:1-mm_ [kworker/3:1-mm_percpu_wq]
+ 0.0     188 kworker/2:1-mm_ [kworker/2:1-mm_percpu_wq]
+ 0.0     187 ipv6_addrconf   [ipv6_addrconf]
+ 0.0     186 uas             [uas]
+ 0.0     185 kworker/1:1-mm_ [kworker/1:1-mm_percpu_wq]
+ 0.0     184 kworker/1:1H-kb [kworker/1:1H-kblockd]
+ 0.0     183 kworker/u16:1-f [kworker/u16:1-flush-254:0]
+ 0.0     182 hwrng           [hwrng]
+ 0.0     181 kworker/6:1-mm_ [kworker/6:1-mm_percpu_wq]
+ 0.0     180 khvcd           [khvcd]
+ 0.0      17 kworker/1:0-usb [kworker/1:0-usb_hub_wq]
+ 0.0     176 nfsiod          [nfsiod]
+ 0.0     175 kswapd0         [kswapd0]
+ 0.0     174 xprtiod         [xprtiod]
+ 0.0     173 kworker/u17:0   [kworker/u17:0]
+ 0.0     172 kworker/0:1H-kb [kworker/0:1H-kblockd]
+ 0.0     171 rpciod          [rpciod]
+ 0.0     170 kworker/5:1-cgr [kworker/5:1-cgroup_pidlist_destroy]
+ 0.0      16 ksoftirqd/1     [ksoftirqd/1]
+ 0.0     169 ata_sff         [ata_sff]
+ 0.0     168 kblockd         [kblockd]
+ 0.0      15 migration/1     [migration/1]
+ 0.0      14 cpuhp/1         [cpuhp/1]
+ 0.0      13 cpuhp/0         [cpuhp/0]
+ 0.0      12 migration/0     [migration/0]
+ 0.0      10 ksoftirqd/0     [ksoftirqd/0]
+ 0.0    1034 sort            sort -rk1
+ 0.0    1033 ps              ps -eo pcpu,pid,comm,args
+%MEM     PID COMMAND         COMMAND
+ 0.2     291 NetworkManager  /usr/sbin/NetworkManager --no-daemon
+ 0.1     411 python3         python3 mugen_riscv.py -f os-basic -m -g
+ 0.1       1 systemd         /sbin/init
+ 0.1    1021 python3         python3 /root/GitRepo/mugen-riscv/libs/locallibs/sleep_wait.py --time 30m --cmd bash oe_test_system_monitor_process.sh --mode 1
+ 0.0       9 rcu_tasks_trace [rcu_tasks_trace]
+ 0.0      97 cryptd          [cryptd]
+ 0.0     974 bash            bash mugen.sh -f os-basic -r oe_test_system_monitor_process
+ 0.0      96 kworker/0:1-mm_ [kworker/0:1-mm_percpu_wq]
+ 0.0     969 tee             tee -a exec.log
+ 0.0     968 sudo            sudo bash mugen.sh -f os-basic -r oe_test_system_monitor_process
+ 0.0     967 sh              sh -c sudo bash mugen.sh -f os-basic -r oe_test_system_monitor_process 2>&1 | tee -a exec.log
+ 0.0      95 pdecrypt_serial [pdecrypt_serial]
+ 0.0      94 pencrypt_serial [pencrypt_serial]
+ 0.0       8 mm_percpu_wq    [mm_percpu_wq]
+ 0.0     838 ntpd            /usr/sbin/ntpd -u ntp:ntp -g
+ 0.0       7 kworker/u16:0-e [kworker/u16:0-events_unbound]
+ 0.0       6 kworker/0:0H-ev [kworker/0:0H-events_highpri]
+ 0.0       5 kworker/0:0-eve [kworker/0:0-events]
+ 0.0      54 kcompactd0      [kcompactd0]
+ 0.0      53 writeback       [writeback]
+ 0.0      52 oom_reaper      [oom_reaper]
+ 0.0      51 khungtaskd      [khungtaskd]
+ 0.0      50 netns           [netns]
+ 0.0       4 rcu_par_gp      [rcu_par_gp]
+ 0.0      49 kdevtmpfs       [kdevtmpfs]
+ 0.0      48 kworker/7:0H-kb [kworker/7:0H-kblockd]
+ 0.0      47 kworker/7:0-eve [kworker/7:0-events]
+ 0.0      46 ksoftirqd/7     [ksoftirqd/7]
+ 0.0      45 migration/7     [migration/7]
+ 0.0      44 cpuhp/7         [cpuhp/7]
+ 0.0      43 kworker/6:0H-kb [kworker/6:0H-kblockd]
+ 0.0      42 kworker/6:0-cgr [kworker/6:0-cgroup_pidlist_destroy]
+ 0.0      41 ksoftirqd/6     [ksoftirqd/6]
+ 0.0     410 kworker/4:3-eve [kworker/4:3-events]
+ 0.0      40 migration/6     [migration/6]
+ 0.0     409 kworker/4:2-mm_ [kworker/4:2-mm_percpu_wq]
+ 0.0       3 rcu_gp          [rcu_gp]
+ 0.0      39 cpuhp/6         [cpuhp/6]
+ 0.0      38 kworker/5:0H-kb [kworker/5:0H-kblockd]
+ 0.0      37 kworker/5:0-cgr [kworker/5:0-cgroup_pidlist_destroy]
+ 0.0      36 ksoftirqd/5     [ksoftirqd/5]
+ 0.0      35 migration/5     [migration/5]
+ 0.0     353 bash            -bash
+ 0.0      34 cpuhp/5         [cpuhp/5]
+ 0.0     348 sshd            sshd: root@pts/0
+ 0.0      33 kworker/4:0H-kb [kworker/4:0H-kblockd]
+ 0.0     335 sshd            sshd: root [priv]
+ 0.0     334 kworker/6:3-eve [kworker/6:3-events]
+ 0.0     333 kworker/6:2-cgr [kworker/6:2-cgroup_pidlist_destroy]
+ 0.0      32 kworker/4:0-eve [kworker/4:0-events]
+ 0.0     329 kworker/7:3     [kworker/7:3]
+ 0.0     328 kworker/7:2-cgr [kworker/7:2-cgroup_pidlist_destroy]
+ 0.0      31 ksoftirqd/4     [ksoftirqd/4]
+ 0.0      30 migration/4     [migration/4]
+ 0.0     304 agetty          /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 ttyS0 vt220
+ 0.0     302 agetty          /sbin/agetty -o -p -- \u --keep-baud 115200,57600,38400,9600 hvc0 vt220
+ 0.0     300 agetty          /sbin/agetty -o -p -- \u --noclear tty1 linux
+ 0.0       2 kthreadd        [kthreadd]
+ 0.0      29 cpuhp/4         [cpuhp/4]
+ 0.0     299 crond           /usr/sbin/crond -n
+ 0.0     295 sshd            sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+ 0.0      28 kworker/3:0H-ev [kworker/3:0H-events_highpri]
+ 0.0     287 systemd-logind  /usr/lib/systemd/systemd-logind
+ 0.0     285 dbus-daemon     /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 0.0      27 kworker/3:0-eve [kworker/3:0-events]
+ 0.0      26 ksoftirqd/3     [ksoftirqd/3]
+ 0.0     265 kworker/3:1H-kb [kworker/3:1H-kblockd]
+ 0.0     262 kworker/0:2-eve [kworker/0:2-events]
+ 0.0      25 migration/3     [migration/3]
+ 0.0      24 cpuhp/3         [cpuhp/3]
+ 0.0     244 systemd-udevd   /usr/lib/systemd/systemd-udevd
+ 0.0     240 kworker/5:3-mm_ [kworker/5:3-mm_percpu_wq]
+ 0.0      23 kworker/2:0H-kb [kworker/2:0H-kblockd]
+ 0.0     235 kworker/5:2-cgr [kworker/5:2-cgroup_pidlist_destroy]
+ 0.0     234 kworker/4:1H-kb [kworker/4:1H-kblockd]
+ 0.0     232 kworker/u16:2   [kworker/u16:2]
+ 0.0      22 kworker/2:0-eve [kworker/2:0-events]
+ 0.0     223 systemd-journal /usr/lib/systemd/systemd-journald
+ 0.0      21 ksoftirqd/2     [ksoftirqd/2]
+ 0.0     211 kworker/7:1H-kb [kworker/7:1H-kblockd]
+ 0.0      20 migration/2     [migration/2]
+ 0.0      19 cpuhp/2         [cpuhp/2]
+ 0.0     199 kworker/6:1H-kb [kworker/6:1H-kblockd]
+ 0.0     197 kworker/2:1H-kb [kworker/2:1H-kblockd]
+ 0.0     195 kworker/5:1H-kb [kworker/5:1H-kblockd]
+ 0.0     194 kworker/1:2-eve [kworker/1:2-events]
+ 0.0     193 ext4-rsv-conver [ext4-rsv-conver]
+ 0.0     192 jbd2/vda1-8     [jbd2/vda1-8]
+ 0.0     191 kworker/7:1-mm_ [kworker/7:1-mm_percpu_wq]
+ 0.0     190 kworker/4:1-cgr [kworker/4:1-cgroup_pidlist_destroy]
+ 0.0      18 kworker/1:0H-kb [kworker/1:0H-kblockd]
+ 0.0     189 kworker/3:1-mm_ [kworker/3:1-mm_percpu_wq]
+ 0.0     188 kworker/2:1-mm_ [kworker/2:1-mm_percpu_wq]
+ 0.0     187 ipv6_addrconf   [ipv6_addrconf]
+ 0.0     186 uas             [uas]
+ 0.0     185 kworker/1:1-mm_ [kworker/1:1-mm_percpu_wq]
+ 0.0     184 kworker/1:1H-kb [kworker/1:1H-kblockd]
+ 0.0     183 kworker/u16:1-f [kworker/u16:1-flush-254:0]
+ 0.0     182 hwrng           [hwrng]
+ 0.0     181 kworker/6:1-mm_ [kworker/6:1-mm_percpu_wq]
+ 0.0     180 khvcd           [khvcd]
+ 0.0      17 kworker/1:0-usb [kworker/1:0-usb_hub_wq]
+ 0.0     176 nfsiod          [nfsiod]
+ 0.0     175 kswapd0         [kswapd0]
+ 0.0     174 xprtiod         [xprtiod]
+ 0.0     173 kworker/u17:0   [kworker/u17:0]
+ 0.0     172 kworker/0:1H-kb [kworker/0:1H-kblockd]
+ 0.0     171 rpciod          [rpciod]
+ 0.0     170 kworker/5:1-cgr [kworker/5:1-cgroup_pidlist_destroy]
+ 0.0      16 ksoftirqd/1     [ksoftirqd/1]
+ 0.0     169 ata_sff         [ata_sff]
+ 0.0     168 kblockd         [kblockd]
+ 0.0      15 migration/1     [migration/1]
+ 0.0      14 cpuhp/1         [cpuhp/1]
+ 0.0      13 cpuhp/0         [cpuhp/0]
+ 0.0      12 migration/0     [migration/0]
+ 0.0      11 rcu_sched       [rcu_sched]
+ 0.0      10 ksoftirqd/0     [ksoftirqd/0]
+ 0.0    1036 sort            sort -rk1
+ 0.0    1035 ps              ps -eo pmem,pid,comm,args
+ 0.0    1022 bash            bash oe_test_system_monitor_process.sh
+STAT     PID COMMAND         COMMAND                     %CPU
+Ss         1 systemd         /sbin/init                  12.0
+S          2 kthreadd        [kthreadd]                   0.0
+I<         3 rcu_gp          [rcu_gp]                     0.0
+I<         4 rcu_par_gp      [rcu_par_gp]                 0.0
+I          5 kworker/0:0-eve [kworker/0:0-events]         0.0
+I<         6 kworker/0:0H-ev [kworker/0:0H-events_highpr  0.0
+I          7 kworker/u16:0-e [kworker/u16:0-events_unbou  0.0
+I<         8 mm_percpu_wq    [mm_percpu_wq]               0.0
+S          9 rcu_tasks_trace [rcu_tasks_trace]            0.0
+S         10 ksoftirqd/0     [ksoftirqd/0]                0.0
+I         11 rcu_sched       [rcu_sched]                  0.3
+S         12 migration/0     [migration/0]                0.0
+S         13 cpuhp/0         [cpuhp/0]                    0.0
+S         14 cpuhp/1         [cpuhp/1]                    0.0
+S         15 migration/1     [migration/1]                0.0
+S         16 ksoftirqd/1     [ksoftirqd/1]                0.0
+I         17 kworker/1:0-usb [kworker/1:0-usb_hub_wq]     0.0
+I<        18 kworker/1:0H-kb [kworker/1:0H-kblockd]       0.0
+S         19 cpuhp/2         [cpuhp/2]                    0.0
+S         20 migration/2     [migration/2]                0.0
+S         21 ksoftirqd/2     [ksoftirqd/2]                0.0
+I         22 kworker/2:0-eve [kworker/2:0-events]         0.0
+I<        23 kworker/2:0H-kb [kworker/2:0H-kblockd]       0.0
+S         24 cpuhp/3         [cpuhp/3]                    0.0
+S         25 migration/3     [migration/3]                0.0
+S         26 ksoftirqd/3     [ksoftirqd/3]                0.0
+I         27 kworker/3:0-eve [kworker/3:0-events]         0.0
+I<        28 kworker/3:0H-ev [kworker/3:0H-events_highpr  0.0
+S         29 cpuhp/4         [cpuhp/4]                    0.0
+S         30 migration/4     [migration/4]                0.0
+S         31 ksoftirqd/4     [ksoftirqd/4]                0.0
+I         32 kworker/4:0-eve [kworker/4:0-events]         0.0
+I<        33 kworker/4:0H-kb [kworker/4:0H-kblockd]       0.0
+S         34 cpuhp/5         [cpuhp/5]                    0.0
+S         35 migration/5     [migration/5]                0.0
+S         36 ksoftirqd/5     [ksoftirqd/5]                0.0
+I         37 kworker/5:0-cgr [kworker/5:0-cgroup_pidlist  0.0
+I<        38 kworker/5:0H-kb [kworker/5:0H-kblockd]       0.0
+S         39 cpuhp/6         [cpuhp/6]                    0.0
+S         40 migration/6     [migration/6]                0.0
+S         41 ksoftirqd/6     [ksoftirqd/6]                0.0
+I         42 kworker/6:0-cgr [kworker/6:0-cgroup_pidlist  0.0
+I<        43 kworker/6:0H-kb [kworker/6:0H-kblockd]       0.0
+S         44 cpuhp/7         [cpuhp/7]                    0.0
+S         45 migration/7     [migration/7]                0.0
+S         46 ksoftirqd/7     [ksoftirqd/7]                0.0
+I         47 kworker/7:0-eve [kworker/7:0-events]         0.0
+I<        48 kworker/7:0H-kb [kworker/7:0H-kblockd]       0.0
+S         49 kdevtmpfs       [kdevtmpfs]                  0.0
+I<        50 netns           [netns]                      0.0
+S         51 khungtaskd      [khungtaskd]                 0.0
+S         52 oom_reaper      [oom_reaper]                 0.0
+I<        53 writeback       [writeback]                  0.0
+S         54 kcompactd0      [kcompactd0]                 0.0
+I<        94 pencrypt_serial [pencrypt_serial]            0.0
+I<        95 pdecrypt_serial [pdecrypt_serial]            0.0
+I         96 kworker/0:1-mm_ [kworker/0:1-mm_percpu_wq]   0.0
+I<        97 cryptd          [cryptd]                     0.0
+I<       168 kblockd         [kblockd]                    0.0
+I<       169 ata_sff         [ata_sff]                    0.0
+I        170 kworker/5:1-cgr [kworker/5:1-cgroup_pidlist  0.0
+I<       171 rpciod          [rpciod]                     0.0
+I<       172 kworker/0:1H-kb [kworker/0:1H-kblockd]       0.0
+I<       173 kworker/u17:0   [kworker/u17:0]              0.0
+I<       174 xprtiod         [xprtiod]                    0.0
+S        175 kswapd0         [kswapd0]                    0.0
+I<       176 nfsiod          [nfsiod]                     0.0
+S        180 khvcd           [khvcd]                      0.0
+I        181 kworker/6:1-mm_ [kworker/6:1-mm_percpu_wq]   0.0
+S        182 hwrng           [hwrng]                      0.0
+I        183 kworker/u16:1-f [kworker/u16:1-flush-254:0]  0.0
+I<       184 kworker/1:1H-kb [kworker/1:1H-kblockd]       0.0
+I        185 kworker/1:1-mm_ [kworker/1:1-mm_percpu_wq]   0.0
+I<       186 uas             [uas]                        0.0
+I<       187 ipv6_addrconf   [ipv6_addrconf]              0.0
+I        188 kworker/2:1-mm_ [kworker/2:1-mm_percpu_wq]   0.0
+I        189 kworker/3:1-mm_ [kworker/3:1-mm_percpu_wq]   0.0
+I        190 kworker/4:1-cgr [kworker/4:1-cgroup_pidlist  0.0
+I        191 kworker/7:1-mm_ [kworker/7:1-mm_percpu_wq]   0.0
+S        192 jbd2/vda1-8     [jbd2/vda1-8]                0.0
+I<       193 ext4-rsv-conver [ext4-rsv-conver]            0.0
+I        194 kworker/1:2-eve [kworker/1:2-events]         0.0
+I<       195 kworker/5:1H-kb [kworker/5:1H-kblockd]       0.0
+I<       197 kworker/2:1H-kb [kworker/2:1H-kblockd]       0.0
+I<       199 kworker/6:1H-kb [kworker/6:1H-kblockd]       0.0
+I<       211 kworker/7:1H-kb [kworker/7:1H-kblockd]       0.0
+Ss       223 systemd-journal /usr/lib/systemd/systemd-jo  0.7
+I        232 kworker/u16:2   [kworker/u16:2]              0.0
+I<       234 kworker/4:1H-kb [kworker/4:1H-kblockd]       0.0
+I        235 kworker/5:2-cgr [kworker/5:2-cgroup_pidlist  0.0
+I        240 kworker/5:3-mm_ [kworker/5:3-mm_percpu_wq]   0.0
+Ss       244 systemd-udevd   /usr/lib/systemd/systemd-ud  0.8
+I        262 kworker/0:2-eve [kworker/0:2-events]         0.0
+I<       265 kworker/3:1H-kb [kworker/3:1H-kblockd]       0.0
+Ss       285 dbus-daemon     /usr/bin/dbus-daemon --syst  2.3
+Ss       287 systemd-logind  /usr/lib/systemd/systemd-lo  1.0
+Ssl      291 NetworkManager  /usr/sbin/NetworkManager --  0.9
+Ss       295 sshd            sshd: /usr/sbin/sshd -D [li  0.1
+Ss       299 crond           /usr/sbin/crond -n           0.0
+Ss+      300 agetty          /sbin/agetty -o -p -- \u --  0.0
+Ss+      302 agetty          /sbin/agetty -o -p -- \u --  0.0
+Ss+      304 agetty          /sbin/agetty -o -p -- \u --  0.0
+I        328 kworker/7:2-cgr [kworker/7:2-cgroup_pidlist  0.0
+I        329 kworker/7:3     [kworker/7:3]                0.0
+I        333 kworker/6:2-cgr [kworker/6:2-cgroup_pidlist  0.0
+I        334 kworker/6:3-eve [kworker/6:3-events]         0.0
+Ss       335 sshd            sshd: root [priv]            0.2
+S        348 sshd            sshd: root@pts/0             0.2
+Ss       353 bash            -bash                        0.2
+I        409 kworker/4:2-mm_ [kworker/4:2-mm_percpu_wq]   0.0
+I        410 kworker/4:3-eve [kworker/4:3-events]         0.0
+S+       411 python3         python3 mugen_riscv.py -f o  0.9
+Ssl      838 ntpd            /usr/sbin/ntpd -u ntp:ntp -  0.5
+S+       967 sh              sh -c sudo bash mugen.sh -f  0.5
+S+       968 sudo            sudo bash mugen.sh -f os-ba  2.6
+S+       969 tee             tee -a exec.log              0.3
+S+       974 bash            bash mugen.sh -f os-basic -  2.6
+S+      1021 python3         python3 /root/GitRepo/mugen 23.3
+S+      1022 bash            bash oe_test_system_monitor  7.0
+R+      1037 ps              ps -eo stat,pid,comm,args,p  0.0
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+
+Fri Sep 16 11:27:38 2022 - INFO  - End to run test.
+Fri Sep 16 11:27:39 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 11:27:40 2022 - INFO  - oe_test_system_monitor_process.sh post_test

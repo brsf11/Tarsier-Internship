@@ -1,0 +1,31 @@
+Tue Sep 13 00:13:54 2022 - INFO  - Start environmental preparation.
+Tue Sep 13 00:14:44 2022 - INFO  - End of environmental preparation!
+Tue Sep 13 00:14:45 2022 - INFO  - Start testing...
+Job for unbound-keygen.service failed because the control process exited with error code.
+See "systemctl status unbound-keygen.service" and "journalctl -xeu unbound-keygen.service" for details.
+Tue Sep 13 00:14:54 2022 - ERROR - unbound-keygen.service restart failed
+Tue Sep 13 00:14:55 2022 - ERROR - oe_test_service_unbound-keygen.sh line 33
+Tue Sep 13 00:15:02 2022 - ERROR - unbound-keygen.service restart failed
+Tue Sep 13 00:15:02 2022 - ERROR - oe_test_service_unbound-keygen.sh line 36
+Tue Sep 13 00:15:09 2022 - ERROR - unbound-keygen.service stop failed
+Tue Sep 13 00:15:10 2022 - ERROR - oe_test_service_unbound-keygen.sh line 41
+Job for unbound-keygen.service failed because the control process exited with error code.
+See "systemctl status unbound-keygen.service" and "journalctl -xeu unbound-keygen.service" for details.
+Tue Sep 13 00:15:14 2022 - ERROR - unbound-keygen.service start failed
+Tue Sep 13 00:15:15 2022 - ERROR - oe_test_service_unbound-keygen.sh line 44
+Tue Sep 13 00:15:22 2022 - ERROR - unbound-keygen.service start failed
+Tue Sep 13 00:15:22 2022 - ERROR - oe_test_service_unbound-keygen.sh line 47
+/etc/systemd/system/multi-user.target.wants/unbound-keygen.service
+Removed /etc/systemd/system/multi-user.target.wants/unbound-keygen.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/unbound-keygen.service’: No such file or directory
+Sep 13 00:14:54 openEuler-riscv64 systemd[1]: unbound-keygen.service: Failed with result 'exit-code'.
+Sep 13 00:14:54 openEuler-riscv64 systemd[1]: Failed to start Unbound Control Key And Certificate Generator.
+Sep 13 00:15:13 openEuler-riscv64 systemd[1]: unbound-keygen.service: Failed with result 'exit-code'.
+Sep 13 00:15:13 openEuler-riscv64 systemd[1]: Failed to start Unbound Control Key And Certificate Generator.
+Tue Sep 13 00:15:32 2022 - ERROR - There is an error message for the log of unbound-keygen.service
+Tue Sep 13 00:15:33 2022 - ERROR - oe_test_service_unbound-keygen.sh line 50
+Failed to reload unbound-keygen.service: Job type reload is not applicable for unit unbound-keygen.service.
+Tue Sep 13 00:15:34 2022 - INFO  - Finish test!
+Tue Sep 13 00:15:35 2022 - ERROR - failed to execute the case.
+Tue Sep 13 00:15:36 2022 - INFO  - start environment cleanup.
+Tue Sep 13 00:15:52 2022 - INFO  - Finish environment cleanup!

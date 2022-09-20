@@ -1,0 +1,10 @@
+Tue Sep 20 12:18:38 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 11:50:01 CST; 28min ago
+Failed to restart systemd-udev-trigger.service: Operation refused, unit systemd-udev-trigger.service may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to stop systemd-udev-trigger.service: Operation refused, unit systemd-udev-trigger.service may be requested by dependency only (it is configured to refuse manual start/stop).
+     Active: active (exited) since Tue 2022-09-20 11:50:01 CST; 28min ago
+Failed to reload systemd-udev-trigger.service: Job type reload is not applicable for unit systemd-udev-trigger.service.
+     Active: active (exited) since Tue 2022-09-20 11:50:01 CST; 28min ago
+Tue Sep 20 12:18:40 2022 - INFO  - Finish test!
+Tue Sep 20 12:18:41 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:18:41 2022 - INFO  - oe_test_service_systemd-udev-trigger.sh post_test

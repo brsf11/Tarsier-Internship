@@ -1,0 +1,11 @@
+Tue Sep 20 12:14:53 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 12:14:54 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-20 12:15:07 CST; 5s ago
+Tue Sep 20 12:15:13 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-timedated.service: Job type reload is not applicable for unit systemd-timedated.service.
+     Active: active (running) since Tue 2022-09-20 12:15:07 CST; 7s ago
+Tue Sep 20 12:15:14 2022 - INFO  - Finish test!
+Tue Sep 20 12:15:15 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:15:15 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:15:16 2022 - INFO  - Finish environment cleanup!

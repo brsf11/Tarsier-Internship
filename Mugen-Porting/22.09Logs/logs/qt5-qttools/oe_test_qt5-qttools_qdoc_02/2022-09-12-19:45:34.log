@@ -1,0 +1,20 @@
+Mon Sep 12 19:45:37 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 19:49:55 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:49:55 2022 - INFO  - Start to run test.
+        <page name="https://cmake.org/cmake/help/latest/command/target_link_libraries.html" href="https://cmake.org/cmake/help/latest/command/target_link_libraries.html" status="active" location="external-resources.qdoc" filepath="/root/GitRepo/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_qdoc_02/global/externalsites/external-resources.qdoc" lineno="110" documented="true" subtype="externalpage" title="CMake target_link_libraries Documentation" fulltitle="CMake target_link_libraries Documentation" subtitle=""/>
+        <page name="http://www.w3.org/TR/html401/" href="http://www.w3.org/TR/html401/" status="active" location="external-resources.qdoc" filepath="/root/GitRepo/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_qdoc_02/global/externalsites/external-resources.qdoc" lineno="211" documented="true" subtype="externalpage" title="HTML 4" fulltitle="HTML 4" subtitle=""/>
+        <page name="http://www.w3.org/TR/html5/" href="http://www.w3.org/TR/html5/" status="active" location="external-resources.qdoc" filepath="/root/GitRepo/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_qdoc_02/global/externalsites/external-resources.qdoc" lineno="216" documented="true" subtype="externalpage" title="HTML 5" fulltitle="HTML 5" subtitle=""/>
+        <page name="http://www.w3.org/TR/2009/WD-webdatabase-20091029/" href="http://www.w3.org/TR/2009/WD-webdatabase-20091029/" status="active" location="external-resources.qdoc" filepath="/root/GitRepo/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_qdoc_02/global/externalsites/external-resources.qdoc" lineno="511" documented="true" subtype="externalpage" title="HTML5 Web Database API" fulltitle="HTML5 Web Database API" subtitle=""/>
+        <page name="http://www.w3.org/TR/xquery/#errors" href="http://www.w3.org/TR/xquery/#errors" status="active" location="external-resources.qdoc" filepath="/root/GitRepo/mugen-riscv/testcases/cli-test/qt5-qttools/oe_test_qt5-qttools_qdoc_02/global/externalsites/external-resources.qdoc" lineno="241" documented="true" subtype="externalpage" title="error handling in the XQuery language" fulltitle="error handling in the XQuery language" subtitle=""/>
+Mon Sep 12 19:50:05 2022 - ERROR - oe_test_qt5-qttools_qdoc_02.sh line 55
+<!-- search.qdoc -->
+  <title>Search Results | new.qdoc 1.0</title>
+<h1 class="title">Search Results</h1>
+<!-- $$$search-results.html-description -->
+$(function(){ $(".title").append(": " + decodeURIComponent(location.search.split('=')[1]).substring(0,32)); });
+<gcse:searchresults-only></gcse:searchresults-only>
+<!-- @@@search-results.html -->
+Mon Sep 12 19:50:09 2022 - INFO  - End to run test.
+Mon Sep 12 19:50:10 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:50:10 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 19:50:38 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,19 @@
+Mon Sep 12 21:01:59 2022 - INFO  - Start to prepare the test environment!
+Mon Sep 12 21:03:18 2022 - INFO  - End to prepare the test environment!
+Mon Sep 12 21:03:19 2022 - INFO  - Start executing testcase!
+     Active: active (running) since Mon 2022-09-12 21:03:17 CST; 1s ago
+PONG
+PONG
+PONG
+PONG
+PONG
+PONG
+OK
+redis-cli 6.0.11
+spawn redis-cli -h 127.0.0.1 -p 6379
+[6nMon Sep 12 21:03:43 2022 - ERROR - oe_test_redis6_02.sh line 53
+Mon Sep 12 21:03:44 2022 - ERROR - oe_test_redis6_02.sh line 55
+Mon Sep 12 21:03:45 2022 - INFO  - End of testcase execution!
+Mon Sep 12 21:03:45 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:03:46 2022 - INFO  - Start environment cleanup.
+Mon Sep 12 21:04:12 2022 - INFO  - Finish environment cleanup.

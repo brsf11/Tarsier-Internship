@@ -1,0 +1,47 @@
+Fri Sep  9 07:42:34 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:43:03 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:43:04 2022 - INFO  - Start to run test.
+oe_test_nbdkit_02.sh: line 30: nbdkit: command not found
+Fri Sep  9 07:43:05 2022 - ERROR - oe_test_nbdkit_02.sh line 31
+oe_test_nbdkit_02.sh: line 32: kill: (649) - No such process
+Fri Sep  9 07:43:06 2022 - ERROR - oe_test_nbdkit_02.sh line 33
+oe_test_nbdkit_02.sh: line 34: nbdkit: command not found
+Fri Sep  9 07:43:06 2022 - ERROR - oe_test_nbdkit_02.sh line 35
+oe_test_nbdkit_02.sh: line 36: kill: (656) - No such process
+Fri Sep  9 07:43:07 2022 - ERROR - oe_test_nbdkit_02.sh line 37
+oe_test_nbdkit_02.sh: line 39: nbdkit: command not found
+Fri Sep  9 07:43:08 2022 - ERROR - oe_test_nbdkit_02.sh line 40
+oe_test_nbdkit_02.sh: line 41: kill: (663) - No such process
+Fri Sep  9 07:43:09 2022 - ERROR - oe_test_nbdkit_02.sh line 42
+oe_test_nbdkit_02.sh: line 43: nbdkit: command not found
+Fri Sep  9 07:43:10 2022 - ERROR - oe_test_nbdkit_02.sh line 44
+oe_test_nbdkit_02.sh: line 45: kill: (670) - No such process
+Fri Sep  9 07:43:11 2022 - ERROR - oe_test_nbdkit_02.sh line 46
+oe_test_nbdkit_02.sh: line 47: nbdkit: command not found
+Fri Sep  9 07:43:11 2022 - ERROR - oe_test_nbdkit_02.sh line 48
+oe_test_nbdkit_02.sh: line 49: kill: (677) - No such process
+Fri Sep  9 07:43:12 2022 - ERROR - oe_test_nbdkit_02.sh line 50
+oe_test_nbdkit_02.sh: line 51: nbdkit: command not found
+Fri Sep  9 07:43:13 2022 - ERROR - oe_test_nbdkit_02.sh line 52
+oe_test_nbdkit_02.sh: line 53: nbdkit: command not found
+Fri Sep  9 07:43:14 2022 - ERROR - oe_test_nbdkit_02.sh line 54
+oe_test_nbdkit_02.sh: line 55: kill: (686) - No such process
+Fri Sep  9 07:43:15 2022 - ERROR - oe_test_nbdkit_02.sh line 56
+oe_test_nbdkit_02.sh: line 57: nbdkit: command not found
+Fri Sep  9 07:43:15 2022 - ERROR - oe_test_nbdkit_02.sh line 58
+oe_test_nbdkit_02.sh: line 59: kill: (693) - No such process
+Fri Sep  9 07:43:16 2022 - ERROR - oe_test_nbdkit_02.sh line 60
+oe_test_nbdkit_02.sh: line 61: nbdkit: command not found
+Fri Sep  9 07:43:17 2022 - ERROR - oe_test_nbdkit_02.sh line 62
+oe_test_nbdkit_02.sh: line 63: kill: (700) - No such process
+Fri Sep  9 07:43:18 2022 - ERROR - oe_test_nbdkit_02.sh line 64
+Fri Sep  9 07:43:18 2022 - INFO  - End to run test.
+Fri Sep  9 07:43:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:43:20 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:19 ago on Fri 09 Sep 2022 07:41:43 AM CST.\nPackage gnutls-3.7.2-3.oe2209.riscv64 is already installed.\nError: \n Problem: package nbdkit-plugins-1.29.11-1.oe2209.riscv64 requires nbdkit-perl-plugin, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libperl.so.5.28()(64bit) needed by nbdkit-perl-plugin-1.29.11-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:43:23 2022 - INFO  - End to restore the test environment.

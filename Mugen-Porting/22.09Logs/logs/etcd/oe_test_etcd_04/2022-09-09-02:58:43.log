@@ -1,0 +1,47 @@
+Fri Sep  9 02:58:46 2022 - INFO  - Start to prepare the test environment.
+Failed to start etcd.service: Unit etcd.service not found.
+Fri Sep  9 02:59:11 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 02:59:11 2022 - INFO  - Start to run test.
+Unit etcd.service could not be found.
+Fri Sep  9 02:59:12 2022 - ERROR - Check etcd.service start failed
+Fri Sep  9 02:59:13 2022 - ERROR - oe_test_etcd_04.sh line 29
+spawn etcdctl user add root
+couldn't execute "etcdctl": no such file or directory
+    while executing
+"spawn etcdctl user add root"
+spawn etcdctl user passwd root
+couldn't execute "etcdctl": no such file or directory
+    while executing
+"spawn etcdctl user passwd root"
+Fri Sep  9 02:59:14 2022 - ERROR - Check etcdctl user passwd root failed.
+Fri Sep  9 02:59:15 2022 - ERROR - oe_test_etcd_04.sh line 51
+oe_test_etcd_04.sh: line 52: etcdctl: command not found
+Fri Sep  9 02:59:15 2022 - ERROR - Check etcdctl lease grant failed.
+Fri Sep  9 02:59:16 2022 - ERROR - oe_test_etcd_04.sh line 53
+oe_test_etcd_04.sh: line 54: etcdctl: command not found
+Fri Sep  9 02:59:28 2022 - ERROR - Check etcdctl lease keep-alive failed.
+Fri Sep  9 02:59:29 2022 - ERROR - oe_test_etcd_04.sh line 58
+oe_test_etcd_04.sh: line 59: etcdctl: command not found
+Fri Sep  9 02:59:30 2022 - ERROR - Check etcdctl lease timetolive failed.
+Fri Sep  9 02:59:30 2022 - ERROR - oe_test_etcd_04.sh line 60
+oe_test_etcd_04.sh: line 61: etcdctl: command not found
+Fri Sep  9 02:59:31 2022 - ERROR - Check etcdctl list failed.
+Fri Sep  9 02:59:32 2022 - ERROR - oe_test_etcd_04.sh line 62
+oe_test_etcd_04.sh: line 63: etcdctl: command not found
+Fri Sep  9 02:59:32 2022 - ERROR - Check etcdctl revoke failed.
+Fri Sep  9 02:59:33 2022 - ERROR - oe_test_etcd_04.sh line 64
+oe_test_etcd_04.sh: line 65: etcdctl: command not found
+oe_test_etcd_04.sh: line 67: etcdctl: command not found
+Fri Sep  9 02:59:34 2022 - ERROR - Check etcdctl user del failed.
+Fri Sep  9 02:59:34 2022 - ERROR - oe_test_etcd_04.sh line 68
+Fri Sep  9 02:59:35 2022 - INFO  - End to run test.
+Fri Sep  9 02:59:36 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:59:36 2022 - INFO  - Start to restore the test environment.
+Failed to stop etcd.service: Unit etcd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:04:40 ago on Fri 09 Sep 2022 02:54:29 AM CST.\nNo match for argument: etcd\nError: Unable to find a match: etcd'
+Fri Sep  9 02:59:40 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,18 @@
+Fri Sep  9 05:37:28 2022 - INFO  - Start to run test.
+Usage:
+	rmmod [options] modulename ...
+kmod version 29
+modprobe: WARNING: Module dm_log not found in directory /lib/modules/5.10.0
+modprobe: WARNING: Module dm_mirror not found in directory /lib/modules/5.10.0
+Fri Sep  9 05:37:29 2022 - ERROR - oe_test_rmmod.sh line 29
+rmmod: ERROR: could not remove 'dm_mirror': No such file or directory
+rmmod: ERROR: could not remove module dm_mirror: No such file or directory
+Fri Sep  9 05:37:30 2022 - ERROR - oe_test_rmmod.sh line 31
+Fri Sep  9 05:37:31 2022 - ERROR - oe_test_rmmod.sh line 35
+rmmod: ERROR: Module dm_log is not currently loaded
+rmmod: ERROR: Module dm_region_hash is not currently loaded
+Fri Sep  9 05:37:32 2022 - ERROR - oe_test_rmmod.sh line 41
+Fri Sep  9 05:37:33 2022 - ERROR - oe_test_rmmod.sh line 43
+Fri Sep  9 05:37:33 2022 - INFO  - End of the test.
+Fri Sep  9 05:37:34 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:37:35 2022 - INFO  - oe_test_rmmod.sh post_test

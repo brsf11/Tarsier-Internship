@@ -1,0 +1,11 @@
+Tue Sep 20 12:44:44 2022 - INFO  - Start environmental preparation.
+Removed /etc/systemd/system/ctrl-alt-del.target.
+Tue Sep 20 12:44:49 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:44:50 2022 - INFO  - Start to run test.
+Tue Sep 20 12:44:50 2022 - INFO  - A special target unit for shutting down and powering off the system.
+Tue Sep 20 12:44:51 2022 - INFO  - Unit is indirect, ignoring.
+Tue Sep 20 12:44:52 2022 - INFO  - End of the test.
+Tue Sep 20 12:44:53 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:44:53 2022 - INFO  - Start environment cleanup.
+Created symlink /etc/systemd/system/ctrl-alt-del.target → /usr/lib/systemd/system/reboot.target.
+Tue Sep 20 12:44:58 2022 - INFO  - Finish environment cleanup!

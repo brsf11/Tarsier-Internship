@@ -1,0 +1,31 @@
+Tue Sep 20 12:54:25 2022 - INFO  - Start testing...
+Failed to restart systemd-userdbd.socket: Unit systemd-userdbd.socket not found.
+Tue Sep 20 12:54:26 2022 - ERROR - systemd-userdbd.socket restart failed
+Tue Sep 20 12:54:26 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-userdbd.socket could not be found.
+Tue Sep 20 12:54:33 2022 - ERROR - systemd-userdbd.socket restart failed
+Tue Sep 20 12:54:33 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-userdbd.socket: Unit systemd-userdbd.socket not loaded.
+Tue Sep 20 12:54:34 2022 - ERROR - systemd-userdbd.socket stop failed
+Tue Sep 20 12:54:35 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-userdbd.socket could not be found.
+Tue Sep 20 12:54:41 2022 - ERROR - systemd-userdbd.socket stop failed
+Tue Sep 20 12:54:42 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-userdbd.socket: Unit systemd-userdbd.socket not found.
+Tue Sep 20 12:54:42 2022 - ERROR - systemd-userdbd.socket start failed
+Tue Sep 20 12:54:43 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-userdbd.socket could not be found.
+Tue Sep 20 12:54:49 2022 - ERROR - systemd-userdbd.socket start failed
+Tue Sep 20 12:54:50 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-userdbd.socket: No such file or directory
+Tue Sep 20 12:54:51 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-userdbd.socket: Unit systemd-userdbd.socket not found.
+Tue Sep 20 12:54:52 2022 - ERROR - Job type reload is not applicable for unit systemd-userdbd.socket
+Tue Sep 20 12:54:52 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-userdbd.socket could not be found.
+Unit systemd-userdbd.socket could not be found.
+Tue Sep 20 12:54:53 2022 - INFO  - Finish test!
+Tue Sep 20 12:54:54 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:54:54 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-userdbd.socket: Unit systemd-userdbd.socket not loaded.
+Tue Sep 20 12:54:55 2022 - INFO  - Finish environment cleanup!

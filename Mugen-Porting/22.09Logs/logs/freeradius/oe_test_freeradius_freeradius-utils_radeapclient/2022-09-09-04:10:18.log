@@ -1,0 +1,17 @@
+Fri Sep  9 04:10:21 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:15:50 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:15:51 2022 - INFO  - Start to run test.
+Fri Sep  9 04:15:52 2022 : Info: Main loop: done.
+Fri Sep  9 04:15:53 2022 - ERROR - radeapclient -q execution failed.
+Fri Sep  9 04:15:53 2022 - ERROR - oe_test_freeradius_freeradius-utils_radeapclient.sh line 38
+Timeout for transaction: 0, tries (so far): 1 (max: 3)Sent Status-Server Id 56 from 0.0.0.0:34742 to 127.0.0.1:1812 length 38
+Timeout for transaction: 0, tries (so far): 2 (max: 3)Sent Status-Server Id 56 from 0.0.0.0:34742 to 127.0.0.1:1812 length 38
+Timeout for transaction: 0, tries (so far): 3 (max: 3)No response for transaction: 0, giving upNo outstanding request was found for reply from 127.0.0.1, port 1812 (sockfd: 5, id: 56)
+Fri Sep  9 04:15:54 2022 : Info:  	   Total approved auths:  1
+Fri Sep  9 04:15:55 2022 : Info: Main loop: done.
+$Id: cd504a8363f8ff6cbab9763667e0e31246cf976b $, built on Aug  6 2022 at 20:49:48
+	Message-Authenticator = 0x00
+Fri Sep  9 04:15:56 2022 - INFO  - End to run test.
+Fri Sep  9 04:15:56 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:15:57 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 04:16:19 2022 - INFO  - End to restore the test environment.

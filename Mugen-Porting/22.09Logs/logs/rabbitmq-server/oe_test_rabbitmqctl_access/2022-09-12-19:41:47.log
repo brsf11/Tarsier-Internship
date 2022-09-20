@@ -1,0 +1,112 @@
+Mon Sep 12 19:41:50 2022 - INFO  - Start environmental preparation.
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Mon Sep 12 19:45:57 2022 - INFO  - End of environmental preparation!
+Adding vhost "myvhost" ...
+/var/lib/rabbitmq/mnesia/rabbit@openEuler-riscv64/msg_stores/vhosts/3BLR1IWTLTTIGGADQDBC6BR7E/.vhost:myvhost
+myvhost	false
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * can't establish TCP connection to the target node, reason: timeout (timed out)
+  * suggestion: check if host 'openEuler-riscv64' resolves, is reachable and ports 25672, 4369 are not blocked by firewall
+
+Current node details:
+ * node name: 'rabbitmqcli-22-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: u6MAeSSgfsulGYYiuSLKYA==
+
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * epmd reports node 'rabbit' uses port 25672 for inter-node and CLI tool traffic 
+  * TCP connection succeeded but Erlang distribution failed 
+  * suggestion: check if the Erlang cookie is identical for all server nodes and CLI tools
+  * suggestion: check if all server nodes and CLI tools use consistent hostnames when addressing each other
+  * suggestion: check if inter-node connections may be configured to use TLS. If so, all nodes and CLI tools must do that
+   * suggestion: see the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+
+
+Current node details:
+ * node name: 'rabbitmqcli-7-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: u6MAeSSgfsulGYYiuSLKYA==
+
+Mon Sep 12 19:47:53 2022 - ERROR - oe_test_rabbitmqctl_access.sh line 42
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * node rabbit@openEuler-riscv64 up, 'rabbit' application running
+
+Current node details:
+ * node name: 'rabbitmqcli-555-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: u6MAeSSgfsulGYYiuSLKYA==
+
+Mon Sep 12 19:48:27 2022 - ERROR - oe_test_rabbitmqctl_access.sh line 44
+Error:
+{:no_such_user, "test"}
+Mon Sep 12 19:48:53 2022 - ERROR - oe_test_rabbitmqctl_access.sh line 46
+Error:
+User test does not exist
+Clearing permissions for user "test" in vhost "myvhost" ...
+Deleting vhost "myvhost" ...
+Mon Sep 12 19:49:24 2022 - INFO  - Finish test!
+Mon Sep 12 19:49:24 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:49:25 2022 - INFO  - start environment cleanup.
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Mon Sep 12 19:50:17 2022 - INFO  - Finish environment cleanup!

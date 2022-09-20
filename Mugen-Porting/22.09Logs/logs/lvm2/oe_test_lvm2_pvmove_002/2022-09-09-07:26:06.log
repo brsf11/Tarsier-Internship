@@ -1,0 +1,90 @@
+Fri Sep  9 07:26:08 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:26:18 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:26:25 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:26:25 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:26:26 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 30
+Fri Sep  9 07:26:27 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 32
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:26:28 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 34
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  striped: Required device-mapper target(s) not detected in your kernel.
+  Run `lvcreate --help' for more information.
+Fri Sep  9 07:26:29 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 36
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:26:30 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 38
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:26:31 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 40
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:26:38 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 43
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:26:44 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 46
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:26:51 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 49
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:26:58 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 52
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+modprobe: FATAL: Module dm-mirror not found in directory /lib/modules/5.10.0
+  /usr/sbin/modprobe failed: 1
+  Required device-mapper target(s) not detected in your kernel.
+Fri Sep  9 07:26:59 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 54
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  LVM version:     2.03.14(2) (2021-10-20)
+  pvmove PV
+Fri Sep  9 07:27:00 2022 - ERROR - oe_test_lvm2_pvmove_002.sh line 60
+Fri Sep  9 07:27:01 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:27:01 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:27:02 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:27:04 2022 - WARN  - no thing to do.
+Fri Sep  9 07:27:04 2022 - INFO  - Finish environment cleanup.

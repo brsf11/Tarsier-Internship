@@ -1,0 +1,32 @@
+Fri Sep  9 00:32:02 2022 - INFO  - Start environmental preparation.
+oe_test_service_bluetooth.sh: line 24: hciconfig: command not found
+Fri Sep  9 00:32:03 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 00:32:04 2022 - INFO  - Start testing...
+Failed to restart bluetooth.service: Unit bluetooth.service not found.
+Fri Sep  9 00:32:04 2022 - ERROR - bluetooth.service restart failed
+Fri Sep  9 00:32:05 2022 - ERROR - ../common/common_lib.sh line 34
+Unit bluetooth.service could not be found.
+Fri Sep  9 00:32:12 2022 - ERROR - bluetooth.service restart failed
+Fri Sep  9 00:32:12 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop bluetooth.service: Unit bluetooth.service not loaded.
+Fri Sep  9 00:32:13 2022 - ERROR - bluetooth.service stop failed
+Fri Sep  9 00:32:14 2022 - ERROR - ../common/common_lib.sh line 39
+Unit bluetooth.service could not be found.
+Fri Sep  9 00:32:21 2022 - ERROR - bluetooth.service stop failed
+Fri Sep  9 00:32:21 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start bluetooth.service: Unit bluetooth.service not found.
+Fri Sep  9 00:32:22 2022 - ERROR - bluetooth.service start failed
+Fri Sep  9 00:32:23 2022 - ERROR - ../common/common_lib.sh line 44
+Unit bluetooth.service could not be found.
+Fri Sep  9 00:32:30 2022 - ERROR - bluetooth.service start failed
+Fri Sep  9 00:32:30 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for bluetooth.service: No such file or directory
+Fri Sep  9 00:32:31 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start bluetooth.service: Unit bluetooth.service not found.
+Fri Sep  9 00:32:32 2022 - ERROR - Job type reload is not applicable for unit bluetooth.service
+Fri Sep  9 00:32:33 2022 - ERROR - ../common/common_lib.sh line 91
+Unit bluetooth.service could not be found.
+Unit bluetooth.service could not be found.
+Fri Sep  9 00:32:34 2022 - INFO  - Finish test!
+Fri Sep  9 00:32:35 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:32:35 2022 - INFO  - oe_test_service_bluetooth.sh post_test

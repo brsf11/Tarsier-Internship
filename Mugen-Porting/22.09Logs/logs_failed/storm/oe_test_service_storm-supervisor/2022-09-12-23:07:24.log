@@ -1,0 +1,42 @@
+Mon Sep 12 23:07:27 2022 - INFO  - Start environmental preparation.
+oe_test_service_storm-supervisor.sh: line 35: /etc/storm/storm.yaml: No such file or directory
+Failed to start zookeeper.service: Unit zookeeper.service not found.
+Mon Sep 12 23:08:07 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:08:08 2022 - INFO  - Start testing...
+Failed to restart storm-supervisor.service: Unit storm-supervisor.service not found.
+Mon Sep 12 23:08:09 2022 - ERROR - storm-supervisor.service restart failed
+Mon Sep 12 23:08:09 2022 - ERROR - ../common/common_lib.sh line 34
+Unit storm-supervisor.service could not be found.
+Mon Sep 12 23:08:16 2022 - ERROR - storm-supervisor.service restart failed
+Mon Sep 12 23:08:17 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop storm-supervisor.service: Unit storm-supervisor.service not loaded.
+Mon Sep 12 23:08:18 2022 - ERROR - storm-supervisor.service stop failed
+Mon Sep 12 23:08:18 2022 - ERROR - ../common/common_lib.sh line 39
+Unit storm-supervisor.service could not be found.
+Mon Sep 12 23:08:25 2022 - ERROR - storm-supervisor.service stop failed
+Mon Sep 12 23:08:26 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start storm-supervisor.service: Unit storm-supervisor.service not found.
+Mon Sep 12 23:08:26 2022 - ERROR - storm-supervisor.service start failed
+Mon Sep 12 23:08:27 2022 - ERROR - ../common/common_lib.sh line 44
+Unit storm-supervisor.service could not be found.
+Mon Sep 12 23:08:34 2022 - ERROR - storm-supervisor.service start failed
+Mon Sep 12 23:08:35 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for storm-supervisor.service: No such file or directory
+Mon Sep 12 23:08:36 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start storm-supervisor.service: Unit storm-supervisor.service not found.
+Mon Sep 12 23:08:37 2022 - ERROR - Job type reload is not applicable for unit storm-supervisor.service
+Mon Sep 12 23:08:37 2022 - ERROR - ../common/common_lib.sh line 91
+Unit storm-supervisor.service could not be found.
+Unit storm-supervisor.service could not be found.
+Mon Sep 12 23:08:38 2022 - INFO  - Finish test!
+Mon Sep 12 23:08:39 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:08:40 2022 - INFO  - start environment cleanup.
+Failed to stop zookeeper.service: Unit zookeeper.service not loaded.
+Failed to stop storm-supervisor.service: Unit storm-supervisor.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:03:27 ago on Mon 12 Sep 2022 11:04:39 PM CST.\nNo match for argument: apache-zookeeper\nError: Unable to find a match: apache-zookeeper'
+Mon Sep 12 23:08:43 2022 - INFO  - Finish environment cleanup!

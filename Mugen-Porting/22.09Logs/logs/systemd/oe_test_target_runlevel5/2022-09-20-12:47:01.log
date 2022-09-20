@@ -1,0 +1,11 @@
+Tue Sep 20 12:47:04 2022 - INFO  - Start to run test.
+     Active: active since Tue 2022-09-20 12:47:04 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:47:10 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:47:16 CST; 5s ago
+Tue Sep 20 12:47:22 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload runlevel5.target: Job type reload is not applicable for unit graphical.target.
+     Active: active since Tue 2022-09-20 12:47:16 CST; 6s ago
+Tue Sep 20 12:47:23 2022 - INFO  - End of the test.
+Tue Sep 20 12:47:24 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:47:25 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:47:25 2022 - INFO  - Finish environment cleanup!

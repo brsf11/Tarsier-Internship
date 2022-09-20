@@ -1,0 +1,37 @@
+Fri Sep  9 04:59:02 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:59:11 2022 - INFO  - pkgs:(freeradius freeradius-utils) is already installed
+touch: cannot touch '/var/log/radius/radutmp': No such file or directory
+Fri Sep  9 04:59:12 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:59:12 2022 - INFO  - Start to run test.
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:13 2022 - ERROR - radwho -i execution failed.
+Fri Sep  9 04:59:14 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 35
+radwho: Error reading or parsing radiusd.conf
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:15 2022 - ERROR - radwho -N execution failed.
+Fri Sep  9 04:59:16 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 39
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:17 2022 - ERROR - radwho -p execution failed.
+Fri Sep  9 04:59:17 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 41
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:18 2022 - ERROR - radwho -P execution failed.
+Fri Sep  9 04:59:19 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 43
+radwho: Error reading or parsing radiusd.conf
+NAS-IP-Address = 127.0.0.1
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:21 2022 - ERROR - radwho -s execution failed.
+Fri Sep  9 04:59:21 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 49
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:22 2022 - ERROR - radwho -S execution failed.
+Fri Sep  9 04:59:23 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 51
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:24 2022 - ERROR - radwho -u execution failed.
+Fri Sep  9 04:59:25 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 53
+radwho: Error reading or parsing radiusd.conf
+Fri Sep  9 04:59:26 2022 - ERROR - radwho -U execution failed.
+Fri Sep  9 04:59:26 2022 - ERROR - oe_test_freeradius_freeradius-utils_radwho.sh line 55
+Fri Sep  9 04:59:27 2022 - INFO  - End to run test.
+Fri Sep  9 04:59:28 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:59:28 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 04:59:29 2022 - WARN  - no thing to do.
+Fri Sep  9 04:59:30 2022 - INFO  - End to restore the test environment.

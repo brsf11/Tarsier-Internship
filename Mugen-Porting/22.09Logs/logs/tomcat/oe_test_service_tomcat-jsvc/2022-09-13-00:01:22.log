@@ -1,0 +1,20 @@
+Tue Sep 13 00:01:25 2022 - INFO  - Start environmental preparation.
+Tue Sep 13 00:03:52 2022 - INFO  - End of environmental preparation!
+Tue Sep 13 00:03:53 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-13 00:03:53 CST; 6s ago
+Tue Sep 13 00:04:07 2022 - ERROR - tomcat-jsvc.service stop failed
+Tue Sep 13 00:04:08 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Tue 2022-09-13 00:04:08 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/tomcat-jsvc.service
+Removed /etc/systemd/system/multi-user.target.wants/tomcat-jsvc.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/tomcat-jsvc.service’: No such file or directory
+Sep 13 00:04:00 openEuler-riscv64 systemd[1]: tomcat-jsvc.service: Main process exited, code=exited, status=1/FAILURE
+Sep 13 00:04:01 openEuler-riscv64 systemd[1]: tomcat-jsvc.service: Failed with result 'exit-code'.
+Tue Sep 13 00:04:24 2022 - ERROR - There is an error message for the log of tomcat-jsvc.service
+Tue Sep 13 00:04:25 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload tomcat-jsvc.service: Job type reload is not applicable for unit tomcat-jsvc.service.
+     Active: active (running) since Tue 2022-09-13 00:04:08 CST; 17s ago
+Tue Sep 13 00:04:26 2022 - INFO  - Finish test!
+Tue Sep 13 00:04:27 2022 - ERROR - failed to execute the case.
+Tue Sep 13 00:04:27 2022 - INFO  - start environment cleanup.
+Tue Sep 13 00:05:03 2022 - INFO  - Finish environment cleanup!

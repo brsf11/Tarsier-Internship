@@ -1,0 +1,51 @@
+Mon Sep 12 16:54:26 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+umount: /mnt/windows: not mounted.
+Mon Sep 12 16:55:37 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:55:38 2022 - INFO  - Start to run test.
+Usage: ntfsinfo [options] device
+ntfsinfo v2022.5.17 (libntfs-3g) - Display information about an NTFS Volume.
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:55:39 2022 - ERROR - Check ntfsinfo --inode failed.
+Mon Sep 12 16:55:40 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 39
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:55:40 2022 - ERROR - Check ntfsinfo --file failed.
+Mon Sep 12 16:55:41 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 41
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:55:42 2022 - ERROR - Check ntfsinfo --mft failed.
+Mon Sep 12 16:55:42 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 43
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:55:43 2022 - ERROR - Check ntfsinfo --notime failed.
+Mon Sep 12 16:55:44 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 45
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:55:45 2022 - ERROR - Check ntfsinfo --force failed.
+Mon Sep 12 16:55:45 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 47
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:55:46 2022 - ERROR - Check ntfsinfo --quiet failed.
+Mon Sep 12 16:55:47 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 49
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 16:55:48 2022 - ERROR - Check ntfsinfo --verbose failed.
+Mon Sep 12 16:55:48 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 51
+Mon Sep 12 16:55:49 2022 - INFO  - End of the test.
+Mon Sep 12 16:55:50 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:55:51 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:56:13 2022 - INFO  - Finish restoring the test environment.

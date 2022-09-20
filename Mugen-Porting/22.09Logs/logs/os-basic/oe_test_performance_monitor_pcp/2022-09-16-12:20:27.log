@@ -1,0 +1,9 @@
+Fri Sep 16 12:20:29 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 16 12:22:35 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:22:36 2022 - INFO  - Start to run test.
+     Active: active (running) since Fri 2022-09-16 12:22:51 CST; 208ms ago
+     pmcd: Version 5.3.5-1, 9 agents
+Fri Sep 16 12:22:53 2022 - INFO  - End to run test.
+Fri Sep 16 12:22:54 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 12:22:54 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 12:23:29 2022 - INFO  - End to restore the test environment.

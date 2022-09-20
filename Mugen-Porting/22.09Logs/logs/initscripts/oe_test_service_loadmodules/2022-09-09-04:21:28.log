@@ -1,0 +1,33 @@
+Fri Sep  9 04:21:31 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 04:21:32 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:21:32 2022 - INFO  - Start testing...
+Failed to restart loadmodules.service: Unit loadmodules.service not found.
+Fri Sep  9 04:21:33 2022 - ERROR - loadmodules.service restart failed
+Fri Sep  9 04:21:34 2022 - ERROR - ../common/common_lib.sh line 34
+Unit loadmodules.service could not be found.
+Fri Sep  9 04:21:40 2022 - ERROR - loadmodules.service restart failed
+Fri Sep  9 04:21:41 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop loadmodules.service: Unit loadmodules.service not loaded.
+Fri Sep  9 04:21:42 2022 - ERROR - loadmodules.service stop failed
+Fri Sep  9 04:21:42 2022 - ERROR - ../common/common_lib.sh line 39
+Unit loadmodules.service could not be found.
+Fri Sep  9 04:21:49 2022 - ERROR - loadmodules.service stop failed
+Fri Sep  9 04:21:50 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start loadmodules.service: Unit loadmodules.service not found.
+Fri Sep  9 04:21:50 2022 - ERROR - loadmodules.service start failed
+Fri Sep  9 04:21:51 2022 - ERROR - ../common/common_lib.sh line 44
+Unit loadmodules.service could not be found.
+Fri Sep  9 04:21:58 2022 - ERROR - loadmodules.service start failed
+Fri Sep  9 04:21:58 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for loadmodules.service: No such file or directory
+Fri Sep  9 04:21:59 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start loadmodules.service: Unit loadmodules.service not found.
+Fri Sep  9 04:22:00 2022 - ERROR - Job type reload is not applicable for unit loadmodules.service
+Fri Sep  9 04:22:01 2022 - ERROR - ../common/common_lib.sh line 91
+Unit loadmodules.service could not be found.
+Unit loadmodules.service could not be found.
+Fri Sep  9 04:22:01 2022 - INFO  - Finish test!
+Fri Sep  9 04:22:02 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:22:03 2022 - INFO  - start environment cleanup.
+Failed to stop loadmodules.service: Unit loadmodules.service not loaded.
+Fri Sep  9 04:22:04 2022 - INFO  - Finish environment cleanup!

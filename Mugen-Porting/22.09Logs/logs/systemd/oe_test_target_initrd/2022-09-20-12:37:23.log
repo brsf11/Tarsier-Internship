@@ -1,0 +1,5 @@
+Tue Sep 20 12:37:25 2022 - INFO  - Start testing...
+Tue Sep 20 12:37:26 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:37:27 2022 - INFO  - Finish test!
+Tue Sep 20 12:37:28 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:37:28 2022 - INFO  - oe_test_target_initrd.sh post_test

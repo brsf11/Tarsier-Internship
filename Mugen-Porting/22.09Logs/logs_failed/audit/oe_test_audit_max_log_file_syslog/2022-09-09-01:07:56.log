@@ -1,0 +1,39 @@
+Fri Sep  9 01:07:59 2022 - INFO  - Start to prepare the test environment.
+ls: cannot access '/var/log/audit/audit.log': No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_syslog.sh: line 28: service: command not found
+Fri Sep  9 01:08:00 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 01:08:00 2022 - INFO  - Start to run test.
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_syslog.sh: line 36: [: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+grep: /var/log/messages: No such file or directory
+Fri Sep  9 01:08:46 2022 - ERROR - grep second failed
+Fri Sep  9 01:08:47 2022 - ERROR - oe_test_audit_max_log_file_syslog.sh line 47
+../common/comlib.sh: line 35: auditctl: command not found
+Fri Sep  9 01:08:48 2022 - ERROR -  add rules failed
+Fri Sep  9 01:08:49 2022 - ERROR - ../common/comlib.sh line 36
+../common/comlib.sh: line 41: auditctl: command not found
+Fri Sep  9 01:08:49 2022 - ERROR - second failed
+Fri Sep  9 01:08:50 2022 - ERROR - ../common/comlib.sh line 42
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+Fri Sep  9 01:09:10 2022 - ERROR - search second failed
+Fri Sep  9 01:09:10 2022 - ERROR - oe_test_audit_max_log_file_syslog.sh line 49
+Fri Sep  9 01:09:11 2022 - INFO  - End to run test.
+Fri Sep  9 01:09:12 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:09:12 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_syslog.sh: line 59: service: command not found
+Fri Sep  9 01:09:13 2022 - INFO  - End to restore the test environment.

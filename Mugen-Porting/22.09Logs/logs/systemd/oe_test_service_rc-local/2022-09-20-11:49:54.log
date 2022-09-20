@@ -1,0 +1,13 @@
+Tue Sep 20 11:49:57 2022 - INFO  - Start environment preparation.
+Tue Sep 20 11:49:58 2022 - INFO  - Finish environment preparation!
+Tue Sep 20 11:49:58 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 11:50:01 CST; 6s ago
+     Active: inactive (dead) since Tue 2022-09-20 11:50:07 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 11:50:13 CST; 5s ago
+Tue Sep 20 11:50:20 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload rc-local.service: Job type reload is not applicable for unit rc-local.service.
+     Active: active (exited) since Tue 2022-09-20 11:50:13 CST; 6s ago
+Tue Sep 20 11:50:21 2022 - INFO  - Finish test!
+Tue Sep 20 11:50:22 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:50:22 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:50:23 2022 - INFO  - Finish environment cleanup!

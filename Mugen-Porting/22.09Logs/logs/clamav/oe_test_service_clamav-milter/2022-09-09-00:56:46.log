@@ -1,0 +1,15 @@
+Fri Sep  9 00:56:49 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:02:58 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:02:58 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 01:02:59 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-09 01:03:15 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/clamav-milter.service
+Removed /etc/systemd/system/multi-user.target.wants/clamav-milter.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/clamav-milter.service’: No such file or directory
+Failed to reload clamav-milter.service: Job type reload is not applicable for unit clamav-milter.service.
+     Active: active (running) since Fri 2022-09-09 01:03:15 CST; 16s ago
+Fri Sep  9 01:03:32 2022 - INFO  - Finish test!
+Fri Sep  9 01:03:33 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 01:03:34 2022 - INFO  - start environment cleanup.
+Fri Sep  9 01:04:06 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,211 @@
+Fri Sep  9 04:49:01 2022 - INFO  - Start environmental preparation.
+oe_test_iftop_gui.sh: line 27: host: command not found
+ipcalc: bad IPv4 address: 
+oe_test_iftop_gui.sh: line 29: host: command not found
+ipcalc: bad IPv4 prefix: 64
+Fri Sep  9 04:50:31 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:50:32 2022 - INFO  - Start testing...
+spawn iftop -b
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop -b"
+ls: cannot access './opt_b': No such file or directory
+Fri Sep  9 04:50:33 2022 - ERROR - Failed to use option: -b
+Fri Sep  9 04:50:33 2022 - ERROR - oe_test_iftop_gui.sh line 45
+spawn iftop -n -F /24
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop -n -F /24"
+ls: cannot access './opt_F': No such file or directory
+Fri Sep  9 04:50:34 2022 - ERROR - Failed to use option: -F
+Fri Sep  9 04:50:35 2022 - ERROR - oe_test_iftop_gui.sh line 57
+spawn iftop -G
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop -G "
+ls: cannot access './opt_G': No such file or directory
+Fri Sep  9 04:50:36 2022 - ERROR - Failed to use option: -G
+Fri Sep  9 04:50:37 2022 - ERROR - oe_test_iftop_gui.sh line 70
+spawn iftop -l
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop -l"
+ls: cannot access './opt_l': No such file or directory
+Fri Sep  9 04:50:38 2022 - ERROR - Failed to use option: -l
+Fri Sep  9 04:50:38 2022 - ERROR - oe_test_iftop_gui.sh line 82
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_question_mark': No such file or directory
+Fri Sep  9 04:50:39 2022 - ERROR - Failed to use GUI key: ?
+Fri Sep  9 04:50:40 2022 - ERROR - oe_test_iftop_gui.sh line 94
+spawn iftop -u packets
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop -u packets"
+ls: cannot access './gui_u': No such file or directory
+Fri Sep  9 04:50:41 2022 - ERROR - Failed to use option: -u
+Fri Sep  9 04:50:42 2022 - ERROR - oe_test_iftop_gui.sh line 105
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_h': No such file or directory
+Fri Sep  9 04:50:42 2022 - ERROR - Failed to use GUI key: h
+Fri Sep  9 04:50:43 2022 - ERROR - oe_test_iftop_gui.sh line 117
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_n': No such file or directory
+Fri Sep  9 04:50:44 2022 - ERROR - Failed to use GUI key: n
+Fri Sep  9 04:50:45 2022 - ERROR - oe_test_iftop_gui.sh line 129
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_s': No such file or directory
+Fri Sep  9 04:50:46 2022 - ERROR - Failed to use GUI key: s
+Fri Sep  9 04:50:46 2022 - ERROR - oe_test_iftop_gui.sh line 141
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_d': No such file or directory
+Fri Sep  9 04:50:47 2022 - ERROR - Failed to use GUI key: d
+Fri Sep  9 04:50:48 2022 - ERROR - oe_test_iftop_gui.sh line 153
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_t': No such file or directory
+Fri Sep  9 04:50:49 2022 - ERROR - Failed to use GUI key: t
+Fri Sep  9 04:50:49 2022 - ERROR - oe_test_iftop_gui.sh line 165
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_N': No such file or directory
+Fri Sep  9 04:50:51 2022 - ERROR - Failed to use GUI key: N
+Fri Sep  9 04:50:51 2022 - ERROR - oe_test_iftop_gui.sh line 177
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_S': No such file or directory
+Fri Sep  9 04:50:52 2022 - ERROR - Failed to use GUI key: S
+Fri Sep  9 04:50:53 2022 - ERROR - oe_test_iftop_gui.sh line 189
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_D': No such file or directory
+Fri Sep  9 04:50:54 2022 - ERROR - Failed to use GUI key: D
+Fri Sep  9 04:50:55 2022 - ERROR - oe_test_iftop_gui.sh line 201
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_p': No such file or directory
+Fri Sep  9 04:50:56 2022 - ERROR - Failed to use GUI key: p
+Fri Sep  9 04:50:56 2022 - ERROR - oe_test_iftop_gui.sh line 213
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_P': No such file or directory
+Fri Sep  9 04:50:57 2022 - ERROR - Failed to use GUI key: p
+Fri Sep  9 04:50:58 2022 - ERROR - oe_test_iftop_gui.sh line 225
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_b': No such file or directory
+Fri Sep  9 04:50:59 2022 - ERROR - Failed to use GUI key: b
+Fri Sep  9 04:51:00 2022 - ERROR - oe_test_iftop_gui.sh line 237
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_B': No such file or directory
+Fri Sep  9 04:51:01 2022 - ERROR - Failed to use GUI key: B
+Fri Sep  9 04:51:01 2022 - ERROR - oe_test_iftop_gui.sh line 249
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_T': No such file or directory
+Fri Sep  9 04:51:02 2022 - ERROR - Failed to use GUI key: T
+Fri Sep  9 04:51:03 2022 - ERROR - oe_test_iftop_gui.sh line 261
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_j_k': No such file or directory
+Fri Sep  9 04:51:04 2022 - ERROR - Failed to use GUI key: j/k
+Fri Sep  9 04:51:05 2022 - ERROR - oe_test_iftop_gui.sh line 274
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_f': No such file or directory
+Fri Sep  9 04:51:06 2022 - ERROR - Failed to use GUI key: f
+Fri Sep  9 04:51:06 2022 - ERROR - oe_test_iftop_gui.sh line 287
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_l': No such file or directory
+Fri Sep  9 04:51:07 2022 - ERROR - Failed to use GUI key: l
+Fri Sep  9 04:51:08 2022 - ERROR - oe_test_iftop_gui.sh line 300
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_L': No such file or directory
+Fri Sep  9 04:51:09 2022 - ERROR - Failed to use GUI key: L
+Fri Sep  9 04:51:10 2022 - ERROR - oe_test_iftop_gui.sh line 316
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_exclamation_mark': No such file or directory
+Fri Sep  9 04:51:10 2022 - ERROR - Failed to use GUI key: !
+Fri Sep  9 04:51:11 2022 - ERROR - oe_test_iftop_gui.sh line 328
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_1': No such file or directory
+Fri Sep  9 04:51:13 2022 - ERROR - Failed to use GUI key: 1
+Fri Sep  9 04:51:13 2022 - ERROR - oe_test_iftop_gui.sh line 347
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_2': No such file or directory
+Fri Sep  9 04:51:14 2022 - ERROR - Failed to use GUI key: 2
+Fri Sep  9 04:51:15 2022 - ERROR - oe_test_iftop_gui.sh line 359
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_3': No such file or directory
+Fri Sep  9 04:51:16 2022 - ERROR - Failed to use GUI key: 3
+Fri Sep  9 04:51:16 2022 - ERROR - oe_test_iftop_gui.sh line 371
+spawn iftop
+couldn't execute "iftop": no such file or directory
+    while executing
+"spawn iftop"
+ls: cannot access './gui_o': No such file or directory
+Fri Sep  9 04:51:17 2022 - ERROR - Failed to use GUI key: o
+Fri Sep  9 04:51:18 2022 - ERROR - oe_test_iftop_gui.sh line 383
+Fri Sep  9 04:51:19 2022 - INFO  - Finish test!
+Fri Sep  9 04:51:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:51:20 2022 - INFO  - start environment cleanup.
+Fri Sep  9 04:51:30 2022 - INFO  - Finish environment cleanup!

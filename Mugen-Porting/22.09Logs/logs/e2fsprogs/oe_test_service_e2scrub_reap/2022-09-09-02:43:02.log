@@ -1,0 +1,9 @@
+Fri Sep  9 02:43:05 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:43:06 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:43:07 2022 - INFO  - Start testing...
+/etc/systemd/system/multi-user.target.wants/e2scrub_reap.service
+Removed /etc/systemd/system/multi-user.target.wants/e2scrub_reap.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/e2scrub_reap.service’: No such file or directory
+Fri Sep  9 02:43:17 2022 - INFO  - Finish test!
+Fri Sep  9 02:43:18 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 02:43:19 2022 - INFO  - oe_test_service_e2scrub_reap.sh post_test

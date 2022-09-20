@@ -1,0 +1,28 @@
+Mon Sep 12 17:38:00 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:40:24 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:40:24 2022 - INFO  - Start testing...
+oe_test_service_openvswitch.sh: line 37: service: command not found
+Mon Sep 12 17:40:25 2022 - ERROR - openvswitch.service restart failed
+Mon Sep 12 17:40:26 2022 - ERROR - oe_test_service_openvswitch.sh line 38
+oe_test_service_openvswitch.sh: line 39: service: command not found
+Mon Sep 12 17:40:27 2022 - ERROR - openvswitch.service stop failed
+Mon Sep 12 17:40:27 2022 - ERROR - oe_test_service_openvswitch.sh line 40
+oe_test_service_openvswitch.sh: line 41: service: command not found
+Mon Sep 12 17:40:28 2022 - ERROR - openvswitch.service start failed
+Mon Sep 12 17:40:29 2022 - ERROR - oe_test_service_openvswitch.sh line 42
+oe_test_service_openvswitch.sh: line 44: service: command not found
+Mon Sep 12 17:40:33 2022 - ERROR - openvswitch.service start failed
+Mon Sep 12 17:40:34 2022 - ERROR - oe_test_service_openvswitch.sh line 45
+oe_test_service_openvswitch.sh: line 48: service: command not found
+oe_test_service_openvswitch.sh: line 51: service: command not found
+Mon Sep 12 17:40:39 2022 - ERROR - openvswitch.service reload failed
+Mon Sep 12 17:40:39 2022 - ERROR - oe_test_service_openvswitch.sh line 52
+oe_test_service_openvswitch.sh: line 53: service: command not found
+Mon Sep 12 17:40:40 2022 - ERROR - openvswitch.service reload causes the service status to change
+Mon Sep 12 17:40:41 2022 - ERROR - oe_test_service_openvswitch.sh line 54
+Mon Sep 12 17:40:41 2022 - INFO  - Finish test!
+Mon Sep 12 17:40:42 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:40:43 2022 - INFO  - start environment cleanup.
+oe_test_service_openvswitch.sh: line 62: service: command not found
+oe_test_service_openvswitch.sh: line 63: service: command not found
+Mon Sep 12 17:41:56 2022 - INFO  - Finish environment cleanup!

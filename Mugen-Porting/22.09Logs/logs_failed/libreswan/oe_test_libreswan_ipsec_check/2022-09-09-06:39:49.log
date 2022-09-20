@@ -1,0 +1,40 @@
+Fri Sep  9 06:39:52 2022 - INFO  - Start to prepare the database config.
+Redirecting to: systemctl restart ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Initializing NSS database
+
+Fri Sep  9 06:40:43 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 06:40:44 2022 - INFO  - Start to run test.
+
+ipsec verify: encountered 3 errors - see 'man ipsec_verify' for help
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:40:47 2022 - ERROR - Check ipsec trafficstatus failed.
+Fri Sep  9 06:40:47 2022 - ERROR - oe_test_libreswan_ipsec_check.sh line 37
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:40:48 2022 - ERROR - Check ipsec globalstatus failed.
+Fri Sep  9 06:40:49 2022 - ERROR - oe_test_libreswan_ipsec_check.sh line 39
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:40:50 2022 - ERROR - Check ipsec shuntstatus failed.
+Fri Sep  9 06:40:51 2022 - ERROR - oe_test_libreswan_ipsec_check.sh line 41
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:40:51 2022 - ERROR - Check ipsec briefstatus failed.
+Fri Sep  9 06:40:52 2022 - ERROR - oe_test_libreswan_ipsec_check.sh line 43
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:40:53 2022 - ERROR - Check ipsec showstates failed.
+Fri Sep  9 06:40:54 2022 - ERROR - oe_test_libreswan_ipsec_check.sh line 45
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:40:55 2022 - ERROR - Check ipsec fips failed.
+Fri Sep  9 06:40:55 2022 - ERROR - oe_test_libreswan_ipsec_check.sh line 47
+/usr/sbin/ipsec: line 164: iptables: command not found
+Generated RSA key pair with CKAID bbdac858e1acfb936b477d6c0fb3cf395da24d73 was stored in the NSS database
+The public key can be displayed using: ipsec showhostkey --left --ckaid bbdac858e1acfb936b477d6c0fb3cf395da24d73
+Generated RSA key pair with CKAID 775a94935c810b0d3497a05173f42c28430b43a4 was stored in the NSS database
+The public key can be displayed using: ipsec showhostkey --left --ckaid 775a94935c810b0d3497a05173f42c28430b43a4
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:41:26 2022 - ERROR - Check ipsec traffic failed.
+Fri Sep  9 06:41:27 2022 - ERROR - oe_test_libreswan_ipsec_check.sh line 63
+Fri Sep  9 06:41:27 2022 - INFO  - End to run test.
+Fri Sep  9 06:41:28 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:41:29 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 06:41:52 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,40 @@
+Fri Sep  9 05:01:31 2022 - INFO  - Start testing...
+Fri Sep  9 05:01:39 2022 - INFO  - pkgs:(freeradius) is already installed
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Fri Sep  9 05:01:40 2022 - ERROR - radiusd.service restart failed
+Fri Sep  9 05:01:41 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Sep  9 05:01:48 2022 - ERROR - radiusd.service restart failed
+Fri Sep  9 05:01:48 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 05:01:55 2022 - ERROR - radiusd.service stop failed
+Fri Sep  9 05:01:56 2022 - ERROR - ../common/common_lib.sh line 42
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Fri Sep  9 05:01:57 2022 - ERROR - radiusd.service start failed
+Fri Sep  9 05:01:57 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Sep  9 05:02:04 2022 - ERROR - radiusd.service start failed
+Fri Sep  9 05:02:04 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/radiusd.service
+Removed /etc/systemd/system/multi-user.target.wants/radiusd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/radiusd.service’: No such file or directory
+Sep 09 05:01:40 openEuler-riscv64 systemd[1]: radiusd.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 05:01:40 openEuler-riscv64 systemd[1]: radiusd.service: Failed with result 'exit-code'.
+Sep 09 05:01:40 openEuler-riscv64 systemd[1]: Failed to start FreeRADIUS high performance RADIUS server..
+Sep 09 05:01:56 openEuler-riscv64 systemd[1]: radiusd.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 05:01:56 openEuler-riscv64 systemd[1]: radiusd.service: Failed with result 'exit-code'.
+Sep 09 05:01:56 openEuler-riscv64 systemd[1]: Failed to start FreeRADIUS high performance RADIUS server..
+Fri Sep  9 05:02:14 2022 - ERROR - There is an error message for the log of radiusd.service
+Fri Sep  9 05:02:15 2022 - ERROR - ../common/common_lib.sh line 28
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+radiusd.service is not active, cannot reload.
+Fri Sep  9 05:02:20 2022 - ERROR - radiusd.service reload failed
+Fri Sep  9 05:02:21 2022 - ERROR - oe_test_service_radiusd.sh line 30
+Fri Sep  9 05:02:22 2022 - ERROR - radiusd.service reload causes the service status to change
+Fri Sep  9 05:02:23 2022 - ERROR - oe_test_service_radiusd.sh line 32
+Fri Sep  9 05:02:23 2022 - INFO  - Finish test!
+Fri Sep  9 05:02:24 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:02:25 2022 - INFO  - start environment cleanup.
+radiusd.service is not active, cannot reload.
+Fri Sep  9 05:02:30 2022 - WARN  - no thing to do.
+Fri Sep  9 05:02:30 2022 - INFO  - Finish environment cleanup!

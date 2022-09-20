@@ -1,0 +1,15 @@
+Fri Sep  9 05:35:54 2022 - INFO  - Start to run test.
+Usage:
+	insmod [options] filename [args]
+kmod version 29
+insmod: ERROR: missing filename.
+Fri Sep  9 05:36:08 2022 - ERROR - oe_test_insmod-lsmod.sh line 35
+Fri Sep  9 05:36:08 2022 - ERROR - oe_test_insmod-lsmod.sh line 37
+insmod: ERROR: missing filename.
+Fri Sep  9 05:36:09 2022 - ERROR - oe_test_insmod-lsmod.sh line 39
+Fri Sep  9 05:36:10 2022 - ERROR - oe_test_insmod-lsmod.sh line 41
+insmod: ERROR: missing filename.
+insmod: ERROR: missing filename.
+Fri Sep  9 05:36:11 2022 - INFO  - End of the test.
+Fri Sep  9 05:36:11 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:36:12 2022 - INFO  - oe_test_insmod-lsmod.sh post_test

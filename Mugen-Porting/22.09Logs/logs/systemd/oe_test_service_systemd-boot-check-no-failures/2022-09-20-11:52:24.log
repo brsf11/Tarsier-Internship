@@ -1,0 +1,51 @@
+Tue Sep 20 11:52:27 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 128, in <module>
+    remote_reboot(args.node, args.waittime)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 100, in remote_reboot
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Tue Sep 20 11:52:30 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 11:52:31 2022 - INFO  - Start testing...
+Tue Sep 20 11:52:33 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:52:41 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:52:41 2022 - ERROR - systemd-boot-check-no-failures.service restart failed
+Tue Sep 20 11:52:42 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 35
+Tue Sep 20 11:52:44 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:52:52 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:52:53 2022 - ERROR - systemd-boot-check-no-failures.service stop failed
+Tue Sep 20 11:52:54 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 39
+Tue Sep 20 11:52:56 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:04 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:05 2022 - ERROR - systemd-boot-check-no-failures.service start failed
+Tue Sep 20 11:53:05 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 43
+Tue Sep 20 11:53:07 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:10 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:10 2022 - ERROR - systemd-boot-check-no-failures.service enable failed
+Tue Sep 20 11:53:11 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 46
+Tue Sep 20 11:53:13 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:15 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:16 2022 - ERROR - systemd-boot-check-no-failures.service disable failed
+Tue Sep 20 11:53:17 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 49
+Tue Sep 20 11:53:19 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:20 2022 - ERROR - Job type reload is not applicable for unit systemd-boot-check-no-failures.service
+Tue Sep 20 11:53:20 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 51
+Tue Sep 20 11:53:23 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:23 2022 - ERROR - Check systemd-boot-check-no-failures.service status failed
+Tue Sep 20 11:53:24 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 53
+Tue Sep 20 11:53:26 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:27 2022 - ERROR - There is an error message for the log of systemd-boot-check-no-failures.service
+Tue Sep 20 11:53:27 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 56
+Tue Sep 20 11:53:28 2022 - INFO  - Finish test!
+Tue Sep 20 11:53:29 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:53:29 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:53:32 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Tue Sep 20 11:53:32 2022 - INFO  - Finish environment cleanup!

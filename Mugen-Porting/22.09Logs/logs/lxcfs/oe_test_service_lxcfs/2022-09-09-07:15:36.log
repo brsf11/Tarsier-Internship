@@ -1,0 +1,44 @@
+Fri Sep  9 07:15:39 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 07:16:15 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:16:16 2022 - INFO  - Start testing...
+Failed to restart lxcfs.service: Unit lxcfs.service not found.
+Fri Sep  9 07:16:17 2022 - ERROR - lxcfs.service restart failed
+Fri Sep  9 07:16:18 2022 - ERROR - ../common/common_lib.sh line 34
+Unit lxcfs.service could not be found.
+Fri Sep  9 07:16:24 2022 - ERROR - lxcfs.service restart failed
+Fri Sep  9 07:16:25 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop lxcfs.service: Unit lxcfs.service not loaded.
+Fri Sep  9 07:16:26 2022 - ERROR - lxcfs.service stop failed
+Fri Sep  9 07:16:27 2022 - ERROR - ../common/common_lib.sh line 39
+Unit lxcfs.service could not be found.
+Fri Sep  9 07:16:33 2022 - ERROR - lxcfs.service stop failed
+Fri Sep  9 07:16:34 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start lxcfs.service: Unit lxcfs.service not found.
+Fri Sep  9 07:16:35 2022 - ERROR - lxcfs.service start failed
+Fri Sep  9 07:16:35 2022 - ERROR - ../common/common_lib.sh line 44
+Unit lxcfs.service could not be found.
+Fri Sep  9 07:16:42 2022 - ERROR - lxcfs.service start failed
+Fri Sep  9 07:16:42 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for lxcfs.service: No such file or directory
+Fri Sep  9 07:16:43 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start lxcfs.service: Unit lxcfs.service not found.
+sed: can't read /usr/lib/systemd/system/lxcfs.service: No such file or directory
+Failed to reload lxcfs.service: Unit lxcfs.service not found.
+Fri Sep  9 07:16:49 2022 - ERROR - lxcfs.service reload failed
+Fri Sep  9 07:16:49 2022 - ERROR - oe_test_service_lxcfs.sh line 35
+Unit lxcfs.service could not be found.
+Fri Sep  9 07:16:50 2022 - ERROR - lxcfs.service reload causes the service status to change
+Fri Sep  9 07:16:51 2022 - ERROR - oe_test_service_lxcfs.sh line 37
+Fri Sep  9 07:16:52 2022 - INFO  - Finish test!
+Fri Sep  9 07:16:52 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:16:53 2022 - INFO  - start environment cleanup.
+sed: -e expression #1, char 55: unterminated `s' command
+Failed to reload lxcfs.service: Unit lxcfs.service not found.
+Failed to stop lxcfs.service: Unit lxcfs.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:24 ago on Fri 09 Sep 2022 07:15:50 AM CST.\nError: \n Problem: package lxcfs-tools-0.3-26.oe2209.riscv64 requires iSulad, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides clibcni >= 2.0.7 needed by iSulad-2.0.15-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:17:01 2022 - INFO  - Finish environment cleanup!

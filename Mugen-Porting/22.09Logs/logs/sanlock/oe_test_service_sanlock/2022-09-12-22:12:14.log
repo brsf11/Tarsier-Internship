@@ -1,0 +1,15 @@
+Mon Sep 12 22:12:16 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 22:13:05 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 22:13:05 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 22:13:05 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Mon 2022-09-12 22:13:19 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/sanlock.service
+Removed /etc/systemd/system/multi-user.target.wants/sanlock.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/sanlock.service’: No such file or directory
+Failed to reload sanlock.service: Job type reload is not applicable for unit sanlock.service.
+     Active: active (running) since Mon 2022-09-12 22:13:19 CST; 15s ago
+Mon Sep 12 22:13:35 2022 - INFO  - Finish test!
+Mon Sep 12 22:13:36 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:13:36 2022 - INFO  - start environment cleanup.
+Mon Sep 12 22:14:03 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,20 @@
+Fri Sep  9 02:12:00 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:14:09 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:14:10 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 02:14:10 CST; 6s ago
+Fri Sep  9 02:14:27 2022 - ERROR - derby.service stop failed
+Fri Sep  9 02:14:28 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Fri 2022-09-09 02:14:28 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/derby.service
+Removed /etc/systemd/system/multi-user.target.wants/derby.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/derby.service’: No such file or directory
+Sep 09 02:14:20 openEuler-riscv64 systemd[1]: derby.service: Control process exited, code=exited, status=1/FAILURE
+Sep 09 02:14:20 openEuler-riscv64 systemd[1]: derby.service: Failed with result 'exit-code'.
+Fri Sep  9 02:14:43 2022 - ERROR - There is an error message for the log of derby.service
+Fri Sep  9 02:14:44 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload derby.service: Job type reload is not applicable for unit derby.service.
+     Active: active (running) since Fri 2022-09-09 02:14:28 CST; 16s ago
+Fri Sep  9 02:14:45 2022 - INFO  - Finish test!
+Fri Sep  9 02:14:46 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:14:47 2022 - INFO  - start environment cleanup.
+Fri Sep  9 02:15:16 2022 - INFO  - Finish environment cleanup!

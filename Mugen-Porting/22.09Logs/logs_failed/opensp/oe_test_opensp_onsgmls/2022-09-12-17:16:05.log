@@ -1,0 +1,59 @@
+Mon Sep 12 17:16:07 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 17:16:53 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:16:54 2022 - INFO  - Start to run test.
+onsgmls:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+onsgmls:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+onsgmls:normal.sgml:3:5:E: element "HTML" undefined
+onsgmls:normal.sgml:4:8:E: element "HEAD" undefined
+onsgmls:normal.sgml:5:12:E: element "TITLE" undefined
+onsgmls:normal.sgml:7:8:E: element "BODY" undefined
+onsgmls:normal.sgml:8:8:E: element "P" undefined
+-Hello world!\n   
+(HTML
+-   
+(HEAD
+-      
+(TITLE
+-My first HTML document
+)TITLE
+-\n   
+)HEAD
+-\n   
+(BODY
+-      
+(P
+-Hello world!\n   
+)P
+)BODY
+)HTML
+Mon Sep 12 17:19:28 2022 - ERROR - oe_test_opensp_onsgmls.sh line 35
+Usage: onsgmls [OPTION] SYSID...
+-Hello world!\n   
+onsgmls:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+onsgmls:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+onsgmls:normal.sgml:3:5:E: element "HTML" undefined
+onsgmls:normal.sgml:4:8:E: element "HEAD" undefined
+onsgmls:normal.sgml:5:12:E: element "TITLE" undefined
+onsgmls:normal.sgml:7:8:E: element "BODY" undefined
+onsgmls:normal.sgml:8:8:E: element "P" undefined
+-Hello world!\n   
+onsgmls:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+onsgmls:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+onsgmls:normal.sgml:3:5:E: element "HTML" undefined
+onsgmls:normal.sgml:4:8:E: element "HEAD" undefined
+onsgmls:normal.sgml:5:12:E: element "TITLE" undefined
+onsgmls:normal.sgml:7:8:E: element "BODY" undefined
+onsgmls:normal.sgml:8:8:E: element "P" undefined
+-Hello world!\n   
+onsgmls:./testdir/normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+onsgmls:./testdir/normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+onsgmls:./testdir/normal.sgml:3:5:E: element "HTML" undefined
+onsgmls:./testdir/normal.sgml:4:8:E: element "HEAD" undefined
+onsgmls:./testdir/normal.sgml:5:12:E: element "TITLE" undefined
+onsgmls:./testdir/normal.sgml:7:8:E: element "BODY" undefined
+onsgmls:./testdir/normal.sgml:8:8:E: element "P" undefined
+-Hello world!\n   
+Mon Sep 12 17:25:54 2022 - INFO  - End of the test.
+Mon Sep 12 17:25:55 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:25:55 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 17:26:17 2022 - INFO  - Finish restoring the test environment.

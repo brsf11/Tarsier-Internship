@@ -1,0 +1,61 @@
+Thu Sep  8 18:06:35 2022 - INFO  - Start to prepare the test environment.
+spawn ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:zjfboRsQzeEh//u52pd0hzlNXkPq4Xbbfu1zd2YYGS4 root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|        . o      |
+|         * o   . |
+|        . =   o  |
+|         . . o..o|
+|        S   +..Oo|
+|       o .  E=Bo=|
+|        o + +.o+B|
+|         . * +.=@|
+|          +.o.=BO|
++----[SHA256]-----+
+spawn ssh-copy-id root@
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname : Name or service not known
+
+send: spawn id exp3 not open
+    while executing
+"send "yes\n""
+Thu Sep  8 18:08:37 2022 - INFO  - End to prepare the test environment.
+Thu Sep  8 18:08:37 2022 - INFO  - Start to run test.
+Thu Sep  8 18:08:45 2022 - ERROR - Check ansible-inventory --help failed.
+Thu Sep  8 18:08:46 2022 - ERROR - oe_test_ansible_04.sh line 28
+ansible-inventory 2.9.27
+  executable location = /usr/bin/ansible-inventory
+spawn ansible-console
+exit
+spawn ansible-console --ask-vault-pass
+
+exit
+Vault password: spawn ansible-console --vault-password-file=/tmp/pass
+exit
+Thu Sep  8 18:09:43 2022 - ERROR - Check ansible-playbook --help failed.
+Thu Sep  8 18:09:44 2022 - ERROR - oe_test_ansible_04.sh line 55
+ansible-playbook 2.9.27
+  executable location = /usr/bin/ansible-playbook
+Thu Sep  8 18:10:00 2022 - ERROR - Check ansible-pull --help failed.
+Thu Sep  8 18:10:01 2022 - ERROR - oe_test_ansible_04.sh line 59
+ansible-pull 2.9.27
+  executable location = /usr/bin/ansible-pull
+Thu Sep  8 18:10:16 2022 - ERROR - Check ansible-vault --help failed.
+Thu Sep  8 18:10:17 2022 - ERROR - oe_test_ansible_04.sh line 63
+ansible-vault 2.9.27
+  executable location = /usr/bin/ansible-vault
+Thu Sep  8 18:10:25 2022 - INFO  - End to run test.
+Thu Sep  8 18:10:26 2022 - ERROR - failed to execute the case.
+Thu Sep  8 18:10:26 2022 - INFO  - Start to restore the test environment.
+Thu Sep  8 18:11:09 2022 - INFO  - End to restore the test environment.

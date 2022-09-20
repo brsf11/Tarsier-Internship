@@ -1,0 +1,43 @@
+Mon Sep 12 16:26:46 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:27:30 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:27:31 2022 - INFO  - Start testing...
+Failed to restart snmptrapd.service: Unit snmptrapd.service not found.
+Mon Sep 12 16:27:32 2022 - ERROR - snmptrapd.service restart failed
+Mon Sep 12 16:27:32 2022 - ERROR - ../common/common_lib.sh line 34
+Unit snmptrapd.service could not be found.
+Mon Sep 12 16:27:39 2022 - ERROR - snmptrapd.service restart failed
+Mon Sep 12 16:27:39 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop snmptrapd.service: Unit snmptrapd.service not loaded.
+Mon Sep 12 16:27:40 2022 - ERROR - snmptrapd.service stop failed
+Mon Sep 12 16:27:41 2022 - ERROR - ../common/common_lib.sh line 39
+Unit snmptrapd.service could not be found.
+Mon Sep 12 16:27:47 2022 - ERROR - snmptrapd.service stop failed
+Mon Sep 12 16:27:48 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start snmptrapd.service: Unit snmptrapd.service not found.
+Mon Sep 12 16:27:49 2022 - ERROR - snmptrapd.service start failed
+Mon Sep 12 16:27:49 2022 - ERROR - ../common/common_lib.sh line 44
+Unit snmptrapd.service could not be found.
+Mon Sep 12 16:27:56 2022 - ERROR - snmptrapd.service start failed
+Mon Sep 12 16:27:57 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for snmptrapd.service: No such file or directory
+Mon Sep 12 16:27:57 2022 - INFO  - Unit is indirect, ignoring.
+sed: can't read /usr/lib/systemd/system/snmptrapd.service: No such file or directory
+Failed to reload snmptrapd.service: Unit snmptrapd.service not found.
+Mon Sep 12 16:28:03 2022 - ERROR - snmptrapd.service reload failed
+Mon Sep 12 16:28:04 2022 - ERROR - oe_test_service_snmptrapd.sh line 34
+Unit snmptrapd.service could not be found.
+Mon Sep 12 16:28:05 2022 - ERROR - snmptrapd.service reload causes the service status to change
+Mon Sep 12 16:28:05 2022 - ERROR - oe_test_service_snmptrapd.sh line 36
+Mon Sep 12 16:28:06 2022 - INFO  - Finish test!
+Mon Sep 12 16:28:07 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:28:08 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/snmptrapd.service: No such file or directory
+Failed to reload snmptrapd.service: Unit snmptrapd.service not found.
+Failed to stop snmptrapd.service: Unit snmptrapd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:55 ago on Mon 12 Sep 2022 04:25:33 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by net-snmp-1:5.9.1-2.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by net-snmp-1:5.9.1-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 16:28:16 2022 - INFO  - Finish environment cleanup!

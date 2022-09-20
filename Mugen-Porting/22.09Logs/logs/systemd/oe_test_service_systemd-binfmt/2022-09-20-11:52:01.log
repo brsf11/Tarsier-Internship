@@ -1,0 +1,6 @@
+Tue Sep 20 11:52:04 2022 - INFO  - Start testing...
+Tue Sep 20 11:52:04 2022 - INFO  - systemd-binfmt.service is an early boot service that registers additional binary formats for executables in the kernel
+Tue Sep 20 11:52:05 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 11:52:06 2022 - INFO  - Finish test!
+Tue Sep 20 11:52:06 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:52:07 2022 - INFO  - oe_test_service_systemd-binfmt.sh post_test

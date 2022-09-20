@@ -1,0 +1,20 @@
+Fri Sep  9 06:42:02 2022 - INFO  - Start to prepare the database config.
+Redirecting to: systemctl restart ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:42:55 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 06:42:56 2022 - INFO  - Start to run test.
+/usr/libexec/ipsec/pluto: bind() will be filtered for 127.0.0.1
+
+Sep  9 06:43:00.135583: Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
+Sep  9 06:43:00.345497: FATAL ERROR: NSS: initialization using read-only database "sql:/var/lib/ipsec/nss" failed: SEC_ERROR 18 (0x12): security library: bad database.
+Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
+FATAL ERROR: NSS: initialization using read-only database "sql:/var/lib/ipsec/nss" failed: SEC_ERROR 18 (0x12): security library: bad database.
+Sep  9 06:43:00.696618: Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
+Sep  9 06:43:00.994852: FATAL ERROR: NSS: initialization using read-only database "sql:/var/lib/ipsec/nss" failed: SEC_ERROR 18 (0x12): security library: bad database.
+Sep  9 06:43:01.001923: Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
+Sep  9 06:43:01.219044: FATAL ERROR: NSS: initialization using read-only database "sql:/var/lib/ipsec/nss" failed: SEC_ERROR 18 (0x12): security library: bad database.
+Fri Sep  9 06:43:01 2022 - INFO  - End to run test.
+Fri Sep  9 06:43:02 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 06:43:03 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 06:43:25 2022 - INFO  - End to restore the test environment.

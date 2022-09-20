@@ -1,0 +1,16 @@
+Fri Sep 16 12:23:57 2022 - INFO  - Start to prepare the test environment.
+groupdel: group 'testuser' does not exist
+Fri Sep 16 12:23:57 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:23:58 2022 - INFO  - Start to run test.
+spawn passwd testuser
+Changing password for user testuser.
+New password: 
+BAD PASSWORD: No password supplied
+Retype new password: 
+No password has been supplied.
+passwd: Authentication token manipulation error
+passwd: Authentication token manipulation error
+Fri Sep 16 12:24:03 2022 - INFO  - End to run test.
+Fri Sep 16 12:24:03 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 12:24:04 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 12:24:06 2022 - INFO  - End to restore the test environment.

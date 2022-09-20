@@ -1,0 +1,32 @@
+Fri Sep  9 07:46:09 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:47:13 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 07:47:18 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:47:19 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:47:20 2022 - INFO  - Start to run test.
+Fri Sep  9 07:47:20 2022 - ERROR - oe_test_ndisc6_name2addr.sh line 29
+Fri Sep  9 07:47:21 2022 - ERROR - oe_test_ndisc6_name2addr.sh line 31
+fe80::6416:6af0:e525:bb3a%eth0
+::1 127.0.0.1
+Fri Sep  9 07:47:22 2022 - ERROR - oe_test_ndisc6_name2addr.sh line 37
+Fri Sep  9 07:47:22 2022 - ERROR - oe_test_ndisc6_name2addr.sh line 39
+addrinfo 1.0.4 ($Rev$)
+Usage: name2addr [-4|-6] [hostnames]
+hello world
+Fri Sep  9 07:47:25 2022 - INFO  - End to run test.
+Fri Sep  9 07:47:25 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:47:26 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 07:47:42 2022 - INFO  - End to restore the test environment.

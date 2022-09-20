@@ -1,0 +1,29 @@
+Fri Sep  9 04:29:21 2022 - INFO  - Start testing...
+Failed to restart iprdump.service: Unit iprdump.service not found.
+Fri Sep  9 04:29:22 2022 - ERROR - iprdump.service restart failed
+Fri Sep  9 04:29:22 2022 - ERROR - ../common/common_lib.sh line 34
+Unit iprdump.service could not be found.
+Fri Sep  9 04:29:29 2022 - ERROR - iprdump.service restart failed
+Fri Sep  9 04:29:30 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop iprdump.service: Unit iprdump.service not loaded.
+Fri Sep  9 04:29:30 2022 - ERROR - iprdump.service stop failed
+Fri Sep  9 04:29:31 2022 - ERROR - ../common/common_lib.sh line 39
+Unit iprdump.service could not be found.
+Fri Sep  9 04:29:39 2022 - ERROR - iprdump.service stop failed
+Fri Sep  9 04:29:39 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start iprdump.service: Unit iprdump.service not found.
+Fri Sep  9 04:29:40 2022 - ERROR - iprdump.service start failed
+Fri Sep  9 04:29:41 2022 - ERROR - ../common/common_lib.sh line 44
+Unit iprdump.service could not be found.
+Fri Sep  9 04:29:47 2022 - ERROR - iprdump.service start failed
+Fri Sep  9 04:29:48 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for iprdump.service: No such file or directory
+Fri Sep  9 04:29:49 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start iprdump.service: Unit iprdump.service not found.
+Fri Sep  9 04:29:50 2022 - ERROR - Job type reload is not applicable for unit iprdump.service
+Fri Sep  9 04:29:50 2022 - ERROR - ../common/common_lib.sh line 91
+Unit iprdump.service could not be found.
+Unit iprdump.service could not be found.
+Fri Sep  9 04:29:51 2022 - INFO  - Finish test!
+Fri Sep  9 04:29:52 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:29:52 2022 - INFO  - oe_test_service_iprdump.sh post_test

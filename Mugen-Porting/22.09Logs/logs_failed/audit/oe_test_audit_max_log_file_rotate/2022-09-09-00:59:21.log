@@ -1,0 +1,17 @@
+Fri Sep  9 00:59:24 2022 - INFO  - Start to prepare the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_rotate.sh: line 27: service: command not found
+Fri Sep  9 00:59:25 2022 - INFO  - End to prepare the environment
+Fri Sep  9 00:59:26 2022 - INFO  - Start to run test.
+du: cannot access '/var/log/audit/': No such file or directory
+find: ‘/var/log/audit’: No such file or directory
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+du: cannot access '/var/log/audit/': No such file or directory
+oe_test_audit_max_log_file_rotate.sh: line 38: - : syntax error: operand expected (error token is "- ")
+Fri Sep  9 01:00:10 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_rotate.sh: line 72: service: command not found
+Fri Sep  9 01:00:11 2022 - INFO  - End to restore the test environment.

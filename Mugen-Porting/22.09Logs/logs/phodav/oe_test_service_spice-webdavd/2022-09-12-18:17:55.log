@@ -1,0 +1,25 @@
+Mon Sep 12 18:17:58 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:19:12 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:19:12 2022 - INFO  - Start testing...
+Mon Sep 12 18:19:19 2022 - ERROR - spice-webdavd.service restart failed
+Mon Sep 12 18:19:20 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 18:19:27 2022 - ERROR - spice-webdavd.service stop failed
+Mon Sep 12 18:19:27 2022 - ERROR - ../common/common_lib.sh line 42
+Mon Sep 12 18:19:34 2022 - ERROR - spice-webdavd.service start failed
+Mon Sep 12 18:19:35 2022 - ERROR - ../common/common_lib.sh line 47
+Mon Sep 12 18:19:36 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 12 18:19:13 openEuler-riscv64 spice-webdavd[569]: Failed to open /dev/virtio-ports/org.spice-space.webdav.0: No such file or directory
+Sep 12 18:19:13 openEuler-riscv64 systemd[1]: spice-webdavd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 18:19:13 openEuler-riscv64 systemd[1]: spice-webdavd.service: Failed with result 'exit-code'.
+Sep 12 18:19:28 openEuler-riscv64 spice-webdavd[586]: Failed to open /dev/virtio-ports/org.spice-space.webdav.0: No such file or directory
+Sep 12 18:19:28 openEuler-riscv64 systemd[1]: spice-webdavd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 18:19:28 openEuler-riscv64 systemd[1]: spice-webdavd.service: Failed with result 'exit-code'.
+Mon Sep 12 18:19:36 2022 - ERROR - There is an error message for the log of spice-webdavd.service
+Mon Sep 12 18:19:37 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload spice-webdavd.service: Job type reload is not applicable for unit spice-webdavd.service.
+Mon Sep 12 18:19:38 2022 - INFO  - Finish test!
+Mon Sep 12 18:19:39 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:19:39 2022 - INFO  - start environment cleanup.
+Warning: Stopping avahi-daemon.service, but it can still be activated by:
+  avahi-daemon.socket
+Mon Sep 12 18:20:08 2022 - INFO  - Finish environment cleanup!

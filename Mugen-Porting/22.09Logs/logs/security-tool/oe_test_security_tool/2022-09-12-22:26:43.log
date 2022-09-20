@@ -1,0 +1,26 @@
+Mon Sep 12 22:26:45 2022 - INFO  - Start environmental preparation.
+cp: cannot stat '/etc/openEuler_security/usr-security.conf': No such file or directory
+Failed to stop httpd.service: Unit httpd.service not loaded.
+Mon Sep 12 22:27:37 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 22:27:37 2022 - INFO  - Start executing testcase.
+oe_test_security_tool.sh: line 39: /etc/openEuler_security/usr-security.conf: No such file or directory
+oe_test_security_tool.sh: line 40: /usr/sbin/security-tool.sh: No such file or directory
+Mon Sep 12 22:27:38 2022 - ERROR - oe_test_security_tool.sh line 41
+Mon Sep 12 22:27:39 2022 - ERROR - oe_test_security_tool.sh line 43
+grep: /var/log/openEuler-security.log: No such file or directory
+Mon Sep 12 22:27:39 2022 - ERROR - oe_test_security_tool.sh line 45
+Mon Sep 12 22:27:40 2022 - ERROR - oe_test_security_tool.sh line 47
+Unit httpd.service could not be found.
+Mon Sep 12 22:27:41 2022 - ERROR - oe_test_security_tool.sh line 49
+oe_test_security_tool.sh: line 50: /usr/sbin/security-tool.sh: No such file or directory
+Mon Sep 12 22:27:42 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 22:27:42 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:27:43 2022 - INFO  - start environment cleanup.
+mv: cannot stat '/etc/openEuler_security/usr-security.conf-bak': No such file or directory
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:40 ago on Mon 12 Sep 2022 10:26:55 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 22:27:46 2022 - INFO  - Finish environment cleanup!

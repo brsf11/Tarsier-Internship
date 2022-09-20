@@ -1,0 +1,14 @@
+Fri Sep  9 05:28:33 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 05:29:25 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 05:29:26 2022 - INFO  - Start to run test.
+List GPIO chips, lines and states
+Usage: tmon [OPTION...]
+TMON version 1.0
+bpftool v7.0.0
+Usage: bpftool perf { show | list }
+       bpftool prog help
+{"error":"get by id (3): No such file or directory"}
+Fri Sep  9 05:29:27 2022 - INFO  - End of the test.
+Fri Sep  9 05:29:27 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 05:29:28 2022 - INFO  - Start to restore the tet environment.
+Fri Sep  9 05:29:46 2022 - INFO  - Finish to restore the tet environment.

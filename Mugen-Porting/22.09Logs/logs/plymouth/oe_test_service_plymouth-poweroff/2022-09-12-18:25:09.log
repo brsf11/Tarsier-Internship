@@ -1,0 +1,39 @@
+Mon Sep 12 18:25:12 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:25:42 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:25:42 2022 - INFO  - Start testing...
+Failed to restart plymouth-poweroff.service: Unit plymouth-poweroff.service not found.
+Mon Sep 12 18:25:43 2022 - ERROR - plymouth-poweroff.service restart failed
+Mon Sep 12 18:25:44 2022 - ERROR - ../common/common_lib.sh line 34
+Unit plymouth-poweroff.service could not be found.
+Mon Sep 12 18:25:51 2022 - ERROR - plymouth-poweroff.service restart failed
+Mon Sep 12 18:25:51 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop plymouth-poweroff.service: Unit plymouth-poweroff.service not loaded.
+Mon Sep 12 18:25:52 2022 - ERROR - plymouth-poweroff.service stop failed
+Mon Sep 12 18:25:53 2022 - ERROR - ../common/common_lib.sh line 39
+Unit plymouth-poweroff.service could not be found.
+Mon Sep 12 18:25:59 2022 - ERROR - plymouth-poweroff.service stop failed
+Mon Sep 12 18:26:00 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start plymouth-poweroff.service: Unit plymouth-poweroff.service not found.
+Mon Sep 12 18:26:01 2022 - ERROR - plymouth-poweroff.service start failed
+Mon Sep 12 18:26:01 2022 - ERROR - ../common/common_lib.sh line 44
+Unit plymouth-poweroff.service could not be found.
+Mon Sep 12 18:26:08 2022 - ERROR - plymouth-poweroff.service start failed
+Mon Sep 12 18:26:09 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for plymouth-poweroff.service: No such file or directory
+Mon Sep 12 18:26:09 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start plymouth-poweroff.service: Unit plymouth-poweroff.service not found.
+Mon Sep 12 18:26:10 2022 - ERROR - Job type reload is not applicable for unit plymouth-poweroff.service
+Mon Sep 12 18:26:11 2022 - ERROR - ../common/common_lib.sh line 91
+Unit plymouth-poweroff.service could not be found.
+Unit plymouth-poweroff.service could not be found.
+Mon Sep 12 18:26:12 2022 - INFO  - Finish test!
+Mon Sep 12 18:26:13 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:26:13 2022 - INFO  - start environment cleanup.
+Failed to stop plymouth-poweroff.service: Unit plymouth-poweroff.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:03:35 ago on Mon 12 Sep 2022 06:22:05 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by plymouth-0.9.5-4.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 18:26:16 2022 - INFO  - Finish environment cleanup!

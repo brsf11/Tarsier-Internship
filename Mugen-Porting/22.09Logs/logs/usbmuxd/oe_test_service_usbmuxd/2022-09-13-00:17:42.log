@@ -1,0 +1,13 @@
+Tue Sep 13 00:17:45 2022 - INFO  - Start environmental preparation.
+Tue Sep 13 00:18:54 2022 - INFO  - End of environmental preparation!
+Tue Sep 13 00:18:55 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-13 00:18:55 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-13 00:19:07 CST; 5s ago
+Tue Sep 13 00:19:14 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload usbmuxd.service: Job type reload is not applicable for unit usbmuxd.service.
+     Active: active (running) since Tue 2022-09-13 00:19:07 CST; 7s ago
+Tue Sep 13 00:19:15 2022 - INFO  - Finish test!
+Tue Sep 13 00:19:16 2022 - INFO  - succeed to execute the case.
+Tue Sep 13 00:19:17 2022 - INFO  - start environment cleanup.
+Tue Sep 13 00:19:35 2022 - INFO  - Finish environment cleanup!

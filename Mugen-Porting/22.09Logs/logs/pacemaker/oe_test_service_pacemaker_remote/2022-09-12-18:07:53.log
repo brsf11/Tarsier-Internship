@@ -1,0 +1,40 @@
+Mon Sep 12 18:07:55 2022 - INFO  - Start environmental preparation.
+dd: failed to open '/etc/pacemaker/authkey': No such file or directory
+Mon Sep 12 18:08:32 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:08:33 2022 - INFO  - Start to run test.
+Failed to restart pacemaker_remote.service: Unit pacemaker_remote.service not found.
+Mon Sep 12 18:08:33 2022 - ERROR - pacemaker_remote.service restart failed
+Mon Sep 12 18:08:34 2022 - ERROR - ../common/common_lib.sh line 34
+Unit pacemaker_remote.service could not be found.
+Mon Sep 12 18:08:41 2022 - ERROR - pacemaker_remote.service restart failed
+Mon Sep 12 18:08:41 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop pacemaker_remote.service: Unit pacemaker_remote.service not loaded.
+Mon Sep 12 18:08:42 2022 - ERROR - pacemaker_remote.service stop failed
+Mon Sep 12 18:08:43 2022 - ERROR - ../common/common_lib.sh line 39
+Unit pacemaker_remote.service could not be found.
+Mon Sep 12 18:08:49 2022 - ERROR - pacemaker_remote.service stop failed
+Mon Sep 12 18:08:50 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start pacemaker_remote.service: Unit pacemaker_remote.service not found.
+Mon Sep 12 18:08:51 2022 - ERROR - pacemaker_remote.service start failed
+Mon Sep 12 18:08:51 2022 - ERROR - ../common/common_lib.sh line 44
+Unit pacemaker_remote.service could not be found.
+Mon Sep 12 18:08:58 2022 - ERROR - pacemaker_remote.service start failed
+Mon Sep 12 18:08:59 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for pacemaker_remote.service: No such file or directory
+Mon Sep 12 18:08:59 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start pacemaker_remote.service: Unit pacemaker_remote.service not found.
+Mon Sep 12 18:09:00 2022 - ERROR - Job type reload is not applicable for unit pacemaker_remote.service
+Mon Sep 12 18:09:01 2022 - ERROR - ../common/common_lib.sh line 91
+Unit pacemaker_remote.service could not be found.
+Unit pacemaker_remote.service could not be found.
+Mon Sep 12 18:09:02 2022 - INFO  - End of the test.
+Mon Sep 12 18:09:03 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:09:03 2022 - INFO  - start environment cleanup.
+Failed to stop pacemaker_remote.service: Unit pacemaker_remote.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:51 ago on Mon 12 Sep 2022 06:05:39 PM CST.\nError: \n Problem: package pacemaker-remote-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 18:09:06 2022 - INFO  - Finish environment cleanup!

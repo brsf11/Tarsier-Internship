@@ -1,0 +1,51 @@
+Fri Sep  9 06:32:21 2022 - INFO  - Start to prepare the database config.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 06:33:10 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 06:33:11 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r ./common/test-vm.secrets @:/etc/ipsec.d
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 06:33:12 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:33:13 2022 - ERROR - Failed in remote CMD operation:1
+Redirecting to: systemctl restart ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:33:19 2022 - ERROR - Failed in remote CMD operation:1
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+whack: is Pluto running?  connect() for "/run/pluto/pluto.ctl" failed (111 Connection refused)
+Fri Sep  9 06:33:20 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 06:33:21 2022 - INFO  - Start to run test.
+debugging mode enabled
+end of file /etc/ipsec.d/test-vm.secrets
+Loading conn test-vm-test
+conn: "test-vm-test" modecfgdns=<unset>
+conn: "test-vm-test" modecfgdomains=<unset>
+conn: "test-vm-test" modecfgbanner=<unset>
+conn: "test-vm-test" mark=<unset>
+conn: "test-vm-test" mark-in=<unset>
+conn: "test-vm-test" mark-out=<unset>
+conn: "test-vm-test" vti_iface=<unset>
+conn: "test-vm-test" redirect-to=<unset>
+conn: "test-vm-test" accept-redirect-to=<unset>
+Fri Sep  9 06:33:22 2022 - ERROR - Check ipsec addconn --config --varprefix --noexport --verbose failed.
+Fri Sep  9 06:33:23 2022 - ERROR - oe_test_libreswan_ipsec_addconn.sh line 34
+connect(pluto_ctl) failed: Connection refused
+conn 'test-vm-test': not found (tried aliases)
+Fri Sep  9 06:33:24 2022 - INFO  - End to run test.
+Fri Sep  9 06:33:25 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:33:26 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 06:33:27 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 06:33:49 2022 - INFO  - End to restore the test environment.

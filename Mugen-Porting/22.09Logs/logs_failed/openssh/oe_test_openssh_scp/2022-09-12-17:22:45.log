@@ -1,0 +1,31 @@
+Mon Sep 12 17:22:48 2022 - INFO  - Start to run test.
+spawn scp @:/etc/openEuler-latest /tmp/openEuler-latest
+ssh: Could not resolve hostname : Name or service not known
+expect: spawn id exp3 not open
+    while executing
+"expect {
+            "password" {
+                send "\r"
+            }
+        }"
+Mon Sep 12 17:22:49 2022 - ERROR - oe_test_openssh_scp.sh line 36
+grep: /tmp/openEuler-latest: No such file or directory
+Mon Sep 12 17:22:50 2022 - ERROR - oe_test_openssh_scp.sh line 38
+spawn scp /etc/openEuler-latest @:/tmp/openEuler-latest
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+expect: spawn id exp3 not open
+    while executing
+"expect {
+            "password" {
+                send "\r"
+            }
+        }"
+Mon Sep 12 17:22:51 2022 - ERROR - oe_test_openssh_scp.sh line 53
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:22:52 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:22:52 2022 - ERROR - oe_test_openssh_scp.sh line 55
+Mon Sep 12 17:22:53 2022 - INFO  - End to run test.
+Mon Sep 12 17:22:54 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:22:54 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:22:55 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:22:56 2022 - INFO  - End to restore the test environment.

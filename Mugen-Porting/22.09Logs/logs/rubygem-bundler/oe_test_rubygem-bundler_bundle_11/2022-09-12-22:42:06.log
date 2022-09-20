@@ -1,0 +1,35 @@
+Mon Sep 12 22:42:09 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 22:42:18 2022 - INFO  - pkgs:(rubygem-bundler) is already installed
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Mon Sep 12 22:42:21 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:42:22 2022 - INFO  - Start to run test.
+Ignoring --local
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  riscv64-linux
+
+DEPENDENCIES
+
+BUNDLED WITH
+   2.2.33
+Resolving dependencies...
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/lockfile
+Resolving dependencies...
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Resolving dependencies...
+Writing lockfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile.lock
+Mon Sep 12 22:43:00 2022 - INFO  - End to run test.
+Mon Sep 12 22:43:01 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:43:02 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:43:02 2022 - WARN  - no thing to do.
+Mon Sep 12 22:43:03 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,21 @@
+Fri Sep  9 03:36:58 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:37:52 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:37:52 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 03:37:53 CST; 6s ago
+Fri Sep  9 03:38:05 2022 - ERROR - ipmidetectd.service stop failed
+Fri Sep  9 03:38:06 2022 - ERROR - ../common/common_lib.sh line 42
+Fri Sep  9 03:38:13 2022 - ERROR - ipmidetectd.service start failed
+Fri Sep  9 03:38:14 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/ipmidetectd.service
+Removed /etc/systemd/system/multi-user.target.wants/ipmidetectd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ipmidetectd.service’: No such file or directory
+Sep 09 03:37:59 openEuler-riscv64 systemd[1]: ipmidetectd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 03:37:59 openEuler-riscv64 systemd[1]: ipmidetectd.service: Failed with result 'exit-code'.
+Fri Sep  9 03:38:24 2022 - ERROR - There is an error message for the log of ipmidetectd.service
+Fri Sep  9 03:38:24 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload ipmidetectd.service: Job type reload is not applicable for unit ipmidetectd.service.
+     Active: active (running) since Fri 2022-09-09 03:38:24 CST; 290ms ago
+Fri Sep  9 03:38:25 2022 - INFO  - Finish test!
+Fri Sep  9 03:38:26 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:38:27 2022 - INFO  - start environment cleanup.
+Fri Sep  9 03:38:44 2022 - INFO  - Finish environment cleanup!

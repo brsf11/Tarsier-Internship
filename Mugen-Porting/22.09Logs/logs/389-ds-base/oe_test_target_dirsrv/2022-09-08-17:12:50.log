@@ -1,0 +1,39 @@
+Thu Sep  8 17:12:53 2022 - INFO  - Start environmental preparation.
+Thu Sep  8 17:13:41 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:13:42 2022 - INFO  - Start testing...
+Failed to restart dirsrv.target: Unit dirsrv.target not found.
+Thu Sep  8 17:13:43 2022 - ERROR - dirsrv.target restart failed
+Thu Sep  8 17:13:44 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dirsrv.target could not be found.
+Thu Sep  8 17:13:50 2022 - ERROR - dirsrv.target restart failed
+Thu Sep  8 17:13:51 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dirsrv.target: Unit dirsrv.target not loaded.
+Thu Sep  8 17:13:52 2022 - ERROR - dirsrv.target stop failed
+Thu Sep  8 17:13:53 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dirsrv.target could not be found.
+Thu Sep  8 17:13:59 2022 - ERROR - dirsrv.target stop failed
+Thu Sep  8 17:14:00 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dirsrv.target: Unit dirsrv.target not found.
+Thu Sep  8 17:14:01 2022 - ERROR - dirsrv.target start failed
+Thu Sep  8 17:14:02 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dirsrv.target could not be found.
+Thu Sep  8 17:14:08 2022 - ERROR - dirsrv.target start failed
+Thu Sep  8 17:14:09 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dirsrv.target: No such file or directory
+Thu Sep  8 17:14:09 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dirsrv.target: Unit dirsrv.target not found.
+Thu Sep  8 17:14:10 2022 - ERROR - Job type reload is not applicable for unit dirsrv.target
+Thu Sep  8 17:14:11 2022 - ERROR - ../common/common_lib.sh line 91
+Unit dirsrv.target could not be found.
+Unit dirsrv.target could not be found.
+Thu Sep  8 17:14:12 2022 - INFO  - Finish test!
+Thu Sep  8 17:14:13 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:14:13 2022 - INFO  - start environment cleanup.
+Failed to stop dirsrv.target: Unit dirsrv.target not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:02:06 ago on Thu 08 Sep 2022 05:11:34 PM CST.\nNo match for argument: 389-ds-base\nError: Unable to find a match: 389-ds-base'
+Thu Sep  8 17:14:16 2022 - INFO  - Finish environment cleanup!

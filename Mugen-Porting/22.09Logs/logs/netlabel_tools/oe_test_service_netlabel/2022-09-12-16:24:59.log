@@ -1,0 +1,23 @@
+Mon Sep 12 16:25:02 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:26:53 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:26:53 2022 - INFO  - Start testing...
+     Active: active (exited) since Mon 2022-09-12 16:26:57 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Mon 2022-09-12 16:27:14 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/netlabel.service
+Removed /etc/systemd/system/multi-user.target.wants/netlabel.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/netlabel.service’: No such file or directory
+Sep 12 16:27:03 openEuler-riscv64 netlabel-config[625]: netlabelctl: error, failed to initialize the NetLabel library
+Sep 12 16:27:05 openEuler-riscv64 netlabel-config[628]: netlabelctl: error, failed to initialize the NetLabel library
+Sep 12 16:27:05 openEuler-riscv64 netlabel-config[630]: netlabelctl: error, failed to initialize the NetLabel library
+Sep 12 16:27:05 openEuler-riscv64 netlabel-config[632]: netlabelctl: error, failed to initialize the NetLabel library
+Sep 12 16:27:05 openEuler-riscv64 netlabel-config[634]: netlabelctl: error, failed to initialize the NetLabel library
+Sep 12 16:27:05 openEuler-riscv64 netlabel-config[636]: netlabelctl: error, failed to initialize the NetLabel library
+Mon Sep 12 16:27:30 2022 - ERROR - There is an error message for the log of netlabel.service
+Mon Sep 12 16:27:31 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload netlabel.service: Job type reload is not applicable for unit netlabel.service.
+     Active: active (exited) since Mon 2022-09-12 16:27:14 CST; 16s ago
+Mon Sep 12 16:27:32 2022 - INFO  - Finish test!
+Mon Sep 12 16:27:32 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:27:33 2022 - INFO  - start environment cleanup.
+Mon Sep 12 16:28:11 2022 - INFO  - Finish environment cleanup!

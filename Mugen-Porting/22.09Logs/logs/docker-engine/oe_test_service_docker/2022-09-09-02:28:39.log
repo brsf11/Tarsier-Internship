@@ -1,0 +1,46 @@
+Fri Sep  9 02:28:42 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:31:18 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:31:19 2022 - INFO  - Start testing...
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+Fri Sep  9 02:31:22 2022 - ERROR - docker.service restart failed
+Fri Sep  9 02:31:23 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Sep  9 02:31:29 2022 - ERROR - docker.service restart failed
+Fri Sep  9 02:31:30 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 02:31:37 2022 - ERROR - docker.service stop failed
+Fri Sep  9 02:31:38 2022 - ERROR - ../common/common_lib.sh line 42
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+Fri Sep  9 02:31:41 2022 - ERROR - docker.service start failed
+Fri Sep  9 02:31:42 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Sep  9 02:31:49 2022 - ERROR - docker.service start failed
+Fri Sep  9 02:31:49 2022 - ERROR - ../common/common_lib.sh line 47
+find: ‘/etc/systemd/system/multi-user.target.wants/docker.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /usr/lib/systemd/system/docker.service.
+/etc/systemd/system/multi-user.target.wants/docker.service
+Sep 09 02:31:20 openEuler-riscv64 dockerd[586]: time="2022-09-09T02:31:20.703369528+08:00" level=error msg="'overlay' not found as a supported filesystem on this host. Please ensure kernel is new enough and has overlay support loaded." storage-driver=overlay2
+Sep 09 02:31:20 openEuler-riscv64 dockerd[586]: time="2022-09-09T02:31:20.739102765+08:00" level=error msg="AUFS was not found in /proc/filesystems" storage-driver=aufs
+Sep 09 02:31:20 openEuler-riscv64 dockerd[586]: time="2022-09-09T02:31:20.772569017+08:00" level=error msg="'overlay' not found as a supported filesystem on this host. Please ensure kernel is new enough and has overlay support loaded." storage-driver=overlay
+Sep 09 02:31:21 openEuler-riscv64 dockerd[586]: Error starting daemon: Devices cgroup isn't mounted
+Sep 09 02:31:21 openEuler-riscv64 systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 02:31:21 openEuler-riscv64 systemd[1]: docker.service: Failed with result 'exit-code'.
+Sep 09 02:31:21 openEuler-riscv64 systemd[1]: Failed to start Docker Application Container Engine.
+Sep 09 02:31:39 openEuler-riscv64 dockerd[628]: time="2022-09-09T02:31:39.720162327+08:00" level=error msg="'overlay' not found as a supported filesystem on this host. Please ensure kernel is new enough and has overlay support loaded." storage-driver=overlay2
+Sep 09 02:31:39 openEuler-riscv64 dockerd[628]: time="2022-09-09T02:31:39.754235752+08:00" level=error msg="AUFS was not found in /proc/filesystems" storage-driver=aufs
+Sep 09 02:31:39 openEuler-riscv64 dockerd[628]: time="2022-09-09T02:31:39.786937940+08:00" level=error msg="'overlay' not found as a supported filesystem on this host. Please ensure kernel is new enough and has overlay support loaded." storage-driver=overlay
+Sep 09 02:31:40 openEuler-riscv64 dockerd[628]: Error starting daemon: Devices cgroup isn't mounted
+Sep 09 02:31:40 openEuler-riscv64 systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 02:31:40 openEuler-riscv64 systemd[1]: docker.service: Failed with result 'exit-code'.
+Sep 09 02:31:40 openEuler-riscv64 systemd[1]: Failed to start Docker Application Container Engine.
+Fri Sep  9 02:32:00 2022 - ERROR - There is an error message for the log of docker.service
+Fri Sep  9 02:32:00 2022 - ERROR - oe_test_service_docker.sh line 35
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+docker.service is not active, cannot reload.
+Fri Sep  9 02:32:08 2022 - ERROR - docker.service reload failed
+Fri Sep  9 02:32:09 2022 - ERROR - oe_test_service_docker.sh line 40
+Fri Sep  9 02:32:10 2022 - INFO  - Finish test!
+Fri Sep  9 02:32:10 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:32:11 2022 - INFO  - start environment cleanup.
+docker.service is not active, cannot reload.
+Fri Sep  9 02:32:37 2022 - INFO  - Finish environment cleanup!

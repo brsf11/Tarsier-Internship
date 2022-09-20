@@ -1,0 +1,18 @@
+Fri Sep  9 07:36:42 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:37:34 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:37:34 2022 - INFO  - Start to run test.
+	wwid "360000000000000000e00000000010001"
+multipath is disabled
+modprobe: FATAL: Module dm_multipath not found in directory /lib/modules/5.10.0
+Job for multipathd.service failed because the control process exited with error code.
+See "systemctl status multipathd.service" and "journalctl -xeu multipathd.service" for details.
+Fri Sep  9 07:37:39 2022 - ERROR - oe_test_multipath-tools_mpathconf.sh line 39
+multipath is enabled
+user_friendly_names is enabled
+find_multipaths is enabled
+Fri Sep  9 07:37:45 2022 - ERROR - oe_test_multipath-tools_mpathconf.sh line 51
+Fri Sep  9 07:37:46 2022 - ERROR - oe_test_multipath-tools_mpathconf.sh line 55
+Fri Sep  9 07:37:47 2022 - INFO  - End to run test.
+Fri Sep  9 07:37:48 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:37:48 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 07:38:05 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,6 @@
+Tue Sep 20 12:07:39 2022 - INFO  - Start testing...
+Tue Sep 20 12:07:40 2022 - INFO  - systemd-machine-id-commit.service is an early boot service responsible for committing transient /etc/machine-id files to a writable disk file system.
+Tue Sep 20 12:07:41 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:07:41 2022 - INFO  - Finish test!
+Tue Sep 20 12:07:42 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:07:43 2022 - INFO  - oe_test_service_systemd-machine-id-commit.sh post_test

@@ -1,0 +1,33 @@
+Fri Sep  9 07:20:07 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:20:15 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:20:22 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:20:23 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:20:24 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 31
+Fri Sep  9 07:20:25 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 33
+Fri Sep  9 07:20:26 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 35
+Fri Sep  9 07:20:27 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 37
+  Cannot use /dev/: device not found
+Fri Sep  9 07:20:28 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 39
+  Cannot use /dev/: device not found
+Fri Sep  9 07:20:29 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 41
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  LVM version:     2.03.14(2) (2021-10-20)
+  Common variables for lvm:
+  WARNING: File locking is disabled.
+  Cannot use /dev/: device not found
+Fri Sep  9 07:20:30 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 47
+  Cannot use /dev/: device not found
+Fri Sep  9 07:20:31 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 49
+  Cannot use /dev/: device not found
+Fri Sep  9 07:20:32 2022 - ERROR - oe_test_lvm2_pvresize_001.sh line 51
+oe_test_lvm2_pvresize_001.sh: line 52: [22.09: command not found
+Fri Sep  9 07:20:33 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:20:33 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:20:34 2022 - INFO  - Start environment cleanup.
+  No device found for /dev/.
+Fri Sep  9 07:20:35 2022 - WARN  - no thing to do.
+Fri Sep  9 07:20:36 2022 - INFO  - Finish environment cleanup.

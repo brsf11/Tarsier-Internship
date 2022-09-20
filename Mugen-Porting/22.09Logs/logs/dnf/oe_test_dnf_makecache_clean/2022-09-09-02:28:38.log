@@ -1,0 +1,25 @@
+Fri Sep  9 02:28:41 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:28:42 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:28:43 2022 - INFO  - Start to run test.
+Metadata cache created.
+Fri Sep  9 02:28:49 2022 - ERROR - oe_test_dnf_makecache_clean.sh line 32
+6 files removed
+ls: cannot access '/var/cache/dnf/*.solv': No such file or directory
+Metadata cache created.
+Cache was expired
+Metadata cache created.
+Cache was expired
+ls: cannot access '/var/cache/dnf/*.solv': No such file or directory
+Downloading Packages:
+/var/cache/dnf/mainline-a26da3fa4230e40b/packages/tree-1.8.0-2.oe2209.riscv64.rpm
+1 file removed
+Downloading Packages:
+/var/cache/dnf/mainline-a26da3fa4230e40b/packages/tree-1.8.0-2.oe2209.riscv64.rpm
+Metadata cache created.
+Fri Sep  9 02:32:21 2022 - ERROR - oe_test_dnf_makecache_clean.sh line 57
+16 files removed
+ls: cannot access '/var/cache/dnf/*.solv': No such file or directory
+Fri Sep  9 02:32:25 2022 - INFO  - End of the test.
+Fri Sep  9 02:32:26 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:32:26 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:32:27 2022 - INFO  - Finish preparing the test environment.

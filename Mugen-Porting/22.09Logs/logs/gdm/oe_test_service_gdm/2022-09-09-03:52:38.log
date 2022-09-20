@@ -1,0 +1,43 @@
+Fri Sep  9 03:52:41 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:53:08 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:53:09 2022 - INFO  - Start testing...
+Failed to restart gdm.service: Unit gdm.service not found.
+Fri Sep  9 03:53:10 2022 - ERROR - gdm.service restart failed
+Fri Sep  9 03:53:10 2022 - ERROR - ../common/common_lib.sh line 34
+Unit gdm.service could not be found.
+Fri Sep  9 03:53:17 2022 - ERROR - gdm.service restart failed
+Fri Sep  9 03:53:17 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop gdm.service: Unit gdm.service not loaded.
+Fri Sep  9 03:53:18 2022 - ERROR - gdm.service stop failed
+Fri Sep  9 03:53:19 2022 - ERROR - ../common/common_lib.sh line 39
+Unit gdm.service could not be found.
+Fri Sep  9 03:53:25 2022 - ERROR - gdm.service stop failed
+Fri Sep  9 03:53:26 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start gdm.service: Unit gdm.service not found.
+Fri Sep  9 03:53:27 2022 - ERROR - gdm.service start failed
+Fri Sep  9 03:53:27 2022 - ERROR - ../common/common_lib.sh line 44
+Unit gdm.service could not be found.
+Fri Sep  9 03:53:34 2022 - ERROR - gdm.service start failed
+Fri Sep  9 03:53:35 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for gdm.service: No such file or directory
+Fri Sep  9 03:53:36 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start gdm.service: Unit gdm.service not found.
+sed: can't read /usr/lib/systemd/system/gdm.service: No such file or directory
+Failed to reload gdm.service: Unit gdm.service not found.
+Fri Sep  9 03:53:47 2022 - ERROR - gdm.service reload failed
+Fri Sep  9 03:53:48 2022 - ERROR - oe_test_service_gdm.sh line 36
+Unit gdm.service could not be found.
+Fri Sep  9 03:53:49 2022 - ERROR - gdm.service reload causes the service status to change
+Fri Sep  9 03:53:49 2022 - ERROR - oe_test_service_gdm.sh line 38
+Fri Sep  9 03:53:50 2022 - INFO  - Finish test!
+Fri Sep  9 03:53:51 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:53:51 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/gdm.service: No such file or directory
+Failed to reload gdm.service: Unit gdm.service not found.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:17 ago on Fri 09 Sep 2022 03:52:50 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by gdm-1:42.0-1.oe2209.riscv64\n  - nothing provides gnome-shell needed by gdm-1:42.0-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 03:53:59 2022 - INFO  - Finish environment cleanup!

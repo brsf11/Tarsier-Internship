@@ -1,0 +1,18 @@
+Fri Sep  9 03:34:46 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:34:55 2022 - INFO  - pkgs:(net-tools) is already installed
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:34:56 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 03:34:57 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+sudo: firewall-cmd: command not found
+Warning: Executing wildcard deletion to stay compatible with old scripts.
+         Explicitly specify the prefix length (192.168.100.1/32) to avoid this warning.
+         This special behaviour is likely to disappear in further releases,
+         fix your scripts!
+Cannot find device ""
+Fri Sep  9 03:34:58 2022 - WARN  - no thing to do.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 03:34:59 2022 - ERROR - Failed in remote CMD operation:1
+mv: cannot stat '/etc/sysctl.conf.bak': No such file or directory
+sudo: firewall-cmd: command not found
+Failed to restart firewalld.service: Unit firewalld.service not found.
+Fri Sep  9 03:35:03 2022 - INFO  - Finish environment cleanup!

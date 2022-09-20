@@ -1,0 +1,28 @@
+Fri Sep  9 04:59:39 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:59:47 2022 - INFO  - pkgs:(freeradius freeradius-utils) is already installed
+Fri Sep  9 04:59:48 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:59:49 2022 - INFO  - Start to run test.
+Usage: radzap [options] server[:port] secret
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
+Fri Sep  9 05:00:07 2022 - ERROR - radzap -d -N execution failed.
+Fri Sep  9 05:00:08 2022 - ERROR - oe_test_freeradius_freeradius-utils_radzap.sh line 37
+Fri Sep  9 05:00:24 2022 - ERROR - radzap -D -N execution failed.
+Fri Sep  9 05:00:24 2022 - ERROR - oe_test_freeradius_freeradius-utils_radzap.sh line 39
+touch: cannot touch '/var/log/radius/radutmp': No such file or directory
+Fri Sep  9 05:00:25 2022 - ERROR - touch radutmp failed.
+Fri Sep  9 05:00:26 2022 - ERROR - oe_test_freeradius_freeradius-utils_radzap.sh line 42
+Fri Sep  9 05:00:27 2022 - ERROR - radzap -P execution failed.
+Fri Sep  9 05:00:27 2022 - ERROR - oe_test_freeradius_freeradius-utils_radzap.sh line 44
+Fri Sep  9 05:00:28 2022 - ERROR - radzap -u execution failed.
+Fri Sep  9 05:00:29 2022 - ERROR - oe_test_freeradius_freeradius-utils_radzap.sh line 46
+Fri Sep  9 05:00:30 2022 - ERROR - radzap -U execution failed.
+Fri Sep  9 05:00:31 2022 - ERROR - oe_test_freeradius_freeradius-utils_radzap.sh line 48
+	NAS-IP-Address = 127.0.0.1
+	NAS-IP-Address = 127.0.0.1
+	NAS-IP-Address = 127.0.0.1
+Fri Sep  9 05:00:47 2022 - INFO  - End to run test.
+Fri Sep  9 05:00:48 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:00:48 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 05:00:49 2022 - WARN  - no thing to do.
+Fri Sep  9 05:00:50 2022 - INFO  - End to restore the test environment.

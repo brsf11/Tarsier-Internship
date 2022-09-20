@@ -1,0 +1,31 @@
+Mon Sep 12 17:22:32 2022 - INFO  - Start to run test.
+spawn scp -r /tmp/ @:/tmp/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+expect: spawn id exp3 not open
+    while executing
+"expect {
+            "password" {
+                send "\r"
+            }
+        }"
+Mon Sep 12 17:22:33 2022 - ERROR - oe_test_openssh_scp_r.sh line 38
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:22:34 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:22:35 2022 - ERROR - oe_test_openssh_scp_r.sh line 40
+spawn scp -r @:/tmp/tmp /tmp/dir_pull
+ssh: Could not resolve hostname : Name or service not known
+expect: spawn id exp3 not open
+    while executing
+"expect {
+            "password" {
+                send "\r"
+            }
+        }"
+Mon Sep 12 17:22:36 2022 - ERROR - oe_test_openssh_scp_r.sh line 55
+grep: /tmp/dir_pull/dir/test_file: No such file or directory
+Mon Sep 12 17:22:36 2022 - ERROR - oe_test_openssh_scp_r.sh line 57
+Mon Sep 12 17:22:37 2022 - INFO  - End to run test.
+Mon Sep 12 17:22:38 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:22:38 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:22:39 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:22:40 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,12 @@
+Tue Sep 20 12:43:27 2022 - INFO  - Start to run test.
+     Active: active since Tue 2022-09-20 12:43:27 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:43:33 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:43:39 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/remote-fs.target’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/remote-fs.target → /usr/lib/systemd/system/remote-fs.target.
+/etc/systemd/system/multi-user.target.wants/remote-fs.target
+Failed to reload remote-fs.target: Job type reload is not applicable for unit remote-fs.target.
+     Active: active since Tue 2022-09-20 12:43:39 CST; 14s ago
+Tue Sep 20 12:43:54 2022 - INFO  - End of the test.
+Tue Sep 20 12:43:54 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:43:55 2022 - INFO  - oe_test_target_remote-fs.sh post_test

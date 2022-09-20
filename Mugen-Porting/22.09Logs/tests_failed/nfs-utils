@@ -1,0 +1,8 @@
+oe_test_service_auth-rpcgss-module
+oe_test_service_nfs-blkmap
+oe_test_service_nfsdcld
+oe_test_service_nfs-idmapd
+oe_test_service_nfs-idmap
+oe_test_service_nfs-mountd
+oe_test_service_nfs-server
+oe_test_service_nfs

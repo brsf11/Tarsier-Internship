@@ -1,0 +1,57 @@
+Mon Sep 12 18:22:00 2022 - INFO  - Start to prepare the test environment.
+--2022-09-12 18:22:00--  https://pngquant.org/Ducati_side_shadow.png
+Resolving pngquant.org (pngquant.org)... failed: Name or service not known.
+wget: unable to resolve host address ‘pngquant.org’
+cp: cannot stat 'test.png': No such file or directory
+Mon Sep 12 18:22:54 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:22:54 2022 - INFO  - Start to run test.
+usage:  pngquant [options] [ncolors] -- pngfile [pngfile ...]
+test.png:
+  error: cannot open test.png for reading
+There were errors quantizing 1 file out of a total of 1 file.
+Mon Sep 12 18:22:55 2022 - ERROR - Failed to run command: pngquant --verbose
+Mon Sep 12 18:22:56 2022 - ERROR - oe_test_pngquant.sh line 42
+  error: cannot open test.png for reading
+Mon Sep 12 18:22:57 2022 - ERROR - Failed to run command: pngquant test.png
+Mon Sep 12 18:22:57 2022 - ERROR - oe_test_pngquant.sh line 47
+oe_test_pngquant.sh: line 49: test.png: No such file or directory
+Mon Sep 12 18:22:58 2022 - ERROR - Failed to test stdin and stdout
+Mon Sep 12 18:22:59 2022 - ERROR - oe_test_pngquant.sh line 51
+  error: cannot open test-copy.png for reading
+  error: cannot open test.png for reading
+Mon Sep 12 18:22:59 2022 - ERROR - Failed to test more than one file
+Mon Sep 12 18:23:00 2022 - ERROR - oe_test_pngquant.sh line 56
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:01 2022 - ERROR - Failed to run command: pngquant --posterize
+Mon Sep 12 18:23:01 2022 - ERROR - oe_test_pngquant.sh line 60
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:02 2022 - ERROR - Failed to run command: pngquant --strip
+Mon Sep 12 18:23:03 2022 - ERROR - oe_test_pngquant.sh line 65
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:03 2022 - ERROR - Failed to run command: pngquant --ext
+Mon Sep 12 18:23:04 2022 - ERROR - oe_test_pngquant.sh line 69
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:04 2022 - ERROR - Failed to run command: pngquant --output
+Mon Sep 12 18:23:05 2022 - ERROR - oe_test_pngquant.sh line 73
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:06 2022 - ERROR - Failed to test option [ncolors]
+Mon Sep 12 18:23:06 2022 - ERROR - oe_test_pngquant.sh line 78
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:07 2022 - ERROR - Failed to run command: pngquant --force
+Mon Sep 12 18:23:08 2022 - ERROR - oe_test_pngquant.sh line 82
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:08 2022 - ERROR - Failed to run command: pngquant --skip-if-larger
+Mon Sep 12 18:23:09 2022 - ERROR - oe_test_pngquant.sh line 87
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:10 2022 - ERROR - Failed to run command: pngquant --nofs
+Mon Sep 12 18:23:11 2022 - ERROR - oe_test_pngquant.sh line 91
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:11 2022 - ERROR - Failed to run command: pngquant --quality
+Mon Sep 12 18:23:12 2022 - ERROR - oe_test_pngquant.sh line 96
+  error: cannot open test.png for reading
+Mon Sep 12 18:23:13 2022 - ERROR - Failed to run command: pngquant --speed
+Mon Sep 12 18:23:13 2022 - ERROR - oe_test_pngquant.sh line 101
+Mon Sep 12 18:23:14 2022 - INFO  - End to run test.
+Mon Sep 12 18:23:15 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:23:15 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 18:23:31 2022 - INFO  - End to restore the test environment.

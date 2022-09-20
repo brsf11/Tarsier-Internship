@@ -1,0 +1,37 @@
+Mon Sep 12 18:14:30 2022 - INFO  - Start environmental preparation.
+Job for pcsd-ruby.service failed because the control process exited with error code.
+See "systemctl status pcsd-ruby.service" and "journalctl -xeu pcsd-ruby.service" for details.
+Mon Sep 12 18:16:40 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:16:41 2022 - INFO  - Start to run test.
+     Active: failed (Result: exit-code) since Mon 2022-09-12 18:16:36 CST; 5s ago
+Mon Sep 12 18:16:42 2022 - ERROR - There is an error for the status of pcsd-ruby.service
+Mon Sep 12 18:16:43 2022 - ERROR - ../common/common_lib.sh line 54
+/etc/systemd/system/multi-user.target.wants/pcsd-ruby.service
+Removed /etc/systemd/system/multi-user.target.wants/pcsd-ruby.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/pcsd-ruby.service’: No such file or directory
+Sep 12 18:13:01 openEuler-riscv64 pcsd[734]: /usr/share/gems/gems/ffi-1.10.0/lib/ffi/types.rb:69:in `find_type': unable to resolve type 'size_t' (TypeError)
+Sep 12 18:13:01 openEuler-riscv64 pcsd[734]: <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': cannot load such file -- ethon (LoadError)
+Sep 12 18:13:01 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 18:13:01 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Failed with result 'exit-code'.
+Sep 12 18:13:01 openEuler-riscv64 systemd[1]: Failed to start PCS GUI and remote configuration interface (Ruby).
+Sep 12 18:13:21 openEuler-riscv64 pcsd[749]: /usr/share/gems/gems/ffi-1.10.0/lib/ffi/types.rb:69:in `find_type': unable to resolve type 'size_t' (TypeError)
+Sep 12 18:13:21 openEuler-riscv64 pcsd[749]: <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': cannot load such file -- ethon (LoadError)
+Sep 12 18:13:21 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 18:13:21 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Failed with result 'exit-code'.
+Sep 12 18:13:21 openEuler-riscv64 systemd[1]: Failed to start PCS GUI and remote configuration interface (Ruby).
+Sep 12 18:13:46 openEuler-riscv64 pcsd[797]: /usr/share/gems/gems/ffi-1.10.0/lib/ffi/types.rb:69:in `find_type': unable to resolve type 'size_t' (TypeError)
+Sep 12 18:13:46 openEuler-riscv64 pcsd[797]: <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': cannot load such file -- ethon (LoadError)
+Sep 12 18:13:46 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 18:13:46 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Failed with result 'exit-code'.
+Sep 12 18:13:46 openEuler-riscv64 systemd[1]: Failed to start PCS GUI and remote configuration interface (Ruby).
+Sep 12 18:16:36 openEuler-riscv64 pcsd[1197]: /usr/share/gems/gems/ffi-1.10.0/lib/ffi/types.rb:69:in `find_type': unable to resolve type 'size_t' (TypeError)
+Sep 12 18:16:36 openEuler-riscv64 pcsd[1197]: <internal:/usr/share/rubygems/rubygems/core_ext/kernel_require.rb>:85:in `require': cannot load such file -- ethon (LoadError)
+Sep 12 18:16:36 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 18:16:36 openEuler-riscv64 systemd[1]: pcsd-ruby.service: Failed with result 'exit-code'.
+Sep 12 18:16:36 openEuler-riscv64 systemd[1]: Failed to start PCS GUI and remote configuration interface (Ruby).
+Mon Sep 12 18:16:52 2022 - ERROR - There is an error message for the log of pcsd-ruby.service
+Mon Sep 12 18:16:53 2022 - ERROR - ../common/common_lib.sh line 57
+Mon Sep 12 18:16:54 2022 - INFO  - End of the test.
+Mon Sep 12 18:16:54 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:16:55 2022 - INFO  - start environment cleanup.
+Mon Sep 12 18:17:32 2022 - INFO  - Finish environment cleanup!

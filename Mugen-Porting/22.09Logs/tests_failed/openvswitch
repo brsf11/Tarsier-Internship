@@ -1,0 +1,7 @@
+oe_test_service_openvswitch
+oe_test_service_ovsdb-server
+oe_test_service_ovs-vswitchd
+oe_test_service_ovn-controller
+oe_test_service_ovn-northd
+oe_test_service_ovn-controller-vtep
+oe_test_service_openvswitch-ipsec

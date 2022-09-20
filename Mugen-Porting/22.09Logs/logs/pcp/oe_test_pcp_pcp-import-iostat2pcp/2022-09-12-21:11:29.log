@@ -1,0 +1,19 @@
+Mon Sep 12 21:11:32 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 21:12:58 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:12:59 2022 - INFO  - Start to run test.
+End of sample 0 @ 1662940815 Mon Sep 12 00:00:15 2022
+End of sample 1 @ 1662940830 Mon Sep 12 00:00:30 2022
+End of sample 2 @ 1662940845 Mon Sep 12 00:00:45 2022
+End of sample 3 @ 1662940860 Mon Sep 12 00:01:00 2022
+End of sample 4 @ 1662940875 Mon Sep 12 00:01:15 2022
+stamp_style=0 zone=UTC basedate=2022-09-12 now=1662941115 stamp=Mon Sep 12 00:05:15 2022 interval=15 first_tag=avg-cpu
+End of sample 0 @ 1662941115 Mon Sep 12 00:05:15 2022
+End of sample 1 @ 1662941130 Mon Sep 12 00:05:30 2022
+stamp_style=0 zone=UTC basedate=2022-09-12 now=1662941102 stamp=Mon Sep 12 00:05:02 2022 interval=2 first_tag=avg-cpu
+End of sample 0 @ 1662941102 Mon Sep 12 00:05:02 2022
+End of sample 1 @ 1662941104 Mon Sep 12 00:05:04 2022
+stamp_style=0 zone=-3333 basedate=2022-09-12 now=1663061595 stamp=Mon Sep 12 00:00:15 2022 interval=15 first_tag=avg-cpu
+Mon Sep 12 21:13:13 2022 - INFO  - End to run test.
+Mon Sep 12 21:13:14 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 21:13:15 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 21:13:55 2022 - INFO  - End to restore the test environment.

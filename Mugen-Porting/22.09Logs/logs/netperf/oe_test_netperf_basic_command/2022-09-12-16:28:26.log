@@ -1,0 +1,67 @@
+Mon Sep 12 16:28:29 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Mon Sep 12 16:29:44 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 16:29:45 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 16:29:46 2022 - INFO  - Start to run test.
+Mon Sep 12 16:29:48 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 16:29:49 2022 - ERROR - netserver execution failed.
+Mon Sep 12 16:29:50 2022 - ERROR - oe_test_netperf_basic_command.sh line 32
+Netperf version 2.7.0
+Usage: netperf [global options] -- [test options] 
+Mon Sep 12 16:29:51 2022 - ERROR - netperf -H execution failed.
+Mon Sep 12 16:29:52 2022 - ERROR - oe_test_netperf_basic_command.sh line 39
+Mon Sep 12 16:29:53 2022 - ERROR - netperf -a -A execution failed.
+Mon Sep 12 16:29:53 2022 - ERROR - oe_test_netperf_basic_command.sh line 41
+Mon Sep 12 16:29:54 2022 - ERROR - netperf -c -C execution failed.
+Mon Sep 12 16:29:55 2022 - ERROR - oe_test_netperf_basic_command.sh line 43
+Mon Sep 12 16:29:56 2022 - ERROR - netperf -d execution failed.
+Mon Sep 12 16:29:56 2022 - ERROR - oe_test_netperf_basic_command.sh line 45
+Mon Sep 12 16:29:57 2022 - ERROR - netperf -F file execution failed.
+Mon Sep 12 16:29:58 2022 - ERROR - oe_test_netperf_basic_command.sh line 47
+Mon Sep 12 16:29:59 2022 - ERROR - netperf -i -I execution failed.
+Mon Sep 12 16:29:59 2022 - ERROR - oe_test_netperf_basic_command.sh line 49
+Mon Sep 12 16:30:00 2022 - ERROR - netperf -r execution failed.
+Mon Sep 12 16:30:01 2022 - ERROR - oe_test_netperf_basic_command.sh line 51
+Mon Sep 12 16:30:02 2022 - ERROR - netperf -j -L execution failed.
+Mon Sep 12 16:30:02 2022 - ERROR - oe_test_netperf_basic_command.sh line 53
+Mon Sep 12 16:30:03 2022 - ERROR - netperf -o -n 2 execution failed.
+Mon Sep 12 16:30:04 2022 - ERROR - oe_test_netperf_basic_command.sh line 55
+netperf: send_omni: connect_data_socket failed: Address family not supported by protocol
+MIGRATED TCP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to localhost (::1) port 9 AF_INET6 : no control
+Mon Sep 12 16:30:05 2022 - ERROR - netperf -s 1 -S 1execution failed.
+Mon Sep 12 16:30:05 2022 - ERROR - oe_test_netperf_basic_command.sh line 59
+Mon Sep 12 16:30:06 2022 - ERROR - netperf -T 1,1 -S 1execution failed.
+Mon Sep 12 16:30:07 2022 - ERROR - oe_test_netperf_basic_command.sh line 61
+Mon Sep 12 16:30:08 2022 - ERROR - netperf -v 2 1execution failed.
+Mon Sep 12 16:30:08 2022 - ERROR - oe_test_netperf_basic_command.sh line 63
+Mon Sep 12 16:30:09 2022 - ERROR - netperf -y 1,1 1execution failed.
+Mon Sep 12 16:30:10 2022 - ERROR - oe_test_netperf_basic_command.sh line 65
+Mon Sep 12 16:30:11 2022 - ERROR - netperf -Y 1,1 1execution failed.
+Mon Sep 12 16:30:11 2022 - ERROR - oe_test_netperf_basic_command.sh line 67
+Mon Sep 12 16:30:12 2022 - ERROR - netperf -f M execution failed.
+Mon Sep 12 16:30:13 2022 - ERROR - oe_test_netperf_basic_command.sh line 69
+Mon Sep 12 16:30:14 2022 - ERROR - netperf -l 5 execution failed.
+Mon Sep 12 16:30:14 2022 - ERROR - oe_test_netperf_basic_command.sh line 71
+Mon Sep 12 16:30:15 2022 - ERROR - netperf -m 1024 execution failed.
+Mon Sep 12 16:30:16 2022 - ERROR - oe_test_netperf_basic_command.sh line 73
+Mon Sep 12 16:30:17 2022 - ERROR - netperf -O with different options execution failed.
+Mon Sep 12 16:30:17 2022 - ERROR - oe_test_netperf_basic_command.sh line 77
+Mon Sep 12 16:30:20 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 16:30:21 2022 - INFO  - End to run test.
+Mon Sep 12 16:30:21 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:30:22 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 16:30:24 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 16:30:48 2022 - INFO  - End to restore the test environment.

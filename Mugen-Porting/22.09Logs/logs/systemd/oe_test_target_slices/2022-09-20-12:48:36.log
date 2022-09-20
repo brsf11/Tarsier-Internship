@@ -1,0 +1,10 @@
+Tue Sep 20 12:48:39 2022 - INFO  - Start to run test.
+     Active: active since Tue 2022-09-20 12:48:39 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:48:45 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:48:51 CST; 5s ago
+Tue Sep 20 12:48:58 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload slices.target: Job type reload is not applicable for unit slices.target.
+     Active: active since Tue 2022-09-20 12:48:51 CST; 7s ago
+Tue Sep 20 12:48:59 2022 - INFO  - End of the test.
+Tue Sep 20 12:48:59 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:49:00 2022 - INFO  - oe_test_target_slices.sh post_test

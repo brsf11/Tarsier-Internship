@@ -1,0 +1,41 @@
+Mon Sep 12 23:46:32 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:47:27 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 23:47:27 2022 - INFO  - Start to run test.
+spawn targetcli
+Warning: Could not load preferences file /root/.targetcli/prefs.bin.
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "help\r"}"
+Mon Sep 12 23:47:32 2022 - ERROR - oe_test_targetcli_01.sh line 40
+Mon Sep 12 23:47:37 2022 - ERROR - oe_test_targetcli_01.sh line 42
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "iscsi/ create\r"}"
+Mon Sep 12 23:47:42 2022 - ERROR - oe_test_targetcli_01.sh line 52
+Mon Sep 12 23:47:47 2022 - ERROR - oe_test_targetcli_01.sh line 54
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "iscsi//tpg1/luns/ create /backstores/fileio/file1\r"} "
+Mon Sep 12 23:47:56 2022 - ERROR - oe_test_targetcli_01.sh line 65
+Mon Sep 12 23:48:01 2022 - ERROR - oe_test_targetcli_01.sh line 67
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "iscsi/ delete \r"}"
+Mon Sep 12 23:48:06 2022 - ERROR - oe_test_targetcli_01.sh line 77
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "backstores/fileio delete file1\r"}"
+Mon Sep 12 23:48:15 2022 - ERROR - oe_test_targetcli_01.sh line 89
+Mon Sep 12 23:48:19 2022 - INFO  - End of the test.
+Mon Sep 12 23:48:20 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:48:21 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:48:39 2022 - INFO  - Finish restoring the test environment.

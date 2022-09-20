@@ -1,0 +1,15 @@
+Fri Sep  9 02:50:43 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:51:37 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:51:38 2022 - INFO  - Start to run test.
+     Active: active (listening) since Fri 2022-09-09 02:51:38 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Fri 2022-09-09 02:51:50 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/epmd.socket
+Removed /etc/systemd/system/sockets.target.wants/epmd.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/epmd.socket’: No such file or directory
+Failed to reload epmd.socket: Job type reload is not applicable for unit epmd.socket.
+     Active: active (listening) since Fri 2022-09-09 02:51:50 CST; 15s ago
+Fri Sep  9 02:52:07 2022 - INFO  - End of the test.
+Fri Sep  9 02:52:07 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 02:52:08 2022 - INFO  - start environment cleanup.
+Fri Sep  9 02:52:26 2022 - INFO  - Finish environment cleanup!

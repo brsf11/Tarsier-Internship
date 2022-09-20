@@ -1,0 +1,39 @@
+Mon Sep 12 19:31:59 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 19:32:48 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 19:32:49 2022 - INFO  - Start to run test.
+Failed to restart qemu-pr-helper.socket: Unit qemu-pr-helper.socket not found.
+Mon Sep 12 19:32:50 2022 - ERROR - qemu-pr-helper.socket restart failed
+Mon Sep 12 19:32:51 2022 - ERROR - ../common/common_lib.sh line 34
+Unit qemu-pr-helper.socket could not be found.
+Mon Sep 12 19:32:57 2022 - ERROR - qemu-pr-helper.socket restart failed
+Mon Sep 12 19:32:58 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop qemu-pr-helper.socket: Unit qemu-pr-helper.socket not loaded.
+Mon Sep 12 19:32:59 2022 - ERROR - qemu-pr-helper.socket stop failed
+Mon Sep 12 19:32:59 2022 - ERROR - ../common/common_lib.sh line 39
+Unit qemu-pr-helper.socket could not be found.
+Mon Sep 12 19:33:06 2022 - ERROR - qemu-pr-helper.socket stop failed
+Mon Sep 12 19:33:06 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start qemu-pr-helper.socket: Unit qemu-pr-helper.socket not found.
+Mon Sep 12 19:33:07 2022 - ERROR - qemu-pr-helper.socket start failed
+Mon Sep 12 19:33:08 2022 - ERROR - ../common/common_lib.sh line 44
+Unit qemu-pr-helper.socket could not be found.
+Mon Sep 12 19:33:15 2022 - ERROR - qemu-pr-helper.socket start failed
+Mon Sep 12 19:33:15 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for qemu-pr-helper.socket: No such file or directory
+Mon Sep 12 19:33:16 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start qemu-pr-helper.socket: Unit qemu-pr-helper.socket not found.
+Mon Sep 12 19:33:17 2022 - ERROR - Job type reload is not applicable for unit qemu-pr-helper.socket
+Mon Sep 12 19:33:18 2022 - ERROR - ../common/common_lib.sh line 91
+Unit qemu-pr-helper.socket could not be found.
+Unit qemu-pr-helper.socket could not be found.
+Mon Sep 12 19:33:19 2022 - INFO  - End of the test.
+Mon Sep 12 19:33:19 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:33:20 2022 - INFO  - start environment cleanup.
+Failed to stop qemu-pr-helper.socket: Unit qemu-pr-helper.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:13:22 ago on Mon 12 Sep 2022 07:19:25 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libnuma.so.1()(64bit) needed by qemu-2:6.2.0-24.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.1)(64bit) needed by qemu-2:6.2.0-24.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 19:33:23 2022 - INFO  - Finish environment cleanup!

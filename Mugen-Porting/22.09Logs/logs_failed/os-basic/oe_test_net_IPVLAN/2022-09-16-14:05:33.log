@@ -1,0 +1,6 @@
+Fri Sep 16 14:05:35 2022 - INFO  - Start to config params of the case.
+
+Fri Sep 16 14:06:49 2022 - INFO  - Start to restore the test environment.
+Cannot find device "my_ipvlan"
+Error: No connection specified.
+Fri Sep 16 14:06:50 2022 - INFO  - End to restore the test environment.

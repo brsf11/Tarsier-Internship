@@ -1,0 +1,79 @@
+Fri Sep  9 07:06:14 2022 - INFO  - Start to config params of the case.
+Fri Sep  9 07:06:15 2022 - INFO  - End to config params of the case.
+Fri Sep  9 07:06:16 2022 - INFO  - Start to prepare the test environment.
+oe_test_logwatch.sh: line 38: /usr/share/logwatch/default.conf/logwatch.conf: No such file or directory
+Failed to start dovecot.service: Unit dovecot.service not found.
+oe_test_logwatch.sh: line 40: flag: command not found
+oe_test_logwatch.sh: line 41: []: command not found
+Failed to start postfix.service: Unit postfix.service not found.
+Fri Sep  9 07:07:04 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:07:05 2022 - INFO  - Start to run test.
+oe_test_logwatch.sh: line 53: logwatch: command not found
+Fri Sep  9 07:07:05 2022 - ERROR - logwatch version Test --version FAILED.
+Fri Sep  9 07:07:06 2022 - ERROR - oe_test_logwatch.sh line 54
+Fri Sep  9 07:07:07 2022 - ERROR - logwatch help Test --help FAILED.
+Fri Sep  9 07:07:08 2022 - ERROR - oe_test_logwatch.sh line 58
+Fri Sep  9 07:07:08 2022 - ERROR - logwatch usage Test --usage FAILED.
+Fri Sep  9 07:07:09 2022 - ERROR - oe_test_logwatch.sh line 61
+oe_test_logwatch.sh: line 64: logwatch: command not found
+Fri Sep  9 07:07:10 2022 - ERROR - logwatch normal service Test --service --range
+                         --detail --output --format --encode FAILED.
+Fri Sep  9 07:07:10 2022 - ERROR - oe_test_logwatch.sh line 66
+oe_test_logwatch.sh: line 70: logwatch: command not found
+Fri Sep  9 07:07:11 2022 - ERROR - logwatch normal service in html format Test --service --range 
+                         --detail --debug --output --format --encode FAILED.
+Fri Sep  9 07:07:12 2022 - ERROR - oe_test_logwatch.sh line 72
+oe_test_logwatch.sh: line 76: logwatch: command not found
+oe_test_logwatch.sh: line 80: logwatch: command not found
+grep: ./logwatch_log.txt: No such file or directory
+Fri Sep  9 07:07:13 2022 - ERROR - logwatch save to file test --logfile --range --detail
+                         --debug --output --filename --format --encode FAILED.
+Fri Sep  9 07:07:13 2022 - ERROR - oe_test_logwatch.sh line 83
+oe_test_logwatch.sh: line 87: logwatch: command not found
+Fri Sep  9 07:07:14 2022 - ERROR - logwatch sendmail test --service --range --detail --output 
+                         --logdir --mailto --subject --hostformat --encode FAILED.
+                         position 1
+Fri Sep  9 07:07:15 2022 - ERROR - oe_test_logwatch.sh line 89
+grep: /var/spool/mail/root: No such file or directory
+Fri Sep  9 07:07:21 2022 - ERROR - logwatch sendmail test --service --range --detail --output 
+                            --logdir --mailto --subject --hostformat --encode FAILED.
+                            position 2
+Fri Sep  9 07:07:22 2022 - ERROR - oe_test_logwatch.sh line 94
+oe_test_logwatch.sh: line 99: logwatch: command not found
+Fri Sep  9 07:07:23 2022 - ERROR - logwatch sendmail to multi host test --service --range
+                        --detail --output --mailto --subject --hostformat FAILED.
+                        position 1
+Fri Sep  9 07:07:23 2022 - ERROR - oe_test_logwatch.sh line 101
+grep: /var/spool/mail/root: No such file or directory
+Fri Sep  9 07:07:30 2022 - ERROR - logwatch sendmail to multi host test --service --range
+                        --detail --output --mailto --subject --hostformat FAILED. 
+                        position 2
+Fri Sep  9 07:07:30 2022 - ERROR - oe_test_logwatch.sh line 107
+Fri Sep  9 07:07:31 2022 - ERROR - logwatch sendmail to multi host test --service --range
+                        --detail --output --mailto --subject --hostformat FAILED.
+                        position 3
+Fri Sep  9 07:07:32 2022 - ERROR - oe_test_logwatch.sh line 112
+oe_test_logwatch.sh: line 117: logwatch: command not found
+Fri Sep  9 07:07:33 2022 - ERROR - logwatch hosname argument test --service --range
+                         --detail --hostname FAILED.
+Fri Sep  9 07:07:33 2022 - ERROR - oe_test_logwatch.sh line 118
+oe_test_logwatch.sh: line 122: logwatch: command not found
+oe_test_logwatch.sh: line 127: logwatch: command not found
+cp: cannot stat '/var/log/messages': No such file or directory
+oe_test_logwatch.sh: line 133: logwatch: command not found
+oe_test_logwatch.sh: line 133: logwatch: command not found
+oe_test_logwatch.sh: line 133: [0: command not found
+Fri Sep  9 07:07:34 2022 - INFO  - End to run test.
+Fri Sep  9 07:07:35 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:07:36 2022 - INFO  - Start to restore the test environment.
+sed: can't read /usr/share/logwatch/default.conf/logwatch.conf: No such file or directory
+Failed to stop dovecot.service: Unit dovecot.service not loaded.
+Failed to stop postfix.service: Unit postfix.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:29 ago on Fri 09 Sep 2022 07:06:32 AM CST.\nError: \n Problem 1: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by postfix-2:3.7.2-1.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by postfix-2:3.7.2-1.oe2209.riscv64\n Problem 2: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+oe_test_logwatch.sh: line 149: [: missing `]'
+Fri Sep  9 07:07:40 2022 - INFO  - End to restore the test environment.

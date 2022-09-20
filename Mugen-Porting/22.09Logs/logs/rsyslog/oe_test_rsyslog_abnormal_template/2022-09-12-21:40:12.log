@@ -1,0 +1,27 @@
+Mon Sep 12 21:40:16 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 21:40:37 2022 - INFO  - pkgs:(net-tools) is already installed
+sed: can't read /var/log/messages: No such file or directory
+Failed to stop iptables.service: Unit iptables.service not loaded.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:40:38 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:40:39 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:40:39 2022 - INFO  - Start to run test.
+oe_test_rsyslog_abnormal_template.sh: line 32: /etc/rsyslog.d/server.conf: No such file or directory
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:40:40 2022 - ERROR - oe_test_rsyslog_abnormal_template.sh line 37
+Mon Sep 12 21:40:41 2022 - ERROR - oe_test_rsyslog_abnormal_template.sh line 39
+Mon Sep 12 21:40:42 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r client.conf @:/etc/rsyslog.d/client.conf
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Mon Sep 12 21:40:43 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:40:44 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:40:44 2022 - ERROR - oe_test_rsyslog_abnormal_template.sh line 50
+grep: /var/log/messages: No such file or directory
+Mon Sep 12 21:41:06 2022 - ERROR - oe_test_rsyslog_abnormal_template.sh line 53
+Mon Sep 12 21:41:07 2022 - INFO  - End to run test.
+Mon Sep 12 21:41:07 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:41:08 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 21:41:08 2022 - WARN  - no thing to do.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:41:09 2022 - ERROR - Failed in remote CMD operation:1
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:41:10 2022 - INFO  - End to restore the test environment.

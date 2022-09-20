@@ -1,0 +1,19 @@
+Mon Sep 12 20:24:34 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 20:26:01 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:26:02 2022 - INFO  - Start testing...
+Mon Sep 12 20:26:09 2022 - ERROR - rasdaemon.service restart failed
+Mon Sep 12 20:26:10 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead) since Mon 2022-09-12 20:26:02 CST; 13s ago
+Mon Sep 12 20:26:23 2022 - ERROR - rasdaemon.service start failed
+Mon Sep 12 20:26:23 2022 - ERROR - ../common/common_lib.sh line 47
+find: ‘/etc/systemd/system/multi-user.target.wants/rasdaemon.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/rasdaemon.service → /usr/lib/systemd/system/rasdaemon.service.
+/etc/systemd/system/multi-user.target.wants/rasdaemon.service
+Failed to reload rasdaemon.service: Job type reload is not applicable for unit rasdaemon.service.
+     Active: inactive (dead) since Mon 2022-09-12 20:26:33 CST; 391ms ago
+Mon Sep 12 20:26:34 2022 - ERROR - rasdaemon.service reload causes the service status to change
+Mon Sep 12 20:26:34 2022 - ERROR - ../common/common_lib.sh line 95
+Mon Sep 12 20:26:35 2022 - INFO  - Finish test!
+Mon Sep 12 20:26:36 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:26:36 2022 - INFO  - start environment cleanup.
+Mon Sep 12 20:26:53 2022 - INFO  - Finish environment cleanup!

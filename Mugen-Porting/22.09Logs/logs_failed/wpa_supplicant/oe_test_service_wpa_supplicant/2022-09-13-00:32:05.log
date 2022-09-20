@@ -1,0 +1,29 @@
+Tue Sep 13 00:32:09 2022 - INFO  - Start testing...
+Failed to restart wpa_supplicant.service: Unit wpa_supplicant.service not found.
+Tue Sep 13 00:32:09 2022 - ERROR - wpa_supplicant.service restart failed
+Tue Sep 13 00:32:10 2022 - ERROR - ../common/common_lib.sh line 34
+Unit wpa_supplicant.service could not be found.
+Tue Sep 13 00:32:17 2022 - ERROR - wpa_supplicant.service restart failed
+Tue Sep 13 00:32:18 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop wpa_supplicant.service: Unit wpa_supplicant.service not loaded.
+Tue Sep 13 00:32:19 2022 - ERROR - wpa_supplicant.service stop failed
+Tue Sep 13 00:32:19 2022 - ERROR - ../common/common_lib.sh line 39
+Unit wpa_supplicant.service could not be found.
+Tue Sep 13 00:32:26 2022 - ERROR - wpa_supplicant.service stop failed
+Tue Sep 13 00:32:27 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start wpa_supplicant.service: Unit wpa_supplicant.service not found.
+Tue Sep 13 00:32:28 2022 - ERROR - wpa_supplicant.service start failed
+Tue Sep 13 00:32:28 2022 - ERROR - ../common/common_lib.sh line 44
+Unit wpa_supplicant.service could not be found.
+Tue Sep 13 00:32:35 2022 - ERROR - wpa_supplicant.service start failed
+Tue Sep 13 00:32:36 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for wpa_supplicant.service: No such file or directory
+Tue Sep 13 00:32:36 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start wpa_supplicant.service: Unit wpa_supplicant.service not found.
+Tue Sep 13 00:32:37 2022 - ERROR - Job type reload is not applicable for unit wpa_supplicant.service
+Tue Sep 13 00:32:38 2022 - ERROR - ../common/common_lib.sh line 91
+Unit wpa_supplicant.service could not be found.
+Unit wpa_supplicant.service could not be found.
+Tue Sep 13 00:32:39 2022 - INFO  - Finish test!
+Tue Sep 13 00:32:40 2022 - ERROR - failed to execute the case.
+Tue Sep 13 00:32:40 2022 - INFO  - oe_test_service_wpa_supplicant.sh post_test

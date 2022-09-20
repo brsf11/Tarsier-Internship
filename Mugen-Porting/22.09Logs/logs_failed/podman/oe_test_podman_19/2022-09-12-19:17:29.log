@@ -1,0 +1,52 @@
+Mon Sep 12 19:17:31 2022 - INFO  - Start loading data!
+Mon Sep 12 19:17:32 2022 - INFO  - Loading data is complete!
+Mon Sep 12 19:17:33 2022 - INFO  - Start environment preparation.
+../common/common_podman.sh: line 21: /etc/containers/registries.conf: No such file or directory
+oe_test_podman_19.sh: line 30: podman: command not found
+Mon Sep 12 19:18:30 2022 - INFO  - Environmental preparation is over.
+Mon Sep 12 19:18:31 2022 - INFO  - Start executing testcase.
+oe_test_podman_19.sh: line 36: podman: command not found
+Mon Sep 12 19:18:32 2022 - ERROR - oe_test_podman_19.sh line 37
+oe_test_podman_19.sh: line 38: podman: command not found
+Mon Sep 12 19:18:32 2022 - ERROR - oe_test_podman_19.sh line 39
+oe_test_podman_19.sh: line 40: podman: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Mon Sep 12 19:18:33 2022 - ERROR - oe_test_podman_19.sh line 41
+oe_test_podman_19.sh: line 42: podman: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Mon Sep 12 19:18:34 2022 - ERROR - oe_test_podman_19.sh line 43
+oe_test_podman_19.sh: line 44: podman: command not found
+Mon Sep 12 19:18:35 2022 - ERROR - oe_test_podman_19.sh line 45
+oe_test_podman_19.sh: line 46: podman: command not found
+Mon Sep 12 19:18:35 2022 - ERROR - oe_test_podman_19.sh line 47
+oe_test_podman_19.sh: line 48: podman: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Mon Sep 12 19:18:36 2022 - ERROR - oe_test_podman_19.sh line 49
+oe_test_podman_19.sh: line 50: podman: command not found
+Mon Sep 12 19:18:37 2022 - ERROR - oe_test_podman_19.sh line 51
+oe_test_podman_19.sh: line 52: podman: command not found
+Mon Sep 12 19:18:37 2022 - ERROR - oe_test_podman_19.sh line 53
+oe_test_podman_19.sh: line 54: podman: command not found
+Mon Sep 12 19:18:38 2022 - ERROR - oe_test_podman_19.sh line 55
+oe_test_podman_19.sh: line 56: podman: command not found
+Mon Sep 12 19:18:39 2022 - ERROR - oe_test_podman_19.sh line 57
+oe_test_podman_19.sh: line 58: podman: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Mon Sep 12 19:18:39 2022 - ERROR - oe_test_podman_19.sh line 59
+Mon Sep 12 19:18:40 2022 - INFO  - End executing testcase.
+Mon Sep 12 19:18:41 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:18:41 2022 - INFO  - start environment cleanup.
+../common/common_podman.sh: line 33: podman: command not found
+../common/common_podman.sh: line 34: podman: command not found
+../common/common_podman.sh: line 35: podman: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:22:24 ago on Mon 12 Sep 2022 06:56:05 PM CST.\nError: \n Problem 1: conflicting requests\n  - nothing provides crun needed by podman-1:3.4.4-2.oe2209.riscv64\n Problem 2: package podman-docker-1:3.4.4-2.oe2209.noarch requires podman = 1:3.4.4-2.oe2209, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides crun needed by podman-1:3.4.4-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 19:18:44 2022 - INFO  - Finish environment cleanup.

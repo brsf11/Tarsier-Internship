@@ -1,0 +1,52 @@
+Mon Sep 12 17:54:12 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 17:55:11 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:55:12 2022 - INFO  - Start to run test.
+osx:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osx:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osx:normal.sgml:3:5:E: element "HTML" undefined
+osx:normal.sgml:4:8:E: element "HEAD" undefined
+osx:normal.sgml:5:12:E: element "TITLE" undefined
+osx:normal.sgml:7:8:E: element "BODY" undefined
+osx:normal.sgml:8:8:E: element "P" undefined
+>Hello world!
+<?xml version="1.0"?>
+<HTML
+>   <HEAD
+>      <TITLE
+>My first HTML document</TITLE>
+   </HEAD>
+   <BODY
+>      <P
+>Hello world!
+   </P></BODY></HTML>
+Mon Sep 12 17:57:46 2022 - ERROR - oe_test_opensp_osx.sh line 35
+Usage: osx [OPTION] SYSID...
+>Hello world!
+osx:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osx:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osx:normal.sgml:3:5:E: element "HTML" undefined
+osx:normal.sgml:4:8:E: element "HEAD" undefined
+osx:normal.sgml:5:12:E: element "TITLE" undefined
+osx:normal.sgml:7:8:E: element "BODY" undefined
+osx:normal.sgml:8:8:E: element "P" undefined
+>Hello world!
+osx:normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osx:normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osx:normal.sgml:3:5:E: element "HTML" undefined
+osx:normal.sgml:4:8:E: element "HEAD" undefined
+osx:normal.sgml:5:12:E: element "TITLE" undefined
+osx:normal.sgml:7:8:E: element "BODY" undefined
+osx:normal.sgml:8:8:E: element "P" undefined
+>Hello world!
+osx:./testdir/normal.sgml:2:44:E: error connecting to "www.w3.org" (Connection refused)
+osx:./testdir/normal.sgml:2:44:E: DTD did not contain element declaration for document type name
+osx:./testdir/normal.sgml:3:5:E: element "HTML" undefined
+osx:./testdir/normal.sgml:4:8:E: element "HEAD" undefined
+osx:./testdir/normal.sgml:5:12:E: element "TITLE" undefined
+osx:./testdir/normal.sgml:7:8:E: element "BODY" undefined
+osx:./testdir/normal.sgml:8:8:E: element "P" undefined
+>Hello world!
+Mon Sep 12 18:02:55 2022 - INFO  - End of the test.
+Mon Sep 12 18:02:56 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:02:56 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 18:03:28 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,88 @@
+Fri Sep  9 04:55:18 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:55:26 2022 - INFO  - pkgs:(freeradius freeradius-utils vim vim-common) is already installed
+Fri Sep  9 04:55:29 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:55:29 2022 - INFO  - Start to run test.
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.323778 (1) Status-Server Id 147 ../common/test.pcap:127.0.0.1:37868 -> 127.0.0.1:1812 +0.000
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+00000000: 11010100 11000011 10110010 10100001 00000010 00000000  ......
+00000006: 00000100 00000000 00000000 00000000 00000000 00000000  ......
+0000000c: 00000000 00000000 00000000 00000000 01011010 00010000  ....Z.
+00000012: 00000000 00000000 00000001 00000000 00000000 00000000  ......
+00000018: 01110110 11001011 01001001 01100000 11000010 11110000  v.I`..
+0000001e: 00000100 00000000 01010000 00000000 00000000 00000000  ..P...
+00000024: 01010000 00000000 00000000 00000000 00000000 00000000  P.....
+0000002a: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00000030: 00000000 00000000 00000000 00000000 00001000 00000000  ......
+00000036: 01000101 00000000 00000000 01000010 00100011 01011001  E..B#Y
+0000003c: 00000000 00000000 01000000 00010001 01011001 01010000  ..@.YP
+00000042: 01111111 00000000 00000000 00000001 01111111 00000000  ......
+00000048: 00000000 00000001 10010011 11101100 00000111 00010100  ......
+0000004e: 00000000 00101110 11111110 01000001 00001100 10010011  ...A..
+00000054: 00000000 00100110 10110011 00000110 00011111 11100100  .&....
+0000005a: 11001101 00111010 11111101 11111100 01101110 00100000  .:..n 
+00000060: 10111011 00011001 10110010 00000000 10001111 10000100  ......
+00000066: 01010000 00010010 00010110 10011000 10111100 01101000  P....h
+0000006c: 11110100 01001011 10111111 00001111 01111001 00010111  .K..y.
+00000072: 10010111 01000001 01010100 00010100 01111101 11101000  .AT.}.
+00000078: 01110110 11001011 01001001 01100000 00100000 11110100  v.I` .
+0000007e: 00000100 00000000 00111110 00000000 00000000 00000000  ..>...
+00000084: 00111110 00000000 00000000 00000000 00000000 00000000  >.....
+0000008a: 00000000 00000000 00000000 00000000 00000000 00000000  ......
+00000090: 00000000 00000000 00000000 00000000 00001000 00000000  ......
+00000096: 01000101 00000000 00000000 00110000 00100011 01011010  E..0#Z
+0000009c: 00000000 00000000 01000000 00010001 01011001 01100001  ..@.Ya
+000000a2: 01111111 00000000 00000000 00000001 01111111 00000000  ......
+000000a8: 00000000 00000001 00000111 00010100 10010011 11101100  ......
+000000ae: 00000000 00011100 11111110 00101111 00000010 10010011  .../..
+000000b4: 00000000 00010100 00111011 01101000 10010010 01110111  ..;h.w
+000000ba: 00010100 10100100 00111001 00010100 10100001 00111010  ..9..:
+radsniff version 3.0.25, built on Aug  6 2022 at 20:54:34 libpcap version 1.10.1 (with TPACKET_V3)
+Usage: radsniff [options][stats options] -- [pcap files]
+options:
+  -a                    List all interfaces available for capture.
+  -c <count>            Number of packets to capture.
+  -C                    Enable UDP checksum validation.
+  -d <directory>        Set dictionary directory.
+  -d <raddb>            Set configuration directory (defaults to /etc/raddb).
+  -D <dictdir>          Set main dictionary directory (defaults to /usr/share/freeradius).
+  -e <event>[,<event>]  Only log requests with these event flags.
+                        Event may be one of the following:
+                        - received - a request or response.
+                        - norsp    - seen for a request.
+                        - rtx      - of a request that we've seen before.
+                        - noreq    - could be matched with the response.
+                        - reused   - ID too soon.
+                        - error    - decoding the packet.
+  -f <filter>           PCAP filter (default is 'udp port <port> or <port + 1> or 3799')
+  -h                    This help message.
+  -i <interface>        Capture packets from interface (defaults to all if supported).
+  -I <file>             Read packets from file (overrides input of -F).
+  -l <attr>[,<attr>]    Output packet sig and a list of attributes.
+  -L <attr>[,<attr>]    Detect retransmissions using these attributes to link requests.
+  -m                    Don't put interface(s) into promiscuous mode.
+  -p <port>             Filter packets by port (default is 1812).
+  -P <pidfile>          Daemonize and write out <pidfile>.
+  -q                    Print less debugging information.
+  -r <filter>           RADIUS attribute request filter.
+  -R <filter>           RADIUS attribute response filter.
+  -s <secret>           RADIUS secret.
+  -S                    Write PCAP data to stdout.
+  -v                    Show program version information.
+  -w <file>             Write output packets to file.
+  -x                    Print more debugging information.
+stats options:
+  -W <interval>         Periodically write out statistics every <interval> seconds.
+  -T <timeout>          How many milliseconds before the request is counted as lost (defaults to 5200).
+xxd: /tmp/test.pcap: No such file or directory
+Fri Sep  9 04:55:32 2022 - ERROR - radsniff -w execution failed.
+Fri Sep  9 04:55:33 2022 - ERROR - oe_test_freeradius_freeradius-utils_radsniff2.sh line 48
+	Authenticator-Field = 0xb3061fe4cd3afdfc6e20bb19b2008f84
+	Authenticator-Field = 0x3b68927714a43914a13a282c5ca1ea52
+Muting stats for the next 5200 milliseconds (warmup)
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+Fri Sep  9 04:55:34 2022 - INFO  - End to run test.
+Fri Sep  9 04:55:35 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:55:36 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 04:55:37 2022 - WARN  - no thing to do.
+Fri Sep  9 04:55:37 2022 - INFO  - End to restore the test environment.

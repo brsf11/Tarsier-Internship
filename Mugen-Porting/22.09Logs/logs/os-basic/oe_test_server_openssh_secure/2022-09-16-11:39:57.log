@@ -1,0 +1,18 @@
+Fri Sep 16 11:39:59 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 16 11:40:17 2022 - INFO  - pkgs:(openssh-server openssh-clients openssh) is already installed
+Failed to start firewalld.service: Unit firewalld.service not found.
+Fri Sep 16 11:41:05 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 11:41:06 2022 - INFO  - Start to run test.
+Created symlink /etc/systemd/system/sshd-keygen@rsa.service → /dev/null.
+oe_test_server_openssh_secure.sh: line 43: firewall-cmd: command not found
+Fri Sep 16 11:41:11 2022 - ERROR - oe_test_server_openssh_secure.sh line 44
+oe_test_server_openssh_secure.sh: line 45: firewall-cmd: command not found
+Fri Sep 16 11:41:12 2022 - ERROR - oe_test_server_openssh_secure.sh line 46
+Setting system policy to FUTURE
+Note: System-wide crypto policies are applied on application start-up.
+It is recommended to restart the system for the change of policies
+to fully take place.
+Fri Sep 16 11:41:15 2022 - INFO  - End to run test.
+Fri Sep 16 11:41:15 2022 - ERROR - failed to execute the case.
+Fri Sep 16 11:41:16 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 11:41:21 2022 - INFO  - End to restore the test environment.

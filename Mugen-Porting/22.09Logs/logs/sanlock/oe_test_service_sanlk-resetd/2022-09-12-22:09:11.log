@@ -1,0 +1,32 @@
+Mon Sep 12 22:09:14 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 22:11:00 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 22:11:01 2022 - INFO  - Start testing...
+A dependency job for sanlk-resetd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 22:11:02 2022 - ERROR - sanlk-resetd.service restart failed
+Mon Sep 12 22:11:03 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 22:11:10 2022 - ERROR - sanlk-resetd.service restart failed
+Mon Sep 12 22:11:10 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+A dependency job for sanlk-resetd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 22:11:17 2022 - ERROR - sanlk-resetd.service start failed
+Mon Sep 12 22:11:18 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 22:11:25 2022 - ERROR - sanlk-resetd.service start failed
+Mon Sep 12 22:11:25 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/sanlk-resetd.service
+Removed /etc/systemd/system/multi-user.target.wants/sanlk-resetd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/sanlk-resetd.service’: No such file or directory
+Sep 12 22:11:02 openEuler-riscv64 systemd[1]: Dependency failed for daemon for host reset.
+Sep 12 22:11:02 openEuler-riscv64 systemd[1]: sanlk-resetd.service: Job sanlk-resetd.service/start failed with result 'dependency'.
+Sep 12 22:11:17 openEuler-riscv64 systemd[1]: Dependency failed for daemon for host reset.
+Sep 12 22:11:17 openEuler-riscv64 systemd[1]: sanlk-resetd.service: Job sanlk-resetd.service/start failed with result 'dependency'.
+Mon Sep 12 22:11:35 2022 - ERROR - There is an error message for the log of sanlk-resetd.service
+Mon Sep 12 22:11:36 2022 - ERROR - ../common/common_lib.sh line 28
+A dependency job for sanlk-resetd.service failed. See 'journalctl -xe' for details.
+Failed to reload sanlk-resetd.service: Job type reload is not applicable for unit sanlk-resetd.service.
+     Active: inactive (dead)
+Mon Sep 12 22:11:37 2022 - ERROR - sanlk-resetd.service reload causes the service status to change
+Mon Sep 12 22:11:38 2022 - ERROR - ../common/common_lib.sh line 95
+Mon Sep 12 22:11:39 2022 - INFO  - Finish test!
+Mon Sep 12 22:11:39 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:11:40 2022 - INFO  - start environment cleanup.
+Mon Sep 12 22:12:07 2022 - INFO  - Finish environment cleanup!

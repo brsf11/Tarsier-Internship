@@ -1,0 +1,20 @@
+Fri Sep 16 11:34:31 2022 - INFO  - Start loading data!
+Fri Sep 16 11:34:32 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 11:34:33 2022 - INFO  - Loading data is complete!
+Fri Sep 16 11:34:33 2022 - INFO  - Start to prepare the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:34:34 2022 - ERROR - Failed in remote CMD operation:1
+oe_test_server_vsftpd_NKdelay.sh: line 35: setsebool: command not found
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:35:09 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 11:35:10 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 11:35:10 2022 - INFO  - Start to run test.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:35:11 2022 - ERROR - Failed in remote CMD operation:1
+find: ‘download_file1.txt’: No such file or directory
+Fri Sep 16 11:35:12 2022 - ERROR - oe_test_server_vsftpd_NKdelay.sh line 53
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:35:13 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 11:35:13 2022 - INFO  - End to run test.
+Fri Sep 16 11:35:14 2022 - ERROR - failed to execute the case.
+Fri Sep 16 11:35:15 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:35:15 2022 - ERROR - Failed in remote CMD operation:1
+usage: rpm_manage.py install|remove [-h] [--node NODE] [--pkgs PKG] [--tempfile TEPMFILE]
+rpm_manage.py: error: argument --node: invalid int value: 'ftp'
+Fri Sep 16 11:35:18 2022 - INFO  - End to restore the test environment.

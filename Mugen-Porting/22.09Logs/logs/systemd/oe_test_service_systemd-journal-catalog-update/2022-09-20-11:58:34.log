@@ -1,0 +1,13 @@
+Tue Sep 20 11:58:36 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 11:58:37 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 11:58:37 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 11:58:38 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 11:58:44 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 11:58:50 CST; 5s ago
+Tue Sep 20 11:58:56 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-journal-catalog-update.service: Job type reload is not applicable for unit systemd-journal-catalog-update.service.
+     Active: active (exited) since Tue 2022-09-20 11:58:50 CST; 6s ago
+Tue Sep 20 11:58:57 2022 - INFO  - Finish test!
+Tue Sep 20 11:58:58 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:58:59 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:58:59 2022 - INFO  - Finish environment cleanup!

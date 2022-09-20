@@ -1,0 +1,31 @@
+Tue Sep 20 12:08:02 2022 - INFO  - Start testing...
+Failed to restart systemd-networkd.service: Unit systemd-networkd.service not found.
+Tue Sep 20 12:08:03 2022 - ERROR - systemd-networkd.service restart failed
+Tue Sep 20 12:08:03 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-networkd.service could not be found.
+Tue Sep 20 12:08:10 2022 - ERROR - systemd-networkd.service restart failed
+Tue Sep 20 12:08:11 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-networkd.service: Unit systemd-networkd.service not loaded.
+Tue Sep 20 12:08:11 2022 - ERROR - systemd-networkd.service stop failed
+Tue Sep 20 12:08:12 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-networkd.service could not be found.
+Tue Sep 20 12:08:18 2022 - ERROR - systemd-networkd.service stop failed
+Tue Sep 20 12:08:19 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-networkd.service: Unit systemd-networkd.service not found.
+Tue Sep 20 12:08:20 2022 - ERROR - systemd-networkd.service start failed
+Tue Sep 20 12:08:20 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-networkd.service could not be found.
+Tue Sep 20 12:08:27 2022 - ERROR - systemd-networkd.service start failed
+Tue Sep 20 12:08:27 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-networkd.service: No such file or directory
+Tue Sep 20 12:08:28 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-networkd.service: Unit systemd-networkd.service not found.
+Tue Sep 20 12:08:29 2022 - ERROR - Job type reload is not applicable for unit systemd-networkd.service
+Tue Sep 20 12:08:29 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-networkd.service could not be found.
+Unit systemd-networkd.service could not be found.
+Tue Sep 20 12:08:30 2022 - INFO  - Finish test!
+Tue Sep 20 12:08:31 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:08:31 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-networkd.service: Unit systemd-networkd.service not loaded.
+Tue Sep 20 12:08:32 2022 - INFO  - Finish environment cleanup!

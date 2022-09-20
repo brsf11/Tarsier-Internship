@@ -1,0 +1,27 @@
+Fri Sep 16 14:50:29 2022 - INFO  - Start to run test.
+Connection 'bond0' (25e282db-9495-4296-a76e-fd230f103f6a) successfully added.
+Warning: There is another connection with the name 'bond0'. Reference the connection by its uuid 'fd507cb7-36a3-49d5-8d76-f64b4109cbfc'
+Connection 'bond0' (fd507cb7-36a3-49d5-8d76-f64b4109cbfc) successfully added.
+Fri Sep 16 14:50:35 2022 - ERROR - oe_test_nmcli_set_bond.sh line 49
+Connection 'bond0-port1' (120ec4e3-ebcf-40aa-b66b-50a0e31f27f1) successfully added.
+Connection 'bond0-port2' (dc881b95-4982-4f5f-8a37-80d8168cdb96) successfully added.
+Error: Connection activation failed: bond0 failed to create resources: Failed to create bond interface 'bond0' for 'bond0': Operation not supported
+Fri Sep 16 14:50:36 2022 - ERROR - oe_test_nmcli_set_bond.sh line 55
+Fri Sep 16 14:50:37 2022 - ERROR - oe_test_nmcli_set_bond.sh line 57
+NAME                UUID                                  TYPE      DEVICE 
+Wired connection 1  4fc4eb9a-94a3-3a40-ad68-b2dfeeb99aee  ethernet  eth0   
+bond0               25e282db-9495-4296-a76e-fd230f103f6a  bond      --     
+bond0               fd507cb7-36a3-49d5-8d76-f64b4109cbfc  bond      --     
+bond0-port1         120ec4e3-ebcf-40aa-b66b-50a0e31f27f1  ethernet  --     
+bond0-port2         dc881b95-4982-4f5f-8a37-80d8168cdb96  ethernet  --     
+Error: Connection activation failed: bond0 failed to create resources: Failed to create bond interface 'bond0' for 'bond0': Operation not supported
+Fri Sep 16 14:50:39 2022 - ERROR - oe_test_nmcli_set_bond.sh line 63
+grep: /proc/net/bonding/bond0: No such file or directory
+Fri Sep 16 14:50:40 2022 - ERROR - oe_test_nmcli_set_bond.sh line 65
+Connection 'bond0-port1' (120ec4e3-ebcf-40aa-b66b-50a0e31f27f1) successfully deleted.
+Connection 'bond0-port2' (dc881b95-4982-4f5f-8a37-80d8168cdb96) successfully deleted.
+Connection 'bond0' (25e282db-9495-4296-a76e-fd230f103f6a) successfully deleted.
+Connection 'bond0' (fd507cb7-36a3-49d5-8d76-f64b4109cbfc) successfully deleted.
+Fri Sep 16 14:50:41 2022 - INFO  - End to run test.
+Fri Sep 16 14:50:41 2022 - ERROR - failed to execute the case.
+Fri Sep 16 14:50:42 2022 - INFO  - oe_test_nmcli_set_bond.sh post_test

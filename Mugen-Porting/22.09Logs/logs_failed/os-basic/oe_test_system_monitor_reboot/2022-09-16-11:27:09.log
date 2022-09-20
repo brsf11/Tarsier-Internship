@@ -1,0 +1,36 @@
+Fri Sep 16 11:27:11 2022 - INFO  - Start to run test.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:27:12 2022 - ERROR - Failed in remote CMD operation:1
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:27:15 2022 - ERROR - Failed in remote CMD operation:1
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:27:18 2022 - ERROR - Failed in remote CMD operation:1
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 11:27:21 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 11:27:22 2022 - ERROR - oe_test_system_monitor_reboot.sh line 30
+Fri Sep 16 11:27:23 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep 16 11:27:23 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/rebootlog2 .
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep 16 11:27:25 2022 - ERROR - Failed in remote SCP operation: 1
+Fri Sep 16 11:27:25 2022 - ERROR - oe_test_system_monitor_reboot.sh line 32
+cat: rebootlog2: No such file or directory
+Fri Sep 16 11:27:26 2022 - ERROR - oe_test_system_monitor_reboot.sh line 35
+Fri Sep 16 11:27:27 2022 - INFO  - End to run test.
+Fri Sep 16 11:27:27 2022 - ERROR - failed to execute the case.
+Fri Sep 16 11:27:28 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 11:27:29 2022 - INFO  - End to restore the test environment.

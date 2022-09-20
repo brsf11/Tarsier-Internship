@@ -1,0 +1,11 @@
+Tue Sep 20 12:33:31 2022 - INFO  - Start testing...
+     Active: active since Tue 2022-09-20 12:33:31 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:33:37 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:33:43 CST; 5s ago
+Tue Sep 20 12:33:50 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload getty-pre.target: Job type reload is not applicable for unit getty-pre.target.
+     Active: active since Tue 2022-09-20 12:33:43 CST; 6s ago
+Tue Sep 20 12:33:51 2022 - INFO  - Finish test!
+Tue Sep 20 12:33:51 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:33:52 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:33:53 2022 - INFO  - Finish environment cleanup!

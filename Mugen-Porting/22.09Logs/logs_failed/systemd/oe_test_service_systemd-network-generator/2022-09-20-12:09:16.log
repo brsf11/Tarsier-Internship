@@ -1,0 +1,12 @@
+Tue Sep 20 12:09:19 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:09:20 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:09:20 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 12:09:19 CST; 1s ago
+Tue Sep 20 12:09:21 2022 - ERROR - There is an error for the status of systemd-network-generator.service
+Tue Sep 20 12:09:22 2022 - ERROR - ../common/common_lib.sh line 54
+/etc/systemd/system/sysinit.target.wants/systemd-network-generator.service
+Removed /etc/systemd/system/sysinit.target.wants/systemd-network-generator.service.
+find: ‘/etc/systemd/system/sysinit.target.wants/systemd-network-generator.service’: No such file or directory
+Tue Sep 20 12:09:31 2022 - INFO  - Finish test!
+Tue Sep 20 12:09:31 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:09:32 2022 - INFO  - oe_test_service_systemd-network-generator.sh post_test

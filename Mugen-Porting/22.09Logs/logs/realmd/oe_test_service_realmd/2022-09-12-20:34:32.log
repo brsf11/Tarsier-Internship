@@ -1,0 +1,13 @@
+Mon Sep 12 20:34:35 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 20:35:54 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:35:55 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 20:35:56 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Mon 2022-09-12 20:36:08 CST; 6s ago
+Mon Sep 12 20:36:15 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload realmd.service: Job type reload is not applicable for unit realmd.service.
+     Active: active (running) since Mon 2022-09-12 20:36:08 CST; 7s ago
+Mon Sep 12 20:36:16 2022 - INFO  - Finish test!
+Mon Sep 12 20:36:17 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 20:36:17 2022 - INFO  - start environment cleanup.
+Mon Sep 12 20:36:35 2022 - INFO  - Finish environment cleanup!

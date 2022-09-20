@@ -1,0 +1,29 @@
+Fri Sep  9 06:25:02 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 06:26:16 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 06:26:17 2022 - INFO  - Start to run test.
+Usage:
+  osinfo-detect [OPTION…] - Detect if media is bootable and the relevant OS and distribution.
+Error while parsing commandline options: Invalid value 'env'
+Usage:
+  osinfo-detect [OPTION…] - Detect if media is bootable and the relevant OS and distribution.
+
+Help Options:
+  -h, --help              Show help options
+
+Application Options:
+  -f, --format=FORMAT     Select the output format
+  -t, --type=TYPE         Select the type of what is being detected
+  -a, --all               Report all matches, not just the first
+
+The only value available for FORMAT is 'plain', which means plain text.
+TYPE can be either 'media' (the default) for CD/DVD ISOs,
+or 'tree' for install trees.
+
+Fri Sep  9 06:26:39 2022 - ERROR - oe_test_osinfo-detect.sh line 37
+Media is bootable.
+Media is bootable.
+Fri Sep  9 06:26:58 2022 - INFO  - End of the test.
+Fri Sep  9 06:26:58 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:26:59 2022 - INFO  - Start to restore the test environment.
+oe_test_osinfo-detect.sh: line 48:   513 Killed                  nohup wget https://repo.openeuler.org/openEuler-20.03-LTS/ISO/aarch64/openEuler-20.03-LTS-aarch64-dvd.iso > /dev/null 2>&1
+Fri Sep  9 06:27:16 2022 - INFO  - Finish restoring the test environment.

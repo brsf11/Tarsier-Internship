@@ -1,0 +1,43 @@
+Thu Sep  8 17:21:14 2022 - INFO  - Start to prepare the test environment.
+Thu Sep  8 17:21:50 2022 - INFO  - End to prepare the test environment.
+Thu Sep  8 17:21:50 2022 - INFO  - Start to run test.
+oe_test_OpenEXR_exrstdattr_02.sh: line 29: exrstdattr: command not found
+Thu Sep  8 17:21:51 2022 - ERROR - Check exrstdattr -longitude failed.
+Thu Sep  8 17:21:52 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 30
+oe_test_OpenEXR_exrstdattr_02.sh: line 31: exrstdattr: command not found
+Thu Sep  8 17:21:53 2022 - ERROR - Check exrstdattr -latitude failed.
+Thu Sep  8 17:21:53 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 32
+oe_test_OpenEXR_exrstdattr_02.sh: line 33: exrstdattr: command not found
+Thu Sep  8 17:21:54 2022 - ERROR - Check exrstdattr -altitude failed.
+Thu Sep  8 17:21:54 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 34
+oe_test_OpenEXR_exrstdattr_02.sh: line 35: exrstdattr: command not found
+Thu Sep  8 17:21:55 2022 - ERROR - Check exrstdattr -focus failed.
+Thu Sep  8 17:21:56 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 36
+oe_test_OpenEXR_exrstdattr_02.sh: line 37: exrstdattr: command not found
+Thu Sep  8 17:21:56 2022 - ERROR - Check exrstdattr -expTime failed.
+Thu Sep  8 17:21:57 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 38
+oe_test_OpenEXR_exrstdattr_02.sh: line 39: exrstdattr: command not found
+Thu Sep  8 17:21:58 2022 - ERROR - Check exrstdattr -aperture failed.
+Thu Sep  8 17:21:58 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 40
+oe_test_OpenEXR_exrstdattr_02.sh: line 41: exrstdattr: command not found
+Thu Sep  8 17:21:59 2022 - ERROR - Check exrstdattr -isoSpeed failed.
+Thu Sep  8 17:22:00 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 42
+oe_test_OpenEXR_exrstdattr_02.sh: line 43: exrstdattr: command not found
+Thu Sep  8 17:22:01 2022 - ERROR - Check exrstdattr -envmap failed.
+Thu Sep  8 17:22:01 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 44
+oe_test_OpenEXR_exrstdattr_02.sh: line 45: exrstdattr: command not found
+Thu Sep  8 17:22:02 2022 - ERROR - Check exrstdattr -keyCode failed.
+Thu Sep  8 17:22:02 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 46
+oe_test_OpenEXR_exrstdattr_02.sh: line 47: exrstdattr: command not found
+Thu Sep  8 17:22:03 2022 - ERROR - Check exrstdattr -timeCode failed.
+Thu Sep  8 17:22:04 2022 - ERROR - oe_test_OpenEXR_exrstdattr_02.sh line 48
+Thu Sep  8 17:22:05 2022 - INFO  - End to run test.
+Thu Sep  8 17:22:05 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:22:06 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:06:14 ago on Thu 08 Sep 2022 05:15:34 PM CST.\nError: \n Problem: package OpenEXR-devel-3.1.5-2.oe2209.riscv64 requires pkgconfig(Imath), but none of the providers can be installed\n  - package Imath-devel-3.1.4-1.oe2209.riscv64 requires boost-devel, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libquadmath-devel(riscv-64) needed by boost-devel-1.79.0-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Thu Sep  8 17:22:09 2022 - INFO  - End to restore the test environment.

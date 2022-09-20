@@ -1,0 +1,129 @@
+Thu Sep  8 17:56:17 2022 - INFO  - Start to prepare the test environment.
+spawn ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:ijfsPwrdbJLVvV9YiWoDaHGWW6pNdFeT1kWHWJ8CLPE root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|         .o. o.=B|
+|         .o.o o+=|
+|       . =.E o...|
+|        *.=.. o .|
+|       oS=. .. ..|
+|     +.*+ . .. o |
+|    o O.+. +. . .|
+|     + +. . .. . |
+|      oo..    .  |
++----[SHA256]-----+
+spawn ssh-copy-id root@
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname : Name or service not known
+
+send: spawn id exp3 not open
+    while executing
+"send "yes\n""
+Thu Sep  8 17:58:17 2022 - INFO  - End to prepare the test environment.
+Thu Sep  8 17:58:18 2022 - INFO  - Start to run test.
+ansible-config 2.9.27
+  executable location = /usr/bin/ansible-config
+Thu Sep  8 17:58:34 2022 - ERROR - Check ansible-config --help failed.
+Thu Sep  8 17:58:34 2022 - ERROR - oe_test_ansible_02.sh line 30
+spawn ansible-config view
+WARNING: terminal is not fully functional
+Press RETURN to continue 
+# config file for ansible -- https://ansible.com/[m
+# ===============================================[m
+[m
+# nearly all parameters can be overridden in ansible-playbook[m
+# or with command line flags. ansible will read ANSIBLE_CONFIG,[m
+# ansible.cfg in the current working directory, .ansible.cfg in[m
+# the home directory or /etc/ansible/ansible.cfg, whichever it[m
+# finds first[m
+[m
+[defaults][m
+[m
+# some basic default values...[m
+[m
+#inventory      = /etc/ansible/hosts[m
+#library        = /usr/share/my_modules/[m
+#module_utils   = /usr/share/my_module_utils/[m
+#remote_tmp     = ~/.ansible/tmp[m
+#local_tmp      = ~/.ansible/tmp[m
+#plugin_filters_cfg = /etc/ansible/plugin_filters.yml[m
+#forks          = 5[m
+#poll_interval  = 15[m
+#sudo_user      = root[m
+#ask_sudo_pass = True[m
+:spawn ansible-config dump
+WARNING: terminal is not fully functional
+Press RETURN to continue 
+ACTION_WARNINGS(default) = True[m
+AGNOSTIC_BECOME_PROMPT(default) = True[m
+ALLOW_WORLD_READABLE_TMPFILES(default) = False[m
+ANSIBLE_CONNECTION_PATH(default) = None[m
+ANSIBLE_COW_PATH(default) = None[m
+ANSIBLE_COW_SELECTION(default) = default[m
+ANSIBLE_COW_WHITELIST(default) = ['bud-frogs', 'bunny', 'cheese', 'daemon', 'de[m>
+ANSIBLE_FORCE_COLOR(default) = False[m
+ANSIBLE_NOCOLOR(default) = False[m
+ANSIBLE_NOCOWS(default) = False[m
+ANSIBLE_PIPELINING(default) = False[m
+ANSIBLE_SSH_ARGS(default) = -C -o ControlMaster=auto -o ControlPersist=60s[m
+ANSIBLE_SSH_CONTROL_PATH(default) = None[m
+ANSIBLE_SSH_CONTROL_PATH_DIR(default) = ~/.ansible/cp[m
+ANSIBLE_SSH_EXECUTABLE(default) = ssh[m
+ANSIBLE_SSH_RETRIES(default) = 0[m
+ANY_ERRORS_FATAL(default) = False[m
+BECOME_ALLOW_SAME_USER(default) = False[m
+BECOME_PLUGIN_PATH(default) = ['/root/.ansible/plugins/become', '/usr/share/ans[m>
+CACHE_PLUGIN(default) = memory[m
+CACHE_PLUGIN_CONNECTION(default) = None[m
+CACHE_PLUGIN_PREFIX(default) = ansible_facts[m
+CACHE_PLUGIN_TIMEOUT(default) = 86400[m
+:spawn ansible-config list -v
+Using /etc/ansible/ansible.cfg as config file
+wqWARNING: terminal is not fully functional
+Press RETURN to continue 
+ACTION_WARNINGS:[m
+  default: true[m
+  description:[m
+  - By default Ansible will issue a warning when received from a task action (m[m>
+    or action plugin)[m
+  - These warnings can be silenced by adjusting this setting to False.[m
+  env:[m
+  - name: ANSIBLE_ACTION_WARNINGS[m
+  ini:[m
+  - key: action_warnings[m
+    section: defaults[m
+  name: Toggle action warnings[m
+  type: boolean[m
+  version_added: '2.5'[m
+AGNOSTIC_BECOME_PROMPT:[m
+  default: true[m
+  description: Display an agnostic become prompt instead of displaying a prompt[m>
+    the command line supplied become method[m
+  env:[m
+  - name: ANSIBLE_AGNOSTIC_BECOME_PROMPT[m
+  ini:[m
+  - key: agnostic_become_prompt[m
+    section: privilege_escalation[m
+:Thu Sep  8 17:59:14 2022 - ERROR - Check ansible-console --help failed.
+Thu Sep  8 17:59:14 2022 - ERROR - oe_test_ansible_02.sh line 53
+ansible-console 2.9.27
+  executable location = /usr/bin/ansible-console
+spawn ansible-console
+ip a
+ls
+exit
+Thu Sep  8 17:59:33 2022 - INFO  - End to run test.
+Thu Sep  8 17:59:34 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:59:35 2022 - INFO  - Start to restore the test environment.
+Thu Sep  8 18:00:21 2022 - INFO  - End to restore the test environment.

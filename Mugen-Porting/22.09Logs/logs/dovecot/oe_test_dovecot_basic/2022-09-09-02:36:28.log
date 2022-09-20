@@ -1,0 +1,50 @@
+Fri Sep  9 02:36:31 2022 - INFO  - Start to prepare the database config.
+Failed to restart dovecot.service: Unit dovecot.service not found.
+Fri Sep  9 02:36:54 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 02:36:55 2022 - INFO  - Start to run test.
+oe_test_dovecot_basic.sh: line 33: dovecot: command not found
+Fri Sep  9 02:36:56 2022 - ERROR - Check dovecot version failed.
+Fri Sep  9 02:36:56 2022 - ERROR - oe_test_dovecot_basic.sh line 34
+oe_test_dovecot_basic.sh: line 35: dovecot: command not found
+Fri Sep  9 02:36:57 2022 - ERROR - Check dovecot help failed.
+Fri Sep  9 02:36:58 2022 - ERROR - oe_test_dovecot_basic.sh line 36
+oe_test_dovecot_basic.sh: line 37: dovecot: command not found
+Fri Sep  9 02:36:58 2022 - ERROR - Check dovecot non default config failed.
+Fri Sep  9 02:36:59 2022 - ERROR - oe_test_dovecot_basic.sh line 38
+oe_test_dovecot_basic.sh: line 39: doveconf: command not found
+Fri Sep  9 02:37:00 2022 - ERROR - Check doveconf non default config failed.
+Fri Sep  9 02:37:01 2022 - ERROR - oe_test_dovecot_basic.sh line 40
+oe_test_dovecot_basic.sh: line 41: dovecot: command not found
+Fri Sep  9 02:37:01 2022 - ERROR - Check dovecot all config failed.
+Fri Sep  9 02:37:02 2022 - ERROR - oe_test_dovecot_basic.sh line 42
+oe_test_dovecot_basic.sh: line 43: doveconf: command not found
+Fri Sep  9 02:37:03 2022 - ERROR - Check doveconf failed.
+Fri Sep  9 02:37:03 2022 - ERROR - oe_test_dovecot_basic.sh line 44
+oe_test_dovecot_basic.sh: line 45: dovecot: command not found
+Fri Sep  9 02:37:04 2022 - ERROR - Check dovecot hostdomain failed.
+Fri Sep  9 02:37:05 2022 - ERROR - oe_test_dovecot_basic.sh line 46
+Fri Sep  9 02:37:06 2022 - ERROR - Check dovecot user created failed.
+Fri Sep  9 02:37:06 2022 - ERROR - oe_test_dovecot_basic.sh line 48
+oe_test_dovecot_basic.sh: line 50: dovecot: command not found
+Fri Sep  9 02:37:07 2022 - ERROR - Reload dovecot failed.
+Fri Sep  9 02:37:08 2022 - ERROR - oe_test_dovecot_basic.sh line 51
+oe_test_dovecot_basic.sh: line 52: dovecot: command not found
+Fri Sep  9 02:37:08 2022 - ERROR - Stop dovecot failed.
+Fri Sep  9 02:37:09 2022 - ERROR - oe_test_dovecot_basic.sh line 53
+oe_test_dovecot_basic.sh: line 54: dovecot: command not found
+Fri Sep  9 02:37:10 2022 - ERROR - Set dovecot config file failed.
+Fri Sep  9 02:37:10 2022 - ERROR - oe_test_dovecot_basic.sh line 55
+oe_test_dovecot_basic.sh: line 56: dovecot: command not found
+Fri Sep  9 02:37:11 2022 - ERROR - Build dovecot failed.
+Fri Sep  9 02:37:12 2022 - ERROR - oe_test_dovecot_basic.sh line 57
+Fri Sep  9 02:37:12 2022 - INFO  - End to run test.
+Fri Sep  9 02:37:13 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:37:14 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:03:23 ago on Fri 09 Sep 2022 02:33:29 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Fri Sep  9 02:37:17 2022 - INFO  - End to restore the test environment.

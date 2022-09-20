@@ -1,0 +1,25 @@
+Fri Sep  9 01:43:23 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:44:04 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:44:05 2022 - INFO  - Start testing...
+Fri Sep  9 01:44:12 2022 - ERROR - conntrackd.service restart failed
+Fri Sep  9 01:44:12 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 01:44:19 2022 - ERROR - conntrackd.service stop failed
+Fri Sep  9 01:44:20 2022 - ERROR - ../common/common_lib.sh line 42
+Fri Sep  9 01:44:26 2022 - ERROR - conntrackd.service start failed
+Fri Sep  9 01:44:27 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/conntrackd.service
+Removed /etc/systemd/system/multi-user.target.wants/conntrackd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/conntrackd.service’: No such file or directory
+Sep 09 01:44:05 openEuler-riscv64 conntrackd[523]: [Fri Sep  9 01:44:05 2022] (pid=523) [ERROR] parsing config file in line (123), symbol 'SndSocketBuffer': syntax error
+Sep 09 01:44:05 openEuler-riscv64 systemd[1]: conntrackd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 01:44:05 openEuler-riscv64 systemd[1]: conntrackd.service: Failed with result 'exit-code'.
+Sep 09 01:44:20 openEuler-riscv64 conntrackd[539]: [Fri Sep  9 01:44:20 2022] (pid=539) [ERROR] parsing config file in line (123), symbol 'SndSocketBuffer': syntax error
+Sep 09 01:44:20 openEuler-riscv64 systemd[1]: conntrackd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 01:44:20 openEuler-riscv64 systemd[1]: conntrackd.service: Failed with result 'exit-code'.
+Fri Sep  9 01:44:37 2022 - ERROR - There is an error message for the log of conntrackd.service
+Fri Sep  9 01:44:38 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload conntrackd.service: Job type reload is not applicable for unit conntrackd.service.
+Fri Sep  9 01:44:39 2022 - INFO  - Finish test!
+Fri Sep  9 01:44:40 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:44:40 2022 - INFO  - start environment cleanup.
+Fri Sep  9 01:45:04 2022 - INFO  - Finish environment cleanup!

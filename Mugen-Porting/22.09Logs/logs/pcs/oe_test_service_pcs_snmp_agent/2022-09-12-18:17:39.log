@@ -1,0 +1,88 @@
+Mon Sep 12 18:17:42 2022 - INFO  - Start environmental preparation.
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+Failed to disable unit: Unit file firewalld.service does not exist.
+Changing password for user hacluster.
+passwd: all authentication tokens updated successfully.
+../common/ha.sh: line 71: /etc/corosync/corosync.conf: No such file or directory
+Mon Sep 12 18:18:48 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 18:18:49 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/hosts @:/etc/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Mon Sep 12 18:18:50 2022 - ERROR - Failed in remote SCP operation: 1
+Mon Sep 12 18:18:51 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/corosync/corosync.conf @:/etc/corosync/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Mon Sep 12 18:18:52 2022 - ERROR - Failed in remote SCP operation: 1
+Failed to start pcsd.service: Unit pcsd.service not found.
+Failed to start pacemaker.service: Unit pacemaker.service not found.
+../common/ha.sh: line 83: pcs: command not found
+../common/ha.sh: line 84: pcs: command not found
+../common/ha.sh: line 85: crm_verify: command not found
+Failed to start corosync.service: Unit corosync.service not found.
+Mon Sep 12 18:18:55 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+../common/ha.sh: line 98: pcs: command not found
+Failed to restart pacemaker.service: Unit pacemaker.service not found.
+Failed to restart corosync.service: Unit corosync.service not found.
+Failed to restart pcsd.service: Unit pcsd.service not found.
+Mon Sep 12 18:18:58 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 102, in rpm_install
+    with open(tmpfile, "a+") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:07:44 ago on Mon 12 Sep 2022 06:11:00 PM CST.\nError: \n Problem: package pacemaker-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+oe_test_service_pcs_snmp_agent.sh: line 28: /etc/snmp/snmpd.conf: No such file or directory
+Mon Sep 12 18:19:21 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:19:21 2022 - INFO  - Start testing...
+Failed to restart pcs_snmp_agent.service: Unit pcs_snmp_agent.service not found.
+Mon Sep 12 18:19:22 2022 - ERROR - pcs_snmp_agent.service restart failed
+Mon Sep 12 18:19:23 2022 - ERROR - ../common/common_lib.sh line 34
+Unit pcs_snmp_agent.service could not be found.
+Mon Sep 12 18:19:29 2022 - ERROR - pcs_snmp_agent.service restart failed
+Mon Sep 12 18:19:30 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop pcs_snmp_agent.service: Unit pcs_snmp_agent.service not loaded.
+Mon Sep 12 18:19:31 2022 - ERROR - pcs_snmp_agent.service stop failed
+Mon Sep 12 18:19:32 2022 - ERROR - ../common/common_lib.sh line 39
+Unit pcs_snmp_agent.service could not be found.
+Mon Sep 12 18:19:38 2022 - ERROR - pcs_snmp_agent.service stop failed
+Mon Sep 12 18:19:39 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start pcs_snmp_agent.service: Unit pcs_snmp_agent.service not found.
+Mon Sep 12 18:19:40 2022 - ERROR - pcs_snmp_agent.service start failed
+Mon Sep 12 18:19:40 2022 - ERROR - ../common/common_lib.sh line 44
+Unit pcs_snmp_agent.service could not be found.
+Mon Sep 12 18:19:47 2022 - ERROR - pcs_snmp_agent.service start failed
+Mon Sep 12 18:19:48 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for pcs_snmp_agent.service: No such file or directory
+Mon Sep 12 18:19:48 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start pcs_snmp_agent.service: Unit pcs_snmp_agent.service not found.
+Mon Sep 12 18:19:49 2022 - ERROR - Job type reload is not applicable for unit pcs_snmp_agent.service
+Mon Sep 12 18:19:50 2022 - ERROR - ../common/common_lib.sh line 91
+Unit pcs_snmp_agent.service could not be found.
+Unit pcs_snmp_agent.service could not be found.
+Mon Sep 12 18:19:51 2022 - INFO  - Finish test!
+Mon Sep 12 18:19:51 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:19:52 2022 - INFO  - start environment cleanup.
+Failed to stop pcs_snmp_agent.service: Unit pcs_snmp_agent.service not loaded.
+sed: can't read /etc/snmp/snmpd.conf: No such file or directory
+sed: can't read /etc/snmp/snmpd.conf: No such file or directory
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:07:44 ago on Mon 12 Sep 2022 06:11:00 PM CST.\nError: \n Problem: package pacemaker-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Failed to stop corosync.service: Unit corosync.service not loaded.
+Failed to stop pacemaker.service: Unit pacemaker.service not loaded.
+Failed to stop pcsd.service: Unit pcsd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:07:44 ago on Mon 12 Sep 2022 06:11:00 PM CST.\nError: \n Problem: package pacemaker-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Failed to start firewalld.service: Unit firewalld.service not found.
+Failed to enable unit: Unit file firewalld.service does not exist.
+Mon Sep 12 18:20:01 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Mon Sep 12 18:20:01 2022 - INFO  - Finish environment cleanup!

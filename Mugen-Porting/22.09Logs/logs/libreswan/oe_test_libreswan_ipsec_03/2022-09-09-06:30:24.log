@@ -1,0 +1,39 @@
+Fri Sep  9 06:30:26 2022 - INFO  - Start to prepare the test environment.
+Redirecting to: systemctl start ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:31:28 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 06:31:29 2022 - INFO  - Start to run test.
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:31:30 2022 - ERROR - oe_test_libreswan_ipsec_03.sh line 30
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:31:31 2022 - ERROR - oe_test_libreswan_ipsec_03.sh line 32
+Usage: cavp [-?|-h|-help] [-fips] [-json] [-v] <test-option> ...
+File mode: cavp [-fips] [-json] [-v] [-<test>] <test-file>|-
+Command mode: cavp [-fips] [-json] [-v] -<test> -<acvp-key> <acvp-value> ...
+Usage: ipsec letsencrypt [arguments]
+usage: 'ipsec letsencrypt --client'
+usage: 'ipsec letsencrypt --server'
+usage: 'ipsec letsencrypt --test'
+usage: 'ipsec letsencrypt --generate-certificate hostname'
+usage: 'ipsec letsencrypt --renew hostname'
+usage: 'ipsec letsencrypt --disable'
+Fri Sep  9 06:31:32 2022 - ERROR - oe_test_libreswan_ipsec_03.sh line 38
+Initializing NSS database
+
+Generated RSA key pair with CKAID 955c8f10ca87ae396f393a2edb24a832a896e6f0 was stored in the NSS database
+The public key can be displayed using: ipsec showhostkey --left --ckaid 955c8f10ca87ae396f393a2edb24a832a896e6f0
+< 1> RSA keyid: AwEAAdrW3 ckaid: 955c8f10ca87ae396f393a2edb24a832a896e6f0
+config setup
+Redirecting to: systemctl status ipsec.service
+● ipsec.service - Internet Key Exchange (IKE) Protocol Daemon for IPsec
+     Loaded: loaded (/usr/lib/systemd/system/ipsec.service; disabled; vendor preset: disabled)
+     CGroup: /system.slice/ipsec.service
+
+ipsec verify: encountered 3 errors - see 'man ipsec_verify' for help
+Verifying installed system and configuration files
+Fri Sep  9 06:31:48 2022 - INFO  - End of the test.
+Fri Sep  9 06:31:49 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:31:50 2022 - INFO  - Start to restore the test environment.
+Redirecting to: systemctl stop ipsec.service
+Fri Sep  9 06:32:12 2022 - INFO  - Finish restoring the test environment.

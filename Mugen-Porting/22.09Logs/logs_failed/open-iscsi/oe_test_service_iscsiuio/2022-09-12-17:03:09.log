@@ -1,0 +1,33 @@
+Mon Sep 12 17:03:12 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:04:13 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:04:13 2022 - INFO  - Start testing...
+Failed to restart iscsiuio.service: Unit iscsiuio.service not found.
+Mon Sep 12 17:04:14 2022 - ERROR - iscsiuio.service restart failed
+Mon Sep 12 17:04:15 2022 - ERROR - ../common/common_lib.sh line 34
+Unit iscsiuio.service could not be found.
+Mon Sep 12 17:04:22 2022 - ERROR - iscsiuio.service restart failed
+Mon Sep 12 17:04:22 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop iscsiuio.service: Unit iscsiuio.service not loaded.
+Mon Sep 12 17:04:23 2022 - ERROR - iscsiuio.service stop failed
+Mon Sep 12 17:04:24 2022 - ERROR - ../common/common_lib.sh line 39
+Unit iscsiuio.service could not be found.
+Mon Sep 12 17:04:30 2022 - ERROR - iscsiuio.service stop failed
+Mon Sep 12 17:04:31 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start iscsiuio.service: Unit iscsiuio.service not found.
+Mon Sep 12 17:04:32 2022 - ERROR - iscsiuio.service start failed
+Mon Sep 12 17:04:32 2022 - ERROR - ../common/common_lib.sh line 44
+Unit iscsiuio.service could not be found.
+Mon Sep 12 17:04:39 2022 - ERROR - iscsiuio.service start failed
+Mon Sep 12 17:04:40 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for iscsiuio.service: No such file or directory
+Mon Sep 12 17:04:41 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start iscsiuio.service: Unit iscsiuio.service not found.
+Mon Sep 12 17:04:42 2022 - ERROR - Job type reload is not applicable for unit iscsiuio.service
+Mon Sep 12 17:04:43 2022 - ERROR - ../common/common_lib.sh line 91
+Unit iscsiuio.service could not be found.
+Unit iscsiuio.service could not be found.
+Mon Sep 12 17:04:43 2022 - INFO  - Finish test!
+Mon Sep 12 17:04:44 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:04:45 2022 - INFO  - start environment cleanup.
+Failed to stop iscsiuio.service: Unit iscsiuio.service not loaded.
+Mon Sep 12 17:05:14 2022 - INFO  - Finish environment cleanup!

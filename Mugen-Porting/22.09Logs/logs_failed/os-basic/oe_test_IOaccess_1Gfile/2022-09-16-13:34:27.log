@@ -1,0 +1,100 @@
+Fri Sep 16 13:34:29 2022 - INFO  - Start to pre test.
+Fri Sep 16 13:34:30 2022 - INFO  - Start to pre test.
+Fri Sep 16 13:34:31 2022 - INFO  - Start to run test.
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 140.17 s, 7.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 22.2958 s, 47.0 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 140.635 s, 7.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 24.4114 s, 43.0 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 141.464 s, 7.4 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 24.5594 s, 42.7 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 140.501 s, 7.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 25.5667 s, 41.0 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 140.773 s, 7.4 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 20.843 s, 50.3 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 140.283 s, 7.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 21.1696 s, 49.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 142.28 s, 7.4 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 21.5993 s, 48.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 141.31 s, 7.4 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 21.7316 s, 48.3 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 140.176 s, 7.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 21.633 s, 48.5 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 141.455 s, 7.4 MB/s
+1048576000
+1000+0 records in
+1000+0 records out
+1048576000 bytes (1.0 GB, 1000 MiB) copied, 24.6985 s, 42.5 MB/s
+1048576000
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:02 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:02 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:02 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:02 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:02 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:02 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:02 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:03 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:03 mycpfile20220916
+-rw-r--r-- 1 root root 1048576000 Sep 16 14:03 mycpfile20220916
+  adding: myfile20220916 (deflated 100%)
+myfile20220916.zip
+  adding: myfile20220916 (deflated 100%)
+myfile20220916.zip
+  adding: myfile20220916 (deflated 100%)
+myfile20220916.zip
+  adding: myfile20220916Fri Sep 16 14:04:28 2022 - ERROR - Timeout : Command 'bash oe_test_IOaccess_1Gfile.sh' timed out after 1799.9994545999998 seconds

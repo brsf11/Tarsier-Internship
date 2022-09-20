@@ -1,0 +1,20 @@
+Mon Sep 12 21:23:36 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 21:26:32 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 21:26:32 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 21:27:24 CST; 6s ago
+Mon Sep 12 21:27:44 2022 - ERROR - pmie.service stop failed
+Mon Sep 12 21:27:45 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Mon 2022-09-12 21:27:52 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/pmie.service
+Removed /etc/systemd/system/multi-user.target.wants/pmie.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/pmie.service’: No such file or directory
+Sep 12 21:27:37 openEuler-riscv64 systemd[1]: pmie.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 21:27:38 openEuler-riscv64 systemd[1]: pmie.service: Failed with result 'exit-code'.
+Mon Sep 12 21:28:08 2022 - ERROR - There is an error message for the log of pmie.service
+Mon Sep 12 21:28:08 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload pmie.service: Job type reload is not applicable for unit pmie.service.
+     Active: active (running) since Mon 2022-09-12 21:27:52 CST; 17s ago
+Mon Sep 12 21:28:09 2022 - INFO  - Finish test!
+Mon Sep 12 21:28:10 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:28:11 2022 - INFO  - start environment cleanup.
+Mon Sep 12 21:29:04 2022 - INFO  - Finish environment cleanup!

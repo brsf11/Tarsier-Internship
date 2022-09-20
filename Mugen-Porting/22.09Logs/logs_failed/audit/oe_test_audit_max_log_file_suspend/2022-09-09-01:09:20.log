@@ -1,0 +1,36 @@
+Fri Sep  9 01:09:23 2022 - INFO  - Start to prepare the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_suspend.sh: line 26: service: command not found
+Fri Sep  9 01:09:24 2022 - INFO  - End to prepare the environment
+Fri Sep  9 01:09:25 2022 - INFO  - Start to run test.
+du: cannot access '/var/log/audit/audit.log': No such file or directory
+oe_test_audit_max_log_file_suspend.sh: line 33: [: : integer expression expected
+../common/comlib.sh: line 24: auditctl: command not found
+../common/comlib.sh: line 30: auditctl: command not found
+oe_test_audit_max_log_file_suspend.sh: line 40: service: command not found
+Fri Sep  9 01:10:09 2022 - ERROR - grep second failed
+Fri Sep  9 01:10:10 2022 - ERROR - oe_test_audit_max_log_file_suspend.sh line 41
+../common/comlib.sh: line 35: auditctl: command not found
+Fri Sep  9 01:10:10 2022 - ERROR -  add rules failed
+Fri Sep  9 01:10:11 2022 - ERROR - ../common/comlib.sh line 36
+../common/comlib.sh: line 41: auditctl: command not found
+Fri Sep  9 01:10:12 2022 - ERROR - second failed
+Fri Sep  9 01:10:13 2022 - ERROR - ../common/comlib.sh line 42
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+../common/comlib.sh: line 44: ausearch: command not found
+Fri Sep  9 01:10:32 2022 - INFO  - End to run test.
+Fri Sep  9 01:10:33 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:10:33 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+sed: can't read /etc/audit/auditd.conf: No such file or directory
+oe_test_audit_max_log_file_suspend.sh: line 53: service: command not found
+Fri Sep  9 01:10:34 2022 - INFO  - End to restore the test environment.

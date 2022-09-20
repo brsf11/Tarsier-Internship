@@ -1,0 +1,7 @@
+Mon Sep 12 18:05:31 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:05:32 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:05:33 2022 - INFO  - Start testing...
+Mon Sep 12 18:05:34 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Mon Sep 12 18:05:34 2022 - INFO  - Finish test!
+Mon Sep 12 18:05:35 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 18:05:36 2022 - INFO  - oe_test_service_pam_namespace.sh post_test

@@ -1,0 +1,30 @@
+Mon Sep 12 20:55:30 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 21:02:08 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:02:08 2022 - INFO  - Start to run test.
+Mon Sep 12 21:02:17 2022 - ERROR - oe_test_pcp_atop_02.sh line 33
+NPROCS SYSCPU USRCPU  RSIZE  PSIZE  RDDSK  WRDSK  RNET  SNET  CPU RUID     
+NPROCS SYSCPU USRCPU  RSIZE  PSIZE  RDDSK  WRDSK  RNET  SNET  CPU CMD            
+NPROCS SYSCPU USRCPU  RSIZE  PSIZE  RDDSK  WRDSK  RNET  SNET  CPU CID          
+DSK |          vda | busy      6% | read    4519 | write 106565 | avio 5.11 ms |
+    PID SYSCPU USRCPU RDELAY  VGROW  RGROW  RDDSK  WRDSK  DSK CMD            
+NET | transport    | tcpi   86233 | tcpo   71714 | udpi     957 | udpo    2420 |
+NET | network      | ipi    87241 | ipo    74222 | ipfrw      0 | deliv  87240 |
+NET | eth0      0% | pcki  277499 | pcko   69597 | si  313 Kbps | so    3 Kbps |
+NET | lo      ---- | pcki    4833 | pcko    4833 | si    0 Kbps | so    0 Kbps |
+    PID SYSCPU USRCPU RDELAY  VGROW  RGROW  RDDSK  WRDSK  NET CMD            
+Mon Sep 12 21:03:31 2022 - ERROR - oe_test_pcp_atop_02.sh line 61
+Mon Sep 12 21:03:35 2022 - INFO  - End to run test.
+Mon Sep 12 21:03:36 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:03:36 2022 - INFO  - Start to restore the test environment.
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98087 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -o > atop_o 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98093 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -u > atop_u 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98096 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -p > atop_p 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98099 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -j > atop_j 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98102 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -M > atop_M 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98104 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -D > atop_D 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98131 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -N > atop_N 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98134 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -A > atop_A 2>&1
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97: 98138 Killed                  nohup /usr/libexec/pcp/bin/pcp-atop -w testdir -S -a > atop_wSa 2>&1
+Mon Sep 12 21:05:40 2022 - INFO  - End to restore the test environment.

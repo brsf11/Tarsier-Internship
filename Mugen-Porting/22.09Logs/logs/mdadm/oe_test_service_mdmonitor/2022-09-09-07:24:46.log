@@ -1,0 +1,15 @@
+Fri Sep  9 07:24:48 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 07:25:39 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:25:40 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 07:25:40 CST; 6s ago
+     Active: inactive (dead) since Fri 2022-09-09 07:25:46 CST; 5s ago
+     Active: active (running) since Fri 2022-09-09 07:25:52 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/mdmonitor.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/mdmonitor.service → /usr/lib/systemd/system/mdmonitor.service.
+/etc/systemd/system/multi-user.target.wants/mdmonitor.service
+Failed to reload mdmonitor.service: Job type reload is not applicable for unit mdmonitor.service.
+     Active: active (running) since Fri 2022-09-09 07:25:52 CST; 15s ago
+Fri Sep  9 07:26:08 2022 - INFO  - Finish test!
+Fri Sep  9 07:26:09 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 07:26:09 2022 - INFO  - start environment cleanup.
+Fri Sep  9 07:26:26 2022 - INFO  - Finish environment cleanup!

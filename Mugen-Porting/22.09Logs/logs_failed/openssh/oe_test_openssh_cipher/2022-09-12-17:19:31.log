@@ -1,0 +1,50 @@
+Mon Sep 12 17:19:34 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:19:35 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:19:35 2022 - INFO  - Start to run test.
+spawn ssh -oCiphers=aes128-ctr localhost
+The authenticity of host 'localhost (::1)' can't be established.
+ED25519 key fingerprint is SHA256:FlutiferylfbBbFVUi8EMNSZaS0inbaa5SI3r1xHpMc.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'localhost' (ED25519) to the list of known hosts.
+root@localhost's password: 
+Last login: Mon Sep 12 16:22:50 2022 from 10.0.2.2
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 05:19:38 PM CST 2022
+
+System load: 	[0;33;40m0.54[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	1
+
+
+[root@openEuler-riscv64 ~]# Mon Sep 12 17:19:48 2022 - ERROR - oe_test_openssh_cipher.sh line 47
+spawn ssh -oCiphers=aes256-ctr localhost
+root@localhost's password: 
+Last login: Mon Sep 12 17:19:37 2022 from ::1
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 05:19:59 PM CST 2022
+
+System load: 	[0;33;40m0.80[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	1
+
+
+[root@openEuler-riscv64 ~]# Mon Sep 12 17:20:08 2022 - ERROR - oe_test_openssh_cipher.sh line 63
+Mon Sep 12 17:20:09 2022 - INFO  - End to run test.
+Mon Sep 12 17:20:10 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:20:10 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 17:20:11 2022 - INFO  - End to restore the test environment.

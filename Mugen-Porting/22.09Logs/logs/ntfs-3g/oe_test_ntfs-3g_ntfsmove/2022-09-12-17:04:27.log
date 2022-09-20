@@ -1,0 +1,59 @@
+Mon Sep 12 17:04:29 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+umount: /mnt/windows: not mounted.
+Mon Sep 12 17:05:17 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:05:18 2022 - INFO  - Start to run test.
+Usage: ntfsmove [options] device file
+ntfsmove v2022.5.17 (libntfs-3g) - Move files and directories on an NTFS volume.
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:18 2022 - ERROR - Check ntfsmove --start failed.
+Mon Sep 12 17:05:19 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 39
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:20 2022 - ERROR - Check ntfsmove --best failed.
+Mon Sep 12 17:05:21 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 41
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:21 2022 - ERROR - Check ntfsmove --end failed.
+Mon Sep 12 17:05:22 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 43
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:23 2022 - ERROR - Check ntfsmove --cluster failed.
+Mon Sep 12 17:05:23 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 45
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:24 2022 - ERROR - Check ntfsmove --no-dirty failed.
+Mon Sep 12 17:05:25 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 47
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:26 2022 - ERROR - Check ntfsmove --no-action failed.
+Mon Sep 12 17:05:26 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 49
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:27 2022 - ERROR - Check ntfsmove --force failed.
+Mon Sep 12 17:05:28 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 51
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:28 2022 - ERROR - Check ntfsmove --quiet failed.
+Mon Sep 12 17:05:29 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 53
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:05:30 2022 - ERROR - Check ntfsmove --verbose failed.
+Mon Sep 12 17:05:30 2022 - ERROR - oe_test_ntfs-3g_ntfsmove.sh line 55
+Mon Sep 12 17:05:31 2022 - INFO  - End of the test.
+Mon Sep 12 17:05:32 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:05:32 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:05:54 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,31 @@
+Tue Sep 20 12:38:58 2022 - INFO  - Start to run test.
+Failed to restart machines.target: Unit machines.target not found.
+Tue Sep 20 12:38:59 2022 - ERROR - machines.target restart failed
+Tue Sep 20 12:39:00 2022 - ERROR - ../common/common_lib.sh line 34
+Unit machines.target could not be found.
+Tue Sep 20 12:39:06 2022 - ERROR - machines.target restart failed
+Tue Sep 20 12:39:07 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop machines.target: Unit machines.target not loaded.
+Tue Sep 20 12:39:07 2022 - ERROR - machines.target stop failed
+Tue Sep 20 12:39:08 2022 - ERROR - ../common/common_lib.sh line 39
+Unit machines.target could not be found.
+Tue Sep 20 12:39:15 2022 - ERROR - machines.target stop failed
+Tue Sep 20 12:39:15 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start machines.target: Unit machines.target not found.
+Tue Sep 20 12:39:16 2022 - ERROR - machines.target start failed
+Tue Sep 20 12:39:16 2022 - ERROR - ../common/common_lib.sh line 44
+Unit machines.target could not be found.
+Tue Sep 20 12:39:23 2022 - ERROR - machines.target start failed
+Tue Sep 20 12:39:24 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for machines.target: No such file or directory
+Tue Sep 20 12:39:24 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start machines.target: Unit machines.target not found.
+Tue Sep 20 12:39:25 2022 - ERROR - Job type reload is not applicable for unit machines.target
+Tue Sep 20 12:39:26 2022 - ERROR - ../common/common_lib.sh line 91
+Unit machines.target could not be found.
+Unit machines.target could not be found.
+Tue Sep 20 12:39:26 2022 - INFO  - End of the test.
+Tue Sep 20 12:39:27 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:39:28 2022 - INFO  - Start environment cleanup.
+Failed to stop machines.target: Unit machines.target not loaded.
+Tue Sep 20 12:39:28 2022 - INFO  - Finish environment cleanup!

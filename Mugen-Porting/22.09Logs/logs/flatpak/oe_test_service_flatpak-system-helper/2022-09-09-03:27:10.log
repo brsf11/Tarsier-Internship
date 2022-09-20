@@ -1,0 +1,13 @@
+Fri Sep  9 03:27:12 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 03:33:35 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 03:33:36 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 03:33:37 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-09 03:33:50 CST; 6s ago
+Fri Sep  9 03:33:57 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload flatpak-system-helper.service: Job type reload is not applicable for unit flatpak-system-helper.service.
+     Active: active (running) since Fri 2022-09-09 03:33:50 CST; 7s ago
+Fri Sep  9 03:33:58 2022 - INFO  - Finish test!
+Fri Sep  9 03:33:58 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 03:33:59 2022 - INFO  - start environment cleanup.
+Fri Sep  9 03:34:07 2022 - INFO  - Finish environment cleanup!

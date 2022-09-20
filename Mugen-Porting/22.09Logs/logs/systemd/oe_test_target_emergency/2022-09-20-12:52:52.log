@@ -1,0 +1,6 @@
+Tue Sep 20 12:52:55 2022 - INFO  - Start to run test.
+Tue Sep 20 12:52:55 2022 - INFO  - A special target unit that starts an emergency shell on the main console.
+Tue Sep 20 12:52:57 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:52:57 2022 - INFO  - End of the test.
+Tue Sep 20 12:52:58 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:52:58 2022 - INFO  - oe_test_target_emergency.sh post_test

@@ -1,0 +1,41 @@
+Thu Sep  8 17:11:04 2022 - INFO  - Start environmental preparation.
+oe_test_service_dirsrv-snmp.sh: line 27: /etc/dirsrv/config/ldap-agent.conf: No such file or directory
+oe_test_service_dirsrv-snmp.sh: line 39: /etc/dirsrv/schema/dse.ldif: No such file or directory
+Thu Sep  8 17:12:09 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:12:09 2022 - INFO  - Start testing...
+Failed to restart dirsrv-snmp.service: Unit dirsrv-snmp.service not found.
+Thu Sep  8 17:12:10 2022 - ERROR - dirsrv-snmp.service restart failed
+Thu Sep  8 17:12:11 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dirsrv-snmp.service could not be found.
+Thu Sep  8 17:12:17 2022 - ERROR - dirsrv-snmp.service restart failed
+Thu Sep  8 17:12:18 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dirsrv-snmp.service: Unit dirsrv-snmp.service not loaded.
+Thu Sep  8 17:12:19 2022 - ERROR - dirsrv-snmp.service stop failed
+Thu Sep  8 17:12:20 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dirsrv-snmp.service could not be found.
+Thu Sep  8 17:12:26 2022 - ERROR - dirsrv-snmp.service stop failed
+Thu Sep  8 17:12:27 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dirsrv-snmp.service: Unit dirsrv-snmp.service not found.
+Thu Sep  8 17:12:28 2022 - ERROR - dirsrv-snmp.service start failed
+Thu Sep  8 17:12:29 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dirsrv-snmp.service could not be found.
+Thu Sep  8 17:12:35 2022 - ERROR - dirsrv-snmp.service start failed
+Thu Sep  8 17:12:36 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dirsrv-snmp.service: No such file or directory
+Thu Sep  8 17:12:37 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dirsrv-snmp.service: Unit dirsrv-snmp.service not found.
+Thu Sep  8 17:12:38 2022 - ERROR - Job type reload is not applicable for unit dirsrv-snmp.service
+Thu Sep  8 17:12:38 2022 - ERROR - ../common/common_lib.sh line 91
+Unit dirsrv-snmp.service could not be found.
+Unit dirsrv-snmp.service could not be found.
+Thu Sep  8 17:12:39 2022 - INFO  - Finish test!
+Thu Sep  8 17:12:40 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:12:40 2022 - INFO  - start environment cleanup.
+Failed to stop dirsrv-snmp.service: Unit dirsrv-snmp.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:00:33 ago on Thu 08 Sep 2022 05:11:34 PM CST.\nNo match for argument: 389-ds-base-snmp\nError: Unable to find a match: 389-ds-base-snmp'
+Thu Sep  8 17:12:44 2022 - INFO  - Finish environment cleanup!

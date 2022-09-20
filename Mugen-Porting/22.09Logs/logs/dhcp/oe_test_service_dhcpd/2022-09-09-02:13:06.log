@@ -1,0 +1,41 @@
+Fri Sep  9 02:13:09 2022 - INFO  - Start environmental preparation.
+cp: cannot stat '/etc/dhcp/dhcpd.conf': No such file or directory
+Cannot find device ""
+Fri Sep  9 02:13:10 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:13:11 2022 - INFO  - Start testing...
+Failed to restart dhcpd.service: Unit dhcpd.service not found.
+Fri Sep  9 02:13:11 2022 - ERROR - dhcpd.service restart failed
+Fri Sep  9 02:13:12 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dhcpd.service could not be found.
+Fri Sep  9 02:13:19 2022 - ERROR - dhcpd.service restart failed
+Fri Sep  9 02:13:19 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dhcpd.service: Unit dhcpd.service not loaded.
+Fri Sep  9 02:13:20 2022 - ERROR - dhcpd.service stop failed
+Fri Sep  9 02:13:21 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dhcpd.service could not be found.
+Fri Sep  9 02:13:27 2022 - ERROR - dhcpd.service stop failed
+Fri Sep  9 02:13:28 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dhcpd.service: Unit dhcpd.service not found.
+Fri Sep  9 02:13:29 2022 - ERROR - dhcpd.service start failed
+Fri Sep  9 02:13:29 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dhcpd.service could not be found.
+Fri Sep  9 02:13:36 2022 - ERROR - dhcpd.service start failed
+Fri Sep  9 02:13:37 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dhcpd.service: No such file or directory
+Fri Sep  9 02:13:38 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dhcpd.service: Unit dhcpd.service not found.
+Fri Sep  9 02:13:39 2022 - ERROR - Job type reload is not applicable for unit dhcpd.service
+Fri Sep  9 02:13:39 2022 - ERROR - ../common/common_lib.sh line 91
+Unit dhcpd.service could not be found.
+Unit dhcpd.service could not be found.
+Fri Sep  9 02:13:40 2022 - INFO  - Finish test!
+Fri Sep  9 02:13:41 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:13:42 2022 - INFO  - start environment cleanup.
+Failed to stop dhcpd.service: Unit dhcpd.service not loaded.
+mv: cannot stat '/etc/dhcp/dhcpd.bak': No such file or directory
+Warning: Executing wildcard deletion to stay compatible with old scripts.
+         Explicitly specify the prefix length (192.168.0.1/32) to avoid this warning.
+         This special behaviour is likely to disappear in further releases,
+         fix your scripts!
+Cannot find device ""
+Fri Sep  9 02:13:43 2022 - INFO  - Finish environment cleanup!

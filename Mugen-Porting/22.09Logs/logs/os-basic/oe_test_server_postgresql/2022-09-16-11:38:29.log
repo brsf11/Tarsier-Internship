@@ -1,0 +1,22 @@
+Fri Sep 16 11:38:32 2022 - INFO  - Start environment preparation.
+userdel: user 'postgres' does not exist
+Fri Sep 16 11:38:32 2022 - WARN  - no thing to do.
+Fri Sep 16 11:39:14 2022 - INFO  - Environmental preparation is over.
+Fri Sep 16 11:39:14 2022 - INFO  - Start executing testcase.
+oe_test_server_postgresql.sh: line 32: /usr/bin/postgresql-setup: No such file or directory
+Fri Sep 16 11:39:15 2022 - ERROR - oe_test_server_postgresql.sh line 33
+Failed to start postgresql.service: Unit postgresql.service not found.
+Fri Sep 16 11:39:16 2022 - ERROR - oe_test_server_postgresql.sh line 36
+Unit postgresql.service could not be found.
+Fri Sep 16 11:39:16 2022 - ERROR - oe_test_server_postgresql.sh line 38
+Fri Sep 16 11:39:17 2022 - INFO  - End of testcase execution.
+Fri Sep 16 11:39:18 2022 - ERROR - failed to execute the case.
+Fri Sep 16 11:39:18 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 22:21:20 ago on Thu 15 Sep 2022 01:17:52 PM CST.\nNo match for argument: postgresql-server\nError: Unable to find a match: postgresql-server'
+userdel: user 'postgres' does not exist
+Fri Sep 16 11:39:21 2022 - INFO  - Finish environment cleanup.

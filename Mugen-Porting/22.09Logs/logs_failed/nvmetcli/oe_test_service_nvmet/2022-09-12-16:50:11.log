@@ -1,0 +1,43 @@
+Mon Sep 12 16:50:13 2022 - INFO  - Start environmental preparation.
+modprobe: FATAL: Module nvmet not found in directory /lib/modules/5.10.0
+Mon Sep 12 16:51:09 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:51:10 2022 - INFO  - Start testing...
+Job for nvmet.service failed because the control process exited with error code.
+See "systemctl status nvmet.service" and "journalctl -xeu nvmet.service" for details.
+Mon Sep 12 16:51:14 2022 - ERROR - nvmet.service restart failed
+Mon Sep 12 16:51:15 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 16:51:22 2022 - ERROR - nvmet.service restart failed
+Mon Sep 12 16:51:23 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 16:51:30 2022 - ERROR - nvmet.service stop failed
+Mon Sep 12 16:51:30 2022 - ERROR - ../common/common_lib.sh line 42
+Job for nvmet.service failed because the control process exited with error code.
+See "systemctl status nvmet.service" and "journalctl -xeu nvmet.service" for details.
+Mon Sep 12 16:51:34 2022 - ERROR - nvmet.service start failed
+Mon Sep 12 16:51:35 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 16:51:42 2022 - ERROR - nvmet.service start failed
+Mon Sep 12 16:51:42 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/nvmet.service
+Removed /etc/systemd/system/multi-user.target.wants/nvmet.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/nvmet.service’: No such file or directory
+Sep 12 16:51:14 openEuler-riscv64 nvmetcli[546]:     errors = nvme.Root().restore_from_file(from_file)
+Sep 12 16:51:14 openEuler-riscv64 nvmetcli[546]:     raise CFSError("%s does not exist.  Giving up." %
+Sep 12 16:51:14 openEuler-riscv64 nvmetcli[546]: nvmet.nvme.CFSError: /sys/kernel/config/nvmet does not exist.  Giving up.
+Sep 12 16:51:14 openEuler-riscv64 systemd[1]: nvmet.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 16:51:14 openEuler-riscv64 systemd[1]: nvmet.service: Failed with result 'exit-code'.
+Sep 12 16:51:14 openEuler-riscv64 systemd[1]: Failed to start Restore NVMe kernel target configuration.
+Sep 12 16:51:34 openEuler-riscv64 nvmetcli[565]:     errors = nvme.Root().restore_from_file(from_file)
+Sep 12 16:51:34 openEuler-riscv64 nvmetcli[565]:     raise CFSError("%s does not exist.  Giving up." %
+Sep 12 16:51:34 openEuler-riscv64 nvmetcli[565]: nvmet.nvme.CFSError: /sys/kernel/config/nvmet does not exist.  Giving up.
+Sep 12 16:51:34 openEuler-riscv64 systemd[1]: nvmet.service: Main process exited, code=exited, status=1/FAILURE
+Sep 12 16:51:34 openEuler-riscv64 systemd[1]: nvmet.service: Failed with result 'exit-code'.
+Sep 12 16:51:34 openEuler-riscv64 systemd[1]: Failed to start Restore NVMe kernel target configuration.
+Mon Sep 12 16:51:52 2022 - ERROR - There is an error message for the log of nvmet.service
+Mon Sep 12 16:51:53 2022 - ERROR - ../common/common_lib.sh line 28
+Job for nvmet.service failed because the control process exited with error code.
+See "systemctl status nvmet.service" and "journalctl -xeu nvmet.service" for details.
+Failed to reload nvmet.service: Job type reload is not applicable for unit nvmet.service.
+Mon Sep 12 16:51:57 2022 - INFO  - Finish test!
+Mon Sep 12 16:51:58 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:51:59 2022 - INFO  - start environment cleanup.
+rmmod: ERROR: Module nvmet is not currently loaded
+Mon Sep 12 16:52:28 2022 - INFO  - Finish environment cleanup!

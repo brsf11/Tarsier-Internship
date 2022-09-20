@@ -1,0 +1,15 @@
+Mon Sep 12 20:34:13 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 20:35:31 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:35:32 2022 - INFO  - Start testing...
+     Active: active (exited) since Mon 2022-09-12 20:35:32 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (exited) since Mon 2022-09-12 20:35:45 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/srp_daemon.service
+Removed /etc/systemd/system/multi-user.target.wants/srp_daemon.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/srp_daemon.service’: No such file or directory
+Failed to reload srp_daemon.service: Job type reload is not applicable for unit srp_daemon.service.
+     Active: active (exited) since Mon 2022-09-12 20:35:45 CST; 15s ago
+Mon Sep 12 20:36:01 2022 - INFO  - Finish test!
+Mon Sep 12 20:36:01 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 20:36:02 2022 - INFO  - start environment cleanup.
+Mon Sep 12 20:36:20 2022 - INFO  - Finish environment cleanup!

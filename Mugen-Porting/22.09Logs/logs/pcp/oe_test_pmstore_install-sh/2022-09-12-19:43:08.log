@@ -1,0 +1,16 @@
+Mon Sep 12 19:43:11 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 19:46:44 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:46:44 2022 - INFO  - Start to run test.
+pmstore version 5.3.5
+disk.dev.write: new value="1" pmStore: No permission to perform requested operation
+disk.dev.write: new value="1" pmStore: No permission to perform requested operation
+disk.dev.write: new value="1" pmStore: No permission to perform requested operation
+disk.dev.write: new value="1" pmStore: No permission to perform requested operation
+disk.dev.write: new value="1" pmStore: No permission to perform requested operation
+disk.dev.write: new value="1" pmStore: No permission to perform requested operation
+Mon Sep 12 19:46:57 2022 - INFO  - End to run test.
+Mon Sep 12 19:46:58 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 19:46:58 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 19:47:55 2022 - INFO  - End to restore the test environment.

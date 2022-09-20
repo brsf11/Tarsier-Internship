@@ -1,0 +1,15 @@
+Mon Sep 12 23:58:03 2022 - INFO  - Start environmental preparation.
+Tue Sep 13 00:00:21 2022 - INFO  - End of environmental preparation!
+Tue Sep 13 00:00:22 2022 - INFO  - Start to run test.
+     Active: active (listening) since Tue 2022-09-13 00:00:22 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Tue 2022-09-13 00:00:34 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/xvnc.socket
+Removed /etc/systemd/system/sockets.target.wants/xvnc.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/xvnc.socket’: No such file or directory
+Failed to reload xvnc.socket: Job type reload is not applicable for unit xvnc.socket.
+     Active: active (listening) since Tue 2022-09-13 00:00:34 CST; 15s ago
+Tue Sep 13 00:00:51 2022 - INFO  - End of the test.
+Tue Sep 13 00:00:51 2022 - INFO  - succeed to execute the case.
+Tue Sep 13 00:00:52 2022 - INFO  - start environment cleanup.
+Tue Sep 13 00:01:23 2022 - INFO  - Finish environment cleanup!

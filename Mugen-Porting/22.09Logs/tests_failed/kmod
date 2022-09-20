@@ -1,0 +1,7 @@
+oe_test_depmod
+oe_test_insmod-lsmod
+oe_test_kmod
+oe_test_modinfo
+oe_test_modprobe
+oe_test_rmmod
+oe_test_weak-modules

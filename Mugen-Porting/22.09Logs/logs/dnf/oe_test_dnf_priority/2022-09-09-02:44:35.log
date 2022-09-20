@@ -1,0 +1,12 @@
+Fri Sep  9 02:44:37 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:44:38 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:44:39 2022 - INFO  - Start to run test.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:44:43 2022 - ERROR - oe_test_dnf_priority.sh line 35
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Fri Sep  9 02:44:56 2022 - ERROR - oe_test_dnf_priority.sh line 37
+Fri Sep  9 02:44:57 2022 - INFO  - End of the test.
+Fri Sep  9 02:44:58 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:44:58 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 02:45:05 2022 - INFO  - End of restore the test environment.

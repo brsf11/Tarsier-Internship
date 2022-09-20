@@ -1,0 +1,13 @@
+Mon Sep 12 18:57:57 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:59:37 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:59:37 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 18:59:41 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Mon 2022-09-12 18:59:56 CST; 6s ago
+Mon Sep 12 19:00:03 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload blivet.service: Job type reload is not applicable for unit blivet.service.
+     Active: active (running) since Mon 2022-09-12 18:59:56 CST; 7s ago
+Mon Sep 12 19:00:04 2022 - INFO  - Finish test!
+Mon Sep 12 19:00:05 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 19:00:06 2022 - INFO  - start environment cleanup.
+Mon Sep 12 19:00:50 2022 - INFO  - Finish environment cleanup!

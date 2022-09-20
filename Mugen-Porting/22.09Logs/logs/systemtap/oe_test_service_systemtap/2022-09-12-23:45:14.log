@@ -1,0 +1,35 @@
+Mon Sep 12 23:45:17 2022 - INFO  - Start testing...
+Failed to restart systemtap.service: Unit systemtap.service not found.
+Mon Sep 12 23:45:18 2022 - ERROR - systemtap.service restart failed
+Mon Sep 12 23:45:19 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemtap.service could not be found.
+Mon Sep 12 23:45:25 2022 - ERROR - systemtap.service restart failed
+Mon Sep 12 23:45:26 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemtap.service: Unit systemtap.service not loaded.
+Mon Sep 12 23:45:27 2022 - ERROR - systemtap.service stop failed
+Mon Sep 12 23:45:27 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemtap.service could not be found.
+Mon Sep 12 23:45:34 2022 - ERROR - systemtap.service stop failed
+Mon Sep 12 23:45:35 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemtap.service: Unit systemtap.service not found.
+Mon Sep 12 23:45:35 2022 - ERROR - systemtap.service start failed
+Mon Sep 12 23:45:36 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemtap.service could not be found.
+Mon Sep 12 23:45:43 2022 - ERROR - systemtap.service start failed
+Mon Sep 12 23:45:43 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemtap.service: No such file or directory
+Mon Sep 12 23:45:44 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemtap.service: Unit systemtap.service not found.
+sed: can't read /usr/lib/systemd/system/systemtap.service: No such file or directory
+Failed to reload systemtap.service: Unit systemtap.service not found.
+Mon Sep 12 23:45:49 2022 - ERROR - systemtap.service reload failed
+Mon Sep 12 23:45:50 2022 - ERROR - oe_test_service_systemtap.sh line 29
+Unit systemtap.service could not be found.
+Mon Sep 12 23:45:51 2022 - ERROR - systemtap.service reload causes the service status to change
+Mon Sep 12 23:45:52 2022 - ERROR - oe_test_service_systemtap.sh line 31
+Mon Sep 12 23:45:52 2022 - INFO  - Finish test!
+Mon Sep 12 23:45:53 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:45:54 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/systemtap.service: No such file or directory
+Failed to reload systemtap.service: Unit systemtap.service not found.
+Mon Sep 12 23:45:59 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,11 @@
+Fri Sep 16 12:25:42 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 16 12:25:49 2022 - INFO  - pkgs:(net-tools) is already installed
+Fri Sep 16 12:25:50 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:25:51 2022 - INFO  - Start to run test.
+Failed to enable unit: Unit file systemd-resolved.service does not exist.
+Fri Sep 16 12:25:51 2022 - ERROR - oe_test_nmcli_systemd_resolved.sh line 31
+Fri Sep 16 12:25:53 2022 - ERROR - oe_test_nmcli_systemd_resolved.sh line 37
+Fri Sep 16 12:25:54 2022 - INFO  - End to run test.
+Fri Sep 16 12:25:54 2022 - ERROR - failed to execute the case.
+Fri Sep 16 12:25:55 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 12:25:56 2022 - INFO  - End to restore the test environment.

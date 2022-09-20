@@ -1,0 +1,19 @@
+Fri Sep  9 02:59:06 2022 - INFO  - Start to prepare the test environment.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No repositories available
+Fri Sep  9 02:59:16 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:59:16 2022 - INFO  - Start to run test.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No repositories available
+Fri Sep  9 02:59:21 2022 - INFO  - End of the test.
+Fri Sep  9 02:59:21 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 02:59:22 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 03:29:04 2022 - ERROR - Timeout : Command 'bash oe_test_dnf_repeat-upgrade-downgrade.sh' timed out after 1799.9994051880003 seconds
+Fri Sep  9 03:29:08 2022 - INFO  - Start to restore the test environment.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Fri Sep  9 03:29:18 2022 - INFO  - Finish restoring the test environment.

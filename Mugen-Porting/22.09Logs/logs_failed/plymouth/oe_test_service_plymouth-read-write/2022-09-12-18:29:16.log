@@ -1,0 +1,39 @@
+Mon Sep 12 18:29:19 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:30:02 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:30:03 2022 - INFO  - Start testing...
+Failed to restart plymouth-read-write.service: Unit plymouth-read-write.service not found.
+Mon Sep 12 18:30:03 2022 - ERROR - plymouth-read-write.service restart failed
+Mon Sep 12 18:30:04 2022 - ERROR - ../common/common_lib.sh line 34
+Unit plymouth-read-write.service could not be found.
+Mon Sep 12 18:30:11 2022 - ERROR - plymouth-read-write.service restart failed
+Mon Sep 12 18:30:11 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop plymouth-read-write.service: Unit plymouth-read-write.service not loaded.
+Mon Sep 12 18:30:12 2022 - ERROR - plymouth-read-write.service stop failed
+Mon Sep 12 18:30:13 2022 - ERROR - ../common/common_lib.sh line 39
+Unit plymouth-read-write.service could not be found.
+Mon Sep 12 18:30:20 2022 - ERROR - plymouth-read-write.service stop failed
+Mon Sep 12 18:30:20 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start plymouth-read-write.service: Unit plymouth-read-write.service not found.
+Mon Sep 12 18:30:21 2022 - ERROR - plymouth-read-write.service start failed
+Mon Sep 12 18:30:22 2022 - ERROR - ../common/common_lib.sh line 44
+Unit plymouth-read-write.service could not be found.
+Mon Sep 12 18:30:29 2022 - ERROR - plymouth-read-write.service start failed
+Mon Sep 12 18:30:29 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for plymouth-read-write.service: No such file or directory
+Mon Sep 12 18:30:30 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start plymouth-read-write.service: Unit plymouth-read-write.service not found.
+Mon Sep 12 18:30:31 2022 - ERROR - Job type reload is not applicable for unit plymouth-read-write.service
+Mon Sep 12 18:30:32 2022 - ERROR - ../common/common_lib.sh line 91
+Unit plymouth-read-write.service could not be found.
+Unit plymouth-read-write.service could not be found.
+Mon Sep 12 18:30:33 2022 - INFO  - Finish test!
+Mon Sep 12 18:30:34 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:30:34 2022 - INFO  - start environment cleanup.
+Failed to stop plymouth-read-write.service: Unit plymouth-read-write.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:07:55 ago on Mon 12 Sep 2022 06:22:05 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by plymouth-0.9.5-4.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 18:30:37 2022 - INFO  - Finish environment cleanup!

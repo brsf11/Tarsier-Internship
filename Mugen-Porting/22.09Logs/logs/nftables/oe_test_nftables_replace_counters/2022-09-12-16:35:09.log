@@ -1,0 +1,21 @@
+Mon Sep 12 16:35:12 2022 - INFO  - Start to config params of the case.
+Mon Sep 12 16:35:13 2022 - INFO  - End to config params of the case.
+Mon Sep 12 16:35:14 2022 - INFO  - Start to prepare the test environment.
+oe_test_nftables_replace_counters.sh: line 31: nft: command not found
+oe_test_nftables_replace_counters.sh: line 32: nft: command not found
+Mon Sep 12 16:35:14 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 16:35:15 2022 - INFO  - Start executing testcase.
+oe_test_nftables_replace_counters.sh: line 38: nft: command not found
+oe_test_nftables_replace_counters.sh: line 39: nft: command not found
+Mon Sep 12 16:35:16 2022 - ERROR - exec 'nft add rule inet example_table example_chain tcp dport ssh accept' failed
+Mon Sep 12 16:35:17 2022 - ERROR - oe_test_nftables_replace_counters.sh line 40
+oe_test_nftables_replace_counters.sh: line 42: nft: command not found
+oe_test_nftables_replace_counters.sh: line 43: nft: command not found
+oe_test_nftables_replace_counters.sh: line 44: nft: command not found
+Mon Sep 12 16:35:17 2022 - ERROR - exec 'nft replace rule inet example_table example_chain handle 2 tcp dport 22 counter accept' failed
+Mon Sep 12 16:35:18 2022 - ERROR - oe_test_nftables_replace_counters.sh line 45
+Mon Sep 12 16:35:19 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 16:35:20 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:35:20 2022 - INFO  - start environment cleanup.
+oe_test_nftables_replace_counters.sh: line 51: nft: command not found
+Mon Sep 12 16:35:21 2022 - INFO  - Finish environment cleanup!

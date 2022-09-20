@@ -1,0 +1,17 @@
+Mon Sep 12 22:02:03 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Mon Sep 12 22:03:05 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:03:05 2022 - INFO  - Start to run test.
+Mon Sep 12 22:32:01 2022 - ERROR - Timeout : Command 'bash oe_test_rubygem-bundler_bundle_02.sh' timed out after 1799.999379669 seconds
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+      create  testgem01/CODE_OF_CONDUCT.md
+Mon Sep 12 22:46:13 2022 - INFO  - Start to restore the test environment.

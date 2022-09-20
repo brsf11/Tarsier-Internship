@@ -1,0 +1,27 @@
+Mon Sep 12 16:37:28 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:38:37 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:38:38 2022 - INFO  - Start testing...
+A dependency job for nfs-idmapd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:38:39 2022 - ERROR - nfs-idmapd.service restart failed
+Mon Sep 12 16:38:39 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 16:38:46 2022 - ERROR - nfs-idmapd.service restart failed
+Mon Sep 12 16:38:47 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead) since Mon 2022-09-12 16:38:47 CST; 5s ago
+A dependency job for nfs-idmapd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:38:54 2022 - ERROR - nfs-idmapd.service start failed
+Mon Sep 12 16:38:54 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 16:39:01 2022 - ERROR - nfs-idmapd.service start failed
+Mon Sep 12 16:39:02 2022 - ERROR - ../common/common_lib.sh line 47
+Mon Sep 12 16:39:03 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 12 16:38:38 openEuler-riscv64 systemd[1]: Dependency failed for NFSv4 ID-name mapping service.
+Sep 12 16:38:38 openEuler-riscv64 systemd[1]: nfs-idmapd.service: Job nfs-idmapd.service/start failed with result 'dependency'.
+Sep 12 16:38:53 openEuler-riscv64 systemd[1]: Dependency failed for NFSv4 ID-name mapping service.
+Sep 12 16:38:53 openEuler-riscv64 systemd[1]: nfs-idmapd.service: Job nfs-idmapd.service/start failed with result 'dependency'.
+Mon Sep 12 16:39:03 2022 - ERROR - There is an error message for the log of nfs-idmapd.service
+Mon Sep 12 16:39:04 2022 - ERROR - ../common/common_lib.sh line 28
+A dependency job for nfs-idmapd.service failed. See 'journalctl -xe' for details.
+Failed to reload nfs-idmapd.service: Job type reload is not applicable for unit nfs-idmapd.service.
+Mon Sep 12 16:39:05 2022 - INFO  - Finish test!
+Mon Sep 12 16:39:06 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:39:07 2022 - INFO  - start environment cleanup.
+Mon Sep 12 16:39:40 2022 - INFO  - Finish environment cleanup!

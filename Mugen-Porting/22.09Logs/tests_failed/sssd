@@ -1,0 +1,15 @@
+oe_test_service_sssd-autofs
+oe_test_service_sssd-ifp
+oe_test_service_sssd-kcm
+oe_test_service_sssd-nss
+oe_test_service_sssd-pac
+oe_test_service_sssd-pam
+oe_test_service_sssd
+oe_test_service_sssd-ssh
+oe_test_service_sssd-sudo
+oe_test_socket_sssd-autofs
+oe_test_socket_sssd-kcm
+oe_test_socket_sssd-pac
+oe_test_socket_sssd-pam
+oe_test_socket_sssd-ssh
+oe_test_socket_sssd-sudo

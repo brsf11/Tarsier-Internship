@@ -1,0 +1,29 @@
+Tue Sep 20 12:56:31 2022 - INFO  - Start testing...
+Failed to restart veritysetup.target: Unit veritysetup.target not found.
+Tue Sep 20 12:56:32 2022 - ERROR - veritysetup.target restart failed
+Tue Sep 20 12:56:33 2022 - ERROR - ../common/common_lib.sh line 34
+Unit veritysetup.target could not be found.
+Tue Sep 20 12:56:39 2022 - ERROR - veritysetup.target restart failed
+Tue Sep 20 12:56:40 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop veritysetup.target: Unit veritysetup.target not loaded.
+Tue Sep 20 12:56:40 2022 - ERROR - veritysetup.target stop failed
+Tue Sep 20 12:56:41 2022 - ERROR - ../common/common_lib.sh line 39
+Unit veritysetup.target could not be found.
+Tue Sep 20 12:56:47 2022 - ERROR - veritysetup.target stop failed
+Tue Sep 20 12:56:48 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start veritysetup.target: Unit veritysetup.target not found.
+Tue Sep 20 12:56:49 2022 - ERROR - veritysetup.target start failed
+Tue Sep 20 12:56:49 2022 - ERROR - ../common/common_lib.sh line 44
+Unit veritysetup.target could not be found.
+Tue Sep 20 12:56:56 2022 - ERROR - veritysetup.target start failed
+Tue Sep 20 12:56:57 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for veritysetup.target: No such file or directory
+Tue Sep 20 12:56:57 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start veritysetup.target: Unit veritysetup.target not found.
+Tue Sep 20 12:56:58 2022 - ERROR - Job type reload is not applicable for unit veritysetup.target
+Tue Sep 20 12:56:59 2022 - ERROR - ../common/common_lib.sh line 91
+Unit veritysetup.target could not be found.
+Unit veritysetup.target could not be found.
+Tue Sep 20 12:57:00 2022 - INFO  - Finish test!
+Tue Sep 20 12:57:00 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:57:01 2022 - INFO  - oe_test_target_veritysetup.sh post_test

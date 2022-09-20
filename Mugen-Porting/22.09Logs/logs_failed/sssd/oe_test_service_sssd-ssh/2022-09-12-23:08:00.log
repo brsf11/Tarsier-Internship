@@ -1,0 +1,23 @@
+Mon Sep 12 23:08:02 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 23:08:42 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:08:43 2022 - INFO  - Start testing...
+Mon Sep 12 23:08:44 2022 - ERROR - Check sssd-ssh.service failed
+Mon Sep 12 23:08:44 2022 - ERROR - oe_test_service_sssd-ssh.sh line 32
+Mon Sep 12 23:08:45 2022 - ERROR - Check sssd-ssh.service failed
+Mon Sep 12 23:08:46 2022 - ERROR - oe_test_service_sssd-ssh.sh line 34
+Failed to stop sssd-ssh.service: Unit sssd-ssh.service not loaded.
+Mon Sep 12 23:08:47 2022 - ERROR - sssd-ssh.service stop failed
+Mon Sep 12 23:08:47 2022 - ERROR - oe_test_service_sssd-ssh.sh line 36
+Failed to get unit file state for sssd-ssh.service: No such file or directory
+Mon Sep 12 23:08:48 2022 - ERROR - sssd-ssh.service is not indirect
+Mon Sep 12 23:08:49 2022 - ERROR - oe_test_service_sssd-ssh.sh line 38
+Mon Sep 12 23:08:50 2022 - INFO  - Finish test!
+Mon Sep 12 23:08:50 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:08:51 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:08:53 ago on Mon 12 Sep 2022 10:59:47 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libsmbclient.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libsmbclient.so.0(SMBCLIENT_0.1.0)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-krb5pac.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-krb5pac.so.0(NDR_KRB5PAC_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-nbt.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-nbt.so.0(NDR_NBT_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-standard.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_0.0.6)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_1.0.0)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libsamba-util.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 23:08:55 2022 - INFO  - Finish environment cleanup!

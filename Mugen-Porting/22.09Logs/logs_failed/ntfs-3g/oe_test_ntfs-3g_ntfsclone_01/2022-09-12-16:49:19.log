@@ -1,0 +1,43 @@
+Mon Sep 12 16:49:21 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 16:50:33 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:50:34 2022 - INFO  - Start to run test.
+Usage: ntfsclone [OPTIONS] SOURCE
+ntfsclone v2022.5.17 (libntfs-3g)
+Mon Sep 12 16:50:35 2022 - ERROR - Check ntfsclone --output failed.
+Mon Sep 12 16:50:36 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 35
+Mon Sep 12 16:50:36 2022 - ERROR - Check ntfsclone --overwrite failed.
+Mon Sep 12 16:50:37 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 37
+Mon Sep 12 16:50:38 2022 - ERROR - Check ntfsclone --save-image failed.
+Mon Sep 12 16:50:38 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 39
+Mon Sep 12 16:50:39 2022 - ERROR - Check ntfsclone --restore-image failed.
+Mon Sep 12 16:50:40 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 41
+Mon Sep 12 16:50:40 2022 - ERROR - Check ntfsclone --metadata failed.
+Mon Sep 12 16:50:41 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 43
+Mon Sep 12 16:50:42 2022 - ERROR - Check ntfsclone --rescue failed.
+Mon Sep 12 16:50:42 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 45
+Mon Sep 12 16:50:43 2022 - ERROR - Check ntfsclone --no-action failed.
+Mon Sep 12 16:50:44 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 47
+Mon Sep 12 16:50:45 2022 - ERROR - Check ntfsclone --ignore-fs-check failed.
+Mon Sep 12 16:50:45 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 49
+Mon Sep 12 16:50:46 2022 - INFO  - End of the test.
+Mon Sep 12 16:50:47 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:50:48 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:51:16 2022 - INFO  - Finish restoring the test environment.

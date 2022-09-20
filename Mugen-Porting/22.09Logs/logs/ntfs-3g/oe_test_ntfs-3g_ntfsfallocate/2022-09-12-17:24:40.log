@@ -1,0 +1,65 @@
+Mon Sep 12 17:24:42 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+umount: /mnt/windows: not mounted.
+Mon Sep 12 17:25:44 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:25:45 2022 - INFO  - Start to run test.
+Usage: ntfsfallocate [options] -l length device file [attr-type [attr-name]]
+ntfsfallocate v2022.5.17 (libntfs-3g)
+ntfsfallocate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:25:46 2022 - ERROR - Check ntfsfallocate -l failed.
+Mon Sep 12 17:25:47 2022 - ERROR - oe_test_ntfs-3g_ntfsfallocate.sh line 39
+ntfsfallocate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:25:47 2022 - ERROR - Check ntfsfallocate -f failed.
+Mon Sep 12 17:25:48 2022 - ERROR - oe_test_ntfs-3g_ntfsfallocate.sh line 41
+ntfsfallocate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:25:49 2022 - ERROR - Check ntfsfallocate -n failed.
+Mon Sep 12 17:25:49 2022 - ERROR - oe_test_ntfs-3g_ntfsfallocate.sh line 43
+ntfsfallocate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:25:50 2022 - ERROR - Check ntfsfallocate -o failed.
+Mon Sep 12 17:25:51 2022 - ERROR - oe_test_ntfs-3g_ntfsfallocate.sh line 45
+ntfsfallocate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:25:51 2022 - ERROR - Check ntfsfallocate -v failed.
+Mon Sep 12 17:25:52 2022 - ERROR - oe_test_ntfs-3g_ntfsfallocate.sh line 47
+ntfsfallocate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:25:53 2022 - ERROR - Check ntfsfallocate -vv failed.
+Mon Sep 12 17:25:53 2022 - ERROR - oe_test_ntfs-3g_ntfsfallocate.sh line 49
+ntfsfallocate v2022.5.17 (libntfs-3g)
+Error opening '/dev/': Is a directory
+ERROR: Failed to mount /dev/: Is a directory
+Aborting...
+Mon Sep 12 17:25:54 2022 - ERROR - Check ntfsfallocate attr-name failed.
+Mon Sep 12 17:25:55 2022 - ERROR - oe_test_ntfs-3g_ntfsfallocate.sh line 51
+Mon Sep 12 17:25:56 2022 - INFO  - End of the test.
+Mon Sep 12 17:25:56 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:25:57 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:26:19 2022 - INFO  - Finish restoring the test environment.

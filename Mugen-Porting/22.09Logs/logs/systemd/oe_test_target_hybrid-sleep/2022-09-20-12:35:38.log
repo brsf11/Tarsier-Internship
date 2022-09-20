@@ -1,0 +1,6 @@
+Tue Sep 20 12:35:41 2022 - INFO  - Start testing...
+Tue Sep 20 12:35:41 2022 - INFO  - A special target unit for hibernating and suspending the system at the same time. This pulls in sleep.target.
+Tue Sep 20 12:35:42 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:35:43 2022 - INFO  - Finish test!
+Tue Sep 20 12:35:43 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:35:44 2022 - INFO  - oe_test_target_hybrid-sleep.sh post_test

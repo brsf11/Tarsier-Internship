@@ -1,0 +1,44 @@
+Fri Sep  9 06:49:07 2022 - INFO  - Start environmental preparation.
+oe_test_service_phc2sys.sh: line 25: ethtool: command not found
+Fri Sep  9 06:49:50 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 06:49:51 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 06:49:51 CST; 6s ago
+Fri Sep  9 06:50:04 2022 - ERROR - phc2sys.service stop failed
+Fri Sep  9 06:50:05 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Fri 2022-09-09 06:50:05 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/phc2sys.service
+Removed /etc/systemd/system/multi-user.target.wants/phc2sys.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/phc2sys.service’: No such file or directory
+Sep 09 06:49:51 openEuler-riscv64 phc2sys[530]: [71.002] uds: sendto failed: No such file or directory
+Sep 09 06:49:52 openEuler-riscv64 phc2sys[530]: [72.021] uds: sendto failed: No such file or directory
+Sep 09 06:49:53 openEuler-riscv64 phc2sys[530]: [73.024] uds: sendto failed: No such file or directory
+Sep 09 06:49:54 openEuler-riscv64 phc2sys[530]: [74.028] uds: sendto failed: No such file or directory
+Sep 09 06:49:55 openEuler-riscv64 phc2sys[530]: [75.032] uds: sendto failed: No such file or directory
+Sep 09 06:49:56 openEuler-riscv64 phc2sys[530]: [76.036] uds: sendto failed: No such file or directory
+Sep 09 06:49:57 openEuler-riscv64 phc2sys[530]: [77.040] uds: sendto failed: No such file or directory
+Sep 09 06:49:58 openEuler-riscv64 phc2sys[530]: [77.260] poll failed
+Sep 09 06:49:58 openEuler-riscv64 systemd[1]: phc2sys.service: Failed with result 'exit-code'.
+Sep 09 06:50:05 openEuler-riscv64 phc2sys[542]: [84.864] uds: sendto failed: No such file or directory
+Sep 09 06:50:06 openEuler-riscv64 phc2sys[542]: [85.881] uds: sendto failed: No such file or directory
+Sep 09 06:50:07 openEuler-riscv64 phc2sys[542]: [86.884] uds: sendto failed: No such file or directory
+Sep 09 06:50:08 openEuler-riscv64 phc2sys[542]: [87.888] uds: sendto failed: No such file or directory
+Sep 09 06:50:09 openEuler-riscv64 phc2sys[542]: [88.892] uds: sendto failed: No such file or directory
+Sep 09 06:50:10 openEuler-riscv64 phc2sys[542]: [89.896] uds: sendto failed: No such file or directory
+Sep 09 06:50:11 openEuler-riscv64 phc2sys[542]: [90.900] uds: sendto failed: No such file or directory
+Sep 09 06:50:12 openEuler-riscv64 phc2sys[542]: [91.904] uds: sendto failed: No such file or directory
+Sep 09 06:50:13 openEuler-riscv64 phc2sys[542]: [92.908] uds: sendto failed: No such file or directory
+Sep 09 06:50:14 openEuler-riscv64 phc2sys[542]: [93.912] uds: sendto failed: No such file or directory
+Sep 09 06:50:15 openEuler-riscv64 phc2sys[542]: [94.916] uds: sendto failed: No such file or directory
+Sep 09 06:50:16 openEuler-riscv64 phc2sys[542]: [95.920] uds: sendto failed: No such file or directory
+Sep 09 06:50:17 openEuler-riscv64 phc2sys[542]: [96.924] uds: sendto failed: No such file or directory
+Sep 09 06:50:18 openEuler-riscv64 phc2sys[542]: [97.928] uds: sendto failed: No such file or directory
+Sep 09 06:50:19 openEuler-riscv64 phc2sys[542]: [98.932] uds: sendto failed: No such file or directory
+Sep 09 06:50:20 openEuler-riscv64 phc2sys[542]: [99.936] uds: sendto failed: No such file or directory
+Fri Sep  9 06:50:22 2022 - ERROR - There is an error message for the log of phc2sys.service
+Fri Sep  9 06:50:23 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload phc2sys.service: Job type reload is not applicable for unit phc2sys.service.
+     Active: active (running) since Fri 2022-09-09 06:50:05 CST; 17s ago
+Fri Sep  9 06:50:24 2022 - INFO  - Finish test!
+Fri Sep  9 06:50:24 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:50:25 2022 - INFO  - start environment cleanup.
+Fri Sep  9 06:50:43 2022 - INFO  - Finish environment cleanup!

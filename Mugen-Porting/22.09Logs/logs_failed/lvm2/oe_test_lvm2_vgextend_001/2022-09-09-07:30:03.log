@@ -1,0 +1,107 @@
+Fri Sep  9 07:30:06 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:30:24 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:30:31 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:30:31 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:30:33 2022 - ERROR - failed to create PV
+Fri Sep  9 07:30:33 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 30
+Fri Sep  9 07:30:34 2022 - ERROR - failed to create PV
+Fri Sep  9 07:30:35 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 32
+  No device found for /dev/.
+Fri Sep  9 07:30:36 2022 - ERROR - failed to create VG
+Fri Sep  9 07:30:36 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 34
+Fri Sep  9 07:30:37 2022 - ERROR - failed to create VG
+Fri Sep  9 07:30:38 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 36
+  No device found for /dev/.
+Fri Sep  9 07:30:39 2022 - ERROR - failed to extend VG test
+Fri Sep  9 07:30:40 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 38
+Fri Sep  9 07:30:41 2022 - ERROR - failed to create PV
+Fri Sep  9 07:30:41 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 40
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:30:43 2022 - ERROR - failed to create VG
+Fri Sep  9 07:30:43 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 43
+  No device found for /dev/.
+Fri Sep  9 07:30:44 2022 - ERROR - failed to extend VG test -- autobackup y
+Fri Sep  9 07:30:45 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 45
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:30:46 2022 - ERROR - failed to create VG
+Fri Sep  9 07:30:47 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 48
+  No device found for /dev/.
+Fri Sep  9 07:30:48 2022 - ERROR - failed to extend VG -d
+Fri Sep  9 07:30:49 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 50
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:30:50 2022 - ERROR - failed to create VG
+Fri Sep  9 07:30:51 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 53
+  No device found for /dev/.
+Fri Sep  9 07:30:52 2022 - ERROR - failed to extend VG -f
+Fri Sep  9 07:30:52 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 55
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:30:54 2022 - ERROR - failed to create VG
+Fri Sep  9 07:30:54 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 58
+  No device found for /dev/.
+Fri Sep  9 07:30:55 2022 - ERROR - failed to extend VG --metadatatype
+Fri Sep  9 07:30:56 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 60
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:30:57 2022 - ERROR - failed to create VG
+Fri Sep  9 07:30:58 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 63
+  No device found for /dev/.
+Fri Sep  9 07:30:59 2022 - ERROR - failed to extend VG -f
+Fri Sep  9 07:31:00 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 65
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:31:02 2022 - ERROR - failed to extend VG -zero y
+Fri Sep  9 07:31:02 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 69
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:31:04 2022 - ERROR - failed to create VG
+Fri Sep  9 07:31:04 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 72
+  No device found for /dev/.
+Fri Sep  9 07:31:05 2022 - ERROR - failed to extend VG --labelsector
+Fri Sep  9 07:31:06 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 74
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:31:07 2022 - ERROR - failed to create VG
+Fri Sep  9 07:31:08 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 77
+  No device found for /dev/.
+Fri Sep  9 07:31:09 2022 - ERROR - failed to extend VG --pvmetadatacopies
+Fri Sep  9 07:31:10 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 79
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:31:11 2022 - ERROR - failed to create VG
+Fri Sep  9 07:31:12 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 82
+  No device found for /dev/.
+Fri Sep  9 07:31:13 2022 - ERROR - failed to extend VG --metadatasize
+Fri Sep  9 07:31:14 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 84
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:31:15 2022 - ERROR - failed to create VG
+Fri Sep  9 07:31:16 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 87
+  No device found for /dev/.
+Fri Sep  9 07:31:17 2022 - ERROR - failed to extend VG --metadataignore y
+Fri Sep  9 07:31:18 2022 - ERROR - oe_test_lvm2_vgextend_001.sh line 89
+Fri Sep  9 07:31:18 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:31:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:31:20 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+  No device found for /dev/.
+Fri Sep  9 07:31:21 2022 - WARN  - no thing to do.
+Fri Sep  9 07:31:22 2022 - INFO  - Finish environment cleanup.

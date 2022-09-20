@@ -1,0 +1,25 @@
+Fri Sep  9 07:28:24 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:28:59 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:29:00 2022 - INFO  - Start to run test.
+h
+Hello World
+./test1.sh: can't find tty fd: No such device or address
+./test1.sh: warning: won't have full job control
+imU
+lh
+Hello World
+./test2.sh[1]: cd: restricted shell - can't cd
+Hello World
+h
+Hello World
+./test1.sh: can't find tty fd: No such device or address
+./test1.sh: warning: won't have full job control
+imU
+lh
+Hello World
+./test2.sh[1]: cd: restricted shell - can't cd
+Hello World
+Fri Sep  9 07:29:05 2022 - INFO  - End to run test.
+Fri Sep  9 07:29:06 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 07:29:06 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 07:29:17 2022 - INFO  - End to restore the test environment.

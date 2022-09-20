@@ -1,0 +1,37 @@
+Fri Sep  9 01:40:03 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:40:43 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:40:43 2022 - INFO  - Start to run test.
+Failed to restart cockpit.socket: Unit cockpit.socket not found.
+Fri Sep  9 01:40:44 2022 - ERROR - cockpit.socket restart failed
+Fri Sep  9 01:40:45 2022 - ERROR - ../common/common_lib.sh line 34
+Unit cockpit.socket could not be found.
+Fri Sep  9 01:40:52 2022 - ERROR - cockpit.socket restart failed
+Fri Sep  9 01:40:52 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop cockpit.socket: Unit cockpit.socket not loaded.
+Fri Sep  9 01:40:53 2022 - ERROR - cockpit.socket stop failed
+Fri Sep  9 01:40:54 2022 - ERROR - ../common/common_lib.sh line 39
+Unit cockpit.socket could not be found.
+Fri Sep  9 01:41:00 2022 - ERROR - cockpit.socket stop failed
+Fri Sep  9 01:41:01 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start cockpit.socket: Unit cockpit.socket not found.
+Fri Sep  9 01:41:02 2022 - ERROR - cockpit.socket start failed
+Fri Sep  9 01:41:03 2022 - ERROR - ../common/common_lib.sh line 44
+Unit cockpit.socket could not be found.
+Fri Sep  9 01:41:09 2022 - ERROR - cockpit.socket start failed
+Fri Sep  9 01:41:10 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for cockpit.socket: No such file or directory
+Fri Sep  9 01:41:11 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start cockpit.socket: Unit cockpit.socket not found.
+Fri Sep  9 01:41:12 2022 - ERROR - oe_test_socket_cockpit.sh line 33
+Unit cockpit.socket could not be found.
+Fri Sep  9 01:41:12 2022 - ERROR - oe_test_socket_cockpit.sh line 35
+Fri Sep  9 01:41:13 2022 - INFO  - End of the test.
+Fri Sep  9 01:41:14 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:41:14 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:28 ago on Fri 09 Sep 2022 01:38:13 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libvirt needed by cockpit-254-1.oe2209.riscv64\n  - nothing provides libvirt-client needed by cockpit-254-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 01:41:18 2022 - INFO  - Finish environment cleanup!

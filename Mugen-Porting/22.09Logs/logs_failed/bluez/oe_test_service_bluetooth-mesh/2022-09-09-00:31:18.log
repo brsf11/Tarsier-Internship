@@ -1,0 +1,32 @@
+Fri Sep  9 00:31:20 2022 - INFO  - Start environmental preparation.
+oe_test_service_bluetooth-mesh.sh: line 24: hciconfig: command not found
+Fri Sep  9 00:31:21 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 00:31:22 2022 - INFO  - Start testing...
+Failed to restart bluetooth-mesh.service: Unit bluetooth-mesh.service not found.
+Fri Sep  9 00:31:23 2022 - ERROR - bluetooth-mesh.service restart failed
+Fri Sep  9 00:31:23 2022 - ERROR - ../common/common_lib.sh line 34
+Unit bluetooth-mesh.service could not be found.
+Fri Sep  9 00:31:30 2022 - ERROR - bluetooth-mesh.service restart failed
+Fri Sep  9 00:31:31 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop bluetooth-mesh.service: Unit bluetooth-mesh.service not loaded.
+Fri Sep  9 00:31:31 2022 - ERROR - bluetooth-mesh.service stop failed
+Fri Sep  9 00:31:32 2022 - ERROR - ../common/common_lib.sh line 39
+Unit bluetooth-mesh.service could not be found.
+Fri Sep  9 00:31:39 2022 - ERROR - bluetooth-mesh.service stop failed
+Fri Sep  9 00:31:40 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start bluetooth-mesh.service: Unit bluetooth-mesh.service not found.
+Fri Sep  9 00:31:41 2022 - ERROR - bluetooth-mesh.service start failed
+Fri Sep  9 00:31:41 2022 - ERROR - ../common/common_lib.sh line 44
+Unit bluetooth-mesh.service could not be found.
+Fri Sep  9 00:31:48 2022 - ERROR - bluetooth-mesh.service start failed
+Fri Sep  9 00:31:49 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for bluetooth-mesh.service: No such file or directory
+Fri Sep  9 00:31:49 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start bluetooth-mesh.service: Unit bluetooth-mesh.service not found.
+Fri Sep  9 00:31:50 2022 - ERROR - Job type reload is not applicable for unit bluetooth-mesh.service
+Fri Sep  9 00:31:51 2022 - ERROR - ../common/common_lib.sh line 91
+Unit bluetooth-mesh.service could not be found.
+Unit bluetooth-mesh.service could not be found.
+Fri Sep  9 00:31:52 2022 - INFO  - Finish test!
+Fri Sep  9 00:31:53 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:31:53 2022 - INFO  - oe_test_service_bluetooth-mesh.sh post_test

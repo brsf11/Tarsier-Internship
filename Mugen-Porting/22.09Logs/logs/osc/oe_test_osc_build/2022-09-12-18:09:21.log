@@ -1,0 +1,25 @@
+Mon Sep 12 18:09:23 2022 - INFO  - Start to config params of the case.
+Mon Sep 12 18:09:24 2022 - INFO  - End to config params of the case.
+Mon Sep 12 18:09:25 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 18:09:32 2022 - INFO  - pkgs:(osc build) is already installed
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 4694.
+Mon Sep 12 18:09:43 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:09:44 2022 - INFO  - Start to run test.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+BuildService API error: failed to branch: openEuler:Mainline/chrpath
+Mon Sep 12 18:09:51 2022 - ERROR - oe_test_osc_build.sh line 38
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Updating zjl
+At revision 4694.
+oe_test_osc_build.sh: line 42: cd: chrpath: No such file or directory
+Mon Sep 12 18:09:58 2022 - INFO  - Start to restore the test environment.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Server returned an error: HTTP Error 404: Not Found
+home:test666:branches:openEuler:Mainline/chrpath
+Mon Sep 12 18:10:05 2022 - WARN  - no thing to do.
+Mon Sep 12 18:10:06 2022 - INFO  - End to restore the test environment.

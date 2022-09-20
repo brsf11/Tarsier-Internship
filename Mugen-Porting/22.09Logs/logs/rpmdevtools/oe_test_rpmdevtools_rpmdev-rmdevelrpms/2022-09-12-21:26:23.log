@@ -1,0 +1,27 @@
+Mon Sep 12 21:26:26 2022 - INFO  - Start environmental preparation.
+Last metadata expiration check: 0:05:21 ago on Mon 12 Sep 2022 09:22:27 PM CST.
+ModemManager-glib-1.14.8-1.oe2209.riscv64.rpm   341 kB/s | 237 kB     00:00    
+Mon Sep 12 21:27:50 2022 - INFO  - End of environmental preparation.
+Mon Sep 12 21:27:51 2022 - INFO  - Start to run test.
+Options:
+rpmdev-rmdevelrpms version 1.15
+libxcrypt-devel-4.4.26-1.oe2209.riscv64
+perl-Devel-PPPort-3.63-1.oe2209.riscv64
+perl-Encode-devel-3.16-2.oe2209.riscv64
+perl-ExtUtils-Command-7.62-2.oe2209.noarch
+perl-ExtUtils-Install-2.20-1.oe2209.noarch
+perl-ExtUtils-MakeMaker-7.62-2.oe2209.noarch
+perl-ExtUtils-Manifest-1.73-1.oe2209.noarch
+perl-ExtUtils-ParseXS-3.35-1.oe2209.noarch
+perl-Test-Harness-3.43_02-2.oe2209.noarch
+perl-Test-Simple-1.302188-1.oe2209.noarch
+perl-devel-5.34.0-3.oe2209.riscv64
+systemtap-sdt-devel-4.5-3.oe2209.riscv64
+Not removed due to dependencies.
+Not removed due to dependencies.
+Supported formats:
+06418   237 ModemManager-glib-1.14.8-1.oe2209.riscv64.rpm
+Mon Sep 12 21:28:06 2022 - INFO  - End to run test.
+Mon Sep 12 21:28:07 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 21:28:07 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 21:28:28 2022 - INFO  - End to restore the test environment.

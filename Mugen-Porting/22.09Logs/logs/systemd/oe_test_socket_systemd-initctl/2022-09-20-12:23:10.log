@@ -1,0 +1,10 @@
+Tue Sep 20 12:23:12 2022 - INFO  - Start testing...
+     Active: active (listening) since Tue 2022-09-20 12:23:12 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:23:18 CST; 5s ago
+     Active: active (listening) since Tue 2022-09-20 12:23:24 CST; 5s ago
+Tue Sep 20 12:23:31 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-initctl.socket: Job type reload is not applicable for unit systemd-initctl.socket.
+     Active: active (listening) since Tue 2022-09-20 12:23:24 CST; 6s ago
+Tue Sep 20 12:23:32 2022 - INFO  - Finish test!
+Tue Sep 20 12:23:33 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:23:33 2022 - INFO  - oe_test_socket_systemd-initctl.sh post_test

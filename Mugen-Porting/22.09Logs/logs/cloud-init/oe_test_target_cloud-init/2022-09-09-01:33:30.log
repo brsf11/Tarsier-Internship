@@ -1,0 +1,9 @@
+Fri Sep  9 01:33:33 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:35:30 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:35:30 2022 - INFO  - Start to run test.
+oe_test_target_cloud-init.sh: line 30: test_execution: command not found
+oe_test_target_cloud-init.sh: line 31: test_reload: command not found
+Fri Sep  9 01:35:31 2022 - INFO  - End of the test.
+Fri Sep  9 01:35:32 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 01:35:33 2022 - INFO  - start environment cleanup.
+Fri Sep  9 01:36:12 2022 - INFO  - Finish environment cleanup!

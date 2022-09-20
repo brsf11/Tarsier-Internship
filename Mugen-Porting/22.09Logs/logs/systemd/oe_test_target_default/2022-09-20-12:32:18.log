@@ -1,0 +1,10 @@
+Tue Sep 20 12:32:21 2022 - INFO  - Start testing...
+     Active: active since Tue 2022-09-20 12:32:21 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:32:27 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:32:33 CST; 5s ago
+Tue Sep 20 12:32:40 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload default.target: Job type reload is not applicable for unit graphical.target.
+     Active: active since Tue 2022-09-20 12:32:33 CST; 6s ago
+Tue Sep 20 12:32:41 2022 - INFO  - Finish test!
+Tue Sep 20 12:32:41 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:32:42 2022 - INFO  - oe_test_target_default.sh post_test

@@ -1,0 +1,29 @@
+Tue Sep 20 12:27:58 2022 - INFO  - Start testing...
+Failed to restart systemd-networkd.socket: Unit systemd-networkd.socket not found.
+Tue Sep 20 12:27:59 2022 - ERROR - systemd-networkd.socket restart failed
+Tue Sep 20 12:28:00 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-networkd.socket could not be found.
+Tue Sep 20 12:28:06 2022 - ERROR - systemd-networkd.socket restart failed
+Tue Sep 20 12:28:07 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-networkd.socket: Unit systemd-networkd.socket not loaded.
+Tue Sep 20 12:28:07 2022 - ERROR - systemd-networkd.socket stop failed
+Tue Sep 20 12:28:08 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-networkd.socket could not be found.
+Tue Sep 20 12:28:15 2022 - ERROR - systemd-networkd.socket stop failed
+Tue Sep 20 12:28:15 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-networkd.socket: Unit systemd-networkd.socket not found.
+Tue Sep 20 12:28:16 2022 - ERROR - systemd-networkd.socket start failed
+Tue Sep 20 12:28:16 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-networkd.socket could not be found.
+Tue Sep 20 12:28:23 2022 - ERROR - systemd-networkd.socket start failed
+Tue Sep 20 12:28:24 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-networkd.socket: No such file or directory
+Tue Sep 20 12:28:24 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-networkd.socket: Unit systemd-networkd.socket not found.
+Tue Sep 20 12:28:25 2022 - ERROR - Job type reload is not applicable for unit systemd-networkd.socket
+Tue Sep 20 12:28:26 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-networkd.socket could not be found.
+Unit systemd-networkd.socket could not be found.
+Tue Sep 20 12:28:26 2022 - INFO  - Finish test!
+Tue Sep 20 12:28:27 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:28:28 2022 - INFO  - oe_test_socket_systemd-networkd.sh post_test

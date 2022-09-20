@@ -1,0 +1,32 @@
+Mon Sep 12 16:31:02 2022 - INFO  - Start to config params of the case.
+Mon Sep 12 16:31:02 2022 - INFO  - End to config params of the case.
+Mon Sep 12 16:31:03 2022 - INFO  - Start to prepare the test environment.
+oe_test_nftables_anonymous_map.sh: line 33: nft: command not found
+oe_test_nftables_anonymous_map.sh: line 34: nft: command not found
+oe_test_nftables_anonymous_map.sh: line 35: nft: command not found
+Mon Sep 12 16:31:04 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 16:31:04 2022 - INFO  - Start executing testcase.
+oe_test_nftables_anonymous_map.sh: line 41: nft: command not found
+Mon Sep 12 16:31:05 2022 - ERROR - exec 'nft add rule inet sec010 tcp_packets_010 counter' failed
+Mon Sep 12 16:31:06 2022 - ERROR - oe_test_nftables_anonymous_map.sh line 42
+oe_test_nftables_anonymous_map.sh: line 43: nft: command not found
+oe_test_nftables_anonymous_map.sh: line 44: nft: command not found
+oe_test_nftables_anonymous_map.sh: line 45: nft: command not found
+Mon Sep 12 16:31:06 2022 - ERROR - exec 'nft add rule inet sec010 udp_packets_010 counter' failed
+Mon Sep 12 16:31:07 2022 - ERROR - oe_test_nftables_anonymous_map.sh line 46
+oe_test_nftables_anonymous_map.sh: line 47: nft: command not found
+oe_test_nftables_anonymous_map.sh: line 48: nft: command not found
+Mon Sep 12 16:31:08 2022 - ERROR - exec 'nft add chain inet sec010 incoming_traffic' failed
+Mon Sep 12 16:31:09 2022 - ERROR - oe_test_nftables_anonymous_map.sh line 49
+oe_test_nftables_anonymous_map.sh: line 50: nft: command not found
+oe_test_nftables_anonymous_map.sh: line 51: nft: command not found
+Mon Sep 12 16:31:09 2022 - ERROR - exec 'nft add rule inet sec010 incoming_traffic ip protocol vmap {tcp : jump tcp_packets_010, udp : jump udp_packets_010 }' failed
+Mon Sep 12 16:31:10 2022 - ERROR - oe_test_nftables_anonymous_map.sh line 52
+oe_test_nftables_anonymous_map.sh: line 53: nft: command not found
+Mon Sep 12 16:31:11 2022 - ERROR - add tcp && udp failed
+Mon Sep 12 16:31:11 2022 - ERROR - oe_test_nftables_anonymous_map.sh line 53
+Mon Sep 12 16:31:12 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 16:31:13 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:31:13 2022 - INFO  - start environment cleanup.
+oe_test_nftables_anonymous_map.sh: line 59: nft: command not found
+Mon Sep 12 16:31:14 2022 - INFO  - Finish environment cleanup!

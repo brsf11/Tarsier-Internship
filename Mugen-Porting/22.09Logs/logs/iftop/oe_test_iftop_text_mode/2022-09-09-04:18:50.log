@@ -1,0 +1,46 @@
+Fri Sep  9 04:18:53 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 04:21:17 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:21:18 2022 - INFO  - Start testing...
+Synopsis: iftop -h | [-npblNBP] [-i interface] [-f filter code]
+Listening on eth0
+Fri Sep  9 04:48:51 2022 - ERROR - Timeout : Command 'bash oe_test_iftop_text_mode.sh' timed out after 1799.9994344 seconds
+Fri Sep  9 04:48:53 2022 - INFO  - start environment cleanup.
+Fri Sep  9 04:49:07 2022 - INFO  - Finish environment cleanup!
+Fri Sep  9 04:49:12 2022 - WARN  - DNS RESOLUTION NOT WORK.
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+oe_test_iftop_text_mode.sh: line 64: iftop: command not found
+Fri Sep  9 04:49:13 2022 - ERROR - Failed to use option: -P
+Fri Sep  9 04:49:14 2022 - ERROR - oe_test_iftop_text_mode.sh line 69
+Fri Sep  9 04:49:15 2022 - ERROR - Failed to use option: -N
+Fri Sep  9 04:49:16 2022 - ERROR - oe_test_iftop_text_mode.sh line 77
+Fri Sep  9 04:49:17 2022 - ERROR - Failed to use option: -p
+Fri Sep  9 04:49:18 2022 - ERROR - oe_test_iftop_text_mode.sh line 88
+Fri Sep  9 04:49:19 2022 - ERROR - Failed to use option: -B
+Fri Sep  9 04:49:20 2022 - ERROR - oe_test_iftop_text_mode.sh line 98
+Fri Sep  9 04:49:21 2022 - ERROR - Failed to use option: -i
+Fri Sep  9 04:49:21 2022 - ERROR - oe_test_iftop_text_mode.sh line 101
+Fri Sep  9 04:49:22 2022 - ERROR - Failed to use option: -f
+Fri Sep  9 04:49:23 2022 - ERROR - oe_test_iftop_text_mode.sh line 103
+Fri Sep  9 04:49:23 2022 - ERROR - Failed to use option: -m
+Fri Sep  9 04:49:24 2022 - ERROR - oe_test_iftop_text_mode.sh line 105
+Fri Sep  9 04:49:25 2022 - ERROR - Failed to use option: -o 2s
+Fri Sep  9 04:49:25 2022 - ERROR - oe_test_iftop_text_mode.sh line 107
+Fri Sep  9 04:49:26 2022 - ERROR - Failed to use option: -o 10s
+Fri Sep  9 04:49:27 2022 - ERROR - oe_test_iftop_text_mode.sh line 109
+Fri Sep  9 04:49:28 2022 - ERROR - Failed to use option: -o 40s
+Fri Sep  9 04:49:28 2022 - ERROR - oe_test_iftop_text_mode.sh line 111
+Listening on eth0
+Listening on eth0
+Listening on eth0
+Fri Sep  9 04:49:53 2022 - INFO  - Finish test!
+Fri Sep  9 04:49:54 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:49:55 2022 - INFO  - start environment cleanup.
+Fri Sep  9 04:50:10 2022 - INFO  - Finish environment cleanup!

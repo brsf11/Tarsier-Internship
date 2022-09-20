@@ -1,0 +1,35 @@
+Mon Sep 12 20:27:02 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 20:28:02 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:28:03 2022 - INFO  - Start testing...
+Job for ras-mc-ctl.service failed because the control process exited with error code.
+See "systemctl status ras-mc-ctl.service" and "journalctl -xeu ras-mc-ctl.service" for details.
+Mon Sep 12 20:28:04 2022 - ERROR - ras-mc-ctl.service restart failed
+Mon Sep 12 20:28:05 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 20:28:12 2022 - ERROR - ras-mc-ctl.service restart failed
+Mon Sep 12 20:28:12 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 20:28:19 2022 - ERROR - ras-mc-ctl.service stop failed
+Mon Sep 12 20:28:19 2022 - ERROR - ../common/common_lib.sh line 42
+Job for ras-mc-ctl.service failed because the control process exited with error code.
+See "systemctl status ras-mc-ctl.service" and "journalctl -xeu ras-mc-ctl.service" for details.
+Mon Sep 12 20:28:21 2022 - ERROR - ras-mc-ctl.service start failed
+Mon Sep 12 20:28:22 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 20:28:28 2022 - ERROR - ras-mc-ctl.service start failed
+Mon Sep 12 20:28:29 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/ras-mc-ctl.service
+Removed /etc/systemd/system/multi-user.target.wants/ras-mc-ctl.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ras-mc-ctl.service’: No such file or directory
+Sep 12 20:28:04 openEuler-riscv64 ras-mc-ctl[904]: failed to run : Broken pipe
+Sep 12 20:28:04 openEuler-riscv64 systemd[1]: ras-mc-ctl.service: Failed with result 'exit-code'.
+Sep 12 20:28:04 openEuler-riscv64 systemd[1]: Failed to start Initialize EDAC v3.0.0 Drivers For Machine Hardware.
+Sep 12 20:28:20 openEuler-riscv64 ras-mc-ctl[920]: failed to run : Broken pipe
+Sep 12 20:28:20 openEuler-riscv64 systemd[1]: ras-mc-ctl.service: Failed with result 'exit-code'.
+Sep 12 20:28:20 openEuler-riscv64 systemd[1]: Failed to start Initialize EDAC v3.0.0 Drivers For Machine Hardware.
+Mon Sep 12 20:28:38 2022 - ERROR - There is an error message for the log of ras-mc-ctl.service
+Mon Sep 12 20:28:39 2022 - ERROR - oe_test_service_ras-mc-ctl.sh line 40
+Job for ras-mc-ctl.service failed because the control process exited with error code.
+See "systemctl status ras-mc-ctl.service" and "journalctl -xeu ras-mc-ctl.service" for details.
+Failed to reload ras-mc-ctl.service: Job type reload is not applicable for unit ras-mc-ctl.service.
+Mon Sep 12 20:28:41 2022 - INFO  - Finish test!
+Mon Sep 12 20:28:42 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:28:42 2022 - INFO  - start environment cleanup.
+Mon Sep 12 20:29:09 2022 - INFO  - Finish environment cleanup!

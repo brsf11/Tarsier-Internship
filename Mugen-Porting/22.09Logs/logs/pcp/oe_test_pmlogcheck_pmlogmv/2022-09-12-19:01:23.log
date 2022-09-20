@@ -1,0 +1,17 @@
+Mon Sep 12 19:01:25 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 19:04:09 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:04:10 2022 - INFO  - Start to run test.
+Log Label (Log Format Version 2)
+/var/log/pcp/pmlogger/openEuler-riscv64/20220912.19.03.meta: PMID 3.8.11: no name in PMNS: Unknown or illegal metric identifier
+/var/log/pcp/pmlogger/openEuler-riscv64/20220912.19.03.meta: PMID 3.9.0: no name in PMNS: Unknown or illegal metric identifier
+/var/log/pcp/pmlogger/openEuler-riscv64/20220912.19.03.meta: PMID 3.9.1: no name in PMNS: Unknown or illegal metric identifier
+/var/log/pcp/pmlogger/openEuler-riscv64/20220912.19.03.meta: start pass0 ... found 3136 records
+Note: timezone set to "TZ=Africa/Sao_Tome"
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+Mon Sep 12 19:04:12 2022 - ERROR - oe_test_pmlogcheck_pmlogmv.sh line 45
+Mon Sep 12 19:04:13 2022 - INFO  - End to run test.
+Mon Sep 12 19:04:13 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:04:14 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 19:05:12 2022 - INFO  - End to restore the test environment.

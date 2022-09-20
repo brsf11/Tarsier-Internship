@@ -1,0 +1,66 @@
+Mon Sep 12 17:23:22 2022 - INFO  - Start to run test.
+Generating public/private rsa key pair.
+Your identification has been saved in /root/.ssh/id_rsa_agent
+Your public key has been saved in /root/.ssh/id_rsa_agent.pub
+The key fingerprint is:
+SHA256:yNmk8a0bO6M8hBDupzqW+3SBZCqF+dgzfXGz6yo2dWo root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|                 |
+| o.              |
+|o..+  o +        |
+| =*... @ +       |
+|oo=o.o* S .      |
+|. .oo.+ .o       |
+|  .+ + o+        |
+|.oo =.E.o+       |
+|o+oo ++++o       |
++----[SHA256]-----+
+spawn ssh-copy-id -i /root/.ssh/id_rsa_agent.pub @
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa_agent.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+ERROR:            [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+ERROR:            [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+ERROR:            [-i identity_file] [-J [user@]host[:port]] [-L address]
+ERROR:            [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+ERROR:            [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+ERROR:            [-w local_tun[:remote_tun]] destination [command [argument ...]]
+
+expect: spawn id exp3 not open
+    while executing
+"expect {
+            "password" {
+                send "\r"
+            }
+        }"
+Mon Sep 12 17:23:25 2022 - ERROR - oe_test_openssh_ssh_agent.sh line 38
+Agent pid 1963
+spawn ssh-add /root/.ssh/id_rsa_agent
+Enter passphrase for /root/.ssh/id_rsa_agent: 
+Identity added: /root/.ssh/id_rsa_agent (root@openEuler-riscv64)
+3072 SHA256:yNmk8a0bO6M8hBDupzqW+3SBZCqF+dgzfXGz6yo2dWo root@openEuler-riscv64 (RSA)
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkRq3Fnjyy7GRibtRk1dBIsS0YH8r6Dgih8OmZ/3ym/yy8Xt7IVZDiH2nsQztJR46jxtULgWVvVuhF7RW7qIxpw0duq8lJbE0Ut3oeRu6uiEUP5qGcpqV9Tih4NCmRCTEXtm/KzkmtRyi0m6NtT8JhiPbY2DWIuQ9SNyjCmQFCy8kH1AVFPfEaaf3M6IWLXTW5VNRR4jzMTrUoLE5bf6ppq20KkosroL6xxvFswF57tE92bl3TrMQtP9oQhPj1cSIQpBMT757Kv7AqbyIOXY2b1wSA+zHl2XUC9MuNUJvxfG7I0cxyPsYxfDNuo2x1WmX/F+E133fiqMmHOIx6tFsnCiBVZFK/Kw29bGF15KLNpNWTAE/MWEPWdB6j9BhJtyvXti0cvPIrJx7tbB6I4FECCVO565g8OXJjn1M3YEp3VzUigzEeXmjR5wNesbImF36P83ioH43GXruIdHMyI5KTxMNoPD32CKkwnYkzSu5y4KnQhv5Hnkyx4Tt8Kzfqk70= root@openEuler-riscv64
+spawn ssh @
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+expect: spawn id exp4 not open
+    while executing
+"expect eof"
+Mon Sep 12 17:23:27 2022 - ERROR - oe_test_openssh_ssh_agent.sh line 66
+Mon Sep 12 17:23:27 2022 - ERROR - oe_test_openssh_ssh_agent.sh line 68
+Mon Sep 12 17:23:28 2022 - INFO  - End to run test.
+Mon Sep 12 17:23:29 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:23:29 2022 - INFO  - Start to restore the test environment.
+Identity removed: /root/.ssh/id_rsa_agent RSA (root@openEuler-riscv64)
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 1963 killed;
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:23:30 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:23:31 2022 - INFO  - End to restore the test environment.

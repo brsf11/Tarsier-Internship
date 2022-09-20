@@ -1,0 +1,42 @@
+Mon Sep 12 23:05:57 2022 - INFO  - Start environmental preparation.
+oe_test_service_storm-nimbus.sh: line 35: /etc/storm/storm.yaml: No such file or directory
+Failed to start zookeeper.service: Unit zookeeper.service not found.
+Mon Sep 12 23:06:42 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:06:42 2022 - INFO  - Start testing...
+Failed to restart storm-nimbus.service: Unit storm-nimbus.service not found.
+Mon Sep 12 23:06:43 2022 - ERROR - storm-nimbus.service restart failed
+Mon Sep 12 23:06:44 2022 - ERROR - ../common/common_lib.sh line 34
+Unit storm-nimbus.service could not be found.
+Mon Sep 12 23:06:51 2022 - ERROR - storm-nimbus.service restart failed
+Mon Sep 12 23:06:51 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop storm-nimbus.service: Unit storm-nimbus.service not loaded.
+Mon Sep 12 23:06:52 2022 - ERROR - storm-nimbus.service stop failed
+Mon Sep 12 23:06:53 2022 - ERROR - ../common/common_lib.sh line 39
+Unit storm-nimbus.service could not be found.
+Mon Sep 12 23:07:00 2022 - ERROR - storm-nimbus.service stop failed
+Mon Sep 12 23:07:00 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start storm-nimbus.service: Unit storm-nimbus.service not found.
+Mon Sep 12 23:07:01 2022 - ERROR - storm-nimbus.service start failed
+Mon Sep 12 23:07:02 2022 - ERROR - ../common/common_lib.sh line 44
+Unit storm-nimbus.service could not be found.
+Mon Sep 12 23:07:08 2022 - ERROR - storm-nimbus.service start failed
+Mon Sep 12 23:07:09 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for storm-nimbus.service: No such file or directory
+Mon Sep 12 23:07:10 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start storm-nimbus.service: Unit storm-nimbus.service not found.
+Mon Sep 12 23:07:11 2022 - ERROR - Job type reload is not applicable for unit storm-nimbus.service
+Mon Sep 12 23:07:12 2022 - ERROR - ../common/common_lib.sh line 91
+Unit storm-nimbus.service could not be found.
+Unit storm-nimbus.service could not be found.
+Mon Sep 12 23:07:12 2022 - INFO  - Finish test!
+Mon Sep 12 23:07:13 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:07:14 2022 - INFO  - start environment cleanup.
+Failed to stop zookeeper.service: Unit zookeeper.service not loaded.
+Failed to stop storm-nimbus.service: Unit storm-nimbus.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:02:01 ago on Mon 12 Sep 2022 11:04:39 PM CST.\nNo match for argument: apache-zookeeper\nError: Unable to find a match: apache-zookeeper'
+Mon Sep 12 23:07:17 2022 - INFO  - Finish environment cleanup!

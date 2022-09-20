@@ -1,0 +1,53 @@
+Fri Sep  9 03:14:27 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 03:14:58 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 03:14:58 2022 - INFO  - Start executing testcase!
+oe_test_fio_002.sh: line 30: fio-dedupe: command not found
+Fri Sep  9 03:14:59 2022 - ERROR - fio-dedupe -o option failed
+Fri Sep  9 03:15:00 2022 - ERROR - oe_test_fio_002.sh line 31
+oe_test_fio_002.sh: line 32: fio-dedupe: command not found
+Fri Sep  9 03:15:01 2022 - ERROR - fio-dedupe -c option failed
+Fri Sep  9 03:15:01 2022 - ERROR - oe_test_fio_002.sh line 33
+oe_test_fio_002.sh: line 34: fio-dedupe: command not found
+Fri Sep  9 03:15:02 2022 - ERROR - fio-dedupe -B option failed
+Fri Sep  9 03:15:03 2022 - ERROR - oe_test_fio_002.sh line 35
+oe_test_fio_002.sh: line 36: fio-dedupe: command not found
+Fri Sep  9 03:15:04 2022 - ERROR - fio-dedupe -p option failed
+Fri Sep  9 03:15:04 2022 - ERROR - oe_test_fio_002.sh line 37
+oe_test_fio_002.sh: line 38: fio: command not found
+Fri Sep  9 03:15:05 2022 - ERROR - fio --filename=test_file option failed
+Fri Sep  9 03:15:06 2022 - ERROR - oe_test_fio_002.sh line 39
+oe_test_fio_002.sh: line 40: fio: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 03:15:06 2022 - ERROR - fio -filename=/dev option failed
+Fri Sep  9 03:15:07 2022 - ERROR - oe_test_fio_002.sh line 41
+oe_test_fio_002.sh: line 42: fio: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 03:15:08 2022 - ERROR - fio -filename=/dev option failed
+Fri Sep  9 03:15:08 2022 - ERROR - oe_test_fio_002.sh line 43
+oe_test_fio_002.sh: line 44: fio: command not found
+Fri Sep  9 03:15:09 2022 - ERROR - fio -filename=/dev option failed
+Fri Sep  9 03:15:10 2022 - ERROR - oe_test_fio_002.sh line 45
+oe_test_fio_002.sh: line 46: fio: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 03:15:10 2022 - ERROR - fio -filename=/dev option failed
+Fri Sep  9 03:15:11 2022 - ERROR - oe_test_fio_002.sh line 47
+oe_test_fio_002.sh: line 48: fio: command not found
+oe_test_fio_002.sh: line 51: genfio: command not found
+Fri Sep  9 03:15:12 2022 - ERROR - fio -filename=/dev option failed
+Fri Sep  9 03:15:12 2022 - ERROR - oe_test_fio_002.sh line 53
+oe_test_fio_002.sh: line 54: genfio: command not found
+Fri Sep  9 03:15:13 2022 - ERROR - genfio -h option failed
+Fri Sep  9 03:15:14 2022 - ERROR - oe_test_fio_002.sh line 55
+Fri Sep  9 03:15:14 2022 - INFO  - End of testcase execution!
+Fri Sep  9 03:15:15 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:15:16 2022 - INFO  - Start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:17 ago on Fri 09 Sep 2022 03:13:39 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libnuma.so.1()(64bit) needed by fio-3.29-1.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.1)(64bit) needed by fio-3.29-1.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.2)(64bit) needed by fio-3.29-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 03:15:19 2022 - INFO  - Finish environment cleanup.

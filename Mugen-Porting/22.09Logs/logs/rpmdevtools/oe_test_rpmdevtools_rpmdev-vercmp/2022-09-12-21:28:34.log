@@ -1,0 +1,69 @@
+Mon Sep 12 21:28:37 2022 - INFO  - Start environmental preparation.
+--2022-09-12 21:29:18--  https://gitee.com/src-openeuler/rpmdevtools/raw/master/rpmdevtools.spec
+Resolving gitee.com (gitee.com)... 212.64.63.215, 212.64.63.190
+Connecting to gitee.com (gitee.com)|212.64.63.215|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2621 (2.6K) [text/plain]
+Saving to: ‘rpmdevtools.spec’
+
+     0K ..                                                    100% 3.54M=0.001s
+
+2022-09-12 21:29:19 (3.54 MB/s) - ‘rpmdevtools.spec’ saved [2621/2621]
+
+Mon Sep 12 21:29:21 2022 - INFO  - End of environmental preparation.
+Mon Sep 12 21:29:21 2022 - INFO  - Start to run test.
+1:1-2 < 2:1-2
+2:1-2 > 1:1-2
+2 > 1
+1 < 2
+1 == 1
+2:1-2 == 2:1-2
+Exit status is 0 if the EVR's are equal, 11 if EVR1 is newer, and 12 if EVR2
+Source0: https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz
+Getting https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz to ./rpmdevtools-8.10.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0 34 94976   34 32275    0     0   9314      0  0:00:10  0:00:03  0:00:07  9333100 94976  100 94976    0     0  22513      0  0:00:04  0:00:04 --:--:-- 22554
+Usage: spectool [<options>] <specfile>
+Patch0001: 0001-bumpspec-checksig-Avoid-python-3.6-regex-related-dep.patch
+Patch0002: 0002-BZ-1851499-port-to-str-return-values.patch
+Patch0003: 0003-fix-return-value-error-for-rpminfo.pacth
+Source0: https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz
+Patch0001: 0001-bumpspec-checksig-Avoid-python-3.6-regex-related-dep.patch
+Patch0002: 0002-BZ-1851499-port-to-str-return-values.patch
+Patch0003: 0003-fix-return-value-error-for-rpminfo.pacth
+Source0: https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz
+Use of uninitialized value in concatenation (.) or string at /usr/bin/spectool line 189.
+Patch0: 
+Source0: https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz
+Patch0001: 0001-bumpspec-checksig-Avoid-python-3.6-regex-related-dep.patch
+Patch0002: 0002-BZ-1851499-port-to-str-return-values.patch
+Patch0003: 0003-fix-return-value-error-for-rpminfo.pacth
+Getting https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz to test_dir/rpmdevtools-8.10.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0curl: (6) Could not resolve host: releases.pagure.org
+Mon Sep 12 21:30:55 2022 - ERROR - Failed option: -C
+Mon Sep 12 21:30:56 2022 - ERROR - oe_test_rpmdevtools_rpmdev-vercmp.sh line 69
+Getting https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz to /root/rpmbuild/SOURCES/rpmdevtools-8.10.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0 93 94976   93 89079    0     0  12276      0  0:00:07  0:00:07 --:--:-- 17995100 94976  100 94976    0     0  12575      0  0:00:07  0:00:07 --:--:-- 22410
+Getting https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz to ./rpmdevtools-8.10.tar.xz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0100 94976  100 94976    0     0  12741      0  0:00:07  0:00:07 --:--:-- 18456100 94976  100 94976    0     0  12728      0  0:00:07  0:00:07 --:--:-- 22913
+rm: cannot remove '*tar.gz': No such file or directory
+./rpmdevtools-8.10.tar.xz already exists, skipping download
+Getting https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz to ./rpmdevtools-8.10.tar.xz
+temp dir: /tmp/spectool_kJliuRQd3p
+temp spec filename: /tmp/spectool_kJliuRQd3p/spec_LglXz3GLTP
+stderr filename: /tmp/spectool_kJliuRQd3p/stderr_nm2g4yY7wP
+Source0: https://releases.pagure.org/rpmdevtools/rpmdevtools-8.10.tar.xz
+Patch0001: 0001-bumpspec-checksig-Avoid-python-3.6-regex-related-dep.patch
+Patch0002: 0002-BZ-1851499-port-to-str-return-values.patch
+Patch0003: 0003-fix-return-value-error-for-rpminfo.pacth
+Mon Sep 12 21:31:37 2022 - INFO  - End to run test.
+Mon Sep 12 21:31:38 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:31:38 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 21:31:51 2022 - INFO  - End to restore the test environment.

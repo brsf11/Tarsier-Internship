@@ -1,0 +1,83 @@
+Mon Sep 12 22:02:09 2022 - INFO  - Start environment preparation.
+Mon Sep 12 22:02:18 2022 - INFO  - pkgs:(rpmdevtools) is already installed
+test.spec created; type minimal, rpm version >= 4.17.
+Mon Sep 12 22:02:19 2022 - INFO  - End of environmental preparation.
+Mon Sep 12 22:02:20 2022 - INFO  - Start to run test.
+Usage: rpmdev-bumpspec [OPTION]... SPECFILE...
+error: line 2: Empty tag: Version:
+error: query of specfile test.spec failed, can't parse
+- test1
+error: line 2: Empty tag: Version:
+error: query of specfile test.spec failed, can't parse
++3%{?dist}
+rpmdev-bumpspec version 1.0.13
+error: line 2: Empty tag: Version:
+error: query of specfile test.spec failed, can't parse
+* Mon Sep 12 2022 test_name xxxxxxxxxx@qq.com
+error: line 2: Empty tag: Version:
+error: query of specfile test.spec failed, can't parse
+- test -f.
+error: line 2: Empty tag: Version:
+error: query of specfile test.spec failed, can't parse
+- rebuilt
+error: line 2: Empty tag: Version:
+error: query of specfile test.spec failed, can't parse
+- rebuilt
+error: line 4: Empty tag: Summary:
+error: query of specfile test.spec failed, can't parse
+- new version
+rpmdev-newinit version 1.1
+Usage: rpmdev-newinit [option]... [appname[.init]]
+Skeleton init script has been created to "test.init".
+testo.spec created; type minimal, rpm version >= 4.17.
+testt.spec created; type python, rpm version >= 4.17.
+%{!?__python2: %global __python2 %__python}
+%{!?python2_sitelib: %global python2_sitelib %(%{__python2} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")}
+%{!?python2_sitearch: %global python2_sitearch %(%{__python2} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1))")}
+%bcond_without python3
+%bcond_with python3
+BuildRequires:  python2-devel
+%if %{with python3}
+BuildRequires:  python3-devel
+%endif # with python3
+%if %{with python3}
+%endif # with python3
+mv %{name}-%{version} python2
+%if %{with python3}
+cp -a python2 python3
+%endif # with python3
+pushd python2
+CFLAGS="$RPM_OPT_FLAGS" %{__python2} setup.py build
+%if %{with python3}
+pushd python3
+CFLAGS="$RPM_OPT_FLAGS" %{__python3} setup.py build
+%endif # with python3
+# Must do the python3 install first because the scripts in /usr/bin are
+# overwritten with every setup.py install (and we want the python2 version
+%if %{with python3}
+pushd python3
+%{__python3} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+%endif # with python3
+pushd python2
+%{__python2} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+pushd python2
+%{__python2} setup.py test
+%if %{with python3}
+pushd python3
+%{__python3} setup.py test
+%{python2_sitelib}/*
+%{python2_sitearch}/*
+%if %{with python3}
+%{python3_sitelib}/*
+%{python3_sitearch}/*
+%endif # with python3
+testm.spec created; type minimal, rpm version >= 4.17.
+rm -rf %{buildroot}
+testr.spec created; type minimal, rpm version >= 4.3.
+Usage: rpmdev-newspec [option]... [appname[.spec]]
+rpmdev-newspec version 2.4
+Mon Sep 12 22:02:39 2022 - INFO  - End to run test.
+Mon Sep 12 22:02:40 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:02:40 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:02:41 2022 - WARN  - no thing to do.
+Mon Sep 12 22:02:42 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,11 @@
+Fri Sep  9 05:54:57 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 05:55:44 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 05:55:45 2022 - INFO  - Start executing testcase.
+Ncat: bind to :::500: Permission denied. QUITTING.
+2453
+Fri Sep  9 05:56:00 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 05:56:01 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 05:56:01 2022 - INFO  - start environment cleanup.
+usage: rpm_manage.py install|remove [-h] [--node NODE] [--pkgs PKG] [--tempfile TEPMFILE]
+rpm_manage.py: error: argument --node: invalid int value: 'nc'
+Fri Sep  9 05:56:06 2022 - INFO  - Finish environment cleanup!

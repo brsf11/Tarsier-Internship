@@ -1,0 +1,79 @@
+Mon Sep 12 18:45:52 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 18:46:52 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:46:52 2022 - INFO  - Start to run test.
+spawn procinfo -f
+Terminal type `unknown' is not defined.
+Mon Sep 12 18:46:53 2022 - ERROR - Option test -f fails
+Mon Sep 12 18:46:54 2022 - ERROR - oe_test_procinfo_01.sh line 56
+spawn procinfo -f
+sTerminal type `unknown' is not defined.
+Mon Sep 12 18:46:55 2022 - ERROR - Interactive test key s fails
+Mon Sep 12 18:46:55 2022 - ERROR - oe_test_procinfo_01.sh line 70
+spawn procinfo -f
+mTerminal type `unknown' is not defined.
+Mon Sep 12 18:46:56 2022 - ERROR - Interactive test key m fails
+Mon Sep 12 18:46:57 2022 - ERROR - oe_test_procinfo_01.sh line 89
+spawn procinfo -f
+aTerminal type `unknown' is not defined.
+Mon Sep 12 18:46:58 2022 - ERROR - Interactive test key a fails
+Mon Sep 12 18:46:59 2022 - ERROR - oe_test_procinfo_01.sh line 102
+spawn procinfo -f
+rTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:00 2022 - ERROR - Interactive test key r fails
+Mon Sep 12 18:47:00 2022 - ERROR - oe_test_procinfo_01.sh line 115
+spawn procinfo -f
+CTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:01 2022 - ERROR - Interactive test key C fails
+Mon Sep 12 18:47:02 2022 - ERROR - oe_test_procinfo_01.sh line 128
+spawn procinfo -f
+RTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:03 2022 - ERROR - Interactive test key R fails
+Mon Sep 12 18:47:03 2022 - ERROR - oe_test_procinfo_01.sh line 141
+spawn procinfo -f
+tTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:04 2022 - ERROR - Interactive test key t fails
+Mon Sep 12 18:47:05 2022 - ERROR - oe_test_procinfo_01.sh line 154
+spawn procinfo -f
+dTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:06 2022 - ERROR - Interactive test key d fails
+Mon Sep 12 18:47:07 2022 - ERROR - oe_test_procinfo_01.sh line 167
+spawn procinfo -f
+DTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:07 2022 - ERROR - Interactive test key D fails
+Mon Sep 12 18:47:08 2022 - ERROR - oe_test_procinfo_01.sh line 180
+spawn procinfo -f
+STerminal type `unknown' is not defined.
+Mon Sep 12 18:47:09 2022 - ERROR - Interactive test key S fails
+Mon Sep 12 18:47:10 2022 - ERROR - oe_test_procinfo_01.sh line 193
+spawn procinfo -f
+iTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:10 2022 - ERROR - Interactive test key i fails
+Mon Sep 12 18:47:11 2022 - ERROR - oe_test_procinfo_01.sh line 206
+spawn procinfo -f
+bTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:12 2022 - ERROR - Interactive test key b fails
+Mon Sep 12 18:47:13 2022 - ERROR - oe_test_procinfo_01.sh line 219
+spawn procinfo -f
+nTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:14 2022 - ERROR - Interactive test key n fails
+Mon Sep 12 18:47:14 2022 - ERROR - oe_test_procinfo_01.sh line 235
+spawn procinfo -f
+ Terminal type `unknown' is not defined.
+Mon Sep 12 18:47:15 2022 - ERROR - Interactive test key <space> fails
+Mon Sep 12 18:47:16 2022 - ERROR - oe_test_procinfo_01.sh line 249
+spawn procinfo -f
+^LTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:17 2022 - ERROR - Interactive test key ^L fails
+Mon Sep 12 18:47:17 2022 - ERROR - oe_test_procinfo_01.sh line 262
+spawn procinfo -f
+?Terminal type `unknown' is not defined.
+Mon Sep 12 18:47:18 2022 - ERROR - Interactive test key ? fails
+Mon Sep 12 18:47:19 2022 - ERROR - oe_test_procinfo_01.sh line 275
+spawn procinfo -f
+hTerminal type `unknown' is not defined.
+Mon Sep 12 18:47:20 2022 - ERROR - Interactive test key h fails
+Mon Sep 12 18:47:21 2022 - ERROR - oe_test_procinfo_01.sh line 288
+Mon Sep 12 18:47:21 2022 - INFO  - End to run test.
+Mon Sep 12 18:47:22 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:47:23 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 18:47:32 2022 - INFO  - End to restore the test environment.

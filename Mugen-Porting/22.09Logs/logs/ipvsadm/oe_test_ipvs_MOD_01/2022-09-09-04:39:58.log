@@ -1,0 +1,56 @@
+Fri Sep  9 04:40:01 2022 - INFO  - Start to prepare the test environment.
+Command line is not complete. Try option "help"
+Fri Sep  9 04:40:32 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:40:33 2022 - INFO  - Start to run test.
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 04:40:34 2022 - ERROR - oe_test_ipvs_MOD_01.sh line 36
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 04:40:35 2022 - ERROR - oe_test_ipvs_MOD_01.sh line 37
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 04:40:39 2022 - ERROR - oe_test_ipvs_MOD_01.sh line 42
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 04:40:39 2022 - ERROR - oe_test_ipvs_MOD_01.sh line 43
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 04:40:40 2022 - ERROR - oe_test_ipvs_MOD_01.sh line 44
+Fri Sep  9 04:40:41 2022 - INFO  - End to run test.
+Fri Sep  9 04:40:41 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:40:42 2022 - INFO  - Start to restore the test environment.
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Command line is not complete. Try option "help"
+Fri Sep  9 04:40:57 2022 - INFO  - End to restore the test environment.

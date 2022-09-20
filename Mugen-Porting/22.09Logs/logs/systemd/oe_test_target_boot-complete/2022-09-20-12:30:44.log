@@ -1,0 +1,11 @@
+Tue Sep 20 12:30:47 2022 - INFO  - Start testing...
+     Active: active since Tue 2022-09-20 12:30:47 CST; 5s ago
+     Active: inactive (dead)
+     Active: active since Tue 2022-09-20 12:30:59 CST; 5s ago
+Tue Sep 20 12:31:06 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload boot-complete.target: Job type reload is not applicable for unit boot-complete.target.
+     Active: active since Tue 2022-09-20 12:30:59 CST; 7s ago
+Tue Sep 20 12:31:06 2022 - INFO  - Finish test!
+Tue Sep 20 12:31:07 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:31:08 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:31:08 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,35 @@
+Fri Sep  9 07:31:13 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:32:14 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:32:15 2022 - INFO  - Start to run test.
+Fri Sep  9 07:32:16 2022 - ERROR - mpg123 player failed
+Fri Sep  9 07:32:17 2022 - ERROR - oe_test_mpg123.sh line 33
+Fri Sep  9 07:32:17 2022 - ERROR - mpg123 player verbosity failed
+Fri Sep  9 07:32:18 2022 - ERROR - oe_test_mpg123.sh line 35
+main: [src/mpg123.c:check_fatal_output():331] error: out123 error 3: failure loading driver module
+Fri Sep  9 07:32:19 2022 - ERROR - mpg123 player quiet failed
+Fri Sep  9 07:32:20 2022 - ERROR - oe_test_mpg123.sh line 37
+High Performance MPEG 1.0/2.0/2.5 Audio Player for Layers 1, 2 and 3
+	version 1.29.3; written and copyright by Michael Hipp and others
+	free software (LGPL) without any warranty but with best wishes
+
+Playing MPEG stream 1 of 1: mess.mp3 ...
+
+MPEG 1.0 L III vbr 44100 j-s
+
+	Title:   短信版
+	Artist:  iwix/iw ix
+	Album:   手机铃声
+	Year:    
+	Genre:   Unknown
+	Comment: 163 key(Don't modify):L64FU3W4YxX3ZFTmbZ+8/SN7RkE6McabTwCrIOeNYLIRI+4TElcGy7KfuvwNaryev7Ig7zMDDClPrDGAo/wNFS76tzgY0t/euAmS40YoSTgtREIiOxxhMS1P0Uooc69jIyPL0dd40YTOHasqo+Bg/4I5Yb7mkrXwx20y3ek4MZ3iJndN3caazLZohrOgksZN2iCS7f2TiynlIZb2BsU7TcgQQ6yfochiFlk1w+89ADpRg6gbvVWe2TyqNqHydHC27bL9dgSBz9ulXEptCDWikK5pu+6X/qUl7sCq12pb5JRjE7E4kiza5XHPz4ZCFJMcAn6RE6M/MOztE/aUOdEp7di9dp2tAHlbsZIR6SgCGKNP3jjqw33DqofndsZHa1hDuyG/FUr35vzMm0iFLnhuFd5nVkmVcnok1eTd7JWX7eDEog9TDRgL4V3Wzbf8p1vS6X5RyhsiN7WqkaeJEovYplmnf0v/nO2XBGEK+gRGdQiLAw/TeE/RfBfL/DkL8UAyaeEkAFU3S+vhAw8Y+5yDGQ==
+
+
+[0:03] Decoding of mess.mp3 finished.
+mess.wav
+APIC type(6, media) mime(image/jpeg) size(19726)
+APIC type(6, media) mime(image/jpeg) size(19726)
+writing mess.mp3.media.jpeg
+Fri Sep  9 07:32:21 2022 - INFO  - End to run test.
+Fri Sep  9 07:32:21 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:32:22 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 07:32:34 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,20 @@
+Tue Sep 20 11:46:15 2022 - INFO  - Start testing...
+     Active: failed (Result: exit-code) since Tue 2022-09-20 11:46:02 CST; 13s ago
+Tue Sep 20 11:46:16 2022 - ERROR - There is an error for the status of initrd-switch-root.service
+Tue Sep 20 11:46:16 2022 - ERROR - ../common/common_lib.sh line 54
+Tue Sep 20 11:46:17 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sep 20 11:45:45 openEuler-riscv64 systemctl[1955]: Failed to switch root: Failed to determine whether root path '/sysroot' contains an OS tree: No such file or directory
+Sep 20 11:45:45 openEuler-riscv64 systemd[1]: initrd-switch-root.service: Main process exited, code=exited, status=1/FAILURE
+Sep 20 11:45:45 openEuler-riscv64 systemd[1]: initrd-switch-root.service: Failed with result 'exit-code'.
+Sep 20 11:45:45 openEuler-riscv64 systemd[1]: Failed to start Switch Root.
+Sep 20 11:45:45 openEuler-riscv64 systemd[1]: initrd-switch-root.service: Triggering OnFailure= dependencies.
+Sep 20 11:46:02 openEuler-riscv64 systemctl[2075]: Failed to switch root: Failed to determine whether root path '/sysroot' contains an OS tree: No such file or directory
+Sep 20 11:46:02 openEuler-riscv64 systemd[1]: initrd-switch-root.service: Main process exited, code=exited, status=1/FAILURE
+Sep 20 11:46:02 openEuler-riscv64 systemd[1]: initrd-switch-root.service: Failed with result 'exit-code'.
+Sep 20 11:46:02 openEuler-riscv64 systemd[1]: Failed to start Switch Root.
+Sep 20 11:46:02 openEuler-riscv64 systemd[1]: initrd-switch-root.service: Triggering OnFailure= dependencies.
+Tue Sep 20 11:46:18 2022 - ERROR - There is an error message for the log of initrd-switch-root.service
+Tue Sep 20 11:46:18 2022 - ERROR - ../common/common_lib.sh line 57
+Tue Sep 20 11:46:19 2022 - INFO  - Finish test!
+Tue Sep 20 11:46:20 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:46:20 2022 - INFO  - oe_test_service_initrd-switch-root.sh post_test

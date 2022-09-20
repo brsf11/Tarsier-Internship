@@ -1,0 +1,38 @@
+Fri Sep  9 01:43:10 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:43:46 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:43:46 2022 - INFO  - Start testing...
+Failed to restart colord.service: Unit colord.service not found.
+Fri Sep  9 01:43:47 2022 - ERROR - colord.service restart failed
+Fri Sep  9 01:43:48 2022 - ERROR - ../common/common_lib.sh line 34
+Unit colord.service could not be found.
+Fri Sep  9 01:43:55 2022 - ERROR - colord.service restart failed
+Fri Sep  9 01:43:55 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop colord.service: Unit colord.service not loaded.
+Fri Sep  9 01:43:56 2022 - ERROR - colord.service stop failed
+Fri Sep  9 01:43:57 2022 - ERROR - ../common/common_lib.sh line 39
+Unit colord.service could not be found.
+Fri Sep  9 01:44:03 2022 - ERROR - colord.service stop failed
+Fri Sep  9 01:44:04 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start colord.service: Unit colord.service not found.
+Fri Sep  9 01:44:05 2022 - ERROR - colord.service start failed
+Fri Sep  9 01:44:06 2022 - ERROR - ../common/common_lib.sh line 44
+Unit colord.service could not be found.
+Fri Sep  9 01:44:12 2022 - ERROR - colord.service start failed
+Fri Sep  9 01:44:13 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for colord.service: No such file or directory
+Fri Sep  9 01:44:13 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start colord.service: Unit colord.service not found.
+Fri Sep  9 01:44:14 2022 - ERROR - Job type reload is not applicable for unit colord.service
+Fri Sep  9 01:44:15 2022 - ERROR - ../common/common_lib.sh line 91
+Unit colord.service could not be found.
+Unit colord.service could not be found.
+Fri Sep  9 01:44:16 2022 - INFO  - Finish test!
+Fri Sep  9 01:44:16 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:44:17 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:23 ago on Fri 09 Sep 2022 01:43:21 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides color-filesystem needed by colord-1.4.5-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 01:44:20 2022 - INFO  - Finish environment cleanup!

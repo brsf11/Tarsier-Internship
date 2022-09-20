@@ -1,0 +1,10 @@
+Tue Sep 20 12:40:06 2022 - INFO  - Start to run test.
+     Active: active since Tue 2022-09-20 12:40:06 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:40:12 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:40:18 CST; 5s ago
+Tue Sep 20 12:40:25 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload network-online.target: Job type reload is not applicable for unit network-online.target.
+     Active: active since Tue 2022-09-20 12:40:18 CST; 6s ago
+Tue Sep 20 12:40:26 2022 - INFO  - End of the test.
+Tue Sep 20 12:40:26 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:40:27 2022 - INFO  - oe_test_target_network-online.sh post_test

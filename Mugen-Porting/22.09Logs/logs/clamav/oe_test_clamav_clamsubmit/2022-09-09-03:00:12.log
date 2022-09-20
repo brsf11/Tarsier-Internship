@@ -1,0 +1,112 @@
+Fri Sep  9 03:00:15 2022 - INFO  - Start to prepare the database config.
+Fri Sep  9 03:04:53 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 03:04:53 2022 - INFO  - Start to run test.
+
+                       Clam AntiVirus: Malware and False Positive Reporting Tool 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamsubmit -hHinpVvd?
+
+    -h or -?                  Show this help
+    -v                        Show version
+    -e [EMAIL]                Your email address (required)
+    -n [FILE/-]               Submit a false negative (FN)
+    -N [NAME]                 Your name contained in quotation marks (required)
+    -p [FILE/-]               Submit a false positive (FP)
+    -V [VIRUS]                Detected virus name (required with -p)
+    -d                        Enable debug output
+
+You must specify -n or -p. Both are mutually exclusive. Pass in - as the filename for stdin.
+
+
+                       Clam AntiVirus: Malware and False Positive Reporting Tool 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamsubmit -hHinpVvd?
+
+    -h or -?                  Show this help
+    -v                        Show version
+    -e [EMAIL]                Your email address (required)
+    -n [FILE/-]               Submit a false negative (FN)
+    -N [NAME]                 Your name contained in quotation marks (required)
+    -p [FILE/-]               Submit a false positive (FP)
+    -V [VIRUS]                Detected virus name (required with -p)
+    -d                        Enable debug output
+
+You must specify -n or -p. Both are mutually exclusive. Pass in - as the filename for stdin.
+
+
+                       Clam AntiVirus: Malware and False Positive Reporting Tool 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamsubmit -hHinpVvd?
+
+    -h or -?                  Show this help
+    -v                        Show version
+    -e [EMAIL]                Your email address (required)
+    -n [FILE/-]               Submit a false negative (FN)
+    -N [NAME]                 Your name contained in quotation marks (required)
+    -p [FILE/-]               Submit a false positive (FP)
+    -V [VIRUS]                Detected virus name (required with -p)
+    -d                        Enable debug output
+
+You must specify -n or -p. Both are mutually exclusive. Pass in - as the filename for stdin.
+
+clamsubmit: illegal option -- -
+
+                       Clam AntiVirus: Malware and False Positive Reporting Tool 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamsubmit -hHinpVvd?
+
+    -h or -?                  Show this help
+    -v                        Show version
+    -e [EMAIL]                Your email address (required)
+    -n [FILE/-]               Submit a false negative (FN)
+    -N [NAME]                 Your name contained in quotation marks (required)
+    -p [FILE/-]               Submit a false positive (FP)
+    -V [VIRUS]                Detected virus name (required with -p)
+    -d                        Enable debug output
+
+You must specify -n or -p. Both are mutually exclusive. Pass in - as the filename for stdin.
+
+clamsubmit: illegal option -- -
+
+                       Clam AntiVirus: Malware and False Positive Reporting Tool 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamsubmit -hHinpVvd?
+
+    -h or -?                  Show this help
+    -v                        Show version
+    -e [EMAIL]                Your email address (required)
+    -n [FILE/-]               Submit a false negative (FN)
+    -N [NAME]                 Your name contained in quotation marks (required)
+    -p [FILE/-]               Submit a false positive (FP)
+    -V [VIRUS]                Detected virus name (required with -p)
+    -d                        Enable debug output
+
+You must specify -n or -p. Both are mutually exclusive. Pass in - as the filename for stdin.
+
+0.103.6
+Usage: clamav-config [OPTION]
+
+Known values for OPTION are:
+
+  --prefix=DIR		change libclamav prefix [default /usr]
+  --libs		print library linking information
+  --cflags		print pre-processor and compiler flags
+  --help		display this help and exit
+  --version		output version information
+-lclamav 
+
+/usr
+Fri Sep  9 03:04:55 2022 - INFO  - End to run test.
+Fri Sep  9 03:04:56 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 03:04:56 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 03:05:23 2022 - INFO  - End to restore the test environment.

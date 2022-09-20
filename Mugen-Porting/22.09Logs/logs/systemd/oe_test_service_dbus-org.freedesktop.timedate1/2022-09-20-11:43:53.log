@@ -1,0 +1,11 @@
+Tue Sep 20 11:43:55 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 11:43:56 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-20 11:44:09 CST; 5s ago
+Tue Sep 20 11:44:16 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload dbus-org.freedesktop.timedate1.service: Job type reload is not applicable for unit systemd-timedated.service.
+     Active: active (running) since Tue 2022-09-20 11:44:09 CST; 7s ago
+Tue Sep 20 11:44:17 2022 - INFO  - Finish test!
+Tue Sep 20 11:44:17 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:44:18 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:44:19 2022 - INFO  - Finish environment cleanup!

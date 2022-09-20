@@ -1,0 +1,40 @@
+Fri Sep  9 04:41:06 2022 - INFO  - Start to run test.
+Fri Sep  9 04:41:07 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:41:08 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r ../common/SAVE_RESROER.sh @:/tmp/SAVE_RESROER.sh
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 04:41:09 2022 - ERROR - Failed in remote SCP operation: 1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:41:10 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:41:10 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:41:11 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/etc/sysconfig/ipvsadm ./ipvsadm
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 04:41:12 2022 - ERROR - Failed in remote SCP operation: 1
+wc: ./ipvsadm: No such file or directory
+Fri Sep  9 04:41:13 2022 - ERROR - oe_test_ipvs_SAVE_01.sh line 26
+Fri Sep  9 04:41:19 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:41:20 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/ipvsadm_restore.txt ./ipvsadm_restore.txt
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 04:41:21 2022 - ERROR - Failed in remote SCP operation: 1
+grep: ./ipvsadm_restore.txt: No such file or directory
+Fri Sep  9 04:41:22 2022 - ERROR - Missing actual error code.
+grep: ./ipvsadm_restore.txt: No such file or directory
+Fri Sep  9 04:41:23 2022 - ERROR - Missing actual error code.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:41:23 2022 - ERROR - Failed in remote CMD operation:1
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:42:25 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:42:26 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep  9 04:42:26 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/ipvsadm_restore1.txt ./ipvsadm_restore1.txt
+ssh: Could not resolve hostname : Name or service not known
+Fri Sep  9 04:42:27 2022 - ERROR - Failed in remote SCP operation: 1
+grep: ./ipvsadm_restore1.txt: No such file or directory
+Fri Sep  9 04:42:28 2022 - ERROR - Missing actual error code.
+grep: ./ipvsadm_restore1.txt: No such file or directory
+Fri Sep  9 04:42:29 2022 - ERROR - Missing actual error code.
+Fri Sep  9 04:42:30 2022 - INFO  - End to run test.
+Fri Sep  9 04:42:30 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:42:31 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep  9 04:42:32 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep  9 04:42:32 2022 - INFO  - End to restore the test environment.

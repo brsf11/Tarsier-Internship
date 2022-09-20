@@ -1,0 +1,24 @@
+Mon Sep 12 16:32:34 2022 - INFO  - Start to config params of the case.
+Mon Sep 12 16:32:34 2022 - INFO  - End to config params of the case.
+Mon Sep 12 16:32:35 2022 - INFO  - Start executing testcase.
+oe_test_nftables_chains.sh: line 33: nft: command not found
+oe_test_nftables_chains.sh: line 34: nft: command not found
+Mon Sep 12 16:32:36 2022 - ERROR - exec 'nft add table' failed
+Mon Sep 12 16:32:37 2022 - ERROR - oe_test_nftables_chains.sh line 35
+oe_test_nftables_chains.sh: line 37: nft: command not found
+oe_test_nftables_chains.sh: line 38: nft: command not found
+Mon Sep 12 16:32:37 2022 - ERROR - exec 'nft add chain' failed
+Mon Sep 12 16:32:38 2022 - ERROR - oe_test_nftables_chains.sh line 39
+oe_test_nftables_chains.sh: line 41: nft: command not found
+oe_test_nftables_chains.sh: line 42: nft: command not found
+Mon Sep 12 16:32:39 2022 - ERROR - exec 'nft add rule' failed
+Mon Sep 12 16:32:39 2022 - ERROR - oe_test_nftables_chains.sh line 43
+oe_test_nftables_chains.sh: line 45: nft: command not found
+oe_test_nftables_chains.sh: line 46: nft: command not found
+Mon Sep 12 16:32:40 2022 - ERROR - exec 'nft list table inet sec008 sec008_chain tcp dport { 80, 443 } accept' failed
+Mon Sep 12 16:32:41 2022 - ERROR - oe_test_nftables_chains.sh line 47
+Mon Sep 12 16:32:41 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 16:32:42 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:32:43 2022 - INFO  - start environment cleanup.
+oe_test_nftables_chains.sh: line 53: nft: command not found
+Mon Sep 12 16:32:43 2022 - INFO  - Finish environment cleanup!

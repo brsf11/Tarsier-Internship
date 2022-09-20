@@ -1,0 +1,21 @@
+Mon Sep 12 23:34:20 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 23:34:59 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:35:00 2022 - INFO  - Start testing...
+     Active: active (exited) since Mon 2022-09-12 23:35:00 CST; 5s ago
+     Active: inactive (dead) since Mon 2022-09-12 23:35:06 CST; 5s ago
+     Active: active (exited) since Mon 2022-09-12 23:35:12 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/sysstat.service’: No such file or directory
+find: ‘/etc/systemd/system/sysstat.service.wants/sysstat-summary.timer’: No such file or directory
+find: ‘/etc/systemd/system/sysstat.service.wants/sysstat-collect.timer’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/sysstat.service → /usr/lib/systemd/system/sysstat.service.
+Created symlink /etc/systemd/system/sysstat.service.wants/sysstat-collect.timer → /usr/lib/systemd/system/sysstat-collect.timer.
+Created symlink /etc/systemd/system/sysstat.service.wants/sysstat-summary.timer → /usr/lib/systemd/system/sysstat-summary.timer.
+/etc/systemd/system/multi-user.target.wants/sysstat.service
+/etc/systemd/system/sysstat.service.wants/sysstat-summary.timer
+/etc/systemd/system/sysstat.service.wants/sysstat-collect.timer
+Failed to reload sysstat.service: Job type reload is not applicable for unit sysstat.service.
+     Active: active (exited) since Mon 2022-09-12 23:35:12 CST; 15s ago
+Mon Sep 12 23:35:28 2022 - INFO  - Finish test!
+Mon Sep 12 23:35:29 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 23:35:30 2022 - INFO  - start environment cleanup.
+Mon Sep 12 23:35:47 2022 - INFO  - Finish environment cleanup!

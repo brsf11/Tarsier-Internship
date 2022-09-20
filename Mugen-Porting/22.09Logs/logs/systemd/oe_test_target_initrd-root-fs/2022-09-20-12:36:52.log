@@ -1,0 +1,13 @@
+Tue Sep 20 12:36:54 2022 - INFO  - Start environment preparation.
+Tue Sep 20 12:36:55 2022 - INFO  - Finish environment cleanup!
+Tue Sep 20 12:36:56 2022 - INFO  - Start testing...
+     Active: active since Tue 2022-09-20 12:36:56 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:37:02 CST; 5s ago
+     Active: active since Tue 2022-09-20 12:37:08 CST; 5s ago
+Tue Sep 20 12:37:14 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload initrd-root-fs.target: Job type reload is not applicable for unit initrd-root-fs.target.
+     Active: active since Tue 2022-09-20 12:37:08 CST; 6s ago
+Tue Sep 20 12:37:15 2022 - INFO  - Finish test!
+Tue Sep 20 12:37:16 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:37:17 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:37:17 2022 - INFO  - Finish environment cleanup!

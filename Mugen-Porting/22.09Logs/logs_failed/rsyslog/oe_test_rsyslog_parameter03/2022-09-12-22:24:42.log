@@ -1,0 +1,10 @@
+Mon Sep 12 22:24:45 2022 - INFO  - Start to prepare the test environment.
+Failed to stop rsyslog.service: Unit rsyslog.service not loaded.
+Mon Sep 12 22:24:46 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:24:47 2022 - INFO  - Start to run test.
+oe_test_rsyslog_parameter03.sh: line 30: rsyslogd: command not found
+Mon Sep 12 22:24:47 2022 - ERROR - oe_test_rsyslog_parameter03.sh line 31
+Mon Sep 12 22:24:48 2022 - ERROR - oe_test_rsyslog_parameter03.sh line 33
+oe_test_rsyslog_parameter03.sh: line 34: rsyslogd: command not found
+Mon Sep 12 22:24:49 2022 - ERROR - oe_test_rsyslog_parameter03.sh line 35
+Mon Sep 12 22:54:43 2022 - ERROR - Timeout : Command 'bash oe_test_rsyslog_parameter03.sh' timed out after 1799.9993818519997 seconds

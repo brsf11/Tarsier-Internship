@@ -1,0 +1,8 @@
+Tue Sep 20 11:54:16 2022 - INFO  - Start testing...
+     Active: inactive (dead)
+Tue Sep 20 11:54:17 2022 - ERROR - There is an error for the status of systemd-fsck-root.service
+Tue Sep 20 11:54:17 2022 - ERROR - ../common/common_lib.sh line 54
+Tue Sep 20 11:54:18 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 11:54:19 2022 - INFO  - Finish test!
+Tue Sep 20 11:54:19 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:54:20 2022 - INFO  - oe_test_service_systemd-fsck-root.sh post_test

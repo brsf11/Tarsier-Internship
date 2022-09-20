@@ -1,0 +1,44 @@
+Fri Sep  9 02:01:18 2022 - INFO  - Start loading data!
+Fri Sep  9 02:01:25 2022 - INFO  - Loading data is complete!
+Fri Sep  9 02:01:26 2022 - INFO  - Start environmental preparation.
+fdisk: cannot open /dev/: Is a directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Fri Sep  9 02:02:13 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:02:13 2022 - INFO  - Start executing testcase.
+Cannot open device /dev/2.
+Fri Sep  9 02:02:14 2022 - ERROR - Disk encryption failed
+Fri Sep  9 02:02:15 2022 - ERROR - oe_test_use_luks.sh line 39
+Device /dev/1 does not exist or access denied.
+Fri Sep  9 02:02:16 2022 - ERROR - Disk mapping failed
+Fri Sep  9 02:02:16 2022 - ERROR - oe_test_use_luks.sh line 41
+mke2fs 1.46.4 (18-Aug-2021)
+The file /dev/mapper/test_encrypted does not exist and no size was specified.
+Fri Sep  9 02:02:17 2022 - ERROR - Failed to format partition
+Fri Sep  9 02:02:18 2022 - ERROR - oe_test_use_luks.sh line 43
+mount: /mnt/test_encrypted: special device /dev/mapper/test_encrypted does not exist.
+Fri Sep  9 02:02:19 2022 - ERROR - Disk mount failed
+Fri Sep  9 02:02:19 2022 - ERROR - oe_test_use_luks.sh line 45
+Fri Sep  9 02:02:20 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 02:02:21 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:02:21 2022 - INFO  - start environment cleanup.
+umount: /mnt/test_encrypted: not mounted.
+Cannot initialize device-mapper. Is dm_mod kernel module loaded?
+mke2fs 1.46.4 (18-Aug-2021)
+The file /dev/1 does not exist and no size was specified.
+fdisk: cannot open /dev/: Is a directory
+
+Welcome to fdisk (util-linux 2.37.2).
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Fri Sep  9 02:02:35 2022 - INFO  - Finish environment cleanup!

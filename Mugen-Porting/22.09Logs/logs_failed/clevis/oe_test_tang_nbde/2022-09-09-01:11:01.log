@@ -1,0 +1,19 @@
+Fri Sep  9 01:11:04 2022 - INFO  - Start environmental preparation.
+ls: cannot access '/etc/systemd/system/tangd.socket.d': No such file or directory
+Fri Sep  9 01:11:51 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:11:51 2022 - INFO  - Start executing testcase.
+Created symlink /etc/systemd/system/multi-user.target.wants/tangd.socket → /usr/lib/systemd/system/tangd.socket.
+Listen=[::]:8009 (Stream)
+spawn bash -c clevis encrypt tang '{"url":"http://127.0.0.1:8009"}' < input.txt > secert.jwe
+The advertisement contains the following signing keys:
+
+GdyrZ_JiUE8Z9n3WhN8WWzPqjNNlZFFYPUoQ-EtX_Wg
+
+Do you wish to trust these keys? [ynYN] y
+Error communicating with the server!
+Fri Sep  9 01:12:21 2022 - ERROR - Failed to decrypt data
+Fri Sep  9 01:12:22 2022 - ERROR - oe_test_tang_nbde.sh line 72
+Fri Sep  9 01:12:23 2022 - INFO  - Finish testcase execution.
+Fri Sep  9 01:12:23 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:12:24 2022 - INFO  - start environment cleanup.
+Fri Sep  9 01:12:53 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,8 @@
+Fri Sep 16 11:26:30 2022 - INFO  - Start to run test.
+root     pts/0        2022-09-16 11:25 (10.0.2.2)
+         system boot  2022-09-16 11:25
+root     pts/0        2022-09-16 11:25 (10.0.2.2)
+Usage: who [OPTION]... [ FILE | ARG1 ARG2 ]
+Fri Sep 16 11:26:31 2022 - INFO  - End to run test.
+Fri Sep 16 11:26:32 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 11:26:32 2022 - INFO  - oe_test_who.sh post_test

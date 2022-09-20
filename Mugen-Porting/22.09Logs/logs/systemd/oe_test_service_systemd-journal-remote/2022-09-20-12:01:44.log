@@ -1,0 +1,41 @@
+Tue Sep 20 12:01:46 2022 - INFO  - Start environmental preparation.
+sed: can't read /usr/lib/systemd/system/systemd-journal-remote.service: No such file or directory
+Tue Sep 20 12:02:26 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:02:27 2022 - INFO  - Start testing...
+Failed to restart systemd-journal-remote.service: Unit systemd-journal-remote.service not found.
+Tue Sep 20 12:02:27 2022 - ERROR - systemd-journal-remote.service restart failed
+Tue Sep 20 12:02:28 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-journal-remote.service could not be found.
+Tue Sep 20 12:02:34 2022 - ERROR - systemd-journal-remote.service restart failed
+Tue Sep 20 12:02:35 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-journal-remote.service: Unit systemd-journal-remote.service not loaded.
+Tue Sep 20 12:02:36 2022 - ERROR - systemd-journal-remote.service stop failed
+Tue Sep 20 12:02:36 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-journal-remote.service could not be found.
+Tue Sep 20 12:02:43 2022 - ERROR - systemd-journal-remote.service stop failed
+Tue Sep 20 12:02:43 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-journal-remote.service: Unit systemd-journal-remote.service not found.
+Tue Sep 20 12:02:44 2022 - ERROR - systemd-journal-remote.service start failed
+Tue Sep 20 12:02:45 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-journal-remote.service could not be found.
+Tue Sep 20 12:02:51 2022 - ERROR - systemd-journal-remote.service start failed
+Tue Sep 20 12:02:52 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-journal-remote.service: No such file or directory
+Tue Sep 20 12:02:53 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-journal-remote.service: Unit systemd-journal-remote.service not found.
+Tue Sep 20 12:02:53 2022 - ERROR - Job type reload is not applicable for unit systemd-journal-remote.service
+Tue Sep 20 12:02:54 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-journal-remote.service could not be found.
+Unit systemd-journal-remote.service could not be found.
+Tue Sep 20 12:02:55 2022 - INFO  - Finish test!
+Tue Sep 20 12:02:55 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:02:56 2022 - INFO  - Start environment cleanup.
+sed: can't read /usr/lib/systemd/system/systemd-journal-remote.service: No such file or directory
+Failed to stop systemd-journal-remote.service: Unit systemd-journal-remote.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:24:30 ago on Tue 20 Sep 2022 11:37:51 AM CST.\nNo match for argument: systemd-journal-remote\nError: Unable to find a match: systemd-journal-remote'
+Tue Sep 20 12:03:03 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,28 @@
+Mon Sep 12 21:43:44 2022 - INFO  - Start to prepare the test environment.
+setenforce: SELinux is disabled
+Failed to stop iptables.service: Unit iptables.service not loaded.
+Failed to restart httpd.service: Unit httpd.service not found.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:44:27 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:44:28 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:44:29 2022 - INFO  - Start to run test.
+oe_test_rsyslog_function_httpd.sh: line 37: /etc/rsyslog.d/client.conf: No such file or directory
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:44:30 2022 - ERROR - oe_test_rsyslog_function_httpd.sh line 58
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:44:30 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:44:31 2022 - ERROR - oe_test_rsyslog_function_httpd.sh line 63
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:44:52 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:44:53 2022 - ERROR - oe_test_rsyslog_function_httpd.sh line 66
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:44:54 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 21:44:55 2022 - ERROR - oe_test_rsyslog_function_httpd.sh line 68
+Mon Sep 12 21:44:55 2022 - INFO  - End to run test.
+Mon Sep 12 21:44:56 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:44:57 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:03:49 ago on Mon 12 Sep 2022 09:40:36 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by httpd-2.4.51-6.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 21:45:00 2022 - ERROR - Failed in remote CMD operation:1
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 21:45:01 2022 - INFO  - End to restore the test environment.

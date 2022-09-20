@@ -1,0 +1,30 @@
+Mon Sep 12 18:43:23 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 18:45:54 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:45:55 2022 - INFO  - Start to run test.
+pmfind version 5.3.5
+const char *mystats[] = {
+*  loadav*    %usr*    %sys*    %wio*   %idle*max-iops
+*    1.45*       ?*       ?*       ?*       ?*       ?
+*    1.45*    0.01*    0.00*    0.00*    3.98*    0.00
+*    1.41*    0.00*    0.00*    0.00*    3.99*   10.00
+*    1.41*    0.00*    0.00*    0.00*    3.99*    0.00
+*    1.38*    0.00*    0.00*    0.00*    3.98*    1.00
+*    1.27*    0.00*    0.00*    0.00*    3.99*    0.00
+*    1.27*    0.00*    0.00*    0.04*    3.95*    1.33
+*    1.25*    0.00*    0.00*    0.04*    3.95*    0.67
+*    1.25*    0.00*    0.00*    0.00*    3.99*    0.00
+pminfo version 5.3.5
+disk.dev.write
+disk.dev.write
+disk.dev.write_bytes
+disk.dev.write_merge
+disk.dev.write_rawactive
+vfs.inodes.count
+disk.dev.write
+disk.dev.write
+Mon Sep 12 18:46:29 2022 - INFO  - End to run test.
+Mon Sep 12 18:46:29 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 18:46:30 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 18:47:23 2022 - INFO  - End to restore the test environment.

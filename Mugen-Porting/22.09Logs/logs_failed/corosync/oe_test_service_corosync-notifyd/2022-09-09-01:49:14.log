@@ -1,0 +1,72 @@
+Fri Sep  9 01:49:17 2022 - INFO  - Start environmental preparation.
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+Failed to disable unit: Unit file firewalld.service does not exist.
+passwd: Unknown user name 'hacluster'.
+../common/ha.sh: line 71: /etc/corosync/corosync.conf: No such file or directory
+Fri Sep  9 01:49:54 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 01:49:55 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/hosts @:/etc/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 01:49:56 2022 - ERROR - Failed in remote SCP operation: 1
+Fri Sep  9 01:49:57 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/corosync/corosync.conf @:/etc/corosync/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 01:49:58 2022 - ERROR - Failed in remote SCP operation: 1
+Failed to start pcsd.service: Unit pcsd.service not found.
+Failed to start pacemaker.service: Unit pacemaker.service not found.
+../common/ha.sh: line 83: pcs: command not found
+../common/ha.sh: line 84: pcs: command not found
+../common/ha.sh: line 85: crm_verify: command not found
+Failed to start corosync.service: Unit corosync.service not found.
+Fri Sep  9 01:50:01 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+../common/ha.sh: line 98: pcs: command not found
+Failed to restart pacemaker.service: Unit pacemaker.service not found.
+Failed to restart corosync.service: Unit corosync.service not found.
+Failed to restart pcsd.service: Unit pcsd.service not found.
+Fri Sep  9 01:50:04 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 01:50:05 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:50:05 2022 - INFO  - Start testing...
+Failed to restart corosync-notifyd.service: Unit corosync-notifyd.service not found.
+Fri Sep  9 01:50:06 2022 - ERROR - corosync-notifyd.service restart failed
+Fri Sep  9 01:50:07 2022 - ERROR - ../common/common_lib.sh line 34
+Unit corosync-notifyd.service could not be found.
+Fri Sep  9 01:50:14 2022 - ERROR - corosync-notifyd.service restart failed
+Fri Sep  9 01:50:14 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop corosync-notifyd.service: Unit corosync-notifyd.service not loaded.
+Fri Sep  9 01:50:15 2022 - ERROR - corosync-notifyd.service stop failed
+Fri Sep  9 01:50:16 2022 - ERROR - ../common/common_lib.sh line 39
+Unit corosync-notifyd.service could not be found.
+Fri Sep  9 01:50:22 2022 - ERROR - corosync-notifyd.service stop failed
+Fri Sep  9 01:50:23 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start corosync-notifyd.service: Unit corosync-notifyd.service not found.
+Fri Sep  9 01:50:24 2022 - ERROR - corosync-notifyd.service start failed
+Fri Sep  9 01:50:25 2022 - ERROR - ../common/common_lib.sh line 44
+Unit corosync-notifyd.service could not be found.
+Fri Sep  9 01:50:31 2022 - ERROR - corosync-notifyd.service start failed
+Fri Sep  9 01:50:32 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for corosync-notifyd.service: No such file or directory
+Fri Sep  9 01:50:33 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start corosync-notifyd.service: Unit corosync-notifyd.service not found.
+Fri Sep  9 01:50:34 2022 - ERROR - Job type reload is not applicable for unit corosync-notifyd.service
+Fri Sep  9 01:50:34 2022 - ERROR - ../common/common_lib.sh line 91
+Unit corosync-notifyd.service could not be found.
+Unit corosync-notifyd.service could not be found.
+Fri Sep  9 01:50:35 2022 - INFO  - Finish test!
+Fri Sep  9 01:50:36 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:50:37 2022 - INFO  - start environment cleanup.
+Failed to stop corosync-notifyd.service: Unit corosync-notifyd.service not loaded.
+Failed to stop corosync.service: Unit corosync.service not loaded.
+Failed to stop pacemaker.service: Unit pacemaker.service not loaded.
+Failed to stop pcsd.service: Unit pcsd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:03:17 ago on Fri 09 Sep 2022 01:46:32 AM CST.\nError: \n Problem: package pacemaker-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Failed to start firewalld.service: Unit firewalld.service not found.
+Failed to enable unit: Unit file firewalld.service does not exist.
+Fri Sep  9 01:50:43 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 01:50:44 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,100 @@
+Fri Sep  9 01:46:54 2022 - INFO  - Start environmental preparation.
+Failed to stop firewalld.service: Unit firewalld.service not loaded.
+Failed to disable unit: Unit file firewalld.service does not exist.
+passwd: Unknown user name 'hacluster'.
+../common/ha.sh: line 71: /etc/corosync/corosync.conf: No such file or directory
+Fri Sep  9 01:47:33 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 01:47:34 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/hosts @:/etc/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 01:47:35 2022 - ERROR - Failed in remote SCP operation: 1
+Fri Sep  9 01:47:36 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/corosync/corosync.conf @:/etc/corosync/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 01:47:37 2022 - ERROR - Failed in remote SCP operation: 1
+Failed to start pcsd.service: Unit pcsd.service not found.
+Failed to start pacemaker.service: Unit pacemaker.service not found.
+../common/ha.sh: line 83: pcs: command not found
+../common/ha.sh: line 84: pcs: command not found
+../common/ha.sh: line 85: crm_verify: command not found
+Failed to start corosync.service: Unit corosync.service not found.
+Fri Sep  9 01:47:40 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+../common/ha.sh: line 98: pcs: command not found
+Failed to restart pacemaker.service: Unit pacemaker.service not found.
+Failed to restart corosync.service: Unit corosync.service not found.
+Failed to restart pcsd.service: Unit pcsd.service not found.
+Fri Sep  9 01:47:43 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 102, in rpm_install
+    with open(tmpfile, "a+") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:20 ago on Fri 09 Sep 2022 01:47:09 AM CST.\nError: \n Problem: package pacemaker-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 01:48:42 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 01:48:45 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 01:48:46 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/hosts @:/etc/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 01:48:47 2022 - ERROR - Failed in remote SCP operation: 1
+Fri Sep  9 01:48:48 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /etc/hosts @:/etc/
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Fri Sep  9 01:48:49 2022 - ERROR - Failed in remote SCP operation: 1
+Fri Sep  9 01:48:51 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+oe_test_service_corosync-qdevice.sh: line 39: pcs: command not found
+oe_test_service_corosync-qdevice.sh: line 40: pcs: command not found
+Fri Sep  9 01:48:52 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:48:53 2022 - INFO  - Start testing...
+A dependency job for corosync-qdevice.service failed. See 'journalctl -xe' for details.
+Fri Sep  9 01:48:54 2022 - ERROR - corosync-qdevice.service restart failed
+Fri Sep  9 01:48:54 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Sep  9 01:49:01 2022 - ERROR - corosync-qdevice.service restart failed
+Fri Sep  9 01:49:02 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+A dependency job for corosync-qdevice.service failed. See 'journalctl -xe' for details.
+Fri Sep  9 01:49:09 2022 - ERROR - corosync-qdevice.service start failed
+Fri Sep  9 01:49:09 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Sep  9 01:49:16 2022 - ERROR - corosync-qdevice.service start failed
+Fri Sep  9 01:49:17 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/corosync-qdevice.service
+Removed /etc/systemd/system/multi-user.target.wants/corosync-qdevice.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/corosync-qdevice.service’: No such file or directory
+Sep 09 01:48:53 ha1 systemd[1]: Dependency failed for Corosync Qdevice daemon.
+Sep 09 01:48:53 ha1 systemd[1]: corosync-qdevice.service: Job corosync-qdevice.service/start failed with result 'dependency'.
+Sep 09 01:49:08 ha1 systemd[1]: Dependency failed for Corosync Qdevice daemon.
+Sep 09 01:49:08 ha1 systemd[1]: corosync-qdevice.service: Job corosync-qdevice.service/start failed with result 'dependency'.
+Fri Sep  9 01:49:27 2022 - ERROR - There is an error message for the log of corosync-qdevice.service
+Fri Sep  9 01:49:27 2022 - ERROR - ../common/common_lib.sh line 28
+A dependency job for corosync-qdevice.service failed. See 'journalctl -xe' for details.
+Failed to reload corosync-qdevice.service: Job type reload is not applicable for unit corosync-qdevice.service.
+     Active: inactive (dead)
+Fri Sep  9 01:49:29 2022 - ERROR - corosync-qdevice.service reload causes the service status to change
+Fri Sep  9 01:49:29 2022 - ERROR - ../common/common_lib.sh line 95
+Fri Sep  9 01:49:30 2022 - INFO  - Finish test!
+Fri Sep  9 01:49:31 2022 - ERROR - failed to execute the case.
+Fri Sep  9 01:49:31 2022 - INFO  - start environment cleanup.
+oe_test_service_corosync-qdevice.sh: line 54: pcs: command not found
+Fri Sep  9 01:49:34 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:20 ago on Fri 09 Sep 2022 01:47:09 AM CST.\nError: \n Problem: package pacemaker-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 01:49:38 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Failed to stop pacemaker.service: Unit pacemaker.service not loaded.
+Failed to stop pcsd.service: Unit pcsd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:20 ago on Fri 09 Sep 2022 01:47:09 AM CST.\nError: \n Problem: package pacemaker-2.0.5-1.oe2209.riscv64 requires resource-agents, but none of the providers can be installed\n  - package resource-agents-4.2.0-3.oe2209.riscv64 requires cifs-utils, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libwbclient.so.0()(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n  - nothing provides libwbclient.so.0(WBCLIENT_0.9)(64bit) needed by cifs-utils-6.14-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Failed to start firewalld.service: Unit firewalld.service not found.
+Failed to enable unit: Unit file firewalld.service does not exist.
+Fri Sep  9 01:49:45 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 01:49:45 2022 - INFO  - Finish environment cleanup!

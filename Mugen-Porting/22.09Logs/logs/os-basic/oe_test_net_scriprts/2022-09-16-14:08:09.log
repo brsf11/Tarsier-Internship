@@ -1,0 +1,33 @@
+Fri Sep 16 14:08:12 2022 - INFO  - Start environment preparation.
+Fri Sep 16 14:09:27 2022 - INFO  - Environmental preparation is over.
+Fri Sep 16 14:09:28 2022 - INFO  - Start executing testcase.
+ifup
+ifup-aliases
+ifup-bnep
+ifup-eth
+ifup-ippp
+ifup-ipv6
+ifup-isdn
+ifup-plip
+ifup-plusb
+ifup-post
+ifup-ppp
+ifup-routes
+ifup-sit
+ifup-tunnel
+ifup-wireless
+ifdown
+ifdown-bnep
+ifdown-eth
+ifdown-ippp
+ifdown-ipv6
+ifdown-isdn
+ifdown-post
+ifdown-ppp
+ifdown-routes
+ifdown-sit
+ifdown-tunnel
+Fri Sep 16 14:09:28 2022 - INFO  - End of testcase execution.
+Fri Sep 16 14:09:29 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 14:09:30 2022 - INFO  - start environment cleanup.
+Fri Sep 16 14:10:00 2022 - INFO  - Finish environment cleanup.

@@ -1,0 +1,28 @@
+Mon Sep 12 17:42:05 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:43:56 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:43:57 2022 - INFO  - Start testing...
+oe_test_service_ovsdb-server.sh: line 32: service: command not found
+Mon Sep 12 17:43:57 2022 - ERROR - ovsdb-server.service restart failed
+Mon Sep 12 17:43:58 2022 - ERROR - oe_test_service_ovsdb-server.sh line 33
+oe_test_service_ovsdb-server.sh: line 34: service: command not found
+Mon Sep 12 17:43:59 2022 - ERROR - ovsdb-server.service stop failed
+Mon Sep 12 17:43:59 2022 - ERROR - oe_test_service_ovsdb-server.sh line 35
+oe_test_service_ovsdb-server.sh: line 36: service: command not found
+Mon Sep 12 17:44:00 2022 - ERROR - ovsdb-server.service start failed
+Mon Sep 12 17:44:01 2022 - ERROR - oe_test_service_ovsdb-server.sh line 37
+oe_test_service_ovsdb-server.sh: line 38: service: command not found
+Mon Sep 12 17:44:02 2022 - ERROR - ovsdb-server.service start failed
+Mon Sep 12 17:44:02 2022 - ERROR - oe_test_service_ovsdb-server.sh line 39
+oe_test_service_ovsdb-server.sh: line 42: service: command not found
+oe_test_service_ovsdb-server.sh: line 45: service: command not found
+Mon Sep 12 17:44:07 2022 - ERROR - ovsdb-server.service reload failed
+Mon Sep 12 17:44:08 2022 - ERROR - oe_test_service_ovsdb-server.sh line 46
+oe_test_service_ovsdb-server.sh: line 47: service: command not found
+Mon Sep 12 17:44:09 2022 - ERROR - ovsdb-server.service reload causes the service status to change
+Mon Sep 12 17:44:10 2022 - ERROR - oe_test_service_ovsdb-server.sh line 48
+Mon Sep 12 17:44:10 2022 - INFO  - Finish test!
+Mon Sep 12 17:44:11 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:44:12 2022 - INFO  - start environment cleanup.
+oe_test_service_ovsdb-server.sh: line 56: service: command not found
+oe_test_service_ovsdb-server.sh: line 57: service: command not found
+Mon Sep 12 17:45:24 2022 - INFO  - Finish environment cleanup!

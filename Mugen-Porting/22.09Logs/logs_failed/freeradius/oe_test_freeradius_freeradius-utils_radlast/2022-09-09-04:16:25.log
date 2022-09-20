@@ -1,0 +1,38 @@
+Fri Sep  9 04:16:28 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:21:13 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:21:13 2022 - INFO  - Start to run test.
+10.0.2.2
+10.0.2.2
+10.0.2.2
+reboot   system boot  0.0.0.0          Fri Sep  9 03:35   still running
+root     pts/0        _gateway         Fri Sep  2 11:45 - down   (01:22)
+reboot   system boot  0.0.0.0          Fri Sep  2 11:44 - 13:07  (01:22)
+
+radwtmp begins Wed Aug 24 13:52:56 2022
+radwtmp begins Wed Aug 24 13:52:56 2022
+radwtmp begins Wed Aug 24 13:52:56 2022
+reboot   system boot  5.10.0           Fri Sep  9 03:35:41 2022   still running
+root     pts/0        10.0.2.2         Fri Sep  2 11:45:34 2022 - down                      (01:22)
+reboot   system boot  5.10.0           Fri Sep  2 11:44:59 2022 - Fri Sep  2 13:07:36 2022  (01:22)
+root     pts/0        10.0.2.2         Wed Aug 24 14:07:04 2022 - down                      (00:00)
+root     pts/0        10.0.2.2         Wed Aug 24 13:55:38 2022 - Wed Aug 24 14:06:47 2022  (00:11)
+reboot   system boot  5.10.0           Wed Aug 24 13:52:56 2022 - Wed Aug 24 14:07:11 2022  (00:14)
+radwtmp begins Wed Aug 24 13:52:56 2022
+reboot   system boot  0.0.0.0          Fri Sep  9 03:35   still running
+root     pts/0        10.0.2.2         Fri Sep  2 11:45 - down   (01:22)
+reboot   system boot  0.0.0.0          Fri Sep  2 11:44 - 13:07  (01:22)
+root     pts/0        10.0.2.2         Wed Aug 24 14:07 - down   (00:00)
+root     pts/0        10.0.2.2         Wed Aug 24 13:55 - 14:06  (00:11)
+reboot   system boot  0.0.0.0          Wed Aug 24 13:52 - 14:07  (00:14)
+radwtmp begins Wed Aug 24 13:52:56 2022
+Fri
+Wed
+Wed
+Wed
+last: invalid time value ""
+Fri Sep  9 04:21:20 2022 - ERROR - radlast -s execution failed.
+Fri Sep  9 04:21:21 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 56
+Fri Sep  9 04:21:21 2022 - INFO  - End to run test.
+Fri Sep  9 04:21:22 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:21:23 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 04:21:43 2022 - INFO  - End to restore the test environment.

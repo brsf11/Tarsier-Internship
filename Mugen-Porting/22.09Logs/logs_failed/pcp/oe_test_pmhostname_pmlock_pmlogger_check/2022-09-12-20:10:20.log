@@ -1,0 +1,13 @@
+Mon Sep 12 20:10:23 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 20:13:38 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 20:13:39 2022 - INFO  - Start to run test.
+openEuler-riscv64
+Mon Sep 12 20:14:21 2022 - ERROR - oe_test_pmhostname_pmlock_pmlogger_check.sh line 44
+Mon Sep 12 20:14:28 2022 - ERROR - oe_test_pmhostname_pmlock_pmlogger_check.sh line 46
+Mon Sep 12 20:14:35 2022 - ERROR - oe_test_pmhostname_pmlock_pmlogger_check.sh line 50
+Mon Sep 12 20:14:36 2022 - INFO  - End to run test.
+Mon Sep 12 20:14:36 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:14:37 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 20:15:13 2022 - INFO  - End to restore the test environment.

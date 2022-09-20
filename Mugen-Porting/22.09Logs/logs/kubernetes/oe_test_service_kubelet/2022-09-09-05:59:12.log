@@ -1,0 +1,18 @@
+Fri Sep  9 05:59:15 2022 - INFO  - Start environmental preparation.
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+Fri Sep  9 06:02:21 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 06:02:21 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 06:02:22 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-09 06:02:34 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/kubelet.service
+Removed /etc/systemd/system/multi-user.target.wants/kubelet.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/kubelet.service’: No such file or directory
+Failed to reload kubelet.service: Job type reload is not applicable for unit kubelet.service.
+     Active: active (running) since Fri 2022-09-09 06:02:34 CST; 16s ago
+Fri Sep  9 06:02:51 2022 - INFO  - Finish test!
+Fri Sep  9 06:02:52 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 06:02:53 2022 - INFO  - start environment cleanup.
+swapon: failed to parse /etc/fstab: No such file or directory
+Fri Sep  9 06:03:19 2022 - INFO  - Finish environment cleanup!

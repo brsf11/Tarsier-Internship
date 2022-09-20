@@ -1,0 +1,17 @@
+Fri Sep  9 03:36:07 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 03:41:42 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 03:41:43 2022 - INFO  - Start to run test.
+root         679     668  2 03:41 ?        00:00:00 tail -f /var/log/radius/radmin.debug.668
+root         702     691  5 03:42 ?        00:00:00 tail -f /var/log/radius/radmin.debug.691
+root         726     715  1 03:43 ?        00:00:00 tail -f /var/log/radius/radmin.debug.715
+root         749     738  0 03:44 ?        00:00:00 tail -f /var/log/radius/radmin.debug.738
+root         773     762  0 03:45 ?        00:00:00 tail -f /var/log/radius/radmin.debug.762
+ERROR: Parse error in condition "1 && (Packet-Src-IPv6-Address == )": Empty string is invalid
+root         796     785  0 03:47 ?        00:00:00 tail -f /var/log/radius/radmin.debug.785
+root         819     808  2 03:48 ?        00:00:00 tail -f /var/log/radius/radmin.debug.808
+root         842     831  0 03:49 ?        00:00:00 tail -f /var/log/radius/radmin.debug.831
+root         865     854  0 03:49 ?        00:00:00 tail -f /var/log/radius/radmin.debug.854
+Fri Sep  9 03:50:14 2022 - INFO  - End to run test.
+Fri Sep  9 03:50:14 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 03:50:15 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 03:50:37 2022 - INFO  - End to restore the test environment.

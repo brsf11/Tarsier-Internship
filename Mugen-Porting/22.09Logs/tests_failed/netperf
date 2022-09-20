@@ -1,0 +1,3 @@
+oe_test_netperf_basic_command
+oe_test_netperf_diff_connect_model
+oe_test_netperf_remote_command

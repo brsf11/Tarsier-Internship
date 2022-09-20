@@ -1,0 +1,3 @@
+oe_test_service_bacula-dir
+oe_test_service_bacula-fd
+oe_test_service_bacula-sd

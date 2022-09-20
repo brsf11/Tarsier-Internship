@@ -1,0 +1,51 @@
+Fri Sep  9 07:32:29 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:32:37 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:32:45 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:32:46 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:32:47 2022 - ERROR - create PV failed
+Fri Sep  9 07:32:47 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 30
+Fri Sep  9 07:32:48 2022 - ERROR - create PV failed
+Fri Sep  9 07:32:49 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 32
+  No device found for /dev/.
+Fri Sep  9 07:32:50 2022 - ERROR - create VG failed
+Fri Sep  9 07:32:51 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 34
+Fri Sep  9 07:32:52 2022 - ERROR - create VG failed
+Fri Sep  9 07:32:52 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 36
+  vgchange - Change volume group attributes
+  vgchange - Change volume group attributes
+  /dev/mapper/control: open failed: No such device
+  Failure to communicate with kernel device-mapper driver.
+  Check that device-mapper is available in the kernel.
+  Incompatible libdevmapper 1.02.181 (2021-10-20) and kernel driver (unknown version).
+  LVM version:     2.03.14(2) (2021-10-20)
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:54 2022 - ERROR - failed to test vgchange --poll y
+Fri Sep  9 07:32:55 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 44
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:56 2022 - ERROR - failed to test vgchange --refresh --autobackup y
+Fri Sep  9 07:32:56 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 46
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:57 2022 - ERROR - failed to test vgchange --refresh --sysinit
+Fri Sep  9 07:32:58 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 48
+  Volume group "test" not found
+  Cannot process volume group test
+Fri Sep  9 07:32:59 2022 - ERROR - failed to test vgchange --refresh --reportformat basic
+Fri Sep  9 07:33:00 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 50
+  Volume group "test" not found
+  Cannot process volume group test
+  {
+  }
+Fri Sep  9 07:33:01 2022 - ERROR - vgchange --refresh --reportformat json
+Fri Sep  9 07:33:01 2022 - ERROR - oe_test_lvm2_vgchange_002.sh line 52
+Fri Sep  9 07:33:02 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:33:03 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:33:03 2022 - INFO  - Start environment cleanup.
+  Volume group "test" not found
+  Cannot process volume group test
+  No device found for /dev/.
+Fri Sep  9 07:33:05 2022 - WARN  - no thing to do.
+Fri Sep  9 07:33:05 2022 - INFO  - Finish environment cleanup.

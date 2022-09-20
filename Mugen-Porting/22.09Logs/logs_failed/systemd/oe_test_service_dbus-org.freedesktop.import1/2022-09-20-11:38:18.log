@@ -1,0 +1,33 @@
+Tue Sep 20 11:38:20 2022 - INFO  - Start environment preparation.
+Tue Sep 20 11:39:13 2022 - INFO  - Finish environment cleanup!
+Tue Sep 20 11:39:14 2022 - INFO  - Start testing...
+Failed to restart dbus-org.freedesktop.import1.service: Unit dbus-org.freedesktop.import1.service not found.
+Tue Sep 20 11:39:14 2022 - ERROR - dbus-org.freedesktop.import1.service restart failed
+Tue Sep 20 11:39:15 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dbus-org.freedesktop.import1.service could not be found.
+Tue Sep 20 11:39:21 2022 - ERROR - dbus-org.freedesktop.import1.service restart failed
+Tue Sep 20 11:39:22 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dbus-org.freedesktop.import1.service: Unit dbus-org.freedesktop.import1.service not loaded.
+Tue Sep 20 11:39:23 2022 - ERROR - dbus-org.freedesktop.import1.service stop failed
+Tue Sep 20 11:39:23 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dbus-org.freedesktop.import1.service could not be found.
+Tue Sep 20 11:39:30 2022 - ERROR - dbus-org.freedesktop.import1.service stop failed
+Tue Sep 20 11:39:30 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dbus-org.freedesktop.import1.service: Unit dbus-org.freedesktop.import1.service not found.
+Tue Sep 20 11:39:31 2022 - ERROR - dbus-org.freedesktop.import1.service start failed
+Tue Sep 20 11:39:32 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dbus-org.freedesktop.import1.service could not be found.
+Tue Sep 20 11:39:38 2022 - ERROR - dbus-org.freedesktop.import1.service start failed
+Tue Sep 20 11:39:39 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dbus-org.freedesktop.import1.service: No such file or directory
+Tue Sep 20 11:39:40 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dbus-org.freedesktop.import1.service: Unit dbus-org.freedesktop.import1.service not found.
+Tue Sep 20 11:39:40 2022 - ERROR - Job type reload is not applicable for unit dbus-org.freedesktop.import1.service
+Tue Sep 20 11:39:41 2022 - ERROR - ../common/common_lib.sh line 91
+Unit dbus-org.freedesktop.import1.service could not be found.
+Unit dbus-org.freedesktop.import1.service could not be found.
+Tue Sep 20 11:39:42 2022 - INFO  - Finish test!
+Tue Sep 20 11:39:43 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:39:43 2022 - INFO  - Start environment cleanup.
+Failed to stop dbus-org.freedesktop.import1.service: Unit dbus-org.freedesktop.import1.service not loaded.
+Tue Sep 20 11:40:04 2022 - INFO  - Finish environment cleanup!

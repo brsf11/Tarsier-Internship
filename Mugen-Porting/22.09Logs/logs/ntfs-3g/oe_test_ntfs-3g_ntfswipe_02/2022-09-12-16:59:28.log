@@ -1,0 +1,49 @@
+Mon Sep 12 16:59:30 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 17:00:21 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:00:22 2022 - INFO  - Start to run test.
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:22 2022 - ERROR - Check ntfswipe --undel failed.
+Mon Sep 12 17:00:23 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 31
+Error opening '/dev/': Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:24 2022 - ERROR - Check ntfswipe --all failed.
+Mon Sep 12 17:00:24 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 33
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:25 2022 - ERROR - Check ntfswipe --count failed.
+Mon Sep 12 17:00:26 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 35
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:27 2022 - ERROR - Check ntfswipe --bytes failed.
+Mon Sep 12 17:00:27 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 37
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:28 2022 - ERROR - Check ntfswipe --no-action failed.
+Mon Sep 12 17:00:29 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 39
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:30 2022 - ERROR - Check ntfswipe --force failed.
+Mon Sep 12 17:00:30 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 41
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:31 2022 - ERROR - Check ntfswipe --quiet failed.
+Mon Sep 12 17:00:32 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 43
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:00:32 2022 - ERROR - Check ntfswipe --verbose failed.
+Mon Sep 12 17:00:33 2022 - ERROR - oe_test_ntfs-3g_ntfswipe_02.sh line 45
+Mon Sep 12 17:00:34 2022 - INFO  - End of the test.
+Mon Sep 12 17:00:34 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:00:35 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:00:48 2022 - INFO  - Finish restoring the test environment.

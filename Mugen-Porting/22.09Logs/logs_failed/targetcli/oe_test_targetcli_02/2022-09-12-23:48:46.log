@@ -1,0 +1,30 @@
+Mon Sep 12 23:48:49 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:49:40 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 23:49:41 2022 - INFO  - Start to run test.
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "cd iscsi\r"}"
+"expect "/>" {send "cd iscsi\r"}"
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "iscsi/ create\r"}"
+Mon Sep 12 23:49:50 2022 - ERROR - oe_test_targetcli_02.sh line 61
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp3 not open
+    while executing
+"expect "/>" {send "exit\r"}"
+spawn targetcli
+[31mmodule 'kmod' has no attribute 'error'[0m[0m
+expect: spawn id exp4 not open
+    while executing
+"expect "/>" {send "get global\r"}"
+Mon Sep 12 23:50:04 2022 - ERROR - oe_test_targetcli_02.sh line 85
+Mon Sep 12 23:50:05 2022 - INFO  - End of the test.
+Mon Sep 12 23:50:05 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:50:06 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:50:30 2022 - INFO  - Finish restoring the test environment.

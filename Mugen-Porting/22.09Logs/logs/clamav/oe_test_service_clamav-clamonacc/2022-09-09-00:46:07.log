@@ -1,0 +1,28 @@
+Fri Sep  9 00:46:10 2022 - INFO  - Start environmental preparation.
+LibClamAV Warning: **************************************************
+LibClamAV Warning: ***  The virus database is older than 7 days!  ***
+LibClamAV Warning: ***   Please update it as soon as possible.    ***
+LibClamAV Warning: **************************************************
+Fri Sep  9 00:55:31 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 00:55:32 2022 - INFO  - Start testing...
+Fri Sep  9 00:55:39 2022 - ERROR - clamav-clamonacc.service restart failed
+Fri Sep  9 00:55:40 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 00:55:46 2022 - ERROR - clamav-clamonacc.service stop failed
+Fri Sep  9 00:55:47 2022 - ERROR - ../common/common_lib.sh line 42
+Fri Sep  9 00:55:54 2022 - ERROR - clamav-clamonacc.service start failed
+Fri Sep  9 00:55:55 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/clamav-clamonacc.service
+Removed /etc/systemd/system/multi-user.target.wants/clamav-clamonacc.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/clamav-clamonacc.service’: No such file or directory
+Sep 09 00:55:32 openEuler-riscv64 clamonacc[585]: ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Sep 09 00:55:32 openEuler-riscv64 systemd[1]: clamav-clamonacc.service: Failed with result 'exit-code'.
+Sep 09 00:55:47 openEuler-riscv64 clamonacc[600]: ERROR: Clamonacc: fanotify_init failed: Function not implemented
+Sep 09 00:55:47 openEuler-riscv64 systemd[1]: clamav-clamonacc.service: Failed with result 'exit-code'.
+Fri Sep  9 00:56:05 2022 - ERROR - There is an error message for the log of clamav-clamonacc.service
+Fri Sep  9 00:56:06 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload clamav-clamonacc.service: Job type reload is not applicable for unit clamav-clamonacc.service.
+Fri Sep  9 00:56:07 2022 - INFO  - Finish test!
+Fri Sep  9 00:56:08 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:56:08 2022 - INFO  - start environment cleanup.
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh: line 97:   577 Killed                  /usr/sbin/clamd
+Fri Sep  9 00:56:40 2022 - INFO  - Finish environment cleanup!

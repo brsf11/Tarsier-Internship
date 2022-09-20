@@ -1,0 +1,59 @@
+Mon Sep 12 19:07:23 2022 - INFO  - Start to prepare the test environment.
+oe_test_python-wheel_python2-wheel_command.sh: line 31: python2: command not found
+oe_test_python-wheel_python2-wheel_command.sh: line 34: pip2: command not found
+Mon Sep 12 19:08:19 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 19:08:19 2022 - INFO  - Start to run test.
+oe_test_python-wheel_python2-wheel_command.sh: line 43: wheel-2: command not found
+Mon Sep 12 19:08:20 2022 - ERROR - wheel-2 -h execution failed.
+Mon Sep 12 19:08:21 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 44
+oe_test_python-wheel_python2-wheel_command.sh: line 45: wheel-2: command not found
+Mon Sep 12 19:08:22 2022 - ERROR - wheel-2 --help execution failed.
+Mon Sep 12 19:08:22 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 46
+oe_test_python-wheel_python2-wheel_command.sh: line 47: wheel-2: command not found
+Mon Sep 12 19:08:23 2022 - ERROR - wheel-2 help execution failed.
+Mon Sep 12 19:08:24 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 48
+oe_test_python-wheel_python2-wheel_command.sh: line 49: wheel-2: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Mon Sep 12 19:08:25 2022 - ERROR - wheel-2 version execution failed.
+Mon Sep 12 19:08:26 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 50
+oe_test_python-wheel_python2-wheel_command.sh: line 51: wheel-2: command not found
+Mon Sep 12 19:08:26 2022 - ERROR - wheel-2 convert execution failed.
+Mon Sep 12 19:08:27 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 53
+oe_test_python-wheel_python2-wheel_command.sh: line 54: wheel-2: command not found
+Mon Sep 12 19:08:28 2022 - ERROR - wheel-2 keygen execution failed.
+Mon Sep 12 19:08:28 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 55
+oe_test_python-wheel_python2-wheel_command.sh: line 56: wheel-2: command not found
+oe_test_python-wheel_python2-wheel_command.sh: line 57: wheel-2: command not found
+Mon Sep 12 19:08:29 2022 - ERROR - wheel-2 sign execution failed.
+Mon Sep 12 19:08:30 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 59
+oe_test_python-wheel_python2-wheel_command.sh: line 61: wheel-2: command not found
+oe_test_python-wheel_python2-wheel_command.sh: line 62: wheel-2: command not found
+oe_test_python-wheel_python2-wheel_command.sh: line 65: wheel-2: command not found
+oe_test_python-wheel_python2-wheel_command.sh: line 66: wheel-2: command not found
+Mon Sep 12 19:08:31 2022 - ERROR - wheel-2 verify execution failed.
+Mon Sep 12 19:08:31 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 67
+oe_test_python-wheel_python2-wheel_command.sh: line 68: wheel-2: command not found
+oe_test_python-wheel_python2-wheel_command.sh: line 69: pip2: command not found
+Mon Sep 12 19:08:32 2022 - ERROR - wheel-2 install execution failed.
+Mon Sep 12 19:08:33 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 70
+oe_test_python-wheel_python2-wheel_command.sh: line 71: wheel-2: command not found
+Mon Sep 12 19:08:33 2022 - ERROR - wheel-2 unpack execution failed.
+Mon Sep 12 19:08:34 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 73
+oe_test_python-wheel_python2-wheel_command.sh: line 74: wheel-2: command not found
+oe_test_python-wheel_python2-wheel_command.sh: line 75: wjfexe: command not found
+Mon Sep 12 19:08:35 2022 - ERROR - wheel-2 install-scripts execution failed.
+Mon Sep 12 19:08:35 2022 - ERROR - oe_test_python-wheel_python2-wheel_command.sh line 76
+Mon Sep 12 19:08:36 2022 - INFO  - End to run test.
+Mon Sep 12 19:08:37 2022 - ERROR - failed to execute the case.
+Mon Sep 12 19:08:38 2022 - INFO  - Start to restore the test environment.
+oe_test_python-wheel_python2-wheel_command.sh: line 84: pip2: command not found
+which: no wjfexe in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+oe_test_python-wheel_python2-wheel_command.sh: line 86: pip2: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: 'Last metadata expiration check: 0:00:35 ago on Mon 12 Sep 2022 07:07:42 PM CST.\nNo match for argument: python2-wheel\nNo match for argument: python2-pyxdg\nNo match for argument: python2-keyring\nError: Unable to find a match: python2-wheel python2-pyxdg python2-keyring'
+Mon Sep 12 19:08:41 2022 - INFO  - End to restore the test environment.

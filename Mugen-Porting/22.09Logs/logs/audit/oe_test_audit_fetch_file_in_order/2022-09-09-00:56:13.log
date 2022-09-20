@@ -1,0 +1,20 @@
+Fri Sep  9 00:56:16 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 00:57:00 2022 - INFO  - End to prepare the environment
+Fri Sep  9 00:57:01 2022 - INFO  - Start to run test.
+oe_test_audit_fetch_file_in_order.sh: line 30: service: command not found
+oe_test_audit_fetch_file_in_order.sh: line 31: auditctl: command not found
+Fri Sep  9 00:57:02 2022 - ERROR - delete failed
+Fri Sep  9 00:57:03 2022 - ERROR - oe_test_audit_fetch_file_in_order.sh line 32
+cp: cannot create regular file '/etc/audit/rules.d': No such file or directory
+cp: cannot create regular file '/etc/audit/rules.d': No such file or directory
+oe_test_audit_fetch_file_in_order.sh: line 36: augenrules: command not found
+Fri Sep  9 00:57:05 2022 - ERROR - load failed
+Fri Sep  9 00:57:06 2022 - ERROR - oe_test_audit_fetch_file_in_order.sh line 37
+oe_test_audit_fetch_file_in_order.sh: line 38: auditctl: command not found
+Fri Sep  9 00:57:07 2022 - ERROR - add failed
+Fri Sep  9 00:57:08 2022 - ERROR - oe_test_audit_fetch_file_in_order.sh line 39
+Fri Sep  9 00:57:08 2022 - INFO  - End to run test.
+Fri Sep  9 00:57:09 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:57:10 2022 - INFO  - Start to restore the test environment.
+oe_test_audit_fetch_file_in_order.sh: line 45: auditctl: command not found
+Fri Sep  9 00:57:21 2022 - INFO  - End to restore the test environment.

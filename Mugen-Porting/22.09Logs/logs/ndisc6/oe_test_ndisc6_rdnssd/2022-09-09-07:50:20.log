@@ -1,0 +1,26 @@
+Fri Sep  9 07:50:23 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:51:17 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+Fri Sep  9 07:51:22 2022 - ERROR - You need to check the environment configuration file to see if this node information exists.
+Fri Sep  9 07:51:23 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:51:24 2022 - INFO  - Start to run test.
+oe_test_ndisc6_rdnssd.sh: line 26:  1333 Killed                  rdnssd -f
+rdnssd: IPv6 Recursive DNS Server discovery Daemon 1.0.4 ($Rev$)
+Usage: rdnssd [OPTIONS]
+Fri Sep  9 07:51:26 2022 - INFO  - End to run test.
+Fri Sep  9 07:51:27 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 07:51:27 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 07:51:43 2022 - INFO  - End to restore the test environment.

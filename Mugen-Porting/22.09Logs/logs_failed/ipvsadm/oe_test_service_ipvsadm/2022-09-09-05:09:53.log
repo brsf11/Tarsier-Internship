@@ -1,0 +1,36 @@
+Fri Sep  9 05:09:56 2022 - INFO  - Start environmental preparation.
+modprobe: FATAL: Module ip_vs not found in directory /lib/modules/5.10.0
+Can't initialize ipvs: Protocol not available
+Are you sure that IP Virtual Server is built in the kernel or as module?
+Fri Sep  9 05:10:33 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 05:10:34 2022 - INFO  - Start testing...
+Job for ipvsadm.service failed because the control process exited with error code.
+See "systemctl status ipvsadm.service" and "journalctl -xeu ipvsadm.service" for details.
+Fri Sep  9 05:10:35 2022 - ERROR - ipvsadm.service restart failed
+Fri Sep  9 05:10:36 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Sep  9 05:10:42 2022 - ERROR - ipvsadm.service restart failed
+Fri Sep  9 05:10:43 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 05:10:50 2022 - ERROR - ipvsadm.service stop failed
+Fri Sep  9 05:10:50 2022 - ERROR - ../common/common_lib.sh line 42
+Job for ipvsadm.service failed because the control process exited with error code.
+See "systemctl status ipvsadm.service" and "journalctl -xeu ipvsadm.service" for details.
+Fri Sep  9 05:10:51 2022 - ERROR - ipvsadm.service start failed
+Fri Sep  9 05:10:52 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Sep  9 05:10:59 2022 - ERROR - ipvsadm.service start failed
+Fri Sep  9 05:10:59 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/ipvsadm.service
+Removed /etc/systemd/system/multi-user.target.wants/ipvsadm.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ipvsadm.service’: No such file or directory
+Sep 09 05:10:34 openEuler-riscv64 systemd[1]: ipvsadm.service: Failed with result 'exit-code'.
+Sep 09 05:10:34 openEuler-riscv64 systemd[1]: Failed to start Initialise the Linux Virtual Server.
+Sep 09 05:10:51 openEuler-riscv64 systemd[1]: ipvsadm.service: Failed with result 'exit-code'.
+Sep 09 05:10:51 openEuler-riscv64 systemd[1]: Failed to start Initialise the Linux Virtual Server.
+Fri Sep  9 05:11:09 2022 - ERROR - There is an error message for the log of ipvsadm.service
+Fri Sep  9 05:11:10 2022 - ERROR - ../common/common_lib.sh line 28
+Job for ipvsadm.service failed because the control process exited with error code.
+See "systemctl status ipvsadm.service" and "journalctl -xeu ipvsadm.service" for details.
+Failed to reload ipvsadm.service: Job type reload is not applicable for unit ipvsadm.service.
+Fri Sep  9 05:11:11 2022 - INFO  - Finish test!
+Fri Sep  9 05:11:12 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:11:12 2022 - INFO  - start environment cleanup.
+Fri Sep  9 05:11:28 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,17 @@
+Thu Sep  8 17:56:25 2022 - INFO  - Start environmental preparation.
+Job for atuned.service failed because the control process exited with error code.
+See "systemctl status atuned.service" and "journalctl -xeu atuned.service" for details.
+Thu Sep  8 18:04:28 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 18:04:29 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-08 18:04:29 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-09-08 18:04:41 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/atune-engine.service
+Removed /etc/systemd/system/multi-user.target.wants/atune-engine.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/atune-engine.service’: No such file or directory
+Failed to reload atune-engine.service: Job type reload is not applicable for unit atune-engine.service.
+     Active: active (running) since Thu 2022-09-08 18:04:41 CST; 15s ago
+Thu Sep  8 18:04:58 2022 - INFO  - Finish test!
+Thu Sep  8 18:04:59 2022 - INFO  - succeed to execute the case.
+Thu Sep  8 18:04:59 2022 - INFO  - start environment cleanup.
+Thu Sep  8 18:05:49 2022 - INFO  - Finish environment cleanup!

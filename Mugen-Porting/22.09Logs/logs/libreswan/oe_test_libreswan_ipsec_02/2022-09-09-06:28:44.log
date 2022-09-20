@@ -1,0 +1,46 @@
+Fri Sep  9 06:28:47 2022 - INFO  - Start to prepare the test environment.
+Redirecting to: systemctl start ipsec.service
+Job for ipsec.service failed because the control process exited with error code.
+See "systemctl status ipsec.service" and "journalctl -xeu ipsec.service" for details.
+Fri Sep  9 06:29:46 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 06:29:47 2022 - INFO  - Start to run test.
+ipsec whack --ctlsocket /run/pluto/pluto.ctl --utc --listall --purgeocsp
+help: whack [--help] [--version]
+connection: whack --name <connection_name> \
+routing: whack (--route | --unroute) --name <connection_name>
+initiation: whack (--initiate [--remote-host <ip or hostname>] | --terminate) \
+rekey: whack (--rekey-ike | --rekey-ipsec) \
+active redirect: whack [--name <connection_name>] \
+global redirect: whack --global-redirect yes|no|auto
+opportunistic initiation: whack [--tunnelipv4 | --tunnelipv6] \
+delete: whack --delete --name <connection_name>
+delete: whack --deleteid --name <id>
+deletestate: whack --deletestate <state_object_number>
+delete user: whack --deleteuser --name <user_name> \
+pubkey: whack --keyid <id> [--addkey] [--pubkeyrsa <key>]
+debug: whack [--name <connection_name>] \
+listen: whack (--listen | --unlisten)
+socket buffers: whack --ike-socket-bufsize <bufsize>
+socket errqueue: whack --ike-socket-errqueue-toggle
+ddos-protection: whack (--ddos-busy | --ddos-unlimited | \
+list: whack [--utc] [--checkpubkeys] [--listpubkeys] [--listcerts] \
+purge: whack --purgeocsp
+reread: whack [--fetchcrls] [--rereadcerts] [--rereadsecrets] [--rereadall]
+status: whack [--status] | [--trafficstatus] | [--globalstatus] | \
+refresh dns: whack --ddns
+testing: whack --seccomp-crashtest (CAREFUL!)
+shutdown: whack --shutdown [--leave-state]
+Initializing NSS database
+/usr/sbin/ipsec: line 164: iptables: command not found
+nflog ipsec capture disabled
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:29:50 2022 - ERROR - oe_test_libreswan_ipsec_02.sh line 42
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:29:51 2022 - ERROR - oe_test_libreswan_ipsec_02.sh line 44
+whack: Pluto is not running (no "/run/pluto/pluto.ctl")
+Fri Sep  9 06:29:51 2022 - ERROR - oe_test_libreswan_ipsec_02.sh line 46
+Fri Sep  9 06:29:52 2022 - INFO  - End of the test.
+Fri Sep  9 06:29:53 2022 - ERROR - failed to execute the case.
+Fri Sep  9 06:29:54 2022 - INFO  - Start to restore the test environment.
+Redirecting to: systemctl stop ipsec.service
+Fri Sep  9 06:30:17 2022 - INFO  - Finish restoring the test environment.

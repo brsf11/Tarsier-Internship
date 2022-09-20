@@ -1,0 +1,14 @@
+Fri Sep 16 12:23:37 2022 - INFO  - Start to prepare the test environment.
+groupdel: group 'testuser' does not exist
+Fri Sep 16 12:23:39 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:23:40 2022 - INFO  - Start to run test.
+Fri Sep 16 12:23:41 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep 16 12:23:42 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /home/testfile testuser@127.0.0.1:/home/testuser/testfile
+testuser@127.0.0.1's password: 
+testfile                                                                                       0%    0     0.0KB/s   --:-- ETAtestfile                                                                                     100%    5     0.6KB/s   00:00    
+test
+Fri Sep 16 12:23:45 2022 - INFO  - End to run test.
+Fri Sep 16 12:23:46 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 12:23:47 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 12:23:48 2022 - INFO  - End to restore the test environment.

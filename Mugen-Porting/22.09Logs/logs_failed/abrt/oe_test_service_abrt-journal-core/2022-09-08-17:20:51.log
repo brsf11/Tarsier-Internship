@@ -1,0 +1,40 @@
+Thu Sep  8 17:20:54 2022 - INFO  - Start environmental preparation.
+Failed to start abrtd.service: Unit abrtd.service not found.
+Thu Sep  8 17:21:48 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:21:49 2022 - INFO  - Start testing...
+Failed to restart abrt-journal-core.service: Unit abrt-journal-core.service not found.
+Thu Sep  8 17:21:50 2022 - ERROR - abrt-journal-core.service restart failed
+Thu Sep  8 17:21:50 2022 - ERROR - ../common/common_lib.sh line 34
+Unit abrt-journal-core.service could not be found.
+Thu Sep  8 17:21:57 2022 - ERROR - abrt-journal-core.service restart failed
+Thu Sep  8 17:21:58 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop abrt-journal-core.service: Unit abrt-journal-core.service not loaded.
+Thu Sep  8 17:21:59 2022 - ERROR - abrt-journal-core.service stop failed
+Thu Sep  8 17:21:59 2022 - ERROR - ../common/common_lib.sh line 39
+Unit abrt-journal-core.service could not be found.
+Thu Sep  8 17:22:06 2022 - ERROR - abrt-journal-core.service stop failed
+Thu Sep  8 17:22:06 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start abrt-journal-core.service: Unit abrt-journal-core.service not found.
+Thu Sep  8 17:22:07 2022 - ERROR - abrt-journal-core.service start failed
+Thu Sep  8 17:22:08 2022 - ERROR - ../common/common_lib.sh line 44
+Unit abrt-journal-core.service could not be found.
+Thu Sep  8 17:22:15 2022 - ERROR - abrt-journal-core.service start failed
+Thu Sep  8 17:22:15 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for abrt-journal-core.service: No such file or directory
+Thu Sep  8 17:22:16 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start abrt-journal-core.service: Unit abrt-journal-core.service not found.
+Thu Sep  8 17:22:17 2022 - ERROR - Job type reload is not applicable for unit abrt-journal-core.service
+Thu Sep  8 17:22:18 2022 - ERROR - ../common/common_lib.sh line 91
+Unit abrt-journal-core.service could not be found.
+Unit abrt-journal-core.service could not be found.
+Thu Sep  8 17:22:19 2022 - INFO  - Finish test!
+Thu Sep  8 17:22:19 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:22:20 2022 - INFO  - start environment cleanup.
+Failed to stop abrtd.service: Unit abrtd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:59 ago on Thu 08 Sep 2022 05:19:47 PM CST.\nError: \n Problem: package abrt-addon-ccpp-2.14.6-1.oe2209.riscv64 requires abrt = 2.14.6-1.oe2209, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides dmidecode needed by abrt-2.14.6-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Thu Sep  8 17:22:23 2022 - INFO  - Finish environment cleanup!

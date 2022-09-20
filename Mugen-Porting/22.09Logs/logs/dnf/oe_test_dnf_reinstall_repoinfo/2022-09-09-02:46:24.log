@@ -1,0 +1,48 @@
+Fri Sep  9 02:46:26 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:46:51 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:46:52 2022 - INFO  - Start to run test.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:47:01 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 32
+package tree is not installed
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+Fri Sep  9 02:47:12 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 36
+Fri Sep  9 02:47:16 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 38
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: Unknown repo: 'everything'
+Fri Sep  9 02:47:20 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 40
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: Unknown repo: 'everything'
+Fri Sep  9 02:47:25 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 42
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: Unknown repo: 'everything'
+Fri Sep  9 02:47:29 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 44
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No repositories available
+Fri Sep  9 02:47:33 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 46
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No repositories available
+Fri Sep  9 02:47:37 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 48
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Fri Sep  9 02:47:48 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 50
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Fri Sep  9 02:47:58 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 52
+package sysstat is not installed
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Fri Sep  9 02:48:03 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 57
+Fri Sep  9 02:48:14 2022 - ERROR - oe_test_dnf_reinstall_repoinfo.sh line 59
+4.10.0
+  Installed: dnf-0:4.10.0-7.oe2209.noarch at Thu 18 Aug 2022 01:06:42 PM GMT
+Fri Sep  9 02:48:18 2022 - INFO  - End of the test.
+Fri Sep  9 02:48:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:48:19 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Warning: failed loading \'/etc/yum.repos.d/openEuler.repo\', skipping.\nError: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".'
+Fri Sep  9 02:48:23 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,107 @@
+Mon Sep 12 21:18:00 2022 - INFO  - Start to prepare the test environment.
+useradd: warning: the home directory /home/testUser already exists.
+useradd: Not copying any file from skel directory into it.
+Creating mailbox file: File exists
+Mon Sep 12 21:19:24 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:19:24 2022 - INFO  - Start to run test.
+Usage: rootsh [OPTION [ARG]] ...
+rootsh version 1.5.3
+spawn rootsh --initial
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:19:27 PM CST 2022
+
+System load: 	[0;33;40m1.15[0m
+Processes: 	96
+Memory used: 	1.4%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+logout
+Welcome to 5.10.0
+spawn rootsh --user=testUser
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:19:30 PM CST 2022
+
+System load: 	[0;33;40m1.15[0m
+Processes: 	97
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+To run a command as administrator(user "root"),use "sudo <command>".
+[testUser@openEuler-riscv64 rootsh]$ exit
+exit
+Welcome to 5.10.0
+spawn rootsh --user zhangsan
+user zhangsan does not exist
+spawn rootsh --logfile=log_test
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:19:33 PM CST 2022
+
+System load: 	[0;33;40m1.06[0m
+Processes: 	96
+Memory used: 	1.4%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+exit
+Welcome to 5.10.0
+spawn rootsh --logdir=/root/my_log
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:19:37 PM CST 2022
+
+System load: 	[0;33;40m1.05[0m
+Processes: 	96
+Memory used: 	1.4%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+exit
+Welcome to 5.10.0
+spawn rootsh --logdir=/root/others_log
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:19:40 PM CST 2022
+
+System load: 	[0;33;40m1.05[0m
+Processes: 	96
+Memory used: 	1.4%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# Mon Sep 12 21:19:49 2022 - ERROR - Failed option: --logdir
+Mon Sep 12 21:19:49 2022 - ERROR - oe_test_rootsh02.sh line 133
+Mon Sep 12 21:19:50 2022 - INFO  - End to run test.
+Mon Sep 12 21:19:51 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:19:51 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 21:20:13 2022 - INFO  - End to restore the test environment.

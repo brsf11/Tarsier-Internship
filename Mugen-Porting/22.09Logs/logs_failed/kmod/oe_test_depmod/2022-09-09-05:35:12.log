@@ -1,0 +1,41 @@
+Fri Sep  9 05:35:15 2022 - INFO  - Start to run test.
+	depmod -[aA] [options] [forced_version]
+If no arguments (except options) are given, "depmod -a" is assumed
+	-a, --all            Probe all modules
+	-A, --quick          Only does the work if there's a new module
+	-e, --errsyms        Report not supplied symbols
+	-n, --show           Write the dependency file on stdout only
+	-P, --symbol-prefix  Architecture symbol prefix
+	-C, --config=PATH    Read configuration from PATH
+	-v, --verbose        Enable verbose mode
+	-w, --warn           Warn on duplicates
+	-V, --version        show version
+	-h, --help           show this help
+	-b, --basedir=DIR    Use an image of a module tree.
+	-F, --filesyms=FILE  Use the file instead of the
+	-E, --symvers=FILE   Use Module.symvers file to check
+kmod version 29
+depmod: ERROR: could not open directory /lib/modules/5.10.0: No such file or directory
+depmod: FATAL: could not search modules: No such file or directory
+Fri Sep  9 05:35:16 2022 - ERROR - oe_test_depmod.sh line 29
+depmod: ERROR: could not open directory /lib/modules/5.10.0: No such file or directory
+depmod: ERROR: could not open directory /lib/modules/5.10.0: No such file or directory
+depmod: FATAL: could not search modules: No such file or directory
+Fri Sep  9 05:35:17 2022 - ERROR - oe_test_depmod.sh line 31
+depmod: ERROR: could not open directory /lib/modules/5.10.0: No such file or directory
+depmod: FATAL: could not search modules: No such file or directory
+Fri Sep  9 05:35:18 2022 - ERROR - oe_test_depmod.sh line 33
+depmod: option requires an argument -- 'E'
+Fri Sep  9 05:35:31 2022 - ERROR - oe_test_depmod.sh line 36
+find: ‘/proc/274’: No such file or directory
+depmod: option requires an argument -- 'F'
+Fri Sep  9 05:35:40 2022 - ERROR - oe_test_depmod.sh line 39
+depmod: FATAL: could not load -n: No such file or directory
+Fri Sep  9 05:35:41 2022 - ERROR - oe_test_depmod.sh line 41
+depmod: FATAL: could not load -v: No such file or directory
+Fri Sep  9 05:35:42 2022 - ERROR - oe_test_depmod.sh line 43
+depmod: FATAL: could not load -w: No such file or directory
+Fri Sep  9 05:35:42 2022 - ERROR - oe_test_depmod.sh line 45
+Fri Sep  9 05:35:43 2022 - INFO  - End of the test.
+Fri Sep  9 05:35:44 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:35:45 2022 - INFO  - oe_test_depmod.sh post_test

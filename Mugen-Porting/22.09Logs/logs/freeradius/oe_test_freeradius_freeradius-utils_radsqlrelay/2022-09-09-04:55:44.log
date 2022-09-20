@@ -1,0 +1,58 @@
+Fri Sep  9 04:55:46 2022 - INFO  - Start to prepare the test environment.
+Failed to start mysqld.service: Unit mysqld.service not found.
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 27: mysqladmin: command not found
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 28: mysql: command not found
+sed: can't read /etc/raddb/mods-available/sql: No such file or directory
+sed: can't read /etc/raddb/mods-available/sql: No such file or directory
+sed: can't read /etc/raddb/mods-available/sql: No such file or directory
+sed: can't read /etc/raddb/mods-available/sql: No such file or directory
+sed: can't read /etc/raddb/mods-available/sql: No such file or directory
+sed: can't read /etc/raddb/mods-available/sql: No such file or directory
+ln: failed to create symbolic link '/etc/raddb/mods-enabled/': No such file or directory
+Fri Sep  9 04:56:19 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:56:20 2022 - INFO  - Start to run test.
+usage: radsqlrelay [options] file_path
+install_driver(mysql) failed: Can't locate DBD/mysql.pm in @INC (you may need to install the DBD::mysql module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5) at (eval 8) line 3.
+Perhaps the DBD::mysql perl module hasn't been fully installed,
+or perhaps the capitalisation of 'mysql' isn't right.
+Available drivers: DBM, ExampleP, File, Gofer, Mem, Sponge.
+ at /usr/bin/radsqlrelay line 149.
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 50: mysql: command not found
+Fri Sep  9 04:56:22 2022 - ERROR - radsqlrelay -1 -d -b -h -p -u execution failed.
+Fri Sep  9 04:56:22 2022 - ERROR - oe_test_freeradius_freeradius-utils_radsqlrelay.sh line 53
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 55: mysql: command not found
+install_driver(mysql) failed: Can't locate DBD/mysql.pm in @INC (you may need to install the DBD::mysql module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5) at (eval 8) line 3.
+Perhaps the DBD::mysql perl module hasn't been fully installed,
+or perhaps the capitalisation of 'mysql' isn't right.
+Available drivers: DBM, ExampleP, File, Gofer, Mem, Sponge.
+ at /usr/bin/radsqlrelay line 149.
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 60: mysql: command not found
+Fri Sep  9 04:56:24 2022 - ERROR - radsqlrelay -f execution failed.
+Fri Sep  9 04:56:24 2022 - ERROR - oe_test_freeradius_freeradius-utils_radsqlrelay.sh line 63
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 64: mysql: command not found
+install_driver(mysql) failed: Can't locate DBD/mysql.pm in @INC (you may need to install the DBD::mysql module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5) at (eval 8) line 3.
+Perhaps the DBD::mysql perl module hasn't been fully installed,
+or perhaps the capitalisation of 'mysql' isn't right.
+Available drivers: DBM, ExampleP, File, Gofer, Mem, Sponge.
+ at /usr/bin/radsqlrelay line 149.
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 69: mysql: command not found
+Fri Sep  9 04:56:26 2022 - ERROR - radsqlrelay -P execution failed.
+Fri Sep  9 04:56:26 2022 - ERROR - oe_test_freeradius_freeradius-utils_radsqlrelay.sh line 72
+oe_test_freeradius_freeradius-utils_radsqlrelay.sh: line 73: mysql: command not found
+install_driver(mysql) failed: Can't locate DBD/mysql.pm in @INC (you may need to install the DBD::mysql module) (@INC contains: /usr/local/lib64/perl5 /usr/local/share/perl5 /usr/lib64/perl5/vendor_perl /usr/share/perl5/vendor_perl /usr/lib64/perl5 /usr/share/perl5) at (eval 8) line 3.
+Perhaps the DBD::mysql perl module hasn't been fully installed,
+or perhaps the capitalisation of 'mysql' isn't right.
+Available drivers: DBM, ExampleP, File, Gofer, Mem, Sponge.
+ at /usr/bin/radsqlrelay line 149.
+Connecting to DBI:mysql:database=radius;host=localhost.
+Fri Sep  9 04:56:28 2022 - INFO  - End to run test.
+Fri Sep  9 04:56:28 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:56:29 2022 - INFO  - Start to restore the test environment.
+Failed to stop mysqld.service: Unit mysqld.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:56:30 ago on Fri 09 Sep 2022 03:59:44 AM CST.\nPackage freeradius-3.0.25-1.oe2209.riscv64 is already installed.\nPackage freeradius-utils-3.0.25-1.oe2209.riscv64 is already installed.\nError: \n Problem 1: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by perl-DBD-MySQL-4.050-2.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by perl-DBD-MySQL-4.050-2.oe2209.riscv64\n Problem 2: conflicting requests\n  - nothing provides libnuma.so.1()(64bit) needed by mysql5-server-5.7.38-1.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.1)(64bit) needed by mysql5-server-5.7.38-1.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.2)(64bit) needed by mysql5-server-5.7.38-1.oe2209.riscv64\n Problem 3: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by freeradius-mysql-3.0.25-1.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by freeradius-mysql-3.0.25-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 04:56:35 2022 - INFO  - End to restore the test environment.

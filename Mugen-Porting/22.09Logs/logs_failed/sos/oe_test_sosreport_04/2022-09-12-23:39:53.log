@@ -1,0 +1,73 @@
+Mon Sep 12 23:39:56 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 23:40:41 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 23:40:42 2022 - INFO  - Start to run test.
+Could not obtain installed package listPlease note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Mon Sep 12 23:45:13 2022 - ERROR - oe_test_sosreport_04.sh line 38
+usage: sosreport <component> [options]
+
+Available components:
+	report, rep                   Collect files and command output in an archive
+	clean, cleaner, mask          Obfuscate sensitive networking information in a report
+	collect, collector            Collect an sos report from multiple nodes simultaneously
+sosreport: error: unrecognized arguments: --ticket-number 666
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --batch --ticket-number 666'
+Mon Sep 12 23:45:18 2022 - ERROR - oe_test_sosreport_04.sh line 41
+Mon Sep 12 23:45:19 2022 - ERROR - oe_test_sosreport_04.sh line 43
+usage: sosreport <component> [options]
+
+Available components:
+	report, rep                   Collect files and command output in an archive
+	clean, cleaner, mask          Obfuscate sensitive networking information in a report
+	collect, collector            Collect an sos report from multiple nodes simultaneously
+sosreport: error: unrecognized arguments: --ticket-number temp
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --batch --tmp-dir temp --ticket-number temp'
+Mon Sep 12 23:45:24 2022 - ERROR - oe_test_sosreport_04.sh line 47
+Mon Sep 12 23:45:25 2022 - ERROR - oe_test_sosreport_04.sh line 49
+usage: sosreport <component> [options]
+
+Available components:
+	report, rep                   Collect files and command output in an archive
+	clean, cleaner, mask          Obfuscate sensitive networking information in a report
+	collect, collector            Collect an sos report from multiple nodes simultaneously
+sosreport: error: unrecognized arguments: --ticket-number verbose
+Mon Sep 12 23:45:30 2022 - ERROR - oe_test_sosreport_04.sh line 51
+Mon Sep 12 23:45:31 2022 - ERROR - oe_test_sosreport_04.sh line 53
+usage: sosreport <component> [options]
+
+Available components:
+	report, rep                   Collect files and command output in an archive
+	clean, cleaner, mask          Obfuscate sensitive networking information in a report
+	collect, collector            Collect an sos report from multiple nodes simultaneously
+sosreport: error: unrecognized arguments: --ticket-number verify
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --batch --verify --tmp-dir temp --ticket-number verify'
+Mon Sep 12 23:45:36 2022 - ERROR - oe_test_sosreport_04.sh line 55
+Mon Sep 12 23:45:37 2022 - ERROR - oe_test_sosreport_04.sh line 57
+usage: sosreport <component> [options]
+
+Available components:
+	report, rep                   Collect files and command output in an archive
+	clean, cleaner, mask          Obfuscate sensitive networking information in a report
+	collect, collector            Collect an sos report from multiple nodes simultaneously
+sosreport: error: unrecognized arguments: --ticket-number gzipForm
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report -z gzip --batch --tmp-dir temp --ticket-number gzipForm'
+Mon Sep 12 23:45:42 2022 - ERROR - oe_test_sosreport_04.sh line 59
+Mon Sep 12 23:45:43 2022 - ERROR - oe_test_sosreport_04.sh line 61
+usage: sosreport <component> [options]
+
+Available components:
+	report, rep                   Collect files and command output in an archive
+	clean, cleaner, mask          Obfuscate sensitive networking information in a report
+	collect, collector            Collect an sos report from multiple nodes simultaneously
+sosreport: error: unrecognized arguments: --ticket-number threads
+Please note the 'sosreport' command has been deprecated in favor of the new 'sos' command, E.G. 'sos report'.
+Redirecting to 'sos report --threads 6 --batch --tmp-dir temp --ticket-number threads'
+Mon Sep 12 23:45:49 2022 - ERROR - oe_test_sosreport_04.sh line 63
+Mon Sep 12 23:45:49 2022 - ERROR - oe_test_sosreport_04.sh line 65
+Mon Sep 12 23:45:50 2022 - INFO  - End of the test.
+Mon Sep 12 23:45:51 2022 - ERROR - failed to execute the case.
+Mon Sep 12 23:45:51 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:46:15 2022 - INFO  - Finish restoring the test environment.

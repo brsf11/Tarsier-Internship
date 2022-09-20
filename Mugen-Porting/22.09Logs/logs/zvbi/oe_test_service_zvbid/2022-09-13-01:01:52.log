@@ -1,0 +1,15 @@
+Tue Sep 13 01:01:55 2022 - INFO  - Start environmental preparation.
+Tue Sep 13 01:03:04 2022 - INFO  - End of environmental preparation!
+Tue Sep 13 01:03:04 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-13 01:03:05 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-13 01:03:17 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/zvbid.service
+Removed /etc/systemd/system/multi-user.target.wants/zvbid.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/zvbid.service’: No such file or directory
+Failed to reload zvbid.service: Job type reload is not applicable for unit zvbid.service.
+     Active: active (running) since Tue 2022-09-13 01:03:17 CST; 16s ago
+Tue Sep 13 01:03:34 2022 - INFO  - Finish test!
+Tue Sep 13 01:03:35 2022 - INFO  - succeed to execute the case.
+Tue Sep 13 01:03:35 2022 - INFO  - start environment cleanup.
+Tue Sep 13 01:04:06 2022 - INFO  - Finish environment cleanup!

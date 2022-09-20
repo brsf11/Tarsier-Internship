@@ -1,0 +1,24 @@
+Mon Sep 12 16:39:49 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 16:41:00 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 16:41:00 2022 - INFO  - Start testing...
+A dependency job for nfs-idmapd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:41:01 2022 - ERROR - nfs-idmap.service restart failed
+Mon Sep 12 16:41:02 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 16:41:09 2022 - ERROR - nfs-idmap.service restart failed
+Mon Sep 12 16:41:10 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead) since Mon 2022-09-12 16:41:01 CST; 14s ago
+A dependency job for nfs-idmapd.service failed. See 'journalctl -xe' for details.
+Mon Sep 12 16:41:16 2022 - ERROR - nfs-idmap.service start failed
+Mon Sep 12 16:41:17 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 16:41:24 2022 - ERROR - nfs-idmap.service start failed
+Mon Sep 12 16:41:24 2022 - ERROR - ../common/common_lib.sh line 47
+Mon Sep 12 16:41:25 2022 - INFO  - Unit is indirect, ignoring.
+A dependency job for nfs-idmapd.service failed. See 'journalctl -xe' for details.
+Failed to reload nfs-idmap.service: Job type reload is not applicable for unit nfs-idmapd.service.
+     Active: inactive (dead) since Mon 2022-09-12 16:41:26 CST; 214ms ago
+Mon Sep 12 16:41:27 2022 - ERROR - nfs-idmap.service reload causes the service status to change
+Mon Sep 12 16:41:27 2022 - ERROR - ../common/common_lib.sh line 95
+Mon Sep 12 16:41:28 2022 - INFO  - Finish test!
+Mon Sep 12 16:41:29 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:41:30 2022 - INFO  - start environment cleanup.
+Mon Sep 12 16:42:14 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,4 @@
+oe_test_service_iprdump
+oe_test_service_iprinit
+oe_test_service_iprupdate
+oe_test_target_iprutils

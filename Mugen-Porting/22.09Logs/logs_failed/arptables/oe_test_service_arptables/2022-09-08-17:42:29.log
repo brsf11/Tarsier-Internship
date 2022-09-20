@@ -1,0 +1,35 @@
+Thu Sep  8 17:42:32 2022 - INFO  - Start environmental preparation.
+Thu Sep  8 17:43:27 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:43:28 2022 - INFO  - Start testing...
+Job for arptables.service failed because the control process exited with error code.
+See "systemctl status arptables.service" and "journalctl -xeu arptables.service" for details.
+Thu Sep  8 17:43:29 2022 - ERROR - arptables.service restart failed
+Thu Sep  8 17:43:30 2022 - ERROR - ../common/common_lib.sh line 34
+Thu Sep  8 17:43:37 2022 - ERROR - arptables.service restart failed
+Thu Sep  8 17:43:37 2022 - ERROR - ../common/common_lib.sh line 37
+Thu Sep  8 17:43:44 2022 - ERROR - arptables.service stop failed
+Thu Sep  8 17:43:45 2022 - ERROR - ../common/common_lib.sh line 42
+Job for arptables.service failed because the control process exited with error code.
+See "systemctl status arptables.service" and "journalctl -xeu arptables.service" for details.
+Thu Sep  8 17:43:46 2022 - ERROR - arptables.service start failed
+Thu Sep  8 17:43:46 2022 - ERROR - ../common/common_lib.sh line 44
+Thu Sep  8 17:43:53 2022 - ERROR - arptables.service start failed
+Thu Sep  8 17:43:54 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/arptables.service
+Removed /etc/systemd/system/multi-user.target.wants/arptables.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/arptables.service’: No such file or directory
+Sep 08 17:43:28 openEuler-riscv64 systemd[1]: arptables.service: Main process exited, code=exited, status=1/FAILURE
+Sep 08 17:43:28 openEuler-riscv64 systemd[1]: arptables.service: Failed with result 'exit-code'.
+Sep 08 17:43:28 openEuler-riscv64 systemd[1]: Failed to start Automates a packet filtering firewall with arptables.
+Sep 08 17:43:45 openEuler-riscv64 systemd[1]: arptables.service: Main process exited, code=exited, status=1/FAILURE
+Sep 08 17:43:45 openEuler-riscv64 systemd[1]: arptables.service: Failed with result 'exit-code'.
+Sep 08 17:43:45 openEuler-riscv64 systemd[1]: Failed to start Automates a packet filtering firewall with arptables.
+Thu Sep  8 17:44:04 2022 - ERROR - There is an error message for the log of arptables.service
+Thu Sep  8 17:44:04 2022 - ERROR - ../common/common_lib.sh line 28
+Job for arptables.service failed because the control process exited with error code.
+See "systemctl status arptables.service" and "journalctl -xeu arptables.service" for details.
+Failed to reload arptables.service: Job type reload is not applicable for unit arptables.service.
+Thu Sep  8 17:44:06 2022 - INFO  - Finish test!
+Thu Sep  8 17:44:06 2022 - ERROR - failed to execute the case.
+Thu Sep  8 17:44:07 2022 - INFO  - start environment cleanup.
+Thu Sep  8 17:44:32 2022 - INFO  - Finish environment cleanup!

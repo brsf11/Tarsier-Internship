@@ -1,0 +1,5 @@
+Mon Sep 12 22:02:03 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Mon Sep 12 22:03:05 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:03:05 2022 - INFO  - Start to run test.
+Mon Sep 12 22:32:01 2022 - ERROR - Timeout : Command 'bash oe_test_rubygem-bundler_bundle_02.sh' timed out after 1799.999379669 seconds

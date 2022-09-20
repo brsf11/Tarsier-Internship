@@ -1,0 +1,35 @@
+Fri Sep  9 04:33:41 2022 - INFO  - Start testing...
+Failed to restart ipset.service: Unit ipset.service not found.
+Fri Sep  9 04:33:42 2022 - ERROR - ipset.service restart failed
+Fri Sep  9 04:33:42 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ipset.service could not be found.
+Fri Sep  9 04:33:49 2022 - ERROR - ipset.service restart failed
+Fri Sep  9 04:33:49 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ipset.service: Unit ipset.service not loaded.
+Fri Sep  9 04:33:50 2022 - ERROR - ipset.service stop failed
+Fri Sep  9 04:33:51 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ipset.service could not be found.
+Fri Sep  9 04:33:58 2022 - ERROR - ipset.service stop failed
+Fri Sep  9 04:33:59 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ipset.service: Unit ipset.service not found.
+Fri Sep  9 04:33:59 2022 - ERROR - ipset.service start failed
+Fri Sep  9 04:34:00 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ipset.service could not be found.
+Fri Sep  9 04:34:07 2022 - ERROR - ipset.service start failed
+Fri Sep  9 04:34:07 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ipset.service: No such file or directory
+Fri Sep  9 04:34:08 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ipset.service: Unit ipset.service not found.
+sed: can't read /usr/lib/systemd/system/ipset.service: No such file or directory
+Failed to reload ipset.service: Unit ipset.service not found.
+Fri Sep  9 04:34:14 2022 - ERROR - ipset.service reload failed
+Fri Sep  9 04:34:14 2022 - ERROR - oe_test_service_ipset.sh line 29
+Unit ipset.service could not be found.
+Fri Sep  9 04:34:15 2022 - ERROR - ipset.service reload causes the service status to change
+Fri Sep  9 04:34:16 2022 - ERROR - oe_test_service_ipset.sh line 31
+Fri Sep  9 04:34:16 2022 - INFO  - Finish test!
+Fri Sep  9 04:34:17 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:34:18 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/ipset.service: No such file or directory
+Failed to reload ipset.service: Unit ipset.service not found.
+Fri Sep  9 04:34:23 2022 - INFO  - Finish environment cleanup!

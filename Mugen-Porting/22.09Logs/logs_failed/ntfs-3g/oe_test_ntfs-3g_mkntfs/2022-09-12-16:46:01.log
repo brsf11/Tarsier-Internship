@@ -1,0 +1,47 @@
+Mon Sep 12 16:46:03 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:48 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:46:49 2022 - INFO  - Start to run test.
+Usage: mkntfs [options] device [number-of-sectors]
+mkntfs v2022.5.17 (libntfs-3g)
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:50 2022 - ERROR - Check mkntfs --fast failed.
+Mon Sep 12 16:46:50 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 35
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:51 2022 - ERROR - Check mkntfs --quick failed.
+Mon Sep 12 16:46:52 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 37
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:53 2022 - ERROR - Check mkntfs --label failed.
+Mon Sep 12 16:46:53 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 39
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:54 2022 - ERROR - Check mkntfs --enable-compression failed.
+Mon Sep 12 16:46:55 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 41
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:55 2022 - ERROR - Check mkntfs --no-indexing failed.
+Mon Sep 12 16:46:56 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 43
+/dev/ is not a block device.
+Refusing to make a filesystem here!
+Running in READ-ONLY mode!
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:57 2022 - ERROR - Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.
+Mon Sep 12 16:46:58 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 47
+Could not open /dev/: Is a directory
+Mon Sep 12 16:46:58 2022 - ERROR - Check mkntfs --quiet failed.
+Mon Sep 12 16:46:59 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 49
+Could not open /dev/: Is a directory
+Mon Sep 12 16:47:00 2022 - ERROR - Check mkntfs --verbose failed.
+Mon Sep 12 16:47:00 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 51
+This program is free software, released under the GNU General Public License
+Mon Sep 12 16:47:01 2022 - INFO  - End of the test.
+Mon Sep 12 16:47:02 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:47:03 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:47:24 2022 - INFO  - Finish restoring the test environment.

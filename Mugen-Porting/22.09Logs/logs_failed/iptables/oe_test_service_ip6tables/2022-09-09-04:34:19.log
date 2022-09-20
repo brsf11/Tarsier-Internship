@@ -1,0 +1,35 @@
+Fri Sep  9 04:34:22 2022 - INFO  - Start testing...
+Failed to restart ip6tables.service: Unit ip6tables.service not found.
+Fri Sep  9 04:34:23 2022 - ERROR - ip6tables.service restart failed
+Fri Sep  9 04:34:24 2022 - ERROR - ../common/common_lib.sh line 34
+Unit ip6tables.service could not be found.
+Fri Sep  9 04:34:30 2022 - ERROR - ip6tables.service restart failed
+Fri Sep  9 04:34:31 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop ip6tables.service: Unit ip6tables.service not loaded.
+Fri Sep  9 04:34:31 2022 - ERROR - ip6tables.service stop failed
+Fri Sep  9 04:34:32 2022 - ERROR - ../common/common_lib.sh line 39
+Unit ip6tables.service could not be found.
+Fri Sep  9 04:34:40 2022 - ERROR - ip6tables.service stop failed
+Fri Sep  9 04:34:40 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start ip6tables.service: Unit ip6tables.service not found.
+Fri Sep  9 04:34:41 2022 - ERROR - ip6tables.service start failed
+Fri Sep  9 04:34:42 2022 - ERROR - ../common/common_lib.sh line 44
+Unit ip6tables.service could not be found.
+Fri Sep  9 04:34:49 2022 - ERROR - ip6tables.service start failed
+Fri Sep  9 04:34:49 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for ip6tables.service: No such file or directory
+Fri Sep  9 04:34:50 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start ip6tables.service: Unit ip6tables.service not found.
+sed: can't read /usr/lib/systemd/system/ip6tables.service: No such file or directory
+Failed to reload ip6tables.service: Unit ip6tables.service not found.
+Fri Sep  9 04:34:55 2022 - ERROR - ip6tables.service reload failed
+Fri Sep  9 04:34:56 2022 - ERROR - oe_test_service_ip6tables.sh line 29
+Unit ip6tables.service could not be found.
+Fri Sep  9 04:34:57 2022 - ERROR - ip6tables.service reload causes the service status to change
+Fri Sep  9 04:34:57 2022 - ERROR - oe_test_service_ip6tables.sh line 31
+Fri Sep  9 04:34:58 2022 - INFO  - Finish test!
+Fri Sep  9 04:34:59 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:34:59 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/ip6tables.service: No such file or directory
+Failed to reload ip6tables.service: Unit ip6tables.service not found.
+Fri Sep  9 04:35:04 2022 - INFO  - Finish environment cleanup!

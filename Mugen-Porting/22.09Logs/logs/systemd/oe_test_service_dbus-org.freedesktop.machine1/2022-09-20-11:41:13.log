@@ -1,0 +1,13 @@
+Tue Sep 20 11:41:16 2022 - INFO  - Start environment preparation.
+Tue Sep 20 11:42:27 2022 - INFO  - Finish environment cleanup!
+Tue Sep 20 11:42:27 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 11:42:28 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-20 11:42:40 CST; 5s ago
+Tue Sep 20 11:42:47 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload dbus-org.freedesktop.machine1.service: Job type reload is not applicable for unit systemd-machined.service.
+     Active: active (running) since Tue 2022-09-20 11:42:40 CST; 7s ago
+Tue Sep 20 11:42:48 2022 - INFO  - Finish test!
+Tue Sep 20 11:42:48 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:42:49 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:43:08 2022 - INFO  - Finish environment cleanup!

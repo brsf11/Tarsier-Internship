@@ -1,0 +1,11 @@
+Mon Sep 12 20:23:53 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 20:27:08 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 20:27:09 2022 - INFO  - Start to run test.
+Mon Sep 12 20:30:51 2022 - ERROR - oe_test_pmlogger_daily_02.sh line 36
+Mon Sep 12 20:30:58 2022 - ERROR - oe_test_pmlogger_daily_02.sh line 38
+Mon Sep 12 20:30:59 2022 - INFO  - End to run test.
+Mon Sep 12 20:30:59 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:31:00 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 20:31:39 2022 - INFO  - End to restore the test environment.

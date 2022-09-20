@@ -1,0 +1,32 @@
+Tue Sep 13 00:45:40 2022 - INFO  - Start to prepare the test environment.
+--2022-09-13 00:46:17--  https://gitlab.gnome.org/GNOME/yelp-tools/-/blob/master/help/C/yelp-build.page
+Resolving gitlab.gnome.org (gitlab.gnome.org)... 8.43.85.27, 2620:52:3:1:5054:ff:fe8f:413d
+Connecting to gitlab.gnome.org (gitlab.gnome.org)|8.43.85.27|:443... connected.
+Unable to establish SSL connection.
+Tue Sep 13 01:01:25 2022 - INFO  - End to prepare the test environment.
+Tue Sep 13 01:01:26 2022 - INFO  - Start to run test.
+oe_test_yelp-build.sh: line 32: yelp-build: command not found
+Tue Sep 13 01:01:26 2022 - ERROR - html failed
+Tue Sep 13 01:01:27 2022 - ERROR - oe_test_yelp-build.sh line 33
+Tue Sep 13 01:01:28 2022 - ERROR - find html failed
+Tue Sep 13 01:01:28 2022 - ERROR - oe_test_yelp-build.sh line 35
+oe_test_yelp-build.sh: line 36: yelp-build: command not found
+Tue Sep 13 01:01:29 2022 - ERROR - cache failed
+Tue Sep 13 01:01:30 2022 - ERROR - oe_test_yelp-build.sh line 37
+Tue Sep 13 01:01:30 2022 - ERROR - find cache failed
+Tue Sep 13 01:01:31 2022 - ERROR - oe_test_yelp-build.sh line 39
+oe_test_yelp-build.sh: line 40: yelp-build: command not found
+Tue Sep 13 01:01:32 2022 - ERROR - epub failed
+Tue Sep 13 01:01:33 2022 - ERROR - oe_test_yelp-build.sh line 41
+Tue Sep 13 01:01:33 2022 - ERROR - find epub failed
+Tue Sep 13 01:01:34 2022 - ERROR - oe_test_yelp-build.sh line 43
+Tue Sep 13 01:01:35 2022 - INFO  - End to run test.
+Tue Sep 13 01:01:36 2022 - ERROR - failed to execute the case.
+Tue Sep 13 01:01:37 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:27 ago on Tue 13 Sep 2022 12:45:49 AM CST.\nError: \n Problem: package yelp-2:42.1-1.oe2209.riscv64 requires libwebkit2gtk-4.0.so.37()(64bit), but none of the providers can be installed\n  - package webkit2gtk3-2.36.3-1.oe2209.riscv64 requires libenchant-2.so.2()(64bit), but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libhunspell-1.7.so.0()(64bit) needed by enchant2-2.2.15-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Tue Sep 13 01:01:40 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,30 @@
+Fri Sep  9 05:36:34 2022 - INFO  - Start to run test.
+	modinfo [options] filename [args]
+	-a, --author                Print only 'author'
+	-d, --description           Print only 'description'
+	-l, --license               Print only 'license'
+	-p, --parameters            Print only 'parm'
+	-n, --filename              Print only 'filename'
+	-0, --null                  Use \0 instead of \n
+	-F, --field=FIELD           Print only provided FIELD
+	-k, --set-version=VERSION   Use VERSION instead of `uname -r`
+	-b, --basedir=DIR           Use DIR as filesystem root for /lib/modules
+	-V, --version               Show version
+	-h, --help                  Show this help
+kmod version 29
+Module                  Size  Used by
+modinfo: ERROR: Module alias dm_log not found.
+Fri Sep  9 05:36:35 2022 - ERROR - oe_test_modinfo.sh line 31
+modinfo: ERROR: Module alias dm_log not found.
+Fri Sep  9 05:36:35 2022 - ERROR - oe_test_modinfo.sh line 33
+modinfo: ERROR: Module alias dm_log not found.
+Fri Sep  9 05:36:36 2022 - ERROR - oe_test_modinfo.sh line 35
+modinfo: ERROR: Module alias raid1 not found.
+Fri Sep  9 05:36:37 2022 - ERROR - oe_test_modinfo.sh line 37
+modinfo: ERROR: Module alias dm_log not found.
+Fri Sep  9 05:36:38 2022 - ERROR - oe_test_modinfo.sh line 39
+modinfo: ERROR: Module alias dm_log not found.
+Fri Sep  9 05:36:38 2022 - ERROR - oe_test_modinfo.sh line 41
+Fri Sep  9 05:36:39 2022 - INFO  - End of the test.
+Fri Sep  9 05:36:40 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:36:40 2022 - INFO  - oe_test_modinfo.sh post_test

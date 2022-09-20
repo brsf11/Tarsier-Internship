@@ -1,0 +1,20 @@
+Fri Sep  9 00:58:11 2022 - INFO  - Start to prepare the test environment.
+find: ‘/proc/5132’: No such file or directory
+sed: can't read : No such file or directory
+oe_test_audit_user_build_connection.sh: line 27: service: command not found
+Fri Sep  9 00:58:34 2022 - INFO  - pkgs:(gcc) is already installed
+Fri Sep  9 00:58:37 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 00:58:38 2022 - INFO  - Start to run test.
+Fri Sep  9 00:58:41 2022 - ERROR - grep failed
+Fri Sep  9 00:58:41 2022 - ERROR - oe_test_audit_user_build_connection.sh line 40
+oe_test_audit_user_build_connection.sh: line 41: auditctl: command not found
+Fri Sep  9 00:59:10 2022 - ERROR - i failed
+Fri Sep  9 00:59:11 2022 - ERROR - oe_test_audit_user_build_connection.sh line 52
+Fri Sep  9 00:59:12 2022 - INFO  - End to run test.
+Fri Sep  9 00:59:12 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:59:13 2022 - INFO  - Start to restore the test environment.
+sed: can't read : No such file or directory
+oe_test_audit_user_build_connection.sh: line 69: service: command not found
+oe_test_audit_user_build_connection.sh: line 70: auditctl: command not found
+Fri Sep  9 00:59:14 2022 - WARN  - no thing to do.
+Fri Sep  9 00:59:15 2022 - INFO  - End to restore the test environment.

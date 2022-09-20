@@ -1,0 +1,7 @@
+Tue Sep 20 12:52:22 2022 - INFO  - Start to run test.
+Failed to restart time-sync.target: Operation refused, unit time-sync.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to start time-sync.target: Operation refused, unit time-sync.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Tue Sep 20 12:52:23 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:52:23 2022 - INFO  - End of the test.
+Tue Sep 20 12:52:24 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:52:25 2022 - INFO  - oe_test_target_time-sync.sh post_test

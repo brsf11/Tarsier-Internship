@@ -1,0 +1,33 @@
+Mon Sep 12 21:40:21 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 21:42:16 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 21:42:16 2022 - INFO  - Start testing...
+Failed to restart pmwebd.service: Unit pmwebd.service not found.
+Mon Sep 12 21:42:17 2022 - ERROR - pmwebd.service restart failed
+Mon Sep 12 21:42:18 2022 - ERROR - ../common/common_lib.sh line 34
+Unit pmwebd.service could not be found.
+Mon Sep 12 21:42:25 2022 - ERROR - pmwebd.service restart failed
+Mon Sep 12 21:42:26 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop pmwebd.service: Unit pmwebd.service not loaded.
+Mon Sep 12 21:42:26 2022 - ERROR - pmwebd.service stop failed
+Mon Sep 12 21:42:27 2022 - ERROR - ../common/common_lib.sh line 39
+Unit pmwebd.service could not be found.
+Mon Sep 12 21:42:34 2022 - ERROR - pmwebd.service stop failed
+Mon Sep 12 21:42:34 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start pmwebd.service: Unit pmwebd.service not found.
+Mon Sep 12 21:42:35 2022 - ERROR - pmwebd.service start failed
+Mon Sep 12 21:42:36 2022 - ERROR - ../common/common_lib.sh line 44
+Unit pmwebd.service could not be found.
+Mon Sep 12 21:42:42 2022 - ERROR - pmwebd.service start failed
+Mon Sep 12 21:42:43 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for pmwebd.service: No such file or directory
+Mon Sep 12 21:42:44 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start pmwebd.service: Unit pmwebd.service not found.
+Mon Sep 12 21:42:45 2022 - ERROR - Job type reload is not applicable for unit pmwebd.service
+Mon Sep 12 21:42:46 2022 - ERROR - ../common/common_lib.sh line 91
+Unit pmwebd.service could not be found.
+Unit pmwebd.service could not be found.
+Mon Sep 12 21:42:46 2022 - INFO  - Finish test!
+Mon Sep 12 21:42:47 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:42:48 2022 - INFO  - start environment cleanup.
+Failed to stop pmwebd.service: Unit pmwebd.service not loaded.
+Mon Sep 12 21:43:27 2022 - INFO  - Finish environment cleanup!

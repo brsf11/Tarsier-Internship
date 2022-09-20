@@ -1,0 +1,48 @@
+Fri Sep  9 07:21:40 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:22:07 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:22:08 2022 - INFO  - Start to run test.
+oe_test_lxc_snapshot_start.sh: line 30: lxc-create: command not found
+Fri Sep  9 07:22:08 2022 - ERROR - Failed to set up container.
+Fri Sep  9 07:22:09 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 31
+Fri Sep  9 07:22:10 2022 - ERROR - Check lxc-start --help failed.
+Fri Sep  9 07:22:10 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 33
+Fri Sep  9 07:22:11 2022 - ERROR - Check lxc-start --usage failed.
+Fri Sep  9 07:22:12 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 35
+oe_test_lxc_snapshot_start.sh: line 36: lxc-start: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:22:12 2022 - ERROR - Check lxc-start --version failed.
+Fri Sep  9 07:22:13 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 37
+oe_test_lxc_snapshot_start.sh: line 38: lxc-start: command not found
+Fri Sep  9 07:22:14 2022 - ERROR - Check lxc-start -n failed.
+Fri Sep  9 07:22:15 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 39
+oe_test_lxc_snapshot_start.sh: line 40: lxc-info: command not found
+Fri Sep  9 07:22:15 2022 - ERROR - Check lxc-info failed.
+Fri Sep  9 07:22:16 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 41
+Fri Sep  9 07:22:17 2022 - ERROR - Check lxc-snapshot --help failed.
+Fri Sep  9 07:22:17 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 44
+Fri Sep  9 07:22:18 2022 - ERROR - Check lxc-snapshot --usage failed.
+Fri Sep  9 07:22:19 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 46
+oe_test_lxc_snapshot_start.sh: line 47: lxc-snapshot: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:22:20 2022 - ERROR - Check lxc-snapshot --version failed.
+Fri Sep  9 07:22:20 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 48
+oe_test_lxc_snapshot_start.sh: line 49: lxc-snapshot: command not found
+Fri Sep  9 07:22:21 2022 - ERROR - Check lxc-snapshot -L failed.
+Fri Sep  9 07:22:22 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 50
+oe_test_lxc_snapshot_start.sh: line 51: lxc-stop: command not found
+Fri Sep  9 07:22:23 2022 - ERROR - Check lxc-stop -n failed.
+Fri Sep  9 07:22:23 2022 - ERROR - oe_test_lxc_snapshot_start.sh line 52
+Fri Sep  9 07:22:24 2022 - INFO  - End to run test.
+Fri Sep  9 07:22:25 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:22:25 2022 - INFO  - Start to restore the tet environment.
+oe_test_lxc_snapshot_start.sh: line 58: lxc-stop: command not found
+oe_test_lxc_snapshot_start.sh: line 59: lxc-destroy: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:10:14 ago on Fri 09 Sep 2022 07:11:50 AM CST.\nPackage tar-2:1.34-1.oe2209.riscv64 is already installed.\nError: \n Problem: package lxcfs-tools-0.3-26.oe2209.riscv64 requires iSulad, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides clibcni >= 2.0.7 needed by iSulad-2.0.15-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:22:29 2022 - INFO  - End to restore the tet environment.

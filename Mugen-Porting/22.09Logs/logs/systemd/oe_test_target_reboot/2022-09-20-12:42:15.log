@@ -1,0 +1,8 @@
+Tue Sep 20 12:42:18 2022 - INFO  - Start to run test.
+Tue Sep 20 12:42:19 2022 - INFO  - A special target unit for shutting down and rebooting the system.
+find: ‘/etc/systemd/system/ctrl-alt-del.target’: No such file or directory
+Created symlink /etc/systemd/system/ctrl-alt-del.target → /usr/lib/systemd/system/reboot.target.
+/etc/systemd/system/ctrl-alt-del.target
+Tue Sep 20 12:42:28 2022 - INFO  - End of the test.
+Tue Sep 20 12:42:28 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:42:29 2022 - INFO  - oe_test_target_reboot.sh post_test

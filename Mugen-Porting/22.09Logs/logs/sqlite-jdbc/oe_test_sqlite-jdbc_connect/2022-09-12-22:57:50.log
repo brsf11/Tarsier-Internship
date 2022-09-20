@@ -1,0 +1,11 @@
+Mon Sep 12 22:57:53 2022 - INFO  - Start to prepare the test environment.
+oe_test_sqlite-jdbc_connect.sh: line 23: java: command not found
+Mon Sep 12 23:01:36 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 23:01:37 2022 - INFO  - Start to run test.
+The connection object con is: org.sqlite.SQLiteConnection@b1bc7ed
+t_user_name = wjf t_user_age = 12
+t_user_name = zyy t_user_age = 13
+Mon Sep 12 23:01:58 2022 - INFO  - End to run test.
+Mon Sep 12 23:01:59 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 23:02:00 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 23:02:22 2022 - INFO  - End to restore the test environment.

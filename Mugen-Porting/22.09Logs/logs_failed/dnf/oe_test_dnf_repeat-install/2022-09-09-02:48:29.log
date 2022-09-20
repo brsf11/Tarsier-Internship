@@ -1,0 +1,319 @@
+Fri Sep  9 02:48:32 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:49:01 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:49:02 2022 - INFO  - Start to run test.
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:06 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:10 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:14 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:20 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:24 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:33 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:37 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:41 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:46 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:49:56 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:02 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:07 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:11 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:16 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:21 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:25 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:30 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:35 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:41 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:50:50 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:00 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:05 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:10 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:14 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:18 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:23 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:27 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:37 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:48 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:52 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:51:56 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:00 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:05 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:09 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:13 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:17 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:21 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:25 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:40 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:44 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:52:54 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:05 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:09 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:14 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:18 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:22 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:26 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:30 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:34 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:53:38 2022 - ERROR - oe_test_dnf_repeat-install.sh line 33
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No match for argument: tree
+No packages marked for removal.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No packages marked for removal.
+No match for argument: tree
+Fri Sep  9 02:58:51 2022 - INFO  - End of the test.
+Fri Sep  9 02:58:52 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:58:53 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Warning: failed loading \'/etc/yum.repos.d/openEuler.repo\', skipping.\nError: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".'
+Fri Sep  9 02:58:56 2022 - INFO  - Finish restoring the test environment.

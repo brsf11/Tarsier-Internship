@@ -1,0 +1,14 @@
+Fri Sep 16 14:04:50 2022 - INFO  - Start to pre test.
+mkdir: cannot create directory ‘/sys/fs/cgroup/memory/example’: No such file or directory
+Fri Sep 16 14:04:51 2022 - INFO  - Start to pre test.
+Fri Sep 16 14:04:51 2022 - INFO  - Start executing testcase.
+oe_test_kernel_cgroup.sh: line 36: /sys/fs/cgroup/memory/example/memory.limit_in_bytes: No such file or directory
+Fri Sep 16 14:04:52 2022 - ERROR - oe_test_kernel_cgroup.sh line 37
+oe_test_kernel_cgroup.sh: line 38: /sys/fs/cgroup/memory/example/cgroup.procs: No such file or directory
+Fri Sep 16 14:04:52 2022 - ERROR - oe_test_kernel_cgroup.sh line 39
+Fri Sep 16 14:04:53 2022 - ERROR - oe_test_kernel_cgroup.sh line 41
+Fri Sep 16 14:04:54 2022 - INFO  - End of testcase execution.
+Fri Sep 16 14:04:55 2022 - ERROR - failed to execute the case.
+Fri Sep 16 14:04:55 2022 - INFO  - start environment cleanup.
+oe_test_kernel_cgroup.sh: line 45: 17606 Killed                  sh testcgroup.sh
+Fri Sep 16 14:04:56 2022 - INFO  - Finish environment cleanup.

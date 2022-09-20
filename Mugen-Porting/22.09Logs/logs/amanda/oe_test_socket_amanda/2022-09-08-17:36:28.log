@@ -1,0 +1,15 @@
+Thu Sep  8 17:36:31 2022 - INFO  - Start environmental preparation.
+Thu Sep  8 17:37:46 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:37:47 2022 - INFO  - Start to run test.
+     Active: active (listening) since Thu 2022-09-08 17:37:47 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Thu 2022-09-08 17:37:59 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/amanda.socket
+Removed /etc/systemd/system/sockets.target.wants/amanda.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/amanda.socket’: No such file or directory
+Failed to reload amanda.socket: Job type reload is not applicable for unit amanda.socket.
+     Active: active (listening) since Thu 2022-09-08 17:37:59 CST; 15s ago
+Thu Sep  8 17:38:16 2022 - INFO  - End of the test.
+Thu Sep  8 17:38:16 2022 - INFO  - succeed to execute the case.
+Thu Sep  8 17:38:17 2022 - INFO  - start environment cleanup.
+Thu Sep  8 17:38:43 2022 - INFO  - Finish environment cleanup!

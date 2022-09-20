@@ -1,0 +1,14 @@
+Thu Sep  8 17:30:26 2022 - INFO  - Start environmental preparation.
+Thu Sep  8 17:30:27 2022 - INFO  - End of environmental preparation!
+Thu Sep  8 17:30:27 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example1.
+passwd: all authentication tokens updated successfully.
+New password: Retype new password: Changing password for user example2.
+passwd: all authentication tokens updated successfully.
+test
+setfacl: /home/test1: Operation not permitted
+-bash: line 1: /home/test1: Permission denied
+Thu Sep  8 17:30:43 2022 - INFO  - Finish testcase execution.
+Thu Sep  8 17:30:43 2022 - INFO  - succeed to execute the case.
+Thu Sep  8 17:30:44 2022 - INFO  - start environment cleanup.
+Thu Sep  8 17:30:49 2022 - INFO  - Finish environment cleanup!

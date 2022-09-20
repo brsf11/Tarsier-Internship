@@ -1,0 +1,39 @@
+Fri Sep  9 02:54:20 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:55:02 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:55:03 2022 - INFO  - Start testing...
+Failed to restart etcd.service: Unit etcd.service not found.
+Fri Sep  9 02:55:04 2022 - ERROR - etcd.service restart failed
+Fri Sep  9 02:55:05 2022 - ERROR - ../common/common_lib.sh line 34
+Unit etcd.service could not be found.
+Fri Sep  9 02:55:11 2022 - ERROR - etcd.service restart failed
+Fri Sep  9 02:55:12 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop etcd.service: Unit etcd.service not loaded.
+Fri Sep  9 02:55:13 2022 - ERROR - etcd.service stop failed
+Fri Sep  9 02:55:13 2022 - ERROR - ../common/common_lib.sh line 39
+Unit etcd.service could not be found.
+Fri Sep  9 02:55:20 2022 - ERROR - etcd.service stop failed
+Fri Sep  9 02:55:21 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start etcd.service: Unit etcd.service not found.
+Fri Sep  9 02:55:21 2022 - ERROR - etcd.service start failed
+Fri Sep  9 02:55:22 2022 - ERROR - ../common/common_lib.sh line 44
+Unit etcd.service could not be found.
+Fri Sep  9 02:55:29 2022 - ERROR - etcd.service start failed
+Fri Sep  9 02:55:29 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for etcd.service: No such file or directory
+Fri Sep  9 02:55:30 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start etcd.service: Unit etcd.service not found.
+Fri Sep  9 02:55:31 2022 - ERROR - Job type reload is not applicable for unit etcd.service
+Fri Sep  9 02:55:31 2022 - ERROR - ../common/common_lib.sh line 91
+Unit etcd.service could not be found.
+Unit etcd.service could not be found.
+Fri Sep  9 02:55:32 2022 - INFO  - Finish test!
+Fri Sep  9 02:55:33 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:55:34 2022 - INFO  - start environment cleanup.
+Failed to stop etcd.service: Unit etcd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:00:32 ago on Fri 09 Sep 2022 02:54:29 AM CST.\nNo match for argument: etcd\nError: Unable to find a match: etcd'
+Fri Sep  9 02:55:37 2022 - INFO  - Finish environment cleanup!

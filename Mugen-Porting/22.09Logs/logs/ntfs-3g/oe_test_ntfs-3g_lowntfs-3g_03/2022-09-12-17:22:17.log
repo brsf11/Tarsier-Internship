@@ -1,0 +1,129 @@
+Mon Sep 12 17:22:20 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 17:23:34 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:23:35 2022 - INFO  - Start to run test.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:36 2022 - ERROR - Check lowntfs-3g -o hide_dot_files failed.
+Mon Sep 12 17:23:37 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 32
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:39 2022 - ERROR - Check lowntfs-3g -o windows_names failed.
+Mon Sep 12 17:23:40 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 37
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:41 2022 - ERROR - Check lowntfs-3g -o allow_other failed.
+Mon Sep 12 17:23:42 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 42
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:44 2022 - ERROR - Check lowntfs-3g -o max_read failed.
+Mon Sep 12 17:23:45 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 47
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:47 2022 - ERROR - Check lowntfs-3g -o silent failed.
+Mon Sep 12 17:23:47 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 52
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:49 2022 - ERROR - Check lowntfs-3g -o no_def_opts failed.
+Mon Sep 12 17:23:50 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 57
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:52 2022 - ERROR - Check lowntfs-3g -o streams_interface failed.
+Mon Sep 12 17:23:52 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 62
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:54 2022 - ERROR - Check lowntfs-3g -o user_xattr failed.
+Mon Sep 12 17:23:55 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 67
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:57 2022 - ERROR - Check lowntfs-3g -o efs_raw failed.
+Mon Sep 12 17:23:57 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 72
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:23:59 2022 - ERROR - Check lowntfs-3g -o compression failed.
+Mon Sep 12 17:24:00 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 77
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:24:02 2022 - ERROR - Check lowntfs-3g -o nocompression failed.
+Mon Sep 12 17:24:03 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 82
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:24:05 2022 - ERROR - Check lowntfs-3g -o big_writes failed.
+Mon Sep 12 17:24:05 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 87
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:24:07 2022 - ERROR - Check lowntfs-3g -o debug failed.
+Mon Sep 12 17:24:08 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 92
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:24:10 2022 - ERROR - Check lowntfs-3g -o ignore_case failed.
+Mon Sep 12 17:24:10 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 97
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+Mon Sep 12 17:24:11 2022 - INFO  - End of the test.
+Mon Sep 12 17:24:12 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:24:13 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:24:33 2022 - INFO  - Finish restoring the test environment.

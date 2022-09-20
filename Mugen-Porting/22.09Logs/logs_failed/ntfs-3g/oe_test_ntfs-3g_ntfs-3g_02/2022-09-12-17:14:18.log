@@ -1,0 +1,98 @@
+Mon Sep 12 17:14:21 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 17:15:26 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:15:26 2022 - INFO  - Start to run test.
+Invalid locale, encoding to UTF-8
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:28 2022 - ERROR - Check ntfs-3g -o locale failed.
+Mon Sep 12 17:15:29 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 32
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:31 2022 - ERROR - Check ntfs-3g -o recover failed.
+Mon Sep 12 17:15:31 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 37
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:33 2022 - ERROR - Check ntfs-3g -o norecover failed.
+Mon Sep 12 17:15:34 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 42
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:36 2022 - ERROR - Check ntfs-3g -o emove_hiberfile failed.
+Mon Sep 12 17:15:37 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 47
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:38 2022 - ERROR - Check ntfs-3g -o atime failed.
+Mon Sep 12 17:15:39 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 52
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:41 2022 - ERROR - Check ntfs-3g -o noatime failed.
+Mon Sep 12 17:15:42 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 57
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:43 2022 - ERROR - Check ntfs-3g -o relatime failed.
+Mon Sep 12 17:15:44 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 62
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:46 2022 - ERROR - Check ntfs-3g -o delay_mtime failed.
+Mon Sep 12 17:15:47 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 67
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:49 2022 - ERROR - Check ntfs-3g -o show_sys_files failed.
+Mon Sep 12 17:15:49 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 72
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+Mon Sep 12 17:15:51 2022 - ERROR - Check ntfs-3g -o hide_hid_files failed.
+Mon Sep 12 17:15:52 2022 - ERROR - oe_test_ntfs-3g_ntfs-3g_02.sh line 77
+/dev/root        20G  1.2G   18G   7% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+umount: /mnt/windows: not mounted.
+Mon Sep 12 17:15:53 2022 - INFO  - End of the test.
+Mon Sep 12 17:15:54 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:15:54 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:16:06 2022 - INFO  - Finish restoring the test environment.

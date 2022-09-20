@@ -1,0 +1,23 @@
+Fri Sep 16 11:28:08 2022 - INFO  - Start executing testcase.
+btmp
+btmp-20220915
+dnf.librepo.log
+dnf.log
+dnf.rpm.log
+hawkey.log
+hawkey.log-20220915
+lastlog
+ntpstats
+private
+README
+rebuilddb.log
+rpmpkgs
+rpmpkgs-20220915
+wtmp
+cat: /var/log/messages: No such file or directory
+Fri Sep 16 11:28:14 2022 - ERROR - oe_test_system_log_view.sh line 33
+Fri Sep 16 11:28:15 2022 - INFO  - End of testcase execution.
+Fri Sep 16 11:28:15 2022 - ERROR - failed to execute the case.
+Fri Sep 16 11:28:16 2022 - INFO  - start environment cleanup.
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Fri Sep 16 11:28:17 2022 - INFO  - Finish environment cleanup.

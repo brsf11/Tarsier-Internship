@@ -1,0 +1,33 @@
+Mon Sep 12 21:13:21 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 21:13:22 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 21:13:22 2022 - INFO  - Start testing...
+Failed to restart rngd.service: Unit rngd.service not found.
+Mon Sep 12 21:13:23 2022 - ERROR - rngd.service restart failed
+Mon Sep 12 21:13:24 2022 - ERROR - ../common/common_lib.sh line 34
+Unit rngd.service could not be found.
+Mon Sep 12 21:13:30 2022 - ERROR - rngd.service restart failed
+Mon Sep 12 21:13:31 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop rngd.service: Unit rngd.service not loaded.
+Mon Sep 12 21:13:32 2022 - ERROR - rngd.service stop failed
+Mon Sep 12 21:13:32 2022 - ERROR - ../common/common_lib.sh line 39
+Unit rngd.service could not be found.
+Mon Sep 12 21:13:39 2022 - ERROR - rngd.service stop failed
+Mon Sep 12 21:13:40 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start rngd.service: Unit rngd.service not found.
+Mon Sep 12 21:13:41 2022 - ERROR - rngd.service start failed
+Mon Sep 12 21:13:41 2022 - ERROR - ../common/common_lib.sh line 44
+Unit rngd.service could not be found.
+Mon Sep 12 21:13:48 2022 - ERROR - rngd.service start failed
+Mon Sep 12 21:13:49 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for rngd.service: No such file or directory
+Mon Sep 12 21:13:49 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start rngd.service: Unit rngd.service not found.
+Mon Sep 12 21:13:50 2022 - ERROR - Job type reload is not applicable for unit rngd.service
+Mon Sep 12 21:13:51 2022 - ERROR - ../common/common_lib.sh line 91
+Unit rngd.service could not be found.
+Unit rngd.service could not be found.
+Mon Sep 12 21:13:52 2022 - INFO  - Finish test!
+Mon Sep 12 21:13:53 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:13:53 2022 - INFO  - start environment cleanup.
+Failed to stop rngd.service: Unit rngd.service not loaded.
+Mon Sep 12 21:13:54 2022 - INFO  - Finish environment cleanup!

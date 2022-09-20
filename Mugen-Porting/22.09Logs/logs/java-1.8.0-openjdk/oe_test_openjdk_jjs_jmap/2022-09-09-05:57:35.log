@@ -1,0 +1,28 @@
+Fri Sep  9 05:57:38 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 06:10:03 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 06:10:04 2022 - INFO  - Start to run test.
+jjs [<options>] <files> [-- <arguments>]
+spawn jjs -strict
+jjs> a=10
+<shell>:1 ReferenceError: "a" is not defined
+jjs> exit()
+<shell>:1 ReferenceError: "a" is not defined
+spawn jjs
+jjs> a=10
+10
+jjs> exit()
+10
+Usage:
+4929 Jps
+usage: jps [-help]
+Usage: jrunscript [options] [arguments...]
+hello world
+spawn jjs
+jjs> 20+40
+60
+jjs> exit()
+60
+Fri Sep  9 06:11:28 2022 - INFO  - End to run test.
+Fri Sep  9 06:11:28 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 06:11:29 2022 - INFO  - Need't to restore the tet environment.
+Fri Sep  9 06:12:25 2022 - INFO  - End to restore the test environment.

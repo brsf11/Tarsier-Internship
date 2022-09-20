@@ -1,0 +1,35 @@
+Fri Sep  9 07:20:45 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:20:53 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:21:00 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:21:00 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:21:01 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 30
+  No device found for /dev/.
+Fri Sep  9 07:21:03 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 33
+Fri Sep  9 07:21:04 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 35
+  No device found for /dev/.
+Fri Sep  9 07:21:05 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 37
+  No device found for /dev/.
+Fri Sep  9 07:21:05 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 39
+  No device found for /dev/.
+Fri Sep  9 07:21:06 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 41
+  No device found for /dev/.
+Fri Sep  9 07:21:07 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 43
+  No device found for /dev/.
+Fri Sep  9 07:21:08 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 45
+  No device found for /dev/.
+Fri Sep  9 07:21:09 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 47
+  No device found for /dev/.
+Fri Sep  9 07:21:10 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 49
+  No device found for /dev/.
+Fri Sep  9 07:21:11 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 51
+  No device found for /dev/.
+Fri Sep  9 07:21:12 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 53
+  No device found for /dev/.
+Fri Sep  9 07:21:13 2022 - ERROR - oe_test_lvm2_pvcreate_001.sh line 55
+Fri Sep  9 07:21:14 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:21:15 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:21:16 2022 - INFO  - Start environment cleanup.
+  No device found for /dev/.
+Fri Sep  9 07:21:17 2022 - WARN  - no thing to do.
+Fri Sep  9 07:21:17 2022 - INFO  - Finish environment cleanup.

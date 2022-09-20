@@ -1,0 +1,13 @@
+Tue Sep 20 12:05:47 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:06:39 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:06:40 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 12:06:40 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-20 12:06:52 CST; 5s ago
+Tue Sep 20 12:06:59 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-machined.service: Job type reload is not applicable for unit systemd-machined.service.
+     Active: active (running) since Tue 2022-09-20 12:06:52 CST; 7s ago
+Tue Sep 20 12:07:00 2022 - INFO  - Finish test!
+Tue Sep 20 12:07:01 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:07:01 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:07:31 2022 - INFO  - Finish environment cleanup!

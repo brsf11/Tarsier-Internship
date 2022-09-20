@@ -1,0 +1,51 @@
+Fri Sep  9 07:16:58 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:17:24 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:17:24 2022 - INFO  - Start to run test.
+oe_test_lxc_ls_monitor.sh: line 30: lxc-create: command not found
+Fri Sep  9 07:17:25 2022 - ERROR - Failed to set up container.
+Fri Sep  9 07:17:26 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 31
+Fri Sep  9 07:17:27 2022 - ERROR - Check lxc-ls --help failed.
+Fri Sep  9 07:17:27 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 33
+Fri Sep  9 07:17:28 2022 - ERROR - Check lxc-ls --usage failed.
+Fri Sep  9 07:17:29 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 35
+oe_test_lxc_ls_monitor.sh: line 36: lxc-ls: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:17:29 2022 - ERROR - Check lxc-ls --version failed.
+Fri Sep  9 07:17:30 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 37
+oe_test_lxc_ls_monitor.sh: line 38: lxc-ls: command not found
+Fri Sep  9 07:17:31 2022 - ERROR - Failed to list myEuler1.
+Fri Sep  9 07:17:32 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 39
+oe_test_lxc_ls_monitor.sh: line 40: lxc-ls: command not found
+Fri Sep  9 07:17:32 2022 - ERROR - Check lxc-ls --stopped failed.
+Fri Sep  9 07:17:33 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 41
+oe_test_lxc_ls_monitor.sh: line 42: lxc-start: command not found
+Fri Sep  9 07:17:34 2022 - ERROR - Check lxc-start -n failed.
+Fri Sep  9 07:17:34 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 43
+oe_test_lxc_ls_monitor.sh: line 44: lxc-ls: command not found
+Fri Sep  9 07:17:35 2022 - ERROR - Check lxc-ls --running failed.
+Fri Sep  9 07:17:36 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 45
+oe_test_lxc_ls_monitor.sh: line 46: lxc-ls: command not found
+Fri Sep  9 07:17:37 2022 - ERROR - Check lxc-ls --defined failed.
+Fri Sep  9 07:17:37 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 47
+Fri Sep  9 07:17:38 2022 - ERROR - Check lxc-monitor --help failed.
+Fri Sep  9 07:17:39 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 50
+Fri Sep  9 07:17:39 2022 - ERROR - Check lxc-monitor --usage failed.
+Fri Sep  9 07:17:40 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 52
+oe_test_lxc_ls_monitor.sh: line 53: lxc-monitor: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:17:41 2022 - ERROR - Check lxc-monitor --version failed.
+Fri Sep  9 07:17:41 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 54
+Fri Sep  9 07:17:42 2022 - INFO  - End to run test.
+Fri Sep  9 07:17:43 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:17:43 2022 - INFO  - Start to restore the tet environment.
+oe_test_lxc_ls_monitor.sh: line 60: lxc-stop: command not found
+oe_test_lxc_ls_monitor.sh: line 61: lxc-destroy: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:05:31 ago on Fri 09 Sep 2022 07:11:50 AM CST.\nPackage tar-2:1.34-1.oe2209.riscv64 is already installed.\nError: \n Problem: package lxcfs-tools-0.3-26.oe2209.riscv64 requires iSulad, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides clibcni >= 2.0.7 needed by iSulad-2.0.15-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:17:47 2022 - INFO  - End to restore the tet environment.

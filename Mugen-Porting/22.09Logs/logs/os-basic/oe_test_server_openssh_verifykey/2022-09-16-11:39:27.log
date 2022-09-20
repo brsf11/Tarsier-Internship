@@ -1,0 +1,30 @@
+Fri Sep 16 11:39:29 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 16 11:39:42 2022 - INFO  - pkgs:(openssh-server openssh-clients openssh) is already installed
+Fri Sep 16 11:39:43 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 11:39:44 2022 - INFO  - Start to run test.
+oe_test_server_openssh_verifykey.sh: line 32: setsebool: command not found
+Fri Sep 16 11:39:44 2022 - ERROR - oe_test_server_openssh_verifykey.sh line 33
+Fri Sep 16 11:39:45 2022 - WARN  - the remote user uses the default configuration.
+Fri Sep 16 11:39:46 2022 - WARN  - the remote password uses the default configuration.
+Fri Sep 16 11:39:47 2022 - WARN  - the connect port using the default configuration
+spawn ssh -o ConnectTimeout=300 -p 22 root@127.0.0.1 ls
+The authenticity of host '127.0.0.1 (127.0.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:FlutiferylfbBbFVUi8EMNSZaS0inbaa5SI3r1xHpMc.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.
+root@127.0.0.1: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+send: spawn id exp4 not open
+    while executing
+"send "openEuler12#$\r""
+    invoked from within
+"expect {
+            "Are you sure you want to continue connecting*"
+            {
+                send "yes\r"
+                expect "*\[P|p]assword..."
+Fri Sep 16 11:39:48 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 11:39:49 2022 - INFO  - End to run test.
+Fri Sep 16 11:39:49 2022 - ERROR - failed to execute the case.
+Fri Sep 16 11:39:50 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 11:39:51 2022 - INFO  - End to restore the test environment.

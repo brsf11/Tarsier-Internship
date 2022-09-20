@@ -1,0 +1,17 @@
+Tue Sep 20 12:17:35 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:17:36 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:17:36 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 12:17:37 CST; 5s ago
+Warning: Stopping systemd-udevd.service, but it can still be activated by:
+  systemd-udevd-control.socket
+  systemd-udevd-kernel.socket
+     Active: inactive (dead) since Tue 2022-09-20 12:17:43 CST; 5s ago
+     Active: active (running) since Tue 2022-09-20 12:17:49 CST; 5s ago
+Tue Sep 20 12:17:56 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 12:17:57 2022 - ERROR - Job type reload is not applicable for unit systemd-udevd.service
+Tue Sep 20 12:17:57 2022 - ERROR - ../common/common_lib.sh line 91
+     Active: active (running) since Tue 2022-09-20 12:17:49 CST; 8s ago
+Tue Sep 20 12:17:58 2022 - INFO  - Finish test!
+Tue Sep 20 12:17:59 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:17:59 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 12:18:00 2022 - INFO  - Finish environment cleanup!

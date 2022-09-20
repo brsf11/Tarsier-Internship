@@ -1,0 +1,6 @@
+oe_test_service_abrtd
+oe_test_service_abrt-journal-core
+oe_test_service_abrt-oops
+oe_test_service_abrt-upload-watch
+oe_test_service_abrt-vmcore
+oe_test_service_abrt-xorg

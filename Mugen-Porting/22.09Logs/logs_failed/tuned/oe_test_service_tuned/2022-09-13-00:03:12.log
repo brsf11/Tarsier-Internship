@@ -1,0 +1,29 @@
+Tue Sep 13 00:03:15 2022 - INFO  - Start testing...
+Failed to restart tuned.service: Unit tuned.service not found.
+Tue Sep 13 00:03:16 2022 - ERROR - tuned.service restart failed
+Tue Sep 13 00:03:16 2022 - ERROR - ../common/common_lib.sh line 34
+Unit tuned.service could not be found.
+Tue Sep 13 00:03:23 2022 - ERROR - tuned.service restart failed
+Tue Sep 13 00:03:23 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop tuned.service: Unit tuned.service not loaded.
+Tue Sep 13 00:03:24 2022 - ERROR - tuned.service stop failed
+Tue Sep 13 00:03:25 2022 - ERROR - ../common/common_lib.sh line 39
+Unit tuned.service could not be found.
+Tue Sep 13 00:03:32 2022 - ERROR - tuned.service stop failed
+Tue Sep 13 00:03:33 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start tuned.service: Unit tuned.service not found.
+Tue Sep 13 00:03:34 2022 - ERROR - tuned.service start failed
+Tue Sep 13 00:03:34 2022 - ERROR - ../common/common_lib.sh line 44
+Unit tuned.service could not be found.
+Tue Sep 13 00:03:41 2022 - ERROR - tuned.service start failed
+Tue Sep 13 00:03:41 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for tuned.service: No such file or directory
+Tue Sep 13 00:03:42 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start tuned.service: Unit tuned.service not found.
+Tue Sep 13 00:03:43 2022 - ERROR - Job type reload is not applicable for unit tuned.service
+Tue Sep 13 00:03:44 2022 - ERROR - ../common/common_lib.sh line 91
+Unit tuned.service could not be found.
+Unit tuned.service could not be found.
+Tue Sep 13 00:03:45 2022 - INFO  - Finish test!
+Tue Sep 13 00:03:46 2022 - ERROR - failed to execute the case.
+Tue Sep 13 00:03:46 2022 - INFO  - oe_test_service_tuned.sh post_test

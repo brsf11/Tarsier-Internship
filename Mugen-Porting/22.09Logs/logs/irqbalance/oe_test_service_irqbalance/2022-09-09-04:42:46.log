@@ -1,0 +1,29 @@
+Fri Sep  9 04:42:49 2022 - INFO  - Start testing...
+Failed to restart irqbalance.service: Unit irqbalance.service not found.
+Fri Sep  9 04:42:50 2022 - ERROR - irqbalance.service restart failed
+Fri Sep  9 04:42:50 2022 - ERROR - ../common/common_lib.sh line 34
+Unit irqbalance.service could not be found.
+Fri Sep  9 04:42:57 2022 - ERROR - irqbalance.service restart failed
+Fri Sep  9 04:42:58 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop irqbalance.service: Unit irqbalance.service not loaded.
+Fri Sep  9 04:42:58 2022 - ERROR - irqbalance.service stop failed
+Fri Sep  9 04:42:59 2022 - ERROR - ../common/common_lib.sh line 39
+Unit irqbalance.service could not be found.
+Fri Sep  9 04:43:06 2022 - ERROR - irqbalance.service stop failed
+Fri Sep  9 04:43:07 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start irqbalance.service: Unit irqbalance.service not found.
+Fri Sep  9 04:43:08 2022 - ERROR - irqbalance.service start failed
+Fri Sep  9 04:43:08 2022 - ERROR - ../common/common_lib.sh line 44
+Unit irqbalance.service could not be found.
+Fri Sep  9 04:43:15 2022 - ERROR - irqbalance.service start failed
+Fri Sep  9 04:43:16 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for irqbalance.service: No such file or directory
+Fri Sep  9 04:43:16 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start irqbalance.service: Unit irqbalance.service not found.
+Fri Sep  9 04:43:17 2022 - ERROR - Job type reload is not applicable for unit irqbalance.service
+Fri Sep  9 04:43:18 2022 - ERROR - ../common/common_lib.sh line 91
+Unit irqbalance.service could not be found.
+Unit irqbalance.service could not be found.
+Fri Sep  9 04:43:19 2022 - INFO  - Finish test!
+Fri Sep  9 04:43:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:43:20 2022 - INFO  - oe_test_service_irqbalance.sh post_test

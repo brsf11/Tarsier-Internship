@@ -1,0 +1,31 @@
+Fri Sep  9 00:44:36 2022 - INFO  - Start testing...
+Failed to restart chrony-wait.service: Unit chrony-wait.service not found.
+Fri Sep  9 00:44:37 2022 - ERROR - chrony-wait.service restart failed
+Fri Sep  9 00:44:38 2022 - ERROR - ../common/common_lib.sh line 34
+Unit chrony-wait.service could not be found.
+Fri Sep  9 00:44:44 2022 - ERROR - chrony-wait.service restart failed
+Fri Sep  9 00:44:45 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop chrony-wait.service: Unit chrony-wait.service not loaded.
+Fri Sep  9 00:44:46 2022 - ERROR - chrony-wait.service stop failed
+Fri Sep  9 00:44:47 2022 - ERROR - ../common/common_lib.sh line 39
+Unit chrony-wait.service could not be found.
+Fri Sep  9 00:44:53 2022 - ERROR - chrony-wait.service stop failed
+Fri Sep  9 00:44:54 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start chrony-wait.service: Unit chrony-wait.service not found.
+Fri Sep  9 00:44:54 2022 - ERROR - chrony-wait.service start failed
+Fri Sep  9 00:44:55 2022 - ERROR - ../common/common_lib.sh line 44
+Unit chrony-wait.service could not be found.
+Fri Sep  9 00:45:02 2022 - ERROR - chrony-wait.service start failed
+Fri Sep  9 00:45:02 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for chrony-wait.service: No such file or directory
+Fri Sep  9 00:45:03 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start chrony-wait.service: Unit chrony-wait.service not found.
+Fri Sep  9 00:45:04 2022 - ERROR - Job type reload is not applicable for unit chrony-wait.service
+Fri Sep  9 00:45:05 2022 - ERROR - ../common/common_lib.sh line 91
+Unit chrony-wait.service could not be found.
+Unit chrony-wait.service could not be found.
+Fri Sep  9 00:45:06 2022 - INFO  - Finish test!
+Fri Sep  9 00:45:06 2022 - ERROR - failed to execute the case.
+Fri Sep  9 00:45:07 2022 - INFO  - start environment cleanup.
+Failed to stop chrony-wait.service: Unit chrony-wait.service not loaded.
+Fri Sep  9 00:45:08 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,7 @@
+Fri Sep 16 14:11:32 2022 - INFO  - Start to config params of the case.
+
+Fri Sep 16 14:12:36 2022 - INFO  - Start to restore the test environment.
+Cannot find device "blue"
+Cannot find device "red"
+Error: No connection specified.
+Fri Sep 16 14:12:37 2022 - INFO  - End to restore the test environment.

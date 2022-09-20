@@ -1,0 +1,13 @@
+Mon Sep 12 23:27:23 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 23:28:19 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 23:28:20 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 23:28:20 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Mon 2022-09-12 23:28:33 CST; 6s ago
+Mon Sep 12 23:28:40 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload sysprof2.service: Job type reload is not applicable for unit sysprof2.service.
+     Active: active (running) since Mon 2022-09-12 23:28:33 CST; 7s ago
+Mon Sep 12 23:28:41 2022 - INFO  - Finish test!
+Mon Sep 12 23:28:42 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 23:28:42 2022 - INFO  - start environment cleanup.
+Mon Sep 12 23:29:02 2022 - INFO  - Finish environment cleanup!

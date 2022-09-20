@@ -1,0 +1,27 @@
+Fri Sep  9 07:23:15 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 07:23:23 2022 - INFO  - pkgs:(lvm2) is already installed
+Fri Sep  9 07:23:31 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 07:23:31 2022 - INFO  - Start executing testcase!
+  No device found for /dev/.
+Fri Sep  9 07:23:32 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 30
+Fri Sep  9 07:23:33 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 32
+Fri Sep  9 07:23:34 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 34
+Fri Sep  9 07:23:35 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 36
+Fri Sep  9 07:23:36 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 38
+Fri Sep  9 07:23:37 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 40
+Fri Sep  9 07:23:38 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 42
+Fri Sep  9 07:23:39 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 44
+  pvdisplay - Display various attributes of physical volume(s)
+  pvdisplay
+  TEST MODE: Metadata will NOT be updated and volumes will not be (de)activated.
+Fri Sep  9 07:23:41 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 48
+Fri Sep  9 07:23:42 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 50
+Fri Sep  9 07:23:43 2022 - ERROR - oe_test_lvm2_pvdisplay_002.sh line 52
+  pvdisplay - Display various attributes of physical volume(s)
+  pvdisplay
+Fri Sep  9 07:23:44 2022 - INFO  - End executing testcase!
+Fri Sep  9 07:23:44 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:23:45 2022 - INFO  - Start environment cleanup.
+  No device found for /dev/.
+Fri Sep  9 07:23:46 2022 - WARN  - no thing to do.
+Fri Sep  9 07:23:47 2022 - INFO  - Finish environment cleanup.

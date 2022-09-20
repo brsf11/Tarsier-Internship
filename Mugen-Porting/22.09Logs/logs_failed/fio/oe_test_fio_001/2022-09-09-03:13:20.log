@@ -1,0 +1,43 @@
+Fri Sep  9 03:13:23 2022 - INFO  - Start to prepare the test environment!
+Fri Sep  9 03:13:58 2022 - INFO  - End to prepare the test environment!
+Fri Sep  9 03:13:59 2022 - INFO  - Start executing testcase!
+oe_test_fio_001.sh: line 30: fio-genzipf: command not found
+Fri Sep  9 03:14:00 2022 - ERROR - fio-genzipf -t option failed
+Fri Sep  9 03:14:00 2022 - ERROR - oe_test_fio_001.sh line 31
+oe_test_fio_001.sh: line 32: fio-genzipf: command not found
+Fri Sep  9 03:14:01 2022 - ERROR - Generating Zipf distribution option failed
+Fri Sep  9 03:14:02 2022 - ERROR - oe_test_fio_001.sh line 33
+oe_test_fio_001.sh: line 34: fio-genzipf: command not found
+Fri Sep  9 03:14:03 2022 - ERROR - fio-genzipf -i zipf theta -o option failed
+Fri Sep  9 03:14:03 2022 - ERROR - oe_test_fio_001.sh line 35
+oe_test_fio_001.sh: line 36: fio-genzipf: command not found
+Fri Sep  9 03:14:04 2022 - ERROR - fio-genzipf -i zipf theta -o 2 -c failed 
+Fri Sep  9 03:14:05 2022 - ERROR - oe_test_fio_001.sh line 37
+oe_test_fio_001.sh: line 38: fio-genzipf: command not found
+Fri Sep  9 03:14:05 2022 - ERROR - fio-genzipf -g option failed
+Fri Sep  9 03:14:06 2022 - ERROR - oe_test_fio_001.sh line 39
+oe_test_fio_001.sh: line 40: fio-genzipf: command not found
+Fri Sep  9 03:14:07 2022 - ERROR - fio-genzipf -p option failed
+Fri Sep  9 03:14:07 2022 - ERROR - oe_test_fio_001.sh line 41
+oe_test_fio_001.sh: line 42: fio-genzipf: command not found
+Fri Sep  9 03:14:08 2022 - ERROR - fio-genzipf -b option failed
+Fri Sep  9 03:14:09 2022 - ERROR - oe_test_fio_001.sh line 43
+oe_test_fio_001.sh: line 44: fio-verify-state: command not found
+Fri Sep  9 03:14:10 2022 - ERROR -  fio-verify-state option failed
+Fri Sep  9 03:14:10 2022 - ERROR - oe_test_fio_001.sh line 45
+oe_test_fio_001.sh: line 46: fio-dedupe: command not found
+Fri Sep  9 03:14:11 2022 - ERROR - fio-dedupe option failed
+Fri Sep  9 03:14:12 2022 - ERROR - oe_test_fio_001.sh line 47
+oe_test_fio_001.sh: line 48: fio-dedupe: command not found
+Fri Sep  9 03:14:12 2022 - ERROR - fio-dedupe option failed
+Fri Sep  9 03:14:13 2022 - ERROR - oe_test_fio_001.sh line 49
+Fri Sep  9 03:14:14 2022 - INFO  - End of testcase execution!
+Fri Sep  9 03:14:14 2022 - ERROR - failed to execute the case.
+Fri Sep  9 03:14:15 2022 - INFO  - Start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:18 ago on Fri 09 Sep 2022 03:13:39 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libnuma.so.1()(64bit) needed by fio-3.29-1.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.1)(64bit) needed by fio-3.29-1.oe2209.riscv64\n  - nothing provides libnuma.so.1(libnuma_1.2)(64bit) needed by fio-3.29-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 03:14:18 2022 - INFO  - Finish environment cleanup.

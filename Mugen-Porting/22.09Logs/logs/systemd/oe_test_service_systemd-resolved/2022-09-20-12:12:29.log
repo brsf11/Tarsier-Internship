@@ -1,0 +1,33 @@
+Tue Sep 20 12:12:31 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:12:32 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:12:32 2022 - INFO  - Start testing...
+Failed to restart systemd-resolved.service: Unit systemd-resolved.service not found.
+Tue Sep 20 12:12:33 2022 - ERROR - systemd-resolved.service restart failed
+Tue Sep 20 12:12:34 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-resolved.service could not be found.
+Tue Sep 20 12:12:40 2022 - ERROR - systemd-resolved.service restart failed
+Tue Sep 20 12:12:41 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-resolved.service: Unit systemd-resolved.service not loaded.
+Tue Sep 20 12:12:42 2022 - ERROR - systemd-resolved.service stop failed
+Tue Sep 20 12:12:42 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-resolved.service could not be found.
+Tue Sep 20 12:12:49 2022 - ERROR - systemd-resolved.service stop failed
+Tue Sep 20 12:12:49 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-resolved.service: Unit systemd-resolved.service not found.
+Tue Sep 20 12:12:50 2022 - ERROR - systemd-resolved.service start failed
+Tue Sep 20 12:12:50 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-resolved.service could not be found.
+Tue Sep 20 12:12:57 2022 - ERROR - systemd-resolved.service start failed
+Tue Sep 20 12:12:58 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-resolved.service: No such file or directory
+Tue Sep 20 12:12:58 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-resolved.service: Unit systemd-resolved.service not found.
+Tue Sep 20 12:12:59 2022 - ERROR - Job type reload is not applicable for unit systemd-resolved.service
+Tue Sep 20 12:13:00 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-resolved.service could not be found.
+Unit systemd-resolved.service could not be found.
+Tue Sep 20 12:13:01 2022 - INFO  - Finish test!
+Tue Sep 20 12:13:01 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:13:02 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-resolved.service: Unit systemd-resolved.service not loaded.
+Tue Sep 20 12:13:02 2022 - INFO  - Finish environment cleanup!

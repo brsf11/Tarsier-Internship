@@ -1,0 +1,13 @@
+Mon Sep 12 22:24:28 2022 - INFO  - Start to prepare the test environment.
+Failed to stop rsyslog.service: Unit rsyslog.service not loaded.
+Mon Sep 12 22:24:29 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:24:30 2022 - INFO  - Start to run test.
+Mon Sep 12 22:24:31 2022 - ERROR - oe_test_rsyslog_parameter02.sh line 31
+Mon Sep 12 22:24:32 2022 - ERROR - oe_test_rsyslog_parameter02.sh line 33
+Mon Sep 12 22:24:32 2022 - ERROR - oe_test_rsyslog_parameter02.sh line 35
+Mon Sep 12 22:24:33 2022 - INFO  - End to run test.
+Mon Sep 12 22:24:34 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:24:35 2022 - INFO  - Start to restore the test environment.
+kill: not enough arguments
+Failed to start rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:24:36 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,58 @@
+Fri Sep  9 05:29:55 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 05:30:55 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 05:30:55 2022 - INFO  - Start to run test.
+ usage: perf [--version] [--help] [OPTIONS] COMMAND [ARGS]
+perf version 5.10.0-7.oe2209.riscv64
+
+ Performance counter stats for './a.out':
+
+   <not supported> msec task-clock                                                  
+
+       0.019597656 seconds time elapsed
+
+       0.020560000 seconds user
+       0.000000000 seconds sys
+
+
+Hello,wolrd!
+
+ Performance counter stats for './a.out' (5 runs):
+
+   <not supported> msec task-clock                                                  
+   <not supported>      context-switches                                            
+   <not supported>      cpu-migrations                                              
+   <not supported>      page-faults                                                 
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+
+          0.019167 +- 0.000287 seconds time elapsed  ( +-  1.50% )
+
+
+ Performance counter stats for './a.out':
+
+   <not supported> msec task-clock                                                  
+   <not supported>      context-switches                                            
+   <not supported>      cpu-migrations                                              
+   <not supported>      page-faults                                                 
+   <not supported>      cycles                                                      
+   <not supported>      instructions                                                
+   <not supported>      branches                                                    
+   <not supported>      branch-misses                                               
+   <not supported>      L1-dcache-loads                                             
+   <not supported>      L1-dcache-load-misses                                       
+   <not supported>      LLC-loads                                                   
+   <not supported>      LLC-load-misses                                             
+
+       0.019205042 seconds time elapsed
+
+       0.012139000 seconds user
+       0.008092000 seconds sys
+
+
+Hello,wolrd!
+Fri Sep  9 05:30:58 2022 - INFO  - End of the test.
+Fri Sep  9 05:30:59 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 05:31:00 2022 - INFO  - Start to restore the tet environment.
+Fri Sep  9 05:31:20 2022 - INFO  - Finish to restore the tet environment.

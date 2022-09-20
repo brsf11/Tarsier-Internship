@@ -1,0 +1,17 @@
+Fri Sep  9 04:11:32 2022 - INFO  - Start testing...
+Fri Sep  9 04:11:39 2022 - ERROR - nis-domainname.service restart failed
+Fri Sep  9 04:11:40 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+Fri Sep  9 04:11:53 2022 - ERROR - nis-domainname.service start failed
+Fri Sep  9 04:11:54 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/sysinit.target.wants/nis-domainname.service
+Removed /etc/systemd/system/sysinit.target.wants/nis-domainname.service.
+find: ‘/etc/systemd/system/sysinit.target.wants/nis-domainname.service’: No such file or directory
+Failed to reload nis-domainname.service: Job type reload is not applicable for unit nis-domainname.service.
+     Active: inactive (dead)
+Sep 09 04:11:32 openEuler-riscv64 systemd[1]: Condition check resulted in Read and set NIS domainname from /etc/sysconfig/network being skipped.
+Sep 09 04:11:47 openEuler-riscv64 systemd[1]: Condition check resulted in Read and set NIS domainname from /etc/sysconfig/network being skipped.
+Sep 09 04:12:04 openEuler-riscv64 systemd[1]: Condition check resulted in Read and set NIS domainname from /etc/sysconfig/network being skipped.
+Fri Sep  9 04:12:06 2022 - INFO  - Finish test!
+Fri Sep  9 04:12:06 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:12:07 2022 - INFO  - oe_test_service_nis-domainname.sh post_test

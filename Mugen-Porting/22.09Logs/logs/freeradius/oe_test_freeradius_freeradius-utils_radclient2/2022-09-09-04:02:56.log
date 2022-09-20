@@ -1,0 +1,15 @@
+Fri Sep  9 04:02:59 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 04:05:04 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 04:05:05 2022 - INFO  - Start to run test.
+Received Access-Accept Id 110 from 127.0.0.1:1812 to 127.0.0.1:44696 length 20
+Fri Sep  9 04:05:06 2022 - ERROR - radclient -t execution failed.
+Fri Sep  9 04:05:07 2022 - ERROR - oe_test_freeradius_freeradius-utils_radclient2.sh line 40
+Packet summary:
+Received Access-Accept Id 1 from 127.0.0.1:1812 to 127.0.0.1:32829 length 20
+radclient version 3.0.25, built on Aug  6 2022 at 20:53:33
+	Message-Authenticator = 0x00
+Received Access-Accept Id 35 from 127.0.0.1:1812 to 127.0.0.1:46379 length 20
+Fri Sep  9 04:05:10 2022 - INFO  - End to run test.
+Fri Sep  9 04:05:11 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:05:11 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 04:05:32 2022 - INFO  - End to restore the test environment.

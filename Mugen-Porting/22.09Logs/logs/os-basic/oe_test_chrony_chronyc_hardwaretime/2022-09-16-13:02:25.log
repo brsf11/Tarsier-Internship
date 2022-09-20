@@ -1,0 +1,13 @@
+Fri Sep 16 13:02:28 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 16 13:03:15 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 13:03:15 2022 - INFO  - Start to run test.
+     Active: active (running) since Fri 2022-09-16 13:03:14 CST; 1s ago
+Local address   : 10.0.2.15 (0A00020F)
+Local address   : 10.0.2.15 (0A00020F)
+Local address   : 10.0.2.15 (0A00020F)
+Local address   : 10.0.2.15 (0A00020F)
+Name/IP Address            NP  NR  Span  Frequency  Freq Skew  Offset  Std Dev
+Fri Sep 16 13:04:26 2022 - INFO  - End to run test.
+Fri Sep 16 13:04:26 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 13:04:27 2022 - INFO  - Start to restore the test environment.
+Fri Sep 16 13:04:42 2022 - INFO  - End to restore the test environment.

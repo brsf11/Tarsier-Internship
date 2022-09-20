@@ -1,0 +1,44 @@
+Mon Sep 12 20:20:37 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 20:21:30 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 20:21:30 2022 - INFO  - Start testing...
+Job for radvd.service failed because the control process exited with error code.
+See "systemctl status radvd.service" and "journalctl -xeu radvd.service" for details.
+Mon Sep 12 20:21:31 2022 - ERROR - radvd.service restart failed
+Mon Sep 12 20:21:32 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 20:21:39 2022 - ERROR - radvd.service restart failed
+Mon Sep 12 20:21:39 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 20:21:46 2022 - ERROR - radvd.service stop failed
+Mon Sep 12 20:21:47 2022 - ERROR - ../common/common_lib.sh line 42
+Job for radvd.service failed because the control process exited with error code.
+See "systemctl status radvd.service" and "journalctl -xeu radvd.service" for details.
+Mon Sep 12 20:21:48 2022 - ERROR - radvd.service start failed
+Mon Sep 12 20:21:48 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 20:21:55 2022 - ERROR - radvd.service start failed
+Mon Sep 12 20:21:56 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/radvd.service
+Removed /etc/systemd/system/multi-user.target.wants/radvd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/radvd.service’: No such file or directory
+Sep 12 20:21:31 openEuler-riscv64 radvd[536]: /etc/radvd.conf:20 error: syntax error
+Sep 12 20:21:31 openEuler-riscv64 radvd[536]: exiting, failed to read config file
+Sep 12 20:21:31 openEuler-riscv64 systemd[1]: radvd.service: Control process exited, code=exited, status=1/FAILURE
+Sep 12 20:21:31 openEuler-riscv64 systemd[1]: radvd.service: Failed with result 'exit-code'.
+Sep 12 20:21:31 openEuler-riscv64 systemd[1]: Failed to start Router advertisement daemon for IPv6.
+Sep 12 20:21:47 openEuler-riscv64 radvd[552]: /etc/radvd.conf:20 error: syntax error
+Sep 12 20:21:47 openEuler-riscv64 radvd[552]: exiting, failed to read config file
+Sep 12 20:21:47 openEuler-riscv64 systemd[1]: radvd.service: Control process exited, code=exited, status=1/FAILURE
+Sep 12 20:21:47 openEuler-riscv64 systemd[1]: radvd.service: Failed with result 'exit-code'.
+Sep 12 20:21:47 openEuler-riscv64 systemd[1]: Failed to start Router advertisement daemon for IPv6.
+Mon Sep 12 20:22:06 2022 - ERROR - There is an error message for the log of radvd.service
+Mon Sep 12 20:22:07 2022 - ERROR - ../common/common_lib.sh line 28
+Job for radvd.service failed because the control process exited with error code.
+See "systemctl status radvd.service" and "journalctl -xeu radvd.service" for details.
+radvd.service is not active, cannot reload.
+Mon Sep 12 20:22:12 2022 - ERROR - radvd.service reload failed
+Mon Sep 12 20:22:13 2022 - ERROR - oe_test_service_radvd.sh line 51
+Mon Sep 12 20:22:14 2022 - ERROR - radvd.service reload causes the service status to change
+Mon Sep 12 20:22:14 2022 - ERROR - oe_test_service_radvd.sh line 53
+Mon Sep 12 20:22:15 2022 - INFO  - Finish test!
+Mon Sep 12 20:22:16 2022 - ERROR - failed to execute the case.
+Mon Sep 12 20:22:16 2022 - INFO  - start environment cleanup.
+radvd.service is not active, cannot reload.
+Mon Sep 12 20:22:47 2022 - INFO  - Finish environment cleanup!

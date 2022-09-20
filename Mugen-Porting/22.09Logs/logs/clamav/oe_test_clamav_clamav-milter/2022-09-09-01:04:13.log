@@ -1,0 +1,23 @@
+Fri Sep  9 01:04:16 2022 - INFO  - Start to prepare the database config.
+Fri Sep  9 01:12:20 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 01:12:21 2022 - INFO  - Start to run test.
+     Active: active (running) since Fri 2022-09-09 01:12:22 CST; 246ms ago
+     Active: inactive (dead)
+clamav-milter 0.103.6
+
+                       Clam AntiVirus: Milter Mail Scanner 0.103.6
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2022 Cisco Systems, Inc.
+
+    clamav-milter [-c <config-file>]
+
+
+    --help                   -h       Show this help
+    --version                -V       Show version
+    --config-file <file>     -c       Read configuration from file
+
+WARNING: No clamd server appears to be available
+Fri Sep  9 01:12:28 2022 - INFO  - End to run test.
+Fri Sep  9 01:12:28 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 01:12:29 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 01:12:57 2022 - INFO  - End to restore the test environment.

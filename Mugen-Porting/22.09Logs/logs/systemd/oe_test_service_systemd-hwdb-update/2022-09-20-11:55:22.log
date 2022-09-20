@@ -1,0 +1,13 @@
+Tue Sep 20 11:55:24 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 11:55:25 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 11:55:25 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-20 11:55:31 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 11:55:37 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-20 11:55:48 CST; 5s ago
+Tue Sep 20 11:55:55 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-hwdb-update.service: Job type reload is not applicable for unit systemd-hwdb-update.service.
+     Active: active (exited) since Tue 2022-09-20 11:55:48 CST; 7s ago
+Tue Sep 20 11:55:56 2022 - INFO  - Finish test!
+Tue Sep 20 11:55:56 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:55:57 2022 - INFO  - Start environment cleanup.
+Tue Sep 20 11:55:57 2022 - INFO  - Finish environment cleanup!

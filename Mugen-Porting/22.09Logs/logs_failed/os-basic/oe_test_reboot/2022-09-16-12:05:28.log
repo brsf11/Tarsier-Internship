@@ -1,0 +1,625 @@
+Fri Sep 16 12:05:31 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 16 12:06:17 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:06:18 2022 - INFO  - Start to run test.
+===========loop 0==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:18 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:19 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:20 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:23 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 1==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:23 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:24 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:25 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:28 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 2==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:29 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:29 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:30 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:33 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 3==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:33 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:34 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:35 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:38 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 4==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:38 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:39 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:40 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:43 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 5==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:43 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:44 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:45 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 6==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:48 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:50 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:52 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 7==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:53 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:54 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:55 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:06:58 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 8==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:06:58 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:06:59 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:00 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:03 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 9==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:03 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:04 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:05 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:07 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 10==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:08 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:09 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:09 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:12 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 11==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:13 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:14 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:14 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:17 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 12==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:18 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:19 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:19 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:22 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 13==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:23 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:24 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:24 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:27 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 14==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:28 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:29 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:29 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:32 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 15==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:33 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:33 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:34 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:37 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 16==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:38 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:39 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:39 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:42 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 17==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:43 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:44 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:44 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 18==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:48 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:49 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:52 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 19==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:53 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:53 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:54 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:07:57 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 20==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:58 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:07:58 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:07:59 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:02 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 21==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:03 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:03 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:04 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:07 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 22==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:08 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:08 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:09 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:12 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 23==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:12 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:13 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:14 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:17 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 24==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:18 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:18 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:19 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:22 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 25==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:23 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:23 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:24 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:27 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 26==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:27 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:28 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:29 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:32 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 27==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:32 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:33 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:34 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:37 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 28==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:37 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:38 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:39 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:42 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 29==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:42 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:43 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:44 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 30==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:47 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:49 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:51 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 31==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:52 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:53 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:54 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:08:57 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 32==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:57 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:08:58 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:08:59 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:01 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 33==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:02 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:03 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:04 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:06 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 34==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:07 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:08 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:09 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:11 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 35==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:12 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:13 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:13 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:16 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 36==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:17 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:18 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:18 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:21 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 37==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:22 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:23 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:23 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:26 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 38==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:27 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:28 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:28 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:31 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 39==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:32 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:33 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:34 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:37 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 40==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:37 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:38 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:39 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:42 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 41==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:42 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:43 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:44 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 42==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:47 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:49 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:52 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 43==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:52 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:53 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:54 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:09:57 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 44==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:57 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:09:58 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:09:59 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:10:02 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 45==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:02 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:10:03 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:04 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:10:06 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 46==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:07 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:10:08 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:09 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:10:11 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 47==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:12 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:10:13 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:13 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:10:16 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 48==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:17 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:10:18 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:18 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:10:21 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 49==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:22 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:10:23 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:23 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:10:26 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 50==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:27 2022 - ERROR - Failed in remote CMD operation:1
+Fri Sep 16 12:10:28 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Fri Sep 16 12:10:28 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 126, in <module>
+    sys.exit(reboot_wait(args.node, args.waittime))
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 62, in reboot_wait
+    "ping -c 3 -w 3 " + os.environ.get("NODE" + str(node) + "_IPV4")
+TypeError: can only concatenate str (not "NoneType") to str
+Fri Sep 16 12:10:31 2022 - ERROR - oe_test_reboot.sh line 44
+Fri Sep 16 12:10:32 2022 - INFO  - End to run test.
+Fri Sep 16 12:10:32 2022 - ERROR - failed to execute the case.
+Fri Sep 16 12:10:33 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:24:05 ago on Fri 16 Sep 2022 11:42:11 AM CST.\nNo match for argument: dmidecode\nError: Unable to find a match: dmidecode'
+Fri Sep 16 12:10:36 2022 - INFO  - End to restore the test environment.

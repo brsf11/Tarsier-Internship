@@ -1,0 +1,14 @@
+Tue Sep 13 00:39:25 2022 - INFO  - Start environmental preparation.
+Tue Sep 13 00:40:05 2022 - INFO  - End of environmental preparation!
+Tue Sep 13 00:40:05 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-13 00:40:06 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-13 00:40:12 CST; 5s ago
+     Active: active (running) since Tue 2022-09-13 00:40:19 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/xinetd.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/xinetd.service → /usr/lib/systemd/system/xinetd.service.
+/etc/systemd/system/multi-user.target.wants/xinetd.service
+     Active: active (running) since Tue 2022-09-13 00:40:19 CST; 19s ago
+Tue Sep 13 00:40:38 2022 - INFO  - Finish test!
+Tue Sep 13 00:40:39 2022 - INFO  - succeed to execute the case.
+Tue Sep 13 00:40:40 2022 - INFO  - start environment cleanup.
+Tue Sep 13 00:40:58 2022 - INFO  - Finish environment cleanup!

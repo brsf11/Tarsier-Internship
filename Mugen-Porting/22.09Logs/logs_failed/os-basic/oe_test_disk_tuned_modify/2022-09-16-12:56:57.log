@@ -1,0 +1,28 @@
+Fri Sep 16 12:56:59 2022 - INFO  - Start to config the test environment.
+oe_test_disk_tuned_modify.sh: line 23: tuned-adm: command not found
+Fri Sep 16 12:57:00 2022 - INFO  - End to config the test environment.
+Fri Sep 16 12:57:01 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file tuned.service does not exist.
+mkdir: cannot create directory ‘/etc/tuned/my-profile_new’: No such file or directory
+oe_test_disk_tuned_modify.sh: line 40: /etc/tuned/my-profile_new/tuned.conf: No such file or directory
+mkdir: cannot create directory ‘/etc/tuned/modified-profile’: No such file or directory
+oe_test_disk_tuned_modify.sh: line 43: /etc/tuned/modified-profile/tuned.conf: No such file or directory
+Fri Sep 16 12:57:44 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:57:44 2022 - INFO  - Start to run test.
+oe_test_disk_tuned_modify.sh: line 49: tuned-adm: command not found
+Fri Sep 16 12:57:45 2022 - ERROR - oe_test_disk_tuned_modify.sh line 50
+oe_test_disk_tuned_modify.sh: line 51: tuned-adm: command not found
+Fri Sep 16 12:57:46 2022 - ERROR - oe_test_disk_tuned_modify.sh line 52
+oe_test_disk_tuned_modify.sh: line 53: tuned-adm: command not found
+Fri Sep 16 12:57:46 2022 - ERROR - oe_test_disk_tuned_modify.sh line 54
+Fri Sep 16 12:57:47 2022 - INFO  - End to run test.
+Fri Sep 16 12:57:48 2022 - ERROR - failed to execute the case.
+Fri Sep 16 12:57:48 2022 - INFO  - Start to restore the test environment.
+oe_test_disk_tuned_modify.sh: line 61: tuned-adm: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 1:15:31 ago on Fri 16 Sep 2022 11:42:11 AM CST.\nError: \n Problem: package tuned-2.10.0-10.oe2209.noarch requires virt-what, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides dmidecode needed by virt-what-1.21-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep 16 12:57:51 2022 - INFO  - End to restore the test environment.

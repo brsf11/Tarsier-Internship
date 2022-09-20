@@ -1,0 +1,9 @@
+Fri Sep  9 03:14:03 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 03:17:14 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 03:17:15 2022 - INFO  - Start to run test.
+.result=null
+OK (1 test)
+Fri Sep  9 03:17:34 2022 - INFO  - End to run test.
+Fri Sep  9 03:17:35 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 03:17:35 2022 - INFO  - Start to restore the test environment.
+Fri Sep  9 03:18:01 2022 - INFO  - End to restore the test environment.

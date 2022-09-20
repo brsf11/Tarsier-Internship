@@ -1,0 +1,46 @@
+Fri Sep  9 07:20:27 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:21:11 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:21:11 2022 - INFO  - Start to run test.
+oe_test_lxc_device_copy.sh: line 30: lxc-create: command not found
+Fri Sep  9 07:21:12 2022 - ERROR - Failed to set up container.
+Fri Sep  9 07:21:13 2022 - ERROR - oe_test_lxc_device_copy.sh line 31
+Fri Sep  9 07:21:14 2022 - ERROR - Check lxc-copy --help failed.
+Fri Sep  9 07:21:14 2022 - ERROR - oe_test_lxc_device_copy.sh line 33
+Fri Sep  9 07:21:15 2022 - ERROR - Check lxc-copy --usage failed.
+Fri Sep  9 07:21:16 2022 - ERROR - oe_test_lxc_device_copy.sh line 35
+oe_test_lxc_device_copy.sh: line 36: lxc-copy: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:21:17 2022 - ERROR - Check lxc-copy --version failed.
+Fri Sep  9 07:21:17 2022 - ERROR - oe_test_lxc_device_copy.sh line 37
+oe_test_lxc_device_copy.sh: line 38: lxc-copy: command not found
+Fri Sep  9 07:21:18 2022 - ERROR - Check lxc-copy -s failed.
+Fri Sep  9 07:21:19 2022 - ERROR - oe_test_lxc_device_copy.sh line 39
+oe_test_lxc_device_copy.sh: line 40: lxc-ls: command not found
+Fri Sep  9 07:21:19 2022 - ERROR - Check lxc-ls failed.
+Fri Sep  9 07:21:20 2022 - ERROR - oe_test_lxc_device_copy.sh line 41
+oe_test_lxc_device_copy.sh: line 42: lxc-start: command not found
+Fri Sep  9 07:21:21 2022 - ERROR - Failed to start container.
+Fri Sep  9 07:21:21 2022 - ERROR - oe_test_lxc_device_copy.sh line 43
+Fri Sep  9 07:21:22 2022 - ERROR - Check lxc-device --help failed.
+Fri Sep  9 07:21:23 2022 - ERROR - oe_test_lxc_device_copy.sh line 45
+Fri Sep  9 07:21:24 2022 - ERROR - Check lxc-device --usage failed.
+Fri Sep  9 07:21:24 2022 - ERROR - oe_test_lxc_device_copy.sh line 47
+oe_test_lxc_device_copy.sh: line 48: lxc-device: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Fri Sep  9 07:21:25 2022 - ERROR - Check lxc-device --version failed.
+Fri Sep  9 07:21:26 2022 - ERROR - oe_test_lxc_device_copy.sh line 49
+Fri Sep  9 07:21:26 2022 - INFO  - End to run test.
+Fri Sep  9 07:21:27 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:21:28 2022 - INFO  - Start to restore the tet environment.
+oe_test_lxc_device_copy.sh: line 55: lxc-stop: command not found
+oe_test_lxc_device_copy.sh: line 56: lxc-destroy: command not found
+oe_test_lxc_device_copy.sh: line 57: lxc-destroy: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:09:18 ago on Fri 09 Sep 2022 07:11:50 AM CST.\nPackage tar-2:1.34-1.oe2209.riscv64 is already installed.\nError: \n Problem: package lxcfs-tools-0.3-26.oe2209.riscv64 requires iSulad, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides clibcni >= 2.0.7 needed by iSulad-2.0.15-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:21:31 2022 - INFO  - End to restore the tet environment.

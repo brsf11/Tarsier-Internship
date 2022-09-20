@@ -1,0 +1,36 @@
+Fri Sep  9 02:43:11 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:43:51 2022 - INFO  - Finish preparing the test environment.
+Fri Sep  9 02:43:52 2022 - INFO  - Start to run test.
+package tree is not installed
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:43:56 2022 - ERROR - oe_test_dnf_nobest_nodocs_nogpgcheck.sh line 34
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No match for argument: tree
+No packages marked for removal.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:44:04 2022 - ERROR - oe_test_dnf_nobest_nodocs_nogpgcheck.sh line 37
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+No match for argument: tree
+No packages marked for removal.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Warning: failed loading '/etc/yum.repos.d/openEuler.repo', skipping.
+Error: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".
+Fri Sep  9 02:44:23 2022 - ERROR - oe_test_dnf_nobest_nodocs_nogpgcheck.sh line 42
+package tree is not installed
+Fri Sep  9 02:44:24 2022 - INFO  - End of the test.
+Fri Sep  9 02:44:25 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:44:25 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Warning: failed loading \'/etc/yum.repos.d/openEuler.repo\', skipping.\nError: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".'
+Fri Sep  9 02:44:28 2022 - INFO  - End of restore the test environment.

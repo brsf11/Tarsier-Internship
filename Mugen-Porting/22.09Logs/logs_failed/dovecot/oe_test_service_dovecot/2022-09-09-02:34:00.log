@@ -1,0 +1,44 @@
+Fri Sep  9 02:34:02 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 02:34:27 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:34:28 2022 - INFO  - Start testing...
+Failed to restart dovecot.service: Unit dovecot.service not found.
+Fri Sep  9 02:34:29 2022 - ERROR - dovecot.service restart failed
+Fri Sep  9 02:34:29 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dovecot.service could not be found.
+Fri Sep  9 02:34:36 2022 - ERROR - dovecot.service restart failed
+Fri Sep  9 02:34:37 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dovecot.service: Unit dovecot.service not loaded.
+Fri Sep  9 02:34:37 2022 - ERROR - dovecot.service stop failed
+Fri Sep  9 02:34:38 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dovecot.service could not be found.
+Fri Sep  9 02:34:45 2022 - ERROR - dovecot.service stop failed
+Fri Sep  9 02:34:45 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dovecot.service: Unit dovecot.service not found.
+Fri Sep  9 02:34:46 2022 - ERROR - dovecot.service start failed
+Fri Sep  9 02:34:47 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dovecot.service could not be found.
+Fri Sep  9 02:34:54 2022 - ERROR - dovecot.service start failed
+Fri Sep  9 02:34:54 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dovecot.service: No such file or directory
+Fri Sep  9 02:34:55 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dovecot.service: Unit dovecot.service not found.
+sed: can't read /usr/lib/systemd/system/dovecot.service: No such file or directory
+Failed to reload dovecot.service: Unit dovecot.service not found.
+Fri Sep  9 02:35:00 2022 - ERROR - dovecot.service reload failed
+Fri Sep  9 02:35:01 2022 - ERROR - oe_test_service_dovecot.sh line 35
+Unit dovecot.service could not be found.
+Fri Sep  9 02:35:02 2022 - ERROR - dovecot.service reload causes the service status to change
+Fri Sep  9 02:35:03 2022 - ERROR - oe_test_service_dovecot.sh line 37
+Fri Sep  9 02:35:03 2022 - INFO  - Finish test!
+Fri Sep  9 02:35:04 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:35:05 2022 - INFO  - start environment cleanup.
+sed: can't read /usr/lib/systemd/system/dovecot.service: No such file or directory
+Failed to reload dovecot.service: Unit dovecot.service not found.
+Failed to stop dovecot.service: Unit dovecot.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:57 ago on Fri 09 Sep 2022 02:33:29 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 02:35:12 2022 - INFO  - Finish environment cleanup!

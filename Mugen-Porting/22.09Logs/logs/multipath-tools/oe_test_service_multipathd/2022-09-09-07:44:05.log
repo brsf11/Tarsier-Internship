@@ -1,0 +1,51 @@
+Fri Sep  9 07:44:08 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 07:44:54 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:44:54 2022 - INFO  - Start testing...
+Job for multipathd.service failed because the control process exited with error code.
+See "systemctl status multipathd.service" and "journalctl -xeu multipathd.service" for details.
+Fri Sep  9 07:44:56 2022 - ERROR - multipathd.service restart failed
+Fri Sep  9 07:44:56 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Sep  9 07:45:03 2022 - ERROR - multipathd.service restart failed
+Fri Sep  9 07:45:04 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Sep  9 07:45:11 2022 - ERROR - multipathd.service stop failed
+Fri Sep  9 07:45:11 2022 - ERROR - ../common/common_lib.sh line 42
+Job for multipathd.service failed because the control process exited with error code.
+See "systemctl status multipathd.service" and "journalctl -xeu multipathd.service" for details.
+Fri Sep  9 07:45:13 2022 - ERROR - multipathd.service start failed
+Fri Sep  9 07:45:13 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Sep  9 07:45:20 2022 - ERROR - multipathd.service start failed
+Fri Sep  9 07:45:21 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/sysinit.target.wants/multipathd.service
+/etc/systemd/system/sockets.target.wants/multipathd.socket
+Removed /etc/systemd/system/sockets.target.wants/multipathd.socket.
+Removed /etc/systemd/system/sysinit.target.wants/multipathd.service.
+find: ‘/etc/systemd/system/sysinit.target.wants/multipathd.service’: No such file or directory
+find: ‘/etc/systemd/system/sockets.target.wants/multipathd.socket’: No such file or directory
+Sep 09 07:44:55 openEuler-riscv64 multipathd[2867]: /dev/mapper/control: open failed: No such device
+Sep 09 07:44:55 openEuler-riscv64 multipathd[2867]: Failure to communicate with kernel device-mapper driver.
+Sep 09 07:44:55 openEuler-riscv64 multipathd[2867]: /dev/mapper/control: open failed: No such device
+Sep 09 07:44:55 openEuler-riscv64 multipathd[2867]: Failure to communicate with kernel device-mapper driver.
+Sep 09 07:44:55 openEuler-riscv64 systemd[1]: multipathd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 07:44:55 openEuler-riscv64 systemd[1]: multipathd.service: Failed with result 'exit-code'.
+Sep 09 07:44:55 openEuler-riscv64 systemd[1]: Failed to start Device-Mapper Multipath Device Controller.
+Sep 09 07:45:12 openEuler-riscv64 multipathd[2892]: /dev/mapper/control: open failed: No such device
+Sep 09 07:45:12 openEuler-riscv64 multipathd[2892]: Failure to communicate with kernel device-mapper driver.
+Sep 09 07:45:12 openEuler-riscv64 multipathd[2892]: /dev/mapper/control: open failed: No such device
+Sep 09 07:45:12 openEuler-riscv64 multipathd[2892]: Failure to communicate with kernel device-mapper driver.
+Sep 09 07:45:12 openEuler-riscv64 systemd[1]: multipathd.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 07:45:12 openEuler-riscv64 systemd[1]: multipathd.service: Failed with result 'exit-code'.
+Sep 09 07:45:12 openEuler-riscv64 systemd[1]: Failed to start Device-Mapper Multipath Device Controller.
+Fri Sep  9 07:45:31 2022 - ERROR - There is an error message for the log of multipathd.service
+Fri Sep  9 07:45:31 2022 - ERROR - oe_test_service_multipathd.sh line 47
+Job for multipathd.service failed because the control process exited with error code.
+See "systemctl status multipathd.service" and "journalctl -xeu multipathd.service" for details.
+multipathd.service is not active, cannot reload.
+Fri Sep  9 07:45:37 2022 - ERROR - multipathd.service reload failed
+Fri Sep  9 07:45:38 2022 - ERROR - oe_test_service_multipathd.sh line 52
+Fri Sep  9 07:45:39 2022 - ERROR - multipathd.service reload causes the service status to change
+Fri Sep  9 07:45:39 2022 - ERROR - oe_test_service_multipathd.sh line 54
+Fri Sep  9 07:45:40 2022 - INFO  - Finish test!
+Fri Sep  9 07:45:41 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:45:41 2022 - INFO  - start environment cleanup.
+multipathd.service is not active, cannot reload.
+Fri Sep  9 07:46:02 2022 - INFO  - Finish environment cleanup!

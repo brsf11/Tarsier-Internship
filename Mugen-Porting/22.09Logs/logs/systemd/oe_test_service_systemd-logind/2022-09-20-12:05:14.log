@@ -1,0 +1,10 @@
+Tue Sep 20 12:05:16 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-20 12:05:17 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-20 12:05:23 CST; 5s ago
+     Active: active (running) since Tue 2022-09-20 12:05:30 CST; 5s ago
+Tue Sep 20 12:05:37 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-logind.service: Job type reload is not applicable for unit systemd-logind.service.
+     Active: active (running) since Tue 2022-09-20 12:05:30 CST; 7s ago
+Tue Sep 20 12:05:38 2022 - INFO  - Finish test!
+Tue Sep 20 12:05:38 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 12:05:39 2022 - INFO  - oe_test_service_systemd-logind.sh post_test

@@ -1,0 +1,13 @@
+Tue Sep 20 12:31:17 2022 - INFO  - Start testing...
+Tue Sep 20 12:31:17 2022 - ERROR - Check cryptsetup-pre.target failed
+Tue Sep 20 12:31:18 2022 - ERROR - oe_test_target_cryptsetup-pre.sh line 25
+Failed to stop cryptsetup-pre.target: Unit cryptsetup-pre.target not loaded.
+Tue Sep 20 12:31:19 2022 - ERROR - cryptsetup-pre.target stop failed
+Tue Sep 20 12:31:19 2022 - ERROR - oe_test_target_cryptsetup-pre.sh line 27
+Tue Sep 20 12:31:20 2022 - ERROR - Check cryptsetup-pre.target failed
+Tue Sep 20 12:31:21 2022 - ERROR - oe_test_target_cryptsetup-pre.sh line 29
+Failed to get unit file state for cryptsetup-pre.target: No such file or directory
+Tue Sep 20 12:31:21 2022 - INFO  - Unit is indirect, ignoring.
+Tue Sep 20 12:31:22 2022 - INFO  - Finish test!
+Tue Sep 20 12:31:23 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:31:23 2022 - INFO  - oe_test_target_cryptsetup-pre.sh post_test

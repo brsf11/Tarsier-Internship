@@ -1,0 +1,18 @@
+Fri Sep  9 07:22:10 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 07:22:51 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:22:52 2022 - INFO  - Start testing...
+Fri Sep  9 07:22:59 2022 - ERROR - mcstransd.service restart failed
+Fri Sep  9 07:22:59 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+Fri Sep  9 07:23:12 2022 - ERROR - mcstransd.service start failed
+Fri Sep  9 07:23:13 2022 - ERROR - ../common/common_lib.sh line 47
+Fri Sep  9 07:23:14 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload mcstransd.service: Job type reload is not applicable for unit mcstrans.service.
+     Active: inactive (dead)
+Sep 09 07:22:52 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Sep 09 07:23:06 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Sep 09 07:23:14 openEuler-riscv64 systemd[1]: Condition check resulted in Translates SELinux MCS/MLS labels to human readable form being skipped.
+Fri Sep  9 07:23:16 2022 - INFO  - Finish test!
+Fri Sep  9 07:23:17 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:23:17 2022 - INFO  - start environment cleanup.
+Fri Sep  9 07:23:35 2022 - INFO  - Finish environment cleanup!

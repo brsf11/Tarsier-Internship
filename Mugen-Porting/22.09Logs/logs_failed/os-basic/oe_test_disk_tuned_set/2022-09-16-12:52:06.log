@@ -1,0 +1,32 @@
+Fri Sep 16 12:52:08 2022 - INFO  - Start to config the test environment.
+Fri Sep 16 12:52:15 2022 - INFO  - Start to config the test environment.
+Fri Sep 16 12:52:16 2022 - INFO  - Start to prepare the test environment.
+Failed to enable unit: Unit file tuned.service does not exist.
+mkdir: cannot create directory ‘/etc/tuned/my-profile_new’: No such file or directory
+oe_test_disk_tuned_set.sh: line 43: /etc/tuned/my-profile_new/tuned.conf: No such file or directory
+oe_test_disk_tuned_set.sh: line 44: tuned-adm: command not found
+mkdir: cannot create directory ‘/etc/tuned/my-profile’: No such file or directory
+Unknown device "/dev/": Inappropriate ioctl for device
+oe_test_disk_tuned_set.sh: line 51: /etc/tuned/my-profile/tuned.conf: No such file or directory
+Fri Sep 16 12:53:03 2022 - INFO  - End to prepare the test environment.
+Fri Sep 16 12:53:03 2022 - INFO  - Start to run test.
+oe_test_disk_tuned_set.sh: line 57: tuned-adm: command not found
+Fri Sep 16 12:53:04 2022 - ERROR - oe_test_disk_tuned_set.sh line 58
+oe_test_disk_tuned_set.sh: line 59: tuned-adm: command not found
+Fri Sep 16 12:53:05 2022 - ERROR - oe_test_disk_tuned_set.sh line 60
+oe_test_disk_tuned_set.sh: line 61: tuned-adm: command not found
+Fri Sep 16 12:53:05 2022 - ERROR - oe_test_disk_tuned_set.sh line 62
+awk: fatal: cannot open file `/sys/block//queue/scheduler' for reading: No such file or directory
+Fri Sep 16 12:53:06 2022 - ERROR - oe_test_disk_tuned_set.sh line 64
+oe_test_disk_tuned_set.sh: line 65: tuned-adm: command not found
+Fri Sep 16 12:53:07 2022 - ERROR - oe_test_disk_tuned_set.sh line 66
+Fri Sep 16 12:53:07 2022 - INFO  - End to run test.
+Fri Sep 16 12:53:08 2022 - ERROR - failed to execute the case.
+Fri Sep 16 12:53:09 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 1:10:50 ago on Fri 16 Sep 2022 11:42:11 AM CST.\nNo match for argument: dmidecode\nError: Unable to find a match: dmidecode'
+Fri Sep 16 12:53:11 2022 - INFO  - End to restore the test environment.

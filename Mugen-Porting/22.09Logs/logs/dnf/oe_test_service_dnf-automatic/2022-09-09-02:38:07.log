@@ -1,0 +1,17 @@
+Fri Sep  9 02:38:10 2022 - INFO  - Start environmental preparation.
+Failed to start dnf-automatic.service: Unit dnf-automatic.service not found.
+Fri Sep  9 02:38:29 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:38:30 2022 - INFO  - Start testing...
+Unit dnf-automatic.service could not be found.
+Failed to get unit file state for dnf-automatic.service: No such file or directory
+Fri Sep  9 02:38:30 2022 - INFO  - Unit is indirect, ignoring.
+Fri Sep  9 02:38:31 2022 - INFO  - Finish test!
+Fri Sep  9 02:38:32 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 02:38:33 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Warning: failed loading \'/etc/yum.repos.d/openEuler.repo\', skipping.\nError: There are no enabled repositories in "/etc/yum.repos.d", "/etc/yum/repos.d", "/etc/distro.repos.d".'
+Fri Sep  9 02:38:36 2022 - INFO  - End to restore the test environment.

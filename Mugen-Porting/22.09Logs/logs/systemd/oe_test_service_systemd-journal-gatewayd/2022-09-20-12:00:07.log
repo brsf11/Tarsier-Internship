@@ -1,0 +1,39 @@
+Tue Sep 20 12:00:09 2022 - INFO  - Start environmental preparation.
+Tue Sep 20 12:01:05 2022 - INFO  - End of environmental preparation!
+Tue Sep 20 12:01:06 2022 - INFO  - Start testing...
+Failed to restart systemd-journal-gatewayd.service: Unit systemd-journal-gatewayd.service not found.
+Tue Sep 20 12:01:06 2022 - ERROR - systemd-journal-gatewayd.service restart failed
+Tue Sep 20 12:01:07 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-journal-gatewayd.service could not be found.
+Tue Sep 20 12:01:13 2022 - ERROR - systemd-journal-gatewayd.service restart failed
+Tue Sep 20 12:01:14 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-journal-gatewayd.service: Unit systemd-journal-gatewayd.service not loaded.
+Tue Sep 20 12:01:15 2022 - ERROR - systemd-journal-gatewayd.service stop failed
+Tue Sep 20 12:01:15 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-journal-gatewayd.service could not be found.
+Tue Sep 20 12:01:22 2022 - ERROR - systemd-journal-gatewayd.service stop failed
+Tue Sep 20 12:01:22 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-journal-gatewayd.service: Unit systemd-journal-gatewayd.service not found.
+Tue Sep 20 12:01:23 2022 - ERROR - systemd-journal-gatewayd.service start failed
+Tue Sep 20 12:01:24 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-journal-gatewayd.service could not be found.
+Tue Sep 20 12:01:30 2022 - ERROR - systemd-journal-gatewayd.service start failed
+Tue Sep 20 12:01:31 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-journal-gatewayd.service: No such file or directory
+Tue Sep 20 12:01:31 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-journal-gatewayd.service: Unit systemd-journal-gatewayd.service not found.
+Tue Sep 20 12:01:32 2022 - ERROR - Job type reload is not applicable for unit systemd-journal-gatewayd.service
+Tue Sep 20 12:01:33 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-journal-gatewayd.service could not be found.
+Unit systemd-journal-gatewayd.service could not be found.
+Tue Sep 20 12:01:34 2022 - INFO  - Finish test!
+Tue Sep 20 12:01:34 2022 - ERROR - failed to execute the case.
+Tue Sep 20 12:01:35 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-journal-gatewayd.service: Unit systemd-journal-gatewayd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:23:13 ago on Tue 20 Sep 2022 11:37:51 AM CST.\nNo match for argument: systemd-journal-remote\nError: Unable to find a match: systemd-journal-remote'
+Tue Sep 20 12:01:38 2022 - INFO  - Finish environment cleanup!

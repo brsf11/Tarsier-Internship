@@ -1,0 +1,23 @@
+Thu Sep 15 18:10:16 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 18:15:21 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 18:15:22 2022 - INFO  - Start to run test.
+Thu Sep 15 18:40:14 2022 - ERROR - Timeout : Command 'bash oe_test_editcap_02.sh' timed out after 1799.999494392 seconds
+Capturing on 'eth0'
+File: testfile6
+
+Packets: 2 
+Packets: 3 
+Packets: 5 
+Packets: 6 
+Packets: 7 
+Packets: 9 
+Packets: 10 
+Packets: 12 
+Packets: 13 
+Packets: 15 
+Packets: 16 
+Packets: 18 
+Packets: 20 
+Packets captured: 20
+Packets received/dropped on interface 'eth0': 20/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Thu Sep 15 18:40:17 2022 - INFO  - Start to restore the test environment.

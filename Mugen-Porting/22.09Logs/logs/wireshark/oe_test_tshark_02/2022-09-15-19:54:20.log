@@ -1,0 +1,56 @@
+Thu Sep 15 19:54:23 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 19:54:30 2022 - INFO  - pkgs:(wireshark) is already installed
+Thu Sep 15 19:54:31 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 19:54:32 2022 - INFO  - Start to run test.
+oe_test_tshark_02.sh: line 28: tshark: command not found
+oe_test_tshark_02.sh: line 30: capinfos: command not found
+Thu Sep 15 19:54:38 2022 - ERROR - oe_test_tshark_02.sh line 31
+oe_test_tshark_02.sh: line 33: capinfos: command not found
+Thu Sep 15 19:54:45 2022 - ERROR - oe_test_tshark_02.sh line 34
+Thu Sep 15 19:54:52 2022 - ERROR - oe_test_tshark_02.sh line 36
+oe_test_tshark_02.sh: line 37: capinfos: command not found
+Thu Sep 15 19:54:53 2022 - ERROR - oe_test_tshark_02.sh line 38
+spawn tshark -i -b duration:6 -w tsfile10
+couldn't execute "tshark": no such file or directory
+    while executing
+"spawn tshark -i  -b duration:6 -w tsfile10"
+oe_test_tshark_02.sh: line 43: capinfos: command not found
+Thu Sep 15 19:54:54 2022 - ERROR - oe_test_tshark_02.sh line 44
+spawn tshark -i -b interval:1 -w tsfile11
+couldn't execute "tshark": no such file or directory
+    while executing
+"spawn tshark -i  -b interval:1 -w tsfile11"
+oe_test_tshark_02.sh: line 49: capinfos: command not found
+Thu Sep 15 19:54:54 2022 - ERROR - oe_test_tshark_02.sh line 50
+spawn tshark -i -b filesize:2 -w tsfile12
+couldn't execute "tshark": no such file or directory
+    while executing
+"spawn tshark -i  -b filesize:2 -w tsfile12"
+oe_test_tshark_02.sh: line 55: capinfos: command not found
+Thu Sep 15 19:54:55 2022 - ERROR - oe_test_tshark_02.sh line 56
+spawn tshark -i -b files:2 -b filesize:1 -w tsfile13
+couldn't execute "tshark": no such file or directory
+    while executing
+"spawn tshark -i  -b files:2 -b filesize:1 -w tsfile13"
+oe_test_tshark_02.sh: line 62: capinfos: command not found
+Thu Sep 15 19:54:56 2022 - ERROR - oe_test_tshark_02.sh line 63
+Thu Sep 15 19:54:57 2022 - ERROR - oe_test_tshark_02.sh line 64
+oe_test_tshark_02.sh: line 66: capinfos: command not found
+Thu Sep 15 19:55:04 2022 - ERROR - oe_test_tshark_02.sh line 67
+oe_test_tshark_02.sh: line 68: tshark: command not found
+Thu Sep 15 19:55:04 2022 - ERROR - oe_test_tshark_02.sh line 69
+oe_test_tshark_02.sh: line 71: capinfos: command not found
+Thu Sep 15 19:55:11 2022 - ERROR - oe_test_tshark_02.sh line 72
+oe_test_tshark_02.sh: line 75: capinfos: command not found
+Thu Sep 15 19:55:24 2022 - ERROR - oe_test_tshark_02.sh line 76
+oe_test_tshark_02.sh: line 78: capinfos: command not found
+Thu Sep 15 19:55:31 2022 - ERROR - oe_test_tshark_02.sh line 79
+oe_test_tshark_02.sh: line 81: capinfos: command not found
+Thu Sep 15 19:55:37 2022 - ERROR - oe_test_tshark_02.sh line 82
+oe_test_tshark_02.sh: line 83: captype: command not found
+Thu Sep 15 19:55:38 2022 - ERROR - oe_test_tshark_02.sh line 84
+Thu Sep 15 19:55:39 2022 - INFO  - End of the test.
+Thu Sep 15 19:55:39 2022 - ERROR - failed to execute the case.
+Thu Sep 15 19:55:40 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 19:55:41 2022 - WARN  - no thing to do.
+Thu Sep 15 19:55:41 2022 - INFO  - Finish restoring the test environment.

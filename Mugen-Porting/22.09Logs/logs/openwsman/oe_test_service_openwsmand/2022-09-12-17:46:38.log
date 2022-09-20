@@ -1,0 +1,46 @@
+Mon Sep 12 17:46:40 2022 - INFO  - Start environmental preparation.
+spawn /etc/openwsman/owsmangencert.sh --force
+
+creating selfsigned certificate
+replace it with one signed by a certification authority (CA)
+
+enter your ServerName at the Common Name prompt
+
+Generating a RSA private key
+....................+++++
+.....+++++
+writing new private key to '/etc/openwsman/serverkey.pem'
+-----
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Country Name (2 letter code) [GB]:CN
+State or Province Name (full name) [Some-State]:jiangsu
+Locality Name (eg, city) []:nanjing
+Organization Name (eg, company; recommended) []:company
+Organizational Unit Name (eg, section) []:section
+server name (eg. ssl.domain.tld; required!!!) []:ssl.oe.tld
+Email Address []:test@test.com
+Cannot write random bytes:
+274556867616:error:2407007A:random number generator:RAND_write_file:Not a regular file:crypto/rand/randfile.c:183:Filename=/dev/random
+expect: spawn id exp3 not open
+    while executing
+"expect eof"
+Mon Sep 12 17:48:14 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:48:15 2022 - INFO  - Start testing...
+     Active: active (running) since Mon 2022-09-12 17:48:15 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Mon 2022-09-12 17:48:28 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/openwsmand.service
+Removed /etc/systemd/system/multi-user.target.wants/openwsmand.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/openwsmand.service’: No such file or directory
+Failed to reload openwsmand.service: Job type reload is not applicable for unit openwsmand.service.
+     Active: active (running) since Mon 2022-09-12 17:48:28 CST; 15s ago
+Mon Sep 12 17:48:44 2022 - INFO  - Finish test!
+Mon Sep 12 17:48:44 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 17:48:45 2022 - INFO  - start environment cleanup.
+Mon Sep 12 17:49:04 2022 - INFO  - Finish environment cleanup!

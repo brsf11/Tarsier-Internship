@@ -1,0 +1,20 @@
+Fri Sep  9 07:32:54 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 07:33:58 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:33:59 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-09 07:33:59 CST; 6s ago
+Fri Sep  9 07:34:12 2022 - ERROR - mrtg.service stop failed
+Fri Sep  9 07:34:12 2022 - ERROR - ../common/common_lib.sh line 42
+     Active: active (running) since Fri 2022-09-09 07:34:13 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/mrtg.service
+Removed /etc/systemd/system/multi-user.target.wants/mrtg.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/mrtg.service’: No such file or directory
+Sep 09 07:34:05 openEuler-riscv64 systemd[1]: mrtg.service: Main process exited, code=exited, status=1/FAILURE
+Sep 09 07:34:05 openEuler-riscv64 systemd[1]: mrtg.service: Failed with result 'exit-code'.
+Fri Sep  9 07:34:28 2022 - ERROR - There is an error message for the log of mrtg.service
+Fri Sep  9 07:34:29 2022 - ERROR - oe_test_service_mrtg.sh line 39
+Failed to reload mrtg.service: Job type reload is not applicable for unit mrtg.service.
+     Active: active (running) since Fri 2022-09-09 07:34:13 CST; 16s ago
+Fri Sep  9 07:34:30 2022 - INFO  - Finish test!
+Fri Sep  9 07:34:31 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:34:32 2022 - INFO  - start environment cleanup.
+Fri Sep  9 07:34:50 2022 - INFO  - Finish environment cleanup!

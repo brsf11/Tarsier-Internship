@@ -1,0 +1,15 @@
+Tue Sep 20 11:46:42 2022 - INFO  - Start testing...
+Tue Sep 20 11:46:49 2022 - ERROR - kmod-static-nodes.service restart failed
+Tue Sep 20 11:46:49 2022 - ERROR - ../common/common_lib.sh line 37
+     Active: inactive (dead)
+Tue Sep 20 11:47:02 2022 - ERROR - kmod-static-nodes.service start failed
+Tue Sep 20 11:47:02 2022 - ERROR - ../common/common_lib.sh line 47
+Tue Sep 20 11:47:03 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload kmod-static-nodes.service: Job type reload is not applicable for unit kmod-static-nodes.service.
+     Active: inactive (dead)
+Sep 20 11:46:42 openEuler-riscv64 systemd[1]: Condition check resulted in Create List of Static Device Nodes being skipped.
+Sep 20 11:46:55 openEuler-riscv64 systemd[1]: Condition check resulted in Create List of Static Device Nodes being skipped.
+Sep 20 11:47:03 openEuler-riscv64 systemd[1]: Condition check resulted in Create List of Static Device Nodes being skipped.
+Tue Sep 20 11:47:04 2022 - INFO  - Finish test!
+Tue Sep 20 11:47:05 2022 - ERROR - failed to execute the case.
+Tue Sep 20 11:47:06 2022 - INFO  - oe_test_service_kmod-static-nodes.sh post_test

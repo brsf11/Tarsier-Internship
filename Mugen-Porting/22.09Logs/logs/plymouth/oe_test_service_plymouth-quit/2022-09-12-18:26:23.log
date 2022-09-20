@@ -1,0 +1,39 @@
+Mon Sep 12 18:26:25 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 18:27:08 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 18:27:08 2022 - INFO  - Start testing...
+Failed to restart plymouth-quit.service: Unit plymouth-quit.service not found.
+Mon Sep 12 18:27:09 2022 - ERROR - plymouth-quit.service restart failed
+Mon Sep 12 18:27:10 2022 - ERROR - ../common/common_lib.sh line 34
+Unit plymouth-quit.service could not be found.
+Mon Sep 12 18:27:16 2022 - ERROR - plymouth-quit.service restart failed
+Mon Sep 12 18:27:17 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop plymouth-quit.service: Unit plymouth-quit.service not loaded.
+Mon Sep 12 18:27:18 2022 - ERROR - plymouth-quit.service stop failed
+Mon Sep 12 18:27:19 2022 - ERROR - ../common/common_lib.sh line 39
+Unit plymouth-quit.service could not be found.
+Mon Sep 12 18:27:25 2022 - ERROR - plymouth-quit.service stop failed
+Mon Sep 12 18:27:26 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start plymouth-quit.service: Unit plymouth-quit.service not found.
+Mon Sep 12 18:27:27 2022 - ERROR - plymouth-quit.service start failed
+Mon Sep 12 18:27:27 2022 - ERROR - ../common/common_lib.sh line 44
+Unit plymouth-quit.service could not be found.
+Mon Sep 12 18:27:34 2022 - ERROR - plymouth-quit.service start failed
+Mon Sep 12 18:27:35 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for plymouth-quit.service: No such file or directory
+Mon Sep 12 18:27:35 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start plymouth-quit.service: Unit plymouth-quit.service not found.
+Mon Sep 12 18:27:36 2022 - ERROR - Job type reload is not applicable for unit plymouth-quit.service
+Mon Sep 12 18:27:37 2022 - ERROR - ../common/common_lib.sh line 91
+Unit plymouth-quit.service could not be found.
+Unit plymouth-quit.service could not be found.
+Mon Sep 12 18:27:38 2022 - INFO  - Finish test!
+Mon Sep 12 18:27:39 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:27:39 2022 - INFO  - start environment cleanup.
+Failed to stop plymouth-quit.service: Unit plymouth-quit.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:05:01 ago on Mon 12 Sep 2022 06:22:05 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides system-logos needed by plymouth-0.9.5-4.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Mon Sep 12 18:27:42 2022 - INFO  - Finish environment cleanup!

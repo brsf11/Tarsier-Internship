@@ -1,0 +1,14 @@
+Mon Sep 12 22:53:05 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+.quitSQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> .quit/root/GitRepo/mugen-riscv/testcases/cli-test/sqlite/oe_test_sqlite_command_01
+spawn sqlite3 ./test.db
+.exitSQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> .exit/root/GitRepo/mugen-riscv/testcases/cli-test/sqlite/oe_test_sqlite_command_01
+Mon Sep 12 22:53:29 2022 - INFO  - End to run test.
+Mon Sep 12 22:53:30 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 22:53:31 2022 - INFO  - Start to restore the test environment.
+rm: cannot remove './test.db': No such file or directory
+Mon Sep 12 22:53:31 2022 - INFO  - End to restore the test environment.

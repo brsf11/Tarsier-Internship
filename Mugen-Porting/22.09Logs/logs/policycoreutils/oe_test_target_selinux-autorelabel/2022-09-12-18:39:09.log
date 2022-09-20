@@ -1,0 +1,5 @@
+Mon Sep 12 18:39:11 2022 - INFO  - Start to run test.
+oe_test_target_selinux-autorelabel.sh: line 24: test_oneshot: command not found
+Mon Sep 12 18:39:12 2022 - INFO  - End of the test.
+Mon Sep 12 18:39:13 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 18:39:13 2022 - INFO  - oe_test_target_selinux-autorelabel.sh post_test

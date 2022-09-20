@@ -1,0 +1,28 @@
+Mon Sep 12 17:50:03 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 17:50:41 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:50:42 2022 - INFO  - Start testing...
+oe_test_service_ovn-northd.sh: line 37: service: command not found
+Mon Sep 12 17:50:42 2022 - ERROR - ovn-northd.service restart failed
+Mon Sep 12 17:50:43 2022 - ERROR - oe_test_service_ovn-northd.sh line 38
+oe_test_service_ovn-northd.sh: line 39: service: command not found
+Mon Sep 12 17:50:44 2022 - ERROR - ovn-northd.service stop failed
+Mon Sep 12 17:50:44 2022 - ERROR - oe_test_service_ovn-northd.sh line 40
+oe_test_service_ovn-northd.sh: line 42: service: command not found
+Mon Sep 12 17:50:56 2022 - ERROR - ovn-northd.service start failed
+Mon Sep 12 17:50:56 2022 - ERROR - oe_test_service_ovn-northd.sh line 43
+oe_test_service_ovn-northd.sh: line 44: service: command not found
+Mon Sep 12 17:50:57 2022 - ERROR - ovn-northd.service start failed
+Mon Sep 12 17:50:58 2022 - ERROR - oe_test_service_ovn-northd.sh line 45
+Mon Sep 12 17:50:59 2022 - ERROR - ovn-northd.service reload failed
+Mon Sep 12 17:50:59 2022 - ERROR - oe_test_service_ovn-northd.sh line 49
+Mon Sep 12 17:51:00 2022 - INFO  - Finish test!
+Mon Sep 12 17:51:01 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:51:01 2022 - INFO  - start environment cleanup.
+oe_test_service_ovn-northd.sh: line 55: service: command not found
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:12:19 ago on Mon 12 Sep 2022 05:38:20 PM CST.\nNo match for argument: openvswitch-ovn-central\nError: Unable to find a match: openvswitch-ovn-central'
+Mon Sep 12 17:51:04 2022 - INFO  - Finish environment cleanup!

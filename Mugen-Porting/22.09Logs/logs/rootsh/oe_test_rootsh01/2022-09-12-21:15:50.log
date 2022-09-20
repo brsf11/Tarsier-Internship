@@ -1,0 +1,142 @@
+Mon Sep 12 21:15:52 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 21:16:55 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 21:16:56 2022 - INFO  - Start to run test.
+Usage: rootsh [OPTION [ARG]] ...
+rootsh version 1.5.3
+spawn rootsh -i
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:16:59 PM CST 2022
+
+System load: 	[0;33;40m1.10[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+logout
+Welcome to 5.10.0
+spawn rootsh -u testUser
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:17:02 PM CST 2022
+
+System load: 	[0;33;40m1.17[0m
+Processes: 	100
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+To run a command as administrator(user "root"),use "sudo <command>".
+[testUser@openEuler-riscv64 rootsh]$ exit
+exit
+Welcome to 5.10.0
+spawn rootsh -u zhangsan
+user zhangsan does not exist
+spawn rootsh -f log_test
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:17:05 PM CST 2022
+
+System load: 	[0;33;40m1.17[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+exit
+Welcome to 5.10.0
+spawn rootsh -d /root/my_log
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:17:08 PM CST 2022
+
+System load: 	[0;33;40m1.16[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+exit
+Welcome to 5.10.0
+spawn rootsh -d /root/others_log
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:17:11 PM CST 2022
+
+System load: 	[0;33;40m1.14[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# Mon Sep 12 21:17:21 2022 - ERROR - Failed option: -d
+Mon Sep 12 21:17:22 2022 - ERROR - oe_test_rootsh01.sh line 133
+spawn rootsh --no-logfile
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:17:23 PM CST 2022
+
+System load: 	[0;33;40m1.20[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+exit
+Welcome to 5.10.0
+spawn rootsh --no-syslog
+
+
+Welcome to 5.10.0
+
+System information as of time: 	Mon Sep 12 09:17:26 PM CST 2022
+
+System load: 	[0;33;40m1.35[0m
+Processes: 	99
+Memory used: 	1.5%
+Swap used: 	0.0%
+Usage On: 	7%
+IP address: 	10.0.2.15
+Users online: 	0
+
+
+[root@openEuler-riscv64 rootsh]# exit
+exit
+Welcome to 5.10.0
+Mon Sep 12 21:17:28 2022 - INFO  - End to run test.
+Mon Sep 12 21:17:29 2022 - ERROR - failed to execute the case.
+Mon Sep 12 21:17:30 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 21:17:51 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,3 @@
+oe_test_rpmdevtools_rpmargs
+oe_test_rpmdevtools_rpmdev-vercmp
+oe_test_rpmdevtools_rpmdev-wipetree

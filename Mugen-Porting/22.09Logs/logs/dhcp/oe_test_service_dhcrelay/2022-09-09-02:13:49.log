@@ -1,0 +1,41 @@
+Fri Sep  9 02:13:51 2022 - INFO  - Start environmental preparation.
+cp: cannot stat '/lib/systemd/system/dhcrelay.service': No such file or directory
+Cannot find device ""
+sed: can't read /etc/systemd/system/dhcrelay.service: No such file or directory
+Fri Sep  9 02:13:52 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 02:13:53 2022 - INFO  - Start testing...
+Failed to restart dhcrelay.service: Unit dhcrelay.service not found.
+Fri Sep  9 02:13:54 2022 - ERROR - dhcrelay.service restart failed
+Fri Sep  9 02:13:54 2022 - ERROR - ../common/common_lib.sh line 34
+Unit dhcrelay.service could not be found.
+Fri Sep  9 02:14:01 2022 - ERROR - dhcrelay.service restart failed
+Fri Sep  9 02:14:02 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop dhcrelay.service: Unit dhcrelay.service not loaded.
+Fri Sep  9 02:14:02 2022 - ERROR - dhcrelay.service stop failed
+Fri Sep  9 02:14:03 2022 - ERROR - ../common/common_lib.sh line 39
+Unit dhcrelay.service could not be found.
+Fri Sep  9 02:14:10 2022 - ERROR - dhcrelay.service stop failed
+Fri Sep  9 02:14:10 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start dhcrelay.service: Unit dhcrelay.service not found.
+Fri Sep  9 02:14:11 2022 - ERROR - dhcrelay.service start failed
+Fri Sep  9 02:14:12 2022 - ERROR - ../common/common_lib.sh line 44
+Unit dhcrelay.service could not be found.
+Fri Sep  9 02:14:18 2022 - ERROR - dhcrelay.service start failed
+Fri Sep  9 02:14:19 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for dhcrelay.service: No such file or directory
+Fri Sep  9 02:14:20 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start dhcrelay.service: Unit dhcrelay.service not found.
+Fri Sep  9 02:14:21 2022 - ERROR - Job type reload is not applicable for unit dhcrelay.service
+Fri Sep  9 02:14:21 2022 - ERROR - ../common/common_lib.sh line 91
+Unit dhcrelay.service could not be found.
+Unit dhcrelay.service could not be found.
+Fri Sep  9 02:14:22 2022 - INFO  - Finish test!
+Fri Sep  9 02:14:23 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:14:24 2022 - INFO  - start environment cleanup.
+Failed to stop dhcrelay.service: Unit dhcrelay.service not loaded.
+Warning: Executing wildcard deletion to stay compatible with old scripts.
+         Explicitly specify the prefix length (192.168.0.1/32) to avoid this warning.
+         This special behaviour is likely to disappear in further releases,
+         fix your scripts!
+Cannot find device ""
+Fri Sep  9 02:14:24 2022 - INFO  - Finish environment cleanup!

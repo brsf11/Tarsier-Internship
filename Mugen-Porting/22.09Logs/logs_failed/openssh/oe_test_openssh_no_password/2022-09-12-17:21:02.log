@@ -1,0 +1,49 @@
+Mon Sep 12 17:21:05 2022 - INFO  - Start environmental preparation.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:21:05 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:21:06 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:21:07 2022 - INFO  - Start to run test.
+spawn ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa
+Your public key has been saved in /root/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:kknUBW3Sl6JrxI0Gg1FVfPX7NeGufCazsMh9EQNLGZE root@openEuler-riscv64
+The key's randomart image is:
++---[RSA 3072]----+
+|    .+oooBoo=o.  |
+|    ..o o *E+  . |
+|      .+ *.+o  ..|
+|     . o* .. o. o|
+|      +oS.    o+.|
+|       .o    .. +|
+|       .   .  ...|
+|        . o ++.o |
+|         o o.+*  |
++----[SHA256]-----+
+Mon Sep 12 17:21:12 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /root/.ssh/id_rsa.pub @:/root/.ssh/authorized_keys
+ssh: Could not resolve hostname : Name or service not known
+lost connection
+Mon Sep 12 17:21:13 2022 - ERROR - Failed in remote SCP operation: 1
+Mon Sep 12 17:21:13 2022 - ERROR - oe_test_openssh_no_password.sh line 52
+spawn ssh @
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+expect: spawn id exp4 not open
+    while executing
+"expect eof"
+Mon Sep 12 17:21:14 2022 - ERROR - oe_test_openssh_no_password.sh line 64
+Mon Sep 12 17:21:15 2022 - ERROR - oe_test_openssh_no_password.sh line 66
+Mon Sep 12 17:21:16 2022 - INFO  - End to run test.
+Mon Sep 12 17:21:16 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:21:17 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 17:21:18 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 17:21:18 2022 - INFO  - End to restore the test environment.

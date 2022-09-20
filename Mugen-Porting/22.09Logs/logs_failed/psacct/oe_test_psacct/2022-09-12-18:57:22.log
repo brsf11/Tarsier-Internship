@@ -1,0 +1,172 @@
+Mon Sep 12 18:57:25 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 18:58:16 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:58:17 2022 - INFO  - Start to run test.
+     Active: inactive (dead)
+○ psacct.service - Process accounting
+     Loaded: loaded (/usr/lib/systemd/system/psacct.service; disabled; vendor preset: disabled)
+     Active: inactive (dead)
+Job for psacct.service failed because the control process exited with error code.
+See "systemctl status psacct.service" and "journalctl -xeu psacct.service" for details.
+Mon Sep 12 18:58:18 2022 - ERROR - log message: Failed to run command: systemctl start psacct.service
+Mon Sep 12 18:58:19 2022 - ERROR - oe_test_psacct.sh line 37
+ac: GNU Accounting Utilities (release 6.6.4)
+	total        1.57
+	total        1.57
+	total        1.57
+	total        1.57
+	total        1.57
+	total        1.57
+	total        1.57
+	total        1.57
+Aug 24	total        0.19
+Sep  2	total        1.37
+Today	total        0.02
+Aug 24 2022	total        0.19
+Sep  2 2022	total        1.37
+Today		total        0.02
+Aug 24	total        0.00
+Aug 24	total        0.19
+Sep  2	total        1.37
+Today	total        0.02
+	root                                 1.57
+	total        1.57
+	total        1.57
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.10.0                                                                                                                                                                                                                                                          |Wed Aug 24 13:52:56 2022
+/var/log/wtmp:1: problem: time warp (Thu Jan  1 08:00:00 1970 -> Wed Aug 24 13:52:56 2022)
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   53|5.10.0                                                                                                                                                                                                                                                          |Wed Aug 24 13:53:09 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/hvc0                       |5|hvc0|  341|                                                                                                                                                                                                                                                                |Wed Aug 24 13:53:09 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/ttyS0                      |5|tyS0|  342|                                                                                                                                                                                                                                                                |Wed Aug 24 13:53:09 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/tty1                       |5|tty1|  339|                                                                                                                                                                                                                                                                |Wed Aug 24 13:53:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  342|                                                                                                                                                                                                                                                                |Wed Aug 24 13:53:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  339|                                                                                                                                                                                                                                                                |Wed Aug 24 13:53:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |hvc0                            |6|hvc0|  341|                                                                                                                                                                                                                                                                |Wed Aug 24 13:53:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |pts/0                           |7|ts/0|  385|10.0.2.2                                                                                                                                                                                                                                                        |Wed Aug 24 13:55:38 2022
+**	pts/0                            root                             Wed Aug 24 13:55:38 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |pts/0                           |8|    |  385|                                                                                                                                                                                                                                                                |Wed Aug 24 14:06:47 2022
+					                            0.19 root                             (logout)
+---------------------------------------------------------------------------
+CURRENT REC: root                            |pts/0                           |7|ts/0| 1220|10.0.2.2                                                                                                                                                                                                                                                        |Wed Aug 24 14:07:04 2022
+**	pts/0                            root                             Wed Aug 24 14:07:04 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.10.0                                                                                                                                                                                                                                                          |Wed Aug 24 14:07:11 2022
+					                            0.00 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC:                                 |pts/0                           |8|    | 1220|                                                                                                                                                                                                                                                                |Wed Aug 24 14:07:12 2022
+/var/log/wtmp:13: problem: missing login record for `pts/0'
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.10.0                                                                                                                                                                                                                                                          |Fri Sep  2 11:44:59 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   53|5.10.0                                                                                                                                                                                                                                                          |Fri Sep  2 11:45:09 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/hvc0                       |5|hvc0|  318|                                                                                                                                                                                                                                                                |Fri Sep  2 11:45:09 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/ttyS0                      |5|tyS0|  320|                                                                                                                                                                                                                                                                |Fri Sep  2 11:45:09 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/tty1                       |5|tty1|  316|                                                                                                                                                                                                                                                                |Fri Sep  2 11:45:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  316|                                                                                                                                                                                                                                                                |Fri Sep  2 11:45:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |hvc0                            |6|hvc0|  318|                                                                                                                                                                                                                                                                |Fri Sep  2 11:45:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  320|                                                                                                                                                                                                                                                                |Fri Sep  2 11:45:09 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |pts/0                           |7|ts/0|  350|10.0.2.2                                                                                                                                                                                                                                                        |Fri Sep  2 11:45:34 2022
+**	pts/0                            root                             Fri Sep  2 11:45:34 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.10.0                                                                                                                                                                                                                                                          |Fri Sep  2 13:07:36 2022
+					                            1.37 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC:                                 |pts/0                           |8|    |  350|                                                                                                                                                                                                                                                                |Fri Sep  2 13:07:37 2022
+/var/log/wtmp:24: problem: missing login record for `pts/0'
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.10.0                                                                                                                                                                                                                                                          |Mon Sep 12 16:20:54 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   53|5.10.0                                                                                                                                                                                                                                                          |Mon Sep 12 16:21:03 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/tty1                       |5|tty1|  316|                                                                                                                                                                                                                                                                |Mon Sep 12 16:21:03 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/ttyS0                      |5|tyS0|  318|                                                                                                                                                                                                                                                                |Mon Sep 12 16:21:03 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/hvc0                       |5|hvc0|  317|                                                                                                                                                                                                                                                                |Mon Sep 12 16:21:03 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  316|                                                                                                                                                                                                                                                                |Mon Sep 12 16:21:03 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |hvc0                            |6|hvc0|  317|                                                                                                                                                                                                                                                                |Mon Sep 12 16:21:03 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  318|                                                                                                                                                                                                                                                                |Mon Sep 12 16:21:03 2022
+---------------------------------------------------------------------------
+CURRENT REC: root                            |pts/0                           |7|ts/0|  352|10.0.2.2                                                                                                                                                                                                                                                        |Mon Sep 12 16:22:50 2022
+**	pts/0                            root                             Mon Sep 12 16:22:50 2022
+---------------------------------------------------------------------------
+CURRENT REC: shutdown                        |~                               |1|~~  |    0|5.10.0                                                                                                                                                                                                                                                          |Mon Sep 12 16:24:02 2022
+					                            0.02 root                             (shutdown)
+---------------------------------------------------------------------------
+CURRENT REC:                                 |pts/0                           |8|    |  352|                                                                                                                                                                                                                                                                |Mon Sep 12 16:24:03 2022
+/var/log/wtmp:35: problem: missing login record for `pts/0'
+---------------------------------------------------------------------------
+CURRENT REC: reboot                          |~                               |2|~~  |    0|5.10.0                                                                                                                                                                                                                                                          |Mon Sep 12 18:57:05 2022
+---------------------------------------------------------------------------
+CURRENT REC: runlevel                        |~                               |1|~~  |   53|5.10.0                                                                                                                                                                                                                                                          |Mon Sep 12 18:57:15 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/hvc0                       |5|hvc0|  274|                                                                                                                                                                                                                                                                |Mon Sep 12 18:57:15 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/tty1                       |5|tty1|  273|                                                                                                                                                                                                                                                                |Mon Sep 12 18:57:15 2022
+---------------------------------------------------------------------------
+CURRENT REC:                                 |/dev/ttyS0                      |5|tyS0|  276|                                                                                                                                                                                                                                                                |Mon Sep 12 18:57:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |tty1                            |6|tty1|  273|                                                                                                                                                                                                                                                                |Mon Sep 12 18:57:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |ttyS0                           |6|tyS0|  276|                                                                                                                                                                                                                                                                |Mon Sep 12 18:57:15 2022
+---------------------------------------------------------------------------
+CURRENT REC: LOGIN                           |hvc0                            |6|hvc0|  274|                                                                                                                                                                                                                                                                |Mon Sep 12 18:57:15 2022
+	total        1.57
+sa: GNU Accounting Utilities (release 6.6.4)
+Mon Sep 12 18:58:20 2022 - ERROR - log message: Failed to run command: sa /var/account/pacct
+Mon Sep 12 18:58:21 2022 - ERROR - oe_test_psacct.sh line 71
+Mon Sep 12 18:58:22 2022 - ERROR - log message: Failed to run command: sa
+Mon Sep 12 18:58:22 2022 - ERROR - oe_test_psacct.sh line 73
+Mon Sep 12 18:58:23 2022 - ERROR - log message: Failed to run command: sa -u
+Mon Sep 12 18:58:24 2022 - ERROR - oe_test_psacct.sh line 75
+Mon Sep 12 18:58:24 2022 - ERROR - log message: Failed to run command: sa -m
+Mon Sep 12 18:58:25 2022 - ERROR - oe_test_psacct.sh line 77
+Mon Sep 12 18:58:26 2022 - ERROR - log message: Failed to run command: sa -c
+Mon Sep 12 18:58:26 2022 - ERROR - oe_test_psacct.sh line 79
+hzval -> 100
+getpagesize() -> 4096
+system_page_size == 4.00
+             ----------------------------------------------------------------------
+             acct entries
+             ----------------------------------------------------------------------
+             accton: GNU Accounting Utilities (release 6.6.4)
+accton: Function not implemented
+Turning on process accounting, file set to '/var/account/pacct'.
+Mon Sep 12 18:58:27 2022 - ERROR - log message: Failed to run command: accton /var/account/pacct
+Mon Sep 12 18:58:28 2022 - ERROR - oe_test_psacct.sh line 85
+accton: Function not implemented
+Turning on process accounting, file set to the default '/var/account/pacct'.
+Mon Sep 12 18:58:28 2022 - ERROR - log message: Failed to run command: accton on
+Mon Sep 12 18:58:29 2022 - ERROR - oe_test_psacct.sh line 87
+lastcomm: GNU Accounting Utilities (release 6.6.4)
+accton: Function not implemented
+Turning off process accounting.
+Mon Sep 12 18:58:30 2022 - ERROR - log message: Failed to run command: accton off
+Mon Sep 12 18:58:30 2022 - ERROR - oe_test_psacct.sh line 97
+Job for psacct.service failed because the control process exited with error code.
+See "systemctl status psacct.service" and "journalctl -xeu psacct.service" for details.
+Mon Sep 12 18:58:31 2022 - ERROR - log message: Failed to run command: systemctl restart psacct.service
+Mon Sep 12 18:58:32 2022 - ERROR - oe_test_psacct.sh line 99
+Mon Sep 12 18:58:33 2022 - INFO  - End to run test.
+Mon Sep 12 18:58:33 2022 - ERROR - failed to execute the case.
+Mon Sep 12 18:58:34 2022 - INFO  - Start to restore the test environment.
+oe_test_psacct.sh: line 108: [: -eq: unary operator expected
+Mon Sep 12 18:58:56 2022 - INFO  - End to restore the test environment.

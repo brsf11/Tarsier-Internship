@@ -1,0 +1,15 @@
+Fri Sep 16 14:51:48 2022 - INFO  - Start to run test.
+Connection 'team0' (60976493-bc27-4c23-879e-ca3961a42313) successfully added.
+Fri Sep 16 14:51:54 2022 - ERROR - oe_test_nmcli_set_team.sh line 53
+Connection 'team0-port1' (836afae4-af90-4274-a2d8-aa6748c76c72) successfully added.
+Connection 'team0-port2' (0daed9bc-a14c-4692-9b8c-85dea6ff96e4) successfully added.
+Error: Connection activation failed: team0 failed to create resources: Failed to create team master interface 'team0' for 'team0': Operation not supported
+Fri Sep 16 14:51:55 2022 - ERROR - oe_test_nmcli_set_team.sh line 59
+Device "team0" does not exist
+Fri Sep 16 14:51:56 2022 - ERROR - oe_test_nmcli_set_team.sh line 61
+Connection 'team0-port1' (836afae4-af90-4274-a2d8-aa6748c76c72) successfully deleted.
+Connection 'team0-port2' (0daed9bc-a14c-4692-9b8c-85dea6ff96e4) successfully deleted.
+Connection 'team0' (60976493-bc27-4c23-879e-ca3961a42313) successfully deleted.
+Fri Sep 16 14:51:57 2022 - INFO  - End to run test.
+Fri Sep 16 14:51:58 2022 - ERROR - failed to execute the case.
+Fri Sep 16 14:51:58 2022 - INFO  - oe_test_nmcli_set_team.sh post_test

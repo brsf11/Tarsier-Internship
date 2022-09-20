@@ -1,0 +1,51 @@
+Mon Sep 12 17:02:44 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+umount: /mnt/windows: not mounted.
+Mon Sep 12 17:03:47 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:03:48 2022 - INFO  - Start to run test.
+Usage: ntfscluster [options] device
+ntfscluster v2022.5.17 (libntfs-3g) - Find the owner of any given sector or cluster.
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:03:48 2022 - ERROR - Check ntfscluster --info failed.
+Mon Sep 12 17:03:49 2022 - ERROR - oe_test_ntfs-3g_ntfscluster.sh line 39
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:03:50 2022 - ERROR - Check ntfscluster --cluster failed.
+Mon Sep 12 17:03:51 2022 - ERROR - oe_test_ntfs-3g_ntfscluster.sh line 41
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:03:51 2022 - ERROR - Check ntfscluster --sector failed.
+Mon Sep 12 17:03:52 2022 - ERROR - oe_test_ntfs-3g_ntfscluster.sh line 43
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:03:53 2022 - ERROR - Check ntfscluster --inode failed.
+Mon Sep 12 17:03:53 2022 - ERROR - oe_test_ntfs-3g_ntfscluster.sh line 45
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:03:54 2022 - ERROR - Check ntfscluster --filename failed.
+Mon Sep 12 17:03:55 2022 - ERROR - oe_test_ntfs-3g_ntfscluster.sh line 47
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:03:55 2022 - ERROR - Check ntfscluster --quiet failed.
+Mon Sep 12 17:03:56 2022 - ERROR - oe_test_ntfs-3g_ntfscluster.sh line 49
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:03:57 2022 - ERROR - Check ntfscluster --verbose failed.
+Mon Sep 12 17:03:57 2022 - ERROR - oe_test_ntfs-3g_ntfscluster.sh line 51
+Mon Sep 12 17:03:58 2022 - INFO  - End of the test.
+Mon Sep 12 17:03:59 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:03:59 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:04:21 2022 - INFO  - Finish restoring the test environment.

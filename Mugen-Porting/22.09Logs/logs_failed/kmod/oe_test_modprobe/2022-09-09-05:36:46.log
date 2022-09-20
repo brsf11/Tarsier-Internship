@@ -1,0 +1,31 @@
+Fri Sep  9 05:36:49 2022 - INFO  - Start to run test.
+Usage:
+	modprobe [options] [-i] [-b] modulename
+	modprobe [options] -a [-i] [-b] modulename [modulename...]
+	modprobe [options] -r [-i] modulename
+	modprobe [options] -r -a [-i] modulename [modulename...]
+	modprobe [options] -c
+	modprobe [options] --dump-modversions filename
+kmod version 29
+modprobe: FATAL: Module dm_log not found in directory /lib/modules/5.10.0
+Fri Sep  9 05:37:09 2022 - ERROR - oe_test_modprobe.sh line 37
+modprobe: FATAL: Module dm_log not found in directory /lib/modules/5.10.0
+Fri Sep  9 05:37:10 2022 - ERROR - oe_test_modprobe.sh line 39
+modprobe: FATAL: Module dm_cache not found in directory /lib/modules/5.10.0
+Fri Sep  9 05:37:11 2022 - ERROR - oe_test_modprobe.sh line 41
+Fri Sep  9 05:37:11 2022 - ERROR - oe_test_modprobe.sh line 43
+Fri Sep  9 05:37:12 2022 - ERROR - oe_test_modprobe.sh line 45
+modprobe: FATAL: Module dm_cache not found in directory /lib/modules/5.10.0
+Fri Sep  9 05:37:13 2022 - ERROR - oe_test_modprobe.sh line 47
+Fri Sep  9 05:37:13 2022 - ERROR - oe_test_modprobe.sh line 49
+modprobe: FATAL: Module dm_log not found in directory /lib/modules/5.10.0
+Fri Sep  9 05:37:14 2022 - ERROR - oe_test_modprobe.sh line 53
+Fri Sep  9 05:37:15 2022 - ERROR - oe_test_modprobe.sh line 55
+Fri Sep  9 05:37:16 2022 - ERROR - oe_test_modprobe.sh line 57
+modprobe: ERROR: missing parameters. See -h.
+Fri Sep  9 05:37:16 2022 - ERROR - oe_test_modprobe.sh line 60
+modprobe: ERROR: missing parameters. See -h.
+Fri Sep  9 05:37:17 2022 - ERROR - oe_test_modprobe.sh line 62
+Fri Sep  9 05:37:18 2022 - INFO  - End of the test.
+Fri Sep  9 05:37:19 2022 - ERROR - failed to execute the case.
+Fri Sep  9 05:37:19 2022 - INFO  - oe_test_modprobe.sh post_test

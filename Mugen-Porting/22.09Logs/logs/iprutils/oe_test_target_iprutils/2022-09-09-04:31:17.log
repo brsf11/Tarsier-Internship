@@ -1,0 +1,28 @@
+Fri Sep  9 04:31:20 2022 - INFO  - Start to run test.
+Failed to restart iprutils.target: Unit iprutils.target not found.
+Fri Sep  9 04:31:21 2022 - ERROR - iprutils.target restart failed
+Fri Sep  9 04:31:21 2022 - ERROR - ../common/common_lib.sh line 34
+Unit iprutils.target could not be found.
+Fri Sep  9 04:31:28 2022 - ERROR - iprutils.target restart failed
+Fri Sep  9 04:31:28 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop iprutils.target: Unit iprutils.target not loaded.
+Fri Sep  9 04:31:29 2022 - ERROR - iprutils.target stop failed
+Fri Sep  9 04:31:30 2022 - ERROR - ../common/common_lib.sh line 39
+Unit iprutils.target could not be found.
+Fri Sep  9 04:31:36 2022 - ERROR - iprutils.target stop failed
+Fri Sep  9 04:31:37 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start iprutils.target: Unit iprutils.target not found.
+Fri Sep  9 04:31:38 2022 - ERROR - iprutils.target start failed
+Fri Sep  9 04:31:39 2022 - ERROR - ../common/common_lib.sh line 44
+Unit iprutils.target could not be found.
+Fri Sep  9 04:31:45 2022 - ERROR - iprutils.target start failed
+Fri Sep  9 04:31:46 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for iprutils.target: No such file or directory
+Fri Sep  9 04:31:46 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start iprutils.target: Unit iprutils.target not found.
+Fri Sep  9 04:31:47 2022 - ERROR - oe_test_target_iprutils.sh line 27
+Unit iprutils.target could not be found.
+Fri Sep  9 04:31:48 2022 - ERROR - oe_test_target_iprutils.sh line 29
+Fri Sep  9 04:31:49 2022 - INFO  - End of the test.
+Fri Sep  9 04:31:49 2022 - ERROR - failed to execute the case.
+Fri Sep  9 04:31:50 2022 - INFO  - oe_test_target_iprutils.sh post_test

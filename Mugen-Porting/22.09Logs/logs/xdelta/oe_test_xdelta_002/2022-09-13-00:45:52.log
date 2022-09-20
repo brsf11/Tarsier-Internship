@@ -1,0 +1,15 @@
+Tue Sep 13 00:45:55 2022 - INFO  - Start to prepare the test environment!
+Tue Sep 13 00:46:33 2022 - INFO  - End to prepare the test environment!
+Tue Sep 13 00:46:34 2022 - INFO  - Start to run test.
+d6c3c400050206696e7075742f041107000701000a5f02576161626263630a08
+aabbcc
+d6c3c400050206696e7075742f041107000701000a5f02576161626263630a08
+d6c3c400050206696e7075742f041107000701000a5f02576161626263630a08
+xdelta3: finished in 17 ms; input 7 output 32 bytes (457.14%)
+usage: xdelta3 [command/options] [input [output]]
+xdelta3: finished in 17 ms; input 7 output 32 bytes (457.14%)
+Xdelta version 3.1.0, Copyright (C) Joshua MacDonald
+Tue Sep 13 00:46:35 2022 - INFO  - End to run test.
+Tue Sep 13 00:46:36 2022 - INFO  - succeed to execute the case.
+Tue Sep 13 00:46:36 2022 - INFO  - start environment cleanup.
+Tue Sep 13 00:46:46 2022 - INFO  - Finish environment cleanup!

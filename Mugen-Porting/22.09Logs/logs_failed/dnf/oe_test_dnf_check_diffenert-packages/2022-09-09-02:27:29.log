@@ -1,0 +1,45 @@
+Fri Sep  9 02:27:31 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 02:27:32 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 02:27:33 2022 - INFO  - Start to run test.
+Last metadata expiration check: 0:02:09 ago on Fri 09 Sep 2022 02:25:28 AM CST.
+Fri Sep  9 02:27:39 2022 - ERROR - oe_test_dnf_check_diffenert-packages.sh line 30
+Complete!
+package vim-enhanced is not installed
+tree-1.8.0-2.oe2209.riscv64
+Fri Sep  9 02:28:13 2022 - INFO  - End of the test.
+Fri Sep  9 02:28:14 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:28:14 2022 - INFO  - Start restore the test environment.
+Last metadata expiration check: 0:02:47 ago on Fri 09 Sep 2022 02:25:28 AM CST.
+Dependencies resolved.
+================================================================================
+ Package              Architecture  Version                Repository      Size
+================================================================================
+Installing:
+ vim-enhanced         riscv64       2:8.2-39.oe2209        mainline       1.3 M
+Installing dependencies:
+ gpm-libs             riscv64       1.20.7-25.oe2209       mainline        18 k
+ vim-common           riscv64       2:8.2-39.oe2209        mainline       6.8 M
+ vim-filesystem       noarch        2:8.2-39.oe2209        mainline        14 k
+
+Transaction Summary
+================================================================================
+Install  4 Packages
+
+Total download size: 8.2 M
+Installed size: 33 M
+Downloading Packages:
+(1/4): gpm-libs-1.20.7-25.oe2209.riscv64.rpm     29 kB/s |  18 kB     00:00    
+(2/4): vim-filesystem-8.2-39.oe2209.noarch.rpm  105 kB/s |  14 kB     00:00    
+(3/4): vim-enhanced-8.2-39.oe2209.riscv64.rpm   316 kB/s | 1.3 MB     00:04    
+(4/4): vim-common-8.2-39.oe2209.riscv64.rpm     543 kB/s | 6.8 MB     00:12    
+--------------------------------------------------------------------------------
+Total                                           644 kB/s | 8.2 MB     00:12     
+Running transaction check
+Waiting for process with pid 1325 to finish.
+Transaction check succeeded.
+Running transaction test
+Fri Sep  9 02:28:32 2022 - INFO  - End of restore the test environment.
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Installing       : vim-filesystem-2:8.2-39.oe2209.noarch                  1/4

@@ -1,0 +1,106 @@
+Thu Sep 15 17:30:25 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 17:30:42 2022 - INFO  - pkgs:(wireshark) is already installed
+Thu Sep 15 17:30:43 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 17:30:43 2022 - INFO  - Start to run test.
+Capturing on 'eth0'
+File: testfile6
+
+Packets: 2 
+Packets captured: 2
+Packets received/dropped on interface 'eth0': 2/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Number of packets:   2
+Capturing on 'eth0'
+File: testfile7
+
+Packets captured: 0
+Packets received/dropped on interface 'eth0': 0/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (0.0%)
+Capture duration:    n/a
+Capturing on 'eth0'
+File: testfile8
+
+Packets: 1 
+Packets: 3 
+Packets: 5 
+Packets: 7 
+Packets captured: 7
+Packets received/dropped on interface 'eth0': 7/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+File size:           1,120 bytes
+Thu Sep 15 18:00:23 2022 - ERROR - Timeout : Command 'bash oe_test_dumpcap_02.sh' timed out after 1799.9994912929997 seconds
+Capturing on 'eth0'
+File: testfile9_00001_20220915174629
+
+Packets: 2 
+Packets: 3 
+Packets: 6 File: testfile9_00002_20220915175646
+
+Packets: 8 
+Packets: 10 
+Packets: 12 
+Packets captured: 12
+Packets received/dropped on interface 'eth0': 12/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Thu Sep 15 18:00:26 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 18:00:26 2022 - WARN  - no thing to do.
+Thu Sep 15 18:00:27 2022 - INFO  - Finish restoring the test environment.
+Thu Sep 15 18:00:28 2022 - ERROR - oe_test_dumpcap_02.sh line 40
+Capturing on 'eth0'
+File: testfile10
+
+Packets: 2 
+Packets: 4 
+Packets: 5 
+Packets: 6 
+Packets: 7 
+Packets captured: 7
+Packets received/dropped on interface 'eth0': 7/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+File name:           testfile10
+spawn dumpcap -i 1 -b duration:1 -w testfile11
+Capturing on 'eth0'
+File: testfile11_00001_20220915180041
+Packets: 1 File: testfile11_00002_20220915180042
+File: testfile11_00003_20220915180043
+File: testfile11_00004_20220915180044
+File: testfile11_00005_20220915180045
+^CPackets captured: 1
+Packets received/dropped on interface 'eth0': 1/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+testfile11_00001_20220915180041
+testfile11_00002_20220915180042
+testfile11_00003_20220915180043
+testfile11_00004_20220915180044
+testfile11_00005_20220915180045
+spawn dumpcap -i 3 -b interval:1 -w testfile12
+Capturing on 'Loopback: lo'
+File: testfile12_00001_20220915180046
+File: testfile12_00002_20220915180047
+File: testfile12_00003_20220915180048
+File: testfile12_00004_20220915180049
+File: testfile12_00005_20220915180050
+File: testfile12_00006_20220915180051
+^CPackets captured: 0
+Packets received/dropped on interface 'Loopback: lo': 0/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (0.0%)
+testfile12_00001_20220915180046
+testfile12_00002_20220915180047
+testfile12_00003_20220915180048
+testfile12_00004_20220915180049
+testfile12_00005_20220915180050
+testfile12_00006_20220915180051
+spawn dumpcap -i eth0 -b filesize:2 -w testfile13
+couldn't execute "dumpcap": no such file or directory
+    while executing
+"spawn dumpcap -i  eth0 -b filesize:2 -w testfile13"
+Thu Sep 15 18:00:52 2022 - ERROR - oe_test_dumpcap_02.sh line 67
+spawn dumpcap -i eth0 -b files:2 -a filesize:1 -w testfile14
+couldn't execute "dumpcap": no such file or directory
+    while executing
+"spawn dumpcap -i  eth0 -b files:2 -a filesize:1 -w testfile14"
+Thu Sep 15 18:00:53 2022 - ERROR - oe_test_dumpcap_02.sh line 75
+oe_test_dumpcap_02.sh: line 77: captype: command not found
+Thu Sep 15 18:01:00 2022 - ERROR - oe_test_dumpcap_02.sh line 78
+oe_test_dumpcap_02.sh: line 80: captype: command not found
+Thu Sep 15 18:01:06 2022 - ERROR - oe_test_dumpcap_02.sh line 81
+oe_test_dumpcap_02.sh: line 83: capinfos: command not found
+Thu Sep 15 18:01:13 2022 - ERROR - oe_test_dumpcap_02.sh line 84
+Thu Sep 15 18:01:14 2022 - INFO  - End of the test.
+Thu Sep 15 18:01:14 2022 - ERROR - failed to execute the case.
+Thu Sep 15 18:01:15 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 18:01:16 2022 - WARN  - no thing to do.
+Thu Sep 15 18:01:16 2022 - INFO  - Finish restoring the test environment.

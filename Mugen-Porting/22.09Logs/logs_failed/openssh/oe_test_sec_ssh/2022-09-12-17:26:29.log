@@ -1,0 +1,20 @@
+Mon Sep 12 17:26:32 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Mon Sep 12 17:27:44 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:27:44 2022 - INFO  - Start executing testcase.
+PasswordAuthentication yes
+ValueError: SELinux policy is not managed or store cannot be accessed.
+Mon Sep 12 17:27:50 2022 - ERROR - oe_test_sec_ssh.sh line 33
+ValueError: SELinux policy is not managed or store cannot be accessed.
+Mon Sep 12 17:27:55 2022 - ERROR - oe_test_sec_ssh.sh line 35
+oe_test_sec_ssh.sh: line 36: firewall-cmd: command not found
+oe_test_sec_ssh.sh: line 37: firewall-cmd: command not found
+Mon Sep 12 17:27:56 2022 - ERROR - oe_test_sec_ssh.sh line 38
+oe_test_sec_ssh.sh: line 39: firewall-cmd: command not found
+Mon Sep 12 17:27:56 2022 - ERROR - oe_test_sec_ssh.sh line 40
+Mon Sep 12 17:27:57 2022 - INFO  - Finish testcase execution.
+Mon Sep 12 17:27:58 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:27:58 2022 - INFO  - start environment cleanup.
+oe_test_sec_ssh.sh: line 46: firewall-cmd: command not found
+oe_test_sec_ssh.sh: line 47: firewall-cmd: command not found
+Mon Sep 12 17:28:21 2022 - INFO  - Finish environment cleanup!

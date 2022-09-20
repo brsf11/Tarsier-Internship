@@ -1,0 +1,20 @@
+Mon Sep 12 22:20:29 2022 - INFO  - Start to prepare the test environment.
+Mon Sep 12 22:20:45 2022 - INFO  - pkgs:(net-tools) is already installed
+Failed to stop iptables.service: Unit iptables.service not loaded.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 22:20:46 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 22:20:47 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 22:20:47 2022 - INFO  - Start to run test.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:20:48 2022 - ERROR - oe_test_rsyslog_function_tcp.sh line 36
+Mon Sep 12 22:20:49 2022 - ERROR - oe_test_rsyslog_function_tcp.sh line 38
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 22:20:50 2022 - ERROR - Failed in remote CMD operation:1
+Mon Sep 12 22:20:51 2022 - ERROR - oe_test_rsyslog_function_tcp.sh line 45
+Mon Sep 12 22:21:13 2022 - ERROR - oe_test_rsyslog_function_tcp.sh line 48
+Mon Sep 12 22:21:13 2022 - INFO  - End to run test.
+Mon Sep 12 22:21:14 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:21:15 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 22:21:16 2022 - WARN  - no thing to do.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Mon Sep 12 22:21:16 2022 - ERROR - Failed in remote CMD operation:1
+Failed to start iptables.service: Unit iptables.service not found.
+Failed to restart rsyslog.service: Unit rsyslog.service not found.
+Mon Sep 12 22:21:17 2022 - INFO  - End to restore the test environment.

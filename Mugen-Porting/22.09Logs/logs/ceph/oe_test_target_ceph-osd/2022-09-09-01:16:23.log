@@ -1,0 +1,18 @@
+Fri Sep  9 01:16:26 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 01:20:57 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 01:20:58 2022 - INFO  - Start to run test.
+     Active: active since Fri 2022-09-09 01:20:58 CST; 6s ago
+     Active: inactive (dead) since Fri 2022-09-09 01:21:04 CST; 5s ago
+     Active: active since Fri 2022-09-09 01:21:10 CST; 5s ago
+find: ‘/etc/systemd/system/ceph.target.wants/ceph-osd.target’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/ceph-osd.target’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/ceph-osd.target → /usr/lib/systemd/system/ceph-osd.target.
+Created symlink /etc/systemd/system/ceph.target.wants/ceph-osd.target → /usr/lib/systemd/system/ceph-osd.target.
+/etc/systemd/system/ceph.target.wants/ceph-osd.target
+/etc/systemd/system/multi-user.target.wants/ceph-osd.target
+Failed to reload ceph-osd.target: Job type reload is not applicable for unit ceph-osd.target.
+     Active: active since Fri 2022-09-09 01:21:10 CST; 15s ago
+Fri Sep  9 01:21:27 2022 - INFO  - End of the test.
+Fri Sep  9 01:21:27 2022 - INFO  - succeed to execute the case.
+Fri Sep  9 01:21:28 2022 - INFO  - start environment cleanup.
+Fri Sep  9 01:22:21 2022 - INFO  - Finish environment cleanup!

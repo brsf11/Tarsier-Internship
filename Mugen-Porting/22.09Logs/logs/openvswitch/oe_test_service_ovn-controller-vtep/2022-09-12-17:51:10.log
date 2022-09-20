@@ -1,0 +1,45 @@
+Mon Sep 12 17:51:13 2022 - INFO  - Start environmental preparation.
+userdel: user 'openvswitch_ovn' does not exist
+Mon Sep 12 17:52:07 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 17:52:08 2022 - INFO  - Start testing...
+spawn service ovn-controller-vtep.service restart
+couldn't execute "service": no such file or directory
+    while executing
+"spawn service ovn-controller-vtep.service restart "
+Last login: Mon Sep 12 17:52:08 CST 2022
+spawn service ovn-controller-vtep.service stop
+couldn't execute "service": no such file or directory
+    while executing
+"spawn service ovn-controller-vtep.service stop"
+Last login: Mon Sep 12 17:52:11 CST 2022
+spawn service ovn-controller-vtep.service start
+couldn't execute "service": no such file or directory
+    while executing
+"spawn service ovn-controller-vtep.service start"
+-bash: line 1: service: command not found
+Mon Sep 12 17:52:28 2022 - ERROR - ovn-controller-vtep.service start failed
+Mon Sep 12 17:52:29 2022 - ERROR - oe_test_service_ovn-controller-vtep.sh line 76
+Last login: Mon Sep 12 17:52:26 CST 2022
+spawn service ovn-controller-vtep.service reload
+couldn't execute "service": no such file or directory
+    while executing
+"spawn service ovn-controller-vtep.service reload"
+Mon Sep 12 17:52:32 2022 - ERROR - ovn-controller-vtep.service reload failed
+Mon Sep 12 17:52:33 2022 - ERROR - oe_test_service_ovn-controller-vtep.sh line 90
+Mon Sep 12 17:52:34 2022 - INFO  - Finish test!
+Mon Sep 12 17:52:34 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:52:35 2022 - INFO  - start environment cleanup.
+Last login: Mon Sep 12 17:52:29 CST 2022
+spawn systemctl stop ovn-controller-vtep.service
+Failed to stop ovn-controller-vtep.service: Interactive authentication required.
+See system logs and 'systemctl status ovn-controller-vtep.service' for details.
+send: spawn id exp3 not open
+    while executing
+"send "openEuler12#$\n""
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 0:13:44 ago on Mon 12 Sep 2022 05:38:20 PM CST.\nNo match for argument: openvswitch-ovn-vtep\nError: Unable to find a match: openvswitch-ovn-vtep'
+Mon Sep 12 17:52:43 2022 - INFO  - Finish environment cleanup!

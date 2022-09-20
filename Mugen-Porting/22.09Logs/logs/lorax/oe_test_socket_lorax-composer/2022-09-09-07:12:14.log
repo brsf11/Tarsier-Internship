@@ -1,0 +1,40 @@
+Fri Sep  9 07:12:17 2022 - INFO  - Start environmental preparation.
+Failed to stop lorax-composer.service: Unit lorax-composer.service not loaded.
+Fri Sep  9 07:13:09 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 07:13:10 2022 - INFO  - Start testing...
+Failed to restart lorax-composer.socket: Unit lorax-composer.socket not found.
+Fri Sep  9 07:13:11 2022 - ERROR - lorax-composer.socket restart failed
+Fri Sep  9 07:13:12 2022 - ERROR - ../common/common_lib.sh line 34
+Unit lorax-composer.socket could not be found.
+Fri Sep  9 07:13:19 2022 - ERROR - lorax-composer.socket restart failed
+Fri Sep  9 07:13:19 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop lorax-composer.socket: Unit lorax-composer.socket not loaded.
+Fri Sep  9 07:13:20 2022 - ERROR - lorax-composer.socket stop failed
+Fri Sep  9 07:13:21 2022 - ERROR - ../common/common_lib.sh line 39
+Unit lorax-composer.socket could not be found.
+Fri Sep  9 07:13:28 2022 - ERROR - lorax-composer.socket stop failed
+Fri Sep  9 07:13:28 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start lorax-composer.socket: Unit lorax-composer.socket not found.
+Fri Sep  9 07:13:29 2022 - ERROR - lorax-composer.socket start failed
+Fri Sep  9 07:13:30 2022 - ERROR - ../common/common_lib.sh line 44
+Unit lorax-composer.socket could not be found.
+Fri Sep  9 07:13:37 2022 - ERROR - lorax-composer.socket start failed
+Fri Sep  9 07:13:37 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for lorax-composer.socket: No such file or directory
+Fri Sep  9 07:13:38 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start lorax-composer.socket: Unit lorax-composer.socket not found.
+Fri Sep  9 07:13:39 2022 - ERROR - Job type reload is not applicable for unit lorax-composer.socket
+Fri Sep  9 07:13:40 2022 - ERROR - ../common/common_lib.sh line 91
+Unit lorax-composer.socket could not be found.
+Unit lorax-composer.socket could not be found.
+Fri Sep  9 07:13:41 2022 - INFO  - Finish test!
+Fri Sep  9 07:13:42 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:13:43 2022 - INFO  - start environment cleanup.
+Failed to stop lorax-composer.socket: Unit lorax-composer.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:06:32 ago on Fri 09 Sep 2022 07:06:36 AM CST.\nError: \n Problem: package anaconda-tui-33.19-43.oe2209.riscv64 requires anaconda-core = 33.19-43.oe2209, but none of the providers can be installed\n  - package lorax-composer-33.6-6.oe2209.riscv64 requires anaconda-tui, but none of the providers can be installed\n  - package anaconda-core-33.19-43.oe2209.riscv64 requires python3-pwquality, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides python(abi) = 3.9 needed by python3-pwquality-1.4.4-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:13:46 2022 - INFO  - Finish environment cleanup!

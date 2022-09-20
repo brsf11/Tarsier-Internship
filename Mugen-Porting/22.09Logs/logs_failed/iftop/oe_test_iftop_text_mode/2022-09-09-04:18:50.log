@@ -1,0 +1,7 @@
+Fri Sep  9 04:18:53 2022 - INFO  - Start environmental preparation.
+Fri Sep  9 04:21:17 2022 - INFO  - End of environmental preparation!
+Fri Sep  9 04:21:18 2022 - INFO  - Start testing...
+Synopsis: iftop -h | [-npblNBP] [-i interface] [-f filter code]
+Listening on eth0
+Fri Sep  9 04:48:51 2022 - ERROR - Timeout : Command 'bash oe_test_iftop_text_mode.sh' timed out after 1799.9994344 seconds
+Fri Sep  9 04:48:53 2022 - INFO  - start environment cleanup.

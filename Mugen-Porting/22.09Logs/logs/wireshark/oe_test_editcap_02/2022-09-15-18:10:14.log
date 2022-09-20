@@ -1,0 +1,71 @@
+Thu Sep 15 18:10:16 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 15 18:15:21 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 15 18:15:22 2022 - INFO  - Start to run test.
+Thu Sep 15 18:40:14 2022 - ERROR - Timeout : Command 'bash oe_test_editcap_02.sh' timed out after 1799.999494392 seconds
+Capturing on 'eth0'
+File: testfile6
+
+Packets: 2 
+Packets: 3 
+Packets: 5 
+Packets: 6 
+Packets: 7 
+Packets: 9 
+Packets: 10 
+Packets: 12 
+Packets: 13 
+Packets: 15 
+Packets: 16 
+Packets: 18 
+Packets: 20 
+Packets captured: 20
+Packets received/dropped on interface 'eth0': 20/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)
+Thu Sep 15 18:40:17 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 18:41:53 2022 - INFO  - Finish restoring the test environment.
+oe_test_editcap_02.sh: line 31: capinfos: command not found
+Thu Sep 15 18:41:54 2022 - ERROR - oe_test_editcap_02.sh line 32
+oe_test_editcap_02.sh: line 33: editcap: command not found
+Thu Sep 15 18:41:54 2022 - ERROR - oe_test_editcap_02.sh line 34
+oe_test_editcap_02.sh: line 35: capinfos: command not found
+Thu Sep 15 18:41:55 2022 - ERROR - oe_test_editcap_02.sh line 36
+oe_test_editcap_02.sh: line 38: capinfos: command not found
+Thu Sep 15 18:42:02 2022 - ERROR - oe_test_editcap_02.sh line 39
+oe_test_editcap_02.sh: line 40: editcap: command not found
+Thu Sep 15 18:42:02 2022 - ERROR - oe_test_editcap_02.sh line 41
+oe_test_editcap_02.sh: line 42: capinfos: command not found
+oe_test_editcap_02.sh: line 43: capinfos: command not found
+oe_test_editcap_02.sh: line 46: capinfos: command not found
+grep: invalid option -- '.'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Thu Sep 15 18:42:03 2022 - ERROR - oe_test_editcap_02.sh line 47
+oe_test_editcap_02.sh: line 49: capinfos: command not found
+Thu Sep 15 18:42:10 2022 - ERROR - oe_test_editcap_02.sh line 50
+oe_test_editcap_02.sh: line 51: editcap: command not found
+Thu Sep 15 18:42:11 2022 - ERROR - oe_test_editcap_02.sh line 52
+oe_test_editcap_02.sh: line 53: capinfos: command not found
+Thu Sep 15 18:42:11 2022 - ERROR - oe_test_editcap_02.sh line 54
+oe_test_editcap_02.sh: line 55: editcap: command not found
+Thu Sep 15 18:42:12 2022 - ERROR - oe_test_editcap_02.sh line 56
+oe_test_editcap_02.sh: line 57: capinfos: command not found
+Thu Sep 15 18:42:13 2022 - ERROR - oe_test_editcap_02.sh line 58
+oe_test_editcap_02.sh: line 59: editcap: command not found
+Thu Sep 15 18:42:13 2022 - ERROR - oe_test_editcap_02.sh line 60
+oe_test_editcap_02.sh: line 61: capinfos: command not found
+Thu Sep 15 18:42:14 2022 - ERROR - oe_test_editcap_02.sh line 62
+oe_test_editcap_02.sh: line 64: captype: command not found
+Thu Sep 15 18:42:26 2022 - ERROR - oe_test_editcap_02.sh line 65
+oe_test_editcap_02.sh: line 66: editcap: command not found
+Thu Sep 15 18:42:27 2022 - ERROR - oe_test_editcap_02.sh line 67
+oe_test_editcap_02.sh: line 68: captype: command not found
+Thu Sep 15 18:42:27 2022 - ERROR - oe_test_editcap_02.sh line 69
+oe_test_editcap_02.sh: line 71: capinfos: command not found
+Thu Sep 15 18:42:34 2022 - ERROR - oe_test_editcap_02.sh line 72
+oe_test_editcap_02.sh: line 73: editcap: command not found
+Thu Sep 15 18:42:35 2022 - ERROR - oe_test_editcap_02.sh line 74
+oe_test_editcap_02.sh: line 75: capinfos: command not found
+Thu Sep 15 18:42:35 2022 - ERROR - oe_test_editcap_02.sh line 76
+Thu Sep 15 18:42:36 2022 - INFO  - End of the test.
+Thu Sep 15 18:42:37 2022 - ERROR - failed to execute the case.
+Thu Sep 15 18:42:37 2022 - INFO  - Start to restore the test environment.
+Thu Sep 15 18:42:55 2022 - INFO  - Finish restoring the test environment.

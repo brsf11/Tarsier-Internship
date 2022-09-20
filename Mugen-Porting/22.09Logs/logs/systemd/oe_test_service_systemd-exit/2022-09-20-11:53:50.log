@@ -1,0 +1,6 @@
+Tue Sep 20 11:53:52 2022 - INFO  - Start testing...
+Tue Sep 20 11:53:53 2022 - INFO  - This service will cause the system to exit.
+Tue Sep 20 11:53:54 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 20 11:53:55 2022 - INFO  - Finish test!
+Tue Sep 20 11:53:55 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:53:56 2022 - INFO  - oe_test_service_systemd-exit.sh post_test

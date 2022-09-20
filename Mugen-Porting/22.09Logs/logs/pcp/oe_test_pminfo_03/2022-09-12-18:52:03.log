@@ -1,0 +1,20 @@
+Mon Sep 12 18:52:06 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Mon Sep 12 18:55:58 2022 - INFO  - End to prepare the test environment.
+Mon Sep 12 18:55:58 2022 - INFO  - Start to run test.
+    Data Type: 64-bit unsigned int  InDom: 60.1 = 251658241 = 0xf000001
+    labels {"agent":"linux","device_type":"block","domainname":"localdomain","groupid":0,"hostname":"openEuler-riscv64","indom_name":"per disk","machineid":"90c591939df24d938d3d0456526751b7","userid":0}
+    inst [0 or "vda"] labels {"agent":"linux","device_name":"vda","device_type":"block","domainname":"localdomain","groupid":0,"hostname":"openEuler-riscv64","indom_name":"per disk","machineid":"90c591939df24d938d3d0456526751b7","userid":0}
+disk.dev.write PMID: 60.0.5
+disk.dev.write PMID: 60.0.5 = 251658245 = 0xf000005
+    Source: d60e6609569dcf01a1879def9a4088f58a4c253b
+disk.dev.write [per-disk write operations]
+disk.dev.write
+pminfo: derived configuration(s) error: No such file or directory
+disk.dev.write
+disk.dev.write
+Mon Sep 12 18:56:00 2022 - INFO  - End to run test.
+Mon Sep 12 18:56:01 2022 - INFO  - succeed to execute the case.
+Mon Sep 12 18:56:01 2022 - INFO  - Start to restore the test environment.
+Mon Sep 12 18:57:13 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,52 @@
+Fri Sep  9 07:43:32 2022 - INFO  - Start to prepare the test environment.
+Fri Sep  9 07:44:26 2022 - INFO  - End to prepare the test environment.
+Fri Sep  9 07:44:27 2022 - INFO  - Start to run test.
+Generating a 3072 bit RSA private key...
+Generating a 3072 bit RSA private key...
+Generating a 3072 bit RSA private key...
+oe_test_nbdkit_03.sh: line 36: nbdkit: command not found
+Fri Sep  9 07:44:39 2022 - ERROR - oe_test_nbdkit_03.sh line 37
+oe_test_nbdkit_03.sh: line 38: kill: (812) - No such process
+Fri Sep  9 07:44:40 2022 - ERROR - oe_test_nbdkit_03.sh line 39
+Generating a random key for user 'rich'
+Key stored to /tmp/keys/keys.psk
+oe_test_nbdkit_03.sh: line 42: nbdkit: command not found
+Fri Sep  9 07:44:41 2022 - ERROR - oe_test_nbdkit_03.sh line 43
+oe_test_nbdkit_03.sh: line 44: kill: (821) - No such process
+Fri Sep  9 07:44:41 2022 - ERROR - oe_test_nbdkit_03.sh line 45
+oe_test_nbdkit_03.sh: line 46: nbdkit: command not found
+Fri Sep  9 07:44:42 2022 - ERROR - oe_test_nbdkit_03.sh line 47
+oe_test_nbdkit_03.sh: line 48: kill: (828) - No such process
+Fri Sep  9 07:44:43 2022 - ERROR - oe_test_nbdkit_03.sh line 49
+oe_test_nbdkit_03.sh: line 50: nbdkit: command not found
+Fri Sep  9 07:44:44 2022 - ERROR - oe_test_nbdkit_03.sh line 51
+oe_test_nbdkit_03.sh: line 52: kill: (835) - No such process
+Fri Sep  9 07:44:45 2022 - ERROR - oe_test_nbdkit_03.sh line 53
+oe_test_nbdkit_03.sh: line 54: nbdkit: command not found
+Fri Sep  9 07:44:45 2022 - ERROR - oe_test_nbdkit_03.sh line 55
+oe_test_nbdkit_03.sh: line 56: kill: (842) - No such process
+Fri Sep  9 07:44:46 2022 - ERROR - oe_test_nbdkit_03.sh line 57
+oe_test_nbdkit_03.sh: line 58: nbdkit: command not found
+Fri Sep  9 07:44:47 2022 - ERROR - oe_test_nbdkit_03.sh line 59
+oe_test_nbdkit_03.sh: line 60: kill: (849) - No such process
+Fri Sep  9 07:44:48 2022 - ERROR - oe_test_nbdkit_03.sh line 61
+oe_test_nbdkit_03.sh: line 62: nbdkit: command not found
+Fri Sep  9 07:44:49 2022 - ERROR - oe_test_nbdkit_03.sh line 63
+oe_test_nbdkit_03.sh: line 64: kill: (856) - No such process
+Fri Sep  9 07:44:50 2022 - ERROR - oe_test_nbdkit_03.sh line 65
+oe_test_nbdkit_03.sh: line 66: nbdkit: command not found
+Fri Sep  9 07:44:50 2022 - ERROR - oe_test_nbdkit_03.sh line 67
+oe_test_nbdkit_03.sh: line 68: kill: (863) - No such process
+Fri Sep  9 07:44:51 2022 - ERROR - oe_test_nbdkit_03.sh line 69
+oe_test_nbdkit_03.sh: line 71: nbdkit: command not found
+Fri Sep  9 07:44:53 2022 - ERROR - oe_test_nbdkit_03.sh line 72
+Fri Sep  9 07:44:54 2022 - INFO  - End to run test.
+Fri Sep  9 07:44:54 2022 - ERROR - failed to execute the case.
+Fri Sep  9 07:44:55 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:42 ago on Fri 09 Sep 2022 07:41:43 AM CST.\nPackage gnutls-3.7.2-3.oe2209.riscv64 is already installed.\nError: \n Problem: package nbdkit-plugins-1.29.11-1.oe2209.riscv64 requires nbdkit-perl-plugin, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libperl.so.5.28()(64bit) needed by nbdkit-perl-plugin-1.29.11-1.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 07:44:58 2022 - INFO  - End to restore the test environment.

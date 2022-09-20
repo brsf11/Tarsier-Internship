@@ -1,0 +1,55 @@
+Mon Sep 12 17:09:23 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+modprobe: FATAL: Module fuse not found in directory /lib/modules/5.10.0
+Error opening '/dev': Is a directory
+Failed to mount '/dev': Is a directory
+umount: /mnt/windows: not mounted.
+Mon Sep 12 17:10:14 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 17:10:14 2022 - INFO  - Start to run test.
+Usage: ntfsundelete [options] device
+ntfsundelete v2022.5.17 (libntfs-3g) - Recover deleted files from an NTFS Volume.
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:15 2022 - ERROR - Check ntfsundelete --scan failed.
+Mon Sep 12 17:10:16 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 40
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:17 2022 - ERROR - Check ntfsundelete --percentage failed.
+Mon Sep 12 17:10:17 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 42
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:18 2022 - ERROR - Check ntfsundelete --match failed.
+Mon Sep 12 17:10:19 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 44
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:20 2022 - ERROR - Check ntfsundelete --case failed.
+Mon Sep 12 17:10:21 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 46
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:21 2022 - ERROR - Check ntfsundelete --size failed.
+Mon Sep 12 17:10:22 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 48
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:23 2022 - ERROR - Check ntfsundelete --time failed.
+Mon Sep 12 17:10:23 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 50
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:24 2022 - ERROR - Check ntfsundelete --undelete failed.
+Mon Sep 12 17:10:25 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 52
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+Mon Sep 12 17:10:26 2022 - ERROR - Check ntfsundelete --inode failed.
+Mon Sep 12 17:10:26 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 54
+Mon Sep 12 17:10:27 2022 - INFO  - End of the test.
+Mon Sep 12 17:10:28 2022 - ERROR - failed to execute the case.
+Mon Sep 12 17:10:29 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 17:10:50 2022 - INFO  - Finish restoring the test environment.

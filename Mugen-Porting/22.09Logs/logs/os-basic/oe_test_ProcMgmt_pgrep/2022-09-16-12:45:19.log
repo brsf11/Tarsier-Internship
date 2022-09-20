@@ -1,0 +1,6 @@
+Fri Sep 16 12:45:21 2022 - INFO  - Start to run test.
+335 sshd
+9246 sshd
+Fri Sep 16 12:45:22 2022 - INFO  - End to run test.
+Fri Sep 16 12:45:23 2022 - INFO  - succeed to execute the case.
+Fri Sep 16 12:45:24 2022 - INFO  - oe_test_ProcMgmt_pgrep.sh post_test

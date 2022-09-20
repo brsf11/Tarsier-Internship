@@ -1,0 +1,51 @@
+Mon Sep 12 16:42:37 2022 - INFO  - Start to prepare the test environment.
+Could not open /dev/: Is a directory
+Could not open /dev/: Is a directory
+Mon Sep 12 16:43:42 2022 - INFO  - Finish preparing the test environment.
+Mon Sep 12 16:43:43 2022 - INFO  - Start to run test.
+Usage: ntfscat [options] device [file]
+ntfscat v2022.5.17 (libntfs-3g) - Concatenate files and print on the standard output.
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+ERROR: couldn't mount volume: Is a directory
+Mon Sep 12 16:43:43 2022 - ERROR - Check ntfscat --attribute failed.
+Mon Sep 12 16:43:44 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 35
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+ERROR: couldn't mount volume: Is a directory
+Mon Sep 12 16:43:45 2022 - ERROR - Check ntfscat --attribute-name failed.
+Mon Sep 12 16:43:45 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 37
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+ERROR: couldn't mount volume: Is a directory
+Mon Sep 12 16:43:46 2022 - ERROR - Check ntfscat --force failed.
+Mon Sep 12 16:43:47 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 39
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+ERROR: couldn't mount volume: Is a directory
+Mon Sep 12 16:43:48 2022 - ERROR - Check ntfscat --quiet failed.
+Mon Sep 12 16:43:48 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 41
+Error reading bootsector: Is a directory
+Failed to mount '/dev/': Is a directory
+ERROR: couldn't mount volume: Is a directory
+Mon Sep 12 16:43:49 2022 - ERROR - Check ntfscat --verbose failed.
+Mon Sep 12 16:43:50 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 43
+Usage:    ntfs-3g.probe <--readonly|--readwrite> <device|image_file>
+Error reading bootsector: Is a directory
+Mon Sep 12 16:43:51 2022 - ERROR - Check ntfs-3g.probe --readonly failed.
+Mon Sep 12 16:43:51 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 47
+Error opening '/dev/': Is a directory
+Mon Sep 12 16:43:52 2022 - ERROR - Check ntfscat ntfs-3g.probe --readwrite failed.
+Mon Sep 12 16:43:53 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 49
+Mon Sep 12 16:43:54 2022 - INFO  - End of the test.
+Mon Sep 12 16:43:54 2022 - ERROR - failed to execute the case.
+Mon Sep 12 16:43:55 2022 - INFO  - Start to restore the test environment.
+spawn mkfs.ext4 /dev/
+y
+mke2fs 1.46.4 (18-Aug-2021)
+mkfs.ext4: Device size reported to be zero.  Invalid partition specified, or
+	partition table wasn't reread after running fdisk, due to
+	a modified partition being busy and in use.  You may need to reboot
+	to re-read your partition table.
+
+Mon Sep 12 16:44:06 2022 - INFO  - Finish restoring the test environment.

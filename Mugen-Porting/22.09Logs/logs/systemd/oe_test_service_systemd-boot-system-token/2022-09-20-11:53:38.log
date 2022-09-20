@@ -1,0 +1,8 @@
+Tue Sep 20 11:53:41 2022 - INFO  - Start testing...
+Tue Sep 20 11:53:41 2022 - INFO  - Don't run this in a VM environment, because there EFI variables are not actually stored in NVRAM, independent of regular storage.
+Unit systemd-boot-system-token.service could not be found.
+Failed to get unit file state for systemd-boot-system-token.service: No such file or directory
+Tue Sep 20 11:53:42 2022 - INFO  - Unit is indirect, ignoring.
+Tue Sep 20 11:53:43 2022 - INFO  - Finish test!
+Tue Sep 20 11:53:43 2022 - INFO  - succeed to execute the case.
+Tue Sep 20 11:53:44 2022 - INFO  - oe_test_service_systemd-boot-system-token.sh post_test

@@ -1,0 +1,56 @@
+Fri Sep  9 02:38:33 2022 - INFO  - Start to prepare the database config.
+New password: BAD PASSWORD: The password contains less than 3 character classes
+Retype new password: Changing password for user testuser.
+passwd: all authentication tokens updated successfully.
+Failed to restart dovecot.service: Unit dovecot.service not found.
+Fri Sep  9 02:38:58 2022 - INFO  - End to prepare the database config.
+Fri Sep  9 02:38:58 2022 - INFO  - Start to run test.
+oe_test_dovecot_doveadm_2.sh: line 35: doveadm: command not found
+Fri Sep  9 02:38:59 2022 - ERROR - Check doveadm config failed.
+Fri Sep  9 02:39:00 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 36
+oe_test_dovecot_doveadm_2.sh: line 37: doveadm: command not found
+Fri Sep  9 02:39:01 2022 - ERROR - Check doveadm instance list failed.
+Fri Sep  9 02:39:01 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 38
+oe_test_dovecot_doveadm_2.sh: line 39: doveadm: command not found
+Fri Sep  9 02:39:02 2022 - ERROR - Check doveadm instance remove failed.
+Fri Sep  9 02:39:03 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 40
+oe_test_dovecot_doveadm_2.sh: line 41: doveadm: command not found
+Fri Sep  9 02:39:03 2022 - ERROR - Check doveadm penalty failed.
+Fri Sep  9 02:39:04 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 42
+oe_test_dovecot_doveadm_2.sh: line 43: doveadm: command not found
+Fri Sep  9 02:39:05 2022 - ERROR - Check doveadm proxy list failed.
+Fri Sep  9 02:39:05 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 44
+oe_test_dovecot_doveadm_2.sh: line 45: doveadm: command not found
+Fri Sep  9 02:39:06 2022 - ERROR - Check doveadm proxy kick 127.0.0.1 failed.
+Fri Sep  9 02:39:07 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 46
+oe_test_dovecot_doveadm_2.sh: line 47: doveadm: command not found
+Fri Sep  9 02:39:08 2022 - ERROR - Check doveadm auth cache flush failed.
+Fri Sep  9 02:39:08 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 48
+oe_test_dovecot_doveadm_2.sh: line 49: doveadm: command not found
+Fri Sep  9 02:39:09 2022 - ERROR - Check doveadm auth login failed.
+Fri Sep  9 02:39:10 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 50
+oe_test_dovecot_doveadm_2.sh: line 51: doveadm: command not found
+Fri Sep  9 02:39:10 2022 - ERROR - Check doveadm auth test failed.
+Fri Sep  9 02:39:11 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 52
+oe_test_dovecot_doveadm_2.sh: line 53: dovecot-sysreport: command not found
+Fri Sep  9 02:39:12 2022 - ERROR - Check doveadm-sysreport failed.
+Fri Sep  9 02:39:12 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 54
+ls: cannot access 'dovecot-sysreport*': No such file or directory
+Fri Sep  9 02:39:13 2022 - ERROR - The report doesn't exist.
+Fri Sep  9 02:39:14 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 56
+oe_test_dovecot_doveadm_2.sh: line 57: doveadm: command not found
+Fri Sep  9 02:39:15 2022 - ERROR - Check doveadm reload failed.
+Fri Sep  9 02:39:15 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 58
+oe_test_dovecot_doveadm_2.sh: line 59: doveadm: command not found
+Fri Sep  9 02:39:16 2022 - ERROR - Check doveadm stop failed.
+Fri Sep  9 02:39:17 2022 - ERROR - oe_test_dovecot_doveadm_2.sh line 60
+Fri Sep  9 02:39:17 2022 - INFO  - End to run test.
+Fri Sep  9 02:39:18 2022 - ERROR - failed to execute the case.
+Fri Sep  9 02:39:19 2022 - INFO  - Start to restore the test environment.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:05:26 ago on Fri 09 Sep 2022 02:33:29 AM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libmariadb.so.3()(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n  - nothing provides libmariadb.so.3(libmysqlclient_18)(64bit) needed by dovecot-1:2.3.15-3.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Fri Sep  9 02:39:23 2022 - INFO  - End to restore the test environment.

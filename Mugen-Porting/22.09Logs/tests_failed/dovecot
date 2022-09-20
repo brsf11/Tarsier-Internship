@@ -1,0 +1,6 @@
+oe_test_service_dovecot
+oe_test_socket_dovecot
+oe_test_dovecot_basic
+oe_test_dovecot_doveadm_1
+oe_test_dovecot_doveadm_2
+oe_test_dovecot_doveadm_3

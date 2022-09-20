@@ -1,0 +1,37 @@
+Mon Sep 12 22:14:12 2022 - INFO  - Start environmental preparation.
+Mon Sep 12 22:15:24 2022 - INFO  - End of environmental preparation!
+Mon Sep 12 22:15:25 2022 - INFO  - Start testing...
+Job for wdmd.service failed because the control process exited with error code.
+See "systemctl status wdmd.service" and "journalctl -xeu wdmd.service" for details.
+Mon Sep 12 22:15:26 2022 - ERROR - wdmd.service restart failed
+Mon Sep 12 22:15:26 2022 - ERROR - ../common/common_lib.sh line 34
+Mon Sep 12 22:15:33 2022 - ERROR - wdmd.service restart failed
+Mon Sep 12 22:15:34 2022 - ERROR - ../common/common_lib.sh line 37
+Mon Sep 12 22:15:41 2022 - ERROR - wdmd.service stop failed
+Mon Sep 12 22:15:41 2022 - ERROR - ../common/common_lib.sh line 42
+Job for wdmd.service failed because the control process exited with error code.
+See "systemctl status wdmd.service" and "journalctl -xeu wdmd.service" for details.
+Mon Sep 12 22:15:42 2022 - ERROR - wdmd.service start failed
+Mon Sep 12 22:15:43 2022 - ERROR - ../common/common_lib.sh line 44
+Mon Sep 12 22:15:49 2022 - ERROR - wdmd.service start failed
+Mon Sep 12 22:15:50 2022 - ERROR - ../common/common_lib.sh line 47
+/etc/systemd/system/multi-user.target.wants/wdmd.service
+Removed /etc/systemd/system/multi-user.target.wants/wdmd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/wdmd.service’: No such file or directory
+Sep 12 22:15:25 openEuler-riscv64 systemd-wdmd[1043]: /lib/systemd/systemd-wdmd: line 51: failure: command not found
+Sep 12 22:15:25 openEuler-riscv64 systemd[1]: wdmd.service: Control process exited, code=exited, status=1/FAILURE
+Sep 12 22:15:25 openEuler-riscv64 systemd[1]: wdmd.service: Failed with result 'exit-code'.
+Sep 12 22:15:25 openEuler-riscv64 systemd[1]: Failed to start Watchdog Multiplexing Daemon.
+Sep 12 22:15:41 openEuler-riscv64 systemd-wdmd[1064]: /lib/systemd/systemd-wdmd: line 51: failure: command not found
+Sep 12 22:15:41 openEuler-riscv64 systemd[1]: wdmd.service: Control process exited, code=exited, status=1/FAILURE
+Sep 12 22:15:41 openEuler-riscv64 systemd[1]: wdmd.service: Failed with result 'exit-code'.
+Sep 12 22:15:41 openEuler-riscv64 systemd[1]: Failed to start Watchdog Multiplexing Daemon.
+Mon Sep 12 22:16:00 2022 - ERROR - There is an error message for the log of wdmd.service
+Mon Sep 12 22:16:00 2022 - ERROR - ../common/common_lib.sh line 28
+Job for wdmd.service failed because the control process exited with error code.
+See "systemctl status wdmd.service" and "journalctl -xeu wdmd.service" for details.
+Failed to reload wdmd.service: Job type reload is not applicable for unit wdmd.service.
+Mon Sep 12 22:16:02 2022 - INFO  - Finish test!
+Mon Sep 12 22:16:02 2022 - ERROR - failed to execute the case.
+Mon Sep 12 22:16:03 2022 - INFO  - start environment cleanup.
+Mon Sep 12 22:16:29 2022 - INFO  - Finish environment cleanup!
