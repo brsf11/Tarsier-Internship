@@ -1,0 +1,17 @@
+Fri Sep 23 01:03:06 2022 - INFO  - Start environmental preparation.
+Failed to start tangd-update.service: Unit tangd-update.service not found.
+Fri Sep 23 01:04:51 2022 - INFO  - End of environmental preparation!
+Fri Sep 23 01:04:52 2022 - INFO  - Start testing...
+Unit tangd-update.service could not be found.
+Failed to get unit file state for tangd-update.service: No such file or directory
+Fri Sep 23 01:04:53 2022 - INFO  - Unit is indirect, ignoring.
+Fri Sep 23 01:04:54 2022 - INFO  - Finish test!
+Fri Sep 23 01:04:55 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:04:55 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 8:47:15 ago on Thu 22 Sep 2022 04:16:34 PM CST.\nDependencies resolved.\n================================================================================\n Package            Architecture   Version                Repository       Size\n================================================================================\nInstalling:\n tang               riscv64        7-2.oe2203             mainline         33 k\nInstalling dependencies:\n http-parser        riscv64        2.9.4-2.oe2203         mainline         31 k\n jose               riscv64        11-1.oe2203            mainline         72 k\n\nTransaction Summary\n================================================================================\nInstall  3 Packages\n\nTotal download size: 136 k\nInstalled size: 354 k\nDownloading Packages:\n[MIRROR] http-parser-2.9.4-2.oe2203.riscv64.rpm: Curl error (28): Timeout was reached for https://repo.tarsier-infra.com/openEuler-RISC-V/testing/20220922/v0.2/repo/22.03/riscv64/http-parser-2.9.4-2.oe2203.riscv64.rpm [Connection timeout after 30001 ms]\n[MIRROR] jose-11-1.oe2203.riscv64.rpm: Curl error (28): Timeout was reached for https://repo.tarsier-infra.com/openEuler-RISC-V/testing/20220922/v0.2/repo/22.03/riscv64/jose-11-1.oe2203.riscv64.rpm [Connection timeout after 30004 ms]\n[MIRROR] tang-7-2.oe2203.riscv64.rpm: Curl error (28): Timeout was reached for https://repo.tarsier-infra.com/openEuler-RISC-V/testing/20220922/v0.2/repo/22.03/riscv64/tang-7-2.oe2203.riscv64.rpm [SSL connection timeout]\n[MIRROR] http-parser-2.9.4-2.oe2203.riscv64.rpm: Curl error (28): Timeout was reached for https://repo.tarsier-infra.com/openEuler-RISC-V/testing/20220922/v0.2/repo/22.03/riscv64/http-parser-2.9.4-2.oe2203.riscv64.rpm [SSL connection timeout]\n[FAILED] http-parser-2.9.4-2.oe2203.riscv64.rpm: No more mirrors to try - All mirrors were already tried without success\n\nThe downloaded packages were saved in cache until the next successful transaction.\nYou can remove cached packages by executing 'dnf clean packages'.\nError: Error downloading packages:\n  http-parser-2.9.4-2.oe2203.riscv64: Cannot download, all mirrors were already tried without success"
+Fri Sep 23 01:04:58 2022 - INFO  - Finish environment cleanup!

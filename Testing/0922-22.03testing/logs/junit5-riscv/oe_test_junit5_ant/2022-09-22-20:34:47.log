@@ -1,0 +1,11 @@
+Thu Sep 22 20:34:49 2022 - INFO  - Start environment preparation.
+Thu Sep 22 20:39:04 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 20:39:05 2022 - INFO  - Start testing...
+Apache Ant(TM) version 1.10.12 compiled on July 29 2022
+     [java] [         1 tests successful      ]
+BUILD SUCCESSFUL
+/root/GitRepo/mugen-riscv/testcases/cli-test/junit5/oe_test_junit5_ant
+Thu Sep 22 20:39:55 2022 - INFO  - Finish test!
+Thu Sep 22 20:39:55 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:39:56 2022 - INFO  - start environment cleanup.
+Thu Sep 22 20:40:39 2022 - INFO  - Finish environment cleanup!

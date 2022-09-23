@@ -1,0 +1,343 @@
+Thu Sep 22 21:01:17 2022 - INFO  - Start to prepare the test environment.
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+1640
+Thu Sep 22 21:02:24 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 22 21:02:25 2022 - INFO  - Start to run test.
+    memslap -hV | -s servers [-F config_file] [-t time | -x exe_num] [...]
+    -s, --servers=
+        threads count. e.g.: --servers=localhost:1234,localhost:11211
+    -T, --threads=
+    -c, --concurrency=
+    -n, --conn_sock=
+    -x, --execute_number=
+    -t, --time=
+        How long the test to run, suffix: s-seconds, m-minutes, h-hours,
+        d-days e.g.: --time=2h.
+    -F, --cfg_cmd=
+    -w, --win_size=
+        Task window size of each concurrency, suffix: K, M e.g.: --win_size=10k.
+    -X, --fixed_size=
+    -v, --verify=
+        The proportion of date verification, e.g.: --verify=0.01
+    -d, --division=
+        Number of keys to multi-get once. Default 1, means single get.
+    -S, --stat_freq=
+        Frequency of dumping statistic information. suffix: s-seconds,
+        m-minutes, e.g.: --resp_freq=10s.
+    -e, --exp_verify=
+        The proportion of objects with expire time, e.g.: --exp_verify=0.01.
+    -o, --overwrite=
+        The proportion of objects need overwrite, e.g.: --overwrite=0.01.
+    -R, --reconnect 
+    -U, --udp 
+    -a, --facebook 
+        Whether it enables facebook test feature, set with TCP and multi-get with UDP.
+    -B, --binary 
+    -P, --tps=
+        Expected throughput, suffix: K, e.g.: --tps=10k.
+    -p, --rep_write=
+        The first nth servers can write data, e.g.: --rep_write=2.
+    -b, --verbose 
+    -h, --help 
+    -V, --version 
+    memslap -s 127.0.0.1:11211 -S 5s
+    memslap -s 127.0.0.1:11211 -t 2m -v 0.2 -e 0.05 -b
+    memslap -s 127.0.0.1:11211 -F config -t 2m -w 40k -S 20s -o 0.2
+    memslap -s 127.0.0.1:11211 -F config -t 2m -T 4 -c 128 -d 20 -P 40k
+    memslap -s 127.0.0.1:11211 -F config -t 2m -d 50 -a -n 40
+    memslap -s 127.0.0.1:11211,127.0.0.1:11212 -F config -t 2m
+    memslap -s 127.0.0.1:11211,127.0.0.1:11212 -F config -t 2m -p 2
+memslap v1.0
+servers : 127.0.0.1:11211
+threads count: 1
+concurrency: 16
+run time: 15s
+windows size: 10k
+set proportion: set_prop=0.10
+get proportion: get_prop=0.90
+[1;1H[2J
+Get Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        15408        3081         3.2        0          1070     14778      4647       1527.26    4452.18
+Global   5        15408        3081         3.2        0          1070     14778      4647       1527.26    4452.18
+
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        1721         344          0.4        0          2328     23962      4832       1980.95    4567.28
+Global   5        1721         344          0.4        0          2328     23962      4832       1980.95    4567.28
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        17132        3426         3.6        0          1070     23962      4666       1578.88    4463.80
+Global   5        17132        3426         3.6        0          1070     23962      4666       1578.88    4463.80
+
+[1;1H[2J
+Get Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        15239        3047         3.2        0          941      21414      4726       1441.57    4545.99
+Global   10       30647        3064         3.2        0          941      21414      4687       1484.57    4502.39
+
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        1693         338          0.4        0          961      21110      4747       1489.38    4569.37
+Global   10       3414         341          0.4        0          961      23962      4790       1754.33    4568.31
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        16929        3385         3.5        0          941      21414      4729       1444.94    4555.11
+Global   10       34061        3406         3.5        0          941      23962      4697       1515.07    4508.95
+
+[1;1H[2J
+Get Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        16366        3273         3.3        0          1137     17549      4400       1303.98    4261.17
+Global   15       47013        3134         3.4        0          941      21414      4587       1431.12    4416.90
+
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        1818         363          0.4        0          2714     16971      4422       1356.49    4276.88
+Global   15       5232         348          0.4        0          961      23962      4662       1636.80    4464.86
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   5        18185        3637         3.6        0          1137     17549      4403       1306.50    4262.72
+Global   15       52246        3483         3.8        0          941      23962      4595       1451.60    4421.67
+
+Get Statistics (47029 events)
+   Min:       941
+   Max:     21414
+   Avg:      4588
+   Geo:   4417.62
+   Std:   1432.66
+   Log2 Dist:
+       8:        0        0        1      117
+      12:    25831    19908     1164        8
+
+Set Statistics (5233 events)
+   Min:       961
+   Max:     23962
+   Avg:      4662
+   Geo:   4465.12
+   Std:   1637.50
+   Log2 Dist:
+       8:        0        0        2        7
+      12:     2830     2226      161        7
+
+Total Statistics (52262 events)
+   Min:       941
+   Max:     23962
+   Avg:      4596
+   Geo:   4422.35
+   Std:   1452.76
+   Log2 Dist:
+       8:        0        0        3      124
+      12:    28661    22134     1325       15
+
+cmd_get: 47045
+cmd_set: 5233
+get_misses: 0
+written_bytes: 9074495
+read_bytes: 52244054
+object_bytes: 5693504
+
+Run time: 15.1s Ops: 52278 TPS: 3472 Net_rate: 3.9M/s
+servers : 127.0.0.1:11211
+run time: 15s
+Period   5        15408        3081         3.2        0          1070     14778      4647       1527.26    4452.18
+Period   5        1721         344          0.4        0          2328     23962      4832       1980.95    4567.28
+Period   5        17132        3426         3.6        0          1070     23962      4666       1578.88    4463.80
+Period   5        15239        3047         3.2        0          941      21414      4726       1441.57    4545.99
+Period   5        1693         338          0.4        0          961      21110      4747       1489.38    4569.37
+Period   5        16929        3385         3.5        0          941      21414      4729       1444.94    4555.11
+Period   5        16366        3273         3.3        0          1137     17549      4400       1303.98    4261.17
+Period   5        1818         363          0.4        0          2714     16971      4422       1356.49    4276.88
+Period   5        18185        3637         3.6        0          1137     17549      4403       1306.50    4262.72
+servers : 127.0.0.1:11211
+threads count: 1
+concurrency: 16
+run time: 10s
+windows size: 10k
+set proportion: set_prop=0.10
+get proportion: get_prop=0.90
+cmd_get: 33975
+cmd_set: 3780
+get_misses: 0
+verify_misses: 0
+verify_failed: 0
+expired_get: 0
+unexpired_unget: 0
+written_bytes: 6553191
+read_bytes: 37725832
+object_bytes: 4112640
+
+Run time: 10.0s Ops: 37755 TPS: 3762 Net_rate: 4.2M/s
+servers : 127.0.0.1:11211
+run time: 10s
+servers : 127.0.0.1:11211
+threads count: 1
+concurrency: 16
+run time: 12s
+windows size: 40k
+set proportion: set_prop=0.10
+get proportion: get_prop=0.00
+[1;1H[2J
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        9491         3163         6.6        0          895      18675      5038       1690.68    4841.74
+Global   3        9491         3163         6.6        0          895      18675      5038       1690.01    4837.44
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        9496         3165         6.6        0          895      18675      5037       1691.65    4837.21
+Global   3        9496         3165         6.6        0          895      18675      5037       1691.65    4837.21
+
+[1;1H[2J
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        10834        3611         7.0        0          795      19494      4426       1448.16    4255.92
+Global   6        20325        3387         7.5        0          795      19494      4713       1593.12    4527.56
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        10829        3609         7.0        0          795      19494      4428       1445.50    4272.38
+Global   6        20325        3387         7.5        0          795      19494      4713       1593.12    4527.56
+
+[1;1H[2J
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        10651        3550         7.1        0          888      21243      4504       1525.64    4337.03
+Global   9        30976        3441         7.4        0          795      21243      4641       1573.75    4461.12
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        10652        3550         7.1        0          888      21243      4504       1525.45    4337.00
+Global   9        30977        3441         7.4        0          795      21243      4641       1573.68    4461.11
+
+[1;1H[2J
+Set Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        10746        3582         7.2        0          821      18893      4462       1447.96    4305.72
+Global   12       41722        3476         7.4        0          795      21243      4595       1544.12    4421.45
+
+Total Statistics
+Type     Time(s)  Ops          TPS(ops/s)   Net(M/s)   Get_miss   Min(us)  Max(us)    Avg(us)    Std_dev    Geo_dist  
+Period   3        10745        3581         7.2        0          821      18893      4462       1448.66    4309.08
+Global   12       41722        3476         7.4        0          795      21243      4595       1544.12    4421.45
+
+Set Statistics (41738 events)
+   Min:       795
+   Max:     21243
+   Avg:      4599
+   Geo:   4423.33
+   Std:   1555.76
+   Log2 Dist:
+       8:        0        0       13      140
+      12:    23936    15995     1612       42
+
+Total Statistics (41738 events)
+   Min:       795
+   Max:     21243
+   Avg:      4599
+   Geo:   4423.33
+   Std:   1555.76
+   Log2 Dist:
+       8:        0        0       13      140
+      12:    23936    15995     1612       42
+
+cmd_get: 0
+cmd_set: 41754
+get_misses: 0
+written_bytes: 91531434
+read_bytes: 333904
+object_bytes: 90856704
+
+Run time: 12.0s Ops: 41754 TPS: 3466 Net_rate: 7.3M/s
+servers : 127.0.0.1:11211
+run time: 12s
+windows size: 40k
+Period   3        9491         3163         6.6        0          895      18675      5038       1690.68    4841.74
+Period   3        9496         3165         6.6        0          895      18675      5037       1691.65    4837.21
+Period   3        10834        3611         7.0        0          795      19494      4426       1448.16    4255.92
+Period   3        10829        3609         7.0        0          795      19494      4428       1445.50    4272.38
+Period   3        10651        3550         7.1        0          888      21243      4504       1525.64    4337.03
+Period   3        10652        3550         7.1        0          888      21243      4504       1525.45    4337.00
+Period   3        10746        3582         7.2        0          821      18893      4462       1447.96    4305.72
+Period   3        10745        3581         7.2        0          821      18893      4462       1448.66    4309.08
+servers : 127.0.0.1:11211
+threads count: 1
+concurrency: 16
+run time: 5s
+windows size: 10k
+set proportion: set_prop=0.10
+get proportion: get_prop=0.00
+cmd_get: 0
+cmd_set: 18173
+get_misses: 0
+written_bytes: 39818301
+read_bytes: 145256
+object_bytes: 39544448
+
+Run time: 5.0s Ops: 18173 TPS: 3621 Net_rate: 7.6M/s
+servers : 127.0.0.1:11211
+run time: 5s
+servers : 127.0.0.1:11211
+threads count: 4
+concurrency: 128
+run time: 2s
+windows size: 10k
+set proportion: set_prop=0.10
+get proportion: get_prop=0.00
+cmd_get: 0
+cmd_set: 14096
+get_misses: 0
+written_bytes: 30631824
+read_bytes: 111744
+object_bytes: 30672896
+
+Run time: 2.0s Ops: 14096 TPS: 7027 Net_rate: 14.6M/s
+servers : 127.0.0.1:11211
+threads count: 4
+concurrency: 128
+run time: 2s
+servers : 127.0.0.1:11211
+threads count: 1
+concurrency: 16
+run time: 4s
+windows size: 10k
+set proportion: set_prop=0.10
+get proportion: get_prop=0.00
+cmd_get: 0
+cmd_set: 10486
+get_misses: 0
+written_bytes: 22960710
+read_bytes: 83760
+object_bytes: 22817536
+packet_disorder: 0
+packet_drop: 0
+udp_timeout: 0
+
+Run time: 4.0s Ops: 10486 TPS: 2611 Net_rate: 5.5M/s
+servers : 127.0.0.1:11211
+run time: 4s
+servers : 127.0.0.1:11211,127.0.0.1:11212
+threads count: 1
+concurrency: 16
+run time: 5s
+windows size: 10k
+set proportion: set_prop=0.10
+get proportion: get_prop=0.00
+cmd_get: 0
+cmd_set: 11961
+get_misses: 0
+written_bytes: 26195385
+read_bytes: 95560
+object_bytes: 26027136
+
+Run time: 5.0s Ops: 11961 TPS: 2384 Net_rate: 5.0M/s
+servers : 127.0.0.1:11211,127.0.0.1:11212
+run time: 5s
+Thu Sep 22 21:03:40 2022 - INFO  - End of the test.
+Thu Sep 22 21:03:41 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:03:41 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 21:04:00 2022 - INFO  - Finish restoring the test environment.

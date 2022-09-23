@@ -1,0 +1,14 @@
+Thu Sep 22 23:22:27 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 23:23:13 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 23:23:14 2022 - INFO  - Start to run testcase.
+rdate: [time.nist.gov]	Thu Sep 22 23:23:15 2022
+rdate: got EOF from time server
+rdate: connect to address 2610:20:6f97:97::4: Network is unreachable
+rdate: [time.nist.gov]	Thu Sep 22 23:23:18 2022
+rdate: [time.nist.gov]	Thu Sep 22 23:23:18 2022
+rdate: [time.nist.gov]	Thu Sep 22 23:23:21 2022
+rdate: [time.nist.gov]	Thu Sep 22 23:23:22 2022
+Thu Sep 22 23:23:22 2022 - INFO  - End to run testcase.
+Thu Sep 22 23:23:23 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 23:23:24 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 23:23:34 2022 - INFO  - End to restore the test environment.

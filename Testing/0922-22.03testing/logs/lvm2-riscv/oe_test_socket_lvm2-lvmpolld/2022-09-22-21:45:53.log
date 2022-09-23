@@ -1,0 +1,12 @@
+Thu Sep 22 21:45:56 2022 - INFO  - Start to run test.
+     Active: active (listening) since Thu 2022-09-22 21:45:56 CST; 6s ago
+     Active: inactive (dead) since Thu 2022-09-22 21:46:02 CST; 5s ago
+     Active: active (listening) since Thu 2022-09-22 21:46:08 CST; 5s ago
+find: ‘/etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket’: No such file or directory
+Created symlink /etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket → /usr/lib/systemd/system/lvm2-lvmpolld.socket.
+/etc/systemd/system/sysinit.target.wants/lvm2-lvmpolld.socket
+Failed to reload lvm2-lvmpolld.socket: Job type reload is not applicable for unit lvm2-lvmpolld.socket.
+     Active: active (listening) since Thu 2022-09-22 21:46:08 CST; 15s ago
+Thu Sep 22 21:46:24 2022 - INFO  - End of the test.
+Thu Sep 22 21:46:25 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:46:25 2022 - INFO  - oe_test_socket_lvm2-lvmpolld.sh post_test

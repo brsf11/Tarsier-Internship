@@ -1,0 +1,15 @@
+Thu Sep 22 19:55:15 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 19:56:52 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 19:56:53 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 19:57:02 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-09-22 19:57:28 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/hsqldb.service
+Removed /etc/systemd/system/multi-user.target.wants/hsqldb.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/hsqldb.service’: No such file or directory
+Failed to reload hsqldb.service: Job type reload is not applicable for unit hsqldb.service.
+     Active: active (running) since Thu 2022-09-22 19:57:28 CST; 15s ago
+Thu Sep 22 19:57:44 2022 - INFO  - Finish test!
+Thu Sep 22 19:57:45 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:57:45 2022 - INFO  - start environment cleanup.
+Thu Sep 22 19:58:15 2022 - INFO  - Finish environment cleanup!

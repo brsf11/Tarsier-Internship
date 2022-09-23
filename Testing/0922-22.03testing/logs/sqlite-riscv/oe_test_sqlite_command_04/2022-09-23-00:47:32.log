@@ -1,0 +1,27 @@
+Fri Sep 23 00:47:35 2022 - INFO  - Start to run test.
+spawn sqlite3 ./test.db
+CREATE TABLE COMPANY(
+          ID INT PRIMARY KEY     NOT NULL,
+          NAME           TEXT    NOT NULL,
+          AGE            INT     NOT NULL,
+          ADDRESS        CHAR(50),
+          SALARY         REAL
+          );
+SQLite version 3.36.0 2021-06-18 18:36:39
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE COMPANY(
+   ...>           ID INT PRIMARY KEY     NOT NULL,
+   ...>           NAME           TEXT    NOT NULL,
+   ...>           AGE            INT     NOT NULL,
+   ...>           ADDRESS        CHAR(50),
+   ...>           SALARY         REAL
+   ...>           );
+sqlite> .separator ","
+sqlite> .import ../common/import.txt COMPANY
+sqlite> .output ./output.txt
+sqlite> select *from COMPANY;
+sqlite> .quit
+Fri Sep 23 00:47:36 2022 - INFO  - End to run test.
+Fri Sep 23 00:47:37 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 00:47:38 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 00:47:38 2022 - INFO  - End to restore the test environment.

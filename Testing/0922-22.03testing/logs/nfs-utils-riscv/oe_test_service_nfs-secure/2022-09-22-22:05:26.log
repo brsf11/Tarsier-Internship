@@ -1,0 +1,13 @@
+Thu Sep 22 22:05:29 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 22:06:39 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 22:06:39 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 22:06:40 CST; 6s ago
+     Active: inactive (dead) since Thu 2022-09-22 22:06:46 CST; 5s ago
+     Active: active (running) since Thu 2022-09-22 22:06:52 CST; 6s ago
+Thu Sep 22 22:06:59 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload nfs-secure.service: Job type reload is not applicable for unit rpc-gssd.service.
+     Active: active (running) since Thu 2022-09-22 22:06:52 CST; 7s ago
+Thu Sep 22 22:07:00 2022 - INFO  - Finish test!
+Thu Sep 22 22:07:01 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:07:02 2022 - INFO  - start environment cleanup.
+Thu Sep 22 22:07:39 2022 - INFO  - Finish environment cleanup!

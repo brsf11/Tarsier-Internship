@@ -1,0 +1,15 @@
+Thu Sep 22 21:42:04 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 21:42:50 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 21:42:51 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 21:42:53 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-09-22 21:43:09 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/lvm2-lvmdbusd.service
+Removed /etc/systemd/system/multi-user.target.wants/lvm2-lvmdbusd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/lvm2-lvmdbusd.service’: No such file or directory
+Failed to reload lvm2-lvmdbusd.service: Job type reload is not applicable for unit lvm2-lvmdbusd.service.
+     Active: active (running) since Thu 2022-09-22 21:43:09 CST; 17s ago
+Thu Sep 22 21:43:27 2022 - INFO  - Finish test!
+Thu Sep 22 21:43:27 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:43:28 2022 - INFO  - start environment cleanup.
+Thu Sep 22 21:43:52 2022 - INFO  - Finish environment cleanup!

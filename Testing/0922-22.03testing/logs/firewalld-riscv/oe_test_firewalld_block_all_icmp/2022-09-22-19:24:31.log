@@ -1,0 +1,11 @@
+Thu Sep 22 19:24:34 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Thu Sep 22 19:24:35 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 19:24:35 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Thu Sep 22 19:24:36 2022 - INFO  - Finish testcase execution.
+Thu Sep 22 19:24:37 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:24:38 2022 - INFO  - start environment cleanup.
+sudo: firewall-cmd: command not found
+Failed to start firewalld.service: Unit firewalld.service not found.
+Thu Sep 22 19:24:39 2022 - INFO  - Finish environment cleanup!

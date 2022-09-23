@@ -1,0 +1,26 @@
+Fri Sep 23 00:20:25 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Fri Sep 23 00:22:12 2022 - INFO  - End to prepare the test environment.
+Fri Sep 23 00:22:13 2022 - INFO  - Start to run test.
+  * bundler (2.2.33)
+	Summary:  The best way to manage your application's dependencies
+/usr/share/gems/gems/bundler-2.2.33
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Resolving dependencies...
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+[DEPRECATED] The `--force` option has been renamed to `--redownload`
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile's dependencies are satisfied
+Fri Sep 23 00:22:53 2022 - INFO  - End to run test.
+Fri Sep 23 00:22:54 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 00:22:55 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 00:23:29 2022 - INFO  - End to restore the test environment.

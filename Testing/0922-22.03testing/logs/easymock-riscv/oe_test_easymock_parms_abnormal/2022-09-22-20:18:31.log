@@ -1,0 +1,12 @@
+Thu Sep 22 20:18:34 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 20:18:53 2022 - INFO  - pkgs:(easymock junit) is already installed
+usage: rpm_manage.py install|remove [-h] [--node NODE] [--pkgs PKG] [--tempfile TEPMFILE]
+rpm_manage.py: error: argument --node: invalid int value: '1.8.0'
+Thu Sep 22 20:18:57 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 20:18:58 2022 - INFO  - Start to run test.
+  Unexpected method call IStudent.doMethod(2 (int)):
+Thu Sep 22 20:19:20 2022 - INFO  - End to run test.
+Thu Sep 22 20:19:20 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:19:21 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 20:19:22 2022 - WARN  - no thing to do.
+Thu Sep 22 20:19:23 2022 - INFO  - End to restore the test environment.

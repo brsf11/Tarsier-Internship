@@ -1,0 +1,25 @@
+Fri Sep 23 00:17:23 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Fri Sep 23 00:18:48 2022 - INFO  - End to prepare the test environment.
+Fri Sep 23 00:18:48 2022 - INFO  - Start to run test.
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+The Gemfile specifies no dependencies
+Bundle updated!
+Fri Sep 23 00:19:30 2022 - INFO  - End to run test.
+Fri Sep 23 00:19:31 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 00:19:32 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 00:20:15 2022 - INFO  - End to restore the test environment.

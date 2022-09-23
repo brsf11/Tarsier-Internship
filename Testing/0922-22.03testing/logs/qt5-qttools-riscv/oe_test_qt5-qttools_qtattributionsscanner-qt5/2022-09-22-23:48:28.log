@@ -1,0 +1,17 @@
+Thu Sep 22 23:48:30 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 23:52:19 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 23:52:19 2022 - INFO  - Start to run test.
+Usage: qtattributionsscanner-qt5 [options] path
+  -h, --help                    Displays help on commandline options.
+  --help-all                    Displays help including Qt specific options.
+Qt Attributions Scanner 1.1
+Reading file ./qt_attribution.json...
+Generating json...
+\ingroup attributions-qtcore
+\page qtcore-attribution-cmake_topological_sort.html attribution
+Recursively scanning ./ for attribution files...
+Processing is done.
+Thu Sep 22 23:52:21 2022 - INFO  - End to run test.
+Thu Sep 22 23:52:22 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 23:52:22 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 23:52:51 2022 - INFO  - End to restore the test environment.

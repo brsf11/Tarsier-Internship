@@ -1,0 +1,20 @@
+Thu Sep 22 17:03:24 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 17:03:24 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 17:03:25 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 17:03:26 CST; 6s ago
+     Active: inactive (dead) since Thu 2022-09-22 17:03:33 CST; 5s ago
+     Active: active (running) since Thu 2022-09-22 17:03:39 CST; 5s ago
+find: ‘/etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/NetworkManager.service’: No such file or directory
+find: ‘/etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/NetworkManager.service → /usr/lib/systemd/system/NetworkManager.service.
+Created symlink /etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service → /usr/lib/systemd/system/NetworkManager-dispatcher.service.
+Created symlink /etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service → /usr/lib/systemd/system/NetworkManager-wait-online.service.
+/etc/systemd/system/network-online.target.wants/NetworkManager-wait-online.service
+/etc/systemd/system/multi-user.target.wants/NetworkManager.service
+/etc/systemd/system/dbus-org.freedesktop.nm-dispatcher.service
+     Active: active (running) since Thu 2022-09-22 17:03:39 CST; 20s ago
+Thu Sep 22 17:04:00 2022 - INFO  - Finish test!
+Thu Sep 22 17:04:01 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 17:04:02 2022 - INFO  - start environment cleanup.
+Thu Sep 22 17:04:08 2022 - INFO  - Finish environment cleanup!

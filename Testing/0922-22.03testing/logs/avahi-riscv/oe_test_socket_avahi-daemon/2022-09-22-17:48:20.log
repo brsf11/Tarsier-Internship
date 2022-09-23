@@ -1,0 +1,15 @@
+Thu Sep 22 17:48:23 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 17:49:10 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 17:49:11 2022 - INFO  - Start to run test.
+     Active: active (listening) since Thu 2022-09-22 17:49:11 CST; 5s ago
+     Active: inactive (dead) since Thu 2022-09-22 17:49:17 CST; 5s ago
+     Active: active (listening) since Thu 2022-09-22 17:49:23 CST; 5s ago
+find: ‘/etc/systemd/system/sockets.target.wants/avahi-daemon.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket → /usr/lib/systemd/system/avahi-daemon.socket.
+/etc/systemd/system/sockets.target.wants/avahi-daemon.socket
+Failed to reload avahi-daemon.socket: Job type reload is not applicable for unit avahi-daemon.socket.
+     Active: active (listening) since Thu 2022-09-22 17:49:23 CST; 15s ago
+Thu Sep 22 17:49:39 2022 - INFO  - End of the test.
+Thu Sep 22 17:49:40 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 17:49:40 2022 - INFO  - start environment cleanup.
+Thu Sep 22 17:50:01 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,15 @@
+Fri Sep 23 01:23:44 2022 - INFO  - Start environmental preparation.
+Fri Sep 23 01:24:25 2022 - INFO  - End of environmental preparation!
+Fri Sep 23 01:24:26 2022 - INFO  - Start to run test.
+     Active: active (listening) since Fri 2022-09-23 01:24:26 CST; 6s ago
+     Active: inactive (dead) since Fri 2022-09-23 01:24:33 CST; 5s ago
+     Active: active (listening) since Fri 2022-09-23 01:24:39 CST; 5s ago
+find: ‘/etc/systemd/system/sockets.target.wants/uuidd.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/uuidd.socket → /usr/lib/systemd/system/uuidd.socket.
+/etc/systemd/system/sockets.target.wants/uuidd.socket
+Failed to reload uuidd.socket: Job type reload is not applicable for unit uuidd.socket.
+     Active: active (listening) since Fri 2022-09-23 01:24:39 CST; 15s ago
+Fri Sep 23 01:24:55 2022 - INFO  - End of the test.
+Fri Sep 23 01:24:56 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:24:56 2022 - INFO  - start environment cleanup.
+Fri Sep 23 01:25:15 2022 - INFO  - Finish environment cleanup!

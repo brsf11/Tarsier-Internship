@@ -1,0 +1,11 @@
+Thu Sep 22 17:55:31 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 17:56:28 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 17:56:28 2022 - INFO  - Start testing...
+byacc - 2.0 20210808
+#define yyparse    test_pparse
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib.sh: line 37: [: too many arguments
+/root/GitRepo/mugen-riscv/libs/locallibs/common_lib.sh: line 37: [: too many arguments
+Thu Sep 22 17:56:30 2022 - INFO  - Finish test!
+Thu Sep 22 17:56:30 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 17:56:31 2022 - INFO  - start environment cleanup.
+Thu Sep 22 17:56:51 2022 - INFO  - Finish environment cleanup!

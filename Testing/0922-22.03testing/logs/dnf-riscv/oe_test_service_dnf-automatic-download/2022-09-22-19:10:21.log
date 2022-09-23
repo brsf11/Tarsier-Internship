@@ -1,0 +1,8 @@
+Thu Sep 22 19:10:24 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 19:11:44 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 19:11:44 2022 - INFO  - Start testing...
+Thu Sep 22 19:11:46 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Sep 22 19:11:46 2022 - INFO  - Finish test!
+Thu Sep 22 19:11:47 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:11:48 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 19:12:13 2022 - INFO  - End to restore the test environment.

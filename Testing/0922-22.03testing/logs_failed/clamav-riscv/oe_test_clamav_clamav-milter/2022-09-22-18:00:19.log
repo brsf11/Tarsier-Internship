@@ -1,0 +1,20 @@
+Thu Sep 22 18:00:22 2022 - INFO  - Start to prepare the database config.
+Thu Sep 22 18:02:17 2022 - INFO  - End to prepare the database config.
+Thu Sep 22 18:02:18 2022 - INFO  - Start to run test.
+     Active: active (running) since Thu 2022-09-22 18:02:18 CST; 214ms ago
+     Active: inactive (dead)
+clamav-milter 0.103.2
+
+                       Clam AntiVirus: Milter Mail Scanner 0.103.2
+           By The ClamAV Team: https://www.clamav.net/about.html#credits
+           (C) 2021 Cisco Systems, Inc.
+
+    clamav-milter [-c <config-file>]
+
+
+    --help                   -h       Show this help
+    --version                -V       Show version
+    --config-file <file>     -c       Read configuration from file
+
+WARNING: No clamd server appears to be available
+Thu Sep 22 18:30:20 2022 - ERROR - Timeout : Command 'bash oe_test_clamav_clamav-milter.sh' timed out after 1799.9980551980002 seconds

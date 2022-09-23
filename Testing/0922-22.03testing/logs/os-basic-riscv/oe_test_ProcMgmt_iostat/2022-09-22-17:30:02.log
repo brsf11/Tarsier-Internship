@@ -1,0 +1,22 @@
+Thu Sep 22 17:30:05 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 17:31:01 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 17:31:02 2022 - INFO  - Start to run test.
+Linux 5.10.0-7.oe2203.riscv64 (openEuler-riscv64) 	09/22/2022 	_riscv64_	(4 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          14.30    0.11    5.87    1.36    0.00   78.36
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+vda               8.70        94.50       130.86         0.00     167903     232504          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+Usage: iostat [ options ] [ <interval> [ <count> ] ]
+Thu Sep 22 17:31:03 2022 - INFO  - End to run test.
+Thu Sep 22 17:31:04 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 17:31:04 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 17:31:32 2022 - INFO  - End to restore the test environment.

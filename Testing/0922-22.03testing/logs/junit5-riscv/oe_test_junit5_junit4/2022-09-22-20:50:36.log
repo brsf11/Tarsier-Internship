@@ -1,0 +1,15 @@
+Thu Sep 22 20:50:39 2022 - INFO  - Start environment preparation.
+Thu Sep 22 20:55:50 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 20:55:51 2022 - INFO  - Start testing...
+Apache Maven 3.6.3 (openEuler 3.6.3-1)
+Maven home: /usr/share/maven
+Java version: 1.8.0_332, vendor: Bisheng, runtime: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.332.b09-4.oe2203.riscv64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.10.0-7.oe2203.riscv64", arch: "riscv64", family: "unix"
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+/root/GitRepo/mugen-riscv/testcases/cli-test/junit5/oe_test_junit5_junit4
+Thu Sep 22 21:03:55 2022 - INFO  - Finish test!
+Thu Sep 22 21:03:56 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:03:57 2022 - INFO  - start environment cleanup.
+Thu Sep 22 21:05:03 2022 - INFO  - Finish environment cleanup!

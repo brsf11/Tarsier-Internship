@@ -1,0 +1,19 @@
+Fri Sep 23 01:13:09 2022 - INFO  - Start environmental preparation.
+Fri Sep 23 01:14:03 2022 - INFO  - End of environmental preparation!
+Fri Sep 23 01:14:04 2022 - INFO  - Start testing...
+HTML Tidy for Linux version 5.7.28
+HTML Tidy for Linux version 5.7.28
+tidy [options...] [file...] [options...] [file...]
+tidy [options...] [file...] [options...] [file...]
+tidy [options...] [file...] [options...] [file...]
+HTML Tidy Configuration Settings
+Tidy can configure its option values from multiple sources, in the 
+This option, when enabled, adds a [36m<meta>[0m element and sets the        
+add-meta-charset: no
+add-meta-charset            Boolean    yes                                     
+add-meta-charset: yes
+Info: 文档内容看起来像 HTML5
+Fri Sep 23 01:14:05 2022 - INFO  - Finish test!
+Fri Sep 23 01:14:06 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:14:06 2022 - INFO  - start environment cleanup.
+Fri Sep 23 01:14:17 2022 - INFO  - Finish environment cleanup!

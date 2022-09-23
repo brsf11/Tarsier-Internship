@@ -1,0 +1,29 @@
+Fri Sep 23 00:54:18 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 23 00:55:20 2022 - INFO  - End to prepare the test environment.
+Fri Sep 23 00:55:21 2022 - INFO  - Start to run test.
+Language subdirectory: octave
+   ./swig_lib/octave/
+   /usr/share/swig/4.0.2/octave/
+Language subdirectory: perl5
+   ./swig_lib/perl5/
+   /usr/share/swig/4.0.2/perl5/
+Language subdirectory: php
+   ./swig_lib/php/
+   /usr/share/swig/4.0.2/php/
+Language subdirectory: python
+   ./swig_lib/python/
+   /usr/share/swig/4.0.2/python/
+Language subdirectory: r
+Language subdirectory: ruby
+   ./swig_lib/ruby/
+   /usr/share/swig/4.0.2/ruby/
+Language subdirectory: scilab
+   ./swig_lib/scilab/
+   /usr/share/swig/4.0.2/scilab/
+Language subdirectory: tcl
+   ./swig_lib/tcl/
+   /usr/share/swig/4.0.2/tcl/
+Fri Sep 23 00:55:34 2022 - INFO  - End to run test.
+Fri Sep 23 00:55:35 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 00:55:35 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 00:55:46 2022 - INFO  - End to restore the test environment.

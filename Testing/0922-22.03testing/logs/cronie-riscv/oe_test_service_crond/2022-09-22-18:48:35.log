@@ -1,0 +1,15 @@
+Thu Sep 22 18:48:38 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 18:48:38 CST; 5s ago
+     Active: inactive (dead) since Thu 2022-09-22 18:48:44 CST; 5s ago
+     Active: active (running) since Thu 2022-09-22 18:48:50 CST; 6s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/crond.service’: No such file or directory
+find: ‘/etc/systemd/system/cron.service’: No such file or directory
+Created symlink /etc/systemd/system/cron.service → /usr/lib/systemd/system/crond.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/crond.service → /usr/lib/systemd/system/crond.service.
+/etc/systemd/system/multi-user.target.wants/crond.service
+/etc/systemd/system/cron.service
+     Active: active (running) since Thu 2022-09-22 18:48:50 CST; 20s ago
+Thu Sep 22 18:49:11 2022 - INFO  - Finish test!
+Thu Sep 22 18:49:12 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 18:49:13 2022 - INFO  - start environment cleanup.
+Thu Sep 22 18:49:17 2022 - INFO  - Finish environment cleanup!

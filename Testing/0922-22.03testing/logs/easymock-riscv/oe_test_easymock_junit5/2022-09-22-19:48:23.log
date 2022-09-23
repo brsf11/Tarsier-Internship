@@ -1,0 +1,6 @@
+Thu Sep 22 19:48:26 2022 - INFO  - Start to prepare the test environment.
+usage: rpm_manage.py install|remove [-h] [--node NODE] [--pkgs PKG] [--tempfile TEPMFILE]
+rpm_manage.py: error: argument --node: invalid int value: '1.8.0'
+Thu Sep 22 19:51:09 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 19:51:10 2022 - INFO  - Start to run test.
+Thu Sep 22 20:18:24 2022 - ERROR - Timeout : Command 'bash oe_test_easymock_junit5.sh' timed out after 1799.998098167 seconds

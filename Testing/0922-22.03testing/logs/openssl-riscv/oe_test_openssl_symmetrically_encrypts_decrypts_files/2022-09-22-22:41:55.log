@@ -1,0 +1,19 @@
+Thu Sep 22 22:41:58 2022 - INFO  - Start to run test.
+spawn openssl enc -aes-256-cbc -salt -in test.txt -out test.enc
+enter aes-256-cbc encryption password:
+Verifying - enter aes-256-cbc encryption password:
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+Using -iter or -pbkdf2 would be better.
+spawn openssl enc -d -aes-256-cbc -in test.enc
+enter aes-256-cbc decryption password:
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+    This is a file created by shell.
+    We want to make a good world.
+    Byebye!
+    Byebye!
+Thu Sep 22 22:41:59 2022 - INFO  - End to run test.
+Thu Sep 22 22:42:00 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:42:01 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 22:42:02 2022 - INFO  - End to restore the test environment.

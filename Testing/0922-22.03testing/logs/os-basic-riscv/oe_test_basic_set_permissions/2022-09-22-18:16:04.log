@@ -1,0 +1,9 @@
+Thu Sep 22 18:16:07 2022 - INFO  - Start to prepare the test environment.
+id: ‘testuser’: no such user
+Thu Sep 22 18:16:10 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 18:16:11 2022 - INFO  - Start to run test.
+drwxrwsr-x 2 root myproject 4096 Sep 22 18:16 /opt/myproject
+Thu Sep 22 18:16:13 2022 - INFO  - End to run test.
+Thu Sep 22 18:16:13 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 18:16:14 2022 - INFO  - Start to clean the test environment.
+Thu Sep 22 18:16:16 2022 - INFO  - Start to clean the test environment.

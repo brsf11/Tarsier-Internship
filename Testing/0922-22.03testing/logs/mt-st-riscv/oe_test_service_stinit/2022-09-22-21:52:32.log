@@ -1,0 +1,15 @@
+Thu Sep 22 21:52:35 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 21:53:33 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 21:53:34 2022 - INFO  - Start testing...
+     Active: active (exited) since Thu 2022-09-22 21:53:34 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Thu 2022-09-22 21:53:47 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/stinit.service
+Removed /etc/systemd/system/multi-user.target.wants/stinit.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/stinit.service’: No such file or directory
+Failed to reload stinit.service: Job type reload is not applicable for unit stinit.service.
+     Active: active (exited) since Thu 2022-09-22 21:53:47 CST; 15s ago
+Thu Sep 22 21:54:03 2022 - INFO  - Finish test!
+Thu Sep 22 21:54:04 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:54:04 2022 - INFO  - start environment cleanup.
+Thu Sep 22 21:54:31 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,12 @@
+Thu Sep 22 20:50:22 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 20:50:23 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 20:50:24 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+/etc/shadow: Permission denied
+/usr/bin/less cap_dac_override=eip
+root:$6$d07Rc9.eYb$hgW6zDFCxx.eBI.I1bVy9hs5664bex0He3R6Mo7p6GyzWWMWNMsZmpn399q/eAr3hj1dK8VPsB3Mte0DS2Oay.:19256:0:99999:7:::
+Thu Sep 22 20:50:33 2022 - INFO  - Finish testcase execution.
+Thu Sep 22 20:50:34 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:50:35 2022 - INFO  - start environment cleanup.
+Thu Sep 22 20:50:37 2022 - INFO  - Finish environment cleanup!

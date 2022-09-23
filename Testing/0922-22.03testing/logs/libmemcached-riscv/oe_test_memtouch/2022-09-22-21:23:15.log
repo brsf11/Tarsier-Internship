@@ -1,0 +1,42 @@
+Thu Sep 22 21:23:17 2022 - INFO  - Start to prepare the test environment.
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+6010
+Thu Sep 22 21:24:19 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 22 21:24:20 2022 - INFO  - Start to run test.
+spawn telnet 127.0.0.1 11211
+set user_id 1 0 3
+001
+set user_name 2 0 4
+Lily
+quit
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+STORED
+STORED
+Connection closed by foreign host.
+Found key user_id
+Found key user_name
+	 --version 
+	 --help 
+	 --quiet 
+	 --verbose 
+	 --debug 
+	 --servers=
+	 --hash=
+	 --binary 
+	 --username=
+	 --password=
+	 --expire=
+memtouch v1.0
+Found key user_id
+Found key user_name
+Could not find key "user_id"
+Could not find key "user_name"
+Could not find key "user_id"
+Could not find key "user_name"
+Thu Sep 22 21:24:37 2022 - INFO  - End of the test.
+Thu Sep 22 21:24:38 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:24:39 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 21:25:11 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,8 @@
+Thu Sep 22 17:17:13 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 17:18:37 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 17:18:37 2022 - INFO  - Start to run test.
+0 (0)compare: profile 'icc': 'RGB ': RGB color space not permitted on grayscale PNG `diff1.png' @ warning/png.c/MagickPNGWarningHandler/1748.
+Thu Sep 22 17:18:41 2022 - INFO  - End to run test.
+Thu Sep 22 17:18:41 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 17:18:42 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 17:19:11 2022 - INFO  - End to restore the test environment.

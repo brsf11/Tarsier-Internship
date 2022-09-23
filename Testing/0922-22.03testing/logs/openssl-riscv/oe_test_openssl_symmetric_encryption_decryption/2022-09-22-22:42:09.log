@@ -1,0 +1,10 @@
+Thu Sep 22 22:42:12 2022 - INFO  - Start to run test.
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+U2FsdGVkX19zLWbvx/NWgWrPfDtPzWDSezmhczqoouc=
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+Thu Sep 22 22:42:13 2022 - INFO  - End to run test.
+Thu Sep 22 22:42:14 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:42:14 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 22:42:15 2022 - INFO  - End to restore the test environment.

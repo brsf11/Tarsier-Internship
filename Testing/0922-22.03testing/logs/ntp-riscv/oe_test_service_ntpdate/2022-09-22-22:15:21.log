@@ -1,0 +1,20 @@
+Thu Sep 22 22:15:25 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 22:15:35 2022 - INFO  - pkgs:(ntp) is already installed
+Thu Sep 22 22:15:42 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 22:15:43 2022 - INFO  - Start testing...
+     Active: active (exited) since Thu 2022-09-22 22:15:46 CST; 6s ago
+     Active: inactive (dead) since Thu 2022-09-22 22:15:52 CST; 5s ago
+     Active: active (exited) since Thu 2022-09-22 22:16:01 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/ntpdate.service
+Removed /etc/systemd/system/multi-user.target.wants/ntpdate.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ntpdate.service’: No such file or directory
+Failed to reload ntpdate.service: Job type reload is not applicable for unit ntpdate.service.
+     Active: active (exited) since Thu 2022-09-22 22:16:01 CST; 15s ago
+Thu Sep 22 22:16:17 2022 - INFO  - Finish test!
+Thu Sep 22 22:16:18 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:16:19 2022 - INFO  - start environment cleanup.
+sed: can't read sed: No such file or directory
+sed: can't read s/localhost/0.openEuler.pool.ntp.org/: No such file or directory
+oe_test_service_ntpdate.sh: line 49: /etc/ntp.conf: Permission denied
+Thu Sep 22 22:16:20 2022 - WARN  - no thing to do.
+Thu Sep 22 22:16:20 2022 - INFO  - Finish environment cleanup!

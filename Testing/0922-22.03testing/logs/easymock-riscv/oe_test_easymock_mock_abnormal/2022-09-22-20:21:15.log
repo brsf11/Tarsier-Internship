@@ -1,0 +1,12 @@
+Thu Sep 22 20:21:18 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 20:21:37 2022 - INFO  - pkgs:(easymock junit) is already installed
+usage: rpm_manage.py install|remove [-h] [--node NODE] [--pkgs PKG] [--tempfile TEPMFILE]
+rpm_manage.py: error: argument --node: invalid int value: '1.8.0'
+Thu Sep 22 20:21:41 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 20:21:42 2022 - INFO  - Start to run test.
+java.lang.RuntimeException: The id is not exist
+Thu Sep 22 20:22:02 2022 - INFO  - End to run test.
+Thu Sep 22 20:22:03 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:22:04 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 20:22:04 2022 - WARN  - no thing to do.
+Thu Sep 22 20:22:05 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,37 @@
+Thu Sep 22 22:46:25 2022 - INFO  - Start to config params of the case.
+Thu Sep 22 22:46:26 2022 - INFO  - End to config params of the case.
+Thu Sep 22 22:46:26 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 22:46:42 2022 - INFO  - pkgs:(osc) is already installed
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 4704.
+Thu Sep 22 22:46:51 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 22:46:52 2022 - INFO  - Start to run test.
+Project name: home:test666:branches:openEuler:Mainline
+passx = None
+plaintext_passwd = 0
+Removing: osc.log
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+A    4.txt
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4705.
++good girl
+A    osc_diff.log
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Committed revision 4706.
+spawn osc rremove home:test666:branches:openEuler:Mainline zjl 4.txt
+rm: remove source file `4.txt' from `home:test666:branches:openEuler:Mainline/zjl'? (yY|nN) y
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+spawn osc rremove home:test666:branches:openEuler:Mainline zjl osc_diff.log
+rm: remove source file `osc_diff.log' from `home:test666:branches:openEuler:Mainline/zjl'? (yY|nN) y
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Thu Sep 22 22:48:04 2022 - INFO  - End to run test.
+Thu Sep 22 22:48:05 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:48:06 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 22:48:07 2022 - WARN  - no thing to do.
+Thu Sep 22 22:48:07 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,15 @@
+Fri Sep 23 01:43:30 2022 - INFO  - Start environmental preparation.
+Fri Sep 23 01:44:19 2022 - INFO  - End of environmental preparation!
+Fri Sep 23 01:44:20 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-23 01:44:20 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-23 01:44:33 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/ypxfrd.service
+Removed /etc/systemd/system/multi-user.target.wants/ypxfrd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ypxfrd.service’: No such file or directory
+Failed to reload ypxfrd.service: Job type reload is not applicable for unit ypxfrd.service.
+     Active: active (running) since Fri 2022-09-23 01:44:33 CST; 15s ago
+Fri Sep 23 01:44:49 2022 - INFO  - Finish test!
+Fri Sep 23 01:44:50 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:44:50 2022 - INFO  - start environment cleanup.
+Fri Sep 23 01:45:11 2022 - INFO  - Finish environment cleanup!

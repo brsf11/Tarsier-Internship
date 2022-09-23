@@ -1,0 +1,315 @@
+Thu Sep 22 19:01:23 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 19:03:17 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 19:03:18 2022 - INFO  - Start to run test.
+/usr/bin/any2djvu: illegal option -- -
+Usage:	/usr/bin/any2djvu [options] [url] {filename(s)}
+spawn any2djvu http://barak.pearlmutter.net/papers mesh-preprint.ps.gz
+/-- Started Thu Sep 22 11:03:18 AM UTC 2022: root@openEuler-riscv64, pid 794: /usr/bin/any2djvu (cwd /root/GitRepo/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_01)
+WARNING!
+
+any2djvu uses an external server which is willing to perform the
+conversion and requires the document transfer over to that server.
+There is a security issue in operating on documents not intended for
+widespread distribution, which could be partially although not
+completely ameliorated by using a secure web connection.
+
+Do you acknowledge and allow the transmission of the document?
+(Type 'yes' to acknowledge. You can define non-empty environment
+ variable DJVU_ONLINE_ACK to avoid seeing this dialog, or use -a
+ command line parameter to any2djvu).
+[yes/no]:yes
+Thu Sep 22 11:03:19 AM UTC 2022 Processing mesh-preprint ...
+--2022-09-22 19:03:19--  http://any2djvu.djvu.org/any2djvu.php?urlupload=http://barak.pearlmutter.net/papers/mesh-preprint.ps.gz&docformat=2&resolution=400&ocr=1&legal=1
+Resolving any2djvu.djvu.org (any2djvu.djvu.org)... 216.165.22.6
+Connecting to any2djvu.djvu.org (any2djvu.djvu.org)|216.165.22.6|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘STDOUT’
+
+-                       [<=>                 ]       0  --.-KB/s               <!DOCTYPE HTML PUBLIC>
+<html>
+<head>
+<title>Any2DjVu Server</title>
+<style type="text/css">
+<!--
+.footertextmenu {
+	COLOR: #40556b;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 10px;
+	TEXT-ALIGN: center;
+	TEXT-DECORATION: none;
+}
+
+.footertextmenuhead {
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	TEXT-ALIGN: center;
+	TEXT-DECORATION: none;
+}
+
+.lefttextmenu {
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: left;
+	TEXT-DECORATION: none;
+}
+
+.titlebanner {
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 22px;
+}
+.titlelinks {
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 18px;
+	TEXT-DECORATION: none;
+}
+//-->
+</style>
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+/************************************/
+/********** Menu Functions **********/
+/************************************/
+function overMenu(menuItem) {
+	imageSrc	= document.images[menuItem].src;
+	ending		= imageSrc.substring(imageSrc.length-7);
+
+	/***** Return if no such element *****/
+        if (!document.images[menuItem]){
+                alert('oops');
+                return;
+        }
+
+	/***** Return if this is a hightlighted Image *****/
+	if ( ending == ".on.gif"){
+		return;
+	}
+ 
+        document.images[menuItem].src   = "button-left.tr.gif";
+        return;
+ 
+ 
+}
+ 
+function offMenu(menuItem) {
+	imageSrc	= document.images[menuItem].src;
+	ending		= imageSrc.substring(imageSrc.length-7);
+
+	/***** Return if no such element *****/
+        if (!document.images[menuItem]){
+                alert('oops');
+                return;
+        }
+
+	/***** Return if this is a hightlighted Image *****/
+	if ( ending == ".on.gif"){
+		return;
+	}
+ 
+        document.images[menuItem].src   = "button-left.gif";
+        return;
+}
+/************************************/
+/************************************/
+
+//-->
+</script>
+
+<style type="text/css">
+<!--
+.footertextmenu {
+	COLOR: #40556b;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 10px;
+	TEXT-ALIGN: center;
+	TEXT-DECORATION: none;
+}
+
+.footertextmenuhead {
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 11px;
+	TEXT-ALIGN: center;
+	TEXT-DECORATION: none;
+}
+
+.lefttextmenu {
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 12px;
+	TEXT-ALIGN: left;
+	TEXT-DECORATION: none;
+}
+
+.titlebanner {
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	FONT-SIZE: 22px;
+}
+.titlelinks {
+        COLOR: #ffffff;
+        FONT-FAMILY: Arial, Helvetica, sans-serif;
+        FONT-SIZE: 18px;
+        TEXT-DECORATION: none;
+}
+//-->
+</style>
+
+</head>
+
+
+
+
+<meta name="keywords" content="DjVu, document imaging, image compression, scan, image, document, web,image processing, digital library, electronic commerce, legacy document, plug-in, JPEG, TIFF, PDF">
+<meta name="description" content="DjVu: The Technology for Scanned Documents on the Web">
+<meta name="description" content="technology document image compression innovation, scan high-resolution page color 300 dpi, fast download of scanned documents, as fast as html, zcoder, z-coder, binary adaptive arithmetic coding, wavelet, pattern matching. download, free, non-commercial, plug-in, plugin, compressor, wavelets">
+
+<body bgcolor="#ffffff" text="#40556b" link="#124a9c" vlink="#2c7aa4">
+<font face="Arial,Helvetica" size="3">
+
+
+<table  width=100% border=0 cellpadding=0 cellspacing=5>
+<tr>
+<td width=95% valign="top">
+<table width=100% border=0 cellpadding=0 cellspacing=0><tr><td bgcolor="#2c7aa4" background="ban_bg.gif" valign=middle><img src="ban_left.gif" width="32" height="64" border="0" align=middle><nobr><font face="Arial,Helvetica" size="5" color="#ffffff"><b><span class="titlebanner">Any2DjVu Server</span></b></font><img src="ban_bg.gif" width="32" height="64" border="0" align=middle><img src="ban_right.gif" width="187" height="64" border="0" align=middle>&nbsp;&nbsp;
+<a href=index.php?title=Any2DjVu+Server><font face="Arial,Helvetica" size="0" color="#ffffff"><b><span class="titlelinks">Any2DjVu</span></b></font></a>
+<!--
+<font color=white><b>|</b></font>
+<a href="http://bib2web.djvuzone.org"><font face="Arial,Helvetica" size="0" color="#ffffff"><b><span class="titlelinks">Bib2Web</span></b></font></a>
+<font color=white><b>|</b></font>
+<a href="http://www.djvuzone.org"><font face="Arial,Helvetica" size="0" color="#ffffff"><b><span class="titlelinks">DjVuZone</span></b></font></a>
+-->
+<font color=white><b>&nbsp;|&nbsp;</b></font>
+<a href="http://djvu.org"><font face="Arial,Helvetica" size="0" color="#ffffff"><b><span class="titlelinks">DjVu.org</span></b></font></a>
+<font color=white><b>&nbsp;|&nbsp;</b></font>
+<a href="http://djvu.sourceforge.net"><font face="Arial,Helvetica" size="0" color="#ffffff"><b><span class="titlelinks">DjVuLibre</span></b></font></a>
+</nobr></td></tr><tr><td bgcolor="#ffffff"><img src="clear.gif" width="10" height="10" border="0"></td></tr></table><br>
+<p><p>
+</table>
+</td>
+</tr>
+</table>
+<table width=100% align=center cellpadding=1 cellspacing=1><td bgcolor="#2c7aa4">
+<table width=100% cellspacing=0 cellpadding=4 align=center><tr><th bgcolor="#2c7aa4" colspan=8><font color=white size=+1>Your document, http://barak.pearlmutter.net/papers/mesh-preprint.ps.gz, is now being downloaded and processed by the Any2DjVu Server.</font></th></tr>
+<tr><th bgcolor="#f4e8d1" colspan=8 align=left><font color="#2c7aa4"><p>Please be patient, especially with large files, which take some time to be downloaded and converted. Do not reload or stop this page unless you wish to cancel the process.<p>During the conversion, you will be able to follow a "live log" on this page of the various processes being run. When the conversion is finished, you will see the DjVu version appear near the bottom of the page.</font></th></tr></table>
+</td></table><br clear=all>
+</table>
+</td>
+</tr>
+</table>
+</table>
+</td>
+</tr>
+</table>
+<p><blockquote>
+<p><b>Now fetching your original document from the Internet...</b><p>
+-                       [ <=>                ]   5.90K  14.8KB/s                                                                                                                                                                                                                                                                               <pre>
+--2022-09-22 07:03:20--  http://barak.pearlmutter.net/papers/mesh-preprint.ps.gz
+Resolving barak.pearlmutter.net (barak.pearlmutter.net)... 192.64.119.6
+Connecting to barak.pearlmutter.net (barak.pearlmutter.net)|192.64.119.6|:80... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://golconda.cs.nuim.ie/~barak/papers/mesh-preprint.ps.gz [following]
+-                       [  <=>               ]   6.53K  9.92KB/s               --2022-09-22 07:03:20--  https://golconda.cs.nuim.ie/~barak/papers/mesh-preprint.ps.gz
+Resolving golconda.cs.nuim.ie (golconda.cs.nuim.ie)... 149.157.245.66
+Connecting to golconda.cs.nuim.ie (golconda.cs.nuim.ie)|149.157.245.66|:443... connected.
+-                       [   <=>              ]   6.77K  7.38KB/s               HTTP request sent, awaiting response... -                       [    <=>             ]   6.81K  5.58KB/s               200 OK
+Length: 63643 (62K) [application/x-gzip]
+Saving to: '/home/apache/any2djvu.djvuzone.org/data/raw/220922/62445.220922070320.mesh-preprint.ps.gz'
+
+     0K .......... .......... .......... .......... ......-                       [     <=>            ]   7.01K  4.81KB/s               .... 80%  286K 0s
+    50K .......... ..                                         100% 22.2M=0.2s
+
+2022-09-22 07:03:21 (354 KB/s) - '/home/apache/any2djvu.djvuzone.org/data/raw/220922/62445.220922070320.mesh-preprint.ps.gz' saved [63643/63643]
+
+</pre>
+<hr size=2 noshade><b>Your file has been uploaded.</b><p>
+Conversion will start shortly.&nbsp; After conversion your document will be named <a href="djvu/220922/117.173.139.35/62445.220922070320.djvu">djvu/220922/117.173.139.35/62445.220922070320.djvu</a>.&nbsp If your browser drops the connection before the conversion terminates, you can check the above url to see if the converted document has appeared.<p>
+<hr size=2 noshade>
+-                       [      <=>           ]   7.72K  4.21KB/s               
+<b>Now running DjVu Conversion...</b><p>
+                                                                                                                                                                                                                                                                <pre>
+
+</pre><b>Now running OCR on the document...</b><p>
+-                       [       <=>          ]   8.03K  1.31KB/s                                                                                                                                                                                                                                                                               <pre>
+Processing page 1
+Processing page 2
+-                       [        <=>         ]   8.32K  1.16KB/s               </pre>
+-                       [         <=>        ]   8.33K  1.09KB/s               
+<b>Original file 63643 bytes; DjVu file 61675 bytes</b>
+<hr size=2 noshade><b>All done! Here is your new DjVu document: <a href=djvu/220922/117.173.139.35/62445.220922070320.djvu>djvu/220922/117.173.139.35/62445.220922070320.djvu</a></b><hr size=2 noshade>
+<br clear=all><object classid="clsid:0e8d0700-75df-11d3-8b4a-0008c7450c4a" width=100% height=100%> <param name="imageURL" value="djvu/220922/117.173.139.35/62445.220922070320.djvu" align="center" width="100%" height="100%" hspace="0" vspace="0"> <embed type="image/x.djvu" src="djvu/220922/117.173.139.35/62445.220922070320.djvu" align="center" width="100%" height="100%" hspace="0" vspace="0"> </embed> </object>
+</blockquote>
+
+<BR>
+<p><a href="index.html"><b><i>Any2DjVu Server</i></b></a></p>
+</CENTER>
+</BODY>
+</HTML>
+-                       [          <=>       ]   9.09K  1.18KB/s    in 7.7s    
+
+2022-09-22 19:03:28 (1.18 KB/s) - written to stdout [9305]
+
+--2022-09-22 19:03:28--  http://any2djvu.djvu.org/djvu/220922/117.173.139.35/62445.220922070320.djvu
+Resolving any2djvu.djvu.org (any2djvu.djvu.org)... 216.165.22.6
+Connecting to any2djvu.djvu.org (any2djvu.djvu.org)|216.165.22.6|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 61675 (60K) [image/vnd.djvu]
+Saving to: ‘mesh-preprint.djvu’
+
+mesh-preprint.djvu    0%[                    ]       0  --.-KB/s               mesh-preprint.djvu   34%[=====>              ]  21.07K  69.3KB/s               mesh-preprint.djvu   79%[==============>     ]  47.79K  78.6KB/s               mesh-preprint.djvu  100%[===================>]  60.23K  98.7KB/s    in 0.6s    
+
+2022-09-22 19:03:29 (98.7 KB/s) - ‘mesh-preprint.djvu’ saved [61675/61675]
+
+-rw-r--r-- 1 root root 61675 Sep 22 19:03 mesh-preprint.djvu
+\-- Done Thu Sep 22 11:03:29 AM UTC 2022: root@openEuler-riscv64, pid 794: /usr/bin/any2djvu (cwd /root/GitRepo/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_01)
+spawn any2djvu test.pdf
+/-- Started Thu Sep 22 11:03:30 AM UTC 2022: root@openEuler-riscv64, pid 815: /usr/bin/any2djvu (cwd /root/GitRepo/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_01)
+WARNING!
+
+any2djvu uses an external server which is willing to perform the
+conversion and requires the document transfer over to that server.
+There is a security issue in operating on documents not intended for
+widespread distribution, which could be partially although not
+completely ameliorated by using a secure web connection.
+
+Do you acknowledge and allow the transmission of the document?
+(Type 'yes' to acknowledge. You can define non-empty environment
+ variable DJVU_ONLINE_ACK to avoid seeing this dialog, or use -a
+ command line parameter to any2djvu).
+[yes/no]:yes
+Thu Sep 22 11:03:30 AM UTC 2022 Processing test ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0Thu Sep 22 19:03:41 2022 - ERROR - Check test.djvu not exist.
+Thu Sep 22 19:03:41 2022 - ERROR - oe_test_djvulibre_01.sh line 50
+BZZ --- DjVuLibre-3.5.27
+Usage [encoding]: bzz -e[<blocksize>] <infile> <outfile>
+Usage [decoding]: bzz -d <infile> <outfile>
+*** [1-11711] Failed to open 'test.djvu': No such file or directory.
+*** (ByteStream.cpp:696)
+*** 'DJVU::GUTF8String DJVU::ByteStream::Stdio::init(const DJVU::GURL&, const char*)'
+
+Thu Sep 22 19:03:42 2022 - ERROR - Check bzz -e failed.
+Thu Sep 22 19:03:43 2022 - ERROR - oe_test_djvulibre_01.sh line 55
+*** [1-11711] Failed to open 'test.djvu': No such file or directory.
+*** (ByteStream.cpp:696)
+*** 'DJVU::GUTF8String DJVU::ByteStream::Stdio::init(const DJVU::GURL&, const char*)'
+
+*** [1-11711] Failed to open 'bzz.djvu': No such file or directory.
+*** (ByteStream.cpp:696)
+*** 'DJVU::GUTF8String DJVU::ByteStream::Stdio::init(const DJVU::GURL&, const char*)'
+
+Thu Sep 22 19:03:44 2022 - ERROR - Check bzz -d failed.
+Thu Sep 22 19:03:45 2022 - ERROR - oe_test_djvulibre_01.sh line 58
+C44 --- DjVuLibre-3.5.27
+Usage: c44 [options] pnm-or-jpeg-file [djvufile]
+Thu Sep 22 19:03:48 2022 - INFO  - End to run test.
+Thu Sep 22 19:03:48 2022 - ERROR - failed to execute the case.
+Thu Sep 22 19:03:49 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 19:04:23 2022 - INFO  - End to restore the test environment.

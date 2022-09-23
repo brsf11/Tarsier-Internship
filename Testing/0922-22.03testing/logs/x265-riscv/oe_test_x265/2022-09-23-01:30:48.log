@@ -1,0 +1,132 @@
+Fri Sep 23 01:30:51 2022 - INFO  - Start to prepare the test environment!
+Fri Sep 23 01:31:43 2022 - INFO  - End to prepare the test environment!
+Fri Sep 23 01:31:44 2022 - INFO  - Start to run test.
+x265 [info]: HEVC encoder version 3.4
+x265 [info]: build info [Linux][GCC 10.3.1][32 bit][noasm] 8bit
+Executable Options:
+Output Options:
+Input Options:
+x265 [info]: HEVC encoder version 3.4
+x265 [info]: build info [Linux][GCC 10.3.1][32 bit][noasm] 8bit
+x265 [info]: using cpu capabilities: none!
+y4m  [info]: 176x144 fps 30000/1001 i420p8 sar 128:117 frames 0 - 299 of 300
+raw  [info]: output file: file0
+x265 [info]: HEVC encoder version 3.4
+x265 [info]: build info [Linux][GCC 10.3.1][32 bit][noasm] 8bit
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-2 (Main tier)
+x265 [info]: Thread pool created using 4 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 2 / wpp(3 rows)
+x265 [warning]: Source height < 720p; disabling lookahead-slices
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00 
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+[0.3%] 1/300 frames, 1.39 fps, 1123.34 kb/s, eta 0:03:35  [4.3%] 13/300 frames, 13.09 fps, 97.49 kb/s, eta 0:00:21  [8.7%] 26/300 frames, 20.88 fps, 57.27 kb/s, eta 0:00:13  [12.7%] 38/300 frames, 24.40 fps, 48.51 kb/s, eta 0:00:10  [17.3%] 52/300 frames, 28.68 fps, 39.58 kb/s, eta 0:00:08  [21.7%] 65/300 frames, 31.31 fps, 35.53 kb/s, eta 0:00:07  [25.7%] 77/300 frames, 33.05 fps, 33.10 kb/s, eta 0:00:06  [28.3%] 85/300 frames, 32.89 fps, 33.44 kb/s, eta 0:00:06  [32.3%] 97/300 frames, 33.93 fps, 31.90 kb/s, eta 0:00:05  [36.7%] 110/300 frames, 35.22 fps, 30.32 kb/s, eta 0:00:05  [42.3%] 127/300 frames, 37.49 fps, 27.90 kb/s, eta 0:00:04  [46.3%] 139/300 frames, 38.16 fps, 27.55 kb/s, eta 0:00:04  [51.0%] 153/300 frames, 39.20 fps, 26.62 kb/s, eta 0:00:03  [55.0%] 165/300 frames, 39.65 fps, 26.17 kb/s, eta 0:00:03  [61.0%] 183/300 frames, 41.39 fps, 24.83 kb/s, eta 0:00:02  [67.0%] 201/300 frames, 42.99 fps, 23.55 kb/s, eta 0:00:02  [71.0%] 213/300 frames, 43.10 fps, 23.39 kb/s, eta 0:00:02  [75.0%] 225/300 frames, 43.07 fps, 23.83 kb/s, eta 0:00:01  [80.3%] 241/300 frames, 43.63 fps, 23.09 kb/s, eta 0:00:01  [82.7%] 248/300 frames, 42.23 fps, 25.26 kb/s, eta 0:00:01  [87.7%] 263/300 frames, 42.79 fps, 24.82 kb/s, eta 0:00:00  [92.3%] 277/300 frames, 43.21 fps, 24.42 kb/s, eta 0:00:00  [96.7%] 290/300 frames, 43.46 fps, 24.13 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      2, Avg QP:24.58  kb/s: 612.11  
+x265 [info]: frame P:     83, Avg QP:29.70  kb/s: 48.80   
+x265 [info]: frame B:    215, Avg QP:35.57  kb/s: 5.57    
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 9.4% 14.1% 4.7% 57.6% 14.1% 
+
+encoded 300 frames in 6.70s (44.77 fps), 21.57 kb/s, Avg QP:33.87
+x265 [warning]: Source height < 720p; disabling lookahead-slices
+y4m  [info]: 176x144 fps 66000/1000 i420p8 sar 128:117 frames 0 - 299 of 300
+y4m  [info]: 176x144 fps 30000/1001 i420p8 sar 128:117 frames 0 - 122 of 300
+y4m  [info]: 176x144 fps 30000/1001 i420p8 sar 128:117 frames 5 - 299 of 300
+x265 [warning]: falling back to default bit-depth
+y4m  [info]: 176x144 fps 30000/1001 i420p8 sar 128:117 frames 0 - 299 of 300
+raw  [info]: output file: file1
+x265 [info]: HEVC encoder version 3.4
+x265 [info]: build info [Linux][GCC 10.3.1][32 bit][noasm] 8bit
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-2 (Main tier)
+x265 [info]: Thread pool created using 4 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 2 / wpp(3 rows)
+x265 [warning]: Source height < 720p; disabling lookahead-slices
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00 
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+[0.3%] 1/300 frames, 1.49 fps, 1123.34 kb/s, eta 0:03:20  [4.0%] 12/300 frames, 12.93 fps, 101.85 kb/s, eta 0:00:22  [7.0%] 21/300 frames, 17.42 fps, 68.27 kb/s, eta 0:00:16  [11.3%] 34/300 frames, 22.41 fps, 50.41 kb/s, eta 0:00:11  [15.3%] 46/300 frames, 25.33 fps, 43.67 kb/s, eta 0:00:10  [20.3%] 61/300 frames, 29.43 fps, 35.95 kb/s, eta 0:00:08  [23.7%] 71/300 frames, 30.37 fps, 34.56 kb/s, eta 0:00:07  [27.0%] 81/300 frames, 31.24 fps, 33.62 kb/s, eta 0:00:07  [30.7%] 92/300 frames, 31.80 fps, 32.78 kb/s, eta 0:00:06  [35.3%] 106/300 frames, 33.41 fps, 30.75 kb/s, eta 0:00:05  [40.3%] 121/300 frames, 35.29 fps, 28.65 kb/s, eta 0:00:05  [45.3%] 136/300 frames, 36.94 fps, 26.98 kb/s, eta 0:00:04  [48.3%] 145/300 frames, 36.81 fps, 27.16 kb/s, eta 0:00:04  [52.3%] 157/300 frames, 37.40 fps, 26.65 kb/s, eta 0:00:03  [57.7%] 173/300 frames, 38.79 fps, 25.44 kb/s, eta 0:00:03  [62.0%] 186/300 frames, 39.45 fps, 24.53 kb/s, eta 0:00:02  [66.7%] 200/300 frames, 40.25 fps, 23.64 kb/s, eta 0:00:02  [70.7%] 212/300 frames, 40.57 fps, 23.16 kb/s, eta 0:00:02  [73.7%] 221/300 frames, 40.11 fps, 23.83 kb/s, eta 0:00:01  [78.3%] 235/300 frames, 40.77 fps, 23.35 kb/s, eta 0:00:01  [81.3%] 244/300 frames, 40.41 fps, 23.07 kb/s, eta 0:00:01  [82.7%] 248/300 frames, 38.76 fps, 25.26 kb/s, eta 0:00:01  [87.7%] 263/300 frames, 39.42 fps, 24.82 kb/s, eta 0:00:00  [92.3%] 277/300 frames, 39.95 fps, 24.42 kb/s, eta 0:00:00  [96.7%] 290/300 frames, 40.31 fps, 24.13 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      2, Avg QP:24.58  kb/s: 612.11  
+x265 [info]: frame P:     83, Avg QP:29.70  kb/s: 48.80   
+x265 [info]: frame B:    215, Avg QP:35.57  kb/s: 5.57    
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 9.4% 14.1% 4.7% 57.6% 14.1% 
+
+encoded 300 frames in 7.23s (41.50 fps), 21.57 kb/s, Avg QP:33.87
+y4m  [info]: 176x144 fps 30000/1001 i420p8 sar 128:117 frames 0 - 299 of 300
+raw  [info]: output file: file2
+x265 [info]: HEVC encoder version 3.4
+x265 [info]: build info [Linux][GCC 10.3.1][32 bit][noasm] 8bit
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-2 (Main tier)
+x265 [info]: Thread pool created using 4 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 2 / wpp(3 rows)
+x265 [warning]: Source height < 720p; disabling lookahead-slices
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00 
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+x265 [info]: frame I:      2, Avg QP:24.58  kb/s: 612.11  
+x265 [info]: frame P:     83, Avg QP:29.70  kb/s: 48.80   
+x265 [info]: frame B:    215, Avg QP:35.57  kb/s: 5.57    
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 9.4% 14.1% 4.7% 57.6% 14.1% 
+
+encoded 300 frames in 6.45s (46.52 fps), 21.57 kb/s, Avg QP:33.87
+y4m  [info]: 176x144 fps 30000/1001 i420p8 sar 128:117 frames 0 - 299 of 300
+raw  [info]: output file: file3
+x265 [info]: HEVC encoder version 3.4
+x265 [info]: build info [Linux][GCC 10.3.1][32 bit][noasm] 8bit
+x265 [info]: using cpu capabilities: none!
+x265 [info]: Main profile, Level-2 (Main tier)
+x265 [info]: Thread pool created using 4 threads
+x265 [info]: Slices                              : 1
+x265 [info]: frame threads / pool features       : 2 / wpp(3 rows)
+x265 [warning]: Source height < 720p; disabling lookahead-slices
+x265 [info]: Coding QT: max CU size, min CU size : 64 / 8
+x265 [info]: Residual QT: max TU size, max depth : 32 / 1 inter / 1 intra
+x265 [info]: ME / range / subpel / merge         : hex / 57 / 2 / 3
+x265 [info]: Keyframe min / max / scenecut / bias  : 25 / 250 / 40 / 5.00 
+x265 [info]: Lookahead / bframes / badapt        : 20 / 4 / 2
+x265 [info]: b-pyramid / weightp / weightb       : 1 / 1 / 0
+x265 [info]: References / ref-limit  cu / depth  : 3 / off / on
+x265 [info]: AQ: mode / str / qg-size / cu-tree  : 2 / 1.0 / 32 / 1
+x265 [info]: Rate Control / qCompress            : CRF-28.0 / 0.60
+x265 [info]: tools: rd=3 psy-rd=2.00 early-skip rskip mode=1 signhide tmvp
+x265 [info]: tools: b-intra strong-intra-smoothing deblock sao
+[0.3%] 1/300 frames, 1.65 fps, 1128.22 kb/s, eta 0:03:01  [4.3%] 13/300 frames, 14.89 fps, 97.87 kb/s, eta 0:00:19  [8.7%] 26/300 frames, 22.69 fps, 57.46 kb/s, eta 0:00:12  [12.7%] 38/300 frames, 26.15 fps, 48.63 kb/s, eta 0:00:10  [18.0%] 54/300 frames, 31.02 fps, 39.01 kb/s, eta 0:00:07  [22.3%] 67/300 frames, 33.64 fps, 34.76 kb/s, eta 0:00:06  [26.0%] 78/300 frames, 34.71 fps, 33.40 kb/s, eta 0:00:06  [28.7%] 86/300 frames, 34.38 fps, 33.18 kb/s, eta 0:00:06  [32.7%] 98/300 frames, 35.50 fps, 31.69 kb/s, eta 0:00:05  [37.0%] 111/300 frames, 36.81 fps, 30.15 kb/s, eta 0:00:05  [43.7%] 131/300 frames, 39.68 fps, 27.45 kb/s, eta 0:00:04  [47.3%] 142/300 frames, 39.74 fps, 27.45 kb/s, eta 0:00:03  [51.0%] 153/300 frames, 39.97 fps, 26.65 kb/s, eta 0:00:03  [54.7%] 164/300 frames, 40.14 fps, 26.31 kb/s, eta 0:00:03  [60.7%] 182/300 frames, 41.86 fps, 24.82 kb/s, eta 0:00:02  [66.7%] 200/300 frames, 43.23 fps, 23.66 kb/s, eta 0:00:02  [71.0%] 213/300 frames, 43.61 fps, 23.41 kb/s, eta 0:00:01  [75.0%] 225/300 frames, 43.53 fps, 23.85 kb/s, eta 0:00:01  [80.0%] 240/300 frames, 43.50 fps, 23.18 kb/s, eta 0:00:01  [82.7%] 248/300 frames, 42.08 fps, 25.28 kb/s, eta 0:00:01  [87.7%] 263/300 frames, 42.78 fps, 24.84 kb/s, eta 0:00:00  [92.7%] 278/300 frames, 43.44 fps, 24.38 kb/s, eta 0:00:00  [97.3%] 292/300 frames, 43.73 fps, 24.10 kb/s, eta 0:00:00                                                                                  x265 [info]: frame I:      2, Avg QP:24.58  kb/s: 612.11  
+x265 [info]: frame P:     83, Avg QP:29.70  kb/s: 48.80   
+x265 [info]: frame B:    215, Avg QP:35.57  kb/s: 5.57    
+x265 [info]: Weighted P-Frames: Y:0.0% UV:0.0%
+x265 [info]: consecutive B-frames: 9.4% 14.1% 4.7% 57.6% 14.1% 
+
+encoded 300 frames in 6.68s (44.90 fps), 21.57 kb/s, Avg QP:33.87
+Fri Sep 23 01:32:39 2022 - INFO  - End to run test.
+Fri Sep 23 01:32:39 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:32:40 2022 - INFO  - start environment cleanup.
+Fri Sep 23 01:32:58 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,16 @@
+Fri Sep 23 00:09:51 2022 - INFO  - Start environmental preparation.
+Fri Sep 23 00:10:42 2022 - INFO  - End of environmental preparation!
+Fri Sep 23 00:10:42 2022 - INFO  - Start to run test.
+     Active: active (listening) since Fri 2022-09-23 00:10:43 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Fri 2022-09-23 00:10:55 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/rsyncd.socket
+Removed /etc/systemd/system/sockets.target.wants/rsyncd.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/rsyncd.socket’: No such file or directory
+Failed to reload rsyncd.socket: Job type reload is not applicable for unit rsyncd.socket.
+     Active: active (listening) since Fri 2022-09-23 00:10:55 CST; 15s ago
+Fri Sep 23 00:11:12 2022 - INFO  - End of the test.
+Fri Sep 23 00:11:12 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 00:11:13 2022 - INFO  - start environment cleanup.
+oe_test_socket_rsyncd.sh: line 37: systtemctl: command not found
+Fri Sep 23 00:11:35 2022 - INFO  - Finish environment cleanup!

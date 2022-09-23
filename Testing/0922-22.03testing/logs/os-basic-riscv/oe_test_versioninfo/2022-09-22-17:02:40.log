@@ -1,0 +1,11 @@
+Thu Sep 22 17:02:43 2022 - INFO  - Start to run test.
+NAME="openEuler"
+PRETTY_NAME="openEuler 22.03 LTS"
+22.03 LTS
+ID="openEuler"
+VERSION_ID="22.03"
+PRETTY_NAME="openEuler 22.03 LTS"
+ANSI_COLOR="0;31"
+Thu Sep 22 17:02:44 2022 - INFO  - End to run test.
+Thu Sep 22 17:02:45 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 17:02:45 2022 - INFO  - oe_test_versioninfo.sh post_test

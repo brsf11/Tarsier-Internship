@@ -1,0 +1,15 @@
+Fri Sep 23 01:12:56 2022 - INFO  - Start environmental preparation.
+Fri Sep 23 01:15:25 2022 - INFO  - End of environmental preparation!
+Fri Sep 23 01:15:26 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-23 01:15:26 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-23 01:15:39 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/tomcat.service
+Removed /etc/systemd/system/multi-user.target.wants/tomcat.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/tomcat.service’: No such file or directory
+Failed to reload tomcat.service: Job type reload is not applicable for unit tomcat.service.
+     Active: active (running) since Fri 2022-09-23 01:15:39 CST; 15s ago
+Fri Sep 23 01:15:55 2022 - INFO  - Finish test!
+Fri Sep 23 01:15:55 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:15:56 2022 - INFO  - start environment cleanup.
+Fri Sep 23 01:16:27 2022 - INFO  - Finish environment cleanup!

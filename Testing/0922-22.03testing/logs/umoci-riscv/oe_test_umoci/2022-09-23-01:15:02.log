@@ -1,0 +1,11 @@
+Fri Sep 23 01:15:05 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 23 01:15:40 2022 - INFO  - End to prepare the test environment.
+Fri Sep 23 01:15:41 2022 - INFO  - Start to run test.
+blobs
+index.json
+oci-layout
+latest
+Fri Sep 23 01:15:42 2022 - INFO  - End to run test.
+Fri Sep 23 01:15:43 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:15:44 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 01:16:04 2022 - INFO  - End to restore the test environment.

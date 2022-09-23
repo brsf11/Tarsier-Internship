@@ -1,0 +1,19 @@
+Thu Sep 22 23:39:12 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Thu Sep 22 23:43:04 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 23:43:05 2022 - INFO  - Start to run test.
+pmlogsummary version 5.3.5
+Log Label (Log Format Version 2)
+disk.dev.write ["vda"] 1.053 1.053 count / sec
+disk.dev.write ["vda"] 1.053 [<=1.053] 1 [] 0 [] 0 [] 0 [] 0 [] 0 [] 0 [] 0 [] 0 [] 0 count / sec
+disk.dev.write	["vda"]	1.053	count / sec
+disk.dev.write,["vda"],1.053,count / sec
+metric time_average units
+disk.dev.write ["vda"] 1.053 23:41:48.408 count / sec
+disk.dev.write ["vda"] 1.053 23:41:48.408 count / sec
+Performance metrics from host openEuler-riscv64
+Thu Sep 22 23:43:07 2022 - INFO  - End to run test.
+Thu Sep 22 23:43:08 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 23:43:08 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 23:44:02 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,10 @@
+Thu Sep 22 18:58:24 2022 - INFO  - Start to run test.
+     Active: active (running) since Thu 2022-09-22 18:58:25 CST; 6s ago
+     Active: inactive (dead) since Thu 2022-09-22 18:58:31 CST; 5s ago
+     Active: active (listening) since Thu 2022-09-22 18:58:37 CST; 5s ago
+Thu Sep 22 18:58:44 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload dbus.socket: Job type reload is not applicable for unit dbus.socket.
+     Active: active (listening) since Thu 2022-09-22 18:58:37 CST; 7s ago
+Thu Sep 22 18:58:45 2022 - INFO  - End of the test.
+Thu Sep 22 18:58:45 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 18:58:46 2022 - INFO  - oe_test_socket_dbus.sh post_test

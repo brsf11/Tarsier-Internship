@@ -1,0 +1,14 @@
+Thu Sep 22 19:47:20 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 19:48:25 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 19:48:26 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 19:48:27 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-09-22 19:48:39 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/gssproxy.service
+Removed /etc/systemd/system/multi-user.target.wants/gssproxy.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/gssproxy.service’: No such file or directory
+     Active: active (running) since Thu 2022-09-22 19:48:39 CST; 19s ago
+Thu Sep 22 19:48:59 2022 - INFO  - Finish test!
+Thu Sep 22 19:49:00 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:49:01 2022 - INFO  - start environment cleanup.
+Thu Sep 22 19:49:33 2022 - INFO  - Finish environment cleanup!

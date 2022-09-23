@@ -1,0 +1,104 @@
+Thu Sep 22 19:08:52 2022 - INFO  - Start to prepare the test environment.
+spawn any2djvu test.pdf
+/-- Started Thu Sep 22 11:09:56 AM UTC 2022: root@openEuler-riscv64, pid 1387: /usr/bin/any2djvu (cwd /root/GitRepo/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_04)
+WARNING!
+
+any2djvu uses an external server which is willing to perform the
+conversion and requires the document transfer over to that server.
+There is a security issue in operating on documents not intended for
+widespread distribution, which could be partially although not
+completely ameliorated by using a secure web connection.
+
+Do you acknowledge and allow the transmission of the document?
+(Type 'yes' to acknowledge. You can define non-empty environment
+ variable DJVU_ONLINE_ACK to avoid seeing this dialog, or use -a
+ command line parameter to any2djvu).
+[yes/no]:yes
+Thu Sep 22 11:09:56 AM UTC 2022 Processing test ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0curl: (6) Could not resolve host: any2djvu.djvu.org
+error: something got wrong. check log file
+Thu Sep 22 19:10:07 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 19:10:08 2022 - INFO  - Start to run test.
+Thu Sep 22 19:10:09 2022 - ERROR - Check test.djvu not exist.
+Thu Sep 22 19:10:09 2022 - ERROR - oe_test_djvulibre_04.sh line 38
+Usage: djvudump [-o outputfile] <iff_filenames>
+Usage:
+Usage: djvumake djvufile ...arguments...
+Usage: djvups [<options>] [<infile.djvu> [<outfile.ps>]]
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:11 2022 - ERROR - Check djvups -color=yes failed.
+Thu Sep 22 19:10:12 2022 - ERROR - oe_test_djvulibre_04.sh line 52
+Thu Sep 22 19:10:12 2022 - ERROR - Check djvups1.ps not exist.
+Thu Sep 22 19:10:13 2022 - ERROR - oe_test_djvulibre_04.sh line 54
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:14 2022 - ERROR - Check djvups -color=no failed.
+Thu Sep 22 19:10:15 2022 - ERROR - oe_test_djvulibre_04.sh line 56
+Thu Sep 22 19:10:15 2022 - ERROR - Check djvups2.ps not exist.
+Thu Sep 22 19:10:16 2022 - ERROR - oe_test_djvulibre_04.sh line 58
+
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:17 2022 - ERROR - Check djvups -verbose failed.
+Thu Sep 22 19:10:18 2022 - ERROR - oe_test_djvulibre_04.sh line 60
+Thu Sep 22 19:10:18 2022 - ERROR - Check djvups.ps not exist.
+Thu Sep 22 19:10:19 2022 - ERROR - oe_test_djvulibre_04.sh line 62
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:20 2022 - ERROR - Check djvups -format=ps failed.
+Thu Sep 22 19:10:21 2022 - ERROR - oe_test_djvulibre_04.sh line 64
+Thu Sep 22 19:10:21 2022 - ERROR - Check djvups3.ps not exist.
+Thu Sep 22 19:10:22 2022 - ERROR - oe_test_djvulibre_04.sh line 66
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:23 2022 - ERROR - Check djvups -level=2 failed.
+Thu Sep 22 19:10:24 2022 - ERROR - oe_test_djvulibre_04.sh line 68
+Thu Sep 22 19:10:24 2022 - ERROR - Check djvups4.ps not exist.
+Thu Sep 22 19:10:25 2022 - ERROR - oe_test_djvulibre_04.sh line 70
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:26 2022 - ERROR - Check djvups -orient=portrait failed.
+Thu Sep 22 19:10:27 2022 - ERROR - oe_test_djvulibre_04.sh line 72
+Thu Sep 22 19:10:27 2022 - ERROR - Check djvups42.ps not exist.
+Thu Sep 22 19:10:28 2022 - ERROR - oe_test_djvulibre_04.sh line 74
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:29 2022 - ERROR - Check djvups -mode=color failed.
+Thu Sep 22 19:10:30 2022 - ERROR - oe_test_djvulibre_04.sh line 76
+Thu Sep 22 19:10:30 2022 - ERROR - Check djvups5.ps not exist.
+Thu Sep 22 19:10:31 2022 - ERROR - oe_test_djvulibre_04.sh line 78
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:32 2022 - ERROR - Check djvups -zoom=25 failed.
+Thu Sep 22 19:10:33 2022 - ERROR - oe_test_djvulibre_04.sh line 80
+Thu Sep 22 19:10:33 2022 - ERROR - Check djvups6.ps not exist.
+Thu Sep 22 19:10:34 2022 - ERROR - oe_test_djvulibre_04.sh line 82
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:35 2022 - ERROR - Check djvups -bookletfold=18+200 failed.
+Thu Sep 22 19:10:35 2022 - ERROR - oe_test_djvulibre_04.sh line 84
+Thu Sep 22 19:10:36 2022 - ERROR - Check djvups7.ps not exist.
+Thu Sep 22 19:10:37 2022 - ERROR - oe_test_djvulibre_04.sh line 86
+djvups: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvups: 'ByteStream.cpp:696'
+djvups: Try option --help.
+Thu Sep 22 19:10:38 2022 - ERROR - Check djvups -booklet=no failed.
+Thu Sep 22 19:10:38 2022 - ERROR - oe_test_djvulibre_04.sh line 88
+Thu Sep 22 19:10:39 2022 - ERROR - Check djvups31.ps not exist.
+Thu Sep 22 19:10:40 2022 - ERROR - oe_test_djvulibre_04.sh line 90
+Thu Sep 22 19:10:40 2022 - INFO  - End to run test.
+Thu Sep 22 19:10:41 2022 - ERROR - failed to execute the case.
+Thu Sep 22 19:10:42 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 19:10:54 2022 - INFO  - End to restore the test environment.

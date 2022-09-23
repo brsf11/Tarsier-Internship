@@ -1,0 +1,20 @@
+Thu Sep 22 22:32:24 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 22:33:06 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 22 22:33:07 2022 - INFO  - Start to run test.
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Anything [
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+]>
+<abc>&entityex;</abc>
+Usage: ospent [OPTION] SYSID...
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+<!ENTITY entityex SYSTEM "file:///etc/passwd">
+Thu Sep 22 22:33:09 2022 - INFO  - End of the test.
+Thu Sep 22 22:33:10 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:33:11 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 22:33:23 2022 - INFO  - Finish restoring the test environment.

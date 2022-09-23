@@ -1,0 +1,9 @@
+Thu Sep 22 17:16:29 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 17:16:40 2022 - INFO  - pkgs:(acl) is already installed
+Thu Sep 22 17:16:41 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 17:16:42 2022 - INFO  - Start to run test.
+Thu Sep 22 17:16:44 2022 - INFO  - End to run test.
+Thu Sep 22 17:16:45 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 17:16:45 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 17:16:46 2022 - WARN  - no thing to do.
+Thu Sep 22 17:16:47 2022 - INFO  - End to restore the test environment.

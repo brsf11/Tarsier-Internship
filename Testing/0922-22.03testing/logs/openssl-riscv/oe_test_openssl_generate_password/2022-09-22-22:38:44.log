@@ -1,0 +1,16 @@
+Thu Sep 22 22:38:47 2022 - INFO  - Start to run test.
+12cJrBH2GTTIw
+122ZGtBTdeZOg
+$1$12345$.PR5N9GEffBVjStGzy/JP0
+spawn openssl passwd -1 -salt 12345 -stdin
+1
+11
+111
+$1$12345$nj9w.SDIioIKHAZV43l5N/
+$1$12345$FyXgGnwE8J/4n76pm2TKg1
+$1$12345$Zq6Iiwd5/Xq0gcuoI1bcc/
+111
+Thu Sep 22 22:38:59 2022 - INFO  - End to run test.
+Thu Sep 22 22:39:00 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:39:00 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 22:39:01 2022 - INFO  - End to restore the test environment.

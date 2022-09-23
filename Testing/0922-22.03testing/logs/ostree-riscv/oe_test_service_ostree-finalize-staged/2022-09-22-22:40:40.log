@@ -1,0 +1,12 @@
+Thu Sep 22 22:40:43 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 22:42:10 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 22:42:11 2022 - INFO  - Start testing...
+Thu Sep 22 22:42:12 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Sep 22 22:42:13 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+/etc/systemd/system/local-fs.target.wants/ostree-remount.service
+Removed /etc/systemd/system/local-fs.target.wants/ostree-remount.service.
+find: ‘/etc/systemd/system/local-fs.target.wants/ostree-remount.service’: No such file or directory
+Thu Sep 22 22:42:24 2022 - INFO  - Finish test!
+Thu Sep 22 22:42:25 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:42:26 2022 - INFO  - start environment cleanup.
+Thu Sep 22 22:42:34 2022 - INFO  - Finish environment cleanup!

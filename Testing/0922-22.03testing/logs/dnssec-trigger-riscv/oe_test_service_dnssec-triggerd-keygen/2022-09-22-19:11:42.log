@@ -1,0 +1,13 @@
+Thu Sep 22 19:11:45 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 19:12:35 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 19:12:36 2022 - INFO  - Start testing...
+     Active: active (exited) since Thu 2022-09-22 19:12:44 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Thu 2022-09-22 19:12:58 CST; 210ms ago
+Thu Sep 22 19:13:00 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload dnssec-triggerd-keygen.service: Job type reload is not applicable for unit dnssec-triggerd-keygen.service.
+     Active: active (exited) since Thu 2022-09-22 19:12:58 CST; 1s ago
+Thu Sep 22 19:13:01 2022 - INFO  - Finish test!
+Thu Sep 22 19:13:01 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:13:02 2022 - INFO  - start environment cleanup.
+Thu Sep 22 19:13:30 2022 - INFO  - Finish environment cleanup!

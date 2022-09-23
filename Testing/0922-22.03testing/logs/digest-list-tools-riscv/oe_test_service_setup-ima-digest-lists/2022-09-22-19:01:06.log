@@ -1,0 +1,13 @@
+Thu Sep 22 19:01:09 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 19:02:05 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 19:02:06 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 19:02:06 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Thu 2022-09-22 19:02:18 CST; 6s ago
+Thu Sep 22 19:02:25 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload setup-ima-digest-lists.service: Job type reload is not applicable for unit setup-ima-digest-lists.service.
+     Active: active (running) since Thu 2022-09-22 19:02:18 CST; 7s ago
+Thu Sep 22 19:02:26 2022 - INFO  - Finish test!
+Thu Sep 22 19:02:27 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:02:28 2022 - INFO  - start environment cleanup.
+Thu Sep 22 19:02:45 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,35 @@
+Thu Sep 22 21:09:26 2022 - INFO  - Start to prepare the test environment.
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+4347
+Thu Sep 22 21:10:49 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 22 21:10:50 2022 - INFO  - Start to run test.
+spawn telnet 127.0.0.1 11211
+set testname1 2 0 7
+Jackson
+quit
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+STORED
+Connection closed by foreign host.
+Jackson
+	 --version 
+	 --help 
+	 --quiet 
+	 --verbose 
+	 --debug 
+	 --servers=
+	 --hash=
+	 --binary 
+	 --username=
+	 --password=
+memdump v1.0
+	 --version 
+	 --help 
+memerror v1.0
+SUCCESS
+Thu Sep 22 21:10:51 2022 - INFO  - End of the test.
+Thu Sep 22 21:10:52 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:10:53 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 21:11:16 2022 - INFO  - Finish restoring the test environment.

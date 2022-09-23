@@ -1,0 +1,11 @@
+Thu Sep 22 20:51:25 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 20:51:25 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 20:51:26 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+chattr: Operation not permitted while setting flags on /home/example/test
+----i---------e------- /home/example/test
+Thu Sep 22 20:51:38 2022 - INFO  - Finish testcase execution.
+Thu Sep 22 20:51:38 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:51:39 2022 - INFO  - start environment cleanup.
+Thu Sep 22 20:51:43 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,12 @@
+Thu Sep 22 20:52:21 2022 - INFO  - This test case has no config params to load!
+Thu Sep 22 20:52:21 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 20:52:22 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 20:52:23 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+chattr: Operation not permitted while setting flags on /home/example/test
+----i---------e------- /home/example/test
+Thu Sep 22 20:52:34 2022 - INFO  - Finish testcase execution.
+Thu Sep 22 20:52:35 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:52:36 2022 - INFO  - start environment cleanup.
+Thu Sep 22 20:52:40 2022 - INFO  - Finish environment cleanup!

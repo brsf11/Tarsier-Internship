@@ -1,0 +1,19 @@
+Thu Sep 22 19:06:16 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 19:07:04 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 19:07:05 2022 - INFO  - Start to run test.
+Created symlink /etc/systemd/system/timers.target.wants/dnf-automatic-notifyonly.timer → /usr/lib/systemd/system/dnf-automatic-notifyonly.timer.
+     Active: active (waiting) since Thu 2022-09-22 19:07:10 CST; 136ms ago
+Created symlink /etc/systemd/system/timers.target.wants/dnf-automatic-download.timer → /usr/lib/systemd/system/dnf-automatic-download.timer.
+     Active: active (waiting) since Thu 2022-09-22 19:07:15 CST; 126ms ago
+Created symlink /etc/systemd/system/timers.target.wants/dnf-automatic-install.timer → /usr/lib/systemd/system/dnf-automatic-install.timer.
+     Active: active (waiting) since Thu 2022-09-22 19:07:20 CST; 122ms ago
+Removed /etc/systemd/system/timers.target.wants/dnf-automatic-notifyonly.timer.
+     Active: inactive (dead)
+Removed /etc/systemd/system/timers.target.wants/dnf-automatic-download.timer.
+     Active: inactive (dead)
+Removed /etc/systemd/system/timers.target.wants/dnf-automatic-install.timer.
+     Active: inactive (dead)
+Thu Sep 22 19:07:35 2022 - INFO  - End of the test.
+Thu Sep 22 19:07:36 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:07:37 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 19:07:58 2022 - INFO  - End to restore the test environment.

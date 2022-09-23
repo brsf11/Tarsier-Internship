@@ -1,0 +1,19 @@
+Fri Sep 23 01:02:45 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 23 01:04:15 2022 - INFO  - End to prepare the test environment.
+Fri Sep 23 01:04:15 2022 - INFO  - Start to run test.
+    PRE.doctools_example {
+<h1 class="doctools_title">NAME(SECTION) VERSION example &quot;MODULE_TITLE&quot;</h1>
+	example.doc
+<td class="#doctools_tocleft" ><a name='name'><a href="doc/files/example.html">NAME</a></td>
+<style type="text/css"><!--
+<link rel="stylesheet" href="example.doc" type="text/css">
+<body>[manpage_begin NAME SECTION VERSION]
+[manpage_begin NAME SECTION VERSION]
+[manpage_end]
+<!-- Generated from file 'example.doc' by tcllib/doctools with format 'html'
+<h1 class="doctools_title">NAME(SECTION) VERSION example.doc &quot;MODULE_TITLE&quot;</h1>
+   <a href="https://www.baidu.com">example.doc</a>
+Fri Sep 23 01:04:24 2022 - INFO  - End to run test.
+Fri Sep 23 01:04:25 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:04:25 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 01:04:44 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,16 @@
+Thu Sep 22 22:15:00 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 22:16:51 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 22:16:52 2022 - INFO  - Start to run test.
+Hello,Kitty
+Hello,Kitty
+  Console: [Function: Console],
+Hello,Kitty
+Hello,Kitty
+Hello,Kitty
+Hello,Kitty
+Hello,Kitty
+Hello,Kitty
+Thu Sep 22 22:17:13 2022 - INFO  - End to run test.
+Thu Sep 22 22:17:13 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:17:14 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 22:17:32 2022 - INFO  - End to restore the test environment.

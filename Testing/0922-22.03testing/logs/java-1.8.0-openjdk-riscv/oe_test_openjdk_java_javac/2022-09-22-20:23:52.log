@@ -1,0 +1,15 @@
+Thu Sep 22 20:23:54 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 20:33:08 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 20:33:09 2022 - INFO  - Start to run test.
+Usage: java [-options] class [args...]
+Hello,world!
+openjdk version "1.8.0_332"
+openjdk version "1.8.0_332"
+testjava/Hello.class
+Usage: javac <options> <source files>
+javac 1.8.0_332
+javac 1.8.0_332
+Thu Sep 22 20:33:49 2022 - INFO  - End to run test.
+Thu Sep 22 20:33:50 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:33:51 2022 - INFO  - Need't to restore the tet environment.
+Thu Sep 22 20:34:56 2022 - INFO  - End to restore the test environment.

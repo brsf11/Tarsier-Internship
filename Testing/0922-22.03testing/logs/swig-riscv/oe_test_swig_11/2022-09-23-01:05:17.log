@@ -1,0 +1,16 @@
+Fri Sep 23 01:05:20 2022 - INFO  - Start to prepare the test environment.
+Fri Sep 23 01:05:51 2022 - INFO  - End to prepare the test environment.
+Fri Sep 23 01:05:52 2022 - INFO  - Start to run test.
+#define SWIG_prefix  "pre_"
+#define SWIG_namespace "example"
+#define SWIG_version "3"
+#define SWIG_VERSION SWIGVERSION
+SWIG:1: Warning 524: Experimental target language. Target language OCaml specified by -ocaml is an experimental language. Please read about SWIG experimental languages, http://swig.org/Doc4.0/Introduction.html#Introduction_experimental_status.
+#define  SWIG_DivisionByZero 	   -6
+  case SWIG_DivisionByZero:
+example.i:9: Error: Syntax error - possibly a missing semicolon.
+example.i(9) : Error: Syntax error - possibly a missing semicolon.
+Fri Sep 23 01:05:59 2022 - INFO  - End to run test.
+Fri Sep 23 01:06:00 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 01:06:01 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 01:06:12 2022 - INFO  - End to restore the test environment.

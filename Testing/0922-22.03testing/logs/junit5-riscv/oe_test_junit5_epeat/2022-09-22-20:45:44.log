@@ -1,0 +1,9 @@
+Thu Sep 22 20:45:47 2022 - INFO  - Start environment preparation.
+Thu Sep 22 20:49:16 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 20:49:17 2022 - INFO  - Start testing...
+Sep 22, 2022 8:49:45 PM org.junit.jupiter.engine.discovery.MethodSelectorResolver resolve
+WARNING: Possible configuration error: method [void com.exmaple.junit5.TestJunit5$Nested1$AfterPushing.Nested2_TestA()] resulted in multiple TestDescriptors [org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor, org.junit.jupiter.engine.descriptor.TestTemplateTestDescriptor]. This is typically the result of annotating a method with multiple competing annotations such as @Test, @RepeatedTest, @ParameterizedTest, @TestFactory, etc.
+Thu Sep 22 20:49:51 2022 - INFO  - Finish test!
+Thu Sep 22 20:49:52 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:49:53 2022 - INFO  - start environment cleanup.
+Thu Sep 22 20:50:28 2022 - INFO  - Finish environment cleanup!

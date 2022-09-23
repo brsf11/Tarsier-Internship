@@ -1,0 +1,42 @@
+Thu Sep 22 20:20:52 2022 - INFO  - Start environment preparation.
+Thu Sep 22 20:23:50 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 20:23:51 2022 - INFO  - Start testing...
+this BeforeAll
+this BeforeEach
+[showInfo]
+this AfterEach
+this BeforeEach
+this AfterEach
+this AfterAll
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mTestJunit5[0m [32m✔[0m
+[36m│     ├─[0m [34mTestA(TestInfo)[0m [32m✔[0m
+[36m│     └─[0m [34mfirsttest[0m [32m✔[0m
+[36m└─[0m [36mJUnit Vintage[0m [32m✔[0m
+
+Test run finished after 2576 ms
+[         3 containers found      ]
+[         0 containers skipped    ]
+[         3 containers started    ]
+[         0 containers aborted    ]
+[         3 containers successful ]
+[         0 containers failed     ]
+[         2 tests found           ]
+[         0 tests skipped         ]
+[         2 tests started         ]
+[         0 tests aborted         ]
+[         2 tests successful      ]
+[         0 tests failed          ]
+
+javac: invalid flag: .
+Usage: javac <options> <source files>
+use -help for a list of possible options
+Error: Invalid or corrupt jarfile .
+Thu Sep 22 20:24:24 2022 - INFO  - Finish test!
+Thu Sep 22 20:24:25 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 20:24:26 2022 - INFO  - start environment cleanup.
+Thu Sep 22 20:24:58 2022 - INFO  - Finish environment cleanup!

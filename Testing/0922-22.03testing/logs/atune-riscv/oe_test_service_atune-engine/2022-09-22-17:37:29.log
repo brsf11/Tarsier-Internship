@@ -1,0 +1,44 @@
+Thu Sep 22 17:37:31 2022 - INFO  - Start environmental preparation.
+sed: can't read /etc/atuned/atuned.cnf: No such file or directory
+sed: can't read /etc/atuned/atuned.cnf: No such file or directory
+Failed to start atuned.service: Unit atuned.service not found.
+Thu Sep 22 17:38:09 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 17:38:10 2022 - INFO  - Start testing...
+Failed to restart atune-engine.service: Unit atune-engine.service not found.
+Thu Sep 22 17:38:11 2022 - ERROR - atune-engine.service restart failed
+Thu Sep 22 17:38:11 2022 - ERROR - ../common/common_lib.sh line 34
+Unit atune-engine.service could not be found.
+Thu Sep 22 17:38:18 2022 - ERROR - atune-engine.service restart failed
+Thu Sep 22 17:38:19 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop atune-engine.service: Unit atune-engine.service not loaded.
+Thu Sep 22 17:38:19 2022 - ERROR - atune-engine.service stop failed
+Thu Sep 22 17:38:20 2022 - ERROR - ../common/common_lib.sh line 39
+Unit atune-engine.service could not be found.
+Thu Sep 22 17:38:27 2022 - ERROR - atune-engine.service stop failed
+Thu Sep 22 17:38:27 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start atune-engine.service: Unit atune-engine.service not found.
+Thu Sep 22 17:38:28 2022 - ERROR - atune-engine.service start failed
+Thu Sep 22 17:38:29 2022 - ERROR - ../common/common_lib.sh line 44
+Unit atune-engine.service could not be found.
+Thu Sep 22 17:38:36 2022 - ERROR - atune-engine.service start failed
+Thu Sep 22 17:38:36 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for atune-engine.service: No such file or directory
+Thu Sep 22 17:38:37 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start atune-engine.service: Unit atune-engine.service not found.
+Thu Sep 22 17:38:38 2022 - ERROR - Job type reload is not applicable for unit atune-engine.service
+Thu Sep 22 17:38:39 2022 - ERROR - ../common/common_lib.sh line 91
+Unit atune-engine.service could not be found.
+Unit atune-engine.service could not be found.
+Thu Sep 22 17:38:40 2022 - INFO  - Finish test!
+Thu Sep 22 17:38:40 2022 - ERROR - failed to execute the case.
+Thu Sep 22 17:38:41 2022 - INFO  - start environment cleanup.
+Failed to stop atuned.service: Unit atuned.service not loaded.
+sed: can't read /etc/atuned/atuned.cnf: No such file or directory
+sed: can't read /etc/atuned/atuned.cnf: No such file or directory
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 1:21:33 ago on Thu 22 Sep 2022 04:16:34 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides atune-collector needed by atune-1.0.0-4.oe2203.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Thu Sep 22 17:38:44 2022 - INFO  - Finish environment cleanup!

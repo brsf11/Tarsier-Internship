@@ -1,0 +1,15 @@
+Fri Sep 23 00:38:14 2022 - INFO  - Start environmental preparation.
+Fri Sep 23 00:39:40 2022 - INFO  - End of environmental preparation!
+Fri Sep 23 00:39:41 2022 - INFO  - Start testing...
+     Active: active (running) since Fri 2022-09-23 00:40:17 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Fri 2022-09-23 00:41:03 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/pmlogger.service
+Removed /etc/systemd/system/multi-user.target.wants/pmlogger.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/pmlogger.service’: No such file or directory
+Failed to reload pmlogger.service: Job type reload is not applicable for unit pmlogger.service.
+     Active: active (running) since Fri 2022-09-23 00:41:03 CST; 15s ago
+Fri Sep 23 00:41:19 2022 - INFO  - Finish test!
+Fri Sep 23 00:41:20 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 00:41:21 2022 - INFO  - start environment cleanup.
+Fri Sep 23 00:42:08 2022 - INFO  - Finish environment cleanup!

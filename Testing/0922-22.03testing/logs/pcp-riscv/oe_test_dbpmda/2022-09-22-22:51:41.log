@@ -1,0 +1,81 @@
+Thu Sep 22 22:51:44 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Thu Sep 22 22:55:14 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 22:55:14 2022 - INFO  - Start to run test.
+spawn dbpmda -n /var/lib/pcp/pmns/root
+dbpmda> quit
+spawn dbpmda -f
+dbpmda> quit
+spawn dbpmda -q 3
+dbpmda> quit
+spawn dbpmda -U root
+dbpmda> quit
+spawn dbpmda -e
+dbpmda> quit
+spawn dbpmda -i
+dbpmda> help
+help [ command ]
+
+attr name [value]
+attr attr# [value]
+children metric-name
+close
+debug all | none
+debug [-]flag [ [-]flag ... ] (- prefix to clear)
+desc metric
+fetch metric [ metric ... ]
+getdesc on | off
+getiname on | off
+instance indom# [ number | name | "name" ]
+label context
+label domain
+label indom indom#
+label cluster cluster#
+label item metric
+label instances indom#
+name pmid#
+namespace fname
+open dso dsoname init_routine [ domain# ]
+open pipe execname [ arg ... ]
+open socket unix sockname
+open socket inet port#|service
+open socket ipv6 port#|service
+pmid metric-name
+profile indom# [ all | none ]
+profile indom# [ add | delete ] number
+quit
+status
+store metric "value"
+text metric
+text indom indom#
+timer on | off
+traverse metric-name
+wait seconds
+watch logfilename
+
+dbpmda> timer on
+dbpmda> timer off
+dbpmda> status
+
+Namespace:              (default)
+PMDA:                   none
+Debug options:          (none)
+Timer:                  off
+Getdesc:                off
+Getiname:               off
+
+Dump Instance Profile state=INCLUDE, 0 profiles
+
+dbpmda> close
+Warning: No PMDA currently opened
+dbpmda> wait 3
+dbpmda> debug all
+dbpmda> label context
+Warning: No PMDA currently opened
+dbpmda> quit
+help [ command ]
+Thu Sep 22 22:55:21 2022 - INFO  - End to run test.
+Thu Sep 22 22:55:22 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:55:22 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 22:56:13 2022 - INFO  - End to restore the test environment.

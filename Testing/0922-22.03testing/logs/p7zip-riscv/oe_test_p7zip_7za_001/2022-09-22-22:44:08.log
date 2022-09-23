@@ -1,0 +1,49 @@
+Thu Sep 22 22:44:11 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 22:45:10 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 22:45:10 2022 - INFO  - Start testing...
+oe_test_p7zip_7za_001.sh: line 34: 7za: command not found
+Thu Sep 22 22:45:11 2022 - ERROR - test failed with --help
+Thu Sep 22 22:45:12 2022 - ERROR - oe_test_p7zip_7za_001.sh line 35
+oe_test_p7zip_7za_001.sh: line 38: 7za: command not found
+Thu Sep 22 22:45:13 2022 - ERROR - test failed with a
+Thu Sep 22 22:45:13 2022 - ERROR - oe_test_p7zip_7za_001.sh line 39
+oe_test_p7zip_7za_001.sh: line 41: 7za: command not found
+Thu Sep 22 22:45:14 2022 - ERROR - test failed with b
+Thu Sep 22 22:45:15 2022 - ERROR - oe_test_p7zip_7za_001.sh line 42
+oe_test_p7zip_7za_001.sh: line 44: 7za: command not found
+Thu Sep 22 22:45:15 2022 - ERROR - test failed with l
+Thu Sep 22 22:45:16 2022 - ERROR - oe_test_p7zip_7za_001.sh line 45
+oe_test_p7zip_7za_001.sh: line 47: 7za: command not found
+Thu Sep 22 22:45:17 2022 - ERROR - test failed with d
+Thu Sep 22 22:45:18 2022 - ERROR - oe_test_p7zip_7za_001.sh line 48
+oe_test_p7zip_7za_001.sh: line 50: 7za: command not found
+Thu Sep 22 22:45:18 2022 - ERROR - test failed with e
+Thu Sep 22 22:45:19 2022 - ERROR - oe_test_p7zip_7za_001.sh line 51
+oe_test_p7zip_7za_001.sh: line 53: 7za: command not found
+Thu Sep 22 22:45:20 2022 - ERROR - test failed with h
+Thu Sep 22 22:45:21 2022 - ERROR - oe_test_p7zip_7za_001.sh line 54
+oe_test_p7zip_7za_001.sh: line 56: 7za: command not found
+Thu Sep 22 22:45:21 2022 - ERROR - test failed with i
+Thu Sep 22 22:45:22 2022 - ERROR - oe_test_p7zip_7za_001.sh line 57
+oe_test_p7zip_7za_001.sh: line 59: 7za: command not found
+Thu Sep 22 22:45:23 2022 - ERROR - test failed with rn
+Thu Sep 22 22:45:24 2022 - ERROR - oe_test_p7zip_7za_001.sh line 60
+oe_test_p7zip_7za_001.sh: line 62: 7za: command not found
+Thu Sep 22 22:45:24 2022 - ERROR - test failed with t
+Thu Sep 22 22:45:25 2022 - ERROR - oe_test_p7zip_7za_001.sh line 63
+oe_test_p7zip_7za_001.sh: line 66: 7za: command not found
+Thu Sep 22 22:45:26 2022 - ERROR - test failed with u
+Thu Sep 22 22:45:27 2022 - ERROR - oe_test_p7zip_7za_001.sh line 67
+oe_test_p7zip_7za_001.sh: line 69: 7za: command not found
+Thu Sep 22 22:45:27 2022 - ERROR - test failed with x
+Thu Sep 22 22:45:28 2022 - ERROR - oe_test_p7zip_7za_001.sh line 70
+Thu Sep 22 22:45:29 2022 - INFO  - Finish test!
+Thu Sep 22 22:45:30 2022 - ERROR - failed to execute the case.
+Thu Sep 22 22:45:30 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 6:28:34 ago on Thu 22 Sep 2022 04:16:34 PM CST.\nNo match for argument: p7zip\nPackage tar-2:1.34-1.oe2203.riscv64 is already installed.\nError: Unable to find a match: p7zip'
+Thu Sep 22 22:45:34 2022 - INFO  - Finish environment cleanup!

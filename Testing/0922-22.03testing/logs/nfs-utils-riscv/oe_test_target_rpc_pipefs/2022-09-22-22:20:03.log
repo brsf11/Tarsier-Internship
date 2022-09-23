@@ -1,0 +1,13 @@
+Thu Sep 22 22:20:05 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 22:21:28 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 22:21:29 2022 - INFO  - Start to run test.
+     Active: active since Thu 2022-09-22 22:21:29 CST; 6s ago
+     Active: inactive (dead) since Thu 2022-09-22 22:21:35 CST; 6s ago
+     Active: active since Thu 2022-09-22 22:21:42 CST; 5s ago
+Thu Sep 22 22:21:48 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload rpc_pipefs.target: Job type reload is not applicable for unit rpc_pipefs.target.
+     Active: active since Thu 2022-09-22 22:21:42 CST; 7s ago
+Thu Sep 22 22:21:50 2022 - INFO  - End of the test.
+Thu Sep 22 22:21:50 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 22:21:51 2022 - INFO  - start environment cleanup.
+Thu Sep 22 22:22:16 2022 - INFO  - Finish environment cleanup!

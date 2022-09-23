@@ -1,0 +1,40 @@
+Thu Sep 22 19:09:22 2022 - INFO  - Start to prepare the database config.
+Thu Sep 22 19:09:31 2022 - INFO  - pkgs:(clamav) is already installed
+Thu Sep 22 19:09:34 2022 - INFO  - End to prepare the database config.
+Thu Sep 22 19:09:35 2022 - INFO  - Start to run test.
+320a
+3130300a
+3a42e5027c90fba0e54d2abdaa9e86b4:170479789:main.cvd
+029931779fb5d13625464995549421c108ae5518:170479789:main.cvd
+9520cc7827ddc5267684f2c5c7044cf2df1f62606ca81402cbeae12183763a90:170479789:main.cvd
+Signatures: 6647427
+Signatures: 6647427
+Signatures: 6647427
+File: /var/lib/clamav/main.cvd
+Build time: 16 Sep 2021 08:32 -0400
+Version: 62
+Signatures: 6647427
+Functionality level: 90
+Builder: sigmgr
+MD5: 137eccce31aacb21b5a98bb8c21cefd6
+Digital signature: twaJBls8V5q64R7QY10AatEtPNuPWoVoxTaNO1jpBg7s5jIMMXpitgG1000YLp6rb0TWkEKjRqxneGTxuxWaWm7XBjsgwX2BRWh/y4fhs7uyImdKRLzQ5y8e2EkSChegF/i8clqfn+1qetq9j4gbktJ3JZpOXPoHlyr2Dv9S/Bg
+LibClamAV debug: Initialized 0.103.2 engine
+LibClamAV debug: in cli_cvdload()
+LibClamAV debug: MD5(.tar.gz) = 137eccce31aacb21b5a98bb8c21cefd6
+LibClamAV debug: cli_versig: Decoded signature: 137eccce31aacb21b5a98bb8c21cefd6
+LibClamAV debug: cli_versig: Digital signature is correct.
+LibClamAV debug: in cli_tgzload()
+LibClamAV debug: main.info loaded
+LibClamAV debug: in cli_tgzload_cleanup()
+LibClamAV debug: in cli_tgzload()
+LibClamAV debug: in cli_tgzload_cleanup()
+LibClamAV debug: Cleaning up phishcheck
+LibClamAV debug: Phishcheck cleaned up
+Verification OK.
+main.hsb
+main.hsb
+Thu Sep 22 19:12:15 2022 - INFO  - End to run test.
+Thu Sep 22 19:12:15 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:12:16 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 19:12:18 2022 - WARN  - no thing to do.
+Thu Sep 22 19:12:18 2022 - INFO  - End to restore the test environment.

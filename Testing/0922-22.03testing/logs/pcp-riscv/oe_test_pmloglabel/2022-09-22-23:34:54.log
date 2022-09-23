@@ -1,0 +1,14 @@
+Thu Sep 22 23:34:57 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Thu Sep 22 23:38:05 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 23:38:05 2022 - INFO  - Start to run test.
+Log Label (Log Format Version 2)
+Archive timezone: CST-8
+Checking label on data volume 0
+Checking label on temporal index
+Checking label on metadata volume
+Thu Sep 22 23:38:07 2022 - INFO  - End to run test.
+Thu Sep 22 23:38:08 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 23:38:09 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 23:39:02 2022 - INFO  - End to restore the test environment.

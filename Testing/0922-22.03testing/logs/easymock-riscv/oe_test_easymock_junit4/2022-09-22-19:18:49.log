@@ -1,0 +1,8 @@
+Thu Sep 22 19:18:52 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 19:23:52 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 19:23:52 2022 - INFO  - Start to run test.
+Thu Sep 22 19:34:36 2022 - ERROR - oe_test_easymock_junit4.sh line 32
+Thu Sep 22 19:34:37 2022 - INFO  - End to run test.
+Thu Sep 22 19:34:38 2022 - ERROR - failed to execute the case.
+Thu Sep 22 19:34:39 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 19:35:30 2022 - INFO  - End to restore the test environment.

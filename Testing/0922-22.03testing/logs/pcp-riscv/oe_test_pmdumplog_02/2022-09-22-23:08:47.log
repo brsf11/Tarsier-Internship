@@ -1,0 +1,22 @@
+Thu Sep 22 23:08:50 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Thu Sep 22 23:11:55 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 23:11:56 2022 - INFO  - Start to run test.
+23:11:40.241494 5 metrics
+23:11:52.406672 172 metrics
+23:11:52.406672 172 metrics
+23:11:40.241494 5 metrics
+Thu Sep 22 23:11:58 2022 - ERROR - oe_test_pmdumplog_02.sh line 35
+23:11:40.241494 5 metrics
+23:11:52.406672 172 metrics
+			Log Vol    end(meta)     end(log)
+Raw dump of physical archive file "/var/log/pcp/pmlogger/openEuler-riscv64/20220922.23.11.index" ...
+Thu Sep 22 23:11:40.241494 2022 5 metrics
+Thu Sep 22 23:11:52.406672 2022 172 metrics
+Note: timezone set to "TZ=Asia/Shanghai"
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+Thu Sep 22 23:11:59 2022 - INFO  - End to run test.
+Thu Sep 22 23:12:00 2022 - ERROR - failed to execute the case.
+Thu Sep 22 23:12:01 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 23:12:53 2022 - INFO  - End to restore the test environment.

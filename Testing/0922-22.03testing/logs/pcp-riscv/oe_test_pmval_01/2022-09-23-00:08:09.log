@@ -1,0 +1,18 @@
+Fri Sep 23 00:08:12 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Fri Sep 23 00:10:34 2022 - INFO  - End to prepare the test environment.
+Fri Sep 23 00:10:35 2022 - INFO  - Start to run test.
+pmval version 5.3.5
+metric:    disk.dev.write
+metric:    disk.dev.write
+semantics: cumulative counter (converting to rate)
+archive:   /var/log/pcp/pmlogger/openEuler-riscv64/20220923.00.10
+archive:   /var/log/pcp/pmlogger/openEuler-riscv64/20220923.00.10
+Note: timezone set to "TZ=Africa/Sao_Tome"
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+units:     count (converting to count / sec)
+Fri Sep 23 00:11:43 2022 - INFO  - End to run test.
+Fri Sep 23 00:11:44 2022 - INFO  - succeed to execute the case.
+Fri Sep 23 00:11:44 2022 - INFO  - Start to restore the test environment.
+Fri Sep 23 00:12:26 2022 - INFO  - End to restore the test environment.

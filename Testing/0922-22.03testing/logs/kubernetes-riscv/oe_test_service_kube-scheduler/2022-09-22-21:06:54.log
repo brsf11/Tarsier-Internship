@@ -1,0 +1,157 @@
+Thu Sep 22 21:06:57 2022 - INFO  - Start environmental preparation.
+k8snode1
+--2022-09-22 21:08:39--  https://github.com/cloudflare/cfssl/archive/v1.5.0.tar.gz
+Resolving github.com (github.com)... 20.205.243.166
+Connecting to github.com (github.com)|20.205.243.166|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/cloudflare/cfssl/tar.gz/refs/tags/v1.5.0 [following]
+--2022-09-22 21:08:41--  https://codeload.github.com/cloudflare/cfssl/tar.gz/refs/tags/v1.5.0
+Resolving codeload.github.com (codeload.github.com)... 20.205.243.165
+Connecting to codeload.github.com (codeload.github.com)|20.205.243.165|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-gzip]
+Saving to: ‘/opt/cfssl.tar.gz’
+
+     0K .......... .......... .......... .......... ..........  265K
+    50K .......... .......... .......... .......... ..........  523K
+   100K .......... .......... .......... .......... .......... 2.69M
+   150K .......... .......... .......... .......... ..........  614K
+   200K .......... .......... .......... .......... .......... 2.88M
+   250K .......... .......... .......... .......... .......... 2.77M
+   300K .......... .......... .......... .......... ..........  866K
+   350K .......... .......... .......... .......... .......... 2.24M
+   400K .......... .......... .......... .......... .......... 2.63M
+   450K .......... .......... .......... .......... .......... 4.62M
+   500K .......... .......... .......... .......... .......... 5.36M
+   550K .......... .......... .......... .......... .......... 5.22M
+   600K .......... .......... .......... .......... .......... 3.00M
+   650K .......... .......... .......... .......... .......... 3.22M
+   700K .......... .......... .......... .......... .......... 3.67M
+   750K .......... .......... .......... .......... .......... 4.03M
+   800K .......... .......... .......... .......... .......... 4.16M
+   850K .......... .......... .......... .......... .......... 5.59M
+   900K .......... .......... .......... .......... .......... 5.67M
+   950K .......... .......... .......... .......... .......... 5.59M
+  1000K .......... .......... .......... .......... .......... 4.05M
+  1050K .......... .......... .......... .......... .......... 4.69M
+  1100K .......... .......... .......... .......... .......... 3.83M
+  1150K .......... .......... .......... .......... .......... 3.83M
+  1200K .......... .......... .......... .......... .......... 3.69M
+  1250K .......... .......... .......... .......... .......... 4.15M
+  1300K .......... .......... .......... .......... .......... 4.51M
+  1350K .......... .......... .......... .......... .......... 5.64M
+  1400K .......... .......... .......... .......... .......... 4.62M
+  1450K .......... .......... .......... .......... .......... 5.56M
+  1500K .......... .......... .......... .......... .......... 5.60M
+  1550K .......... .......... .......... .......... .......... 5.46M
+  1600K .......... .......... .......... .......... .......... 5.01M
+  1650K .......... .......... .......... .......... .......... 5.51M
+  1700K .......... .......... .......... .......... .......... 5.45M
+  1750K .......... .......... .......... .......... .......... 5.22M
+  1800K .......... .......... .......... .......... .......... 4.60M
+  1850K .......... .......... .......... .......... .......... 5.47M
+  1900K .......... .......... .......... .......... .......... 5.49M
+  1950K .......... .......... .......... .......... .......... 4.18M
+  2000K .......... .......... .......... .......... .......... 4.13M
+  2050K .......... .......... .......... .......... .......... 4.94M
+  2100K .......... .......... .......... .......... .......... 3.84M
+  2150K .......... .......... .......... .......... .......... 3.44M
+  2200K .......... .......... .......... .......... .......... 4.10M
+  2250K .......... .......... .......... .......... .......... 5.49M
+  2300K .......... .......... .......... .......... .......... 5.58M
+  2350K .......... .......... .......... .......... .......... 4.74M
+  2400K .......... .......... .......... .......... .......... 5.66M
+  2450K .......... .......... .......... .......... .......... 5.35M
+  2500K .......... .......... .......... .......... .......... 4.88M
+  2550K .......... .......... .......... .......... .......... 3.52M
+  2600K .......... .......... .......... .......... .......... 4.04M
+  2650K .......... .......... .......... .......... .......... 4.28M
+  2700K .......... .......... .......... .......... .......... 4.98M
+  2750K .......... .......... .......... .......... .......... 5.06M
+  2800K .......... .......... .......... .......... .......... 5.40M
+  2850K .......... .......... .......... .......... .......... 5.39M
+  2900K .......... .......... .......... .......... .......... 5.40M
+  2950K .......... .......... .......... .......... .......... 4.46M
+  3000K .......... .......... .......... .......... .......... 5.47M
+  3050K .......... .......... .......... .......... .......... 5.43M
+  3100K .......... .......... .......... .......... .......... 5.31M
+  3150K .......... .......... .......... .......... .......... 4.80M
+  3200K .......... .......... .......... .......... .......... 5.65M
+  3250K .......... .......... .......... .......... .......... 5.57M
+  3300K .......... .......... .......... .......... .......... 5.60M
+  3350K .......... .......... .......... .......... .......... 4.62M
+  3400K .......... .......... .......... .......... .......... 5.17M
+  3450K .......... .......... .......... .......... .......... 4.60M
+  3500K .......... .......... .......... .......... .......... 4.17M
+  3550K .......... .......... .......... .......... .......... 3.92M
+  3600K .......... .......... .......... .......... .......... 3.87M
+  3650K .......... .......... .......... .......... .......... 3.81M
+  3700K .......... .......... .......... .......... .......... 3.61M
+  3750K .......... .......... .......... .......... .......... 5.45M
+  3800K .......... .......... .......... .......... .......... 5.27M
+  3850K .......... .......... .......... .......... .......... 4.64M
+  3900K .......... .......... .......... .......... .......... 3.95M
+  3950K .......... .......... .......... .......... .......... 4.31M
+  4000K .......... .......... .......... .......... .......... 4.49M
+  4050K .......... .......... .......... .......... .......... 4.36M
+  4100K .......... .......... .......... .......... .......... 3.59M
+  4150K .......... .......... .......... .......... .......... 5.66M
+  4200K .......... .......... .......... .......... .......... 5.60M
+  4250K .......... .......... .......... .......... .......... 5.56M
+  4300K .......... .......... .......... .......... .......... 4.99M
+  4350K .......... .......... .......... .......... .......... 5.48M
+  4400K .......... .......... .......... .......... .......... 5.59M
+  4450K .......... .......... .......... .......... .......... 3.55M
+  4500K .......... .......... .......... .......... .......... 2.38M
+  4550K .......... .......... .......... .......... .......... 2.75M
+  4600K .......... .......... .......... .......... .......... 2.25M
+  4650K .......... .......... .......... .......... .......... 2.80M
+  4700K .......... .......... .......... .......... .......... 2.57M
+  4750K .......... .......... .......... .......... .......... 2.53M
+  4800K .......... .......... .......... .......... .......... 2.66M
+  4850K .......... .......... .......... .......... .......... 2.77M
+  4900K .......... .......... .......... .......... .......... 2.66M
+  4950K .......... .......... .......... .......... .......... 2.77M
+  5000K .......... .......... .......... .......... .......... 2.53M
+  5050K .......... .......... .......... .......... .......... 2.55M
+  5100K .......... .......... .......... .......... .......... 2.38M
+  5150K .......... .......... .......... .......... .......... 2.54M
+  5200K .......... .......... .......... .......... .......... 2.65M
+  5250K .......... .......... .......... .......... .......... 2.82M
+  5300K .......... .......... .......... .......... .......... 2.63M
+  5350K .......... .......... .......... .......... .......... 2.62M
+  5400K .......... .......... .......... .......... .......... 2.46M
+  5450K .......... .......... .......... .......... .......... 2.72M
+  5500K .......... .......... .......... .......... .......... 2.59M
+  5550K .......... .......... .......... .......... .......... 2.55M
+  5600K .......... .......... .......... .......... .......... 2.55M
+  5650K .......... .......... .......... .......... .......... 2.50M
+  5700K .......... .......... .......... .......... .......... 2.62M
+  5750K .......... .......... .......... .......... .......... 2.87M
+  5800K .......... .......... .......... .......... .......... 2.49M
+  5850K .......... .......... .......... .......... .......... 2.21M
+  5900K .......... .......... .......... .......... .......... 2.51M
+  5950K .......... .......... .......... .......... .......... 2.41M
+  6000K .......... .......... .....                            2.46M=2.0s
+
+2022-09-22 21:08:43 (3.02 MB/s) - ‘/opt/cfssl.tar.gz’ saved [6169641]
+
+/usr/bin/tar
+tar: /opt/cfssl: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+which: no golang in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 168, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 102, in rpm_install
+    with open(tmpfile, "a+") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:19:35 ago on Thu 22 Sep 2022 08:48:21 PM CST.\nPackage socat-1.7.3.2-8.oe2203.riscv64 is already installed.\nPackage kubernetes-kubeadm-1.20.2-8.oe2203.riscv64 is already installed.\nPackage kubernetes-kubelet-1.20.2-8.oe2203.riscv64 is already installed.\nDependencies resolved.\n================================================================================\n Package                   Arch       Version                 Repository   Size\n================================================================================\nInstalling:\n conntrack-tools           riscv64    1.4.6-2.oe2203          mainline    162 k\n docker-engine             riscv64    18.09.0-300.oe2203      mainline     28 M\n kubernetes                riscv64    1.20.2-8.oe2203         mainline    8.0 k\n kubernetes-client         riscv64    1.20.2-8.oe2203         mainline    8.2 M\n kubernetes-help           riscv64    1.20.2-8.oe2203         mainline    499 k\n kubernetes-master         riscv64    1.20.2-8.oe2203         mainline     49 M\n kubernetes-node           riscv64    1.20.2-8.oe2203         mainline     28 M\nInstalling dependencies:\n iptables                  riscv64    1.8.7-4.oe2203          mainline     71 k\n libcgroup                 riscv64    0.42.2-1.oe2203         mainline     95 k\n libnetfilter_cthelper     riscv64    1.0.0-15.oe2203         mainline     20 k\n libnetfilter_cttimeout    riscv64    1.0.0-14.oe2203         mainline     21 k\n\nTransaction Summary\n================================================================================\nInstall  11 Packages\n\nTotal download size: 114 M\nInstalled size: 674 M\nDownloading Packages:\n(1/11): iptables-1.8.7-4.oe2203.riscv64.rpm     102 kB/s |  71 kB     00:00    \n(2/11): conntrack-tools-1.4.6-2.oe2203.riscv64. 160 kB/s | 162 kB     00:01    \n(3/11): kubernetes-1.20.2-8.oe2203.riscv64.rpm   18 kB/s | 8.0 kB     00:00    \n(4/11): kubernetes-help-1.20.2-8.oe2203.riscv64 214 kB/s | 499 kB     00:02    \n(5/11): docker-engine-18.09.0-300.oe2203.riscv6 3.8 MB/s |  28 MB     00:07    \n(6/11): kubernetes-client-1.20.2-8.oe2203.riscv 1.2 MB/s | 8.2 MB     00:06    \n(7/11): libcgroup-0.42.2-1.oe2203.riscv64.rpm    54 kB/s |  95 kB     00:01    \n(8/11): libnetfilter_cthelper-1.0.0-15.oe2203.r  16 kB/s |  20 kB     00:01    \n(9/11): libnetfilter_cttimeout-1.0.0-14.oe2203.  18 kB/s |  21 kB     00:01    \n(10/11): kubernetes-master-1.20.2-8.oe2203.risc 1.5 MB/s |  49 MB     00:31    \n(11/11): kubernetes-node-1.20.2-8.oe2203.riscv6 871 kB/s |  28 MB     00:33    \n--------------------------------------------------------------------------------\nTotal                                           2.7 MB/s | 114 MB     00:41     \nRunning transaction check\nError: transaction check vs depsolve:\nlibnetfilter_queue.so.1()(64bit) is needed by conntrack-tools-1.4.6-2.oe2203.riscv64\nsocat is needed by kubernetes-node-1.20.2-8.oe2203.riscv64\nTo diagnose the problem, try running: 'rpm -Va --nofiles --nodigest'.\nYou probably have corrupted RPMDB, running 'rpm --rebuilddb' might fix the issue.\nThe downloaded packages were saved in cache until the next successful transaction.\nYou can remove cached packages by executing 'dnf clean packages'."
+./common/common.sh: line 49: cd: /opt/cfssl: No such file or directory
+Thu Sep 22 21:13:25 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:19:35 ago on Thu 22 Sep 2022 08:48:21 PM CST.\nPackage socat-1.7.3.2-8.oe2203.riscv64 is already installed.\nPackage kubernetes-kubeadm-1.20.2-8.oe2203.riscv64 is already installed.\nPackage kubernetes-kubelet-1.20.2-8.oe2203.riscv64 is already installed.\nDependencies resolved.\n================================================================================\n Package                   Arch       Version                 Repository   Size\n================================================================================\nInstalling:\n conntrack-tools           riscv64    1.4.6-2.oe2203          mainline    162 k\n docker-engine             riscv64    18.09.0-300.oe2203      mainline     28 M\n kubernetes                riscv64    1.20.2-8.oe2203         mainline    8.0 k\n kubernetes-client         riscv64    1.20.2-8.oe2203         mainline    8.2 M\n kubernetes-help           riscv64    1.20.2-8.oe2203         mainline    499 k\n kubernetes-master         riscv64    1.20.2-8.oe2203         mainline     49 M\n kubernetes-node           riscv64    1.20.2-8.oe2203         mainline     28 M\nInstalling dependencies:\n iptables                  riscv64    1.8.7-4.oe2203          mainline     71 k\n libcgroup                 riscv64    0.42.2-1.oe2203         mainline     95 k\n libnetfilter_cthelper     riscv64    1.0.0-15.oe2203         mainline     20 k\n libnetfilter_cttimeout    riscv64    1.0.0-14.oe2203         mainline     21 k\n\nTransaction Summary\n================================================================================\nInstall  11 Packages\n\nTotal download size: 114 M\nInstalled size: 674 M\nDownloading Packages:\n(1/11): iptables-1.8.7-4.oe2203.riscv64.rpm     102 kB/s |  71 kB     00:00    \n(2/11): conntrack-tools-1.4.6-2.oe2203.riscv64. 160 kB/s | 162 kB     00:01    \n(3/11): kubernetes-1.20.2-8.oe2203.riscv64.rpm   18 kB/s | 8.0 kB     00:00    \n(4/11): kubernetes-help-1.20.2-8.oe2203.riscv64 214 kB/s | 499 kB     00:02    \n(5/11): docker-engine-18.09.0-300.oe2203.riscv6 3.8 MB/s |  28 MB     00:07    \n(6/11): kubernetes-client-1.20.2-8.oe2203.riscv 1.2 MB/s | 8.2 MB     00:06    \n(7/11): libcgroup-0.42.2-1.oe2203.riscv64.rpm    54 kB/s |  95 kB     00:01    \n(8/11): libnetfilter_cthelper-1.0.0-15.oe2203.r  16 kB/s |  20 kB     00:01    \n(9/11): libnetfilter_cttimeout-1.0.0-14.oe2203.  18 kB/s |  21 kB     00:01    \n(10/11): kubernetes-master-1.20.2-8.oe2203.risc 1.5 MB/s |  49 MB     00:31    \n(11/11): kubernetes-node-1.20.2-8.oe2203.riscv6 871 kB/s |  28 MB     00:33    \n--------------------------------------------------------------------------------\nTotal                                           2.7 MB/s | 114 MB     00:41     \nRunning transaction check\nError: transaction check vs depsolve:\nlibnetfilter_queue.so.1()(64bit) is needed by conntrack-tools-1.4.6-2.oe2203.riscv64\nsocat is needed by kubernetes-node-1.20.2-8.oe2203.riscv64\nTo diagnose the problem, try running: 'rpm -Va --nofiles --nodigest'.\nYou probably have corrupted RPMDB, running 'rpm --rebuilddb' might fix the issue.\nThe downloaded packages were saved in cache until the next successful transaction.\nYou can remove cached packages by executing 'dnf clean packages'."
+Thu Sep 22 21:13:29 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,85 @@
+Thu Sep 22 21:07:36 2022 - INFO  - Start to prepare the test environment.
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+4086
+Thu Sep 22 21:08:31 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 22 21:08:31 2022 - INFO  - Start to run test.
+spawn telnet 127.0.0.1 11211
+set testname1 2 0 7
+Jackson
+set testname2 2 0 4
+Lisa
+Trying 127.0.0.1...
+quit
+Connected to 127.0.0.1.
+Escape character is '^]'.
+STORED
+STORED
+Connection closed by foreign host.
+Jackson
+Lisa
+spawn telnet 127.0.0.1 11211
+delete testname1
+Trying 127.0.0.1...
+delete testname2
+quit
+Connected to 127.0.0.1.
+Escape character is '^]'.
+DELETED
+DELETED
+Connection closed by foreign host.
+	 --version 
+	 --help 
+	 --quiet 
+	 --udp 
+	 --buffer 
+	 --verbose 
+	 --debug 
+	 --servers=
+	 --flag=
+	 --expire=
+	 --set 
+	 --add 
+	 --replace 
+	 --hash=
+	 --binary 
+	 --username=
+	 --password=
+memcp v1.0
+error on testname1(NOT FOUND)
+Jackson
+flags: 0length: 7
+op: set
+source file: testname1
+length: 7
+key: testname1
+flags: 2
+expires: 15
+Calling memcached_free()
+flags: 2length: 7
+error on testname1(NOT FOUND)
+Jackson
+op: set
+source file: testname1
+length: 7
+key: testname1
+flags: 0
+expires: 0
+Calling memcached_free()
+spawn telnet 127.0.0.1 11211
+set testname2 4 0 4
+Rose
+quit
+Trying 127.0.0.1...
+Connected to 127.0.0.1.
+Escape character is '^]'.
+STORED
+Connection closed by foreign host.
+flags: 4length: 4
+value: Rose
+flags: 3length: 4
+value: Lisa
+Thu Sep 22 21:08:50 2022 - INFO  - End of the test.
+Thu Sep 22 21:08:51 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:08:52 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 21:09:17 2022 - INFO  - Finish restoring the test environment.

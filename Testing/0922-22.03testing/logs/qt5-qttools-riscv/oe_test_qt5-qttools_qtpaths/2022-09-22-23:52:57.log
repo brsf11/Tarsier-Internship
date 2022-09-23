@@ -1,0 +1,38 @@
+Thu Sep 22 23:53:00 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 23:55:43 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 23:55:44 2022 - INFO  - Start to run test.
+Usage: qtpaths [options] [name]
+  -h, --help                                  Displays help on commandline
+  --help-all                                  Displays help including Qt
+qtpaths 1.0
+ApplicationsLocation
+ConfigLocation
+DesktopLocation
+DocumentsLocation
+DownloadLocation
+FontsLocation
+GenericCacheLocation
+GenericConfigLocation
+GenericDataLocation
+HomeLocation
+MoviesLocation
+MusicLocation
+PicturesLocation
+RuntimeLocation
+/root/Documents
+/root/Documents
+/root/Documents/qt5dir
+/root/Documents/qt5dir
+/root/Documents/qtfile
+/root/Documents/qtfile
+/usr/bin/mkdir
+Documents
+5.15.2
+/usr
+/usr/lib64/qt5/bin
+/usr/lib64/qt5/plugins
+/root/Documents
+Thu Sep 22 23:55:46 2022 - INFO  - End to run test.
+Thu Sep 22 23:55:47 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 23:55:48 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 23:56:19 2022 - INFO  - End to restore the test environment.

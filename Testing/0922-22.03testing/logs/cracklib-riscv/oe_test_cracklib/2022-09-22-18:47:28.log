@@ -1,0 +1,23 @@
+Thu Sep 22 18:47:30 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 18:47:31 2022 - INFO  - Finish preparing the test environment.
+Thu Sep 22 18:47:32 2022 - INFO  - Start to run test.
+Thu Sep 22 18:47:32 2022 - INFO  - Test: cracklib-check
+Thu Sep 22 18:47:33 2022 - INFO  - cracklib: Test a very simple password
+Thu Sep 22 18:47:34 2022 - INFO  - cracklib: Test a simple/dictionary password
+Thu Sep 22 18:47:35 2022 - INFO  - cracklib: Testing simplistic password
+Thu Sep 22 18:47:35 2022 - INFO  - cracklib: Testing a complicated password
+Thu Sep 22 18:47:36 2022 - INFO  - Test: cracklib-format
+Thu Sep 22 18:47:37 2022 - INFO  - Test: mkdict
+Thu Sep 22 18:47:38 2022 - INFO  - Test: cracklib-packer
+7 7
+Thu Sep 22 18:47:39 2022 - INFO  - Test: packer
+7 7
+Thu Sep 22 18:47:39 2022 - INFO  - Test: cracklib-unpacker
+Thu Sep 22 18:47:40 2022 - INFO  - Test: create-cracklib-dict
+1 1
+1916902 1916902
+7 7
+Thu Sep 22 18:50:13 2022 - INFO  - End of the test.
+Thu Sep 22 18:50:13 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 18:50:14 2022 - INFO  - Start to restore the test environment.
+Thu Sep 22 18:50:15 2022 - INFO  - Finish restoring the test environment.

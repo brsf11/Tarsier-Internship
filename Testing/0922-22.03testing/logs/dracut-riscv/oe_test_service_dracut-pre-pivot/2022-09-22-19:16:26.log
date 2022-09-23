@@ -1,0 +1,7 @@
+Thu Sep 22 19:16:29 2022 - INFO  - Start testing...
+Unit dracut-pre-pivot.service could not be found.
+Failed to get unit file state for dracut-pre-pivot.service: No such file or directory
+Thu Sep 22 19:16:30 2022 - INFO  - Unit is indirect, ignoring.
+Thu Sep 22 19:16:30 2022 - INFO  - Finish test!
+Thu Sep 22 19:16:31 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 19:16:32 2022 - INFO  - oe_test_service_dracut-pre-pivot.sh post_test

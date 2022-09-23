@@ -1,0 +1,44 @@
+Thu Sep 22 21:32:31 2022 - INFO  - Start to prepare the test environment.
+Thu Sep 22 21:43:08 2022 - INFO  - End to prepare the test environment.
+Thu Sep 22 21:43:09 2022 - INFO  - Start to run test.
+spawn servertool
+help
+
+
+Welcome to the Java IDL Server Tool 
+please enter commands at the prompt 
+
+servertool > 
+
+	Available Commands: 
+	------------------- 
+
+quit
+	register     - register an activatable server
+	unregister   - unregister a registered server
+	getserverid  - return the server id for an applicationName
+	list         - list all registered servers
+	listappnames - list applicationNames currently defined
+	listactive   - list currently active servers
+	locate       - locate ports of specific type for a registered server
+	locateperorb - locate ports for a specific orb of registered server
+	orblist      - list of orb names and their mapping
+	shutdown     - shutdown a registered server
+	startup      - start a registered server
+	help         - get help
+	quit         - quit this tool
+
+servertool > 
+	Available Commands: 
+Usage:  unpack200 [-opt... | --option=value]... x.pack[.gz] y.jar
+unpack200 version 1.30, 07/05/05
+Usage: WSGEN [options] <SEI>
+Usage: wsimport [options] <WSDL_URI>
+wsimport version "2.2.9"
+Usage: xjc [-options ...] <schema file/URL/dir/jar> ... [-b <bindinfo>] ...
+xjc 2.2.8-b130911.1802
+xjc full version "2.2.8-b130911.1802"
+Thu Sep 22 21:44:04 2022 - INFO  - End to run test.
+Thu Sep 22 21:44:05 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 21:44:06 2022 - INFO  - Need't to restore the tet environment.
+Thu Sep 22 21:45:10 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,25 @@
+Thu Sep 22 18:49:08 2022 - INFO  - Start environmental preparation.
+Thu Sep 22 18:51:26 2022 - INFO  - End of environmental preparation!
+Thu Sep 22 18:51:27 2022 - INFO  - Start testing...
+     Active: active (running) since Thu 2022-09-22 18:51:27 CST; 5s ago
+     Active: inactive (dead) since Thu 2022-09-22 18:51:33 CST; 5s ago
+     Active: active (running) since Thu 2022-09-22 18:51:40 CST; 5s ago
+find: ‘/etc/systemd/system/printers.target.wants/cups.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/cups.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/cups.path’: No such file or directory
+find: ‘/etc/systemd/system/sockets.target.wants/cups.socket’: No such file or directory
+Created symlink /etc/systemd/system/printers.target.wants/cups.service → /usr/lib/systemd/system/cups.service.
+Unit /usr/lib/systemd/system/cups.service is added as a dependency to a non-existent unit printers.target.
+Created symlink /etc/systemd/system/multi-user.target.wants/cups.service → /usr/lib/systemd/system/cups.service.
+Created symlink /etc/systemd/system/sockets.target.wants/cups.socket → /usr/lib/systemd/system/cups.socket.
+Created symlink /etc/systemd/system/multi-user.target.wants/cups.path → /usr/lib/systemd/system/cups.path.
+/etc/systemd/system/printers.target.wants/cups.service
+/etc/systemd/system/multi-user.target.wants/cups.service
+/etc/systemd/system/multi-user.target.wants/cups.path
+/etc/systemd/system/sockets.target.wants/cups.socket
+Failed to reload cups.service: Job type reload is not applicable for unit cups.service.
+     Active: active (running) since Thu 2022-09-22 18:51:40 CST; 15s ago
+Thu Sep 22 18:51:55 2022 - INFO  - Finish test!
+Thu Sep 22 18:51:56 2022 - INFO  - succeed to execute the case.
+Thu Sep 22 18:51:57 2022 - INFO  - start environment cleanup.
+Thu Sep 22 18:52:34 2022 - INFO  - Finish environment cleanup!
