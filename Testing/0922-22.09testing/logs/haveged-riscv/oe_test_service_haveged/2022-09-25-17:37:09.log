@@ -1,0 +1,15 @@
+Sun Sep 25 17:37:12 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 17:38:09 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 17:38:10 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 17:38:10 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 17:38:22 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/haveged.service
+Removed /etc/systemd/system/multi-user.target.wants/haveged.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/haveged.service’: No such file or directory
+Failed to reload haveged.service: Job type reload is not applicable for unit haveged.service.
+     Active: active (running) since Sun 2022-09-25 17:38:22 CST; 16s ago
+Sun Sep 25 17:38:39 2022 - INFO  - Finish test!
+Sun Sep 25 17:38:40 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:38:41 2022 - INFO  - start environment cleanup.
+Sun Sep 25 17:39:00 2022 - INFO  - Finish environment cleanup!

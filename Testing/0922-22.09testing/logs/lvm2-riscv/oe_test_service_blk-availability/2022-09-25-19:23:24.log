@@ -1,0 +1,13 @@
+Sun Sep 25 19:23:27 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 19:23:27 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Sun 2022-09-25 19:23:40 CST; 6s ago
+/etc/systemd/system/sysinit.target.wants/blk-availability.service
+Removed /etc/systemd/system/sysinit.target.wants/blk-availability.service.
+find: ‘/etc/systemd/system/sysinit.target.wants/blk-availability.service’: No such file or directory
+Failed to reload blk-availability.service: Job type reload is not applicable for unit blk-availability.service.
+     Active: active (exited) since Sun 2022-09-25 19:23:40 CST; 15s ago
+Sun Sep 25 19:23:57 2022 - INFO  - Finish test!
+Sun Sep 25 19:23:57 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:23:58 2022 - INFO  - start environment cleanup.
+Sun Sep 25 19:23:59 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,7 @@
+Sun Sep 25 23:13:50 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 23:13:51 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:13:52 2022 - INFO  - Start testing...
+Sun Sep 25 23:13:53 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sun Sep 25 23:13:54 2022 - INFO  - Finish test!
+Sun Sep 25 23:13:55 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:13:56 2022 - INFO  - oe_test_service_fstrim.sh post_test

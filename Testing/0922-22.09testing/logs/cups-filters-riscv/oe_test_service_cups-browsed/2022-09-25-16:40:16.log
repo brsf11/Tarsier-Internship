@@ -1,0 +1,15 @@
+Sun Sep 25 16:40:19 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 16:42:24 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 16:42:25 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 16:42:25 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 16:42:38 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/cups-browsed.service
+Removed /etc/systemd/system/multi-user.target.wants/cups-browsed.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/cups-browsed.service’: No such file or directory
+Failed to reload cups-browsed.service: Job type reload is not applicable for unit cups-browsed.service.
+     Active: active (running) since Sun 2022-09-25 16:42:38 CST; 15s ago
+Sun Sep 25 16:42:54 2022 - INFO  - Finish test!
+Sun Sep 25 16:42:55 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 16:42:56 2022 - INFO  - start environment cleanup.
+Sun Sep 25 16:43:39 2022 - INFO  - Finish environment cleanup!

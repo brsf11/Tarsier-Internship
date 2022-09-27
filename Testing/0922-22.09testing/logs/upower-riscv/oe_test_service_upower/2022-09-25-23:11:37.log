@@ -1,0 +1,15 @@
+Sun Sep 25 23:11:40 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 23:12:39 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:12:40 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 23:12:41 CST; 6s ago
+     Active: inactive (dead) since Sun 2022-09-25 23:12:47 CST; 6s ago
+     Active: active (running) since Sun 2022-09-25 23:12:54 CST; 5s ago
+find: ‘/etc/systemd/system/graphical.target.wants/upower.service’: No such file or directory
+Created symlink /etc/systemd/system/graphical.target.wants/upower.service → /usr/lib/systemd/system/upower.service.
+/etc/systemd/system/graphical.target.wants/upower.service
+Failed to reload upower.service: Job type reload is not applicable for unit upower.service.
+     Active: active (running) since Sun 2022-09-25 23:12:54 CST; 16s ago
+Sun Sep 25 23:13:11 2022 - INFO  - Finish test!
+Sun Sep 25 23:13:11 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:13:12 2022 - INFO  - start environment cleanup.
+Sun Sep 25 23:13:45 2022 - INFO  - Finish environment cleanup!

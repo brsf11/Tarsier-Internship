@@ -1,0 +1,15 @@
+Sun Sep 25 19:06:55 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 19:09:14 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 19:09:15 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 19:09:15 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 19:09:28 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/kubelet.service
+Removed /etc/systemd/system/multi-user.target.wants/kubelet.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/kubelet.service’: No such file or directory
+Failed to reload kubelet.service: Job type reload is not applicable for unit kubelet.service.
+     Active: active (running) since Sun 2022-09-25 19:09:28 CST; 15s ago
+Sun Sep 25 19:09:44 2022 - INFO  - Finish test!
+Sun Sep 25 19:09:45 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:09:45 2022 - INFO  - start environment cleanup.
+Sun Sep 25 19:10:22 2022 - INFO  - Finish environment cleanup!

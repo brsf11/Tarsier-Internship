@@ -1,0 +1,15 @@
+Sun Sep 25 20:01:56 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 20:03:21 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 20:03:22 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 20:03:23 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Sun 2022-09-25 20:03:36 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/ntp-wait.service
+Removed /etc/systemd/system/multi-user.target.wants/ntp-wait.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ntp-wait.service’: No such file or directory
+Failed to reload ntp-wait.service: Job type reload is not applicable for unit ntp-wait.service.
+     Active: active (exited) since Sun 2022-09-25 20:03:36 CST; 17s ago
+Sun Sep 25 20:03:54 2022 - INFO  - Finish test!
+Sun Sep 25 20:03:54 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:03:55 2022 - INFO  - start environment cleanup.
+Sun Sep 25 20:04:18 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,12 @@
+Sun Sep 25 20:50:11 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 20:53:23 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 20:53:23 2022 - INFO  - Start executing testcase.
+WARNING: This content points out to the remote resources. Use `--fetch-remote-resources' option to download them.
+WARNING: Skipping https://linux.oracle.com/security/oval/com.oracle.elsa-all.xml.bz2 file which is referenced from XCCDF content
+Rule	audit_create_success
+# $ ansible-playbook -i "localhost," -c local playbook.yml
+- hosts: all
+Sun Sep 25 20:53:49 2022 - INFO  - Finish testcase execution.
+Sun Sep 25 20:53:50 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:53:50 2022 - INFO  - start environment cleanup.
+Sun Sep 25 20:54:31 2022 - INFO  - Finish environment cleanup!

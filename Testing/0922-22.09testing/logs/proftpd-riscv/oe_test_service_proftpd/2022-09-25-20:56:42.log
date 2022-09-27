@@ -1,0 +1,14 @@
+Sun Sep 25 20:56:45 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 20:58:00 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 20:58:01 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 20:58:04 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 20:58:41 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/proftpd.service
+Removed /etc/systemd/system/multi-user.target.wants/proftpd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/proftpd.service’: No such file or directory
+     Active: active (running) since Sun 2022-09-25 20:58:41 CST; 22s ago
+Sun Sep 25 20:59:05 2022 - INFO  - Finish test!
+Sun Sep 25 20:59:06 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:59:06 2022 - INFO  - start environment cleanup.
+Sun Sep 25 20:59:45 2022 - INFO  - Finish environment cleanup!

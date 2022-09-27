@@ -1,0 +1,41 @@
+Sun Sep 25 20:25:46 2022 - INFO  - Start to config params of the case.
+Sun Sep 25 20:25:47 2022 - INFO  - End to config params of the case.
+Sun Sep 25 20:25:47 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 20:25:56 2022 - INFO  - pkgs:(osc) is already installed
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 4708.
+Sun Sep 25 20:26:07 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 20:26:08 2022 - INFO  - Start to run test.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project                                 # Package
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+matches for 'test666 (maintainer)' in projects:
+No matches found for 'test666 (maintainer)' in packages
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+matches for 'test666 (maintainer)' in projects:
+No matches found for 'test666 (maintainer)' in packages
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project                                 # Package
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project                                 # Package
+Sun Sep 25 20:27:14 2022 - INFO  - End to run test.
+Sun Sep 25 20:27:14 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:27:15 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 20:27:16 2022 - WARN  - no thing to do.
+Sun Sep 25 20:27:17 2022 - INFO  - End to restore the test environment.

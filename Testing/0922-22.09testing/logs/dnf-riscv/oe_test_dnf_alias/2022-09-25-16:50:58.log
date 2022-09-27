@@ -1,0 +1,12 @@
+Sun Sep 25 16:51:01 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 16:51:46 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 16:51:47 2022 - INFO  - Start to run test.
+Aliases added: rm
+Alias rm='remove'
+Removing:
+package tree is not installed
+Aliases deleted: rm
+Sun Sep 25 16:52:44 2022 - INFO  - End of the test.
+Sun Sep 25 16:52:45 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 16:52:46 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 16:52:46 2022 - INFO  - End to restore the test environment.

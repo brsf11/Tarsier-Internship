@@ -1,0 +1,7 @@
+Sun Sep 25 20:47:20 2022 - INFO  - Start testing...
+Unit selinux-autorelabel-mark.service could not be found.
+Failed to get unit file state for selinux-autorelabel-mark.service: No such file or directory
+Sun Sep 25 20:47:21 2022 - INFO  - Unit is indirect, ignoring.
+Sun Sep 25 20:47:22 2022 - INFO  - Finish test!
+Sun Sep 25 20:47:22 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:47:23 2022 - INFO  - oe_test_service_selinux-autorelabel-mark.sh post_test

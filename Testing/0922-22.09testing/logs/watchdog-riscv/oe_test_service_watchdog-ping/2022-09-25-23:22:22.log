@@ -1,0 +1,15 @@
+Sun Sep 25 23:22:25 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 23:23:18 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:23:19 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 23:23:19 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 23:23:32 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/watchdog-ping.service
+Removed /etc/systemd/system/multi-user.target.wants/watchdog-ping.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/watchdog-ping.service’: No such file or directory
+Failed to reload watchdog-ping.service: Job type reload is not applicable for unit watchdog-ping.service.
+     Active: active (running) since Sun 2022-09-25 23:23:32 CST; 17s ago
+Sun Sep 25 23:23:50 2022 - INFO  - Finish test!
+Sun Sep 25 23:23:51 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:23:51 2022 - INFO  - start environment cleanup.
+Sun Sep 25 23:24:19 2022 - INFO  - Finish environment cleanup!

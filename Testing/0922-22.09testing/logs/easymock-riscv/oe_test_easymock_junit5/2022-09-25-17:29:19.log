@@ -1,0 +1,12 @@
+Sun Sep 25 17:29:23 2022 - INFO  - Start to prepare the test environment.
+usage: rpm_manage.py install|remove [-h] [--node NODE] [--pkgs PKG] [--tempfile TEPMFILE]
+rpm_manage.py: error: argument --node: invalid int value: '1.8.0'
+Sun Sep 25 17:32:20 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 17:32:21 2022 - INFO  - Start to run test.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.382 s - in test.java.junitest.TestStudentApplication
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+Sun Sep 25 17:40:16 2022 - INFO  - End to run test.
+Sun Sep 25 17:40:16 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:40:17 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 17:41:09 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,14 @@
+Sun Sep 25 21:45:41 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 21:46:55 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 21:46:56 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 21:47:03 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 21:47:28 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/ldirectord.service
+Removed /etc/systemd/system/multi-user.target.wants/ldirectord.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ldirectord.service’: No such file or directory
+     Active: active (running) since Sun 2022-09-25 21:47:28 CST; 27s ago
+Sun Sep 25 21:47:56 2022 - INFO  - Finish test!
+Sun Sep 25 21:47:57 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 21:47:58 2022 - INFO  - start environment cleanup.
+Sun Sep 25 21:48:47 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,9 @@
+Sun Sep 25 15:03:54 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 15:04:49 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 15:04:50 2022 - INFO  - Start to run test.
+oe_test_power_powertop_powerup.sh: line 32: kill: (3222) - No such process
+Sun Sep 25 15:04:54 2022 - ERROR - oe_test_power_powertop_powerup.sh line 34
+Sun Sep 25 15:04:54 2022 - INFO  - End to run test.
+Sun Sep 25 15:04:55 2022 - ERROR - failed to execute the case.
+Sun Sep 25 15:04:56 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 15:05:13 2022 - INFO  - End to restore the test environment.

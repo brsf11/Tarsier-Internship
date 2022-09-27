@@ -1,0 +1,15 @@
+Sun Sep 25 15:19:38 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 15:20:52 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 15:20:53 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sun 2022-09-25 15:20:53 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Sun 2022-09-25 15:21:06 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/kamanda.socket
+Removed /etc/systemd/system/sockets.target.wants/kamanda.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/kamanda.socket’: No such file or directory
+Failed to reload kamanda.socket: Job type reload is not applicable for unit kamanda.socket.
+     Active: active (listening) since Sun 2022-09-25 15:21:06 CST; 16s ago
+Sun Sep 25 15:21:23 2022 - INFO  - End of the test.
+Sun Sep 25 15:21:24 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:21:24 2022 - INFO  - start environment cleanup.
+Sun Sep 25 15:21:47 2022 - INFO  - Finish environment cleanup!

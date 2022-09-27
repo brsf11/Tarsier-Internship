@@ -1,0 +1,43 @@
+Sun Sep 25 22:17:42 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Sun Sep 25 22:19:01 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 22:19:02 2022 - INFO  - Start to run test.
+bundler: MIT
+bundler: MIT
+bundler: MIT
+bundler: MIT
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+[DEPRECATED] The --binstubs option will be removed in favor of `bundle binstubs --all`
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+[DEPRECATED] The `--clean` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local clean 'true'`, and stop using this flag
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Cleaning all the gems on your system is dangerous! If you're sure you want to
+remove every system gem not in this bundle, run `bundle clean --force`.
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+[DEPRECATED] The `--deployment` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local deployment 'true'`, and stop using this flag
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+[DEPRECATED] The `--frozen` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local frozen 'true'`, and stop using this flag
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Sun Sep 25 22:19:41 2022 - INFO  - End to run test.
+Sun Sep 25 22:19:42 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:19:43 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 22:19:58 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,8 @@
+Sun Sep 25 15:37:53 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 15:39:59 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 15:40:00 2022 - INFO  - Start to run test.
+oe_test_target_anaconda.sh: line 30: test_oneshot: command not found
+Sun Sep 25 15:40:01 2022 - INFO  - End of the test.
+Sun Sep 25 15:40:01 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:40:02 2022 - INFO  - start environment cleanup.
+Sun Sep 25 15:40:59 2022 - INFO  - Finish environment cleanup!

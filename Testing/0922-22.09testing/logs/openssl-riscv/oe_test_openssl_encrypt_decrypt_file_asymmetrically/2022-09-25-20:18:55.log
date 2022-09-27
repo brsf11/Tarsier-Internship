@@ -1,0 +1,20 @@
+Sun Sep 25 20:18:57 2022 - INFO  - Start to run test.
+Generating RSA private key, 2048 bit long modulus (2 primes)
+..............................................................+++++
+......+++++
+e is 65537 (0x010001)
+-----BEGIN RSA PRIVATE KEY-----
+writing RSA key
+-----BEGIN PUBLIC KEY-----
+spawn openssl rsautl -decrypt -inkey rsaprivatekey.pem -in cipher.txt -out plain_back.txt
+Enter pass phrase for rsaprivatekey.pem:
+spawn openssl rsautl -decrypt -inkey rsaprivatekey.pem -in cipher.txt -out plain_back.txt
+Enter pass phrase for rsaprivatekey.pem:
+spawn openssl rsautl -sign -inkey rsaprivatekey.pem -in plain.txt -out signature.bin
+Enter pass phrase for rsaprivatekey.pem:
+spawn openssl rsautl -sign -inkey rsaprivatekey.pem -in plain.txt -out signature.bin
+Enter pass phrase for rsaprivatekey.pem:
+Sun Sep 25 20:19:00 2022 - INFO  - End to run test.
+Sun Sep 25 20:19:01 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:19:01 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 20:19:02 2022 - INFO  - End to restore the test environment.

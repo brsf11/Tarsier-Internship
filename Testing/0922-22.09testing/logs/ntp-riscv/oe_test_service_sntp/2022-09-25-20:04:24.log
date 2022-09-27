@@ -1,0 +1,17 @@
+Sun Sep 25 20:04:27 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 20:04:46 2022 - INFO  - pkgs:(ntp) is already installed
+Sun Sep 25 20:04:53 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 20:04:53 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 20:04:54 CST; 6s ago
+     Active: inactive (dead) since Sun 2022-09-25 20:05:00 CST; 6s ago
+     Active: active (exited) since Sun 2022-09-25 20:05:06 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/sntp.service
+Removed /etc/systemd/system/multi-user.target.wants/sntp.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/sntp.service’: No such file or directory
+Failed to reload sntp.service: Job type reload is not applicable for unit sntp.service.
+     Active: active (exited) since Sun 2022-09-25 20:05:06 CST; 16s ago
+Sun Sep 25 20:05:24 2022 - INFO  - Finish test!
+Sun Sep 25 20:05:25 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:05:25 2022 - INFO  - start environment cleanup.
+Sun Sep 25 20:05:27 2022 - WARN  - no thing to do.
+Sun Sep 25 20:05:27 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,45 @@
+Sun Sep 25 20:59:11 2022 - INFO  - Start to prepare the test environment.
+WARNING: Running pip install with root privileges is generally not a good idea. Try `pip3 install --user` instead.
+Collecting keyrings.alt
+  Downloading keyrings.alt-4.2.0-py3-none-any.whl (20 kB)
+Collecting jaraco.classes
+  Downloading jaraco.classes-3.2.2-py3-none-any.whl (6.0 kB)
+Collecting more-itertools
+  Downloading more_itertools-8.14.0-py3-none-any.whl (52 kB)
+Installing collected packages: more-itertools, jaraco.classes, keyrings.alt
+Successfully installed jaraco.classes-3.2.2 keyrings.alt-4.2.0 more-itertools-8.14.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Sun Sep 25 21:00:17 2022 - INFO  - Finish preparing the test environment.
+Sun Sep 25 21:00:18 2022 - INFO  - Start to run test.
+usage: keyring [-h] [-p KEYRING_PATH] [-b KEYRING_BACKEND] [--list-backends]
+               [--disable]
+  -h, --help            show this help message and exit
+  -p KEYRING_PATH, --keyring-path KEYRING_PATH
+  -b KEYRING_BACKEND, --keyring-backend KEYRING_BACKEND
+  --list-backends       List keyring backends and exit
+  --disable             Disable keyring and exit
+keyring.backends.fail.Keyring (priority: 0)
+keyrings.alt.file.PlaintextKeyring (priority: 0.5)
+keyring.backends.chainer.ChainerBackend (priority: -1)
+spawn keyring set system username -b keyrings.alt.file.PlaintextKeyring
+Password for 'username' in 'system': 
+test1
+spawn keyring del system username -b keyrings.alt.file.PlaintextKeyring
+expect: spawn id exp3 not open
+    while executing
+"expect eof"
+spawn keyring set system username -b keyrings.alt.file.PlaintextKeyring -p demo
+Password for 'username' in 'system': 
+apple1
+spawn keyring del system username -b keyrings.alt.file.PlaintextKeyring -p demo
+expect: spawn id exp3 not open
+    while executing
+"expect eof"
+Sun Sep 25 21:00:45 2022 - INFO  - End of the test.
+Sun Sep 25 21:00:45 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 21:00:46 2022 - INFO  - Start to restore the test environment.
+Found existing installation: keyrings.alt 4.2.0
+Uninstalling keyrings.alt-4.2.0:
+  Successfully uninstalled keyrings.alt-4.2.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+Sun Sep 25 21:01:16 2022 - INFO  - Finish restoring the test environment.

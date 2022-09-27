@@ -1,0 +1,15 @@
+Sun Sep 25 19:19:37 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 19:20:26 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 19:20:27 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sun 2022-09-25 19:20:27 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Sun 2022-09-25 19:20:40 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/lldpad.socket
+Removed /etc/systemd/system/sockets.target.wants/lldpad.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/lldpad.socket’: No such file or directory
+Failed to reload lldpad.socket: Job type reload is not applicable for unit lldpad.socket.
+     Active: active (listening) since Sun 2022-09-25 19:20:40 CST; 15s ago
+Sun Sep 25 19:20:56 2022 - INFO  - End of the test.
+Sun Sep 25 19:20:57 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:20:58 2022 - INFO  - start environment cleanup.
+Sun Sep 25 19:21:15 2022 - INFO  - Finish environment cleanup!

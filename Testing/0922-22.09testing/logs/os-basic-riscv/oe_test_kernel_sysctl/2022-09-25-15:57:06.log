@@ -1,0 +1,6 @@
+Sun Sep 25 15:57:08 2022 - INFO  - Start executing testcase.
+net.ipv6.conf.lo.disable_ipv6 = 1
+net.ipv6.conf.lo.disable_ipv6 = 0
+Sun Sep 25 15:57:11 2022 - INFO  - End of testcase execution.
+Sun Sep 25 15:57:11 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:57:12 2022 - INFO  - oe_test_kernel_sysctl.sh post_test

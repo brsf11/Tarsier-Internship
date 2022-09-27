@@ -1,0 +1,14 @@
+Sun Sep 25 15:46:41 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 15:48:39 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 15:48:40 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 15:48:41 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Sun 2022-09-25 15:48:54 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/rbdmap.service
+Removed /etc/systemd/system/multi-user.target.wants/rbdmap.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/rbdmap.service’: No such file or directory
+     Active: active (exited) since Sun 2022-09-25 15:48:54 CST; 20s ago
+Sun Sep 25 15:49:15 2022 - INFO  - Finish test!
+Sun Sep 25 15:49:16 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:49:17 2022 - INFO  - start environment cleanup.
+Sun Sep 25 15:49:58 2022 - INFO  - Finish environment cleanup!

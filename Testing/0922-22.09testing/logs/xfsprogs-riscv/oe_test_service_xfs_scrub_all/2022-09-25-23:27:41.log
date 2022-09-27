@@ -1,0 +1,10 @@
+Sun Sep 25 23:27:44 2022 - INFO  - Start environmental preparation.
+Failed to start xfs_scrub_all.service: Unit xfs_scrub_all.service not found.
+Sun Sep 25 23:27:45 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:27:45 2022 - INFO  - Start testing...
+Unit xfs_scrub_all.service could not be found.
+Failed to get unit file state for xfs_scrub_all.service: No such file or directory
+Sun Sep 25 23:27:46 2022 - INFO  - Unit is indirect, ignoring.
+Sun Sep 25 23:27:47 2022 - INFO  - Finish test!
+Sun Sep 25 23:27:48 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:27:49 2022 - INFO  - oe_test_service_xfs_scrub_all.sh post_test

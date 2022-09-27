@@ -1,0 +1,16 @@
+Sun Sep 25 18:18:05 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 18:25:50 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 18:25:51 2022 - INFO  - Start to run test.
+Usage: javap <options> <classes>
+1.8.0_332
+class Hello {
+class Hello {
+class Hello {
+class Hello {
+Classfile /root/GitRepo/mugen-riscv/testcases/cli-test/java-1.8.0-openjdk/oe_test_openjdk_javap_jcmd/Hello.class
+Usage: jcmd <pid | main class> <command ...|PerfCounter.print|-f file>
+5572 sun.tools.jcmd.JCmd -l
+Sun Sep 25 18:27:07 2022 - INFO  - End to run test.
+Sun Sep 25 18:27:08 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 18:27:09 2022 - INFO  - Need't to restore the tet environment.
+Sun Sep 25 18:28:11 2022 - INFO  - End to restore the test environment.

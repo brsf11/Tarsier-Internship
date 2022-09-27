@@ -1,0 +1,15 @@
+Sun Sep 25 20:00:10 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 20:01:27 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 20:01:28 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 20:01:28 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 20:01:41 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/oddjobd.service
+Removed /etc/systemd/system/multi-user.target.wants/oddjobd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/oddjobd.service’: No such file or directory
+Failed to reload oddjobd.service: Job type reload is not applicable for unit oddjobd.service.
+     Active: active (running) since Sun 2022-09-25 20:01:41 CST; 15s ago
+Sun Sep 25 20:01:57 2022 - INFO  - Finish test!
+Sun Sep 25 20:01:58 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:01:59 2022 - INFO  - start environment cleanup.
+Sun Sep 25 20:02:15 2022 - INFO  - Finish environment cleanup!

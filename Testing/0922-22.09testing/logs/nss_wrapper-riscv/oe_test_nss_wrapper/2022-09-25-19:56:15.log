@@ -1,0 +1,13 @@
+Sun Sep 25 19:56:18 2022 - INFO  - Start to config params of the case.
+Sun Sep 25 19:56:20 2022 - INFO  - End to config params of the case.
+Sun Sep 25 19:56:20 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 19:57:16 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 19:57:17 2022 - INFO  - Start to run test.
+usage:
+-bash: line 1: cd: /root: Permission denied
+/root
+-bash: line 1: cd: /root: Permission denied
+Sun Sep 25 19:57:25 2022 - INFO  - End to run test.
+Sun Sep 25 19:57:26 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:57:27 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 19:57:45 2022 - INFO  - End to restore the test environment.

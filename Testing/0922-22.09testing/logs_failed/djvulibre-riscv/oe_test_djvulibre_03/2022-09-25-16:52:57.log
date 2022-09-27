@@ -1,0 +1,90 @@
+Sun Sep 25 16:53:00 2022 - INFO  - Start to prepare the test environment.
+spawn any2djvu test.pdf
+/-- Started Sun Sep 25 08:53:59 AM UTC 2022: root@openEuler-riscv64, pid 1731: /usr/bin/any2djvu (cwd /root/GitRepo/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_03)
+WARNING!
+
+any2djvu uses an external server which is willing to perform the
+conversion and requires the document transfer over to that server.
+There is a security issue in operating on documents not intended for
+widespread distribution, which could be partially although not
+completely ameliorated by using a secure web connection.
+
+Do you acknowledge and allow the transmission of the document?
+(Type 'yes' to acknowledge. You can define non-empty environment
+ variable DJVU_ONLINE_ACK to avoid seeing this dialog, or use -a
+ command line parameter to any2djvu).
+[yes/no]:yes
+Sun Sep 25 08:53:59 AM UTC 2022 Processing test ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0curl: (6) Could not resolve host: any2djvu.djvu.org
+error: something got wrong. check log file
+Sun Sep 25 16:54:10 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 16:54:11 2022 - ERROR - Check test.djvu not exist.
+Sun Sep 25 16:54:12 2022 - ERROR - oe_test_djvulibre_03.sh line 37
+Usage: ddjvu [options] [<djvufile> [<outputfile>]]
+ddjvu: [1-11711] Failed to open 'test.djvu': No such file or directory.
+ddjvu: 'ByteStream.cpp:696'
+ddjvu: Cannot open djvu document 'test.djvu'.
+Sun Sep 25 16:54:13 2022 - ERROR - Check ddjvu -verbose failed.
+Sun Sep 25 16:54:14 2022 - ERROR - oe_test_djvulibre_03.sh line 42
+Sun Sep 25 16:54:14 2022 - ERROR - Check ddjvu1 not exist.
+Sun Sep 25 16:54:15 2022 - ERROR - oe_test_djvulibre_03.sh line 44
+ddjvu: [1-11711] Failed to open 'test.djvu': No such file or directory.
+ddjvu: 'ByteStream.cpp:696'
+ddjvu: Cannot open djvu document 'test.djvu'.
+Sun Sep 25 16:54:16 2022 - ERROR - Check ddjvu -format=pgm failed.
+Sun Sep 25 16:54:17 2022 - ERROR - oe_test_djvulibre_03.sh line 46
+Sun Sep 25 16:54:17 2022 - ERROR - Check ddjvu1.pgm not exist.
+Sun Sep 25 16:54:18 2022 - ERROR - oe_test_djvulibre_03.sh line 48
+ddjvu: [1-11711] Failed to open 'test.djvu': No such file or directory.
+ddjvu: 'ByteStream.cpp:696'
+ddjvu: Cannot open djvu document 'test.djvu'.
+Sun Sep 25 16:54:19 2022 - ERROR - Check ddjvu -aspect=no failed.
+Sun Sep 25 16:54:20 2022 - ERROR - oe_test_djvulibre_03.sh line 50
+Sun Sep 25 16:54:20 2022 - ERROR - Check ddjvu2 not exist.
+Sun Sep 25 16:54:21 2022 - ERROR - oe_test_djvulibre_03.sh line 52
+ddjvu: [1-11711] Failed to open 'test.djvu': No such file or directory.
+ddjvu: 'ByteStream.cpp:696'
+ddjvu: Cannot open djvu document 'test.djvu'.
+Sun Sep 25 16:54:22 2022 - ERROR - Check ddjvu -mode=mask failed.
+Sun Sep 25 16:54:23 2022 - ERROR - oe_test_djvulibre_03.sh line 54
+Sun Sep 25 16:54:23 2022 - ERROR - Check ddjvu3 not exist.
+Sun Sep 25 16:54:24 2022 - ERROR - oe_test_djvulibre_03.sh line 56
+ddjvu: [1-11711] Failed to open 'test.djvu': No such file or directory.
+ddjvu: 'ByteStream.cpp:696'
+ddjvu: Cannot open djvu document 'test.djvu'.
+Sun Sep 25 16:54:25 2022 - ERROR - Check ddjvu -mode=foreground failed.
+Sun Sep 25 16:54:26 2022 - ERROR - oe_test_djvulibre_03.sh line 58
+Sun Sep 25 16:54:26 2022 - ERROR - Check ddjvu4 not exist.
+Sun Sep 25 16:54:27 2022 - ERROR - oe_test_djvulibre_03.sh line 60
+ddjvu: [1-11711] Failed to open 'test.djvu': No such file or directory.
+ddjvu: 'ByteStream.cpp:696'
+ddjvu: Cannot open djvu document 'test.djvu'.
+Sun Sep 25 16:54:28 2022 - ERROR - Check ddjvu -mode=background failed.
+Sun Sep 25 16:54:29 2022 - ERROR - oe_test_djvulibre_03.sh line 62
+Sun Sep 25 16:54:30 2022 - ERROR - Check ddjvu5 not exist.
+Sun Sep 25 16:54:30 2022 - ERROR - oe_test_djvulibre_03.sh line 64
+ddjvu: [1-11711] Failed to open 'test.djvu': No such file or directory.
+ddjvu: 'ByteStream.cpp:696'
+ddjvu: Cannot open djvu document 'test.djvu'.
+Sun Sep 25 16:54:31 2022 - ERROR - Check ddjvu -skip failed.
+Sun Sep 25 16:54:32 2022 - ERROR - oe_test_djvulibre_03.sh line 66
+Sun Sep 25 16:54:33 2022 - ERROR - Check ddjvu6 not exist.
+Sun Sep 25 16:54:33 2022 - ERROR - oe_test_djvulibre_03.sh line 68
+Usage:
+Usage:
+DjVuDocument.fail_URL	file://localhost/root/GitRepo/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_03/test.djvu
+Sun Sep 25 16:54:34 2022 - ERROR - Check djvmcvt -b failed.
+Sun Sep 25 16:54:35 2022 - ERROR - oe_test_djvulibre_03.sh line 76
+Sun Sep 25 16:54:36 2022 - ERROR - Check djvmcvt.djvu not exist.
+Sun Sep 25 16:54:36 2022 - ERROR - oe_test_djvulibre_03.sh line 78
+DjVuDocument.fail_URL	file://localhost/root/GitRepo/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_03/test.djvu
+Sun Sep 25 16:54:37 2022 - ERROR - Check djvmcvt -i failed.
+Sun Sep 25 16:54:38 2022 - ERROR - oe_test_djvulibre_03.sh line 80
+Sun Sep 25 16:54:39 2022 - ERROR - Check djvmcvt1.djvu not exist.
+Sun Sep 25 16:54:39 2022 - ERROR - oe_test_djvulibre_03.sh line 82
+Sun Sep 25 16:54:40 2022 - INFO  - End to run test.
+Sun Sep 25 16:54:41 2022 - ERROR - failed to execute the case.
+Sun Sep 25 16:54:41 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 16:54:55 2022 - INFO  - End to restore the test environment.

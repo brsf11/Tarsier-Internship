@@ -1,0 +1,45 @@
+Sun Sep 25 15:21:10 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 15:21:11 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 15:21:11 2022 - INFO  - Start to run test.
+no crontab for root
+no crontab for root - using an empty one
+Vim: Warning: Output is not to a terminal
+Vim: Warning: Input is not from a terminal
+
+E558: Terminal entry not found in terminfo
+'unknown' not known. Available builtin terminals are:
+    builtin_ansi
+    builtin_xterm
+    builtin_iris-ansi
+    builtin_dumb
+defaulting to 'ansi'
+[0m[H[2J[24;1H"/tmp/crontab.sqIlpG" 0L, 0C[2;1H~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~[1;1H[24;1H-- INSERT --[0m[24;13H[K[24;1H[K[1;1H0 0 * * * echo 'hello world' >> /root/test.txt[24;1H:wq"/tmp/crontab.sqIlpG" 1L, 47C written
+crontab: installing new crontab
+Sun Sep 25 11:59:50 PM CST 2022
+hello world
+Mon Sep 26 00:00:51 2022 - INFO  - End to run test.
+Mon Sep 26 00:00:52 2022 - INFO  - succeed to execute the case.
+Mon Sep 26 00:00:52 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 03:22:10 PM CST 2022
+Sun Sep 25 15:22:10 2022 - INFO  - End to restore the test environment.

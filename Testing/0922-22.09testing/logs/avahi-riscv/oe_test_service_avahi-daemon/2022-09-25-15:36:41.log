@@ -1,0 +1,22 @@
+Sun Sep 25 15:36:44 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 15:37:36 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 15:37:36 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 15:37:37 CST; 6s ago
+Warning: Stopping avahi-daemon.service, but it can still be activated by:
+  avahi-daemon.socket
+     Active: inactive (dead) since Sun 2022-09-25 15:37:43 CST; 5s ago
+     Active: active (running) since Sun 2022-09-25 15:37:49 CST; 5s ago
+find: ‘/etc/systemd/system/sockets.target.wants/avahi-daemon.socket’: No such file or directory
+find: ‘/etc/systemd/system/dbus-org.freedesktop.Avahi.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/avahi-daemon.service’: No such file or directory
+Created symlink /etc/systemd/system/dbus-org.freedesktop.Avahi.service → /usr/lib/systemd/system/avahi-daemon.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/avahi-daemon.service → /usr/lib/systemd/system/avahi-daemon.service.
+Created symlink /etc/systemd/system/sockets.target.wants/avahi-daemon.socket → /usr/lib/systemd/system/avahi-daemon.socket.
+/etc/systemd/system/sockets.target.wants/avahi-daemon.socket
+/etc/systemd/system/dbus-org.freedesktop.Avahi.service
+/etc/systemd/system/multi-user.target.wants/avahi-daemon.service
+     Active: active (running) since Sun 2022-09-25 15:37:49 CST; 20s ago
+Sun Sep 25 15:38:10 2022 - INFO  - Finish test!
+Sun Sep 25 15:38:11 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:38:11 2022 - INFO  - start environment cleanup.
+Sun Sep 25 15:38:33 2022 - INFO  - Finish environment cleanup!

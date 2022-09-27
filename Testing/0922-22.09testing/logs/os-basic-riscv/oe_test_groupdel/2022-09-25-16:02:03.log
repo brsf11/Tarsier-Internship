@@ -1,0 +1,8 @@
+Sun Sep 25 16:02:06 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 16:02:07 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 16:02:08 2022 - INFO  - Start to run test.
+testgroup:x:1001:
+Usage: groupdel [options] GROUP
+Sun Sep 25 16:02:10 2022 - INFO  - End to run test.
+Sun Sep 25 16:02:11 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 16:02:11 2022 - INFO  - oe_test_groupdel.sh post_test

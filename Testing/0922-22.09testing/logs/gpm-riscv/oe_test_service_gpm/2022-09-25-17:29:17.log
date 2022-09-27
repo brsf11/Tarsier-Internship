@@ -1,0 +1,15 @@
+Sun Sep 25 17:29:20 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 17:30:27 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 17:30:28 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 17:30:28 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 17:30:41 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/gpm.service
+Removed /etc/systemd/system/multi-user.target.wants/gpm.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/gpm.service’: No such file or directory
+Failed to reload gpm.service: Job type reload is not applicable for unit gpm.service.
+     Active: active (running) since Sun 2022-09-25 17:30:41 CST; 15s ago
+Sun Sep 25 17:30:57 2022 - INFO  - Finish test!
+Sun Sep 25 17:30:58 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:30:59 2022 - INFO  - start environment cleanup.
+Sun Sep 25 17:31:16 2022 - INFO  - Finish environment cleanup!

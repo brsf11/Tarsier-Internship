@@ -1,0 +1,15 @@
+Sun Sep 25 23:20:30 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 23:21:15 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:21:16 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 23:21:16 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 23:21:29 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/watchdog.service
+Removed /etc/systemd/system/multi-user.target.wants/watchdog.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/watchdog.service’: No such file or directory
+Failed to reload watchdog.service: Job type reload is not applicable for unit watchdog.service.
+     Active: active (running) since Sun 2022-09-25 23:21:29 CST; 16s ago
+Sun Sep 25 23:21:46 2022 - INFO  - Finish test!
+Sun Sep 25 23:21:47 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:21:48 2022 - INFO  - start environment cleanup.
+Sun Sep 25 23:22:16 2022 - INFO  - Finish environment cleanup!

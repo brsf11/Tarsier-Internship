@@ -1,0 +1,13 @@
+Sun Sep 25 16:43:11 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 16:44:03 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 16:44:04 2022 - INFO  - Start to run test.
+     Active: active since Sun 2022-09-25 16:44:04 CST; 5s ago
+     Active: inactive (dead)
+     Active: active since Sun 2022-09-25 16:44:16 CST; 6s ago
+Sun Sep 25 16:44:23 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload cvs.target: Job type reload is not applicable for unit cvs.target.
+     Active: active since Sun 2022-09-25 16:44:16 CST; 7s ago
+Sun Sep 25 16:44:24 2022 - INFO  - End of the test.
+Sun Sep 25 16:44:25 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 16:44:25 2022 - INFO  - start environment cleanup.
+Sun Sep 25 16:44:42 2022 - INFO  - Finish environment cleanup!

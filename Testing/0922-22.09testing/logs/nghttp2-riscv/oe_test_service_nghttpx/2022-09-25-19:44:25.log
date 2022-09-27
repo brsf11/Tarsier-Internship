@@ -1,0 +1,14 @@
+Sun Sep 25 19:44:28 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 19:45:16 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 19:45:17 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 19:45:18 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 19:45:30 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/nghttpx.service
+Removed /etc/systemd/system/multi-user.target.wants/nghttpx.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/nghttpx.service’: No such file or directory
+     Active: active (running) since Sun 2022-09-25 19:45:30 CST; 20s ago
+Sun Sep 25 19:45:51 2022 - INFO  - Finish test!
+Sun Sep 25 19:45:52 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:45:53 2022 - INFO  - start environment cleanup.
+Sun Sep 25 19:46:14 2022 - INFO  - Finish environment cleanup!

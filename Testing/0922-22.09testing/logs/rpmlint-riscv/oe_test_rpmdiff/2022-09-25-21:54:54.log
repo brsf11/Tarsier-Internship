@@ -1,0 +1,46 @@
+Sun Sep 25 21:54:57 2022 - INFO  - Start to prepare the test environment.
+--2022-09-25 21:55:53--  https://repo.openeuler.org/openEuler-20.03-LTS/everything/aarch64/Packages/LibRaw-0.19.0-9.oe1.aarch64.rpm
+Resolving repo.openeuler.org (repo.openeuler.org)... 49.0.230.196
+Connecting to repo.openeuler.org (repo.openeuler.org)|49.0.230.196|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 298520 (292K) [application/x-redhat-package-manager]
+Saving to: ‘LibRaw-0.19.0-9.oe1.aarch64.rpm’
+
+     0K .......... .......... .......... .......... .......... 17%  337K 1s
+    50K .......... .......... .......... .......... .......... 34%  695K 0s
+   100K .......... .......... .......... .......... .......... 51% 2.98M 0s
+   150K .......... .......... .......... .......... .......... 68%  780K 0s
+   200K .......... .......... .......... .......... .......... 85% 2.90M 0s
+   250K .......... .......... .......... .......... .         100% 4.09M=0.3s
+
+2022-09-25 21:55:54 (890 KB/s) - ‘LibRaw-0.19.0-9.oe1.aarch64.rpm’ saved [298520/298520]
+
+--2022-09-25 21:55:54--  https://repo.openeuler.org/openEuler-20.03-LTS/update/aarch64/Packages/LibRaw-0.19.0-10.oe1.aarch64.rpm
+Resolving repo.openeuler.org (repo.openeuler.org)... 49.0.230.196
+Connecting to repo.openeuler.org (repo.openeuler.org)|49.0.230.196|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 298764 (292K) [application/x-redhat-package-manager]
+Saving to: ‘LibRaw-0.19.0-10.oe1.aarch64.rpm’
+
+     0K .......... .......... .......... .......... .......... 17%  346K 1s
+    50K .......... .......... .......... .......... .......... 34%  692K 0s
+   100K .......... .......... .......... .......... .......... 51% 3.78M 0s
+   150K .......... .......... .......... .......... .......... 68%  818K 0s
+   200K .......... .......... .......... .......... .......... 85% 3.76M 0s
+   250K .......... .......... .......... .......... .         100% 4.32M=0.3s
+
+2022-09-25 21:55:55 (931 KB/s) - ‘LibRaw-0.19.0-10.oe1.aarch64.rpm’ saved [298764/298764]
+
+Sun Sep 25 21:55:56 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 21:55:57 2022 - INFO  - Start to run test1.
+S.5.......T /usr/lib64/libraw.so.19.0.0
+Sun Sep 25 21:55:59 2022 - INFO  - End to run test1.
+Sun Sep 25 21:56:00 2022 - INFO  - Start to run test2.
+S.........T /usr/lib64/libraw.so.19.0.0
+Sun Sep 25 21:56:02 2022 - INFO  - End to run test2.
+Sun Sep 25 21:56:02 2022 - INFO  - Start to run test3.
+S.5........ /usr/lib64/libraw.so.19.0.0
+Sun Sep 25 21:56:04 2022 - INFO  - End to run test3.
+Sun Sep 25 21:56:05 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 21:56:06 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 21:56:27 2022 - INFO  - End to restore the test environment.

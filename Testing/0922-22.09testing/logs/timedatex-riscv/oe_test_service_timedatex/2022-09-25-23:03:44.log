@@ -1,0 +1,17 @@
+Sun Sep 25 23:03:47 2022 - INFO  - Start environmental preparation.
+Removed /etc/systemd/system/timedatex.service.
+Sun Sep 25 23:03:53 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:03:54 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 23:03:55 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 23:04:08 CST; 6s ago
+/etc/systemd/system/dbus-org.freedesktop.timedate1.service
+Removed /etc/systemd/system/dbus-org.freedesktop.timedate1.service.
+find: ‘/etc/systemd/system/dbus-org.freedesktop.timedate1.service’: No such file or directory
+Failed to reload timedatex.service: Job type reload is not applicable for unit timedatex.service.
+     Active: active (running) since Sun 2022-09-25 23:04:08 CST; 17s ago
+Sun Sep 25 23:04:26 2022 - INFO  - Finish test!
+Sun Sep 25 23:04:27 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:04:28 2022 - INFO  - start environment cleanup.
+Created symlink /etc/systemd/system/timedatex.service → /dev/null.
+Sun Sep 25 23:04:33 2022 - INFO  - Finish environment cleanup!

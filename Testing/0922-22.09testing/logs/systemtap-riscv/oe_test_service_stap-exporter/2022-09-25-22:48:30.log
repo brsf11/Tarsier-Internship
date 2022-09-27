@@ -1,0 +1,18 @@
+Sun Sep 25 22:48:33 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 22:49:50 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 22:49:51 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 22:49:51 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 22:50:03 CST; 6s ago
+/etc/systemd/system/stap-exporter.service
+/etc/systemd/system/multi-user.target.wants/stap-exporter.service
+Removed /etc/systemd/system/stap-exporter.service.
+Removed /etc/systemd/system/multi-user.target.wants/stap-exporter.service.
+find: ‘/etc/systemd/system/stap-exporter.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/stap-exporter.service’: No such file or directory
+Failed to reload stap-exporter.service: Job type reload is not applicable for unit stap-exporter.service.
+     Active: active (running) since Sun 2022-09-25 22:50:03 CST; 16s ago
+Sun Sep 25 22:50:20 2022 - INFO  - Finish test!
+Sun Sep 25 22:50:21 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:50:22 2022 - INFO  - start environment cleanup.
+Sun Sep 25 22:50:58 2022 - INFO  - Finish environment cleanup!

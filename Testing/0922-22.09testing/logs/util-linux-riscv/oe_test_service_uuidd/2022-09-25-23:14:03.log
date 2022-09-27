@@ -1,0 +1,15 @@
+Sun Sep 25 23:14:07 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 23:15:28 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:15:29 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 23:15:29 CST; 6s ago
+Warning: Stopping uuidd.service, but it can still be activated by:
+  uuidd.socket
+     Active: inactive (dead) since Sun 2022-09-25 23:15:36 CST; 6s ago
+     Active: active (running) since Sun 2022-09-25 23:15:42 CST; 6s ago
+Sun Sep 25 23:15:49 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload uuidd.service: Job type reload is not applicable for unit uuidd.service.
+     Active: active (running) since Sun 2022-09-25 23:15:42 CST; 7s ago
+Sun Sep 25 23:15:50 2022 - INFO  - Finish test!
+Sun Sep 25 23:15:50 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:15:51 2022 - INFO  - start environment cleanup.
+Sun Sep 25 23:16:18 2022 - INFO  - Finish environment cleanup!

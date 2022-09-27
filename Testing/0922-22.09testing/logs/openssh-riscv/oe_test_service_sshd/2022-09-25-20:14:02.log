@@ -1,0 +1,16 @@
+Sun Sep 25 20:14:05 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 20:14:05 CST; 6s ago
+             └─440 grep "Active: active"
+     Active: inactive (dead) since Sun 2022-09-25 20:14:11 CST; 6s ago
+             └─444 grep "Active: inactive"
+     Active: active (running) since Sun 2022-09-25 20:14:18 CST; 6s ago
+             └─453 grep "Active: active"
+find: ‘/etc/systemd/system/multi-user.target.wants/sshd.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/sshd.service → /usr/lib/systemd/system/sshd.service.
+/etc/systemd/system/multi-user.target.wants/sshd.service
+     Active: active (running) since Sun 2022-09-25 20:14:18 CST; 20s ago
+             └─508 grep "Active: active"
+Sun Sep 25 20:14:39 2022 - INFO  - Finish test!
+Sun Sep 25 20:14:40 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:14:41 2022 - INFO  - start environment cleanup.
+Sun Sep 25 20:14:46 2022 - INFO  - Finish environment cleanup!

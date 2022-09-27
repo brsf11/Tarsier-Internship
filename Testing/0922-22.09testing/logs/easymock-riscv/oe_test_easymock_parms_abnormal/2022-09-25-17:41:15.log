@@ -1,0 +1,8 @@
+Sun Sep 25 17:41:18 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 17:43:57 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 17:43:58 2022 - INFO  - Start to run test.
+  Unexpected method call IStudent.doMethod(2 (int)):
+Sun Sep 25 17:44:17 2022 - INFO  - End to run test.
+Sun Sep 25 17:44:17 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:44:18 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 17:44:49 2022 - INFO  - End to restore the test environment.

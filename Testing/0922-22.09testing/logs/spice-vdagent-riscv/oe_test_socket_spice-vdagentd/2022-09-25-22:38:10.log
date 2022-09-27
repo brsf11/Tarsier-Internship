@@ -1,0 +1,13 @@
+Sun Sep 25 22:38:13 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 22:39:12 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 22:39:13 2022 - INFO  - Start to run test.
+     Active: active (listening) since Sun 2022-09-25 22:39:13 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Sun 2022-09-25 22:39:26 CST; 6s ago
+Sun Sep 25 22:39:33 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload spice-vdagentd.socket: Job type reload is not applicable for unit spice-vdagentd.socket.
+     Active: active (listening) since Sun 2022-09-25 22:39:26 CST; 7s ago
+Sun Sep 25 22:39:35 2022 - INFO  - End of the test.
+Sun Sep 25 22:39:35 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:39:36 2022 - INFO  - start environment cleanup.
+Sun Sep 25 22:40:06 2022 - INFO  - Finish environment cleanup!

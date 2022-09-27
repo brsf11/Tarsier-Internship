@@ -1,0 +1,23 @@
+Sun Sep 25 17:46:29 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 17:48:37 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 17:48:38 2022 - INFO  - Start to run test.
+runlevel (to lvl 5)   5.10.0-7.oe2209. Sun Sep 25 17:13   still running
+shutdown system down  5.10.0-7.oe2209. Sun Sep 25 14:46 - 17:13  (02:26)
+runlevel (to lvl 5)   5.10.0-7.oe2209. Sun Sep 25 14:38 - 14:46  (00:08)
+ -a, --hostlast       display hostnames in the last column
+ -i, --ip             display IP numbers in numbers-and-dots notation
+last from util-linux 2.37.2
+1.eth0
+Captured 2 packets, exiting...
+2021-03-11 15:49:10.323778 (1) UDP checksum invalid, packet: 0xfe41 calculated: 0x982f
+2021-03-11 15:49:10.323778 (1) Status-Server Id 147 ../common/test.pcap:127.0.0.1:37868 -> 127.0.0.1:1812 +0.000
+2021-03-11 15:49:10.324640 (2) UDP checksum invalid, packet: 0xfe2f calculated: 0x3819
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.323778 (1) UDP checksum invalid, packet: 0xfe41 calculated: 0x982f
+2021-03-11 15:49:10.324640 (2) UDP checksum invalid, packet: 0xfe2f calculated: 0x3819
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+2021-03-11 15:49:10.324640 (2) Access-Accept Id 147 ../common/test.pcap:127.0.0.1:37868 <- 127.0.0.1:1812 +0.000 +0.000
+Sun Sep 25 17:48:45 2022 - INFO  - End to run test.
+Sun Sep 25 17:48:45 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:48:46 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 17:49:21 2022 - INFO  - End to restore the test environment.

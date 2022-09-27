@@ -1,0 +1,13 @@
+Sun Sep 25 17:47:24 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 17:52:58 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 17:52:59 2022 - INFO  - Start testing...
+/etc/systemd/system/graphical.target.wants/initial-setup-reconfiguration.service
+/etc/systemd/system/multi-user.target.wants/initial-setup-reconfiguration.service
+Removed /etc/systemd/system/graphical.target.wants/initial-setup-reconfiguration.service.
+Removed /etc/systemd/system/multi-user.target.wants/initial-setup-reconfiguration.service.
+find: ‘/etc/systemd/system/graphical.target.wants/initial-setup-reconfiguration.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/initial-setup-reconfiguration.service’: No such file or directory
+Sun Sep 25 17:53:11 2022 - INFO  - Finish test!
+Sun Sep 25 17:53:11 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:53:12 2022 - INFO  - start environment cleanup.
+Sun Sep 25 17:54:52 2022 - INFO  - Finish environment cleanup!

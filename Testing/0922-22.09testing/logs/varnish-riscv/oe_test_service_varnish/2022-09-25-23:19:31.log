@@ -1,0 +1,14 @@
+Sun Sep 25 23:19:33 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 23:20:28 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:20:29 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 23:20:35 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 23:20:53 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/varnish.service
+Removed /etc/systemd/system/multi-user.target.wants/varnish.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/varnish.service’: No such file or directory
+     Active: active (running) since Sun 2022-09-25 23:20:53 CST; 28s ago
+Sun Sep 25 23:21:21 2022 - INFO  - Finish test!
+Sun Sep 25 23:21:22 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:21:23 2022 - INFO  - start environment cleanup.
+Sun Sep 25 23:21:50 2022 - INFO  - Finish environment cleanup!

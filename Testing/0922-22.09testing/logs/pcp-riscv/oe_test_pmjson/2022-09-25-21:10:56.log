@@ -1,0 +1,17 @@
+Sun Sep 25 21:10:59 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Sun Sep 25 21:13:51 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 21:13:52 2022 - INFO  - Start to run test.
+pmjson version 5.3.5
+    "employees": [
+            "firstName": "Bill",
+            "firstName": "George",
+            "firstName": "Thomas",
+{"employees":[{"firstName":"Bill","lastName":"Gates"},{"firstName":"George","lastName":"Bush"},{"firstName":"Thomas","lastName":"Carter"}]}
+            "firstName": "Bill",
+        lastName: Gates
+Sun Sep 25 21:13:53 2022 - INFO  - End to run test.
+Sun Sep 25 21:13:54 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 21:13:55 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 21:15:05 2022 - INFO  - End to restore the test environment.

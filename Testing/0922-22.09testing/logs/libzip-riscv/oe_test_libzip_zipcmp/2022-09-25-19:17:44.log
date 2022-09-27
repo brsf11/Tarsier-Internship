@@ -1,0 +1,22 @@
+Sun Sep 25 19:17:47 2022 - INFO  - Start to prepare the test environment.
+  adding: testdir1/ (stored 0%)
+  adding: testdir1/testfile1 (stored 0%)
+  adding: testdir1/testA (stored 0%)
+  adding: testdir2/ (stored 0%)
+  adding: testdir2/testfile2 (stored 0%)
+  adding: testdir2/testa (stored 0%)
+Sun Sep 25 19:18:36 2022 - INFO  - Finish preparing the test environment.
+Sun Sep 25 19:18:36 2022 - INFO  - Start to run test.
+usage: zipcmp [-hipqtVv] archive1 archive2
+- file 'testdir1/testA', size 6, crc 363a3020
++ file 'testdir2/testa', size 6, crc 5065b52c
+- file 'testdir1/testA', size 6, crc 363a3020
++ file 'testdir2/testa', size 6, crc 5065b52c
+- file 'testdir1/testA', size 6, crc 363a3020
++ file 'testdir2/testa', size 6, crc 5065b52c
+- file 'testdir1/testA', size 6, crc 363a3020
++ file 'testdir2/testa', size 6, crc 5065b52c
+Sun Sep 25 19:18:39 2022 - INFO  - End of the test.
+Sun Sep 25 19:18:39 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:18:40 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 19:18:58 2022 - INFO  - Finish restoring the test environment.

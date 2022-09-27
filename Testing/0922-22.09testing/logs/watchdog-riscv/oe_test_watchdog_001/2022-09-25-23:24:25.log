@@ -1,0 +1,10 @@
+Sun Sep 25 23:24:28 2022 - INFO  - Start to prepare the test environment!
+Sun Sep 25 23:25:15 2022 - INFO  - End to prepare the test environment!
+Sun Sep 25 23:25:16 2022 - INFO  - Start executing testcase!
+watchdog: Variable 'realtime' found as 'yes' = 1
+watchdog: Integer 'priority' found = 1
+watchdog: NOTE: Using --loop-exit so daemon will exit after 4 time intervals
+Sun Sep 25 23:25:17 2022 - INFO  - End of testcase execution!
+Sun Sep 25 23:25:18 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:25:18 2022 - INFO  - Start environment cleanup.
+Sun Sep 25 23:25:47 2022 - INFO  - Finish environment cleanup.

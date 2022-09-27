@@ -1,0 +1,23 @@
+Sun Sep 25 19:49:59 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 19:52:09 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 19:52:10 2022 - INFO  - Start to run test.
+Usage: node [options] [ script.js ] [arguments]
+v16.14.2
+spawn node
+Welcome to Node.js v16.14.2.
+Type ".help" for more information.
+[1G[0J> [3Gconsole.log('Hello,Kitty');
+Hello,Kitty
+undefined
+[1G[0J> [3GHello,Kitty
+Hello,Kitty
+Hello,Kitty
+_node_complete() {
+complete -o filenames -o nospace -o bashdefault -F _node_complete node node_g
+Debugger listening on ws://127.0.0.1:9229/f22740d0-0292-45fb-a881-c3fe8b14f7ce
+For help, see: https://nodejs.org/en/docs/inspector
+Hello,Kitty
+Sun Sep 25 19:52:44 2022 - INFO  - End to run test.
+Sun Sep 25 19:52:45 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:52:45 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 19:53:03 2022 - INFO  - End to restore the test environment.

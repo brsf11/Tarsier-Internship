@@ -1,0 +1,7 @@
+Sun Sep 25 17:01:58 2022 - INFO  - Start testing...
+Unit dracut-cmdline.service could not be found.
+Failed to get unit file state for dracut-cmdline.service: No such file or directory
+Sun Sep 25 17:01:59 2022 - INFO  - Unit is indirect, ignoring.
+Sun Sep 25 17:02:00 2022 - INFO  - Finish test!
+Sun Sep 25 17:02:00 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:02:01 2022 - INFO  - oe_test_service_dracut-cmdline.sh post_test

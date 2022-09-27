@@ -1,0 +1,7 @@
+Sun Sep 25 17:03:16 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 17:03:17 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 17:03:18 2022 - INFO  - Start testing...
+Sun Sep 25 17:03:19 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Sun Sep 25 17:03:19 2022 - INFO  - Finish test!
+Sun Sep 25 17:03:20 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:03:21 2022 - INFO  - oe_test_service_e2scrub_all.sh post_test

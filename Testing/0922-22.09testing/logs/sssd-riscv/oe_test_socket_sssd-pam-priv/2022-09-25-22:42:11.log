@@ -1,0 +1,17 @@
+Sun Sep 25 22:42:14 2022 - INFO  - Start environmental preparation.
+sed: can't read /etc/sssd/sssd.conf: No such file or directory
+Sun Sep 25 22:42:45 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 22:42:46 2022 - INFO  - Start testing...
+oe_test_socket_sssd-pam-priv.sh: line 32: test_execution: command not found
+oe_test_socket_sssd-pam-priv.sh: line 33: test_reload: command not found
+Sun Sep 25 22:42:47 2022 - INFO  - Finish test!
+Sun Sep 25 22:42:48 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:42:48 2022 - INFO  - start environment cleanup.
+Failed to stop sssd-pam-priv.socket: Unit sssd-pam-priv.socket not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 8:01:54 ago on Sun 25 Sep 2022 02:40:50 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides libsmbclient.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libsmbclient.so.0(SMBCLIENT_0.1.0)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-krb5pac.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-krb5pac.so.0(NDR_KRB5PAC_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-nbt.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-nbt.so.0(NDR_NBT_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr-standard.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_0.0.1)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_0.0.6)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libndr.so.2(NDR_1.0.0)(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n  - nothing provides libsamba-util.so.0()(64bit) needed by sssd-2.6.1-2.oe2209.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Sun Sep 25 22:42:51 2022 - INFO  - Finish environment cleanup!

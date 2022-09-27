@@ -1,0 +1,18 @@
+Sun Sep 25 17:49:25 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 17:50:38 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 17:50:39 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 17:50:39 CST; 5s ago
+     Active: inactive (dead) since Sun 2022-09-25 17:50:46 CST; 6s ago
+     Active: active (exited) since Sun 2022-09-25 17:50:52 CST; 5s ago
+network.service is not a native service, redirecting to systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install is-enabled network
+network.service is not a native service, redirecting to systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable network
+network.service is not a native service, redirecting to systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install enable network
+Failed to reload network.service: Job type reload is not applicable for unit network.service.
+     Active: active (exited) since Sun 2022-09-25 17:50:52 CST; 25s ago
+Sun Sep 25 17:51:19 2022 - INFO  - Finish test!
+Sun Sep 25 17:51:20 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:51:20 2022 - INFO  - start environment cleanup.
+Sun Sep 25 17:51:56 2022 - INFO  - Finish environment cleanup!

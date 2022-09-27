@@ -1,0 +1,12 @@
+Sun Sep 25 18:31:22 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 18:31:23 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 18:31:24 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+-rw-r--r-- 1 root root 0 Sep 25 18:31 /tmp/test
+chown: changing ownership of '/tmp/test': Operation not permitted
+-rw-r--r-- 1 example example 0 Sep 25 18:31 /tmp/test
+Sun Sep 25 18:31:32 2022 - INFO  - Finish testcase execution.
+Sun Sep 25 18:31:33 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 18:31:34 2022 - INFO  - start environment cleanup.
+Sun Sep 25 18:31:36 2022 - INFO  - Finish environment cleanup!

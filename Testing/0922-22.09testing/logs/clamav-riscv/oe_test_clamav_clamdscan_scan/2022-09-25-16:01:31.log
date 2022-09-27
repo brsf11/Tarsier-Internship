@@ -1,0 +1,9 @@
+Sun Sep 25 16:01:34 2022 - INFO  - Start to prepare the database config.
+Sun Sep 25 16:06:11 2022 - INFO  - End to prepare the database config.
+Sun Sep 25 16:06:11 2022 - INFO  - Start to run test.
+Sun Sep 25 16:06:13 2022 - INFO  - End to run test.
+Sun Sep 25 16:06:14 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 16:06:14 2022 - INFO  - Start to restore the test environment.
+Job for clamd@scan.service failed because the control process exited with error code.
+See "systemctl status clamd@scan.service" and "journalctl -xeu clamd@scan.service" for details.
+Sun Sep 25 16:06:47 2022 - INFO  - End to restore the test environment.

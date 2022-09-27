@@ -1,0 +1,16 @@
+Sun Sep 25 15:27:03 2022 - INFO  - Start to prepare the test environment.
+Changing password for user Jevons.
+passwd: all authentication tokens updated successfully.
+Sun Sep 25 15:27:06 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 15:27:07 2022 - INFO  - Start to run test.
+oe_test_audit_monitor_security_event.sh: line 32: service: command not found
+oe_test_audit_monitor_security_event.sh: line 33: auditctl: command not found
+spawn ssh Jevons@localhost
+invalid command name "expect{"
+    while executing
+"expect{"
+oe_test_audit_monitor_security_event.sh: line 47: ausearch: command not found
+Sun Sep 25 15:27:25 2022 - INFO  - End to run test.
+Sun Sep 25 15:27:25 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:27:26 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 15:27:29 2022 - INFO  - End to restore the test environment.

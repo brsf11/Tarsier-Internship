@@ -1,0 +1,9 @@
+Sun Sep 25 14:51:56 2022 - INFO  - Start to run test.
+Linux openEuler-riscv64 5.10.0-7.oe2209.riscv64 #1 SMP Thu Aug 18 06:14:55 UTC 2022 riscv64 riscv64 riscv64 GNU/Linux
+riscv64
+openEuler-riscv64
+5.10.0-7.oe2209.riscv64
+Usage: uname [OPTION]...
+Sun Sep 25 14:51:57 2022 - INFO  - End to run test.
+Sun Sep 25 14:51:57 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 14:51:58 2022 - INFO  - oe_test_uname.sh post_test

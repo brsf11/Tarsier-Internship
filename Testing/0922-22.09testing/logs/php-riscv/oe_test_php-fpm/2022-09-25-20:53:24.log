@@ -1,0 +1,47 @@
+Sun Sep 25 20:53:27 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 20:54:47 2022 - INFO  - Finish preparing the test environment.
+Sun Sep 25 20:54:47 2022 - INFO  - Start to run test.
+Usage: php [-n] [-e] [-h] [-i] [-m] [-v] [-t] [-p <prefix>] [-g <pid>] [-c <file>] [-d foo[=bar]] [-y <file>] [-D] [-F [-O]]
+PHP 8.1.1 (fpm-fcgi) (built: Dec 15 2021 02:00:45)
+Copyright (c) The PHP Group
+$_SERVER['SHELL'] => /bin/bash
+$_SERVER['SUDO_GID'] => 0
+$_SERVER['NODE1_PASSWORD'] => openEuler12#$
+$_SERVER['NODE1_MACHINE'] => physical
+$_SERVER['NODE1_BMC_USER'] => 
+$_SERVER['SUDO_COMMAND'] => /usr/bin/bash mugen.sh -f php-riscv -r oe_test_php-fpm
+$_SERVER['SUDO_USER'] => root
+$_SERVER['PWD'] => /root/GitRepo/mugen-riscv/testcases/cli-test/php/oe_test_php-fpm
+$_SERVER['LOGNAME'] => root
+$_SERVER['NODE1_FRAME'] => riscv64
+$_SERVER['HOME'] => /root
+$_SERVER['LANG'] => en_US.UTF-8
+$_SERVER['NODE1_BMC_PASSWORD'] => 
+$_SERVER['NODE1_NIC'] => 
+$_SERVER['OET_PATH'] => /root/GitRepo/mugen-riscv
+$_SERVER['NODE1_SSH_PORT'] => 22
+$_SERVER['NODE1_IPV4'] => 127.0.0.1
+$_SERVER['TERM'] => unknown
+$_SERVER['USER'] => root
+$_SERVER['NODE1_MAC'] => 
+$_SERVER['NODE1_LOCALTION'] => local
+$_SERVER['SHLVL'] => 1
+$_SERVER['NODE1_BMC_IP'] => 
+$_SERVER['NODE1_USER'] => root
+$_SERVER['PATH'] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+$_SERVER['SUDO_UID'] => 0
+$_SERVER['MAIL'] => /var/mail/root
+$_SERVER['conf_file'] => /root/GitRepo/mugen-riscv/conf/mugen.json
+$_SERVER['OLDPWD'] => /root/GitRepo/mugen-riscv
+$_SERVER['_'] => /usr/sbin/php-fpm
+$_SERVER['PHP_SELF'] => 
+$_SERVER['REQUEST_TIME_FLOAT'] => 1664110488.8274
+$_SERVER['REQUEST_TIME'] => 1664110488
+[PHP Modules]
+[Zend Modules]
+[25-Sep-2022 20:54:49] NOTICE: configuration file /etc/php-fpm.conf test is successful
+
+Sun Sep 25 20:54:50 2022 - INFO  - End of the test.
+Sun Sep 25 20:54:51 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:54:51 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 20:55:13 2022 - INFO  - Finish restoring the test environment.

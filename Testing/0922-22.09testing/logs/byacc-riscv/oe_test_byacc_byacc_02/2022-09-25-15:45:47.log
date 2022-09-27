@@ -1,0 +1,8 @@
+Sun Sep 25 15:45:50 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 15:46:28 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 15:46:29 2022 - INFO  - Start testing...
+#define YYDEBUG 1
+Sun Sep 25 15:46:30 2022 - INFO  - Finish test!
+Sun Sep 25 15:46:31 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:46:31 2022 - INFO  - start environment cleanup.
+Sun Sep 25 15:46:42 2022 - INFO  - Finish environment cleanup!

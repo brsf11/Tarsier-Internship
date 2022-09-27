@@ -1,0 +1,11 @@
+Sun Sep 25 16:01:31 2022 - INFO  - Start environmental preparation.
+ls: cannot access '/etc/systemd/system/tangd.socket.d': No such file or directory
+Sun Sep 25 16:02:28 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 16:02:29 2022 - INFO  - Start executing testcase.
+wiVj7IUyezPl8LMBh0HeAlmkJli5v8hOKuGdyyFv5sscurl: (22) The requested URL returned error: 404
+Sun Sep 25 16:03:00 2022 - ERROR - Failed to check whether the Tang server advertises the signature key from the new key pair
+Sun Sep 25 16:03:01 2022 - ERROR - oe_test_tang_encrypt.sh line 45
+Sun Sep 25 16:03:02 2022 - INFO  - Finish testcase execution.
+Sun Sep 25 16:03:02 2022 - ERROR - failed to execute the case.
+Sun Sep 25 16:03:03 2022 - INFO  - start environment cleanup.
+Sun Sep 25 16:03:23 2022 - INFO  - Finish environment cleanup!

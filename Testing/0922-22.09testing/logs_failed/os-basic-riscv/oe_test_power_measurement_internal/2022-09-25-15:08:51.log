@@ -1,0 +1,9 @@
+Sun Sep 25 15:08:54 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 15:09:36 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 15:09:36 2022 - INFO  - Start to run test.
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Sun Sep 25 15:09:40 2022 - ERROR - oe_test_power_measurement_internal.sh line 34
+Sun Sep 25 15:09:41 2022 - INFO  - End to run test.
+Sun Sep 25 15:09:42 2022 - ERROR - failed to execute the case.
+Sun Sep 25 15:09:42 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 15:10:06 2022 - INFO  - End to restore the test environment.

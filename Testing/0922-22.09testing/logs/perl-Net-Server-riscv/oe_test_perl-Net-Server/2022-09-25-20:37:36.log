@@ -1,0 +1,77 @@
+Sun Sep 25 20:37:39 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 20:38:51 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 20:38:52 2022 - INFO  - Start testing...
+2022/09/25-20:38:53 net_server (type Net::Server::Fork) starting! pid(1368)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:38:55 Server closing!
+net_server:1868: You said "helloTest"
+2022/09/25-20:38:58 net_server (type Net::Server::Fork -> MultiType -> Net::Server::Fork) starting! pid(2165)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:39:01 Server closing!
+2022/09/25-20:39:02 net_server (type Net::Server::Multiplex) starting! pid(2559)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:39:04 Server closing!
+2022/09/25-20:39:05 net_server (type Net::Server::PreForkSimple) starting! pid(2864)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:39:07 Server closing!
+2022/09/25-20:39:09 net_server (type Net::Server::PreFork) starting! pid(3240)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:39:11 Server closing!
+2022/09/25-20:39:12 net_server (type Net::Server::Single) starting! pid(3348)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:39:14 Server closing!
+2022/09/25-20:39:15 net_server (type Net::Server::HTTP -> MultiType -> Net::Server::PreFork) starting! pid(3353)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:39:17 Server closing!
+2022/09/25-20:39:18 net_server (type Net::Server::HTTP -> MultiType -> Net::Server::PreFork) starting! pid(3364)
+Resolved [*]:9864 to [::]:9864, IPv6
+Not including resolved host [0.0.0.0] IPv4 because it will be handled by [::] IPv6
+Binding to TCP port 9864 on host :: with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+  Dispatch: /root/GitRepo/mugen-riscv/testcases/cli-test/perl-Net-Server/app.cgi => /root/GitRepo/mugen-riscv/testcases/cli-test/perl-Net-Server/app.cgi
+  Dispatch: / => /root/GitRepo/mugen-riscv/testcases/cli-test/perl-Net-Server/app.cgi (default)
+Test success
+2022/09/25-20:39:21 Server closing!
+2022/09/25-20:39:22 net_server (type Net::Server::Fork -> MultiType -> Net::Server::Fork) starting! pid(3379)
+Binding to TCP port 9864 on host localhost with IPv4
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+2022/09/25-20:39:24 Server closing!
+2022/09/25-20:39:25 net_server (type Net::Server::Fork -> MultiType -> Net::Server::Fork) starting! pid(3385)
+Binding to TCP port 9864 on host localhost with IPv6
+Group Not Defined.  Defaulting to EGID '0 0'
+User Not Defined.  Defaulting to EUID '0'
+Sun Sep 25 20:39:28 2022 - INFO  - Finish test!
+Sun Sep 25 20:39:28 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:39:29 2022 - INFO  - start environment cleanup.
+2022/09/25-20:39:29 Server closing!
+Sun Sep 25 20:39:51 2022 - INFO  - Finish environment cleanup!

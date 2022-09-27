@@ -1,0 +1,15 @@
+Sun Sep 25 23:38:03 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 23:39:01 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 23:39:02 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 23:39:03 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Sun 2022-09-25 23:39:16 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/ypserv.service
+Removed /etc/systemd/system/multi-user.target.wants/ypserv.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ypserv.service’: No such file or directory
+Failed to reload ypserv.service: Job type reload is not applicable for unit ypserv.service.
+     Active: active (running) since Sun 2022-09-25 23:39:16 CST; 16s ago
+Sun Sep 25 23:39:33 2022 - INFO  - Finish test!
+Sun Sep 25 23:39:34 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 23:39:34 2022 - INFO  - start environment cleanup.
+Sun Sep 25 23:39:54 2022 - INFO  - Finish environment cleanup!

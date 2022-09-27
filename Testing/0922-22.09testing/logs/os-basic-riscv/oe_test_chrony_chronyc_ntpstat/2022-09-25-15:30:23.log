@@ -1,0 +1,9 @@
+Sun Sep 25 15:30:26 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 15:31:12 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 15:31:13 2022 - INFO  - Start to run test.
+     Active: active (running) since Sun 2022-09-25 15:31:11 CST; 1s ago
+synchronised to NTP server (185.209.85.222) at stratum 3
+Sun Sep 25 15:31:25 2022 - INFO  - End to run test.
+Sun Sep 25 15:31:26 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:31:27 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 15:31:44 2022 - INFO  - End to restore the test environment.

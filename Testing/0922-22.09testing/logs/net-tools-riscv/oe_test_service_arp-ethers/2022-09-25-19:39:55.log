@@ -1,0 +1,17 @@
+Sun Sep 25 19:39:58 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 19:40:07 2022 - INFO  - pkgs:(net-tools) is already installed
+Sun Sep 25 19:40:08 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 19:40:09 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 19:40:09 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Sun 2022-09-25 19:40:22 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/arp-ethers.service
+Removed /etc/systemd/system/multi-user.target.wants/arp-ethers.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/arp-ethers.service’: No such file or directory
+Failed to reload arp-ethers.service: Job type reload is not applicable for unit arp-ethers.service.
+     Active: active (exited) since Sun 2022-09-25 19:40:22 CST; 15s ago
+Sun Sep 25 19:40:38 2022 - INFO  - Finish test!
+Sun Sep 25 19:40:39 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:40:39 2022 - INFO  - start environment cleanup.
+Sun Sep 25 19:40:40 2022 - WARN  - no thing to do.
+Sun Sep 25 19:40:41 2022 - INFO  - Finish environment cleanup!

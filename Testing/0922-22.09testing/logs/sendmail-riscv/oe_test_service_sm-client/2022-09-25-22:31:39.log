@@ -1,0 +1,15 @@
+Sun Sep 25 22:31:42 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 22:33:52 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 22:33:53 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 22:37:26 CST; 6s ago
+     Active: inactive (dead) since Sun 2022-09-25 22:37:32 CST; 6s ago
+     Active: active (running) since Sun 2022-09-25 22:38:39 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/sm-client.service
+Removed /etc/systemd/system/multi-user.target.wants/sm-client.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/sm-client.service’: No such file or directory
+Failed to reload sm-client.service: Job type reload is not applicable for unit sm-client.service.
+     Active: active (running) since Sun 2022-09-25 22:38:39 CST; 16s ago
+Sun Sep 25 22:38:57 2022 - INFO  - Finish test!
+Sun Sep 25 22:38:58 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:38:58 2022 - INFO  - start environment cleanup.
+Sun Sep 25 22:39:19 2022 - INFO  - Finish environment cleanup!

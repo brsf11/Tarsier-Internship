@@ -1,0 +1,14 @@
+Sun Sep 25 15:24:49 2022 - INFO  - Start to prepare the test environment.
+groupdel: group 'testuser' does not exist
+Sun Sep 25 15:24:50 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 15:24:51 2022 - INFO  - Start to run test.
+Changing password for user testuser.
+passwd: all authentication tokens updated successfully.
+testuser
+root
+GitRepo
+Usage:
+Sun Sep 25 15:25:00 2022 - INFO  - End to run test.
+Sun Sep 25 15:25:01 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:25:01 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 15:25:03 2022 - INFO  - End to restore the test environment.

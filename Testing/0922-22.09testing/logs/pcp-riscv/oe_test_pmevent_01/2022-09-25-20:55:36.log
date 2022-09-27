@@ -1,0 +1,19 @@
+Sun Sep 25 20:55:39 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Sun Sep 25 20:58:52 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 20:58:53 2022 - INFO  - Start to run test.
+pmevent version 5.3.5
+pmevent: pmLookupName(disk.dev.write): Unknown metric name
+Sun Sep 25 20:58:54 2022 - ERROR - oe_test_pmevent_01.sh line 34
+metric:    disk.dev.write
+semantics: cumulative counter (converting to rate)
+archive:   /var/log/pcp/pmlogger/openEuler-riscv64/20220925.20.58
+units:     count (converting to count / sec)
+Note: timezone set to "TZ=Africa/Lagos"
+Note: timezone set to local timezone of host "openEuler-riscv64"
+samples:   10
+Sun Sep 25 21:00:57 2022 - INFO  - End to run test.
+Sun Sep 25 21:00:58 2022 - ERROR - failed to execute the case.
+Sun Sep 25 21:00:59 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 21:02:06 2022 - INFO  - End to restore the test environment.

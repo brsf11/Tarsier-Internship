@@ -1,0 +1,13 @@
+Sun Sep 25 19:53:16 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 19:54:32 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 19:54:33 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 19:54:33 CST; 6s ago
+     Active: inactive (dead) since Sun 2022-09-25 19:54:39 CST; 5s ago
+     Active: active (exited) since Sun 2022-09-25 19:54:46 CST; 6s ago
+Sun Sep 25 19:54:53 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload rpc-statd-notify.service: Job type reload is not applicable for unit rpc-statd-notify.service.
+     Active: active (exited) since Sun 2022-09-25 19:54:46 CST; 7s ago
+Sun Sep 25 19:54:54 2022 - INFO  - Finish test!
+Sun Sep 25 19:54:54 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:54:55 2022 - INFO  - start environment cleanup.
+Sun Sep 25 19:55:21 2022 - INFO  - Finish environment cleanup!

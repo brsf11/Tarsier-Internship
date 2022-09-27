@@ -1,0 +1,25 @@
+Sun Sep 25 18:53:47 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 18:54:47 2022 - INFO  - Finish preparing the test environment.
+Sun Sep 25 18:54:48 2022 - INFO  - Start to run test.
+	 --version 
+	 --help 
+	 --quiet 
+	 --verbose 
+	 --debug 
+	 --servers=
+	 --expire=
+	 --binary 
+	 --username=
+	 --password=
+memping v1.0
+Trying to ping 127.0.0.1:11211
+Failed to ping 127.0.0.1:11211 CONNECTION FAILURE
+tcp        0      0 0.0.0.0:11211           0.0.0.0:*               LISTEN     
+tcp6       0      0 :::11211                :::*                    LISTEN     
+5096
+Trying to ping 127.0.0.1:11211
+Trying to ping 127.0.0.1:11211
+Sun Sep 25 18:54:55 2022 - INFO  - End of the test.
+Sun Sep 25 18:54:55 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 18:54:56 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 18:55:16 2022 - INFO  - Finish restoring the test environment.

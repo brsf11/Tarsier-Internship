@@ -1,0 +1,10 @@
+Sun Sep 25 19:17:55 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 19:18:29 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 19:18:30 2022 - INFO  - Start to run test.
+xml2wbxml succeded
+xml2wbxml succeded
+xml2wbxml succeded
+Sun Sep 25 19:18:31 2022 - INFO  - End to run test.
+Sun Sep 25 19:18:32 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 19:18:32 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 19:18:54 2022 - INFO  - End to restore the test environment.

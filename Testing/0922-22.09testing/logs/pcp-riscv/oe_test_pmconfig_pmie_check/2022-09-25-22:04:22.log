@@ -1,0 +1,15 @@
+Sun Sep 25 22:04:25 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Sun Sep 25 22:07:23 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 22:07:24 2022 - INFO  - Start to run test.
+PCP_LOG_DIR=/var/log/pcp
+PCP_BIN_DIR=/usr/bin
+pcp_version=5.3.5
+export PCP_LOG_DIR=${PCP_LOG_DIR:-'/var/log/pcp'}
++ cd /var/log/pcp/pmie/openEuler-riscv64
++ cd /var/log/pcp/pmie/openEuler-riscv64
+Sun Sep 25 22:07:52 2022 - INFO  - End to run test.
+Sun Sep 25 22:07:53 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:07:54 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 22:08:40 2022 - INFO  - End to restore the test environment.

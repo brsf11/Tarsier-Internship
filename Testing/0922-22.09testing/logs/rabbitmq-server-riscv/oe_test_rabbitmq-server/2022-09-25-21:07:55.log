@@ -1,0 +1,13 @@
+Sun Sep 25 21:07:58 2022 - INFO  - Start environmental preparation.
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Sun Sep 25 21:12:09 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 21:12:10 2022 - INFO  - Start testing...
+/etc/rabbitmq/rabbitmq-env.conf
+     Active: active (running) since Sun 2022-09-25 21:12:08 CST; 1s ago
+     Active: inactive (dead)
+Sun Sep 25 21:12:49 2022 - INFO  - Finish test!
+Sun Sep 25 21:12:49 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 21:12:50 2022 - INFO  - start environment cleanup.
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
+Sun Sep 25 21:13:29 2022 - INFO  - Finish environment cleanup!

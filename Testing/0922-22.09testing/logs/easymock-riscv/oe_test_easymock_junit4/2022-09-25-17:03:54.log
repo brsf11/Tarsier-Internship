@@ -1,0 +1,10 @@
+Sun Sep 25 17:03:57 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 17:08:22 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 17:08:23 2022 - INFO  - Start to run test.
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.109 s - in test.java.easymocktest.EasyMockSampleServletTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+Sun Sep 25 17:16:22 2022 - INFO  - End to run test.
+Sun Sep 25 17:16:23 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 17:16:24 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 17:17:26 2022 - INFO  - End to restore the test environment.

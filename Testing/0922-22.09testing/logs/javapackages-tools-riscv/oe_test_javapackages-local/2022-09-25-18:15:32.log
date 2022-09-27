@@ -1,0 +1,27 @@
+Sun Sep 25 18:15:35 2022 - INFO  - Start to prepare the test environment.
+Sun Sep 25 18:17:42 2022 - INFO  - Finish preparing the test environment.
+Sun Sep 25 18:17:43 2022 - INFO  - Start to run test.
+a/b/c
+../bar
+oe_test_javapackages-local.sh: line 34: gradle-local: command not found
+Usage: /usr/bin/xmvn-builddep [build.log | Koji-task-ID]
+
+gzip: stdin: unexpected end of file
+Traceback (most recent call last):
+  File "/usr/share/java-utils/builddep.py", line 63, in <module>
+    et = etree.parse(args[0]).getroot()
+  File "src/lxml/etree.pyx", line 3536, in lxml.etree.parse
+  File "src/lxml/parser.pxi", line 1875, in lxml.etree._parseDocument
+  File "src/lxml/parser.pxi", line 1901, in lxml.etree._parseDocumentFromURL
+  File "src/lxml/parser.pxi", line 1805, in lxml.etree._parseDocFromFile
+  File "src/lxml/parser.pxi", line 1177, in lxml.etree._BaseParser._parseDocFromFile
+  File "src/lxml/parser.pxi", line 615, in lxml.etree._ParserContext._handleParseResultDoc
+  File "src/lxml/parser.pxi", line 725, in lxml.etree._handleParseResult
+  File "src/lxml/parser.pxi", line 654, in lxml.etree._raiseParseError
+  File "/dev/stdin", line 1
+lxml.etree.XMLSyntaxError: Document is empty, line 1, column 1
+BuildRequires:  maven-local
+Sun Sep 25 18:17:46 2022 - INFO  - End of the test.
+Sun Sep 25 18:17:47 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 18:17:48 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 18:18:28 2022 - INFO  - Finish restoring the test environment.

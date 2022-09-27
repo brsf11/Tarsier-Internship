@@ -1,0 +1,6 @@
+Sun Sep 25 20:15:40 2022 - INFO  - Start executing testcase.
+     Active: active (running) since Sun 2022-09-25 20:15:41 CST; 10s ago
+             └─790 grep "active (running)"
+Sun Sep 25 20:15:52 2022 - INFO  - Finish testcase execution.
+Sun Sep 25 20:15:52 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 20:15:53 2022 - INFO  - oe_test_start_ssh.sh post_test

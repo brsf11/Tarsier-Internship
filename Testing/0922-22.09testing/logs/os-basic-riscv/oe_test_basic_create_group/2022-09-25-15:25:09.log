@@ -1,0 +1,9 @@
+Sun Sep 25 15:25:12 2022 - INFO  - Start executing testcase!
+testgroup:x:1001:
+testgroup1:x:6666:
+testgroup2:x:9999:
+Usage: groupadd [options] GROUP
+Sun Sep 25 15:25:16 2022 - INFO  - End of testcase execution!
+Sun Sep 25 15:25:17 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:25:18 2022 - INFO  - start environment cleanup.
+Sun Sep 25 15:25:20 2022 - INFO  - Finish environment cleanup.

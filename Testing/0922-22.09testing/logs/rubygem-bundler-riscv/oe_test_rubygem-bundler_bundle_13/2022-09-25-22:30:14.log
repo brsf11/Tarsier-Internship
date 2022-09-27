@@ -1,0 +1,30 @@
+Sun Sep 25 22:30:17 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Sun Sep 25 22:31:28 2022 - INFO  - End to prepare the test environment.
+Sun Sep 25 22:31:28 2022 - INFO  - Start to run test.
+No gems in the Gemfile
+No gems in the Gemfile
+No gems in the Gemfile
+Commands:
+No plugins installed
+Usage:
+Cleaning all the gems on your system is dangerous! If you're sure you want to
+remove every system gem not in this bundle, run `bundle clean --force`.
+Resolving dependencies...
+Would have removed bigdecimal (3.0.0)
+Would have removed io-console (0.5.7)
+Would have removed json (2.5.1)
+Would have removed openssl (2.2.1)
+Would have removed psych (3.3.2)
+Would have removed rdoc (6.3.3)
+Resolving dependencies...
+Removing bigdecimal (3.0.0)
+Removing io-console (0.5.7)
+Removing json (2.5.1)
+Removing openssl (2.2.1)
+Removing psych (3.3.2)
+Removing rdoc (6.3.3)
+Sun Sep 25 22:31:58 2022 - INFO  - End to run test.
+Sun Sep 25 22:31:59 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:32:00 2022 - INFO  - Start to restore the test environment.
+Sun Sep 25 22:32:18 2022 - INFO  - End to restore the test environment.

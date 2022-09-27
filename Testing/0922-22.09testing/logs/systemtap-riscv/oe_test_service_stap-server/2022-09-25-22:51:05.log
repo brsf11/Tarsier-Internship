@@ -1,0 +1,15 @@
+Sun Sep 25 22:51:07 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 22:53:34 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 22:53:35 2022 - INFO  - Start testing...
+     Active: active (exited) since Sun 2022-09-25 22:53:48 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (exited) since Sun 2022-09-25 22:54:06 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/stap-server.service
+Removed /etc/systemd/system/multi-user.target.wants/stap-server.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/stap-server.service’: No such file or directory
+Failed to reload stap-server.service: Job type reload is not applicable for unit stap-server.service.
+     Active: active (exited) since Sun 2022-09-25 22:54:06 CST; 17s ago
+Sun Sep 25 22:54:24 2022 - INFO  - Finish test!
+Sun Sep 25 22:54:25 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 22:54:26 2022 - INFO  - start environment cleanup.
+Sun Sep 25 22:55:14 2022 - INFO  - Finish environment cleanup!

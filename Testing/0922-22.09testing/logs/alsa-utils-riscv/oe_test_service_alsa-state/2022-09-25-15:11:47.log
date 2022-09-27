@@ -1,0 +1,13 @@
+Sun Sep 25 15:11:49 2022 - INFO  - Start environmental preparation.
+Sun Sep 25 15:12:37 2022 - INFO  - End of environmental preparation!
+Sun Sep 25 15:12:37 2022 - INFO  - Start testing...
+     Active: active (running) since Sun 2022-09-25 15:12:37 CST; 6s ago
+     Active: inactive (dead) since Sun 2022-09-25 15:12:44 CST; 5s ago
+     Active: active (running) since Sun 2022-09-25 15:12:50 CST; 6s ago
+Sun Sep 25 15:12:57 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload alsa-state.service: Job type reload is not applicable for unit alsa-state.service.
+     Active: active (running) since Sun 2022-09-25 15:12:50 CST; 7s ago
+Sun Sep 25 15:12:58 2022 - INFO  - Finish test!
+Sun Sep 25 15:12:59 2022 - INFO  - succeed to execute the case.
+Sun Sep 25 15:12:59 2022 - INFO  - start environment cleanup.
+Sun Sep 25 15:13:22 2022 - INFO  - Finish environment cleanup!
