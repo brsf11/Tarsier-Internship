@@ -1,0 +1,19 @@
+Tue Sep 27 21:07:48 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 21:09:08 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 21:09:09 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 21:09:10 CST; 6s ago
+Warning: Stopping rpcbind.service, but it can still be activated by:
+  rpcbind.socket
+     Active: inactive (dead) since Tue 2022-09-27 21:09:16 CST; 6s ago
+     Active: active (running) since Tue 2022-09-27 21:09:22 CST; 6s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/rpcbind.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/rpcbind.service → /usr/lib/systemd/system/rpcbind.service.
+/etc/systemd/system/multi-user.target.wants/rpcbind.service
+Failed to reload rpcbind.service: Job type reload is not applicable for unit rpcbind.service.
+     Active: active (running) since Tue 2022-09-27 21:09:22 CST; 15s ago
+Tue Sep 27 21:09:38 2022 - INFO  - Finish test!
+Tue Sep 27 21:09:39 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:09:40 2022 - INFO  - start environment cleanup.
+Warning: Stopping rpcbind.service, but it can still be activated by:
+  rpcbind.socket
+Tue Sep 27 21:10:01 2022 - INFO  - Finish environment cleanup!

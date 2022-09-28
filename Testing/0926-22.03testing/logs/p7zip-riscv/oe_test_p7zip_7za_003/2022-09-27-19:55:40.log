@@ -1,0 +1,38 @@
+Tue Sep 27 19:55:43 2022 - INFO  - Start environmental preparation.
+file1
+file2
+tmp_empty_dir/
+Tue Sep 27 19:56:32 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:56:32 2022 - INFO  - Start testing...
+oe_test_p7zip_7za_003.sh: line 41: 7za: command not found
+Tue Sep 27 19:56:33 2022 - ERROR - test failed with -slt
+Tue Sep 27 19:56:34 2022 - ERROR - oe_test_p7zip_7za_003.sh line 42
+oe_test_p7zip_7za_003.sh: line 45: 7za: command not found
+Tue Sep 27 19:56:34 2022 - ERROR - test failed with -snh
+Tue Sep 27 19:56:35 2022 - ERROR - oe_test_p7zip_7za_003.sh line 46
+oe_test_p7zip_7za_003.sh: line 48: 7za: command not found
+Tue Sep 27 19:56:36 2022 - ERROR - test failed with -snl
+Tue Sep 27 19:56:37 2022 - ERROR - oe_test_p7zip_7za_003.sh line 49
+oe_test_p7zip_7za_003.sh: line 51: 7za: command not found
+Tue Sep 27 19:56:37 2022 - ERROR - test failed with -so
+Tue Sep 27 19:56:38 2022 - ERROR - oe_test_p7zip_7za_003.sh line 52
+oe_test_p7zip_7za_003.sh: line 54: 7za: command not found
+oe_test_p7zip_7za_003.sh: line 57: 7za: command not found
+Tue Sep 27 19:56:39 2022 - ERROR - test failed with -spe
+Tue Sep 27 19:56:39 2022 - ERROR - oe_test_p7zip_7za_003.sh line 58
+oe_test_p7zip_7za_003.sh: line 60: 7za: command not found
+Tue Sep 27 19:56:40 2022 - ERROR - test failed with -spf
+Tue Sep 27 19:56:41 2022 - ERROR - oe_test_p7zip_7za_003.sh line 61
+oe_test_p7zip_7za_003.sh: line 63: 7za: command not found
+Tue Sep 27 19:56:42 2022 - ERROR - test failed with -ssc
+Tue Sep 27 19:56:42 2022 - ERROR - oe_test_p7zip_7za_003.sh line 64
+Tue Sep 27 19:56:43 2022 - INFO  - Finish test!
+Tue Sep 27 19:56:44 2022 - ERROR - failed to execute the case.
+Tue Sep 27 19:56:44 2022 - INFO  - start environment cleanup.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'Last metadata expiration check: 5:34:32 ago on Tue 27 Sep 2022 02:21:58 PM CST.\nNo match for argument: p7zip\nPackage tar-2:1.34-1.oe2203.riscv64 is already installed.\nError: Unable to find a match: p7zip'
+Tue Sep 27 19:56:48 2022 - INFO  - Finish environment cleanup!

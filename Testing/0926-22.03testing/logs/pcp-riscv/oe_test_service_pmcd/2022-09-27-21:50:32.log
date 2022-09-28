@@ -1,0 +1,15 @@
+Tue Sep 27 21:50:35 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 21:52:25 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 21:52:26 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 21:53:00 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 21:53:45 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/pmcd.service
+Removed /etc/systemd/system/multi-user.target.wants/pmcd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/pmcd.service’: No such file or directory
+Failed to reload pmcd.service: Job type reload is not applicable for unit pmcd.service.
+     Active: active (running) since Tue 2022-09-27 21:53:45 CST; 15s ago
+Tue Sep 27 21:54:01 2022 - INFO  - Finish test!
+Tue Sep 27 21:54:02 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:54:02 2022 - INFO  - start environment cleanup.
+Tue Sep 27 21:54:59 2022 - INFO  - Finish environment cleanup!

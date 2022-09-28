@@ -1,0 +1,14 @@
+Tue Sep 27 18:10:09 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 18:10:18 2022 - INFO  - pkgs:(net-tools) is already installed
+Tue Sep 27 18:10:19 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 18:10:20 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+SIOCSIFADDR: Operation not permitted
+SIOCSIFFLAGS: Operation not permitted
+SIOCSIFNETMASK: Operation not permitted
+    inet 192.168.1.1/24 scope global lo:1
+Tue Sep 27 18:10:27 2022 - INFO  - Finish testcase execution.
+Tue Sep 27 18:10:28 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 18:10:29 2022 - INFO  - start environment cleanup.
+Tue Sep 27 18:10:31 2022 - INFO  - Finish environment cleanup!

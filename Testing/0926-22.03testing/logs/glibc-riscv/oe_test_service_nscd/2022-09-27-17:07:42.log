@@ -1,0 +1,17 @@
+Tue Sep 27 17:07:45 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 17:08:38 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 17:08:39 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 17:08:39 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 17:08:52 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/nscd.service
+/etc/systemd/system/sockets.target.wants/nscd.socket
+Removed /etc/systemd/system/multi-user.target.wants/nscd.service.
+Removed /etc/systemd/system/sockets.target.wants/nscd.socket.
+find: ‘/etc/systemd/system/multi-user.target.wants/nscd.service’: No such file or directory
+find: ‘/etc/systemd/system/sockets.target.wants/nscd.socket’: No such file or directory
+     Active: active (running) since Tue 2022-09-27 17:08:52 CST; 19s ago
+Tue Sep 27 17:09:12 2022 - INFO  - Finish test!
+Tue Sep 27 17:09:13 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 17:09:13 2022 - INFO  - start environment cleanup.
+Tue Sep 27 17:09:40 2022 - INFO  - Finish environment cleanup!

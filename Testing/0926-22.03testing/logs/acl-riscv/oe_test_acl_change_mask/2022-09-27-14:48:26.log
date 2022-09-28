@@ -1,0 +1,15 @@
+Tue Sep 27 14:48:28 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 14:48:29 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 14:48:30 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example1.
+passwd: all authentication tokens updated successfully.
+New password: Retype new password: Changing password for user example2.
+passwd: all authentication tokens updated successfully.
+test
+getfacl: Removing leading '/' from absolute path names
+user:example2:r--	#effective:---
+cat: /home/test1: Permission denied
+Tue Sep 27 14:48:41 2022 - INFO  - Finish testcase execution.
+Tue Sep 27 14:48:42 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 14:48:42 2022 - INFO  - start environment cleanup.
+Tue Sep 27 14:48:47 2022 - INFO  - Finish environment cleanup!

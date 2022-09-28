@@ -1,0 +1,21 @@
+Tue Sep 27 20:55:43 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Tue Sep 27 20:59:51 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 20:59:52 2022 - INFO  - Start to run test.
+disk.dev.write ["vda"] 0.989 0.989 count / sec
+disk.dev.write ["vda"] 0.989 0.989 count / sec
+disk.dev.write ["vda"] 0.989 count / sec
+disk.dev.write ["vda"] 0.989 count / sec
+disk.dev.write ["vda"] 0.98861 count / sec
+disk.dev.write ["vda"] 0.989 count / sec
+pmlogsummary: swap.out(60.0.11) - failed in archive value fetch: Metric not supported by this version of monitored application
+pmlogsummary: swap.in(60.0.10) - failed in archive value fetch: Metric not supported by this version of monitored application
+disk.dev.write ["vda"] 0.989 count / sec
+disk.dev.write ["vda"] 0.989 count / sec
+Note: timezone set to "TZ=Africa/Lagos"
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+Tue Sep 27 20:59:54 2022 - INFO  - End to run test.
+Tue Sep 27 20:59:55 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 20:59:56 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 21:01:14 2022 - INFO  - End to restore the test environment.

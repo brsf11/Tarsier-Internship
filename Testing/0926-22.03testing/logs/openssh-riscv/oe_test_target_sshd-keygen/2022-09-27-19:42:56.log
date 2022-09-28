@@ -1,0 +1,10 @@
+Tue Sep 27 19:42:59 2022 - INFO  - Start to run test.
+     Active: active since Tue 2022-09-27 19:42:59 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 19:43:05 CST; 5s ago
+     Active: active since Tue 2022-09-27 19:43:11 CST; 5s ago
+Tue Sep 27 19:43:18 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload sshd-keygen.target: Job type reload is not applicable for unit sshd-keygen.target.
+     Active: active since Tue 2022-09-27 19:43:11 CST; 7s ago
+Tue Sep 27 19:43:19 2022 - INFO  - End of the test.
+Tue Sep 27 19:43:19 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:43:20 2022 - INFO  - oe_test_target_sshd-keygen.sh post_test

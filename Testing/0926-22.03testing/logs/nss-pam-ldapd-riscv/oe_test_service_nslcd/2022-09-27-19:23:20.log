@@ -1,0 +1,15 @@
+Tue Sep 27 19:23:23 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 19:24:37 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:24:37 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 19:24:38 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 19:25:00 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/nslcd.service
+Removed /etc/systemd/system/multi-user.target.wants/nslcd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/nslcd.service’: No such file or directory
+Failed to reload nslcd.service: Job type reload is not applicable for unit nslcd.service.
+     Active: active (running) since Tue 2022-09-27 19:25:00 CST; 15s ago
+Tue Sep 27 19:25:16 2022 - INFO  - Finish test!
+Tue Sep 27 19:25:17 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:25:17 2022 - INFO  - start environment cleanup.
+Tue Sep 27 19:25:46 2022 - INFO  - Finish environment cleanup!

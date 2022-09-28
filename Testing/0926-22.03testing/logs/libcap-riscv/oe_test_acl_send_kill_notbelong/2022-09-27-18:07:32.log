@@ -1,0 +1,118 @@
+Tue Sep 27 18:07:35 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 18:07:36 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 18:07:37 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+==> ./oe_test_acl_allow_change_nochange.sh <==
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    su - example -c 'chattr -i /home/example/test'
+    setcap -r /usr/bin/chattr
+    rm -rf /home/example/test
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_allow_change_ownership.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    rm -rf /tmp/test
+    setcap -r /bin/chown
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_bind_port.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /bin/ncat
+    userdel -rf example
+    DNF_REMOVE nc
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_ignore_dal_across.sh <==
+    LOG_INFO "Finish testcase execution."
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /usr/bin/less
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_manage_net.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    ifconfig $net_card:1 down
+    setcap -r /sbin/ifconfig
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_ordinary_users_setgid.sh <==
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    su - example -c 'chattr -i /home/example/test'
+    setcap -r /usr/bin/chattr
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_send_kill_notbelong.sh <==
+    LOG_INFO "Finish testcase execution."
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /bin/kill
+    userdel -rf example
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_acl_verwrite_previous_rules.sh <==
+    CHECK_RESULT $? 0 0 "Failed to get cap"
+    LOG_INFO "Finish testcase execution."
+}
+
+function post_test() {
+    LOG_INFO "start environment cleanup."
+    setcap -r /usr/bin/less
+    LOG_INFO "Finish environment cleanup!"
+}
+main "$@"
+
+==> ./oe_test_libcap.sh <==
+function post_test() {
+    LOG_INFO "Start to restore the test environment."
+
+    userdel $user
+    rm -r ./ping
+
+    LOG_INFO "End to restore the test environment."
+}
+
+main "$@"
+kill: sending signal to 1559 failed: Operation not permitted
+oe_test_acl_send_kill_notbelong.sh: line 28:  1559 Killed                  nohup tail -f ./*
+Tue Sep 27 18:07:48 2022 - INFO  - Finish testcase execution.
+Tue Sep 27 18:07:49 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 18:07:50 2022 - INFO  - start environment cleanup.
+Tue Sep 27 18:07:53 2022 - INFO  - Finish environment cleanup!

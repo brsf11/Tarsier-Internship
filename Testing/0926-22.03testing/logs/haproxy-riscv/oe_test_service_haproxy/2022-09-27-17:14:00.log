@@ -1,0 +1,14 @@
+Tue Sep 27 17:14:02 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 17:14:59 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 17:15:00 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 17:15:00 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 17:15:13 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/haproxy.service
+Removed /etc/systemd/system/multi-user.target.wants/haproxy.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/haproxy.service’: No such file or directory
+     Active: active (running) since Tue 2022-09-27 17:15:13 CST; 19s ago
+Tue Sep 27 17:15:33 2022 - INFO  - Finish test!
+Tue Sep 27 17:15:34 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 17:15:35 2022 - INFO  - start environment cleanup.
+Tue Sep 27 17:16:05 2022 - INFO  - Finish environment cleanup!

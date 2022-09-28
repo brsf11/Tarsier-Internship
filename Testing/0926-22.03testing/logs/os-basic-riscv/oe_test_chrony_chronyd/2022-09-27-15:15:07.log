@@ -1,0 +1,11 @@
+Tue Sep 27 15:15:10 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 15:15:50 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 15:15:51 2022 - INFO  - Start to run test.
+     Active: active (running) since Tue 2022-09-27 15:15:51 CST; 127ms ago
+enabled
+MS Name/IP address         Stratum Poll Reach LastRx Last sample               
+     Active: inactive (dead) since Tue 2022-09-27 15:15:52 CST; 134ms ago
+Tue Sep 27 15:15:53 2022 - INFO  - End to run test.
+Tue Sep 27 15:15:53 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 15:15:54 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 15:16:19 2022 - INFO  - End to restore the test environment.

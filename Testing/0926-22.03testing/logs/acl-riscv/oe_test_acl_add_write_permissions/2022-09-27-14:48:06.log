@@ -1,0 +1,13 @@
+Tue Sep 27 14:48:09 2022 - INFO  - Start environmental preparation.
+0022
+Tue Sep 27 14:48:09 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 14:48:10 2022 - INFO  - Start executing testcase.
+New password: Retype new password: Changing password for user example.
+passwd: all authentication tokens updated successfully.
+-rw-r--r-- 1 root root 0 Sep 27 14:48 /tmp/my_pwd
+getfacl: Removing leading '/' from absolute path names
+-rw-rw-r--+ 1 root root 0 Sep 27 14:48 /tmp/my_pwd
+Tue Sep 27 14:48:15 2022 - INFO  - Finish testcase execution.
+Tue Sep 27 14:48:16 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 14:48:17 2022 - INFO  - start environment cleanup.
+Tue Sep 27 14:48:19 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,19 @@
+Tue Sep 27 14:57:33 2022 - INFO  - Start to prepare the test environment.
+groupdel: group 'testuser' does not exist
+Tue Sep 27 14:57:35 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 14:57:36 2022 - INFO  - Start to run test.
+Tue Sep 27 14:57:37 2022 - WARN  - the remote password uses the default configuration.
+Tue Sep 27 14:57:38 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r /home/testfile testuser@127.0.0.1:/home/testuser/testfile
+The authenticity of host '127.0.0.1 (127.0.0.1)' can't be established.
+ED25519 key fingerprint is SHA256:YW25a0egQGz6A2GYG/Yh3ZDhDWDcqUWXWkhbp/YD+uM.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '127.0.0.1' (ED25519) to the list of known hosts.
+testuser@127.0.0.1's password: 
+testfile                                        0%    0     0.0KB/s   --:-- ETAtestfile                                      100%    5     0.7KB/s   00:00    
+test
+Tue Sep 27 14:57:42 2022 - INFO  - End to run test.
+Tue Sep 27 14:57:43 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 14:57:44 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 14:57:45 2022 - INFO  - End to restore the test environment.

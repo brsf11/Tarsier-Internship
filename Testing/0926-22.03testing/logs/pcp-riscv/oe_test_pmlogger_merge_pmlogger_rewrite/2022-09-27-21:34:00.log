@@ -1,0 +1,12 @@
+Tue Sep 27 21:34:03 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Tue Sep 27 21:37:25 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 21:37:26 2022 - INFO  - Start to run test.
+No archives to be merged.
++ pmlogrewrite -iq /var/log/pcp/pmlogger/openEuler-riscv64/20220927.21
+Warning: skip archive /var/log/pcp/pmlogger/openEuler-riscv64/20220927.21.36, pmlogger PID 48042 is still running
+Tue Sep 27 21:37:40 2022 - INFO  - End to run test.
+Tue Sep 27 21:37:40 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:37:41 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 21:38:37 2022 - INFO  - End to restore the test environment.

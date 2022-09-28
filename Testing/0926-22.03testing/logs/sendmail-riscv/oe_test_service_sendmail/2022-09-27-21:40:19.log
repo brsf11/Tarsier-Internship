@@ -1,0 +1,17 @@
+Tue Sep 27 21:40:22 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 21:42:49 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 21:42:50 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 21:44:58 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 21:47:27 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/sendmail.service
+/etc/systemd/system/multi-user.target.wants/sm-client.service
+Removed /etc/systemd/system/multi-user.target.wants/sendmail.service.
+Removed /etc/systemd/system/multi-user.target.wants/sm-client.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/sendmail.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/sm-client.service’: No such file or directory
+     Active: active (running) since Tue 2022-09-27 21:47:27 CST; 21s ago
+Tue Sep 27 21:47:49 2022 - INFO  - Finish test!
+Tue Sep 27 21:47:50 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:47:50 2022 - INFO  - start environment cleanup.
+Tue Sep 27 21:48:15 2022 - INFO  - Finish environment cleanup!

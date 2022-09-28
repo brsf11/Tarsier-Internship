@@ -1,0 +1,15 @@
+Tue Sep 27 21:16:26 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 21:17:34 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 21:17:35 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 21:17:35 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 21:17:48 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/rsyncd.service
+Removed /etc/systemd/system/multi-user.target.wants/rsyncd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/rsyncd.service’: No such file or directory
+Failed to reload rsyncd.service: Job type reload is not applicable for unit rsyncd.service.
+     Active: active (running) since Tue 2022-09-27 21:17:48 CST; 14s ago
+Tue Sep 27 21:18:03 2022 - INFO  - Finish test!
+Tue Sep 27 21:18:04 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:18:05 2022 - INFO  - start environment cleanup.
+Tue Sep 27 21:18:32 2022 - INFO  - Finish environment cleanup!

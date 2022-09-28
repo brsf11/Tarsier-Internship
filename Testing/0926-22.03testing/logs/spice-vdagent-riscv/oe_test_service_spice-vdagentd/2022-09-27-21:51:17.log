@@ -1,0 +1,17 @@
+Tue Sep 27 21:51:20 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 21:52:23 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 21:52:24 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 21:52:24 CST; 6s ago
+Warning: Stopping spice-vdagentd.service, but it can still be activated by:
+  spice-vdagentd.socket
+     Active: inactive (dead) since Tue 2022-09-27 21:52:30 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 21:52:36 CST; 5s ago
+Tue Sep 27 21:52:43 2022 - INFO  - Unit is indirect, ignoring.
+Failed to reload spice-vdagentd.service: Job type reload is not applicable for unit spice-vdagentd.service.
+     Active: active (running) since Tue 2022-09-27 21:52:36 CST; 7s ago
+Tue Sep 27 21:52:44 2022 - INFO  - Finish test!
+Tue Sep 27 21:52:45 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:52:45 2022 - INFO  - start environment cleanup.
+Warning: Stopping spice-vdagentd.service, but it can still be activated by:
+  spice-vdagentd.socket
+Tue Sep 27 21:53:03 2022 - INFO  - Finish environment cleanup!

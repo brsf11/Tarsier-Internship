@@ -1,0 +1,15 @@
+Tue Sep 27 18:59:00 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 18:59:00 CST; 6s ago
+Warning: Stopping lvm2-lvmpolld.service, but it can still be activated by:
+  lvm2-lvmpolld.socket
+     Active: inactive (dead) since Tue 2022-09-27 18:59:07 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 18:59:13 CST; 5s ago
+Tue Sep 27 18:59:20 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload lvm2-lvmpolld.service: Job type reload is not applicable for unit lvm2-lvmpolld.service.
+     Active: active (running) since Tue 2022-09-27 18:59:13 CST; 7s ago
+Tue Sep 27 18:59:21 2022 - INFO  - Finish test!
+Tue Sep 27 18:59:21 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 18:59:22 2022 - INFO  - start environment cleanup.
+Warning: Stopping lvm2-lvmpolld.service, but it can still be activated by:
+  lvm2-lvmpolld.socket
+Tue Sep 27 18:59:23 2022 - INFO  - Finish environment cleanup!

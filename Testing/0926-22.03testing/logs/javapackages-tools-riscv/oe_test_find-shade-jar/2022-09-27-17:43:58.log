@@ -1,0 +1,9 @@
+Tue Sep 27 17:44:01 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 17:46:39 2022 - INFO  - Finish preparing the test environment.
+Tue Sep 27 17:46:40 2022 - INFO  - Start to run test.
+/usr/share/java/junit.jar
+/usr/share/java/easymock.jar
+Tue Sep 27 17:47:38 2022 - INFO  - End of the test.
+Tue Sep 27 17:47:38 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 17:47:39 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 17:48:08 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,13 @@
+Tue Sep 27 15:24:38 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 15:25:33 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 15:25:34 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 15:25:35 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 15:25:48 CST; 6s ago
+Tue Sep 27 15:25:55 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload bolt.service: Job type reload is not applicable for unit bolt.service.
+     Active: active (running) since Tue 2022-09-27 15:25:48 CST; 7s ago
+Tue Sep 27 15:25:56 2022 - INFO  - Finish test!
+Tue Sep 27 15:25:57 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 15:25:57 2022 - INFO  - start environment cleanup.
+Tue Sep 27 15:26:29 2022 - INFO  - Finish environment cleanup!

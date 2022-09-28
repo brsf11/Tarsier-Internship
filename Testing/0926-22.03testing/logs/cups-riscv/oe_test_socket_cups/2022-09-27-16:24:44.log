@@ -1,0 +1,15 @@
+Tue Sep 27 16:24:47 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 16:26:22 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:26:23 2022 - INFO  - Start to run test.
+     Active: active (listening) since Tue 2022-09-27 16:26:23 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 16:26:29 CST; 5s ago
+     Active: active (listening) since Tue 2022-09-27 16:26:35 CST; 6s ago
+find: ‘/etc/systemd/system/sockets.target.wants/cups.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/cups.socket → /usr/lib/systemd/system/cups.socket.
+/etc/systemd/system/sockets.target.wants/cups.socket
+Failed to reload cups.socket: Job type reload is not applicable for unit cups.socket.
+     Active: active (listening) since Tue 2022-09-27 16:26:35 CST; 15s ago
+Tue Sep 27 16:26:52 2022 - INFO  - End of the test.
+Tue Sep 27 16:26:52 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:26:53 2022 - INFO  - start environment cleanup.
+Tue Sep 27 16:27:26 2022 - INFO  - Finish environment cleanup!

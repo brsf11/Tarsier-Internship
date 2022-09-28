@@ -1,0 +1,22 @@
+Tue Sep 27 17:58:36 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 17:59:33 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 17:59:34 2022 - INFO  - Start testing...
+/etc/systemd/system/sound.target.wants/canberra-system-bootup.service
+/etc/systemd/system/halt.target.wants/canberra-system-shutdown.service
+/etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service
+/etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service
+/etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service
+Removed /etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service.
+Removed /etc/systemd/system/sound.target.wants/canberra-system-bootup.service.
+Removed /etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service.
+Removed /etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service.
+Removed /etc/systemd/system/halt.target.wants/canberra-system-shutdown.service.
+find: ‘/etc/systemd/system/sound.target.wants/canberra-system-bootup.service’: No such file or directory
+find: ‘/etc/systemd/system/halt.target.wants/canberra-system-shutdown.service’: No such file or directory
+find: ‘/etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service’: No such file or directory
+find: ‘/etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service’: No such file or directory
+find: ‘/etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service’: No such file or directory
+Tue Sep 27 17:59:43 2022 - INFO  - Finish test!
+Tue Sep 27 17:59:44 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 17:59:45 2022 - INFO  - start environment cleanup.
+Tue Sep 27 18:00:06 2022 - INFO  - Finish environment cleanup!

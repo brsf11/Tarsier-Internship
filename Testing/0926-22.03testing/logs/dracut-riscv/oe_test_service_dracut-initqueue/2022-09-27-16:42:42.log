@@ -1,0 +1,9 @@
+Tue Sep 27 16:42:45 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 16:42:46 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:42:46 2022 - INFO  - Start testing...
+Unit dracut-initqueue.service could not be found.
+Failed to get unit file state for dracut-initqueue.service: No such file or directory
+Tue Sep 27 16:42:47 2022 - INFO  - Unit is indirect, ignoring.
+Tue Sep 27 16:42:48 2022 - INFO  - Finish test!
+Tue Sep 27 16:42:49 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:42:49 2022 - INFO  - oe_test_service_dracut-initqueue.sh post_test

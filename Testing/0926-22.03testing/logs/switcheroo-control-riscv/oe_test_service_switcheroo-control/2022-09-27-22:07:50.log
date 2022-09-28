@@ -1,0 +1,13 @@
+Tue Sep 27 22:07:54 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 22:08:54 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 22:08:55 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-27 22:08:55 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (exited) since Tue 2022-09-27 22:09:08 CST; 6s ago
+/etc/systemd/system/graphical.target.wants/switcheroo-control.service
+Removed /etc/systemd/system/graphical.target.wants/switcheroo-control.service.
+find: ‘/etc/systemd/system/graphical.target.wants/switcheroo-control.service’: No such file or directory
+Tue Sep 27 22:09:24 2022 - INFO  - Finish test!
+Tue Sep 27 22:09:25 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 22:09:26 2022 - INFO  - start environment cleanup.
+Tue Sep 27 22:09:52 2022 - INFO  - Finish environment cleanup!

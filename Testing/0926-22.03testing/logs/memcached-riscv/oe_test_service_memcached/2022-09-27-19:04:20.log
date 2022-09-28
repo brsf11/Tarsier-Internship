@@ -1,0 +1,15 @@
+Tue Sep 27 19:04:23 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 19:05:27 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:05:28 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 19:05:28 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 19:05:41 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/memcached.service
+Removed /etc/systemd/system/multi-user.target.wants/memcached.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/memcached.service’: No such file or directory
+Failed to reload memcached.service: Job type reload is not applicable for unit memcached.service.
+     Active: active (running) since Tue 2022-09-27 19:05:41 CST; 15s ago
+Tue Sep 27 19:05:57 2022 - INFO  - Finish test!
+Tue Sep 27 19:05:57 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:05:58 2022 - INFO  - start environment cleanup.
+Tue Sep 27 19:06:15 2022 - INFO  - Finish environment cleanup!

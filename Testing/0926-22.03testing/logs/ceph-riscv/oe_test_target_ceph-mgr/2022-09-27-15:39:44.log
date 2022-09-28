@@ -1,0 +1,18 @@
+Tue Sep 27 15:39:47 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 15:47:47 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 15:47:48 2022 - INFO  - Start to run test.
+     Active: active since Tue 2022-09-27 15:47:48 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 15:47:54 CST; 5s ago
+     Active: active since Tue 2022-09-27 15:48:00 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/ceph-mgr.target’: No such file or directory
+find: ‘/etc/systemd/system/ceph.target.wants/ceph-mgr.target’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/ceph-mgr.target → /usr/lib/systemd/system/ceph-mgr.target.
+Created symlink /etc/systemd/system/ceph.target.wants/ceph-mgr.target → /usr/lib/systemd/system/ceph-mgr.target.
+/etc/systemd/system/multi-user.target.wants/ceph-mgr.target
+/etc/systemd/system/ceph.target.wants/ceph-mgr.target
+Failed to reload ceph-mgr.target: Job type reload is not applicable for unit ceph-mgr.target.
+     Active: active since Tue 2022-09-27 15:48:00 CST; 15s ago
+Tue Sep 27 15:48:16 2022 - INFO  - End of the test.
+Tue Sep 27 15:48:17 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 15:48:18 2022 - INFO  - start environment cleanup.
+Tue Sep 27 15:49:34 2022 - INFO  - Finish environment cleanup!

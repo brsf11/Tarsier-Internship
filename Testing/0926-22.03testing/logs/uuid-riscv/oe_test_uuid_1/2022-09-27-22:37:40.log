@@ -1,0 +1,32 @@
+Tue Sep 27 22:37:42 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 22:38:35 2022 - INFO  - Finish preparing the test environment.
+Tue Sep 27 22:38:35 2022 - INFO  - Start to run test.
+11874550-3e72-11ed-926d-525400123456
+3c091bab-5dda-4467-a0f2-e1bab8e6fdbd
+2f67490d-55a4-395e-b540-457195f7aa95
+6bd69026-2b9c-5629-82dd-f92f408b660e
+10
+11c42fc4-3e72-11ed-adf6-525400123456
+11c4874e-3e72-11ed-95ef-525400123456
+11c48b68-3e72-11ed-b1cc-525400123456
+11c48e1a-3e72-11ed-af87-525400123456
+11c490cc-3e72-11ed-8c14-525400123456
+11c4937e-3e72-11ed-b64c-525400123456
+11c4961c-3e72-11ed-ad5a-525400123456
+11c49806-3e72-11ed-8b6e-525400123456
+11c499fa-3e72-11ed-a679-525400123456
+11c49bb2-3e72-11ed-92ac-525400123456
+00000000: 11c8 aa40 3e72 11ed 9def 5254 0012 3456  ...@>r....RT..4V
+11d448be-3e72-11ed-9524-525400123456
+11e62b7e-3e72-11ed-bfed-525400123456
+encode: STR:     11e62b7e-3e72-11ed-bfed-525400123456
+        SIV:     23791986351493986831359317490271401046
+decode: variant: DCE 1.1, ISO/IEC 11578:1996
+        version: 1 (time and node based)
+        content: time:  2022-09-27 14:38:36.584435.0 UTC
+                 clock: 16365 (usually random)
+                 node:  52:54:00:12:34:56 (local unicast)
+Tue Sep 27 22:38:37 2022 - INFO  - End of the test.
+Tue Sep 27 22:38:38 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 22:38:38 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 22:38:54 2022 - INFO  - Finish restoring the test environment.

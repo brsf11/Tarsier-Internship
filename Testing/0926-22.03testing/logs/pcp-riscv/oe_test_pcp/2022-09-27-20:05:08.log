@@ -1,0 +1,23 @@
+Tue Sep 27 20:05:11 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Tue Sep 27 20:07:54 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 20:07:55 2022 - INFO  - Start to run test.
+pcp version 5.3.5
+Performance Co-Pilot configuration on openEuler-riscv64:
+ platform: Linux openEuler-riscv64 5.10.0 #1 SMP Thu Jul 7 12:03:24 UTC 2022 riscv64
+  archive: /var/log/pcp/pmlogger/openEuler-riscv64/20220927.20.07
+ hardware: 4 cpus, 1 disk, 1 node, 4014MB RAM
+ timezone: CST-8
+ services: pmcd
+ services: pmcd
+     pmcd: Version 5.3.5-6, 9 agents
+     pmda: root pmcd proc pmproxy xfs linux mmv kvm jbd2
+  archive: /var/log/pcp/pmlogger/openEuler-riscv64/20220927.20.07
+ pmlogger: openEuler-riscv64: /var/log/pcp/pmlogger/openEuler-riscv64/20220927.20.07
+ pmlogger: primary logger: /var/log/pcp/pmlogger/openEuler-riscv64/20220927.20.07
+Performance Co-Pilot configuration on openEuler-riscv64:
+Tue Sep 27 20:08:21 2022 - INFO  - End to run test.
+Tue Sep 27 20:08:21 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 20:08:22 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 20:09:12 2022 - INFO  - End to restore the test environment.

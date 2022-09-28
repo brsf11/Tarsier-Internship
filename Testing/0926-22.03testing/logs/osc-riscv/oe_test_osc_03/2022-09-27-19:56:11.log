@@ -1,0 +1,77 @@
+Tue Sep 27 19:56:14 2022 - INFO  - Start to config params of the case.
+Tue Sep 27 19:56:15 2022 - INFO  - End to config params of the case.
+Tue Sep 27 19:56:15 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 19:56:34 2022 - INFO  - pkgs:(osc) is already installed
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 4721.
+Tue Sep 27 19:56:43 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 19:56:43 2022 - INFO  - Start to run test.
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+ patchinfo
+ B  standard_aarch64 aarch64 (published)
+ B  standard_x86_64 x86_64 (published)
+
+ Legend:
+  . succeeded           
+    disabled            
+  U unresolvable        
+  F failed              
+  B broken              
+  b blocked             
+  % building            
+  f finished            
+  s scheduled           
+  L locked              
+  x excluded            
+  d dispatching         
+  S signing             
+  ? buildstatus not available (only new packages)
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+ patchinfo
+ B  standard_aarch64 aarch64 (published)
+ B  standard_x86_64 x86_64 (published)
+
+ Legend:
+  . succeeded           
+    disabled            
+  U unresolvable        
+  F failed              
+  B broken              
+  b blocked             
+  % building            
+  f finished            
+  s scheduled           
+  L locked              
+  x excluded            
+  d dispatching         
+  S signing             
+  ? buildstatus not available (only new packages)
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project                                 # Package
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+matches for 'test666 (maintainer)' in projects:
+No matches found for 'test666 (maintainer)' in packages
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+matches for 'test666 (maintainer)' in projects:
+No matches found for 'test666 (maintainer)' in packages
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project                                 # Package
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+# Project                                 # Package
+Tue Sep 27 19:57:17 2022 - INFO  - End to run test.
+Tue Sep 27 19:57:18 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:57:18 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 19:57:19 2022 - WARN  - no thing to do.
+Tue Sep 27 19:57:20 2022 - INFO  - End to restore the test environment.

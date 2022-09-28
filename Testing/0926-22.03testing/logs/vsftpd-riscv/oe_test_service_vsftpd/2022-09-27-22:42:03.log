@@ -1,0 +1,15 @@
+Tue Sep 27 22:42:05 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 22:42:57 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 22:42:57 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 22:42:58 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 22:43:10 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/vsftpd.service
+Removed /etc/systemd/system/multi-user.target.wants/vsftpd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/vsftpd.service’: No such file or directory
+Failed to reload vsftpd.service: Job type reload is not applicable for unit vsftpd.service.
+     Active: active (running) since Tue 2022-09-27 22:43:10 CST; 15s ago
+Tue Sep 27 22:43:26 2022 - INFO  - Finish test!
+Tue Sep 27 22:43:27 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 22:43:28 2022 - INFO  - start environment cleanup.
+Tue Sep 27 22:43:50 2022 - INFO  - Finish environment cleanup!

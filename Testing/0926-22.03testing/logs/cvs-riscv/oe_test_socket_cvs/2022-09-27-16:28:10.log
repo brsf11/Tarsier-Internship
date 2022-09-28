@@ -1,0 +1,15 @@
+Tue Sep 27 16:28:12 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 16:29:01 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:29:02 2022 - INFO  - Start to run test.
+     Active: active (listening) since Tue 2022-09-27 16:29:02 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (listening) since Tue 2022-09-27 16:29:14 CST; 6s ago
+/etc/systemd/system/sockets.target.wants/cvs.socket
+Removed /etc/systemd/system/sockets.target.wants/cvs.socket.
+find: ‘/etc/systemd/system/sockets.target.wants/cvs.socket’: No such file or directory
+Failed to reload cvs.socket: Job type reload is not applicable for unit cvs.socket.
+     Active: active (listening) since Tue 2022-09-27 16:29:14 CST; 15s ago
+Tue Sep 27 16:29:30 2022 - INFO  - End of the test.
+Tue Sep 27 16:29:30 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:29:31 2022 - INFO  - start environment cleanup.
+Tue Sep 27 16:29:58 2022 - INFO  - Finish environment cleanup!

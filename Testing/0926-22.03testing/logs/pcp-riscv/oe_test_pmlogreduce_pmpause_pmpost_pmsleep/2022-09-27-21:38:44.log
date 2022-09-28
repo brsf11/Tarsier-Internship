@@ -1,0 +1,23 @@
+Tue Sep 27 21:38:47 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Tue Sep 27 21:42:06 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 21:42:07 2022 - INFO  - Start to run test.
+__pmLogNewFile: "/var/log/pcp/pmlogger/openEuler-riscv64/20220927-2142.index" already exists, not over-written
+pmlogreduce: Error: __pmLogCreate: File exists
+Note: timezone set to "TZ=Africa/Sao_Tome"
+__pmLogNewFile: "/var/log/pcp/pmlogger/openEuler-riscv64/20220927-2142.index" already exists, not over-written
+pmlogreduce: Error: __pmLogCreate: File exists
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+S
+S
+S
+S
+S
+S
+oe_test_pmlogreduce_pmpause_pmpost_pmsleep.sh: line 28: 51510 Killed                  nohup /usr/libexec/pcp/bin/pmpause
+21:42:08.699 pmpost_info
+Tue Sep 27 21:42:12 2022 - INFO  - End to run test.
+Tue Sep 27 21:42:13 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:42:14 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 21:43:10 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,49 @@
+Tue Sep 27 22:44:12 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 22:50:00 2022 - INFO  - Finish preparing the test environment.
+Tue Sep 27 22:50:00 2022 - INFO  - Start to run test.
+Usage: randpkt [-b maxbytes] [-c count] [-t type] [-r] filename
+File encapsulation:  Ethernet
+Packet size limit:   file hdr: 100 bytes
+Number of packets:   100
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+randpkt: Frame has a network type that differs from the network type of earlier packets, which isn't supported in a "Wireshark/tcpdump/... - pcap" file.
+File encapsulation:  Ethernet
+Packet size limit:   file hdr: 100 bytes
+Usage: reordercap [options] <infile> <outfile>
+100 frames, 0 out of order
+Not writing output file because input file is already in order.
+File name:           randomfile1_A
+Tue Sep 27 22:50:02 2022 - INFO  - End of the test.
+Tue Sep 27 22:50:03 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 22:50:03 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 22:52:39 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,19 @@
+Tue Sep 27 19:36:50 2022 - INFO  - Start environmental preparation.
+error: package cyrus-sasl is not installed
+Tue Sep 27 19:37:59 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:37:59 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 19:38:19 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 19:39:02 CST; 5s ago
+/etc/systemd/system/openldap.service
+/etc/systemd/system/multi-user.target.wants/slapd.service
+Removed /etc/systemd/system/multi-user.target.wants/slapd.service.
+Removed /etc/systemd/system/openldap.service.
+find: ‘/etc/systemd/system/openldap.service’: No such file or directory
+find: ‘/etc/systemd/system/multi-user.target.wants/slapd.service’: No such file or directory
+Failed to reload slapd.service: Job type reload is not applicable for unit slapd.service.
+     Active: active (running) since Tue 2022-09-27 19:39:02 CST; 14s ago
+Tue Sep 27 19:39:18 2022 - INFO  - Finish test!
+Tue Sep 27 19:39:18 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:39:19 2022 - INFO  - start environment cleanup.
+Tue Sep 27 19:39:46 2022 - INFO  - Finish environment cleanup!

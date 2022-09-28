@@ -1,0 +1,15 @@
+Tue Sep 27 18:53:58 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 18:55:13 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 18:55:13 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 18:55:14 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 18:55:26 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/sensord.service
+Removed /etc/systemd/system/multi-user.target.wants/sensord.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/sensord.service’: No such file or directory
+Failed to reload sensord.service: Job type reload is not applicable for unit sensord.service.
+     Active: active (running) since Tue 2022-09-27 18:55:26 CST; 15s ago
+Tue Sep 27 18:55:42 2022 - INFO  - Finish test!
+Tue Sep 27 18:55:43 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 18:55:44 2022 - INFO  - start environment cleanup.
+Tue Sep 27 18:56:11 2022 - INFO  - Finish environment cleanup!

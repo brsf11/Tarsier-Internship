@@ -1,0 +1,20 @@
+Tue Sep 27 21:10:13 2022 - INFO  - Start to prepare the test environment.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmcd.service → /usr/lib/systemd/system/pmcd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/pmlogger.service → /usr/lib/systemd/system/pmlogger.service.
+Tue Sep 27 21:13:21 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 21:13:22 2022 - INFO  - Start to run test.
+ loadavg                      memory      swap        io    system         cpu
+ loadavg                      memory      swap        io    system         cpu
+ loadavg                      memory      swap        io    system         cpu
+ loadavg                      memory      swap        io    system         cpu
+ loadavg                      memory      swap        io    system         cpu
+Note: timezone set to "TZ=Africa/Sao_Tome"
+Note: timezone set to local timezone of host "openEuler-riscv64" from archive
+ loadavg                      memory      swap        io    system         cpu
+   1 min   swpd   free   buff  cache   pi   po   bi   bo   in   cs  us  sy  id
+   1 min   swpd   free   buff  cache   pi   po   bi   bo   in   cs  us  sy  id
+   1 min   swpd   free   buff  cache   pi   po   bi   bo   in   cs  us  sy  id  wa  st
+Tue Sep 27 21:15:15 2022 - INFO  - End to run test.
+Tue Sep 27 21:15:15 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:15:16 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 21:16:11 2022 - INFO  - End to restore the test environment.

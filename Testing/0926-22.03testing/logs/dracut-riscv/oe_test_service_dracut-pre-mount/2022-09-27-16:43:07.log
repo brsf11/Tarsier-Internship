@@ -1,0 +1,7 @@
+Tue Sep 27 16:43:10 2022 - INFO  - Start testing...
+Unit dracut-pre-mount.service could not be found.
+Failed to get unit file state for dracut-pre-mount.service: No such file or directory
+Tue Sep 27 16:43:11 2022 - INFO  - Unit is indirect, ignoring.
+Tue Sep 27 16:43:12 2022 - INFO  - Finish test!
+Tue Sep 27 16:43:12 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:43:13 2022 - INFO  - oe_test_service_dracut-pre-mount.sh post_test

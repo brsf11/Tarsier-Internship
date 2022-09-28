@@ -1,0 +1,44 @@
+Tue Sep 27 17:15:50 2022 - INFO  - Start to prepare the test environment.
+cp: cannot create regular file '/var/log/radius/radwtmp': No such file or directory
+Tue Sep 27 17:16:14 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 17:16:14 2022 - INFO  - Start to run test.
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 34: radlast: command not found
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 34: radlast: command not found
+Tue Sep 27 17:16:15 2022 - ERROR - radlast -t execution failed.
+Tue Sep 27 17:16:16 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 35
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 36: radlast: command not found
+Tue Sep 27 17:16:16 2022 - ERROR - radlast -x execution failed.
+Tue Sep 27 17:16:17 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 37
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 38: radlast: command not found
+Tue Sep 27 17:16:18 2022 - ERROR - radlast -h execution failed.
+Tue Sep 27 17:16:18 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 39
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 40: radlast: command not found
+Tue Sep 27 17:16:19 2022 - ERROR - radlast -V execution failed.
+Tue Sep 27 17:16:20 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 41
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 42: radsniff: command not found
+Tue Sep 27 17:16:21 2022 - ERROR - radsniff -a execution failed.
+Tue Sep 27 17:16:21 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 43
+Failed to start radiusd.service: Unit radiusd.service not found.
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 46: radsniff: command not found
+Tue Sep 27 17:16:24 2022 - ERROR - radsniff -c execution failed.
+Tue Sep 27 17:16:25 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 47
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 48: radsniff: command not found
+Tue Sep 27 17:16:25 2022 - ERROR - radsniff -C execution failed.
+Tue Sep 27 17:16:26 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 50
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 51: radsniff: command not found
+Tue Sep 27 17:16:27 2022 - ERROR - radsniff -d execution failed.
+Tue Sep 27 17:16:27 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 52
+oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh: line 53: radsniff: command not found
+Tue Sep 27 17:16:28 2022 - ERROR - radsniff -D execution failed.
+Tue Sep 27 17:16:29 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlastAndRadsniff.sh line 54
+Tue Sep 27 17:16:29 2022 - INFO  - End to run test.
+Tue Sep 27 17:16:30 2022 - ERROR - failed to execute the case.
+Tue Sep 27 17:16:31 2022 - INFO  - Start to restore the test environment.
+Failed to stop radiusd.service: Unit radiusd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 2:54:14 ago on Tue 27 Sep 2022 02:21:58 PM CST.\nPackage net-tools-2.10-1.oe2203.riscv64 is already installed.\nError: \n Problem: conflicting requests\n  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Tue Sep 27 17:16:34 2022 - INFO  - End to restore the test environment.

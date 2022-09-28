@@ -1,0 +1,19 @@
+Tue Sep 27 18:02:06 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 18:03:14 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 18:03:15 2022 - INFO  - Start testing...
+/etc/systemd/system/halt.target.wants/canberra-system-shutdown.service
+/etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service
+/etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service
+/etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service
+Removed /etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service.
+Removed /etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service.
+Removed /etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service.
+Removed /etc/systemd/system/halt.target.wants/canberra-system-shutdown.service.
+find: ‘/etc/systemd/system/halt.target.wants/canberra-system-shutdown.service’: No such file or directory
+find: ‘/etc/systemd/system/poweroff.target.wants/canberra-system-shutdown.service’: No such file or directory
+find: ‘/etc/systemd/system/reboot.target.wants/canberra-system-shutdown-reboot.service’: No such file or directory
+find: ‘/etc/systemd/system/kexec.target.wants/canberra-system-shutdown-reboot.service’: No such file or directory
+Tue Sep 27 18:03:24 2022 - INFO  - Finish test!
+Tue Sep 27 18:03:25 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 18:03:25 2022 - INFO  - start environment cleanup.
+Tue Sep 27 18:03:46 2022 - INFO  - Finish environment cleanup!

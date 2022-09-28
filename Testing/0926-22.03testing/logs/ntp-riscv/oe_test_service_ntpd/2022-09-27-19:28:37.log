@@ -1,0 +1,17 @@
+Tue Sep 27 19:28:40 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 19:28:58 2022 - INFO  - pkgs:(ntp) is already installed
+Tue Sep 27 19:28:59 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:29:00 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 19:29:00 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 19:29:13 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/ntpd.service
+Removed /etc/systemd/system/multi-user.target.wants/ntpd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/ntpd.service’: No such file or directory
+Failed to reload ntpd.service: Job type reload is not applicable for unit ntpd.service.
+     Active: active (running) since Tue 2022-09-27 19:29:13 CST; 15s ago
+Tue Sep 27 19:29:28 2022 - INFO  - Finish test!
+Tue Sep 27 19:29:29 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:29:30 2022 - INFO  - start environment cleanup.
+Tue Sep 27 19:29:30 2022 - WARN  - no thing to do.
+Tue Sep 27 19:29:31 2022 - INFO  - Finish environment cleanup!

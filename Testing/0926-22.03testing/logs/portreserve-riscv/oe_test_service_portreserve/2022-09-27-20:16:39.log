@@ -1,0 +1,18 @@
+Tue Sep 27 20:16:42 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 20:17:38 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 20:17:38 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 20:17:39 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 20:17:51 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/portreserve.service
+Removed /etc/systemd/system/multi-user.target.wants/portreserve.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/portreserve.service’: No such file or directory
+Sep 27 20:17:39 openEuler-riscv64 systemd[1]: portreserve.service: Failed to parse PID from file /run/portreserve.pid: Invalid argument
+Tue Sep 27 20:18:07 2022 - ERROR - There is an error message for the log of portreserve.service
+Tue Sep 27 20:18:07 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload portreserve.service: Job type reload is not applicable for unit portreserve.service.
+     Active: active (running) since Tue 2022-09-27 20:17:51 CST; 16s ago
+Tue Sep 27 20:18:09 2022 - INFO  - Finish test!
+Tue Sep 27 20:18:09 2022 - ERROR - failed to execute the case.
+Tue Sep 27 20:18:10 2022 - INFO  - start environment cleanup.
+Tue Sep 27 20:18:31 2022 - INFO  - Finish environment cleanup!

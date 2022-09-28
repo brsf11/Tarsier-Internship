@@ -1,0 +1,12 @@
+Tue Sep 27 22:31:17 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 22:32:15 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 22:32:15 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 22:32:26 CST; 183ms ago
+/etc/systemd/system/multi-user.target.wants/unbound.service
+Removed /etc/systemd/system/multi-user.target.wants/unbound.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/unbound.service’: No such file or directory
+     Active: active (running) since Tue 2022-09-27 22:32:26 CST; 9s ago
+Tue Sep 27 22:32:37 2022 - INFO  - Finish test!
+Tue Sep 27 22:32:38 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 22:32:38 2022 - INFO  - start environment cleanup.
+Tue Sep 27 22:33:10 2022 - INFO  - Finish environment cleanup!

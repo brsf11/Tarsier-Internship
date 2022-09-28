@@ -1,0 +1,13 @@
+Tue Sep 27 19:19:54 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 19:20:59 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:21:00 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 19:21:00 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 19:21:06 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 19:21:12 CST; 5s ago
+Tue Sep 27 19:21:19 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload rpc-gssd.service: Job type reload is not applicable for unit rpc-gssd.service.
+     Active: active (running) since Tue 2022-09-27 19:21:12 CST; 7s ago
+Tue Sep 27 19:21:20 2022 - INFO  - Finish test!
+Tue Sep 27 19:21:21 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:21:22 2022 - INFO  - start environment cleanup.
+Tue Sep 27 19:21:56 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,14 @@
+Tue Sep 27 14:59:19 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 14:59:27 2022 - INFO  - pkgs:(ntp) is already installed
+Tue Sep 27 14:59:28 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 14:59:28 2022 - INFO  - Start to run test.
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 3845448  23012 183196    0    0    29    36   82   90 15  6 78  1  0
+         8150 forks
+Options:
+Tue Sep 27 14:59:29 2022 - INFO  - End to run test.
+Tue Sep 27 14:59:30 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 14:59:31 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 14:59:31 2022 - WARN  - no thing to do.
+Tue Sep 27 14:59:32 2022 - INFO  - End to restore the test environment.

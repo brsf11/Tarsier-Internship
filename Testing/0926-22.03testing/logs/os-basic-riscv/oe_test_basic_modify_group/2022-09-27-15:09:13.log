@@ -1,0 +1,12 @@
+Tue Sep 27 15:09:16 2022 - INFO  - Start environment preparation.
+Tue Sep 27 15:09:19 2022 - INFO  - Environmental preparation is over.
+Tue Sep 27 15:09:20 2022 - INFO  - Start executing testcase!
+testgroup1:x:6666:
+testgroup1:x:8888:
+testgroup2:x:8888:
+testgroup2:x:8888:testuser1
+Usage: groupmod [options] GROUP
+Tue Sep 27 15:09:23 2022 - INFO  - End of testcase execution!
+Tue Sep 27 15:09:23 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 15:09:24 2022 - INFO  - start environment cleanup.
+Tue Sep 27 15:09:26 2022 - INFO  - Finish environment cleanup.

@@ -1,0 +1,15 @@
+Tue Sep 27 20:07:24 2022 - INFO  - Start environmental preparation.
+mkdir: cannot create directory ‘/etc/pki/pesign’: File exists
+spawn certutil -d /etc/pki/pesign/ -N
+Enter Password or Pin for "NSS Certificate DB":Tue Sep 27 20:09:07 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 20:09:08 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 20:09:12 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 20:09:28 CST; 5s ago
+Tue Sep 27 20:09:35 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload pesign.service: Job type reload is not applicable for unit pesign.service.
+     Active: active (running) since Tue 2022-09-27 20:09:28 CST; 7s ago
+Tue Sep 27 20:09:36 2022 - INFO  - Finish test!
+Tue Sep 27 20:09:36 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 20:09:37 2022 - INFO  - start environment cleanup.
+Tue Sep 27 20:10:07 2022 - INFO  - Finish environment cleanup!

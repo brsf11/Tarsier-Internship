@@ -1,0 +1,15 @@
+Tue Sep 27 19:34:30 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 19:35:35 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:35:36 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 19:35:36 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 19:35:48 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/pkcsslotd.service
+Removed /etc/systemd/system/multi-user.target.wants/pkcsslotd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/pkcsslotd.service’: No such file or directory
+Failed to reload pkcsslotd.service: Job type reload is not applicable for unit pkcsslotd.service.
+     Active: active (running) since Tue 2022-09-27 19:35:48 CST; 14s ago
+Tue Sep 27 19:36:04 2022 - INFO  - Finish test!
+Tue Sep 27 19:36:04 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:36:05 2022 - INFO  - start environment cleanup.
+Tue Sep 27 19:36:22 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,13 @@
+Tue Sep 27 17:52:24 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 17:53:15 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 17:53:15 2022 - INFO  - Start testing...
+keyctl from keyutils-1.6.3 (Built 2022-07-29)
+have_capabilities=1
+365197970
+365197970: --alswrv     0     0 user: mykey:hello
+365197970
+zebra
+Tue Sep 27 17:53:16 2022 - INFO  - Finish testing!
+Tue Sep 27 17:53:17 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 17:53:18 2022 - INFO  - start environment cleanup.
+Tue Sep 27 17:53:47 2022 - INFO  - Finish environment cleanup!

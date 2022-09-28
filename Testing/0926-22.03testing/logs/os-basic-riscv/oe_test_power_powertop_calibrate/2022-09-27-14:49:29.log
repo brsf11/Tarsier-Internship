@@ -1,0 +1,9 @@
+Tue Sep 27 14:49:32 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 14:50:31 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 14:50:32 2022 - INFO  - Start to run test.
+modprobe cpufreq_stats failedLoaded 0 prior measurements
+oe_test_power_powertop_calibrate.sh: line 27:  3559 Killed                  nohup powertop --calibrate > nohup.out 2>&1
+Tue Sep 27 14:50:36 2022 - INFO  - End to run test.
+Tue Sep 27 14:50:37 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 14:50:37 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 14:50:55 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,11 @@
+Tue Sep 27 14:59:30 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 15:00:20 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 15:00:20 2022 - INFO  - Start to run test.
+acpid-2.0.33
+acpid-2.0.33
+Usage: acpi_listen [OPTIONS]
+Usage: acpi_listen [OPTIONS]
+Tue Sep 27 15:00:22 2022 - INFO  - End to run test.
+Tue Sep 27 15:00:22 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 15:00:23 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 15:00:38 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,15 @@
+Tue Sep 27 21:20:17 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 21:21:17 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 21:21:18 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 21:21:19 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 21:21:25 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 21:21:31 CST; 5s ago
+find: ‘/etc/systemd/system/graphical.target.wants/rtkit-daemon.service’: No such file or directory
+Created symlink /etc/systemd/system/graphical.target.wants/rtkit-daemon.service → /usr/lib/systemd/system/rtkit-daemon.service.
+/etc/systemd/system/graphical.target.wants/rtkit-daemon.service
+Failed to reload rtkit-daemon.service: Job type reload is not applicable for unit rtkit-daemon.service.
+     Active: active (running) since Tue 2022-09-27 21:21:31 CST; 14s ago
+Tue Sep 27 21:21:46 2022 - INFO  - Finish test!
+Tue Sep 27 21:21:47 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:21:48 2022 - INFO  - start environment cleanup.
+Tue Sep 27 21:22:08 2022 - INFO  - Finish environment cleanup!

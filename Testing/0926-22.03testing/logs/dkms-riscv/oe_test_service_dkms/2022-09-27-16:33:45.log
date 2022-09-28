@@ -1,0 +1,15 @@
+Tue Sep 27 16:33:47 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 16:35:38 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:35:39 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-27 16:35:41 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 16:35:47 CST; 6s ago
+     Active: active (exited) since Tue 2022-09-27 16:35:54 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/dkms.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/dkms.service → /usr/lib/systemd/system/dkms.service.
+/etc/systemd/system/multi-user.target.wants/dkms.service
+Failed to reload dkms.service: Job type reload is not applicable for unit dkms.service.
+     Active: active (exited) since Tue 2022-09-27 16:35:54 CST; 14s ago
+Tue Sep 27 16:36:10 2022 - INFO  - Finish test!
+Tue Sep 27 16:36:11 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:36:11 2022 - INFO  - start environment cleanup.
+Tue Sep 27 16:36:57 2022 - INFO  - Finish environment cleanup!

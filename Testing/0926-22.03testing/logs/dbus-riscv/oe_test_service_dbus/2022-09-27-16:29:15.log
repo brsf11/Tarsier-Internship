@@ -1,0 +1,14 @@
+Tue Sep 27 16:29:17 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 16:29:18 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:29:19 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 16:29:20 CST; 6s ago
+Warning: Stopping dbus.service, but it can still be activated by:
+  dbus.socket
+     Active: inactive (dead) since Tue 2022-09-27 16:29:27 CST; 6s ago
+     Active: active (running) since Tue 2022-09-27 16:29:34 CST; 5s ago
+Tue Sep 27 16:29:41 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+     Active: active (running) since Tue 2022-09-27 16:29:34 CST; 11s ago
+Tue Sep 27 16:29:46 2022 - INFO  - Finish test!
+Tue Sep 27 16:29:47 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:29:48 2022 - INFO  - start environment cleanup.
+Tue Sep 27 16:29:53 2022 - INFO  - Finish environment cleanup!

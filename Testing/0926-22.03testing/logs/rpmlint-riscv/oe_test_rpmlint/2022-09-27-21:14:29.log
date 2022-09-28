@@ -1,0 +1,41 @@
+Tue Sep 27 21:14:32 2022 - INFO  - Start to prepare the test environment.
+--2022-09-27 21:15:24--  https://repo.openeuler.org/openEuler-20.03-LTS/everything/aarch64/Packages/LibRaw-0.19.0-9.oe1.aarch64.rpm
+Resolving repo.openeuler.org (repo.openeuler.org)... 49.0.230.196
+Connecting to repo.openeuler.org (repo.openeuler.org)|49.0.230.196|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 298520 (292K) [application/x-redhat-package-manager]
+Saving to: ‘LibRaw-0.19.0-9.oe1.aarch64.rpm’
+
+     0K .......... .......... .......... .......... .......... 17%  308K 1s
+    50K .......... .......... .......... .......... .......... 34%  655K 0s
+   100K .......... .......... .......... .......... .......... 51% 4.26M 0s
+   150K .......... .......... .......... .......... .......... 68%  734K 0s
+   200K .......... .......... .......... .......... .......... 85% 4.50M 0s
+   250K .......... .......... .......... .......... .         100% 4.26M=0.3s
+
+2022-09-27 21:15:25 (860 KB/s) - ‘LibRaw-0.19.0-9.oe1.aarch64.rpm’ saved [298520/298520]
+
+Tue Sep 27 21:15:26 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 21:15:27 2022 - INFO  - Start to run test1.
+sh: line 1: /usr/bin/python: No such file or directory
+sh: line 1: /usr/bin/python2: No such file or directory
+Error checking signature of LibRaw-0.19.0-9.oe1.aarch64.rpm: LibRaw-0.19.0-9.oe1.aarch64.rpm: digests SIGNATURES NOT OK
+1 packages and 0 specfiles checked; 3 errors, 3 warnings.
+Tue Sep 27 21:15:57 2022 - INFO  - End to run test1.
+Tue Sep 27 21:15:58 2022 - INFO  - Start to run test2.
+rpmlint version 1.10 Copyright (C) 1999-2007 Frederic Lepied, Mandriva
+Tue Sep 27 21:16:00 2022 - INFO  - End to run test2.
+Tue Sep 27 21:16:01 2022 - INFO  - Start to run test3.
+sh: line 1: /usr/bin/python: No such file or directory
+sh: line 1: /usr/bin/python2: No such file or directory
+0 packages and 0 specfiles checked; 0 errors, 0 warnings.
+Tue Sep 27 21:16:08 2022 - INFO  - End to run test3.
+Tue Sep 27 21:16:09 2022 - INFO  - Start to run test4.
+Cloning into 'unzip'...
+sh: line 1: /usr/bin/python: No such file or directory
+sh: line 1: /usr/bin/python2: No such file or directory
+0 packages and 1 specfiles checked; 1 errors, 0 warnings.
+Tue Sep 27 21:16:30 2022 - INFO  - End to run test4.
+Tue Sep 27 21:16:31 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:16:32 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 21:16:44 2022 - INFO  - End to restore the test environment.

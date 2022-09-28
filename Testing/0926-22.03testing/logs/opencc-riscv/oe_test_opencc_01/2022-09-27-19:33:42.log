@@ -1,0 +1,13 @@
+Tue Sep 27 19:33:45 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 19:34:29 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 19:34:29 2022 - INFO  - Start to run test.
+.sim_chinese.txt not found or not accessible.
+sim_chinese55.txt not found or not accessible.
+Tue Sep 27 19:34:33 2022 - ERROR - Missing actual error code.
+123456　
+abcd　
+$%^　
+Tue Sep 27 19:34:35 2022 - INFO  - End to run test.
+Tue Sep 27 19:34:36 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:34:36 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 19:34:58 2022 - INFO  - End to restore the test environment.

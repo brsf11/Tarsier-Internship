@@ -1,0 +1,43 @@
+Tue Sep 27 19:51:44 2022 - INFO  - Start to config params of the case.
+Tue Sep 27 19:51:45 2022 - INFO  - End to config params of the case.
+Tue Sep 27 19:51:45 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 19:52:04 2022 - INFO  - pkgs:(osc) is already installed
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+At revision 1.
+At revision 4721.
+Tue Sep 27 19:52:16 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 19:52:17 2022 - INFO  - Start to run test.
+A    xzz
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Sending meta data...
+Sending    xzz
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Updating patchinfo
+Updating zjl
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Updating patchinfo
+Updating zjl
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+<project name="home:test666:branches:openEuler:Mainline">
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+home:test666:branches:openEuler:Mainline
+Update existing _patchinfo file...
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+WARNING: SSL certificate checks disabled. Connection is insecure!
+
+Tue Sep 27 19:56:02 2022 - INFO  - End to run test.
+Tue Sep 27 19:56:03 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:56:03 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 19:56:04 2022 - WARN  - no thing to do.
+Tue Sep 27 19:56:05 2022 - INFO  - End to restore the test environment.

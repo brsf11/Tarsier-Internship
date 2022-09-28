@@ -1,0 +1,12 @@
+Tue Sep 27 17:27:54 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 17:27:54 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 17:28:07 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/rdisc.service
+Removed /etc/systemd/system/multi-user.target.wants/rdisc.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/rdisc.service’: No such file or directory
+Failed to reload rdisc.service: Job type reload is not applicable for unit rdisc.service.
+     Active: active (running) since Tue 2022-09-27 17:28:07 CST; 15s ago
+Tue Sep 27 17:28:23 2022 - INFO  - Finish test!
+Tue Sep 27 17:28:24 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 17:28:25 2022 - INFO  - oe_test_service_rdisc.sh post_test

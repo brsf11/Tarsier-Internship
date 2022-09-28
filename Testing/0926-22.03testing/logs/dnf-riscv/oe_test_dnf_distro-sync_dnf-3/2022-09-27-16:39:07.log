@@ -1,0 +1,40 @@
+Tue Sep 27 16:39:10 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 16:39:59 2022 - INFO  - Finish preparing the test environment.
+Tue Sep 27 16:40:00 2022 - INFO  - Start to run test.
+Nothing to do.
+Dependencies resolved.
+================================================================================
+ Package      Architecture    Version                   Repository         Size
+================================================================================
+Removing:
+ tree         riscv64         1.8.0-2.oe2203            @mainline         120 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package
+
+Freed space: 120 k
+Running transaction check
+Transaction check succeeded.
+Running transaction test
+Transaction test succeeded.
+Running transaction
+  Preparing        :                                                        1/1 
+  Erasing          : tree-1.8.0-2.oe2203.riscv64                            1/1 
+  Verifying        : tree-1.8.0-2.oe2203.riscv64                            1/1 
+
+Removed:
+  tree-1.8.0-2.oe2203.riscv64                                                   
+
+Complete!
+lrwxrwxrwx 1 root root 5 Aug  1 06:37 /usr/bin/dnf -> dnf-3
+lrwxrwxrwx 1 root root 5 Aug  1 06:37 /usr/bin/yum -> dnf-3
+Downloading Packages:
+/tmp/tree-1.8.0-2.oe2203.riscv64.rpm
+Downloading Packages:
+/var/cache/dnf/mainline-ab6017f8fd261b30/packages/tree-1.8.0-2.oe2203.riscv64.rpm
+Tue Sep 27 16:40:40 2022 - INFO  - End of the test.
+Tue Sep 27 16:40:40 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:40:41 2022 - INFO  - Start to restore the test environment.
+1 file removed
+Tue Sep 27 16:41:13 2022 - INFO  - Finish restoring the test environment.

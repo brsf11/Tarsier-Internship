@@ -1,0 +1,10 @@
+Tue Sep 27 20:14:22 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 20:14:23 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 20:14:36 CST; 6s ago
+Tue Sep 27 20:14:43 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload polkit.service: Job type reload is not applicable for unit polkit.service.
+     Active: active (running) since Tue 2022-09-27 20:14:36 CST; 7s ago
+Tue Sep 27 20:14:44 2022 - INFO  - Finish test!
+Tue Sep 27 20:14:45 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 20:14:46 2022 - INFO  - oe_test_service_polkit.sh post_test

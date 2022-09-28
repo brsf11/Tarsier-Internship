@@ -1,0 +1,20 @@
+Tue Sep 27 14:53:07 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 14:53:57 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 14:53:57 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 14:53:57 CST; 5s ago
+Warning: Stopping acpid.service, but it can still be activated by:
+  acpid.socket
+     Active: inactive (dead) since Tue 2022-09-27 14:54:04 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 14:54:10 CST; 6s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/acpid.service’: No such file or directory
+find: ‘/etc/systemd/system/sockets.target.wants/acpid.socket’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/acpid.service → /usr/lib/systemd/system/acpid.service.
+Created symlink /etc/systemd/system/sockets.target.wants/acpid.socket → /usr/lib/systemd/system/acpid.socket.
+/etc/systemd/system/multi-user.target.wants/acpid.service
+/etc/systemd/system/sockets.target.wants/acpid.socket
+Failed to reload acpid.service: Job type reload is not applicable for unit acpid.service.
+     Active: active (running) since Tue 2022-09-27 14:54:10 CST; 15s ago
+Tue Sep 27 14:54:26 2022 - INFO  - Finish test!
+Tue Sep 27 14:54:26 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 14:54:27 2022 - INFO  - start environment cleanup.
+Tue Sep 27 14:54:42 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,9 @@
+Tue Sep 27 19:03:45 2022 - INFO  - Start environment preparation.
+Tue Sep 27 19:06:35 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:06:36 2022 - INFO  - Start testing...
+[        14 tests successful      ]
+[         0 tests failed          ]
+Tue Sep 27 19:07:14 2022 - INFO  - Finish test!
+Tue Sep 27 19:07:14 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:07:15 2022 - INFO  - start environment cleanup.
+Tue Sep 27 19:07:40 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,15 @@
+Tue Sep 27 16:28:13 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 16:29:13 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:29:14 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 16:29:15 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 16:29:27 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/saslauthd.service
+Removed /etc/systemd/system/multi-user.target.wants/saslauthd.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/saslauthd.service’: No such file or directory
+Failed to reload saslauthd.service: Job type reload is not applicable for unit saslauthd.service.
+     Active: active (running) since Tue 2022-09-27 16:29:27 CST; 15s ago
+Tue Sep 27 16:29:43 2022 - INFO  - Finish test!
+Tue Sep 27 16:29:44 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:29:44 2022 - INFO  - start environment cleanup.
+Tue Sep 27 16:30:06 2022 - INFO  - Finish environment cleanup!

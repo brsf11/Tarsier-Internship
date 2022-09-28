@@ -1,0 +1,37 @@
+Tue Sep 27 17:13:56 2022 - INFO  - Start to prepare the test environment.
+ln: failed to create symbolic link '/etc/raddb/mods-enabled/counter': No such file or directory
+Failed to start radiusd.service: Unit radiusd.service not found.
+Tue Sep 27 17:14:32 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 17:14:32 2022 - INFO  - Start to run test.
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 35: rad_counter: command not found
+Tue Sep 27 17:14:33 2022 - ERROR - rad_counter --user execution failed.
+Tue Sep 27 17:14:34 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 36
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 37: rad_counter: command not found
+Tue Sep 27 17:14:34 2022 - ERROR - rad_counter --match execution failed.
+Tue Sep 27 17:14:35 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 38
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 39: rad_counter: command not found
+Tue Sep 27 17:14:36 2022 - ERROR - rad_counter --reset execution failed.
+Tue Sep 27 17:14:36 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 40
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 41: rad_counter: command not found
+Tue Sep 27 17:14:37 2022 - ERROR - rad_counter --help execution failed.
+Tue Sep 27 17:14:38 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 42
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 43: rad_counter: command not found
+Tue Sep 27 17:14:38 2022 - ERROR - rad_counter --hours execution failed.
+Tue Sep 27 17:14:39 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 44
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 45: rad_counter: command not found
+Tue Sep 27 17:14:40 2022 - ERROR - rad_counter --minutes execution failed.
+Tue Sep 27 17:14:41 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 46
+oe_test_freeradius_freeradius-utils_rad_counter.sh: line 47: rad_counter: command not found
+Tue Sep 27 17:14:41 2022 - ERROR - rad_counter --seconds execution failed.
+Tue Sep 27 17:14:42 2022 - ERROR - oe_test_freeradius_freeradius-utils_rad_counter.sh line 48
+Tue Sep 27 17:14:43 2022 - INFO  - End to run test.
+Tue Sep 27 17:14:43 2022 - ERROR - failed to execute the case.
+Tue Sep 27 17:14:44 2022 - INFO  - Start to restore the test environment.
+Failed to stop radiusd.service: Unit radiusd.service not loaded.
+Traceback (most recent call last):
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 173, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 144, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 2:52:29 ago on Tue 27 Sep 2022 02:21:58 PM CST.\nError: \n Problem: conflicting requests\n  - nothing provides perl(Net::IP) needed by freeradius-utils-3.0.25-1.oe2203.riscv64\n(try to add '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)"
+Tue Sep 27 17:14:47 2022 - INFO  - End to restore the test environment.

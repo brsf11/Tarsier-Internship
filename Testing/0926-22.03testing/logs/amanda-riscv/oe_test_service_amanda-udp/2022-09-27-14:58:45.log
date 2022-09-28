@@ -1,0 +1,15 @@
+Tue Sep 27 14:58:48 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 15:00:16 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 15:00:16 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 15:00:17 CST; 6s ago
+Warning: Stopping amanda-udp.service, but it can still be activated by:
+  amanda-udp.socket
+     Active: inactive (dead) since Tue 2022-09-27 15:00:23 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 15:00:29 CST; 5s ago
+Tue Sep 27 15:00:36 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload amanda-udp.service: Job type reload is not applicable for unit amanda-udp.service.
+     Active: active (running) since Tue 2022-09-27 15:00:29 CST; 7s ago
+Tue Sep 27 15:00:37 2022 - INFO  - Finish test!
+Tue Sep 27 15:00:38 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 15:00:38 2022 - INFO  - start environment cleanup.
+Tue Sep 27 15:01:08 2022 - INFO  - Finish environment cleanup!

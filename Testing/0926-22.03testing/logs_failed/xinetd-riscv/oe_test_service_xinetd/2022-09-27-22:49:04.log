@@ -1,0 +1,17 @@
+Tue Sep 27 22:49:07 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 22:49:58 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 22:49:58 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 22:49:59 CST; 6s ago
+     Active: inactive (dead) since Tue 2022-09-27 22:50:05 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 22:50:12 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/xinetd.service’: No such file or directory
+Created symlink /etc/systemd/system/multi-user.target.wants/xinetd.service → /usr/lib/systemd/system/xinetd.service.
+/etc/systemd/system/multi-user.target.wants/xinetd.service
+Sep 27 22:50:12 openEuler-riscv64 systemd[1]: xinetd.service: Failed to parse PID from file /run/xinetd.pid: Invalid argument
+Tue Sep 27 22:50:28 2022 - ERROR - There is an error message for the log of xinetd.service
+Tue Sep 27 22:50:29 2022 - ERROR - ../common/common_lib.sh line 28
+     Active: active (running) since Tue 2022-09-27 22:50:12 CST; 21s ago
+Tue Sep 27 22:50:34 2022 - INFO  - Finish test!
+Tue Sep 27 22:50:35 2022 - ERROR - failed to execute the case.
+Tue Sep 27 22:50:36 2022 - INFO  - start environment cleanup.
+Tue Sep 27 22:51:07 2022 - INFO  - Finish environment cleanup!

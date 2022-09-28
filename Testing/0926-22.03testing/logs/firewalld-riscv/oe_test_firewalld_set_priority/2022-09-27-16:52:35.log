@@ -1,0 +1,9 @@
+Tue Sep 27 16:52:37 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Tue Sep 27 16:52:38 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:52:39 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+oe_test_firewalld_set_priority.sh: line 35: nft: command not found
+Tue Sep 27 16:52:40 2022 - INFO  - Finish testcase execution.
+Tue Sep 27 16:52:40 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:52:41 2022 - INFO  - oe_test_firewalld_set_priority.sh post_test

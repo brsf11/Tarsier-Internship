@@ -1,0 +1,60 @@
+Tue Sep 27 21:46:57 2022 - INFO  - Start to prepare the test environment.
+Writing new Gemfile to /root/GitRepo/mugen-riscv/testcases/cli-test/rubygem-bundler/Gemfile
+Tue Sep 27 21:48:26 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 21:48:27 2022 - INFO  - Start to run test.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+[DEPRECATED] The `--force` option has been renamed to `--redownload`
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+[DEPRECATED] The `--no-prune` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local no_prune 'true'`, and stop using this flag
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set --local path '/opt/'`, and stop using this flag
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundled gems are installed into `/opt/`
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Don't run Bundler as root. Bundler can ask for sudo if it is needed, and
+installing your bundle as root will break this application for all non-root
+users on this machine.
+The Gemfile specifies no dependencies
+Bundle complete! 0 Gemfile dependencies, 1 gem now installed.
+Tue Sep 27 21:49:13 2022 - INFO  - End to run test.
+Tue Sep 27 21:49:13 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 21:49:14 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 21:49:56 2022 - INFO  - End to restore the test environment.

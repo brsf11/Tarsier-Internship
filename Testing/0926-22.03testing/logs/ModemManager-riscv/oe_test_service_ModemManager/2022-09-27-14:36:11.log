@@ -1,0 +1,18 @@
+Tue Sep 27 14:36:14 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 14:37:07 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 14:37:08 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 14:37:09 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 14:37:15 CST; 5s ago
+     Active: active (running) since Tue 2022-09-27 14:37:21 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/ModemManager.service’: No such file or directory
+find: ‘/etc/systemd/system/dbus-org.freedesktop.ModemManager1.service’: No such file or directory
+Created symlink /etc/systemd/system/dbus-org.freedesktop.ModemManager1.service → /usr/lib/systemd/system/ModemManager.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/ModemManager.service → /usr/lib/systemd/system/ModemManager.service.
+/etc/systemd/system/multi-user.target.wants/ModemManager.service
+/etc/systemd/system/dbus-org.freedesktop.ModemManager1.service
+Failed to reload ModemManager.service: Job type reload is not applicable for unit ModemManager.service.
+     Active: active (running) since Tue 2022-09-27 14:37:21 CST; 15s ago
+Tue Sep 27 14:37:37 2022 - INFO  - Finish test!
+Tue Sep 27 14:37:38 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 14:37:39 2022 - INFO  - start environment cleanup.
+Tue Sep 27 14:37:58 2022 - INFO  - Finish environment cleanup!

@@ -1,0 +1,10 @@
+Tue Sep 27 14:36:13 2022 - INFO  - Start to run test.
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+Tue Sep 27 14:36:14 2022 - ERROR - oe_test_who.sh line 24
+         system boot  2022-09-27 14:35
+Tue Sep 27 14:36:15 2022 - ERROR - oe_test_who.sh line 30
+Usage: who [OPTION]... [ FILE | ARG1 ARG2 ]
+Tue Sep 27 14:36:16 2022 - INFO  - End to run test.
+Tue Sep 27 14:36:16 2022 - ERROR - failed to execute the case.
+Tue Sep 27 14:36:17 2022 - INFO  - oe_test_who.sh post_test

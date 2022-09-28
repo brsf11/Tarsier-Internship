@@ -1,0 +1,9 @@
+Tue Sep 27 22:03:17 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 22:05:12 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 22:05:12 2022 - INFO  - Start testing...
+oe_test_socket_sssd-nss.sh: line 32: test_execution: command not found
+oe_test_socket_sssd-nss.sh: line 33: test_reload: command not found
+Tue Sep 27 22:05:13 2022 - INFO  - Finish test!
+Tue Sep 27 22:05:14 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 22:05:15 2022 - INFO  - start environment cleanup.
+Tue Sep 27 22:06:08 2022 - INFO  - Finish environment cleanup!

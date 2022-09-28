@@ -1,0 +1,15 @@
+Tue Sep 27 20:43:23 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 20:44:39 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 20:44:40 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 20:44:40 CST; 6s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 20:44:53 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/redis-sentinel.service
+Removed /etc/systemd/system/multi-user.target.wants/redis-sentinel.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/redis-sentinel.service’: No such file or directory
+Failed to reload redis-sentinel.service: Job type reload is not applicable for unit redis-sentinel.service.
+     Active: active (running) since Tue 2022-09-27 20:44:53 CST; 15s ago
+Tue Sep 27 20:45:09 2022 - INFO  - Finish test!
+Tue Sep 27 20:45:10 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 20:45:10 2022 - INFO  - start environment cleanup.
+Tue Sep 27 20:45:26 2022 - INFO  - Finish environment cleanup!

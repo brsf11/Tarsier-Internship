@@ -1,0 +1,54 @@
+Tue Sep 27 20:25:20 2022 - INFO  - Start to prepare the test environment.
+running bdist_egg
+running egg_info
+creating wjfpkg.egg-info
+writing wjfpkg.egg-info/PKG-INFO
+writing dependency_links to wjfpkg.egg-info/dependency_links.txt
+writing entry points to wjfpkg.egg-info/entry_points.txt
+writing top-level names to wjfpkg.egg-info/top_level.txt
+writing manifest file 'wjfpkg.egg-info/SOURCES.txt'
+reading manifest file 'wjfpkg.egg-info/SOURCES.txt'
+writing manifest file 'wjfpkg.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-riscv64/egg
+/usr/lib/python3.9/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+running build_py
+creating build
+creating build/lib
+creating build/lib/wjfpkg
+copying wjfpkg/wjf.py -> build/lib/wjfpkg
+copying wjfpkg/__init__.py -> build/lib/wjfpkg
+creating build/bdist.linux-riscv64
+creating build/bdist.linux-riscv64/egg
+creating build/bdist.linux-riscv64/egg/wjfpkg
+copying build/lib/wjfpkg/__init__.py -> build/bdist.linux-riscv64/egg/wjfpkg
+copying build/lib/wjfpkg/wjf.py -> build/bdist.linux-riscv64/egg/wjfpkg
+byte-compiling build/bdist.linux-riscv64/egg/wjfpkg/__init__.py to __init__.cpython-39.pyc
+byte-compiling build/bdist.linux-riscv64/egg/wjfpkg/wjf.py to wjf.cpython-39.pyc
+creating build/bdist.linux-riscv64/egg/EGG-INFO
+copying wjfpkg.egg-info/PKG-INFO -> build/bdist.linux-riscv64/egg/EGG-INFO
+copying wjfpkg.egg-info/SOURCES.txt -> build/bdist.linux-riscv64/egg/EGG-INFO
+copying wjfpkg.egg-info/dependency_links.txt -> build/bdist.linux-riscv64/egg/EGG-INFO
+copying wjfpkg.egg-info/entry_points.txt -> build/bdist.linux-riscv64/egg/EGG-INFO
+copying wjfpkg.egg-info/top_level.txt -> build/bdist.linux-riscv64/egg/EGG-INFO
+zip_safe flag not set; analyzing archive contents...
+creating dist
+creating 'dist/wjfpkg-1.0-py3.9.egg' and adding 'build/bdist.linux-riscv64/egg' to it
+removing 'build/bdist.linux-riscv64/egg' (and everything under it)
+Tue Sep 27 20:26:24 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 20:26:24 2022 - INFO  - Start to run test.
+usage: wheel-3 [-h] {unpack,pack,convert,version,help} ...
+usage: wheel-3 [-h] {unpack,pack,convert,version,help} ...
+usage: wheel-3 [-h] {unpack,pack,convert,version,help} ...
+wheel 0.37.0
+Tue Sep 27 20:26:30 2022 - INFO  - Start to run run_new_version().
+Unpacking to: ./wjfpkg-1.0...OK
+Repacking wheel as ./wjfpkg-1.0-py39-none-any.whl...OK
+Tue Sep 27 20:26:36 2022 - INFO  - End to run run_new_version().
+Tue Sep 27 20:26:37 2022 - INFO  - End to run test.
+Tue Sep 27 20:26:37 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 20:26:38 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 20:26:39 2022 - INFO  - Start to run clean_new_version().
+Tue Sep 27 20:26:40 2022 - INFO  - End to run clean_new_version().
+Tue Sep 27 20:27:01 2022 - INFO  - End to restore the test environment.

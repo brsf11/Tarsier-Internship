@@ -1,0 +1,12 @@
+Tue Sep 27 19:00:10 2022 - INFO  - Start to run test.
+     Active: active (listening) since Tue 2022-09-27 19:00:11 CST; 5s ago
+     Active: inactive (dead) since Tue 2022-09-27 19:00:17 CST; 5s ago
+     Active: active (listening) since Tue 2022-09-27 19:00:23 CST; 5s ago
+find: ‘/etc/systemd/system/sockets.target.wants/dm-event.socket’: No such file or directory
+Created symlink /etc/systemd/system/sockets.target.wants/dm-event.socket → /usr/lib/systemd/system/dm-event.socket.
+/etc/systemd/system/sockets.target.wants/dm-event.socket
+Failed to reload dm-event.socket: Job type reload is not applicable for unit dm-event.socket.
+     Active: active (listening) since Tue 2022-09-27 19:00:23 CST; 14s ago
+Tue Sep 27 19:00:39 2022 - INFO  - End of the test.
+Tue Sep 27 19:00:39 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:00:40 2022 - INFO  - oe_test_socket_dm-event.sh post_test

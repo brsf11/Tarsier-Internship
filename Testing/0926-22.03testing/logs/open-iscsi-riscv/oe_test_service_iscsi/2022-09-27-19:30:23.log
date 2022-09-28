@@ -1,0 +1,17 @@
+Tue Sep 27 19:30:26 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 19:31:25 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 19:31:25 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-27 19:31:26 CST; 6s ago
+     Active: inactive (dead) since Tue 2022-09-27 19:31:32 CST; 5s ago
+     Active: active (exited) since Tue 2022-09-27 19:31:38 CST; 5s ago
+find: ‘/etc/systemd/system/remote-fs.target.wants/iscsi.service’: No such file or directory
+Created symlink /etc/systemd/system/remote-fs.target.wants/iscsi.service → /usr/lib/systemd/system/iscsi.service.
+/etc/systemd/system/remote-fs.target.wants/iscsi.service
+Failed to reload iscsi.service: Job type reload is not applicable for unit iscsi.service.
+     Active: active (exited) since Tue 2022-09-27 19:31:38 CST; 14s ago
+Tue Sep 27 19:31:53 2022 - INFO  - Finish test!
+Tue Sep 27 19:31:54 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 19:31:55 2022 - INFO  - start environment cleanup.
+Warning: Stopping iscsid.service, but it can still be activated by:
+  iscsid.socket
+Tue Sep 27 19:32:23 2022 - INFO  - Finish environment cleanup!

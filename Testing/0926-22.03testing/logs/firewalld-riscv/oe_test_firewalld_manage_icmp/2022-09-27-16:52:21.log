@@ -1,0 +1,8 @@
+Tue Sep 27 16:52:25 2022 - INFO  - Start environmental preparation.
+Failed to start firewalld.service: Unit firewalld.service not found.
+Tue Sep 27 16:52:26 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 16:52:27 2022 - INFO  - Start executing testcase.
+sudo: firewall-cmd: command not found
+Tue Sep 27 16:52:27 2022 - INFO  - Finish testcase execution.
+Tue Sep 27 16:52:28 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:52:29 2022 - INFO  - oe_test_firewalld_manage_icmp.sh post_test

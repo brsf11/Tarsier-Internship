@@ -1,0 +1,18 @@
+Tue Sep 27 18:20:36 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 18:28:02 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 18:28:03 2022 - INFO  - Start to run test.
+\u5bb9\u989c
+容颜
+\u00e5\u00ae\u00b9\u00e9\u00a2\u009c
+Usage:  pack200 [-opt... | --option=value]... x.pack[.gz] y.jar
+com.sun.java.util.jar.pack.Driver version 1.31, 07/05/05
+added manifest
+adding: Hello.class(in = 416) (out= 286)(deflated 31%)
+Hello.jar
+Hello.jar.pack.gz
+Hello.jar
+Hello.jar.pack.gz
+Tue Sep 27 18:28:29 2022 - INFO  - End to run test.
+Tue Sep 27 18:28:30 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 18:28:31 2022 - INFO  - Need't to restore the tet environment.
+Tue Sep 27 18:29:24 2022 - INFO  - End to restore the test environment.

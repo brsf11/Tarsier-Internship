@@ -1,0 +1,15 @@
+Tue Sep 27 17:25:56 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 17:26:34 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 17:26:35 2022 - INFO  - Start testing...
+     Active: active (exited) since Tue 2022-09-27 17:26:35 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (exited) since Tue 2022-09-27 17:26:48 CST; 6s ago
+/etc/systemd/system/local-fs.target.wants/readonly-root.service
+Removed /etc/systemd/system/local-fs.target.wants/readonly-root.service.
+find: ‘/etc/systemd/system/local-fs.target.wants/readonly-root.service’: No such file or directory
+Failed to reload readonly-root.service: Job type reload is not applicable for unit readonly-root.service.
+     Active: active (exited) since Tue 2022-09-27 17:26:48 CST; 15s ago
+Tue Sep 27 17:27:04 2022 - INFO  - Finish test!
+Tue Sep 27 17:27:05 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 17:27:05 2022 - INFO  - start environment cleanup.
+Tue Sep 27 17:27:29 2022 - INFO  - Finish environment cleanup!

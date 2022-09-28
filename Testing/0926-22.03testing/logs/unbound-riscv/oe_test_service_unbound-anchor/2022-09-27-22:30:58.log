@@ -1,0 +1,7 @@
+Tue Sep 27 22:31:01 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 22:31:02 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 22:31:03 2022 - INFO  - Start testing...
+Tue Sep 27 22:31:04 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Tue Sep 27 22:31:05 2022 - INFO  - Finish test!
+Tue Sep 27 22:31:06 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 22:31:07 2022 - INFO  - oe_test_service_unbound-anchor.sh post_test

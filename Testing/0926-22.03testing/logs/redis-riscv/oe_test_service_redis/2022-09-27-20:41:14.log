@@ -1,0 +1,15 @@
+Tue Sep 27 20:41:17 2022 - INFO  - Start environmental preparation.
+Tue Sep 27 20:42:05 2022 - INFO  - End of environmental preparation!
+Tue Sep 27 20:42:06 2022 - INFO  - Start testing...
+     Active: active (running) since Tue 2022-09-27 20:42:06 CST; 5s ago
+     Active: inactive (dead)
+     Active: active (running) since Tue 2022-09-27 20:42:18 CST; 6s ago
+/etc/systemd/system/multi-user.target.wants/redis.service
+Removed /etc/systemd/system/multi-user.target.wants/redis.service.
+find: ‘/etc/systemd/system/multi-user.target.wants/redis.service’: No such file or directory
+Failed to reload redis.service: Job type reload is not applicable for unit redis.service.
+     Active: active (running) since Tue 2022-09-27 20:42:18 CST; 15s ago
+Tue Sep 27 20:42:34 2022 - INFO  - Finish test!
+Tue Sep 27 20:42:35 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 20:42:35 2022 - INFO  - start environment cleanup.
+Tue Sep 27 20:42:51 2022 - INFO  - Finish environment cleanup!

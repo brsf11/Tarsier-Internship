@@ -1,0 +1,20 @@
+Tue Sep 27 16:35:15 2022 - INFO  - Start to prepare the test environment.
+Tue Sep 27 16:36:57 2022 - INFO  - End to prepare the test environment.
+Tue Sep 27 16:36:58 2022 - INFO  - Start to run test.
+Usage: cjb2 [options] <input-pbm-or-tiff> <output-djvu>
+cjb2: 788 runs.
+cjb2: 68 ccs after preprocessing.
+cjb2: 44 ccs after merging/splitting.
+cjb2: 42 shapes after matching (2 are cross-coded).
+Usage: cpaldjvu [options] <inputppmfile> <outputdjvufile>
+cpaldjvu: image 256x144 quantized to 256 colors.
+cpaldjvu: background color is #006f83.
+cpaldjvu: 18309 color runs.
+cpaldjvu: 6864 ccs.
+cpaldjvu: 2918 ccs after merging/splitting.
+cpaldjvu: 2059 shapes after matching (961 are cross-coded).
+Usage: csepdjvu <...options_or_separatedfiles...> <outputdjvufile>
+Tue Sep 27 16:37:03 2022 - INFO  - End to run test.
+Tue Sep 27 16:37:04 2022 - INFO  - succeed to execute the case.
+Tue Sep 27 16:37:05 2022 - INFO  - Start to restore the test environment.
+Tue Sep 27 16:37:29 2022 - INFO  - End to restore the test environment.
