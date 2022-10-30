@@ -1,0 +1,36 @@
+Wed Oct 26 21:58:05 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:58:05 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:58:05 2022 - INFO  - Start to run test.
+Job for tuned.service failed because the control process exited with error code.
+See "systemctl status tuned.service" and "journalctl -xe" for details.
+Wed Oct 26 21:58:05 2022 - ERROR - oe_test_disk_tuned_disable.sh line 29
+Wed Oct 26 21:58:05 2022 - ERROR - oe_test_disk_tuned_disable.sh line 32
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/tuned/utils/global_config.py", line 50, in load_config
+    with open(file_name) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/etc/tuned/tuned-main.conf'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/sbin/tuned-adm", line 50, in <module>
+    config = GlobalConfig()
+  File "/usr/lib/python3.6/site-packages/tuned/utils/global_config.py", line 21, in __init__
+    self.load_config(file_name=config_file)
+  File "/usr/lib/python3.6/site-packages/tuned/utils/global_config.py", line 65, in load_config
+    raise TunedException("Global TuneD configuration file '%s' not found." % file_name)
+tuned.exceptions.TunedException: Global TuneD configuration file '/etc/tuned/tuned-main.conf' not found.
+Wed Oct 26 21:58:05 2022 - ERROR - oe_test_disk_tuned_disable.sh line 34
+Removed /etc/systemd/system/multi-user.target.wants/tuned.service.
+Wed Oct 26 21:58:05 2022 - ERROR - oe_test_disk_tuned_disable.sh line 40
+Wed Oct 26 21:58:05 2022 - INFO  - End to run test.
+Wed Oct 26 21:58:05 2022 - ERROR - failed to execute the case.
+Wed Oct 26 21:58:05 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:58:05 2022 - WARN  - no thing to do.
+Wed Oct 26 21:58:05 2022 - INFO  - End to restore the test environment.

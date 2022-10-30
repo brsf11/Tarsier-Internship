@@ -1,0 +1,6 @@
+Wed Oct 26 22:08:00 2022 - INFO  - Start executing testcase.
+raid0                  20480  0
+Wed Oct 26 22:08:01 2022 - INFO  - End of testcase execution.
+Wed Oct 26 22:08:01 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:08:01 2022 - INFO  - start environment cleanup.
+Wed Oct 26 22:08:01 2022 - INFO  - Finish environment cleanup.

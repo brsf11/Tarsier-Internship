@@ -1,0 +1,12 @@
+Wed Oct 26 21:58:20 2022 - INFO  - Start environment preparation.
+Wed Oct 26 21:58:27 2022 - INFO  - Environmental preparation is over.
+Wed Oct 26 21:58:27 2022 - INFO  - Start executing testcase!
+testgroup1:x:6666:
+testgroup1:x:8888:
+testgroup2:x:8888:
+testgroup2:x:8888:testuser1
+Usage: groupmod [options] GROUP
+Wed Oct 26 21:58:31 2022 - INFO  - End of testcase execution!
+Wed Oct 26 21:58:31 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:58:31 2022 - INFO  - start environment cleanup.
+Wed Oct 26 21:58:36 2022 - INFO  - Finish environment cleanup.

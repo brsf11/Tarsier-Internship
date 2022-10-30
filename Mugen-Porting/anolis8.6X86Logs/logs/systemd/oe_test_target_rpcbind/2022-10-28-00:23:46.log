@@ -1,0 +1,7 @@
+Fri Oct 28 00:23:46 2022 - INFO  - Start to run test.
+Failed to restart rpcbind.target: Operation refused, unit rpcbind.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to start rpcbind.target: Operation refused, unit rpcbind.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Fri Oct 28 00:23:47 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:23:47 2022 - INFO  - End of the test.
+Fri Oct 28 00:23:47 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:23:47 2022 - INFO  - oe_test_target_rpcbind.sh post_test

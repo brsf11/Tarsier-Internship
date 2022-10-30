@@ -1,0 +1,18 @@
+Fri Oct 28 00:07:10 2022 - INFO  - Start environmental preparation.
+Fri Oct 28 00:07:10 2022 - INFO  - End of environmental preparation!
+Fri Oct 28 00:07:10 2022 - INFO  - Start testing...
+   Active: active (running) since Fri 2022-10-28 00:07:11 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:07:16 CST; 5s ago
+   Active: active (running) since Fri 2022-10-28 00:07:21 CST; 5s ago
+find: ‘/etc/systemd/system/multi-user.target.wants/systemd-resolved.service’: No such file or directory
+find: ‘/etc/systemd/system/dbus-org.freedesktop.resolve1.service’: No such file or directory
+Created symlink /etc/systemd/system/dbus-org.freedesktop.resolve1.service → /usr/lib/systemd/system/systemd-resolved.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/systemd-resolved.service → /usr/lib/systemd/system/systemd-resolved.service.
+/etc/systemd/system/multi-user.target.wants/systemd-resolved.service
+/etc/systemd/system/dbus-org.freedesktop.resolve1.service
+Failed to reload systemd-resolved.service: Job type reload is not applicable for unit systemd-resolved.service.
+   Active: active (running) since Fri 2022-10-28 00:07:21 CST; 5s ago
+Fri Oct 28 00:07:27 2022 - INFO  - Finish test!
+Fri Oct 28 00:07:27 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:07:27 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:07:27 2022 - INFO  - Finish environment cleanup!

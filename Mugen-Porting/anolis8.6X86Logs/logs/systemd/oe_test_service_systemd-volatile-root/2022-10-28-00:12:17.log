@@ -1,0 +1,6 @@
+Fri Oct 28 00:12:17 2022 - INFO  - Start testing...
+Fri Oct 28 00:12:17 2022 - INFO  - This service runs only in the initial RAM disk ("initrd"), before the system transitions to the host's root directory.
+Fri Oct 28 00:12:17 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:12:17 2022 - INFO  - Finish test!
+Fri Oct 28 00:12:17 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:12:17 2022 - INFO  - oe_test_service_systemd-volatile-root.sh post_test

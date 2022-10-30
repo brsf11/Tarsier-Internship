@@ -1,0 +1,1034 @@
+Wed Oct 26 21:53:46 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:53:46 2022 - INFO  - Start to run test.
+===========loop 0==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 1==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 2==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 3==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 4==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 5==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 6==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 7==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:46 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 8==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 9==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 10==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 11==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 12==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 13==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 14==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 15==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 16==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:47 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:47 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 17==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 18==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 19==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 20==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 21==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 22==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 23==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 24==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 25==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 26==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:48 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:48 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 27==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 28==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 29==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 30==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 31==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 32==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 33==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 34==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 35==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 36==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:49 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 37==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 38==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 39==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 40==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 41==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 42==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 43==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 44==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 45==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:50 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:50 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 46==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 47==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 48==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 49==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 50==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 21:53:51 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:51 2022 - ERROR - oe_test_reboot.sh line 44
+Wed Oct 26 21:53:51 2022 - INFO  - End to run test.
+Wed Oct 26 21:53:51 2022 - ERROR - failed to execute the case.
+Wed Oct 26 21:53:51 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:53:51 2022 - WARN  - no thing to do.
+Wed Oct 26 21:53:51 2022 - INFO  - End to restore the test environment.

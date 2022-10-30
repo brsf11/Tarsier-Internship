@@ -1,0 +1,7 @@
+Fri Oct 28 00:22:36 2022 - INFO  - Start to run test.
+Failed to restart network-pre.target: Operation refused, unit network-pre.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to start network-pre.target: Operation refused, unit network-pre.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Fri Oct 28 00:22:36 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:22:36 2022 - INFO  - End of the test.
+Fri Oct 28 00:22:36 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:22:36 2022 - INFO  - oe_test_target_network-pre.sh post_test

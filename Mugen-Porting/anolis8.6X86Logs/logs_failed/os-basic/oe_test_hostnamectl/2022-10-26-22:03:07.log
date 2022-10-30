@@ -1,0 +1,38 @@
+Wed Oct 26 22:03:08 2022 - INFO  - Start to pre test.
+Wed Oct 26 22:03:08 2022 - INFO  - Start to pre test.
+Wed Oct 26 22:03:08 2022 - INFO  - Start to run test.
+   Static hostname: localhost.localdomain
+Transient hostname: sc.10086.cn
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: da1bcecd0dea4c3e968e27629d75256b
+           Boot ID: c99849385c684d49a2e69c1370525b54
+    Virtualization: oracle
+  Operating System: Anolis OS 8.6
+            Kernel: Linux 4.19.91-26.an8.x86_64
+      Architecture: x86-64
+   Static hostname: my_host
+   Pretty hostname: Tester's notebook
+spawn hostnamectl set-hostname -H root@ new_host
+ssh: Could not resolve hostname : Name or service not known
+Could not set property: Transport endpoint is not connected
+expect: spawn id exp6 not open
+    while executing
+"expect eof"
+spawn hostnamectl status -H root@
+ssh: Could not resolve hostname : Name or service not known
+Failed to query system properties: Transport endpoint is not connected
+expect: spawn id exp6 not open
+    while executing
+"expect eof"
+Wed Oct 26 22:03:08 2022 - ERROR - oe_test_hostnamectl.sh line 76
+Wed Oct 26 22:03:08 2022 - INFO  - End to run test.
+Wed Oct 26 22:03:08 2022 - ERROR - failed to execute the case.
+Wed Oct 26 22:03:08 2022 - INFO  - Start to restore the test environment.
+spawn hostnamectl set-hostname -H root@ sc.10086.cn
+ssh: Could not resolve hostname : Name or service not known
+Could not set property: Transport endpoint is not connected
+expect: spawn id exp6 not open
+    while executing
+"expect eof"
+Wed Oct 26 22:03:08 2022 - INFO  - End to restore the test environment.

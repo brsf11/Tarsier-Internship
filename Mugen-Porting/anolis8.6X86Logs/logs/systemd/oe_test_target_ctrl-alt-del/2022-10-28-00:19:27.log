@@ -1,0 +1,8 @@
+Fri Oct 28 00:19:28 2022 - INFO  - Start testing...
+Fri Oct 28 00:19:28 2022 - INFO  - systemd starts this target whenever Control+Alt+Del is pressed on the console.
+find: ‘/etc/systemd/system/ctrl-alt-del.target’: No such file or directory
+Created symlink /etc/systemd/system/ctrl-alt-del.target → /usr/lib/systemd/system/reboot.target.
+/etc/systemd/system/ctrl-alt-del.target
+Fri Oct 28 00:19:28 2022 - INFO  - Finish test!
+Fri Oct 28 00:19:28 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:19:28 2022 - INFO  - oe_test_target_ctrl-alt-del.sh post_test

@@ -1,0 +1,10 @@
+Fri Oct 28 00:12:41 2022 - INFO  - Start testing...
+   Active: active (listening) since Fri 2022-10-28 00:12:41 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:12:46 CST; 5s ago
+   Active: active (listening) since Fri 2022-10-28 00:12:51 CST; 5s ago
+Fri Oct 28 00:12:56 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-coredump.socket: Job type reload is not applicable for unit systemd-coredump.socket.
+   Active: active (listening) since Fri 2022-10-28 00:12:51 CST; 5s ago
+Fri Oct 28 00:12:56 2022 - INFO  - Finish test!
+Fri Oct 28 00:12:56 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:12:56 2022 - INFO  - oe_test_socket_systemd-coredump.sh post_test

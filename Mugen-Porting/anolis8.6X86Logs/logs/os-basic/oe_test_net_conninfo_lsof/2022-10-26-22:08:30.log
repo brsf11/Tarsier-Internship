@@ -1,0 +1,45 @@
+Wed Oct 26 22:08:30 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 22:08:30 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 22:08:30 2022 - INFO  - Start to run test.
+systemd      1            root  125u  IPv4  12920      0t0  UDP *:sunrpc 
+systemd      1            root  127u  IPv6  12922      0t0  UDP *:sunrpc 
+systemd-r  906 systemd-resolve   12u  IPv4  26794      0t0  UDP *:hostmon 
+systemd-r  906 systemd-resolve   14u  IPv6  26797      0t0  UDP *:hostmon 
+systemd-r  906 systemd-resolve   17u  IPv4  26800      0t0  UDP 127.0.0.53:domain 
+rpcbind    910             rpc    5u  IPv4  12920      0t0  UDP *:sunrpc 
+rpcbind    910             rpc    7u  IPv6  12922      0t0  UDP *:sunrpc 
+avahi-dae  926           avahi   15u  IPv4  24933      0t0  UDP *:mdns 
+avahi-dae  926           avahi   16u  IPv6  24934      0t0  UDP *:mdns 
+avahi-dae  926           avahi   17u  IPv4  24935      0t0  UDP *:37910 
+avahi-dae  926           avahi   18u  IPv6  24936      0t0  UDP *:38114 
+NetworkMa 1076            root   28u  IPv4  26539      0t0  UDP sc.10086.cn:bootpc->_gateway:bootps 
+dnsmasq   1668         dnsmasq    3u  IPv4  36930      0t0  UDP *:bootps 
+dnsmasq   1668         dnsmasq    5u  IPv4  36933      0t0  UDP sc.10086.cn:domain 
+sshd    1758 root    5u  IPv4  35276      0t0  TCP sc.10086.cn:ssh->sc.10086.cn:35854 (ESTABLISHED)
+sshd    1760 root    5u  IPv4  35276      0t0  TCP sc.10086.cn:ssh->sc.10086.cn:35854 (ESTABLISHED)
+sshd    5990 root    4u  IPv4  48433      0t0  TCP *:ssh (LISTEN)
+sshd    5990 root    6u  IPv6  48435      0t0  TCP *:ssh (LISTEN)
+systemd      1            root  124u  IPv4  12919      0t0  TCP *:sunrpc (LISTEN)
+systemd      1            root  126u  IPv6  12921      0t0  TCP *:sunrpc (LISTEN)
+systemd-r  906 systemd-resolve   13u  IPv4  26795      0t0  TCP *:hostmon (LISTEN)
+systemd-r  906 systemd-resolve   15u  IPv6  26798      0t0  TCP *:hostmon (LISTEN)
+rpcbind    910             rpc    4u  IPv4  12919      0t0  TCP *:sunrpc (LISTEN)
+rpcbind    910             rpc    6u  IPv6  12921      0t0  TCP *:sunrpc (LISTEN)
+cupsd     1086            root    9u  IPv6  23225      0t0  TCP localhost:ipp (LISTEN)
+cupsd     1086            root   10u  IPv4  23226      0t0  TCP localhost:ipp (LISTEN)
+dnsmasq   1668         dnsmasq    6u  IPv4  36934      0t0  TCP sc.10086.cn:domain (LISTEN)
+sshd      1758            root    5u  IPv4  35276      0t0  TCP sc.10086.cn:ssh->192.168.56.1:35854 (ESTABLISHED)
+sshd      1760            root    5u  IPv4  35276      0t0  TCP sc.10086.cn:ssh->192.168.56.1:35854 (ESTABLISHED)
+sshd      5990            root    4u  IPv4  48433      0t0  TCP *:ssh (LISTEN)
+sshd      5990            root    6u  IPv6  48435      0t0  TCP *:ssh (LISTEN)
+Wed Oct 26 22:08:51 2022 - INFO  - End to run test.
+Wed Oct 26 22:08:51 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:08:51 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 22:08:51 2022 - WARN  - no thing to do.
+Wed Oct 26 22:08:51 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,20 @@
+Fri Oct 28 00:00:07 2022 - INFO  - Start environment preparation.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:00:07 2022 - INFO  - Finish environment preparation!
+Fri Oct 28 00:00:07 2022 - INFO  - Start testing...
+   Active: active (exited) since Fri 2022-10-28 00:00:07 CST; 5s ago
+   Active: inactive (dead)
+   Active: active (exited) since Fri 2022-10-28 00:00:17 CST; 5s ago
+Fri Oct 28 00:00:23 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload quotaon.service: Job type reload is not applicable for unit quotaon.service.
+   Active: active (exited) since Fri 2022-10-28 00:00:17 CST; 5s ago
+Fri Oct 28 00:00:23 2022 - INFO  - Finish test!
+Fri Oct 28 00:00:23 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:00:23 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:00:23 2022 - WARN  - no thing to do.
+Fri Oct 28 00:00:23 2022 - INFO  - Finish environment cleanup!

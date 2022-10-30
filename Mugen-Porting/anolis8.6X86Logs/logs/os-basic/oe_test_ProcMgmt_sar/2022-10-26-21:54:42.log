@@ -1,0 +1,30 @@
+Wed Oct 26 21:54:42 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:54:42 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:54:42 2022 - INFO  - Start to run test.
+Failed to start sysstat.service: Unit sysstat.service not found.
+Unit sysstat.service could not be found.
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 31
+oe_test_ProcMgmt_sar.sh: line 32: sar: command not found
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 33
+oe_test_ProcMgmt_sar.sh: line 34: sar: command not found
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 35
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 37
+oe_test_ProcMgmt_sar.sh: line 38: sar: command not found
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 39
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 41
+oe_test_ProcMgmt_sar.sh: line 42: sar: command not found
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 43
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 45
+oe_test_ProcMgmt_sar.sh: line 46: sar: command not found
+Wed Oct 26 21:54:42 2022 - ERROR - oe_test_ProcMgmt_sar.sh line 47
+Wed Oct 26 21:54:42 2022 - INFO  - End to run test.
+Wed Oct 26 21:54:42 2022 - ERROR - failed to execute the case.
+Wed Oct 26 21:54:43 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:54:43 2022 - WARN  - no thing to do.
+Wed Oct 26 21:54:43 2022 - INFO  - End to restore the test environment.

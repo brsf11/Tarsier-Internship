@@ -1,0 +1,14 @@
+Wed Oct 26 22:03:09 2022 - INFO  - Start executing testcase.
+kexec-tools-2.0.21-1.3.an8.x86_64
+Generating grub configuration file ...
+/etc/grub.d/00_tuned: line 26: /etc/tuned/bootcmdline: No such file or directory
+Wed Oct 26 22:03:10 2022 - ERROR - oe_test_kernel_kdump.sh line 26
+   Active: active (exited) since Wed 2022-10-26 21:43:04 CST; 20min ago
+Failed to stop kdump.serviceactive.service: Unit kdump.serviceactive.service not loaded.
+Removed /etc/systemd/system/multi-user.target.wants/kdump.service.
+disabled
+Wed Oct 26 22:03:10 2022 - INFO  - End of testcase execution.
+Wed Oct 26 22:03:10 2022 - ERROR - failed to execute the case.
+Wed Oct 26 22:03:10 2022 - INFO  - start environment cleanup.
+Created symlink /etc/systemd/system/multi-user.target.wants/kdump.service → /usr/lib/systemd/system/kdump.service.
+Wed Oct 26 22:03:10 2022 - INFO  - Finish environment cleanup.

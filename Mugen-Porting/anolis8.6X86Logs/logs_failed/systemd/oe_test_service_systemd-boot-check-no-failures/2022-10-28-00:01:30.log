@@ -1,0 +1,85 @@
+Fri Oct 28 00:01:31 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:31 2022 - INFO  - End of environmental preparation!
+Fri Oct 28 00:01:31 2022 - INFO  - Start testing...
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:36 2022 - ERROR - systemd-boot-check-no-failures.service restart failed
+Fri Oct 28 00:01:36 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 35
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:41 2022 - ERROR - systemd-boot-check-no-failures.service stop failed
+Fri Oct 28 00:01:41 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 39
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:46 2022 - ERROR - systemd-boot-check-no-failures.service start failed
+Fri Oct 28 00:01:46 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 43
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:46 2022 - ERROR - systemd-boot-check-no-failures.service enable failed
+Fri Oct 28 00:01:46 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 46
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:46 2022 - ERROR - systemd-boot-check-no-failures.service disable failed
+Fri Oct 28 00:01:46 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 49
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:47 2022 - ERROR - Job type reload is not applicable for unit systemd-boot-check-no-failures.service
+Fri Oct 28 00:01:47 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 51
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:47 2022 - ERROR - Check systemd-boot-check-no-failures.service status failed
+Fri Oct 28 00:01:47 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 53
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:47 2022 - ERROR - There is an error message for the log of systemd-boot-check-no-failures.service
+Fri Oct 28 00:01:47 2022 - ERROR - oe_test_service_systemd-boot-check-no-failures.sh line 56
+Fri Oct 28 00:01:47 2022 - INFO  - Finish test!
+Fri Oct 28 00:01:47 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:01:47 2022 - INFO  - Start environment cleanup.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Fri Oct 28 00:01:47 2022 - INFO  - Finish environment cleanup!

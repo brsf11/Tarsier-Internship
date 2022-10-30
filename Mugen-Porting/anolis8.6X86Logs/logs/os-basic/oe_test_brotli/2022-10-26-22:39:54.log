@@ -1,0 +1,9 @@
+Wed Oct 26 22:39:54 2022 - INFO  - Start environmental preparation.
+Wed Oct 26 22:39:54 2022 - INFO  - End of environmental preparation!
+Wed Oct 26 22:39:54 2022 - INFO  - Start to run test.
+test.tar
+test.tar.br
+Wed Oct 26 22:39:54 2022 - INFO  - End to run test.
+Wed Oct 26 22:39:54 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:39:54 2022 - INFO  - start environment cleanup.
+Wed Oct 26 22:39:54 2022 - INFO  - Finish environment cleanup!

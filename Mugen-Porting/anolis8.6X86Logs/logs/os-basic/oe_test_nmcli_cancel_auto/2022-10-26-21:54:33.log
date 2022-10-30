@@ -1,0 +1,10 @@
+Wed Oct 26 21:54:34 2022 - INFO  - Start to run test.
+nameserver 183.221.253.100
+nameserver 211.137.96.205
+nameserver 183.221.253.100
+nameserver 211.137.96.205
+## test
+Wed Oct 26 21:54:34 2022 - INFO  - End to run test.
+Wed Oct 26 21:54:34 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:54:34 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:54:35 2022 - INFO  - End to restore the test environment.

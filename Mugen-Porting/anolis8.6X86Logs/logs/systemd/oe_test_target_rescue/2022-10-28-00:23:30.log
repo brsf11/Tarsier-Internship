@@ -1,0 +1,11 @@
+Fri Oct 28 00:23:30 2022 - INFO  - Start to run test.
+   Active: active since Fri 2022-10-28 00:23:30 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:23:36 CST; 5s ago
+   Active: active since Fri 2022-10-28 00:23:41 CST; 5s ago
+Fri Oct 28 00:23:46 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload rescue.target: Job type reload is not applicable for unit rescue.target.
+   Active: active since Fri 2022-10-28 00:23:41 CST; 5s ago
+Fri Oct 28 00:23:46 2022 - INFO  - End of the test.
+Fri Oct 28 00:23:46 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:23:46 2022 - INFO  - Start environmental preparation.
+Fri Oct 28 00:23:46 2022 - INFO  - End of environmental preparation!

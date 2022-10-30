@@ -1,0 +1,21 @@
+Thu Oct 27 23:58:41 2022 - INFO  - Start testing...
+   Active: active (running) since Thu 2022-10-27 23:58:41 CST; 5s ago
+   Active: inactive (dead)
+   Active: active (running) since Thu 2022-10-27 23:58:51 CST; 5s ago
+find: ‘/etc/systemd/system/dbus-org.freedesktop.timedate1.service’: No such file or directory
+Failed to enable unit: Unit file /etc/systemd/system/systemd-timedated.service is masked.
+find: ‘/etc/systemd/system/dbus-org.freedesktop.timedate1.service’: No such file or directory
+Thu Oct 27 23:58:56 2022 - ERROR - dbus-org.freedesktop.timedate1.service enable failed
+Thu Oct 27 23:58:56 2022 - ERROR - ../common/common_lib.sh line 70
+Failed to start dbus-org.freedesktop.timedate1.service: Unit systemd-timedated.service failed to loaded properly: File exists.
+See system logs and 'systemctl status dbus-org.freedesktop.timedate1.service' for details.
+Thu Oct 27 23:58:56 2022 - ERROR - Job type reload is not applicable for unit dbus-org.freedesktop.timedate1.service
+Thu Oct 27 23:58:56 2022 - ERROR - ../common/common_lib.sh line 91
+   Active: inactive (dead)
+Thu Oct 27 23:58:56 2022 - ERROR - dbus-org.freedesktop.timedate1.service reload causes the service status to change
+Thu Oct 27 23:58:56 2022 - ERROR - ../common/common_lib.sh line 95
+Thu Oct 27 23:58:56 2022 - INFO  - Finish test!
+Thu Oct 27 23:58:56 2022 - ERROR - failed to execute the case.
+Thu Oct 27 23:58:56 2022 - INFO  - Start environment cleanup.
+Failed to stop dbus-org.freedesktop.timedate1.service: Unit systemd-timedated.service not loaded.
+Thu Oct 27 23:58:56 2022 - INFO  - Finish environment cleanup!

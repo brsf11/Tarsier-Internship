@@ -1,0 +1,10 @@
+Fri Oct 28 00:18:39 2022 - INFO  - Start testing...
+   Active: active since Fri 2022-10-28 00:18:39 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:18:44 CST; 5s ago
+   Active: active since Fri 2022-10-28 00:18:49 CST; 5s ago
+Fri Oct 28 00:18:54 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload basic.target: Job type reload is not applicable for unit basic.target.
+   Active: active since Fri 2022-10-28 00:18:49 CST; 5s ago
+Fri Oct 28 00:18:54 2022 - INFO  - Finish test!
+Fri Oct 28 00:18:54 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:18:54 2022 - INFO  - oe_test_target_basic.sh post_test

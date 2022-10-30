@@ -1,0 +1,20 @@
+Wed Oct 26 21:54:04 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:54:04 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:54:04 2022 - INFO  - Start to run test.
+Failed to start pmcd.service: Unit pmcd.service not found.
+Wed Oct 26 21:54:04 2022 - ERROR - oe_test_performance_monitor_pcp.sh line 30
+Unit pmcd.service could not be found.
+Wed Oct 26 21:54:04 2022 - ERROR - oe_test_performance_monitor_pcp.sh line 32
+oe_test_performance_monitor_pcp.sh: line 33: pcp: command not found
+Wed Oct 26 21:54:04 2022 - ERROR - oe_test_performance_monitor_pcp.sh line 34
+Wed Oct 26 21:54:04 2022 - INFO  - End to run test.
+Wed Oct 26 21:54:04 2022 - ERROR - failed to execute the case.
+Wed Oct 26 21:54:04 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:54:04 2022 - WARN  - no thing to do.
+Wed Oct 26 21:54:04 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,11 @@
+Fri Oct 28 00:35:07 2022 - INFO  - Start to run test.
+   Active: active since Fri 2022-10-28 00:35:08 CST; 5s ago
+   Active: inactive (dead)
+   Active: active since Fri 2022-10-28 00:35:18 CST; 5s ago
+Fri Oct 28 00:35:23 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload system-update.target: Job type reload is not applicable for unit system-update.target.
+   Active: active since Fri 2022-10-28 00:35:18 CST; 5s ago
+Fri Oct 28 00:35:23 2022 - INFO  - End of the test.
+Fri Oct 28 00:35:23 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:35:23 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:35:23 2022 - INFO  - Finish environment cleanup!

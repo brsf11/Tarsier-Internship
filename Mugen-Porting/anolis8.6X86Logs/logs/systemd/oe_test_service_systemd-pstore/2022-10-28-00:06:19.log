@@ -1,0 +1,7 @@
+Fri Oct 28 00:06:20 2022 - INFO  - Start testing...
+Unit systemd-pstore.service could not be found.
+Failed to get unit file state for systemd-pstore.service: No such file or directory
+Fri Oct 28 00:06:20 2022 - INFO  - Unit is indirect, ignoring.
+Fri Oct 28 00:06:20 2022 - INFO  - Finish test!
+Fri Oct 28 00:06:20 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:06:20 2022 - INFO  - oe_test_service_systemd-pstore.sh post_test

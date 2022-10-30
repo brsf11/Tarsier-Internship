@@ -1,0 +1,8 @@
+Thu Oct 27 23:59:31 2022 - INFO  - Start environment preparation.
+Thu Oct 27 23:59:31 2022 - INFO  - Finish environment cleanup!
+Thu Oct 27 23:59:31 2022 - INFO  - Start testing...
+Thu Oct 27 23:59:31 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Thu Oct 27 23:59:31 2022 - INFO  - Finish test!
+Thu Oct 27 23:59:31 2022 - INFO  - succeed to execute the case.
+Thu Oct 27 23:59:31 2022 - INFO  - Start environment cleanup.
+Thu Oct 27 23:59:31 2022 - INFO  - Finish environment cleanup!

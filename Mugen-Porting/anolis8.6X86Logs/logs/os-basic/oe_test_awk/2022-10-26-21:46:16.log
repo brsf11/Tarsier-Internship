@@ -1,0 +1,18 @@
+Wed Oct 26 21:46:16 2022 - INFO  - Start to prepare the test environment.
+Wed Oct 26 21:46:16 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:46:17 2022 - INFO  - Start to run test.
+root
+cpuid
+cpuid
+cpuid
+cpuid
+cpuid
+cpuid
+cpuid
+cpuid
+Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: awk [POSIX or GNU style options] [--] 'program' file ...
+Wed Oct 26 21:46:17 2022 - INFO  - End to run test.
+Wed Oct 26 21:46:17 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:46:17 2022 - INFO  - start environment cleanup.
+Wed Oct 26 21:46:17 2022 - INFO  - Finish environment cleanup!

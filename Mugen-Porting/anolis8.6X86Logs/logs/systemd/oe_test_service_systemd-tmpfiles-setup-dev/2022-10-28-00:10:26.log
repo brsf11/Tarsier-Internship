@@ -1,0 +1,10 @@
+Fri Oct 28 00:10:27 2022 - INFO  - Start testing...
+   Active: active (exited) since Fri 2022-10-28 00:10:27 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:10:32 CST; 5s ago
+   Active: active (exited) since Fri 2022-10-28 00:10:37 CST; 5s ago
+Fri Oct 28 00:10:42 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-tmpfiles-setup-dev.service: Job type reload is not applicable for unit systemd-tmpfiles-setup-dev.service.
+   Active: active (exited) since Fri 2022-10-28 00:10:37 CST; 5s ago
+Fri Oct 28 00:10:42 2022 - INFO  - Finish test!
+Fri Oct 28 00:10:42 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:10:42 2022 - INFO  - oe_test_service_systemd-tmpfiles-setup-dev.sh post_test

@@ -1,0 +1,13 @@
+Fri Oct 28 00:21:48 2022 - INFO  - Start to run test.
+   Active: active since Fri 2022-10-28 00:21:48 CST; 5s ago
+   Active: inactive (dead)
+   Active: active since Fri 2022-10-28 00:21:58 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/machines.target
+Removed /etc/systemd/system/multi-user.target.wants/machines.target.
+find: ‘/etc/systemd/system/multi-user.target.wants/machines.target’: No such file or directory
+Failed to reload machines.target: Job type reload is not applicable for unit machines.target.
+   Active: active since Fri 2022-10-28 00:21:58 CST; 5s ago
+Fri Oct 28 00:22:03 2022 - INFO  - End of the test.
+Fri Oct 28 00:22:03 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:22:03 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:22:03 2022 - INFO  - Finish environment cleanup!

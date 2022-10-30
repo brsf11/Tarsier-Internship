@@ -1,0 +1,11 @@
+Wed Oct 26 21:54:46 2022 - INFO  - Start to prepare the test environment.
+Wed Oct 26 21:54:46 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:54:46 2022 - INFO  - Start to run test.
+no crontab for root
+Wed Oct 26 23:59:50 CST 2022
+hello world
+Thu Oct 27 00:00:50 2022 - INFO  - End to run test.
+Thu Oct 27 00:00:50 2022 - INFO  - succeed to execute the case.
+Thu Oct 27 00:00:50 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:55:46 CST 2022
+Wed Oct 26 21:55:46 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,19 @@
+Wed Oct 26 21:59:00 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Failed to start ntpd.service: Unit ntpd.service not found.
+Wed Oct 26 21:59:01 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:59:01 2022 - INFO  - Start to run test.
+   Active: active (running) since Wed 2022-10-26 21:59:01 CST; 48ms ago
+Failed to restart ntpd.service: Unit ntpd.service not found.
+oe_test_chrony_chronyc_ntpstat.sh: line 39: ntpstat: command not found
+Wed Oct 26 21:59:04 2022 - ERROR - oe_test_chrony_chronyc_ntpstat.sh line 40
+Wed Oct 26 21:59:04 2022 - INFO  - End to run test.
+Wed Oct 26 21:59:04 2022 - ERROR - failed to execute the case.
+Wed Oct 26 21:59:04 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:59:05 2022 - WARN  - no thing to do.
+Wed Oct 26 21:59:05 2022 - INFO  - End to restore the test environment.

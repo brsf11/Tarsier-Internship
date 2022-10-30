@@ -1,0 +1,10 @@
+Thu Oct 27 23:57:51 2022 - INFO  - Start testing...
+   Active: active (running) since Thu 2022-10-27 23:57:52 CST; 5s ago
+   Active: inactive (dead) since Thu 2022-10-27 23:57:58 CST; 5s ago
+   Active: active (running) since Thu 2022-10-27 23:58:03 CST; 5s ago
+Thu Oct 27 23:58:08 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload dbus-org.freedesktop.login1.service: Job type reload is not applicable for unit systemd-logind.service.
+   Active: active (running) since Thu 2022-10-27 23:58:03 CST; 5s ago
+Thu Oct 27 23:58:08 2022 - INFO  - Finish test!
+Thu Oct 27 23:58:08 2022 - INFO  - succeed to execute the case.
+Thu Oct 27 23:58:08 2022 - INFO  - oe_test_service_dbus-org.freedesktop.login1.sh post_test

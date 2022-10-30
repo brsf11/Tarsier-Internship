@@ -1,0 +1,8 @@
+Fri Oct 28 00:22:37 2022 - INFO  - Start to run test.
+   Active: active since Fri 2022-10-28 00:00:25 CST; 22min ago
+Failed to restart network.target: Operation refused, unit network.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to start network.target: Operation refused, unit network.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Fri Oct 28 00:22:37 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:22:37 2022 - INFO  - End of the test.
+Fri Oct 28 00:22:37 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:22:37 2022 - INFO  - oe_test_target_network.sh post_test

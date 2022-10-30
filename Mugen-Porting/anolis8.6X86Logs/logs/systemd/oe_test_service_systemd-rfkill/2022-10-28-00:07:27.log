@@ -1,0 +1,12 @@
+Fri Oct 28 00:07:27 2022 - INFO  - Start environmental preparation.
+A dependency job for systemd-rfkill.service failed. See 'journalctl -xe' for details.
+Fri Oct 28 00:09:03 2022 - INFO  - End of environmental preparation!
+Fri Oct 28 00:09:03 2022 - INFO  - Start testing...
+Fri Oct 28 00:09:03 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Oct 28 00:08:57 sc.10086.cn systemd[1]: Dependency failed for Load/Save RF Kill Switch Status.
+Oct 28 00:08:57 sc.10086.cn systemd[1]: systemd-rfkill.service: Job systemd-rfkill.service/start failed with result 'dependency'.
+Fri Oct 28 00:09:03 2022 - ERROR - There is an error message for the log of systemd-rfkill.service
+Fri Oct 28 00:09:03 2022 - ERROR - ../common/common_lib.sh line 57
+Fri Oct 28 00:09:03 2022 - INFO  - Finish test!
+Fri Oct 28 00:09:03 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:09:03 2022 - INFO  - oe_test_service_systemd-rfkill.sh post_test

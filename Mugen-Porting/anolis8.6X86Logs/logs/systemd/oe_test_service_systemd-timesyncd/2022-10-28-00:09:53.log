@@ -1,0 +1,31 @@
+Fri Oct 28 00:09:54 2022 - INFO  - Start testing...
+Failed to restart systemd-timesyncd.service: Unit systemd-timesyncd.service not found.
+Fri Oct 28 00:09:54 2022 - ERROR - systemd-timesyncd.service restart failed
+Fri Oct 28 00:09:54 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-timesyncd.service could not be found.
+Fri Oct 28 00:09:59 2022 - ERROR - systemd-timesyncd.service restart failed
+Fri Oct 28 00:09:59 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-timesyncd.service: Unit systemd-timesyncd.service not loaded.
+Fri Oct 28 00:09:59 2022 - ERROR - systemd-timesyncd.service stop failed
+Fri Oct 28 00:09:59 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-timesyncd.service could not be found.
+Fri Oct 28 00:10:04 2022 - ERROR - systemd-timesyncd.service stop failed
+Fri Oct 28 00:10:04 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-timesyncd.service: Unit systemd-timesyncd.service not found.
+Fri Oct 28 00:10:04 2022 - ERROR - systemd-timesyncd.service start failed
+Fri Oct 28 00:10:04 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-timesyncd.service could not be found.
+Fri Oct 28 00:10:09 2022 - ERROR - systemd-timesyncd.service start failed
+Fri Oct 28 00:10:09 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-timesyncd.service: No such file or directory
+Fri Oct 28 00:10:09 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-timesyncd.service: Unit systemd-timesyncd.service not found.
+Fri Oct 28 00:10:09 2022 - ERROR - Job type reload is not applicable for unit systemd-timesyncd.service
+Fri Oct 28 00:10:09 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-timesyncd.service could not be found.
+Unit systemd-timesyncd.service could not be found.
+Fri Oct 28 00:10:09 2022 - INFO  - Finish test!
+Fri Oct 28 00:10:09 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:10:09 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-timesyncd.service: Unit systemd-timesyncd.service not loaded.
+Fri Oct 28 00:10:09 2022 - INFO  - Finish environment cleanup!

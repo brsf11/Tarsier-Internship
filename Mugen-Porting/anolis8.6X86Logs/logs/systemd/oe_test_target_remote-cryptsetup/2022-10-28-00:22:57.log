@@ -1,0 +1,13 @@
+Fri Oct 28 00:22:57 2022 - INFO  - Start to run test.
+   Active: active since Fri 2022-10-28 00:22:57 CST; 5s ago
+   Active: inactive (dead)
+   Active: active since Fri 2022-10-28 00:23:07 CST; 5s ago
+/etc/systemd/system/multi-user.target.wants/remote-cryptsetup.target
+Removed /etc/systemd/system/multi-user.target.wants/remote-cryptsetup.target.
+find: ‘/etc/systemd/system/multi-user.target.wants/remote-cryptsetup.target’: No such file or directory
+Failed to reload remote-cryptsetup.target: Job type reload is not applicable for unit remote-cryptsetup.target.
+   Active: active since Fri 2022-10-28 00:23:07 CST; 5s ago
+Fri Oct 28 00:23:13 2022 - INFO  - End of the test.
+Fri Oct 28 00:23:13 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:23:13 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:23:13 2022 - INFO  - Finish environment cleanup!

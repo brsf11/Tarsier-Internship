@@ -1,0 +1,27 @@
+Fri Oct 28 00:26:01 2022 - INFO  - Start to run test.
+A dependency job for swap.target failed. See 'journalctl -xe' for details.
+Fri Oct 28 00:27:14 2022 - ERROR - swap.target restart failed
+Fri Oct 28 00:27:14 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Oct 28 00:27:19 2022 - ERROR - swap.target restart failed
+Fri Oct 28 00:27:19 2022 - ERROR - ../common/common_lib.sh line 37
+   Active: inactive (dead) since Fri 2022-10-28 00:00:24 CST; 26min ago
+A dependency job for swap.target failed. See 'journalctl -xe' for details.
+Fri Oct 28 00:28:54 2022 - ERROR - swap.target start failed
+Fri Oct 28 00:28:54 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Oct 28 00:28:59 2022 - ERROR - swap.target start failed
+Fri Oct 28 00:28:59 2022 - ERROR - ../common/common_lib.sh line 47
+Fri Oct 28 00:28:59 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Oct 28 00:27:14 sc.10086.cn systemd[1]: Dependency failed for Swap.
+Oct 28 00:27:14 sc.10086.cn systemd[1]: swap.target: Job swap.target/start failed with result 'dependency'.
+Oct 28 00:28:54 sc.10086.cn systemd[1]: Dependency failed for Swap.
+Oct 28 00:28:54 sc.10086.cn systemd[1]: swap.target: Job swap.target/start failed with result 'dependency'.
+Fri Oct 28 00:28:59 2022 - ERROR - There is an error message for the log of swap.target
+Fri Oct 28 00:28:59 2022 - ERROR - ../common/common_lib.sh line 28
+A dependency job for swap.target failed. See 'journalctl -xe' for details.
+Failed to reload swap.target: Job type reload is not applicable for unit swap.target.
+   Active: inactive (dead) since Fri 2022-10-28 00:00:24 CST; 30min ago
+Fri Oct 28 00:30:29 2022 - ERROR - swap.target reload causes the service status to change
+Fri Oct 28 00:30:29 2022 - ERROR - ../common/common_lib.sh line 95
+Fri Oct 28 00:30:29 2022 - INFO  - End of the test.
+Fri Oct 28 00:30:29 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:30:29 2022 - INFO  - oe_test_target_swap.sh post_test

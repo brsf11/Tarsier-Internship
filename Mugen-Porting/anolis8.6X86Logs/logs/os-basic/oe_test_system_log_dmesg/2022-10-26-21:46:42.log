@@ -1,0 +1,15 @@
+Wed Oct 26 21:46:43 2022 - INFO  - Start executing testcase.
+[    0.000000] Linux version 4.19.91-26.an8.x86_64 (mockbuild@anolis-build-01.openanolis.cn) (gcc version 8.5.0 20210514 (Anolis 8.5.0-10.0.1) (GCC)) #1 SMP Tue May 24 13:10:09 CST 2022
+[    0.001748] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+[    0.061953] Using ACPI (MADT) for SMP configuration information
+[    0.061958] smpboot: Allowing 8 CPUs, 0 hotplug CPUs
+[    0.093957] Freeing SMP alternatives memory: 36K
+[    0.199016] smpboot: CPU0: Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz (family: 0x6, model: 0xa5, stepping: 0x5)
+[    0.199528] smp: Bringing up secondary CPUs ...
+[    0.199575] x86: Booting SMP configuration:
+[    0.208970] smp: Brought up 1 node, 8 CPUs
+[    0.208970] smpboot: Max logical packages: 1
+[    0.208970] smpboot: Total of 8 processors activated (46465.08 BogoMIPS)
+Wed Oct 26 21:46:43 2022 - INFO  - End of testcase execution.
+Wed Oct 26 21:46:43 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:46:43 2022 - INFO  - oe_test_system_log_dmesg.sh post_test

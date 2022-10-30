@@ -1,0 +1,20 @@
+Wed Oct 26 22:39:43 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 22:39:43 2022 - INFO  - End of environmental preparation!
+Wed Oct 26 22:39:43 2022 - INFO  - Start to run test.
+Exif.Image.Artist                            Ascii       9  gaochong
+Exif.Image.ExifTag                           Long        1  2132
+Exif.Image.XPAuthor                          Byte       18  gaochong
+Xmp.dc.creator                               XmpSeq      1  gaochong
+Xmp.xmpMM.InstanceID                         XmpText    41  uuid:faf5bdd5-ba3d-11da-ad31-d33d75182f1b
+Iptc.Application2.Credit                     String      9  Mr. Smith
+Wed Oct 26 22:39:44 2022 - INFO  - End to run test.
+Wed Oct 26 22:39:44 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:39:44 2022 - INFO  - start environment cleanup.
+Wed Oct 26 22:39:44 2022 - WARN  - no thing to do.
+Wed Oct 26 22:39:44 2022 - INFO  - Finish environment cleanup!

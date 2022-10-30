@@ -1,0 +1,12 @@
+Wed Oct 26 21:57:54 2022 - INFO  - Start to prepare the test environment.
+Wed Oct 26 21:57:54 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:57:54 2022 - INFO  - Start to run test.
+Wed Jan  1 00:00:00 CST 2020
+Wed Oct 26 09:30:00 CST 2022
+Wed Feb  4 09:30:00 CST 2015
+                 RTC time: Wed 2015-02-04 01:30:00
+Wed Feb  4 09:30:00 2015 - INFO  - End to run test.
+Wed Feb  4 09:30:00 2015 - INFO  - succeed to execute the case.
+Wed Feb  4 09:30:00 2015 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:57:54 CST 2022
+Wed Oct 26 21:57:54 2022 - INFO  - Finish restoring the test environment.

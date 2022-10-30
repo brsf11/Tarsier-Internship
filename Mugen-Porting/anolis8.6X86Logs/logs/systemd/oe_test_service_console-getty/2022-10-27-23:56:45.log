@@ -1,0 +1,13 @@
+Thu Oct 27 23:56:45 2022 - INFO  - Start testing...
+   Active: active (running) since Thu 2022-10-27 23:56:45 CST; 5s ago
+   Active: inactive (dead)
+   Active: active (running) since Thu 2022-10-27 23:56:55 CST; 5s ago
+/etc/systemd/system/getty.target.wants/console-getty.service
+Removed /etc/systemd/system/getty.target.wants/console-getty.service.
+find: ‘/etc/systemd/system/getty.target.wants/console-getty.service’: No such file or directory
+Failed to reload console-getty.service: Job type reload is not applicable for unit console-getty.service.
+   Active: active (running) since Thu 2022-10-27 23:56:55 CST; 5s ago
+Thu Oct 27 23:57:01 2022 - INFO  - Finish test!
+Thu Oct 27 23:57:01 2022 - INFO  - succeed to execute the case.
+Thu Oct 27 23:57:01 2022 - INFO  - Start environment cleanup.
+Thu Oct 27 23:57:01 2022 - INFO  - Finish environment cleanup!

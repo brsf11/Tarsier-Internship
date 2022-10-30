@@ -1,0 +1,15 @@
+Fri Oct 28 00:00:57 2022 - INFO  - Start testing...
+   Active: active (running) since Fri 2022-10-28 00:00:57 CST; 5s ago
+Warning: Stopping systemd-ask-password-console.service, but it can still be activated by:
+  systemd-ask-password-console.path
+   Active: inactive (dead) since Fri 2022-10-28 00:01:02 CST; 5s ago
+   Active: active (running) since Fri 2022-10-28 00:01:07 CST; 5s ago
+Fri Oct 28 00:01:13 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-ask-password-console.service: Job type reload is not applicable for unit systemd-ask-password-console.service.
+   Active: active (running) since Fri 2022-10-28 00:01:07 CST; 5s ago
+Fri Oct 28 00:01:13 2022 - INFO  - Finish test!
+Fri Oct 28 00:01:13 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:01:13 2022 - INFO  - Start environment cleanup.
+Warning: Stopping systemd-ask-password-console.service, but it can still be activated by:
+  systemd-ask-password-console.path
+Fri Oct 28 00:01:13 2022 - INFO  - Finish environment cleanup!

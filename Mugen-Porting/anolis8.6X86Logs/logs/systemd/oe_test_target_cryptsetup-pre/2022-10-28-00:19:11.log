@@ -1,0 +1,7 @@
+Fri Oct 28 00:19:11 2022 - INFO  - Start testing...
+Failed to restart cryptsetup-pre.target: Operation refused, unit cryptsetup-pre.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to start cryptsetup-pre.target: Operation refused, unit cryptsetup-pre.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Fri Oct 28 00:19:11 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:19:11 2022 - INFO  - Finish test!
+Fri Oct 28 00:19:11 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:19:11 2022 - INFO  - oe_test_target_cryptsetup-pre.sh post_test

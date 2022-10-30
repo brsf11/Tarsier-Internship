@@ -1,0 +1,20 @@
+Fri Oct 28 00:02:44 2022 - INFO  - Start testing...
+Fri Oct 28 00:02:49 2022 - ERROR - systemd-initctl.service restart failed
+Fri Oct 28 00:02:49 2022 - ERROR - ../common/common_lib.sh line 37
+Fri Oct 28 00:02:54 2022 - ERROR - systemd-initctl.service stop failed
+Fri Oct 28 00:02:54 2022 - ERROR - ../common/common_lib.sh line 42
+Fri Oct 28 00:02:59 2022 - ERROR - systemd-initctl.service start failed
+Fri Oct 28 00:02:59 2022 - ERROR - ../common/common_lib.sh line 47
+Fri Oct 28 00:02:59 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Oct 28 00:02:44 sc.10086.cn systemd[1]: systemd-initctl.service: Main process exited, code=exited, status=1/FAILURE
+Oct 28 00:02:44 sc.10086.cn systemd[1]: systemd-initctl.service: Failed with result 'exit-code'.
+Oct 28 00:02:54 sc.10086.cn systemd[1]: systemd-initctl.service: Main process exited, code=exited, status=1/FAILURE
+Oct 28 00:02:54 sc.10086.cn systemd[1]: systemd-initctl.service: Failed with result 'exit-code'.
+Fri Oct 28 00:02:59 2022 - ERROR - There is an error message for the log of systemd-initctl.service
+Fri Oct 28 00:02:59 2022 - ERROR - ../common/common_lib.sh line 28
+Failed to reload systemd-initctl.service: Job type reload is not applicable for unit systemd-initctl.service.
+Fri Oct 28 00:02:59 2022 - INFO  - Finish test!
+Fri Oct 28 00:02:59 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:02:59 2022 - INFO  - Start environment cleanup.
+oe_test_service_systemd-initctl.sh: line 31: systemcyl: command not found
+Fri Oct 28 00:02:59 2022 - INFO  - Finish environment cleanup!

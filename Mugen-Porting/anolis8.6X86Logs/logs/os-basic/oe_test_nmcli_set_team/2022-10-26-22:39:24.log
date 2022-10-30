@@ -1,0 +1,13 @@
+Wed Oct 26 22:39:24 2022 - INFO  - Start to run test.
+Connection 'team0' (b595c306-2d99-4607-9d67-03ce35252e70) successfully added.
+team0   team      connecting (getting IP configuration)  team0      
+Connection 'team0-port1' (717d7bbc-bfc6-439d-b032-23c137d242c4) successfully added.
+Connection 'team0-port2' (c1380414-987b-4f6c-899d-9763501211a9) successfully added.
+Connection successfully activated (master waiting for slaves) (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/8)
+  active port: 
+Connection 'team0-port1' (717d7bbc-bfc6-439d-b032-23c137d242c4) successfully deleted.
+Connection 'team0-port2' (c1380414-987b-4f6c-899d-9763501211a9) successfully deleted.
+Connection 'team0' (b595c306-2d99-4607-9d67-03ce35252e70) successfully deleted.
+Wed Oct 26 22:39:25 2022 - INFO  - End to run test.
+Wed Oct 26 22:39:25 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:39:25 2022 - INFO  - oe_test_nmcli_set_team.sh post_test

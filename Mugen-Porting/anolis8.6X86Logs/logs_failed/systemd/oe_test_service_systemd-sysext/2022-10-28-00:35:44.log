@@ -1,0 +1,33 @@
+Fri Oct 28 00:35:44 2022 - INFO  - Start environmental preparation.
+Fri Oct 28 00:35:44 2022 - INFO  - End of environmental preparation!
+Fri Oct 28 00:35:44 2022 - INFO  - Start testing...
+Failed to restart systemd-sysext.service: Unit systemd-sysext.service not found.
+Fri Oct 28 00:35:44 2022 - ERROR - systemd-sysext.service restart failed
+Fri Oct 28 00:35:44 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-sysext.service could not be found.
+Fri Oct 28 00:35:49 2022 - ERROR - systemd-sysext.service restart failed
+Fri Oct 28 00:35:49 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-sysext.service: Unit systemd-sysext.service not loaded.
+Fri Oct 28 00:35:49 2022 - ERROR - systemd-sysext.service stop failed
+Fri Oct 28 00:35:49 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-sysext.service could not be found.
+Fri Oct 28 00:35:55 2022 - ERROR - systemd-sysext.service stop failed
+Fri Oct 28 00:35:55 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-sysext.service: Unit systemd-sysext.service not found.
+Fri Oct 28 00:35:55 2022 - ERROR - systemd-sysext.service start failed
+Fri Oct 28 00:35:55 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-sysext.service could not be found.
+Fri Oct 28 00:36:00 2022 - ERROR - systemd-sysext.service start failed
+Fri Oct 28 00:36:00 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-sysext.service: No such file or directory
+Fri Oct 28 00:36:00 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-sysext.service: Unit systemd-sysext.service not found.
+Fri Oct 28 00:36:00 2022 - ERROR - Job type reload is not applicable for unit systemd-sysext.service
+Fri Oct 28 00:36:00 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-sysext.service could not be found.
+Unit systemd-sysext.service could not be found.
+Fri Oct 28 00:36:00 2022 - INFO  - Finish test!
+Fri Oct 28 00:36:00 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:36:00 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-sysext.service: Unit systemd-sysext.service not loaded.
+Fri Oct 28 00:36:00 2022 - INFO  - Finish environment cleanup!

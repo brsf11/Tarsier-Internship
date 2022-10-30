@@ -1,0 +1,29 @@
+Thu Oct 27 23:59:13 2022 - INFO  - Start testing...
+Failed to restart hwclock-save.service: Unit hwclock-save.service not found.
+Thu Oct 27 23:59:13 2022 - ERROR - hwclock-save.service restart failed
+Thu Oct 27 23:59:13 2022 - ERROR - ../common/common_lib.sh line 34
+Unit hwclock-save.service could not be found.
+Thu Oct 27 23:59:18 2022 - ERROR - hwclock-save.service restart failed
+Thu Oct 27 23:59:18 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop hwclock-save.service: Unit hwclock-save.service not loaded.
+Thu Oct 27 23:59:19 2022 - ERROR - hwclock-save.service stop failed
+Thu Oct 27 23:59:19 2022 - ERROR - ../common/common_lib.sh line 39
+Unit hwclock-save.service could not be found.
+Thu Oct 27 23:59:24 2022 - ERROR - hwclock-save.service stop failed
+Thu Oct 27 23:59:24 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start hwclock-save.service: Unit hwclock-save.service not found.
+Thu Oct 27 23:59:24 2022 - ERROR - hwclock-save.service start failed
+Thu Oct 27 23:59:24 2022 - ERROR - ../common/common_lib.sh line 44
+Unit hwclock-save.service could not be found.
+Thu Oct 27 23:59:29 2022 - ERROR - hwclock-save.service start failed
+Thu Oct 27 23:59:29 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for hwclock-save.service: No such file or directory
+Thu Oct 27 23:59:29 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start hwclock-save.service: Unit hwclock-save.service not found.
+Thu Oct 27 23:59:29 2022 - ERROR - Job type reload is not applicable for unit hwclock-save.service
+Thu Oct 27 23:59:29 2022 - ERROR - ../common/common_lib.sh line 91
+Unit hwclock-save.service could not be found.
+Unit hwclock-save.service could not be found.
+Thu Oct 27 23:59:29 2022 - INFO  - Finish test!
+Thu Oct 27 23:59:29 2022 - ERROR - failed to execute the case.
+Thu Oct 27 23:59:29 2022 - INFO  - oe_test_service_hwclock-save.sh post_test

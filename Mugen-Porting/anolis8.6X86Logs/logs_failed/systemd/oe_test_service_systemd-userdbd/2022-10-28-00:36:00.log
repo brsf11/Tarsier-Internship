@@ -1,0 +1,31 @@
+Fri Oct 28 00:36:01 2022 - INFO  - Start testing...
+Failed to restart systemd-userdbd.service: Unit systemd-userdbd.service not found.
+Fri Oct 28 00:36:01 2022 - ERROR - systemd-userdbd.service restart failed
+Fri Oct 28 00:36:01 2022 - ERROR - ../common/common_lib.sh line 34
+Unit systemd-userdbd.service could not be found.
+Fri Oct 28 00:36:06 2022 - ERROR - systemd-userdbd.service restart failed
+Fri Oct 28 00:36:06 2022 - ERROR - ../common/common_lib.sh line 37
+Failed to stop systemd-userdbd.service: Unit systemd-userdbd.service not loaded.
+Fri Oct 28 00:36:06 2022 - ERROR - systemd-userdbd.service stop failed
+Fri Oct 28 00:36:06 2022 - ERROR - ../common/common_lib.sh line 39
+Unit systemd-userdbd.service could not be found.
+Fri Oct 28 00:36:11 2022 - ERROR - systemd-userdbd.service stop failed
+Fri Oct 28 00:36:11 2022 - ERROR - ../common/common_lib.sh line 42
+Failed to start systemd-userdbd.service: Unit systemd-userdbd.service not found.
+Fri Oct 28 00:36:11 2022 - ERROR - systemd-userdbd.service start failed
+Fri Oct 28 00:36:11 2022 - ERROR - ../common/common_lib.sh line 44
+Unit systemd-userdbd.service could not be found.
+Fri Oct 28 00:36:16 2022 - ERROR - systemd-userdbd.service start failed
+Fri Oct 28 00:36:16 2022 - ERROR - ../common/common_lib.sh line 47
+Failed to get unit file state for systemd-userdbd.service: No such file or directory
+Fri Oct 28 00:36:16 2022 - INFO  - Unit is indirect, ignoring.
+Failed to start systemd-userdbd.service: Unit systemd-userdbd.service not found.
+Fri Oct 28 00:36:16 2022 - ERROR - Job type reload is not applicable for unit systemd-userdbd.service
+Fri Oct 28 00:36:16 2022 - ERROR - ../common/common_lib.sh line 91
+Unit systemd-userdbd.service could not be found.
+Unit systemd-userdbd.service could not be found.
+Fri Oct 28 00:36:16 2022 - INFO  - Finish test!
+Fri Oct 28 00:36:16 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:36:16 2022 - INFO  - Start environment cleanup.
+Failed to stop systemd-userdbd.service: Unit systemd-userdbd.service not loaded.
+Fri Oct 28 00:36:16 2022 - INFO  - Finish environment cleanup!

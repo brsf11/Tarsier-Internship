@@ -1,0 +1,12 @@
+Wed Oct 26 21:54:19 2022 - INFO  - Start to config params of the case.
+
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/get_test_device.py", line 27, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:54:20 2022 - INFO  - Start to restore the test environment.
+Error: neither a valid connection nor device given.
+Error: No connection specified.
+Wed Oct 26 21:54:20 2022 - INFO  - End to restore the test environment.

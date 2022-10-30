@@ -1,0 +1,9 @@
+Wed Oct 26 21:46:15 2022 - INFO  - Start to run test.
+root     tty1         2022-10-26 21:43
+root     pts/0        2022-10-26 21:44 (192.168.56.1)
+         system boot  2022-10-26 21:42
+root     pts/0        2022-10-26 21:44 (192.168.56.1)
+Usage: who [OPTION]... [ FILE | ARG1 ARG2 ]
+Wed Oct 26 21:46:15 2022 - INFO  - End to run test.
+Wed Oct 26 21:46:15 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:46:15 2022 - INFO  - oe_test_who.sh post_test

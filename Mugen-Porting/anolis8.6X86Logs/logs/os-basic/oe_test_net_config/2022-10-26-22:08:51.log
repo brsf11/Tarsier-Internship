@@ -1,0 +1,44 @@
+Wed Oct 26 22:08:52 2022 - INFO  - Start to config params of the case.
+Wed Oct 26 22:38:51 2022 - ERROR - Timeout : Command 'bash oe_test_net_config.sh' timed out after 1799.9999621419997 seconds
+Wed Oct 26 23:14:01 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 23:14:01 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 23:14:01 2022 - INFO  - End to restore the test environment.
+Wed Oct 26 23:14:01 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 23:14:01 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 23:14:01 2022 - INFO  - End to restore the test environment.
+Wed Oct 26 23:14:01 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 23:14:01 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 23:14:01 2022 - INFO  - End to restore the test environment.
+Wed Oct 26 23:14:01 2022 - INFO  - End to config params of the case.
+Wed Oct 26 23:14:01 2022 - INFO  - Start to prepare the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 23:14:01 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 23:14:01 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 23:14:01 2022 - INFO  - Start to run test.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 23:14:01 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 23:14:01 2022 - ERROR - oe_test_net_config.sh line 37
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Wed Oct 26 23:14:01 2022 - ERROR - oe_test_net_config.sh line 39
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 23:14:01 2022 - ERROR - Failed in remote CMD operation:1
+Usage: ping [-aAbBdDfhLnOqrRUvV64] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+Usage: ping -6 [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+             [-l preload] [-m mark] [-M pmtudisc_option]
+             [-N nodeinfo_option] [-p pattern] [-Q tclass] [-s packetsize]
+             [-S sndbuf] [-t ttl] [-T timestamp_option] [-w deadline]
+             [-W timeout] destination
+Wed Oct 26 23:14:01 2022 - ERROR - oe_test_net_config.sh line 42
+Wed Oct 26 23:14:01 2022 - INFO  - End to run test.
+Wed Oct 26 23:14:01 2022 - ERROR - failed to execute the case.
+Wed Oct 26 23:14:01 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Wed Oct 26 23:14:01 2022 - ERROR - Failed in remote CMD operation:1
+Wed Oct 26 23:14:01 2022 - INFO  - End to restore the test environment.

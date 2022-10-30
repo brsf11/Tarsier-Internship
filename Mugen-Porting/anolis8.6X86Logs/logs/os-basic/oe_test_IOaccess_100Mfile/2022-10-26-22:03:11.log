@@ -1,0 +1,147 @@
+Wed Oct 26 22:03:11 2022 - INFO  - Start to pre test.
+Wed Oct 26 22:03:11 2022 - INFO  - Start to pre test.
+Wed Oct 26 22:03:11 2022 - INFO  - Start to run test.
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.53044 s, 68.5 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.0322503 s, 3.3 GB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.52407 s, 68.8 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.0298865 s, 3.5 GB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.49864 s, 70.0 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.261142 s, 402 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.54863 s, 67.7 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.0314947 s, 3.3 GB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.52979 s, 68.5 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.1906 s, 550 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.46147 s, 71.7 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.0450303 s, 2.3 GB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.51895 s, 69.0 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.628389 s, 167 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.46448 s, 71.6 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.0415366 s, 2.5 GB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.44519 s, 72.6 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.64531 s, 162 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 1.45446 s, 72.1 MB/s
+104857600
+100+0 records in
+100+0 records out
+104857600 bytes (105 MB, 100 MiB) copied, 0.0318467 s, 3.3 GB/s
+104857600
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 mycpfile20221026
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+  adding: myfile20221026 (deflated 100%)
+myfile20221026.zip
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Archive:  myfile20221026.zip
+  inflating: myfile20221026          
+-rw-r--r-- 1 root root 104857600 Oct 26 22:03 myfile20221026
+Wed Oct 26 22:03:46 2022 - INFO  - End to run test.
+Wed Oct 26 22:03:46 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:03:46 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 22:03:46 2022 - INFO  - End to restore the test environment.

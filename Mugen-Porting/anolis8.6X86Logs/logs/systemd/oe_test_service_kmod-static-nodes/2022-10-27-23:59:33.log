@@ -1,0 +1,10 @@
+Thu Oct 27 23:59:33 2022 - INFO  - Start testing...
+   Active: active (exited) since Thu 2022-10-27 23:59:33 CST; 5s ago
+   Active: inactive (dead) since Thu 2022-10-27 23:59:38 CST; 5s ago
+   Active: active (exited) since Thu 2022-10-27 23:59:43 CST; 5s ago
+Thu Oct 27 23:59:48 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload kmod-static-nodes.service: Job type reload is not applicable for unit kmod-static-nodes.service.
+   Active: active (exited) since Thu 2022-10-27 23:59:43 CST; 5s ago
+Thu Oct 27 23:59:48 2022 - INFO  - Finish test!
+Thu Oct 27 23:59:48 2022 - INFO  - succeed to execute the case.
+Thu Oct 27 23:59:48 2022 - INFO  - oe_test_service_kmod-static-nodes.sh post_test

@@ -1,0 +1,10 @@
+Fri Oct 28 00:24:21 2022 - INFO  - Start to run test.
+   Active: active since Fri 2022-10-28 00:24:21 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:24:26 CST; 5s ago
+   Active: active since Fri 2022-10-28 00:24:31 CST; 5s ago
+Fri Oct 28 00:24:36 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload runlevel3.target: Job type reload is not applicable for unit multi-user.target.
+   Active: active since Fri 2022-10-28 00:24:31 CST; 5s ago
+Fri Oct 28 00:24:36 2022 - INFO  - End of the test.
+Fri Oct 28 00:24:36 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:24:36 2022 - INFO  - oe_test_target_runlevel3.sh post_test

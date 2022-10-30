@@ -1,0 +1,6 @@
+Fri Oct 28 00:01:49 2022 - INFO  - Start testing...
+Fri Oct 28 00:01:49 2022 - INFO  - It is not recommended to use systemd-firstboot on the running system while it is up.
+Fri Oct 28 00:01:49 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:01:49 2022 - INFO  - Finish test!
+Fri Oct 28 00:01:49 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:01:49 2022 - INFO  - oe_test_service_systemd-firstboot.sh post_test

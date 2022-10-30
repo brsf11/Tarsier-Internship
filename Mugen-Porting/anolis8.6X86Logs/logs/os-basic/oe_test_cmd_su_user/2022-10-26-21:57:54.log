@@ -1,0 +1,16 @@
+Wed Oct 26 21:57:55 2022 - INFO  - Start to prepare the test environment.
+testuser:x:1001:1001::/home/testuser:/bin/bash
+groupdel: group 'testuser' does not exist
+Wed Oct 26 21:57:57 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:57:57 2022 - INFO  - Start to run test.
+Changing password for user testuser.
+passwd: all authentication tokens updated successfully.
+testuser
+root
+anaconda-ks.cfg
+initial-setup-ks.cfg
+Usage:
+Wed Oct 26 21:58:00 2022 - INFO  - End to run test.
+Wed Oct 26 21:58:00 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:58:00 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:58:02 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,28 @@
+Wed Oct 26 22:38:55 2022 - INFO  - Start to prepare the test environment.
+id: ‘testuser1’: no such user
+Wed Oct 26 22:38:58 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 22:38:58 2022 - INFO  - Start to run test.
+useradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+id: ‘test’: no such user
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+test:x:666:1002::/home/test:/bin/bash
+groupadd: group 'testgroup' already exists
+groupmod: Permission denied.
+groupmod: cannot lock /etc/group; try again later.
+testgroup:x:1002:
+testgroup:x:555:
+Wed Oct 26 22:39:12 2022 - INFO  - End to run test.
+Wed Oct 26 22:39:12 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:39:12 2022 - INFO  - End to clean the test environment.
+Wed Oct 26 22:39:14 2022 - INFO  - End to clean the test environment.

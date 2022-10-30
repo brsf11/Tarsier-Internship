@@ -1,0 +1,16 @@
+Wed Oct 26 21:46:19 2022 - INFO  - Start to prepare the test environment.
+Wed Oct 26 21:46:19 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:46:19 2022 - INFO  - Start to run test.
+               Local time: Wed 2022-10-26 21:46:19 CST
+              NTP service: active
+               Local time: Wed 2019-08-14 00:00:00 CST
+               Local time: Wed 2019-08-14 15:00:00 CST
+Failed to set time zone: Invalid timezone
+Wed Aug 14 15:00:00 2019 - ERROR - oe_test_timedatectl.sh line 51
+Wed Aug 14 15:00:00 2019 - INFO  - End to run test.
+Wed Aug 14 15:00:00 2019 - ERROR - failed to execute the case.
+Wed Aug 14 15:00:00 2019 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:46:19 CST 2022
+hwclock: Cannot access the Hardware Clock via any known method.
+hwclock: Use the --verbose option to see the details of our search for an access method.
+Wed Oct 26 21:46:19 2022 - INFO  - End to restore the test environment.

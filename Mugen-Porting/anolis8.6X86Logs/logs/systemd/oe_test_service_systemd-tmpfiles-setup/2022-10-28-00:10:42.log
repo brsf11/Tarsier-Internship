@@ -1,0 +1,10 @@
+Fri Oct 28 00:10:43 2022 - INFO  - Start testing...
+   Active: active (exited) since Fri 2022-10-28 00:00:24 CST; 10min ago
+Failed to restart systemd-tmpfiles-setup.service: Operation refused, unit systemd-tmpfiles-setup.service may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to stop systemd-tmpfiles-setup.service: Operation refused, unit systemd-tmpfiles-setup.service may be requested by dependency only (it is configured to refuse manual start/stop).
+   Active: active (exited) since Fri 2022-10-28 00:00:24 CST; 10min ago
+Failed to reload systemd-tmpfiles-setup.service: Job type reload is not applicable for unit systemd-tmpfiles-setup.service.
+   Active: active (exited) since Fri 2022-10-28 00:00:24 CST; 10min ago
+Fri Oct 28 00:10:43 2022 - INFO  - Finish test!
+Fri Oct 28 00:10:43 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:10:43 2022 - INFO  - oe_test_service_systemd-tmpfiles-setup.sh post_test

@@ -1,0 +1,11 @@
+Fri Oct 28 00:01:13 2022 - INFO  - Start testing...
+   Active: active (running) since Fri 2022-10-28 00:01:13 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:01:18 CST; 5s ago
+   Active: active (running) since Fri 2022-10-28 00:01:23 CST; 5s ago
+Fri Oct 28 00:01:29 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-ask-password-wall.service: Job type reload is not applicable for unit systemd-ask-password-wall.service.
+   Active: active (running) since Fri 2022-10-28 00:01:23 CST; 5s ago
+Fri Oct 28 00:01:29 2022 - INFO  - Finish test!
+Fri Oct 28 00:01:29 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:01:29 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:01:29 2022 - INFO  - Finish environment cleanup!

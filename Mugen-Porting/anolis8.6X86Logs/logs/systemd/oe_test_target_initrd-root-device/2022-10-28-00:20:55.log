@@ -1,0 +1,13 @@
+Fri Oct 28 00:20:56 2022 - INFO  - Start environment preparation.
+Fri Oct 28 00:20:56 2022 - INFO  - Finish environment cleanup!
+Fri Oct 28 00:20:56 2022 - INFO  - Start testing...
+   Active: active since Fri 2022-10-28 00:20:56 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:21:01 CST; 5s ago
+   Active: active since Fri 2022-10-28 00:21:06 CST; 5s ago
+Fri Oct 28 00:21:11 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload initrd-root-device.target: Job type reload is not applicable for unit initrd-root-device.target.
+   Active: active since Fri 2022-10-28 00:21:06 CST; 5s ago
+Fri Oct 28 00:21:11 2022 - INFO  - Finish test!
+Fri Oct 28 00:21:11 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:21:11 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:21:11 2022 - INFO  - Finish environment cleanup!

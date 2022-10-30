@@ -1,0 +1,27 @@
+Fri Oct 28 00:14:50 2022 - INFO  - Start testing...
+A dependency job for systemd-rfkill.socket failed. See 'journalctl -xe' for details.
+Fri Oct 28 00:14:50 2022 - ERROR - systemd-rfkill.socket restart failed
+Fri Oct 28 00:14:50 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Oct 28 00:14:55 2022 - ERROR - systemd-rfkill.socket restart failed
+Fri Oct 28 00:14:55 2022 - ERROR - ../common/common_lib.sh line 37
+   Active: inactive (dead)
+A dependency job for systemd-rfkill.socket failed. See 'journalctl -xe' for details.
+Fri Oct 28 00:16:31 2022 - ERROR - systemd-rfkill.socket start failed
+Fri Oct 28 00:16:31 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Oct 28 00:16:36 2022 - ERROR - systemd-rfkill.socket start failed
+Fri Oct 28 00:16:36 2022 - ERROR - ../common/common_lib.sh line 47
+Fri Oct 28 00:16:36 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Oct 28 00:14:50 sc.10086.cn systemd[1]: Dependency failed for Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Oct 28 00:14:50 sc.10086.cn systemd[1]: systemd-rfkill.socket: Job systemd-rfkill.socket/start failed with result 'dependency'.
+Oct 28 00:16:30 sc.10086.cn systemd[1]: Dependency failed for Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Oct 28 00:16:30 sc.10086.cn systemd[1]: systemd-rfkill.socket: Job systemd-rfkill.socket/start failed with result 'dependency'.
+Fri Oct 28 00:16:36 2022 - ERROR - There is an error message for the log of systemd-rfkill.socket
+Fri Oct 28 00:16:36 2022 - ERROR - ../common/common_lib.sh line 28
+A dependency job for systemd-rfkill.socket failed. See 'journalctl -xe' for details.
+Failed to reload systemd-rfkill.socket: Job type reload is not applicable for unit systemd-rfkill.socket.
+   Active: inactive (dead)
+Fri Oct 28 00:18:06 2022 - ERROR - systemd-rfkill.socket reload causes the service status to change
+Fri Oct 28 00:18:06 2022 - ERROR - ../common/common_lib.sh line 95
+Fri Oct 28 00:18:06 2022 - INFO  - Finish test!
+Fri Oct 28 00:18:06 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:18:06 2022 - INFO  - oe_test_socket_systemd-rfkill.sh post_test

@@ -1,0 +1,30 @@
+Wed Oct 26 21:48:44 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:48:44 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:48:44 2022 - INFO  - Start to run test.
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Wed Oct 26 21:48:44 2022 - ERROR - oe_test_server_squid_proxy.sh line 31
+grep: /etc/squid/squid.conf: No such file or directory
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Warning: ALREADY_ENABLED: 3128:tcp
+success
+success
+Failed to enable unit: Unit file squid.service does not exist.
+Wed Oct 26 21:48:48 2022 - ERROR - oe_test_server_squid_proxy.sh line 39
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (7) Failed to connect to 127.0.0.1 port 3128: Connection refused
+Wed Oct 26 21:48:50 2022 - ERROR - oe_test_server_squid_proxy.sh line 42
+ls: cannot access 'baidu': No such file or directory
+Wed Oct 26 21:48:50 2022 - ERROR - oe_test_server_squid_proxy.sh line 44
+Wed Oct 26 21:48:50 2022 - INFO  - End to run test.
+Wed Oct 26 21:48:50 2022 - ERROR - failed to execute the case.
+Wed Oct 26 21:48:50 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Wed Oct 26 21:48:50 2022 - WARN  - no thing to do.
+Wed Oct 26 21:48:50 2022 - INFO  - End to restore the test environment.

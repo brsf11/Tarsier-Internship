@@ -1,0 +1,6 @@
+Fri Oct 28 00:25:59 2022 - INFO  - Start to run test.
+Fri Oct 28 00:25:59 2022 - INFO  - A special target unit for suspending the system. This pulls in sleep.target.
+Fri Oct 28 00:25:59 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:25:59 2022 - INFO  - End of the test.
+Fri Oct 28 00:25:59 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:25:59 2022 - INFO  - oe_test_target_suspend.sh post_test

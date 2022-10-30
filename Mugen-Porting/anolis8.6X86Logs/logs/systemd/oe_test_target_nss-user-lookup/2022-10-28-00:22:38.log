@@ -1,0 +1,7 @@
+Fri Oct 28 00:22:38 2022 - INFO  - Start to run test.
+Failed to restart nss-user-lookup.target: Operation refused, unit nss-user-lookup.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Failed to start nss-user-lookup.target: Operation refused, unit nss-user-lookup.target may be requested by dependency only (it is configured to refuse manual start/stop).
+Fri Oct 28 00:22:38 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Fri Oct 28 00:22:38 2022 - INFO  - End of the test.
+Fri Oct 28 00:22:38 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:22:38 2022 - INFO  - oe_test_target_nss-user-lookup.sh post_test

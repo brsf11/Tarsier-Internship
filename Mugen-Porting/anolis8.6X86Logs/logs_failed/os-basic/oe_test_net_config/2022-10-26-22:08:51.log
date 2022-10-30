@@ -1,0 +1,2 @@
+Wed Oct 26 22:08:52 2022 - INFO  - Start to config params of the case.
+Wed Oct 26 22:38:51 2022 - ERROR - Timeout : Command 'bash oe_test_net_config.sh' timed out after 1799.9999621419997 seconds

@@ -1,0 +1,13 @@
+Fri Oct 28 00:37:25 2022 - INFO  - Start testing...
+Fri Oct 28 00:37:25 2022 - ERROR - Check veritysetup-pre.target failed
+Fri Oct 28 00:37:25 2022 - ERROR - oe_test_target_veritysetup-pre.sh line 26
+Failed to stop veritysetup-pre.target: Unit veritysetup-pre.target not loaded.
+Fri Oct 28 00:37:25 2022 - ERROR - veritysetup-pre.target stop failed
+Fri Oct 28 00:37:25 2022 - ERROR - oe_test_target_veritysetup-pre.sh line 28
+Fri Oct 28 00:37:25 2022 - ERROR - Check veritysetup-pre.target failed
+Fri Oct 28 00:37:25 2022 - ERROR - oe_test_target_veritysetup-pre.sh line 30
+Failed to get unit file state for veritysetup-pre.target: No such file or directory
+Fri Oct 28 00:37:25 2022 - INFO  - Unit is indirect, ignoring.
+Fri Oct 28 00:37:25 2022 - INFO  - Finish test!
+Fri Oct 28 00:37:25 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:37:25 2022 - INFO  - oe_test_target_veritysetup-pre.sh post_test

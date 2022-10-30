@@ -1,0 +1,14 @@
+Fri Oct 28 00:12:01 2022 - INFO  - Start testing...
+Fri Oct 28 00:12:06 2022 - ERROR - systemd-vconsole-setup.service restart failed
+Fri Oct 28 00:12:06 2022 - ERROR - ../common/common_lib.sh line 37
+   Active: inactive (dead) since Fri 2022-10-28 00:12:01 CST; 10s ago
+Fri Oct 28 00:12:16 2022 - ERROR - systemd-vconsole-setup.service start failed
+Fri Oct 28 00:12:16 2022 - ERROR - ../common/common_lib.sh line 47
+Fri Oct 28 00:12:16 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-vconsole-setup.service: Job type reload is not applicable for unit systemd-vconsole-setup.service.
+   Active: inactive (dead) since Fri 2022-10-28 00:12:16 CST; 19ms ago
+Fri Oct 28 00:12:16 2022 - ERROR - systemd-vconsole-setup.service reload causes the service status to change
+Fri Oct 28 00:12:16 2022 - ERROR - ../common/common_lib.sh line 95
+Fri Oct 28 00:12:17 2022 - INFO  - Finish test!
+Fri Oct 28 00:12:17 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:12:17 2022 - INFO  - oe_test_service_systemd-vconsole-setup.sh post_test

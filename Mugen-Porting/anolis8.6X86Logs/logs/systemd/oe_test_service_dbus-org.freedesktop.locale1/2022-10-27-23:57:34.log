@@ -1,0 +1,11 @@
+Thu Oct 27 23:57:34 2022 - INFO  - Start testing...
+   Active: active (running) since Thu 2022-10-27 23:57:35 CST; 5s ago
+   Active: inactive (dead)
+   Active: active (running) since Thu 2022-10-27 23:57:45 CST; 5s ago
+Thu Oct 27 23:57:50 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload dbus-org.freedesktop.locale1.service: Job type reload is not applicable for unit systemd-localed.service.
+   Active: active (running) since Thu 2022-10-27 23:57:45 CST; 5s ago
+Thu Oct 27 23:57:50 2022 - INFO  - Finish test!
+Thu Oct 27 23:57:50 2022 - INFO  - succeed to execute the case.
+Thu Oct 27 23:57:50 2022 - INFO  - Start environment cleanup.
+Thu Oct 27 23:57:50 2022 - INFO  - Finish environment cleanup!

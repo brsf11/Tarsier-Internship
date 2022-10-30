@@ -1,0 +1,26 @@
+Wed Oct 26 22:38:54 2022 - INFO  - Start to run test.
+Connection 'bond0' (6a442098-b90d-40bf-a093-4747378e19b1) successfully added.
+Warning: There is another connection with the name 'bond0'. Reference the connection by its uuid '51ade9a8-72d3-4267-9b77-8257fd91e404'
+Connection 'bond0' (51ade9a8-72d3-4267-9b77-8257fd91e404) successfully added.
+bond0   bond      connecting (getting IP configuration)  bond0      
+Connection 'bond0-port1' (f7a2f660-dbc7-4bca-90e6-c84edbfe6ed3) successfully added.
+Connection 'bond0-port2' (cb81f787-e096-4a56-99ff-cd127739f46e) successfully added.
+Connection successfully activated (master waiting for slaves) (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/5)
+Wed Oct 26 22:38:54 2022 - ERROR - oe_test_nmcli_set_bond.sh line 57
+NAME         UUID                                  TYPE      DEVICE 
+bond0        6a442098-b90d-40bf-a093-4747378e19b1  bond      bond0  
+enp0s3       2b61a04e-05a7-4827-af27-2045c348d6fc  ethernet  enp0s3 
+Profile 1    a042f0bd-1072-41bd-9695-0b078ba3facc  ethernet  enp0s8 
+virbr0       7c2ed4cd-e59e-4371-9541-c07f82acb3f9  bridge    virbr0 
+bond0        51ade9a8-72d3-4267-9b77-8257fd91e404  bond      --     
+bond0-port1  f7a2f660-dbc7-4bca-90e6-c84edbfe6ed3  ethernet  --     
+bond0-port2  cb81f787-e096-4a56-99ff-cd127739f46e  ethernet  --     
+Connection successfully activated (master waiting for slaves) (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/6)
+Bonding Mode: fault-tolerance (active-backup)
+Connection 'bond0-port1' (f7a2f660-dbc7-4bca-90e6-c84edbfe6ed3) successfully deleted.
+Connection 'bond0-port2' (cb81f787-e096-4a56-99ff-cd127739f46e) successfully deleted.
+Connection 'bond0' (6a442098-b90d-40bf-a093-4747378e19b1) successfully deleted.
+Connection 'bond0' (51ade9a8-72d3-4267-9b77-8257fd91e404) successfully deleted.
+Wed Oct 26 22:38:54 2022 - INFO  - End to run test.
+Wed Oct 26 22:38:54 2022 - ERROR - failed to execute the case.
+Wed Oct 26 22:38:54 2022 - INFO  - oe_test_nmcli_set_bond.sh post_test

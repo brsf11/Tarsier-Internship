@@ -1,0 +1,13 @@
+Wed Oct 26 22:08:02 2022 - INFO  - Start to prepare the test environment.
+testuser:x:555:
+Wed Oct 26 22:08:07 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 22:08:07 2022 - INFO  - Start to run test.
+/home/testuser
+/home/new_test
+find: ‘/home/new_test/testfile.txt’: No such file or directory
+/home/testuser
+/home/new_test
+Wed Oct 26 22:08:10 2022 - INFO  - End to run test.
+Wed Oct 26 22:08:10 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 22:08:10 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 22:08:13 2022 - INFO  - End to restore the test environment.

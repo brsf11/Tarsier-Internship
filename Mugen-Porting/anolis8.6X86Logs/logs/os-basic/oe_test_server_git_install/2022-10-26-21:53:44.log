@@ -1,0 +1,37 @@
+Wed Oct 26 21:53:44 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/GitRepo/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Wed Oct 26 21:53:45 2022 - INFO  - End to prepare the test environment.
+Wed Oct 26 21:53:45 2022 - INFO  - Start to run test.
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/brsf11/GitRepo/mugen-riscv/testcases/system-test/system-integration/os-basic/oe_test_server_git_install/test_openEuler/.git/
+	new file:   my.txt
+[master (root-commit) cdb6441] add the redme file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 my.txt
+nothing to commit, working tree clean
+    add the redme file
+	modified:   my.txt
+[master 75b04ec] added a line of words
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+nothing to commit, working tree clean
+    added a line of words
+/home/brsf11/GitRepo/mugen-riscv/testcases/system-test/system-integration/os-basic/oe_test_server_git_install
+Wed Oct 26 21:53:45 2022 - INFO  - End to run test.
+Wed Oct 26 21:53:45 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:53:45 2022 - INFO  - Start to restore the test environment.
+Wed Oct 26 21:53:45 2022 - WARN  - no thing to do.
+Wed Oct 26 21:53:45 2022 - INFO  - End to restore the test environment.

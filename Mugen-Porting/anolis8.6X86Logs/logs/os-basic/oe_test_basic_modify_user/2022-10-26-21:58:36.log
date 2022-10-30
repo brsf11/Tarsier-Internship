@@ -1,0 +1,13 @@
+Wed Oct 26 21:58:36 2022 - INFO  - Start environment preparation.
+groupadd: GID '72' already exists
+Wed Oct 26 21:58:40 2022 - INFO  - Environmental preparation is over.
+Wed Oct 26 21:58:40 2022 - INFO  - Start executing testcase!
+666
+72
+Usage: usermod [options] LOGIN
+Wed Oct 26 21:58:44 2022 - INFO  - End of testcase execution!
+Wed Oct 26 21:58:44 2022 - INFO  - succeed to execute the case.
+Wed Oct 26 21:58:44 2022 - INFO  - start environment cleanup.
+userdel: group testuser not removed because it is not the primary group of user testuser.
+groupdel: group 'testgroup1' does not exist
+Wed Oct 26 21:58:46 2022 - INFO  - Finish environment cleanup.

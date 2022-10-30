@@ -1,0 +1,23 @@
+Fri Oct 28 00:09:37 2022 - INFO  - Start testing...
+Failed to restart systemd-timedated.service: Unit systemd-timedated.service is masked.
+Fri Oct 28 00:09:37 2022 - ERROR - systemd-timedated.service restart failed
+Fri Oct 28 00:09:37 2022 - ERROR - ../common/common_lib.sh line 34
+Fri Oct 28 00:09:42 2022 - ERROR - systemd-timedated.service restart failed
+Fri Oct 28 00:09:42 2022 - ERROR - ../common/common_lib.sh line 37
+   Active: inactive (dead)
+Failed to start systemd-timedated.service: Unit systemd-timedated.service is masked.
+Fri Oct 28 00:09:48 2022 - ERROR - systemd-timedated.service start failed
+Fri Oct 28 00:09:48 2022 - ERROR - ../common/common_lib.sh line 44
+Fri Oct 28 00:09:53 2022 - ERROR - systemd-timedated.service start failed
+Fri Oct 28 00:09:53 2022 - ERROR - ../common/common_lib.sh line 47
+Fri Oct 28 00:09:53 2022 - INFO  - Unit is masked, ignoring.
+Failed to start systemd-timedated.service: Unit systemd-timedated.service is masked.
+Fri Oct 28 00:09:53 2022 - ERROR - Job type reload is not applicable for unit systemd-timedated.service
+Fri Oct 28 00:09:53 2022 - ERROR - ../common/common_lib.sh line 91
+   Active: inactive (dead)
+Fri Oct 28 00:09:53 2022 - ERROR - systemd-timedated.service reload causes the service status to change
+Fri Oct 28 00:09:53 2022 - ERROR - ../common/common_lib.sh line 95
+Fri Oct 28 00:09:53 2022 - INFO  - Finish test!
+Fri Oct 28 00:09:53 2022 - ERROR - failed to execute the case.
+Fri Oct 28 00:09:53 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:09:53 2022 - INFO  - Finish environment cleanup!

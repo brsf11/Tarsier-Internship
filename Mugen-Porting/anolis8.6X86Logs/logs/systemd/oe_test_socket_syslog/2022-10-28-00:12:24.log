@@ -1,0 +1,13 @@
+Fri Oct 28 00:12:25 2022 - INFO  - Start environmental preparation.
+Fri Oct 28 00:12:25 2022 - INFO  - End of environmental preparation!
+Fri Oct 28 00:12:25 2022 - INFO  - Start testing...
+   Active: active (listening) since Fri 2022-10-28 00:12:25 CST; 5s ago
+   Active: inactive (dead) since Fri 2022-10-28 00:12:30 CST; 5s ago
+   Active: active (listening) since Fri 2022-10-28 00:12:35 CST; 5s ago
+Fri Oct 28 00:12:40 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload syslog.socket: Job type reload is not applicable for unit syslog.socket.
+   Active: active (listening) since Fri 2022-10-28 00:12:35 CST; 5s ago
+Fri Oct 28 00:12:40 2022 - INFO  - Finish test!
+Fri Oct 28 00:12:40 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:12:40 2022 - INFO  - Start environment cleanup.
+Fri Oct 28 00:12:40 2022 - INFO  - Finish environment cleanup!

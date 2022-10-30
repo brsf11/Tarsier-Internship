@@ -1,0 +1,18 @@
+Fri Oct 28 00:03:16 2022 - INFO  - Start environmental preparation.
+Fri Oct 28 00:03:16 2022 - INFO  - End of environmental preparation!
+Fri Oct 28 00:03:16 2022 - INFO  - Start testing...
+   Active: active (running) since Fri 2022-10-28 00:03:16 CST; 5s ago
+Warning: Stopping systemd-journald.service, but it can still be activated by:
+  systemd-journald-dev-log.socket
+  systemd-journald.socket
+   Active: inactive (dead) since Fri 2022-10-28 00:03:21 CST; 5s ago
+   Active: active (running) since Fri 2022-10-28 00:03:26 CST; 5s ago
+Fri Oct 28 00:03:31 2022 - INFO  - The unit files have no installation config,This means they are not meant to be enabled using systemctl.
+Failed to reload systemd-journald.service: Job type reload is not applicable for unit systemd-journald.service.
+   Active: active (running) since Fri 2022-10-28 00:03:26 CST; 5s ago
+Fri Oct 28 00:03:31 2022 - INFO  - Finish test!
+Fri Oct 28 00:03:31 2022 - INFO  - succeed to execute the case.
+Fri Oct 28 00:03:31 2022 - INFO  - Start environmental preparation.
+Job for systemd-journald-audit.socket failed.
+See "systemctl status systemd-journald-audit.socket" and "journalctl -xe" for details.
+Fri Oct 28 00:03:31 2022 - INFO  - End of environmental preparation!
