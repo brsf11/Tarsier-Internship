@@ -1,0 +1,29 @@
+[stdlog] 2022-10-28 20:58:59,319 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:59,320 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:59,320 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:59,320 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_001.py
+[stdlog] 2022-10-28 20:58:59,320 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:59,321 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:59,321 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:59,321 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:59,321 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:59,329 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:59,330 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007879895s
+[stdlog] 2022-10-28 20:58:59,330 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:59,613 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:27 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:59,882 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:59,883 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:59,883 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:00,179 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.848296188s
+[stdlog] 2022-10-28 20:59:00,179 avocado.utils.process INFO | Running 'systemd-detect-virt'
+[stdlog] 2022-10-28 20:59:00,191 avocado.utils.process DEBUG| [stdout] oracle
+[stdlog] 2022-10-28 20:59:00,191 avocado.utils.process INFO | Command 'systemd-detect-virt' finished with 0 after 0.010998718s
+[stdlog] 2022-10-28 20:59:00,191 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:00,192 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:00,472 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:00,479 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:00,480 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:00,480 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:00,741 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.548687046s
+[stdlog] 2022-10-28 20:59:00,741 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:59:00,741 avocado.test INFO | 

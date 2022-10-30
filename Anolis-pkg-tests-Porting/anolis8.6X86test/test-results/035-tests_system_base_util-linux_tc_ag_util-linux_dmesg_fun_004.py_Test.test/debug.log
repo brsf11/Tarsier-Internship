@@ -1,0 +1,53 @@
+[stdlog] 2022-10-28 20:58:27,132 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:58:27,132 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:27,132 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:27,133 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_004.py
+[stdlog] 2022-10-28 20:58:27,133 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:27,133 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:58:27,133 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:27,133 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:27,133 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:27,141 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:27,142 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.008021545s
+[stdlog] 2022-10-28 20:58:27,142 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:27,433 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:55 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:27,703 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:27,704 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:27,705 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:28,011 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.868418590s
+[stdlog] 2022-10-28 20:58:28,012 avocado.utils.process INFO | Running 'dmesg | grep -i memory'
+[stdlog] 2022-10-28 20:58:28,016 avocado.utils.process DEBUG| [stdout] [    0.043062] Reserving 192MB of memory at 592MB for crashkernel (System RAM: 8191MB)
+[stdlog] 2022-10-28 20:58:28,016 avocado.utils.process DEBUG| [stdout] [    0.043302] Early memory node ranges
+[stdlog] 2022-10-28 20:58:28,016 avocado.utils.process DEBUG| [stdout] [    0.064899] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[stdlog] 2022-10-28 20:58:28,016 avocado.utils.process DEBUG| [stdout] [    0.064900] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[stdlog] 2022-10-28 20:58:28,016 avocado.utils.process DEBUG| [stdout] [    0.064900] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[stdlog] 2022-10-28 20:58:28,016 avocado.utils.process DEBUG| [stdout] [    0.064900] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.064901] PM: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.064901] PM: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.064903] PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.089375] Memory: 7867372K/8388152K available (12300K kernel code, 2606K rwdata, 4096K rodata, 2344K init, 46460K bss, 520780K reserved, 0K cma-reserved)
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.111067] Freeing SMP alternatives memory: 36K
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.214342] x86/mm: Memory block size: 128MB
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.827347] Freeing initrd memory: 52616K
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.870813] Non-volatile memory driver v1.3
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.949802] Freeing unused decrypted memory: 2040K
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.950155] Freeing unused kernel image memory: 2344K
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    0.950723] Freeing unused kernel image memory: 2024K
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    1.401442] [drm] Max dedicated hypervisor surface memory is 393216 kiB
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    1.401443] [drm] Maximum display memory size is 131072 kiB
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    1.405045] [TTM] Zone  kernel: Available graphics memory: 3963216 kiB
+[stdlog] 2022-10-28 20:58:28,017 avocado.utils.process DEBUG| [stdout] [    1.405046] [TTM] Zone   dma32: Available graphics memory: 2097152 kiB
+[stdlog] 2022-10-28 20:58:28,018 avocado.utils.process INFO | Command 'dmesg | grep -i memory' finished with 0 after 0.005046106s
+[stdlog] 2022-10-28 20:58:28,018 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:28,018 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:28,299 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:28,306 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:28,307 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:28,307 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:28,618 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.599138709s
+[stdlog] 2022-10-28 20:58:28,618 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:58:28,618 avocado.test INFO | 

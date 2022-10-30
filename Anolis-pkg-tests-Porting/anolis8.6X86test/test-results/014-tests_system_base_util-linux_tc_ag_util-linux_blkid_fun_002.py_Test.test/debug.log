@@ -1,0 +1,42 @@
+[stdlog] 2022-10-28 20:57:40,899 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_blkid_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:40,900 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:40,900 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:57:40,900 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_blkid_fun_002.py
+[stdlog] 2022-10-28 20:57:40,900 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:57:40,900 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_blkid_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:40,901 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:57:40,901 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:40,901 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:57:40,908 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:57:40,909 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007275160s
+[stdlog] 2022-10-28 20:57:40,909 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:57:41,194 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:09 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:57:41,476 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:41,477 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:41,477 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:41,773 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.862717766s
+[stdlog] 2022-10-28 20:57:41,773 avocado.utils.process INFO | Running 'df -h / |grep /dev |awk '{print $1}''
+[stdlog] 2022-10-28 20:57:41,778 avocado.utils.process DEBUG| [stdout] /dev/mapper/ao-root
+[stdlog] 2022-10-28 20:57:41,778 avocado.utils.process INFO | Command 'df -h / |grep /dev |awk '{print $1}'' finished with 0 after 0.004187719s
+[stdlog] 2022-10-28 20:57:41,778 avocado.utils.process INFO | Running 'blkid -s UUID /dev/mapper/ao-root| awk -F "=" '{print $2}''
+[stdlog] 2022-10-28 20:57:41,781 avocado.utils.process DEBUG| [stdout] "8277e3e6-38a7-4987-9274-0d687b08c6ad"
+[stdlog] 2022-10-28 20:57:41,782 avocado.utils.process INFO | Command 'blkid -s UUID /dev/mapper/ao-root| awk -F "=" '{print $2}'' finished with 0 after 0.002923110s
+[stdlog] 2022-10-28 20:57:41,782 avocado.utils.process INFO | Running 'blkid -o list'
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process INFO | Command 'blkid -o list' finished with 0 after 0.112807443s
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout] device     fs_type label    mount point    UUID
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout] /dev/sda1  xfs              /boot          9db5255c-2e4f-410d-a1cd-d5621ff9fd92
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout] /dev/sda2  LVM2_member      (in use)       Ygwytd-ByzN-5vnC-foHk-mlFz-9fjX-QV1nrV
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout] /dev/mapper/ao-root
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout]            xfs              /              8277e3e6-38a7-4987-9274-0d687b08c6ad
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout] /dev/mapper/ao-swap
+[stdlog] 2022-10-28 20:57:41,896 avocado.utils.process DEBUG| [stdout]            swap             [SWAP]         9628a9a1-e815-41db-9491-9f7bae62ab31
+[stdlog] 2022-10-28 20:57:41,897 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:57:41,897 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:57:42,183 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:57:42,191 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:42,192 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:42,192 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:42,479 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.580983807s
+[stdlog] 2022-10-28 20:57:42,479 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_blkid_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:42,479 avocado.test INFO | 

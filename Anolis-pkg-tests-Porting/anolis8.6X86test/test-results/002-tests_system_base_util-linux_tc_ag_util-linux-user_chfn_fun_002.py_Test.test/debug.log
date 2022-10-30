@@ -1,0 +1,46 @@
+[stdlog] 2022-10-28 20:56:22,825 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux-user_chfn_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:56:22,825 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:56:22,826 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:56:22,826 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux-user_chfn_fun_002.py
+[stdlog] 2022-10-28 20:56:22,826 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:56:22,826 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux-user_chfn_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:56:22,826 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:56:22,826 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:56:22,826 avocado.utils.process INFO | Running 'rpm -q util-linux-user'
+[stdlog] 2022-10-28 20:56:22,833 avocado.utils.process DEBUG| [stdout] util-linux-user-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:56:22,834 avocado.utils.process INFO | Command 'rpm -q util-linux-user' finished with 0 after 0.006266483s
+[stdlog] 2022-10-28 20:56:22,834 avocado.utils.process INFO | Running 'yum update util-linux-user -y'
+[stdlog] 2022-10-28 20:56:23,120 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:38:51 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:56:23,386 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:56:23,387 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:56:23,387 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:56:24,072 avocado.utils.process INFO | Command 'yum update util-linux-user -y' finished with 0 after 1.237971158s
+[stdlog] 2022-10-28 20:56:24,073 avocado.utils.process INFO | Running 'useradd tldr-user'
+[stdlog] 2022-10-28 20:56:28,157 avocado.utils.process INFO | Command 'useradd tldr-user' finished with 0 after 4.083491093s
+[stdlog] 2022-10-28 20:56:28,158 avocado.utils.process INFO | Running 'chfn -o beijing tldr-user'
+[stdlog] 2022-10-28 20:56:29,058 avocado.utils.process DEBUG| [stdout] Changing finger information for tldr-user.
+[stdlog] 2022-10-28 20:56:29,059 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:56:29,059 avocado.utils.process DEBUG| [stdout] Finger information changed.
+[stdlog] 2022-10-28 20:56:29,059 avocado.utils.process INFO | Command 'chfn -o beijing tldr-user' finished with 0 after 0.900405607s
+[stdlog] 2022-10-28 20:56:29,059 avocado.utils.process INFO | Running 'cat /etc/passwd |grep tldr-user'
+[stdlog] 2022-10-28 20:56:29,062 avocado.utils.process DEBUG| [stdout] tldr-user:x:1001:1001:,beijing:/home/tldr-user:/bin/bash
+[stdlog] 2022-10-28 20:56:29,063 avocado.utils.process INFO | Command 'cat /etc/passwd |grep tldr-user' finished with 0 after 0.002344121s
+[stdlog] 2022-10-28 20:56:29,063 avocado.utils.process INFO | Running 'chfn -o 西安 tldr-user'
+[stdlog] 2022-10-28 20:56:29,893 avocado.utils.process DEBUG| [stdout] Changing finger information for tldr-user.
+[stdlog] 2022-10-28 20:56:29,894 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:56:29,894 avocado.utils.process DEBUG| [stdout] Finger information changed.
+[stdlog] 2022-10-28 20:56:29,894 avocado.utils.process INFO | Command 'chfn -o 西安 tldr-user' finished with 0 after 0.830790804s
+[stdlog] 2022-10-28 20:56:29,894 avocado.utils.process INFO | Running 'cat /etc/passwd |grep tldr-user'
+[stdlog] 2022-10-28 20:56:29,897 avocado.utils.process DEBUG| [stdout] tldr-user:x:1001:1001:,西安:/home/tldr-user:/bin/bash
+[stdlog] 2022-10-28 20:56:29,898 avocado.utils.process INFO | Command 'cat /etc/passwd |grep tldr-user' finished with 0 after 0.002347780s
+[stdlog] 2022-10-28 20:56:29,898 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:56:29,898 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:56:30,175 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:56:30,181 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:56:30,182 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:56:30,183 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:56:30,474 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.575876504s
+[stdlog] 2022-10-28 20:56:30,475 avocado.utils.process INFO | Running 'userdel -r tldr-user'
+[stdlog] 2022-10-28 20:56:34,741 avocado.utils.process INFO | Command 'userdel -r tldr-user' finished with 0 after 4.265498907s
+[stdlog] 2022-10-28 20:56:34,741 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux-user_chfn_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:56:34,742 avocado.test INFO | 

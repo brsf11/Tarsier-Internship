@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/avocado/core/utils/loader.py", line 43, in load_test
+    f, p, d = imp.find_module(module_name, [test_module_dir])
+  File "/usr/lib64/python3.6/imp.py", line 297, in find_module
+    raise ImportError(_ERR_MSG.format(name), name=name)
+ImportError: No module named 'tc_ag_util-linux_wdctl_fun_002'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/avocado/core/runners/avocado_instrumented.py", line 73, in _run_avocado
+    instance = loader.load_test(test_factory)
+  File "/usr/local/lib/python3.6/site-packages/avocado/core/utils/loader.py", line 51, in load_test
+    return TestError(**test_parameters)
+  File "/usr/local/lib/python3.6/site-packages/avocado/core/utils/loader.py", line 17, in __init__
+    test.Test.__init__(self, *args, **kwargs)
+TypeError: __init__() got an unexpected keyword argument 'run.results_dir'

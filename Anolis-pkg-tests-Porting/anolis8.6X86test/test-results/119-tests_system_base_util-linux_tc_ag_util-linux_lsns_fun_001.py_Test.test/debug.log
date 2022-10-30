@@ -1,0 +1,43 @@
+[stdlog] 2022-10-28 21:02:14,303 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lsns_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:02:14,304 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:14,304 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:02:14,304 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lsns_fun_001.py
+[stdlog] 2022-10-28 21:02:14,304 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:02:14,304 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lsns_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:02:14,305 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:02:14,306 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:14,306 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:02:14,313 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:02:14,314 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007231075s
+[stdlog] 2022-10-28 21:02:14,314 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:02:14,603 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:42 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:02:14,875 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:14,876 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:14,876 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:15,280 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.965433594s
+[stdlog] 2022-10-28 21:02:15,281 avocado.utils.process INFO | Running 'lsns'
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout]         NS TYPE   NPROCS   PID USER   COMMAND
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531835 cgroup    159     1 root   /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531836 pid       159     1 root   /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531837 user      159     1 root   /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531838 uts       159     1 root   /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531839 ipc       159     1 root   /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531840 mnt       153     1 root   /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531861 mnt         1    15 root   kdevtmpfs
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026531993 net       158     1 root   /usr/lib/systemd/systemd --switched-root --system --deserialize 17
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026532149 mnt         1   654 root   /usr/lib/systemd/systemd-udevd
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026532244 net         1   810 rtkit  /usr/libexec/rtkit-daemon
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026532304 mnt         1   810 rtkit  /usr/libexec/rtkit-daemon
+[stdlog] 2022-10-28 21:02:15,289 avocado.utils.process DEBUG| [stdout] 4026532305 mnt         1   852 root   /usr/sbin/ModemManager
+[stdlog] 2022-10-28 21:02:15,290 avocado.utils.process DEBUG| [stdout] 4026532306 mnt         1   921 root   /usr/sbin/NetworkManager --no-daemon
+[stdlog] 2022-10-28 21:02:15,290 avocado.utils.process DEBUG| [stdout] 4026532463 mnt         1  1755 colord /usr/libexec/colord
+[stdlog] 2022-10-28 21:02:15,290 avocado.utils.process INFO | Command 'lsns' finished with 0 after 0.008175267s
+[stdlog] 2022-10-28 21:02:15,290 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:02:15,290 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:02:15,579 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:02:15,587 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:15,588 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:15,588 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:15,899 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.608498893s
+[stdlog] 2022-10-28 21:02:15,900 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lsns_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:02:15,900 avocado.test INFO | 

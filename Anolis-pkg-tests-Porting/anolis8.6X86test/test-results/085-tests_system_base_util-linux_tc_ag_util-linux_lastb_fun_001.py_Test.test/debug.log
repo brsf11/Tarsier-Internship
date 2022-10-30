@@ -1,0 +1,72 @@
+[stdlog] 2022-10-28 21:01:08,863 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:08,864 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:08,864 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:01:08,864 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_001.py
+[stdlog] 2022-10-28 21:01:08,864 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:01:08,865 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:08,865 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:01:08,865 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:08,865 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:01:08,873 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:01:08,873 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007315320s
+[stdlog] 2022-10-28 21:01:08,874 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:01:09,162 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:43:37 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:01:09,447 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:09,449 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:09,450 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:09,757 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.882384760s
+[stdlog] 2022-10-28 21:01:09,757 avocado.utils.process INFO | Running 'lastb'
+[stdlog] 2022-10-28 21:01:09,760 avocado.utils.process INFO | Command 'lastb' finished with 0 after 0.002312653s
+[stdlog] 2022-10-28 21:01:09,761 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:09,761 avocado.utils.process DEBUG| [stdout] btmp begins Tue Oct 18 22:11:52 2022
+[stdlog] 2022-10-28 21:01:09,761 avocado.utils.process INFO | Running 'cat /var/log/btmp | egrep -ao '([0-9]{1,3}.){3}[0-9]{1,3}''
+[stdlog] 2022-10-28 21:01:09,764 avocado.utils.process INFO | Command 'cat /var/log/btmp | egrep -ao '([0-9]{1,3}.){3}[0-9]{1,3}'' finished with 1 after 0.002667902s
+[stdlog] 2022-10-28 21:01:09,765 avocado.test ERROR| 
+[stdlog] 2022-10-28 21:01:09,765 avocado.test ERROR| Reproduced traceback from: /usr/local/lib/python3.6/site-packages/avocado/core/test.py:761
+[stdlog] 2022-10-28 21:01:09,765 avocado.test ERROR| Traceback (most recent call last):
+[stdlog] 2022-10-28 21:01:09,765 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_001.py", line 28, in test
+[stdlog] 2022-10-28 21:01:09,765 avocado.test ERROR|     ret_c, ret_btmp = self.cmd("cat /var/log/btmp | egrep -ao '([0-9]{1,3}.){3}[0-9]{1,3}'")
+[stdlog] 2022-10-28 21:01:09,765 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/basetest.py", line 54, in cmd
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR|     return self.local.cmd(command, ignore_status=ignore_status)
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/hosts.py", line 45, in cmd
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR|     result = process.run(command, ignore_status=ignore_status, shell=True)
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/utils/process.py", line 1015, in run
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR|     raise CmdError(cmd, sp.result)
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR| avocado.utils.process.CmdError: Command 'cat /var/log/btmp | egrep -ao '([0-9]{1,3}.){3}[0-9]{1,3}'' failed.
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR| stdout: b''
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR| stderr: b''
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR| additional_info: None
+[stdlog] 2022-10-28 21:01:09,766 avocado.test ERROR| 
+[stdlog] 2022-10-28 21:01:09,766 avocado.test DEBUG| Local variables:
+[stdlog] 2022-10-28 21:01:09,778 avocado.test DEBUG|  -> ret_o <class 'str'>: btmp begins Tue Oct 18 22:11:52 2022
+[stdlog] 2022-10-28 21:01:09,778 avocado.test DEBUG|  -> ret_c <class 'int'>: 0
+[stdlog] 2022-10-28 21:01:09,778 avocado.test DEBUG|  -> self <class 'tc_ag_util-linux_lastb_fun_001.Test'>: 1-tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:09,778 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:01:09,778 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:01:10,067 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:01:10,074 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:10,075 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:10,076 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:10,385 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.605555560s
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR| Traceback (most recent call last):
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/core/test.py", line 796, in _run_avocado
+[stdlog]     raise test_exception
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/core/test.py", line 756, in _run_avocado
+[stdlog]     testMethod()
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_001.py", line 28, in test
+[stdlog]     ret_c, ret_btmp = self.cmd("cat /var/log/btmp | egrep -ao '([0-9]{1,3}.){3}[0-9]{1,3}'")
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/basetest.py", line 54, in cmd
+[stdlog]     return self.local.cmd(command, ignore_status=ignore_status)
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/hosts.py", line 45, in cmd
+[stdlog]     result = process.run(command, ignore_status=ignore_status, shell=True)
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/utils/process.py", line 1015, in run
+[stdlog]     raise CmdError(cmd, sp.result)
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR| avocado.utils.process.CmdError: Command 'cat /var/log/btmp | egrep -ao '([0-9]{1,3}.){3}[0-9]{1,3}'' failed.
+[stdlog] stdout: b''
+[stdlog] stderr: b''
+[stdlog] additional_info: None
+[stdlog] 2022-10-28 21:01:10,386 avocado.test ERROR| ERROR 1-tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_001.py:Test.test -> CmdError: Command 'cat /var/log/btmp | egrep -ao '([0-9]{1,3}.){3}[0-9]{1,3}'' failed.
+[stdlog] stdout: b''
+[stdlog] stderr: b''
+[stdlog] additional_info: None
+[stdlog] 2022-10-28 21:01:10,386 avocado.test INFO | 

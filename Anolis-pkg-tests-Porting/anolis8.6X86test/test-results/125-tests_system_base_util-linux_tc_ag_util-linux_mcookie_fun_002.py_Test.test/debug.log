@@ -1,0 +1,30 @@
+[stdlog] 2022-10-28 21:02:25,688 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_mcookie_fun_002.py:Test.test
+[stdlog] 2022-10-28 21:02:25,689 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:25,689 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:02:25,689 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_mcookie_fun_002.py
+[stdlog] 2022-10-28 21:02:25,690 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:02:25,690 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_mcookie_fun_002.py:Test.test
+[stdlog] 2022-10-28 21:02:25,690 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:02:25,690 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:25,690 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:02:25,698 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:02:25,698 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007270359s
+[stdlog] 2022-10-28 21:02:25,699 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:02:25,985 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:53 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:02:26,253 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:26,254 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:26,255 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:26,570 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.870413943s
+[stdlog] 2022-10-28 21:02:26,570 avocado.utils.process INFO | Running 'mcookie --file {{path/to/file}}'
+[stdlog] 2022-10-28 21:02:26,572 avocado.utils.process DEBUG| [stdout] de854c91afe18205121220537b1ec82d
+[stdlog] 2022-10-28 21:02:26,573 avocado.utils.process INFO | Command 'mcookie --file {{path/to/file}}' finished with 0 after 0.001619611s
+[stdlog] 2022-10-28 21:02:26,573 avocado.utils.process DEBUG| [stderr] mcookie: cannot open {{path/to/file}}: No such file or directory
+[stdlog] 2022-10-28 21:02:26,573 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:02:26,573 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:02:26,851 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:02:26,858 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:26,859 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:26,859 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:27,165 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.591701247s
+[stdlog] 2022-10-28 21:02:27,166 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_mcookie_fun_002.py:Test.test
+[stdlog] 2022-10-28 21:02:27,166 avocado.test INFO | 

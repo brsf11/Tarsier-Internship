@@ -1,0 +1,57 @@
+[stdlog] 2022-10-28 21:02:53,449 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_namei_fun_002.py:Test.test
+[stdlog] 2022-10-28 21:02:53,450 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:53,450 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:02:53,450 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_namei_fun_002.py
+[stdlog] 2022-10-28 21:02:53,450 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:02:53,450 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_namei_fun_002.py:Test.test
+[stdlog] 2022-10-28 21:02:53,450 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:02:53,450 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:53,451 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:02:53,459 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:02:53,459 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007914028s
+[stdlog] 2022-10-28 21:02:53,460 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:02:53,740 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:45:21 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:02:54,019 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:54,020 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:54,021 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:54,339 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.878680455s
+[stdlog] 2022-10-28 21:02:54,339 avocado.utils.process INFO | Running 'mkdir -p /root/aa/bb/cc'
+[stdlog] 2022-10-28 21:02:54,342 avocado.utils.process INFO | Command 'mkdir -p /root/aa/bb/cc' finished with 0 after 0.001542386s
+[stdlog] 2022-10-28 21:02:54,342 avocado.utils.process INFO | Running 'mkdir -p /home/aa/bb/cc'
+[stdlog] 2022-10-28 21:02:54,344 avocado.utils.process INFO | Command 'mkdir -p /home/aa/bb/cc' finished with 0 after 0.001403110s
+[stdlog] 2022-10-28 21:02:54,344 avocado.utils.process INFO | Running 'namei --long /root/aa/bb/cc /home/aa/bb/cc'
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] f: /root/aa/bb/cc
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] dr-xr-xr-x root root /
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] dr-xr-x--- root root root
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root aa
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root bb
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root cc
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] f: /home/aa/bb/cc
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] dr-xr-xr-x root root /
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root home
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root aa
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root bb
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root cc
+[stdlog] 2022-10-28 21:02:54,347 avocado.utils.process INFO | Command 'namei --long /root/aa/bb/cc /home/aa/bb/cc' finished with 0 after 0.002174536s
+[stdlog] 2022-10-28 21:02:54,348 avocado.utils.process INFO | Running 'namei --long /root/aa/bb/cc/1.txt'
+[stdlog] 2022-10-28 21:02:54,350 avocado.utils.process DEBUG| [stdout] f: /root/aa/bb/cc/1.txt
+[stdlog] 2022-10-28 21:02:54,350 avocado.utils.process DEBUG| [stdout] dr-xr-xr-x root root /
+[stdlog] 2022-10-28 21:02:54,350 avocado.utils.process DEBUG| [stdout] dr-xr-x--- root root root
+[stdlog] 2022-10-28 21:02:54,350 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root aa
+[stdlog] 2022-10-28 21:02:54,350 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root bb
+[stdlog] 2022-10-28 21:02:54,350 avocado.utils.process DEBUG| [stdout] drwxr-xr-x root root cc
+[stdlog] 2022-10-28 21:02:54,350 avocado.utils.process DEBUG| [stdout]                      1.txt - No such file or directory
+[stdlog] 2022-10-28 21:02:54,351 avocado.utils.process INFO | Command 'namei --long /root/aa/bb/cc/1.txt' finished with 1 after 0.002366264s
+[stdlog] 2022-10-28 21:02:54,351 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:02:54,351 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:02:54,631 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:02:54,638 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:54,639 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:54,640 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:54,968 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.616826506s
+[stdlog] 2022-10-28 21:02:54,969 avocado.utils.process INFO | Running 'rm -rf /root/aa/bb/cc'
+[stdlog] 2022-10-28 21:02:54,971 avocado.utils.process INFO | Command 'rm -rf /root/aa/bb/cc' finished with 0 after 0.001724101s
+[stdlog] 2022-10-28 21:02:54,971 avocado.utils.process INFO | Running 'rm -rf /home/aa/bb/cc'
+[stdlog] 2022-10-28 21:02:54,973 avocado.utils.process INFO | Command 'rm -rf /home/aa/bb/cc' finished with 0 after 0.001221703s
+[stdlog] 2022-10-28 21:02:54,974 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_namei_fun_002.py:Test.test
+[stdlog] 2022-10-28 21:02:54,974 avocado.test INFO | 

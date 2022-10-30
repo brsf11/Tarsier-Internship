@@ -1,0 +1,38 @@
+[stdlog] 2022-10-28 20:59:00,977 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:00,978 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:00,978 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:59:00,978 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_002.py
+[stdlog] 2022-10-28 20:59:00,978 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:59:00,978 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:00,978 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:59:00,979 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:00,979 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:59:00,986 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:59:00,987 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007169714s
+[stdlog] 2022-10-28 20:59:00,987 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:59:01,265 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:29 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:59:01,543 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:01,544 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:01,545 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:01,825 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.837499200s
+[stdlog] 2022-10-28 20:59:01,826 avocado.utils.process INFO | Running 'blkid | head -1 | awk -F 'UUID=' '{print $2'}|awk -F ' ' '{print $1'}'
+[stdlog] 2022-10-28 20:59:01,945 avocado.utils.process DEBUG| [stdout] "9db5255c-2e4f-410d-a1cd-d5621ff9fd92"
+[stdlog] 2022-10-28 20:59:01,946 avocado.utils.process INFO | Command 'blkid | head -1 | awk -F 'UUID=' '{print $2'}|awk -F ' ' '{print $1'}' finished with 0 after 0.118751130s
+[stdlog] 2022-10-28 20:59:01,946 avocado.utils.process INFO | Running 'findfs UUID="9db5255c-2e4f-410d-a1cd-d5621ff9fd92"'
+[stdlog] 2022-10-28 20:59:01,973 avocado.utils.process INFO | Command 'findfs UUID="9db5255c-2e4f-410d-a1cd-d5621ff9fd92"' finished with 0 after 0.025926232s
+[stdlog] 2022-10-28 20:59:01,973 avocado.utils.process DEBUG| [stdout] /dev/sda1
+[stdlog] 2022-10-28 20:59:01,973 avocado.utils.process INFO | Running 'findfs UUID='
+[stdlog] 2022-10-28 20:59:01,975 avocado.utils.process INFO | Command 'findfs UUID=' finished with 1 after 0.001281506s
+[stdlog] 2022-10-28 20:59:01,976 avocado.utils.process DEBUG| [stderr] findfs: unable to resolve 'UUID='
+[stdlog] 2022-10-28 20:59:01,976 avocado.utils.process INFO | Running 'findfs UUID=xxxxx'
+[stdlog] 2022-10-28 20:59:02,202 avocado.utils.process INFO | Command 'findfs UUID=xxxxx' finished with 1 after 0.225067312s
+[stdlog] 2022-10-28 20:59:02,202 avocado.utils.process DEBUG| [stderr] findfs: unable to resolve 'UUID=xxxxx'
+[stdlog] 2022-10-28 20:59:02,202 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:02,202 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:02,477 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:02,484 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:02,485 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:02,486 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:02,810 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.606196360s
+[stdlog] 2022-10-28 20:59:02,810 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:02,810 avocado.test INFO | 

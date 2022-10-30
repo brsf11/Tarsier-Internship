@@ -1,0 +1,80 @@
+[stdlog] 2022-10-28 20:59:32,654 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_fsck_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:59:32,655 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:32,655 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:59:32,655 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_fsck_fun_001.py
+[stdlog] 2022-10-28 20:59:32,655 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:59:32,656 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_fsck_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:59:32,656 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:59:32,656 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:32,656 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:59:32,663 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:59:32,664 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007334573s
+[stdlog] 2022-10-28 20:59:32,664 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:59:32,945 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:42:00 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:59:33,215 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:33,216 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:33,217 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:33,557 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.891787633s
+[stdlog] 2022-10-28 20:59:33,557 avocado.utils.process INFO | Running 'dd if=/dev/zero of=/tmp/fsck_test.img bs=1M count=100'
+[stdlog] 2022-10-28 20:59:33,608 avocado.utils.process DEBUG| [stderr] 100+0 records in
+[stdlog] 2022-10-28 20:59:33,608 avocado.utils.process DEBUG| [stderr] 100+0 records out
+[stdlog] 2022-10-28 20:59:33,608 avocado.utils.process DEBUG| [stderr] 104857600 bytes (105 MB, 100 MiB) copied, 0.0276988 s, 3.8 GB/s
+[stdlog] 2022-10-28 20:59:33,608 avocado.utils.process DEBUG| [stderr] 
+[stdlog] 2022-10-28 20:59:33,609 avocado.utils.process INFO | Command 'dd if=/dev/zero of=/tmp/fsck_test.img bs=1M count=100' finished with 0 after 0.050619487s
+[stdlog] 2022-10-28 20:59:33,609 avocado.utils.process INFO | Running 'mkfs.ext4 /tmp/fsck_test.img'
+[stdlog] 2022-10-28 20:59:33,727 avocado.utils.process DEBUG| [stderr] mke2fs 1.45.6 (20-Mar-2020)
+[stdlog] 2022-10-28 20:59:34,138 avocado.utils.process DEBUG| [stdout] Discarding device blocks: 
+[stdlog] 2022-10-28 20:59:34,138 avocado.utils.process DEBUG| [stdout]   1024/102400
+[stdlog] 2022-10-28 20:59:34,138 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,142 avocado.utils.process DEBUG| [stdout]              
+[stdlog] 2022-10-28 20:59:34,142 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,142 avocado.utils.process DEBUG| [stdout] done                            
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] Creating filesystem with 102400 1k blocks and 25688 inodes
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] Filesystem UUID: 5050b11c-673b-4923-b6b8-7c083ad694e5
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] Superblock backups stored on blocks: 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 	
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 8193
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] , 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 24577
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] , 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 40961
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] , 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 57345
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] , 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 73729
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,143 avocado.utils.process DEBUG| [stdout] Allocating group tables: 
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout]  0/13
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout]      
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] done                            
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] Writing inode tables: 
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout]  0/13
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout]      
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] done                            
+[stdlog] 2022-10-28 20:59:34,144 avocado.utils.process DEBUG| [stdout] Creating journal (4096 blocks): 
+[stdlog] 2022-10-28 20:59:34,145 avocado.utils.process DEBUG| [stdout] done
+[stdlog] 2022-10-28 20:59:34,145 avocado.utils.process DEBUG| [stdout] Writing superblocks and filesystem accounting information: 
+[stdlog] 2022-10-28 20:59:34,145 avocado.utils.process DEBUG| [stdout]  0/13
+[stdlog] 2022-10-28 20:59:34,145 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,145 avocado.utils.process DEBUG| [stdout]      
+[stdlog] 2022-10-28 20:59:34,145 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,460 avocado.utils.process DEBUG| [stdout] done
+[stdlog] 2022-10-28 20:59:34,460 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:59:34,461 avocado.utils.process INFO | Command 'mkfs.ext4 /tmp/fsck_test.img' finished with 0 after 0.850802199s
+[stdlog] 2022-10-28 20:59:34,739 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:34,739 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:35,013 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:35,020 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:35,021 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:35,022 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:35,321 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.580522016s
+[stdlog] 2022-10-28 20:59:35,321 avocado.utils.process INFO | Running 'rm /tmp/fsck_test.img'
+[stdlog] 2022-10-28 20:59:35,323 avocado.utils.process INFO | Command 'rm /tmp/fsck_test.img' finished with 0 after 0.001504000s
+[stdlog] 2022-10-28 20:59:35,324 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_fsck_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:59:35,324 avocado.test INFO | 

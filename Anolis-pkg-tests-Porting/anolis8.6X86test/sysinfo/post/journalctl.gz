@@ -1,0 +1,68 @@
+Oct 28 20:56:08 localhost.localdomain useradd[4760]: new group: name=tldr-user, GID=1001
+Oct 28 20:56:08 localhost.localdomain useradd[4760]: new user: name=tldr-user, UID=1001, GID=1001, home=/home/tldr-user, shell=/bin/bash
+Oct 28 20:56:18 localhost.localdomain userdel[4821]: delete user 'tldr-user'
+Oct 28 20:56:18 localhost.localdomain sssd_nss[830]: Enumeration requested but not enabled
+Oct 28 20:56:18 localhost.localdomain userdel[4821]: removed group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:56:18 localhost.localdomain userdel[4821]: removed shadow group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:56:24 localhost.localdomain useradd[4841]: new group: name=tldr-user, GID=1001
+Oct 28 20:56:24 localhost.localdomain useradd[4841]: new user: name=tldr-user, UID=1001, GID=1001, home=/home/tldr-user, shell=/bin/bash
+Oct 28 20:56:30 localhost.localdomain userdel[4869]: delete user 'tldr-user'
+Oct 28 20:56:30 localhost.localdomain userdel[4869]: removed group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:56:30 localhost.localdomain userdel[4869]: removed shadow group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:56:36 localhost.localdomain useradd[4889]: new group: name=tldr-user, GID=1001
+Oct 28 20:56:36 localhost.localdomain useradd[4889]: new user: name=tldr-user, UID=1001, GID=1001, home=/home/tldr-user, shell=/bin/bash
+Oct 28 20:56:45 localhost.localdomain userdel[4933]: delete user 'tldr-user'
+Oct 28 20:56:45 localhost.localdomain userdel[4933]: removed group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:56:45 localhost.localdomain userdel[4933]: removed shadow group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:56:50 localhost.localdomain useradd[4953]: new group: name=tldr-user, GID=1001
+Oct 28 20:56:50 localhost.localdomain useradd[4953]: new user: name=tldr-user, UID=1001, GID=1001, home=/home/tldr-user, shell=/bin/bash
+Oct 28 20:56:58 localhost.localdomain userdel[4989]: delete user 'tldr-user'
+Oct 28 20:56:58 localhost.localdomain userdel[4989]: removed group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:56:58 localhost.localdomain userdel[4989]: removed shadow group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:57:16 localhost.localdomain useradd[5120]: new group: name=tldr-user, GID=1001
+Oct 28 20:57:16 localhost.localdomain useradd[5120]: new user: name=tldr-user, UID=1001, GID=1001, home=/home/tldr-user, shell=/bin/bash
+Oct 28 20:57:24 localhost.localdomain userdel[5167]: delete user 'tldr-user'
+Oct 28 20:57:24 localhost.localdomain userdel[5167]: removed group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:57:24 localhost.localdomain userdel[5167]: removed shadow group 'tldr-user' owned by 'tldr-user'
+Oct 28 20:59:41 localhost.localdomain systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 6502 (find)
+Oct 28 20:59:41 localhost.localdomain systemd[1]: Mounting Arbitrary Executable File Formats File System...
+Oct 28 20:59:41 localhost.localdomain systemd[1]: Mounted Arbitrary Executable File Formats File System.
+Oct 28 21:01:01 localhost.localdomain CROND[7020]: (root) CMD (run-parts /etc/cron.hourly)
+Oct 28 21:01:01 localhost.localdomain run-parts[7027]: (/etc/cron.hourly) starting 0anacron
+Oct 28 21:01:01 localhost.localdomain run-parts[7036]: (/etc/cron.hourly) finished 0anacron
+Oct 28 21:01:22 localhost.localdomain kernel: loop: module loaded
+Oct 28 21:01:22 localhost.localdomain kernel: EXT4-fs (loop0): mounted filesystem with ordered data mode. Opts: (null)
+Oct 28 21:01:22 localhost.localdomain systemd[1]: tmp-disk_test.mount: Succeeded.
+Oct 28 21:02:38 localhost.localdomain sudo[8119]:     root : TTY=pts/0 ; PWD=/root/GitRepo/anolis-pkg-tests ; USER=root ; COMMAND=/sbin/mkswap {{/dev/sdb7}}
+Oct 28 21:02:38 localhost.localdomain sudo[8119]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 28 21:02:38 localhost.localdomain sudo[8119]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Oct 28 21:02:38 localhost.localdomain sudo[8119]: pam_unix(sudo:session): session closed for user root
+Oct 28 21:02:40 localhost.localdomain sudo[8137]:     root : TTY=pts/0 ; PWD=/root/GitRepo/anolis-pkg-tests ; USER=root ; COMMAND=/sbin/mkswap {{path/to/file}}
+Oct 28 21:02:40 localhost.localdomain sudo[8137]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 28 21:02:40 localhost.localdomain sudo[8137]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Oct 28 21:02:40 localhost.localdomain sudo[8137]: pam_unix(sudo:session): session closed for user root
+Oct 28 21:02:42 localhost.localdomain sudo[8155]:     root : TTY=pts/0 ; PWD=/root/GitRepo/anolis-pkg-tests ; USER=root ; COMMAND=/sbin/mkswap -c {{/dev/sdb7}}
+Oct 28 21:02:42 localhost.localdomain sudo[8155]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 28 21:02:42 localhost.localdomain sudo[8155]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Oct 28 21:02:42 localhost.localdomain sudo[8155]: pam_unix(sudo:session): session closed for user root
+Oct 28 21:02:44 localhost.localdomain sudo[8173]:     root : TTY=pts/0 ; PWD=/root/GitRepo/anolis-pkg-tests ; USER=root ; COMMAND=/sbin/mkswap -L {{swap1}} {{path/to/file}}
+Oct 28 21:02:44 localhost.localdomain sudo[8173]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 28 21:02:44 localhost.localdomain sudo[8173]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Oct 28 21:02:44 localhost.localdomain sudo[8173]: pam_unix(sudo:session): session closed for user root
+Oct 28 21:03:01 localhost.localdomain useradd[8398]: new group: name=tldr-user, GID=1001
+Oct 28 21:03:01 localhost.localdomain useradd[8398]: new user: name=tldr-user, UID=1001, GID=1001, home=/home/tldr-user, shell=/bin/bash
+Oct 28 21:03:06 localhost.localdomain userdel[8414]: delete user 'tldr-user'
+Oct 28 21:03:06 localhost.localdomain userdel[8414]: removed group 'tldr-user' owned by 'tldr-user'
+Oct 28 21:03:06 localhost.localdomain userdel[8414]: removed shadow group 'tldr-user' owned by 'tldr-user'
+Oct 28 21:03:20 localhost.localdomain sudo[8508]:     root : TTY=pts/0 ; PWD=/root/GitRepo/anolis-pkg-tests ; USER=root ; COMMAND=/sbin/partx --list /dev/sda
+Oct 28 21:03:20 localhost.localdomain sudo[8508]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 28 21:03:20 localhost.localdomain sudo[8508]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Oct 28 21:03:20 localhost.localdomain sudo[8508]: pam_unix(sudo:session): session closed for user root
+Oct 28 21:03:22 localhost.localdomain sudo[8526]:     root : TTY=pts/0 ; PWD=/root/GitRepo/anolis-pkg-tests ; USER=root ; COMMAND=/sbin/partx --add --verbose {{path/to/device_or_disk_image}}
+Oct 28 21:03:22 localhost.localdomain sudo[8526]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 28 21:03:22 localhost.localdomain sudo[8526]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Oct 28 21:03:22 localhost.localdomain sudo[8526]: pam_unix(sudo:session): session closed for user root
+Oct 28 21:03:24 localhost.localdomain sudo[8544]:     root : TTY=pts/0 ; PWD=/root/GitRepo/anolis-pkg-tests ; USER=root ; COMMAND=/sbin/partx --delete {{path/to/device_or_disk_image}}
+Oct 28 21:03:24 localhost.localdomain sudo[8544]: pam_systemd(sudo:session): Cannot create session: Already running in a session or user slice
+Oct 28 21:03:24 localhost.localdomain sudo[8544]: pam_unix(sudo:session): session opened for user root by root(uid=0)
+Oct 28 21:03:24 localhost.localdomain sudo[8544]: pam_unix(sudo:session): session closed for user root

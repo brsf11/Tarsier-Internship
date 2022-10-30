@@ -1,0 +1,17 @@
+[stderr] Traceback (most recent call last):
+[stderr]   File "/usr/local/lib/python3.6/site-packages/avocado/core/utils/loader.py", line 43, in load_test
+[stderr]     f, p, d = imp.find_module(module_name, [test_module_dir])
+[stderr]   File "/usr/lib64/python3.6/imp.py", line 297, in find_module
+[stderr]     raise ImportError(_ERR_MSG.format(name), name=name)
+[stderr] ImportError: No module named 'tc_ag_util-linux_runuser_fun_005'
+[stderr] 
+[stderr] During handling of the above exception, another exception occurred:
+[stderr] 
+[stderr] Traceback (most recent call last):
+[stderr]   File "/usr/local/lib/python3.6/site-packages/avocado/core/runners/avocado_instrumented.py", line 73, in _run_avocado
+[stderr]     instance = loader.load_test(test_factory)
+[stderr]   File "/usr/local/lib/python3.6/site-packages/avocado/core/utils/loader.py", line 51, in load_test
+[stderr]     return TestError(**test_parameters)
+[stderr]   File "/usr/local/lib/python3.6/site-packages/avocado/core/utils/loader.py", line 17, in __init__
+[stderr]     test.Test.__init__(self, *args, **kwargs)
+[stderr] TypeError: __init__() got an unexpected keyword argument 'run.results_dir'

@@ -1,0 +1,32 @@
+[stdlog] 2022-10-28 20:57:29,082 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:57:29,083 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:29,083 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:57:29,083 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_004.py
+[stdlog] 2022-10-28 20:57:29,083 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:57:29,083 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:57:29,083 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:57:29,083 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:29,084 avocado.utils.process INFO | Running 'rpm -q util-linux-user'
+[stdlog] 2022-10-28 20:57:29,091 avocado.utils.process DEBUG| [stdout] util-linux-user-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:57:29,091 avocado.utils.process INFO | Command 'rpm -q util-linux-user' finished with 0 after 0.006898369s
+[stdlog] 2022-10-28 20:57:29,092 avocado.utils.process INFO | Running 'yum update util-linux-user -y'
+[stdlog] 2022-10-28 20:57:29,382 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:39:57 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:57:29,666 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:29,667 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:29,667 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:29,995 avocado.utils.process INFO | Command 'yum update util-linux-user -y' finished with 0 after 0.903101716s
+[stdlog] 2022-10-28 20:57:29,996 avocado.utils.process INFO | Running 'chsh --list-shells'
+[stdlog] 2022-10-28 20:57:30,000 avocado.utils.process DEBUG| [stdout] /bin/sh
+[stdlog] 2022-10-28 20:57:30,000 avocado.utils.process DEBUG| [stdout] /bin/bash
+[stdlog] 2022-10-28 20:57:30,000 avocado.utils.process DEBUG| [stdout] /usr/bin/sh
+[stdlog] 2022-10-28 20:57:30,000 avocado.utils.process DEBUG| [stdout] /usr/bin/bash
+[stdlog] 2022-10-28 20:57:30,000 avocado.utils.process INFO | Command 'chsh --list-shells' finished with 0 after 0.003652584s
+[stdlog] 2022-10-28 20:57:30,000 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:57:30,000 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:57:30,281 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:57:30,288 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:30,289 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:30,289 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:30,591 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.589696304s
+[stdlog] 2022-10-28 20:57:30,591 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:57:30,591 avocado.test INFO | 

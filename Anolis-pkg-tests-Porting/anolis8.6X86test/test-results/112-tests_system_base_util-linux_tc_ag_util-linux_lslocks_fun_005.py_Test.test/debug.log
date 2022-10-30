@@ -1,0 +1,41 @@
+[stdlog] 2022-10-28 21:02:00,968 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_005.py:Test.test
+[stdlog] 2022-10-28 21:02:00,968 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:00,969 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:02:00,969 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_005.py
+[stdlog] 2022-10-28 21:02:00,969 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:02:00,969 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_005.py:Test.test
+[stdlog] 2022-10-28 21:02:00,969 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:02:00,969 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:00,969 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:02:00,978 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:02:00,979 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.008500502s
+[stdlog] 2022-10-28 21:02:00,979 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:02:01,263 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:29 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:02:01,543 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:01,544 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:01,545 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:01,838 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.858219298s
+[stdlog] 2022-10-28 21:02:01,838 avocado.utils.process INFO | Running 'lslocks --json'
+[stdlog] 2022-10-28 21:02:01,841 avocado.utils.process DEBUG| [stdout] {
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]    "locks": [
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "rpcbind", "pid": "793", "type": "FLOCK", "size": "0B", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/run/rpcbind/rpcbind.lock"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "lsmd", "pid": "801", "type": "FLOCK", "size": "0B", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/run/lsm/ipc/.lsmd-ipc-lock"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "crond", "pid": "1046", "type": "FLOCK", "size": "5B", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/run/crond.pid"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "atd", "pid": "1056", "type": "POSIX", "size": "5B", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/run/atd.pid"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "gnome-shell", "pid": "1604", "type": "FLOCK", "size": "0B", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/run/user/42/wayland-0.lock"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "sssd_nss", "pid": "830", "type": "POSIX", "size": "8.8M", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/var/lib/sss/mc/passwd"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "sssd_nss", "pid": "830", "type": "POSIX", "size": "6.6M", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/var/lib/sss/mc/group"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "sssd_nss", "pid": "830", "type": "POSIX", "size": "11M", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/var/lib/sss/mc/initgroups"},
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]       {"command": "flock", "pid": "7751", "type": "FLOCK", "size": "0B", "mode": "WRITE", "m": "0", "start": "0", "end": "0", "path": "/root/GitRepo/anolis-pkg-tests/test.lock (deleted)"}
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout]    ]
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process DEBUG| [stdout] }
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process INFO | Command 'lslocks --json' finished with 0 after 0.002967397s
+[stdlog] 2022-10-28 21:02:01,842 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:02:01,842 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:02:02,126 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:02:02,133 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:02,134 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:02,134 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:02,454 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.610424527s
+[stdlog] 2022-10-28 21:02:02,454 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_005.py:Test.test
+[stdlog] 2022-10-28 21:02:02,454 avocado.test INFO | 

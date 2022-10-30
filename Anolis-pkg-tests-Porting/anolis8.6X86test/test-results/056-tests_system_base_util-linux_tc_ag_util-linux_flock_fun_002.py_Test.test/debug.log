@@ -1,0 +1,44 @@
+[stdlog] 2022-10-28 20:59:29,074 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_flock_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:29,074 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:29,075 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:59:29,075 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_flock_fun_002.py
+[stdlog] 2022-10-28 20:59:29,075 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:59:29,075 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_flock_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:29,075 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:59:29,075 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:29,075 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:59:29,083 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:59:29,083 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007219250s
+[stdlog] 2022-10-28 20:59:29,084 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:59:29,362 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:57 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:59:29,641 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:29,642 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:29,642 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:29,931 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.846958591s
+[stdlog] 2022-10-28 20:59:29,935 avocado.utils.process INFO | Running 'ps -ef |grep 'sleep 10' |grep -v grep |wc -l'
+[stdlog] 2022-10-28 20:59:29,946 avocado.utils.process DEBUG| [stdout] 4
+[stdlog] 2022-10-28 20:59:29,946 avocado.utils.process INFO | Command 'ps -ef |grep 'sleep 10' |grep -v grep |wc -l' finished with 0 after 0.009688885s
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR| 
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR| Reproduced traceback from: /usr/local/lib/python3.6/site-packages/avocado/core/test.py:761
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR| Traceback (most recent call last):
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_flock_fun_002.py", line 31, in test
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR|     self.assertTrue("2" == ret_o, 'check output error.')
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR|   File "/usr/lib64/python3.6/unittest/case.py", line 699, in assertTrue
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR|     raise self.failureException(msg)
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR| AssertionError: False is not true : check output error.
+[stdlog] 2022-10-28 20:59:29,947 avocado.test ERROR| 
+[stdlog] 2022-10-28 20:59:29,947 avocado.test DEBUG| Local variables:
+[stdlog] 2022-10-28 20:59:29,959 avocado.test DEBUG|  -> ret_o <class 'str'>: 4
+[stdlog] 2022-10-28 20:59:29,959 avocado.test DEBUG|  -> ret_c <class 'int'>: 0
+[stdlog] 2022-10-28 20:59:29,959 avocado.test DEBUG|  -> self <class 'tc_ag_util-linux_flock_fun_002.Test'>: 1-tests/system_base/util-linux/tc_ag_util-linux_flock_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:29,959 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:29,959 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:30,235 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:30,242 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:30,243 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:30,243 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:30,526 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.565699322s
+[stdlog] 2022-10-28 20:59:30,526 avocado.utils.process INFO | Running 'rm -rf test.lock'
+[stdlog] 2022-10-28 20:59:30,528 avocado.utils.process INFO | Command 'rm -rf test.lock' finished with 0 after 0.001280628s
+[stdlog] 2022-10-28 20:59:30,529 avocado.test ERROR| FAIL 1-tests/system_base/util-linux/tc_ag_util-linux_flock_fun_002.py:Test.test -> AssertionError: False is not true : check output error.
+[stdlog] 2022-10-28 20:59:30,529 avocado.test INFO | 

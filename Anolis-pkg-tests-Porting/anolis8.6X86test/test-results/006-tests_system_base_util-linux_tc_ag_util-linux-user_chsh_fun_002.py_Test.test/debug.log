@@ -1,0 +1,60 @@
+[stdlog] 2022-10-28 20:57:09,204 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:09,204 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:09,205 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:57:09,205 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_002.py
+[stdlog] 2022-10-28 20:57:09,205 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:57:09,205 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:09,205 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:57:09,205 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:09,206 avocado.utils.process INFO | Running 'rpm -q util-linux-user'
+[stdlog] 2022-10-28 20:57:09,213 avocado.utils.process DEBUG| [stdout] util-linux-user-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:57:09,214 avocado.utils.process INFO | Command 'rpm -q util-linux-user' finished with 0 after 0.006981772s
+[stdlog] 2022-10-28 20:57:09,214 avocado.utils.process INFO | Running 'yum update util-linux-user -y'
+[stdlog] 2022-10-28 20:57:09,499 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:39:37 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:57:09,778 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:09,779 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:09,779 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:10,169 avocado.utils.process INFO | Command 'yum update util-linux-user -y' finished with 0 after 0.954113536s
+[stdlog] 2022-10-28 20:57:10,169 avocado.utils.process INFO | Running 'chsh -l'
+[stdlog] 2022-10-28 20:57:10,173 avocado.utils.process DEBUG| [stdout] /bin/sh
+[stdlog] 2022-10-28 20:57:10,173 avocado.utils.process DEBUG| [stdout] /bin/bash
+[stdlog] 2022-10-28 20:57:10,173 avocado.utils.process DEBUG| [stdout] /usr/bin/sh
+[stdlog] 2022-10-28 20:57:10,173 avocado.utils.process DEBUG| [stdout] /usr/bin/bash
+[stdlog] 2022-10-28 20:57:10,174 avocado.utils.process INFO | Command 'chsh -l' finished with 0 after 0.003772044s
+[stdlog] 2022-10-28 20:57:10,174 avocado.utils.process INFO | Running 'chsh --shell /bin/sh '
+[stdlog] 2022-10-28 20:57:11,159 avocado.utils.process INFO | Command 'chsh --shell /bin/sh ' finished with 0 after 0.984520986s
+[stdlog] 2022-10-28 20:57:11,160 avocado.utils.process DEBUG| [stdout] Changing shell for root.
+[stdlog] 2022-10-28 20:57:11,160 avocado.utils.process DEBUG| [stdout] Shell changed.
+[stdlog] 2022-10-28 20:57:11,160 avocado.utils.process INFO | Running 'cat /etc/passwd | grep ^root'
+[stdlog] 2022-10-28 20:57:11,163 avocado.utils.process DEBUG| [stdout] root:x:0:0:root:/root:/bin/sh
+[stdlog] 2022-10-28 20:57:11,163 avocado.utils.process INFO | Command 'cat /etc/passwd | grep ^root' finished with 0 after 0.002297997s
+[stdlog] 2022-10-28 20:57:11,163 avocado.utils.process INFO | Running 'chsh --shell /bin/bash '
+[stdlog] 2022-10-28 20:57:12,082 avocado.utils.process DEBUG| [stdout] Changing shell for root.
+[stdlog] 2022-10-28 20:57:12,083 avocado.utils.process DEBUG| [stdout] Shell changed.
+[stdlog] 2022-10-28 20:57:12,083 avocado.utils.process INFO | Command 'chsh --shell /bin/bash ' finished with 0 after 0.919028200s
+[stdlog] 2022-10-28 20:57:12,083 avocado.utils.process INFO | Running 'cat /etc/passwd | grep ^root'
+[stdlog] 2022-10-28 20:57:12,086 avocado.utils.process DEBUG| [stdout] root:x:0:0:root:/root:/bin/bash
+[stdlog] 2022-10-28 20:57:12,087 avocado.utils.process INFO | Command 'cat /etc/passwd | grep ^root' finished with 0 after 0.002365498s
+[stdlog] 2022-10-28 20:57:12,087 avocado.utils.process INFO | Running 'chsh --shell /usr/bin/sh '
+[stdlog] 2022-10-28 20:57:13,006 avocado.utils.process DEBUG| [stdout] Changing shell for root.
+[stdlog] 2022-10-28 20:57:13,006 avocado.utils.process DEBUG| [stdout] Shell changed.
+[stdlog] 2022-10-28 20:57:13,006 avocado.utils.process INFO | Command 'chsh --shell /usr/bin/sh ' finished with 0 after 0.919027525s
+[stdlog] 2022-10-28 20:57:13,007 avocado.utils.process INFO | Running 'cat /etc/passwd | grep ^root'
+[stdlog] 2022-10-28 20:57:13,010 avocado.utils.process DEBUG| [stdout] root:x:0:0:root:/root:/usr/bin/sh
+[stdlog] 2022-10-28 20:57:13,010 avocado.utils.process INFO | Command 'cat /etc/passwd | grep ^root' finished with 0 after 0.002326740s
+[stdlog] 2022-10-28 20:57:13,010 avocado.utils.process INFO | Running 'chsh --shell /usr/bin/bash '
+[stdlog] 2022-10-28 20:57:13,963 avocado.utils.process DEBUG| [stdout] Changing shell for root.
+[stdlog] 2022-10-28 20:57:13,963 avocado.utils.process DEBUG| [stdout] Shell changed.
+[stdlog] 2022-10-28 20:57:13,964 avocado.utils.process INFO | Command 'chsh --shell /usr/bin/bash ' finished with 0 after 0.952633301s
+[stdlog] 2022-10-28 20:57:13,964 avocado.utils.process INFO | Running 'cat /etc/passwd | grep ^root'
+[stdlog] 2022-10-28 20:57:13,967 avocado.utils.process DEBUG| [stdout] root:x:0:0:root:/root:/usr/bin/bash
+[stdlog] 2022-10-28 20:57:13,967 avocado.utils.process INFO | Command 'cat /etc/passwd | grep ^root' finished with 0 after 0.002406691s
+[stdlog] 2022-10-28 20:57:13,968 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:57:13,968 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:57:14,249 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:57:14,256 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:14,257 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:14,257 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:14,579 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.610753748s
+[stdlog] 2022-10-28 20:57:14,579 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux-user_chsh_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:14,580 avocado.test INFO | 

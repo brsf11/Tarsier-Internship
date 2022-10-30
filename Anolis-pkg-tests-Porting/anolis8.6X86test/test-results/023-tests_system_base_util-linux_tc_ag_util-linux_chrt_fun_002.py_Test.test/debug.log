@@ -1,0 +1,38 @@
+[stdlog] 2022-10-28 20:57:55,007 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:55,007 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:55,008 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:57:55,008 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_002.py
+[stdlog] 2022-10-28 20:57:55,008 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:57:55,008 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:55,008 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:57:55,008 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:55,008 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:57:55,016 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:57:55,017 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007688615s
+[stdlog] 2022-10-28 20:57:55,017 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:57:55,306 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:23 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:57:55,589 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:55,590 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:55,590 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:55,882 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.864187027s
+[stdlog] 2022-10-28 20:57:55,884 avocado.utils.process INFO | Running 'ps aux | grep "sleep 1000" | grep -v grep| awk "{print \$2}"|head -1'
+[stdlog] 2022-10-28 20:57:55,895 avocado.utils.process DEBUG| [stdout] 5546
+[stdlog] 2022-10-28 20:57:55,896 avocado.utils.process INFO | Command 'ps aux | grep "sleep 1000" | grep -v grep| awk "{print \$2}"|head -1' finished with 0 after 0.010920019s
+[stdlog] 2022-10-28 20:57:55,896 avocado.utils.process INFO | Running 'chrt --all-tasks --pid 5546'
+[stdlog] 2022-10-28 20:57:55,899 avocado.utils.process DEBUG| [stdout] pid 5546's current scheduling policy: SCHED_OTHER
+[stdlog] 2022-10-28 20:57:55,899 avocado.utils.process DEBUG| [stdout] pid 5546's current scheduling priority: 0
+[stdlog] 2022-10-28 20:57:55,899 avocado.utils.process INFO | Command 'chrt --all-tasks --pid 5546' finished with 0 after 0.001575974s
+[stdlog] 2022-10-28 20:57:55,899 avocado.utils.process INFO | Running 'kill -9 5546'
+[stdlog] 2022-10-28 20:57:55,901 avocado.utils.process INFO | Command 'kill -9 5546' finished with 0 after 0.001003671s
+[stdlog] 2022-10-28 20:57:55,901 avocado.utils.process INFO | Running 'chrt --all-tasks --pid 5546'
+[stdlog] 2022-10-28 20:57:55,903 avocado.utils.process INFO | Command 'chrt --all-tasks --pid 5546' finished with 1 after 0.001187643s
+[stdlog] 2022-10-28 20:57:55,903 avocado.utils.process DEBUG| [stderr] chrt: cannot obtain the list of tasks: No such file or directory
+[stdlog] 2022-10-28 20:57:55,903 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:57:55,903 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:57:56,197 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:57:56,204 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:56,204 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:56,205 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:56,719 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.814308386s
+[stdlog] 2022-10-28 20:57:56,719 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:57:56,719 avocado.test INFO | 

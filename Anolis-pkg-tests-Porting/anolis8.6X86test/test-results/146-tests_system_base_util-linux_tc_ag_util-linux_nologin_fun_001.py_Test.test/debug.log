@@ -1,0 +1,71 @@
+[stdlog] 2022-10-28 21:03:01,015 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_nologin_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:03:01,016 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:03:01,016 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:03:01,016 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_nologin_fun_001.py
+[stdlog] 2022-10-28 21:03:01,016 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:03:01,016 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_nologin_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:03:01,016 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:03:01,017 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:03:01,017 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:03:01,025 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:03:01,025 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007697218s
+[stdlog] 2022-10-28 21:03:01,026 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:03:01,308 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:45:29 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:03:01,586 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:03:01,587 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:03:01,587 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:03:01,882 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.855604244s
+[stdlog] 2022-10-28 21:03:01,882 avocado.utils.process INFO | Running 'useradd tldr-user'
+[stdlog] 2022-10-28 21:03:06,055 avocado.utils.process INFO | Command 'useradd tldr-user' finished with 0 after 4.171994702s
+[stdlog] 2022-10-28 21:03:06,056 avocado.utils.process INFO | Running 'chsh -s tldr-user nologin'
+[stdlog] 2022-10-28 21:03:06,062 avocado.utils.process DEBUG| [stderr] chsh: user "nologin" does not exist.
+[stdlog] 2022-10-28 21:03:06,063 avocado.utils.process INFO | Command 'chsh -s tldr-user nologin' finished with 1 after 0.005887787s
+[stdlog] 2022-10-28 21:03:06,063 avocado.test ERROR| 
+[stdlog] 2022-10-28 21:03:06,063 avocado.test ERROR| Reproduced traceback from: /usr/local/lib/python3.6/site-packages/avocado/core/test.py:761
+[stdlog] 2022-10-28 21:03:06,063 avocado.test ERROR| Traceback (most recent call last):
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_nologin_fun_001.py", line 28, in test
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|     ret_c, ret_o = self.cmd("chsh -s tldr-user nologin")
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/basetest.py", line 54, in cmd
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|     return self.local.cmd(command, ignore_status=ignore_status)
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/hosts.py", line 45, in cmd
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|     result = process.run(command, ignore_status=ignore_status, shell=True)
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/utils/process.py", line 1015, in run
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR|     raise CmdError(cmd, sp.result)
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR| avocado.utils.process.CmdError: Command 'chsh -s tldr-user nologin' failed.
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR| stdout: b''
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR| stderr: b'chsh: user "nologin" does not exist.\n'
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR| additional_info: None
+[stdlog] 2022-10-28 21:03:06,064 avocado.test ERROR| 
+[stdlog] 2022-10-28 21:03:06,064 avocado.test DEBUG| Local variables:
+[stdlog] 2022-10-28 21:03:06,076 avocado.test DEBUG|  -> self <class 'tc_ag_util-linux_nologin_fun_001.Test'>: 1-tests/system_base/util-linux/tc_ag_util-linux_nologin_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:03:06,076 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:03:06,076 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:03:06,360 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:03:06,367 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:03:06,368 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:03:06,368 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:03:06,670 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.593020544s
+[stdlog] 2022-10-28 21:03:06,670 avocado.utils.process INFO | Running 'userdel -r tldr-user'
+[stdlog] 2022-10-28 21:03:10,494 avocado.utils.process INFO | Command 'userdel -r tldr-user' finished with 0 after 3.823299789s
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR| Traceback (most recent call last):
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/core/test.py", line 796, in _run_avocado
+[stdlog]     raise test_exception
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/core/test.py", line 756, in _run_avocado
+[stdlog]     testMethod()
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_nologin_fun_001.py", line 28, in test
+[stdlog]     ret_c, ret_o = self.cmd("chsh -s tldr-user nologin")
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/basetest.py", line 54, in cmd
+[stdlog]     return self.local.cmd(command, ignore_status=ignore_status)
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/common/hosts.py", line 45, in cmd
+[stdlog]     result = process.run(command, ignore_status=ignore_status, shell=True)
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR|   File "/usr/local/lib/python3.6/site-packages/avocado/utils/process.py", line 1015, in run
+[stdlog]     raise CmdError(cmd, sp.result)
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR| avocado.utils.process.CmdError: Command 'chsh -s tldr-user nologin' failed.
+[stdlog] stdout: b''
+[stdlog] stderr: b'chsh: user "nologin" does not exist.\n'
+[stdlog] additional_info: None
+[stdlog] 2022-10-28 21:03:10,495 avocado.test ERROR| ERROR 1-tests/system_base/util-linux/tc_ag_util-linux_nologin_fun_001.py:Test.test -> CmdError: Command 'chsh -s tldr-user nologin' failed.
+[stdlog] stdout: b''
+[stdlog] stderr: b'chsh: user "nologin" does not exist.\n'
+[stdlog] additional_info: None
+[stdlog] 2022-10-28 21:03:10,495 avocado.test INFO | 

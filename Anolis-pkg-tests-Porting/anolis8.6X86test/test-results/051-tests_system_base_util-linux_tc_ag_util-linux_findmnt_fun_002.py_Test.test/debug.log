@@ -1,0 +1,33 @@
+[stdlog] 2022-10-28 20:59:09,037 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:09,038 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:09,038 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:59:09,038 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_002.py
+[stdlog] 2022-10-28 20:59:09,038 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:59:09,039 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:09,039 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:59:09,039 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:09,039 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:59:09,046 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:59:09,047 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007134402s
+[stdlog] 2022-10-28 20:59:09,047 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:59:09,327 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:37 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:59:09,599 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:09,600 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:09,600 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:09,866 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.817795498s
+[stdlog] 2022-10-28 20:59:09,866 avocado.utils.process INFO | Running 'findmnt / |awk 'NR==2'|awk '{print $2}''
+[stdlog] 2022-10-28 20:59:09,872 avocado.utils.process INFO | Command 'findmnt / |awk 'NR==2'|awk '{print $2}'' finished with 0 after 0.004671876s
+[stdlog] 2022-10-28 20:59:09,872 avocado.utils.process DEBUG| [stdout] /dev/mapper/ao-root
+[stdlog] 2022-10-28 20:59:09,872 avocado.utils.process INFO | Running 'findmnt /dev/mapper/ao-root'
+[stdlog] 2022-10-28 20:59:09,875 avocado.utils.process DEBUG| [stdout] TARGET SOURCE              FSTYPE OPTIONS
+[stdlog] 2022-10-28 20:59:09,875 avocado.utils.process DEBUG| [stdout] /      /dev/mapper/ao-root xfs    rw,relatime,attr2,inode64,noquota
+[stdlog] 2022-10-28 20:59:09,875 avocado.utils.process INFO | Command 'findmnt /dev/mapper/ao-root' finished with 0 after 0.002620052s
+[stdlog] 2022-10-28 20:59:09,876 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:09,876 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:10,156 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:10,163 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:10,164 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:10,165 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:10,483 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.606476244s
+[stdlog] 2022-10-28 20:59:10,483 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:59:10,483 avocado.test INFO | 

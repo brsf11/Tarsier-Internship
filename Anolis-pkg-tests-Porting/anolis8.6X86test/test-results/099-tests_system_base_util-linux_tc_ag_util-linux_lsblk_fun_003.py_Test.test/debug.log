@@ -1,0 +1,41 @@
+[stdlog] 2022-10-28 21:01:36,676 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:01:36,677 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:36,677 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:01:36,677 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_003.py
+[stdlog] 2022-10-28 21:01:36,677 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:01:36,677 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:01:36,677 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:01:36,677 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:36,678 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:01:36,686 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:01:36,687 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.008054456s
+[stdlog] 2022-10-28 21:01:36,687 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:01:36,968 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:04 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:01:37,236 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:37,237 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:37,237 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:37,544 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.856619179s
+[stdlog] 2022-10-28 21:01:37,545 avocado.utils.process INFO | Running 'dd if=/dev/zero of=floppy.img bs=512 count=2880'
+[stdlog] 2022-10-28 21:01:37,550 avocado.utils.process INFO | Command 'dd if=/dev/zero of=floppy.img bs=512 count=2880' finished with 0 after 0.004449648s
+[stdlog] 2022-10-28 21:01:37,550 avocado.utils.process DEBUG| [stderr] 2880+0 records in
+[stdlog] 2022-10-28 21:01:37,550 avocado.utils.process DEBUG| [stderr] 2880+0 records out
+[stdlog] 2022-10-28 21:01:37,550 avocado.utils.process DEBUG| [stderr] 1474560 bytes (1.5 MB, 1.4 MiB) copied, 0.00303888 s, 485 MB/s
+[stdlog] 2022-10-28 21:01:37,550 avocado.utils.process INFO | Running ' losetup --show --read-only -f floppy.img'
+[stdlog] 2022-10-28 21:01:37,554 avocado.utils.process INFO | Command ' losetup --show --read-only -f floppy.img' finished with 0 after 0.003291364s
+[stdlog] 2022-10-28 21:01:37,555 avocado.utils.process DEBUG| [stdout] /dev/loop0
+[stdlog] 2022-10-28 21:01:37,555 avocado.utils.process INFO | Running 'lsblk -b |grep loop'
+[stdlog] 2022-10-28 21:01:37,560 avocado.utils.process DEBUG| [stdout] loop0         7:0    0     1474560  1 loop 
+[stdlog] 2022-10-28 21:01:37,560 avocado.utils.process INFO | Command 'lsblk -b |grep loop' finished with 0 after 0.003787138s
+[stdlog] 2022-10-28 21:01:37,560 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:01:37,560 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:01:37,840 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:01:37,847 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:37,848 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:37,849 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:38,150 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.589343288s
+[stdlog] 2022-10-28 21:01:38,151 avocado.utils.process INFO | Running 'losetup -d /dev/loop0'
+[stdlog] 2022-10-28 21:01:38,155 avocado.utils.process INFO | Command 'losetup -d /dev/loop0' finished with 0 after 0.003167405s
+[stdlog] 2022-10-28 21:01:38,155 avocado.utils.process INFO | Running 'rm -rf floppy.img'
+[stdlog] 2022-10-28 21:01:38,160 avocado.utils.process INFO | Command 'rm -rf floppy.img' finished with 0 after 0.003694726s
+[stdlog] 2022-10-28 21:01:38,160 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:01:38,160 avocado.test INFO | 

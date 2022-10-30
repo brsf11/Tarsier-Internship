@@ -1,0 +1,46 @@
+[stdlog] 2022-10-28 21:03:39,895 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_rename_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:03:39,896 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:03:39,896 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:03:39,896 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_rename_fun_003.py
+[stdlog] 2022-10-28 21:03:39,896 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:03:39,897 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_rename_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:03:39,897 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:03:39,897 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:03:39,897 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:03:39,905 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:03:39,906 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.008009148s
+[stdlog] 2022-10-28 21:03:39,906 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:03:40,191 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:46:08 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:03:40,473 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:03:40,474 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:03:40,474 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:03:40,800 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.893487213s
+[stdlog] 2022-10-28 21:03:40,801 avocado.utils.process INFO | Running 'touch foo.txt'
+[stdlog] 2022-10-28 21:03:40,803 avocado.utils.process INFO | Command 'touch foo.txt' finished with 0 after 0.001344966s
+[stdlog] 2022-10-28 21:03:40,803 avocado.utils.process INFO | Running 'rename -o foo bar *'
+[stdlog] 2022-10-28 21:03:40,805 avocado.utils.process INFO | Command 'rename -o foo bar *' finished with 0 after 0.001174990s
+[stdlog] 2022-10-28 21:03:40,806 avocado.utils.process INFO | Running 'ls'
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process DEBUG| [stdout] bar.txt
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process DEBUG| [stdout] docs
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process DEBUG| [stdout] LICENSE
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process DEBUG| [stdout] README.md
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process DEBUG| [stdout] requirements.txt
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process DEBUG| [stdout] samples
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process DEBUG| [stdout] tests
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process INFO | Command 'ls' finished with 0 after 0.001863105s
+[stdlog] 2022-10-28 21:03:40,808 avocado.utils.process INFO | Running 'touch foo.txt'
+[stdlog] 2022-10-28 21:03:40,810 avocado.utils.process INFO | Command 'touch foo.txt' finished with 0 after 0.001187561s
+[stdlog] 2022-10-28 21:03:40,811 avocado.utils.process INFO | Running 'rename -o foo bar *'
+[stdlog] 2022-10-28 21:03:40,813 avocado.utils.process DEBUG| [stdout] Skipping existing file: `bar.txt'
+[stdlog] 2022-10-28 21:03:40,813 avocado.utils.process INFO | Command 'rename -o foo bar *' finished with 4 after 0.001383449s
+[stdlog] 2022-10-28 21:03:40,813 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:03:40,813 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:03:41,098 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:03:41,105 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:03:41,106 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:03:41,106 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:03:41,451 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.636446716s
+[stdlog] 2022-10-28 21:03:41,451 avocado.utils.process INFO | Running 'rm -f bar.txt foo.txt'
+[stdlog] 2022-10-28 21:03:41,453 avocado.utils.process INFO | Command 'rm -f bar.txt foo.txt' finished with 0 after 0.001338868s
+[stdlog] 2022-10-28 21:03:41,454 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_rename_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:03:41,454 avocado.test INFO | 

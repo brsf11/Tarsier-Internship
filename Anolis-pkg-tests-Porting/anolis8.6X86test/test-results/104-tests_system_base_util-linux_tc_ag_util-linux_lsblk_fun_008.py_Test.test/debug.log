@@ -1,0 +1,36 @@
+[stdlog] 2022-10-28 21:01:45,890 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_008.py:Test.test
+[stdlog] 2022-10-28 21:01:45,891 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:45,891 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:01:45,891 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_008.py
+[stdlog] 2022-10-28 21:01:45,891 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:01:45,891 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_008.py:Test.test
+[stdlog] 2022-10-28 21:01:45,891 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:01:45,891 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:45,892 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:01:45,899 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:01:45,900 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007311439s
+[stdlog] 2022-10-28 21:01:45,900 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:01:46,187 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:14 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:01:46,469 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:46,470 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:46,470 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:46,777 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.875841816s
+[stdlog] 2022-10-28 21:01:46,777 avocado.utils.process INFO | Running 'lsblk --output NAME,SERIAL,MODEL,TRAN,TYPE,SIZE,FSTYPE,MOUNTPOINT'
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout] NAME        SERIAL              MODEL            TRAN   TYPE  SIZE FSTYPE      MOUNTPOINT
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout] sda         VB8c6b9057-6bd6bb91 VBOX HARDDISK    sata   disk   40G             
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout] ├─sda1                                                  part    1G xfs         /boot
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout] └─sda2                                                  part   39G LVM2_member 
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout]   ├─ao-root                                             lvm    35G xfs         /
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout]   └─ao-swap                                             lvm     4G swap        [SWAP]
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout] sr0         VB0-01f003f6        CD-ROM           ata    rom  1024M             
+[stdlog] 2022-10-28 21:01:46,782 avocado.utils.process DEBUG| [stdout] sr1         VB2-01700376        CD-ROM           ata    rom  1024M             
+[stdlog] 2022-10-28 21:01:46,783 avocado.utils.process INFO | Command 'lsblk --output NAME,SERIAL,MODEL,TRAN,TYPE,SIZE,FSTYPE,MOUNTPOINT' finished with 0 after 0.004587589s
+[stdlog] 2022-10-28 21:01:46,783 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:01:46,783 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:01:47,066 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:01:47,073 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:47,074 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:47,074 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:47,428 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.644384864s
+[stdlog] 2022-10-28 21:01:47,428 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lsblk_fun_008.py:Test.test
+[stdlog] 2022-10-28 21:01:47,428 avocado.test INFO | 

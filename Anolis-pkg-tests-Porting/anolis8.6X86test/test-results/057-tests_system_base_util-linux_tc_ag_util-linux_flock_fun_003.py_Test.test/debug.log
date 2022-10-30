@@ -1,0 +1,30 @@
+[stdlog] 2022-10-28 20:59:30,929 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_flock_fun_003.py:Test.test
+[stdlog] 2022-10-28 20:59:30,930 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:30,930 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:59:30,930 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_flock_fun_003.py
+[stdlog] 2022-10-28 20:59:30,930 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:59:30,931 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_flock_fun_003.py:Test.test
+[stdlog] 2022-10-28 20:59:30,931 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:59:30,931 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:30,931 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:59:30,938 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:59:30,939 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007290293s
+[stdlog] 2022-10-28 20:59:30,939 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:59:31,217 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:59 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:59:31,494 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:31,495 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:31,496 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:31,798 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.858394242s
+[stdlog] 2022-10-28 20:59:31,800 avocado.utils.process INFO | Running 'flock  -n --conflict-exit-code 22 ./test.lock -c 'sleep 10''
+[stdlog] 2022-10-28 20:59:31,804 avocado.utils.process INFO | Command 'flock  -n --conflict-exit-code 22 ./test.lock -c 'sleep 10'' finished with 22 after 0.002267694s
+[stdlog] 2022-10-28 20:59:31,804 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:31,804 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:32,080 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:32,087 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:32,088 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:32,088 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:32,395 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.589552926s
+[stdlog] 2022-10-28 20:59:32,395 avocado.utils.process INFO | Running 'rm -rf test.lock'
+[stdlog] 2022-10-28 20:59:32,397 avocado.utils.process INFO | Command 'rm -rf test.lock' finished with 0 after 0.001363995s
+[stdlog] 2022-10-28 20:59:32,398 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_flock_fun_003.py:Test.test
+[stdlog] 2022-10-28 20:59:32,398 avocado.test INFO | 

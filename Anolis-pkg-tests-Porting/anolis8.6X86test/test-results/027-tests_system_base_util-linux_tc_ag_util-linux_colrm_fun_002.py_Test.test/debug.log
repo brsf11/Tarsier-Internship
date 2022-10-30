@@ -1,0 +1,33 @@
+[stdlog] 2022-10-28 20:58:02,547 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_colrm_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:02,548 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:02,548 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:02,548 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_colrm_fun_002.py
+[stdlog] 2022-10-28 20:58:02,548 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:02,549 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_colrm_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:02,549 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:02,549 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:02,549 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:02,556 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:02,557 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007189699s
+[stdlog] 2022-10-28 20:58:02,557 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:02,842 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:30 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:03,121 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:03,122 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:03,123 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:03,407 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.849137347s
+[stdlog] 2022-10-28 20:58:03,407 avocado.utils.process INFO | Running 'echo '123456' > colrm.txt'
+[stdlog] 2022-10-28 20:58:03,409 avocado.utils.process INFO | Command 'echo '123456' > colrm.txt' finished with 0 after 0.001082592s
+[stdlog] 2022-10-28 20:58:03,410 avocado.utils.process INFO | Running 'cat colrm.txt |colrm  3'
+[stdlog] 2022-10-28 20:58:03,412 avocado.utils.process DEBUG| [stdout] 12
+[stdlog] 2022-10-28 20:58:03,412 avocado.utils.process INFO | Command 'cat colrm.txt |colrm  3' finished with 0 after 0.002080845s
+[stdlog] 2022-10-28 20:58:03,413 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:03,413 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:03,689 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:03,696 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:03,697 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:03,697 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:03,991 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.577458927s
+[stdlog] 2022-10-28 20:58:03,991 avocado.utils.process INFO | Running 'rm -rf colrm.txt'
+[stdlog] 2022-10-28 20:58:03,993 avocado.utils.process INFO | Command 'rm -rf colrm.txt' finished with 0 after 0.001310380s
+[stdlog] 2022-10-28 20:58:03,994 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_colrm_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:03,994 avocado.test INFO | 

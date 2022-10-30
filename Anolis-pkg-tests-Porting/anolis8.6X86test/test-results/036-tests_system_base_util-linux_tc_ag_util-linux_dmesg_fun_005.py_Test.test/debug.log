@@ -1,0 +1,26 @@
+[stdlog] 2022-10-28 20:58:28,861 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_005.py:Test.test
+[stdlog] 2022-10-28 20:58:28,862 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:28,862 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:28,862 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_005.py
+[stdlog] 2022-10-28 20:58:28,862 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:28,862 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_005.py:Test.test
+[stdlog] 2022-10-28 20:58:28,863 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:28,863 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:28,863 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:28,870 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:28,871 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007306052s
+[stdlog] 2022-10-28 20:58:28,871 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:29,156 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:57 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:29,430 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:29,431 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:29,432 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:29,713 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.841272051s
+[stdlog] 2022-10-28 20:58:29,917 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:29,917 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:30,192 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:30,199 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:30,200 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:30,200 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:30,487 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.568785681s
+[stdlog] 2022-10-28 20:58:30,487 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_005.py:Test.test
+[stdlog] 2022-10-28 20:58:30,487 avocado.test INFO | 

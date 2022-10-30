@@ -1,0 +1,78 @@
+[stdlog] 2022-10-28 21:02:12,146 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_006.py:Test.test
+[stdlog] 2022-10-28 21:02:12,147 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:12,147 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:02:12,147 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_006.py
+[stdlog] 2022-10-28 21:02:12,147 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:02:12,148 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_006.py:Test.test
+[stdlog] 2022-10-28 21:02:12,148 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:02:12,148 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:12,148 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:02:12,157 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:02:12,158 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.008661104s
+[stdlog] 2022-10-28 21:02:12,158 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:02:12,451 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:40 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:02:12,732 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:12,733 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:12,733 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:13,058 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.898993724s
+[stdlog] 2022-10-28 21:02:13,058 avocado.utils.process INFO | Running 'lslogins --supp-groups'
+[stdlog] 2022-10-28 21:02:13,188 avocado.utils.process DEBUG| [stdout]   UID USER                  GID GROUP               SUPP-GIDS SUPP-GROUPS
+[stdlog] 2022-10-28 21:02:13,188 avocado.utils.process DEBUG| [stdout]     0 root                    0 root                          
+[stdlog] 2022-10-28 21:02:13,188 avocado.utils.process DEBUG| [stdout]     1 bin                     1 bin                           
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]     2 daemon                  2 daemon                        
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]     3 adm                     4 adm                           
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]     4 lp                      7 lp                            
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]     5 sync                    0 root                          
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]     6 shutdown                0 root                          
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]     7 halt                    0 root                          
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]     8 mail                   12 mail                          
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    11 operator                0 root                          
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    12 games                 100 users                         
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    14 ftp                    50 ftp                           
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    23 squid                  23 squid               88        wbpriv
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    27 mysql                  27 mysql                         
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    29 rpcuser                29 rpcuser                       
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    32 rpc                    32 rpc                           
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    42 gdm                    42 gdm                           
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    48 apache                 48 apache                        
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    59 tss                    59 tss                           
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    70 avahi                  70 avahi                         
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    72 tcpdump                72 tcpdump                       
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    74 sshd                   74 sshd                          
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]    81 dbus                   81 dbus                          
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]   107 qemu                  107 qemu                36        kvm
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]   113 usbmuxd               113 usbmuxd                       
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]   171 pulse                 171 pulse                         
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]   172 rtkit                 172 rtkit                         
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]   193 systemd-resolve       193 systemd-resolve               
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]   975 pcp                   974 pcp                           
+[stdlog] 2022-10-28 21:02:13,189 avocado.utils.process DEBUG| [stdout]   976 gnome-initial-setup   975 gnome-initial-setup           
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   977 colord                976 colord                        
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   978 flatpak               977 flatpak                       
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   979 cockpit-wsinstance    979 cockpit-wsinstance            
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   980 cockpit-ws            980 cockpit-ws                    
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   981 sssd                  981 sssd                          
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   982 dnsmasq               982 dnsmasq                       
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   989 libstoragemgmt        983 libstoragemgmt                
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   990 saslauth               76 saslauth                      
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   991 setroubleshoot        984 setroubleshoot                
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   992 chrony                986 chrony                        
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   993 gluster               987 gluster                       
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   994 clevis                988 clevis              59        tss
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   995 pipewire              991 pipewire                      
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   996 geoclue               994 geoclue                       
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   997 unbound               995 unbound                       
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   998 polkitd               996 polkitd                       
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]   999 systemd-coredump      997 systemd-coredump              
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout]  1000 brsf11               1000 brsf11                        
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process DEBUG| [stdout] 65534 nobody              65534 nobody                        
+[stdlog] 2022-10-28 21:02:13,190 avocado.utils.process INFO | Command 'lslogins --supp-groups' finished with 0 after 0.131571213s
+[stdlog] 2022-10-28 21:02:13,190 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:02:13,191 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:02:13,481 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:02:13,489 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:13,490 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:13,490 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:13,786 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.594646828s
+[stdlog] 2022-10-28 21:02:13,787 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_006.py:Test.test
+[stdlog] 2022-10-28 21:02:13,787 avocado.test INFO | 

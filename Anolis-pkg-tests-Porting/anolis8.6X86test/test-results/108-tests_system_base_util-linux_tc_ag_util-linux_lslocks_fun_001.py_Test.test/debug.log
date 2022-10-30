@@ -1,0 +1,37 @@
+[stdlog] 2022-10-28 21:01:53,433 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:53,434 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:53,434 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:01:53,434 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_001.py
+[stdlog] 2022-10-28 21:01:53,435 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:01:53,435 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:53,435 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:01:53,435 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:53,435 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:01:53,443 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:01:53,444 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007858377s
+[stdlog] 2022-10-28 21:01:53,444 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:01:53,727 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:21 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:01:54,001 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:54,003 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:54,003 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:54,284 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.839530965s
+[stdlog] 2022-10-28 21:01:54,285 avocado.utils.process INFO | Running 'lslocks'
+[stdlog] 2022-10-28 21:01:54,288 avocado.utils.process INFO | Command 'lslocks' finished with 0 after 0.002827450s
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] COMMAND           PID  TYPE SIZE MODE  M START END PATH
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] rpcbind           793 FLOCK   0B WRITE 0     0   0 /run/rpcbind/rpcbind.lock
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] lsmd              801 FLOCK   0B WRITE 0     0   0 /run/lsm/ipc/.lsmd-ipc-lock
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] crond            1046 FLOCK   5B WRITE 0     0   0 /run/crond.pid
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] atd              1056 POSIX   5B WRITE 0     0   0 /run/atd.pid
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] gnome-shell      1604 FLOCK   0B WRITE 0     0   0 /run/user/42/wayland-0.lock
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] sssd_nss          830 POSIX 8.8M WRITE 0     0   0 /var/lib/sss/mc/passwd
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] sssd_nss          830 POSIX 6.6M WRITE 0     0   0 /var/lib/sss/mc/group
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process DEBUG| [stdout] sssd_nss          830 POSIX  11M WRITE 0     0   0 /var/lib/sss/mc/initgroups
+[stdlog] 2022-10-28 21:01:54,289 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:01:54,289 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:01:54,574 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:01:54,582 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:54,583 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:54,583 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:54,891 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.601314521s
+[stdlog] 2022-10-28 21:01:54,892 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lslocks_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:54,892 avocado.test INFO | 

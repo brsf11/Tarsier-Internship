@@ -1,0 +1,64 @@
+[stdlog] 2022-10-28 21:01:19,767 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_losetup_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:19,767 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:19,768 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:01:19,768 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_losetup_fun_001.py
+[stdlog] 2022-10-28 21:01:19,768 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:01:19,768 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_losetup_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:19,768 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:01:19,768 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:19,769 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:01:19,776 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:01:19,777 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007399095s
+[stdlog] 2022-10-28 21:01:19,777 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:01:20,061 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:43:48 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:01:20,330 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:20,331 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:20,331 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:20,633 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.855311314s
+[stdlog] 2022-10-28 21:01:20,634 avocado.utils.process INFO | Running 'dd if=/dev/zero of=test.img bs=1M count=100'
+[stdlog] 2022-10-28 21:01:20,664 avocado.utils.process DEBUG| [stderr] 100+0 records in
+[stdlog] 2022-10-28 21:01:20,664 avocado.utils.process DEBUG| [stderr] 100+0 records out
+[stdlog] 2022-10-28 21:01:20,665 avocado.utils.process DEBUG| [stderr] 104857600 bytes (105 MB, 100 MiB) copied, 0.0286897 s, 3.7 GB/s
+[stdlog] 2022-10-28 21:01:20,665 avocado.utils.process DEBUG| [stderr] 
+[stdlog] 2022-10-28 21:01:20,665 avocado.utils.process INFO | Command 'dd if=/dev/zero of=test.img bs=1M count=100' finished with 0 after 0.030041363s
+[stdlog] 2022-10-28 21:01:20,665 avocado.utils.process INFO | Running 'mkfs.ext4 test.img'
+[stdlog] 2022-10-28 21:01:20,672 avocado.utils.process DEBUG| [stderr] mke2fs 1.45.6 (20-Mar-2020)
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Discarding device blocks:   1024/102400             done                            
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Creating filesystem with 102400 1k blocks and 25688 inodes
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Filesystem UUID: 280f48bb-46fe-4ee5-8ae3-0dcc63f7957a
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Superblock backups stored on blocks: 
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] 	8193, 24577, 40961, 57345, 73729
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Allocating group tables:  0/13     done                            
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Writing inode tables:  0/13     done                            
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Creating journal (4096 blocks): done
+[stdlog] 2022-10-28 21:01:22,074 avocado.utils.process DEBUG| [stdout] Writing superblocks and filesystem accounting information:  0/13     
+[stdlog] 2022-10-28 21:01:22,352 avocado.utils.process DEBUG| [stdout] done
+[stdlog] 2022-10-28 21:01:22,352 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:22,352 avocado.utils.process INFO | Command 'mkfs.ext4 test.img' finished with 0 after 1.686194605s
+[stdlog] 2022-10-28 21:01:22,352 avocado.utils.process INFO | Running 'ls /tmp/disk_test && rm -rf /tmp/disk_test'
+[stdlog] 2022-10-28 21:01:22,355 avocado.utils.process INFO | Command 'ls /tmp/disk_test && rm -rf /tmp/disk_test' finished with 2 after 0.001963709s
+[stdlog] 2022-10-28 21:01:22,356 avocado.utils.process DEBUG| [stderr] ls: cannot access '/tmp/disk_test': No such file or directory
+[stdlog] 2022-10-28 21:01:22,356 avocado.utils.process INFO | Running 'mkdir -p /tmp/disk_test'
+[stdlog] 2022-10-28 21:01:22,358 avocado.utils.process INFO | Command 'mkdir -p /tmp/disk_test' finished with 0 after 0.001605307s
+[stdlog] 2022-10-28 21:01:22,358 avocado.utils.process INFO | Running 'mount test.img /tmp/disk_test'
+[stdlog] 2022-10-28 21:01:22,569 avocado.utils.process INFO | Command 'mount test.img /tmp/disk_test' finished with 0 after 0.210014058s
+[stdlog] 2022-10-28 21:01:22,570 avocado.utils.process INFO | Running 'df -TH |grep -w /tmp/disk_test |awk "{print \$1}"'
+[stdlog] 2022-10-28 21:01:22,578 avocado.utils.process DEBUG| [stdout] /dev/loop0
+[stdlog] 2022-10-28 21:01:22,578 avocado.utils.process INFO | Command 'df -TH |grep -w /tmp/disk_test |awk "{print \$1}"' finished with 0 after 0.007018042s
+[stdlog] 2022-10-28 21:01:22,579 avocado.utils.process INFO | Running 'losetup -a'
+[stdlog] 2022-10-28 21:01:22,581 avocado.utils.process DEBUG| [stdout] /dev/loop0: [64512]:2102228 (/root/GitRepo/anolis-pkg-tests/test.img)
+[stdlog] 2022-10-28 21:01:22,581 avocado.utils.process INFO | Command 'losetup -a' finished with 0 after 0.001506358s
+[stdlog] 2022-10-28 21:01:22,581 avocado.utils.process INFO | Running 'umount /tmp/disk_test'
+[stdlog] 2022-10-28 21:01:23,237 avocado.utils.process INFO | Command 'umount /tmp/disk_test' finished with 0 after 0.654726869s
+[stdlog] 2022-10-28 21:01:23,237 avocado.utils.process INFO | Running 'rm -rf /tmp/disk_test test.img'
+[stdlog] 2022-10-28 21:01:23,243 avocado.utils.process INFO | Command 'rm -rf /tmp/disk_test test.img' finished with 0 after 0.004768163s
+[stdlog] 2022-10-28 21:01:23,243 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:01:23,243 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:01:23,524 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:01:23,531 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:23,532 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:23,532 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:23,939 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.694679908s
+[stdlog] 2022-10-28 21:01:23,939 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_losetup_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:23,939 avocado.test INFO | 

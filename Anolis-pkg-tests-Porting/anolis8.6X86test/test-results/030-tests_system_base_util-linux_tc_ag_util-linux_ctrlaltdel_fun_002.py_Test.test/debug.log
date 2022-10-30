@@ -1,0 +1,36 @@
+[stdlog] 2022-10-28 20:58:07,910 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_ctrlaltdel_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:07,911 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:07,911 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:07,911 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_ctrlaltdel_fun_002.py
+[stdlog] 2022-10-28 20:58:07,911 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:07,912 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_ctrlaltdel_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:07,912 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:07,912 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:07,912 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:07,920 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:07,920 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007217468s
+[stdlog] 2022-10-28 20:58:07,920 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:08,210 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:36 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:08,483 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:08,484 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:08,484 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:08,755 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.833783701s
+[stdlog] 2022-10-28 20:58:08,755 avocado.utils.process INFO | Running 'ctrlaltdel'
+[stdlog] 2022-10-28 20:58:08,757 avocado.utils.process DEBUG| [stdout] soft
+[stdlog] 2022-10-28 20:58:08,758 avocado.utils.process INFO | Command 'ctrlaltdel' finished with 0 after 0.001495836s
+[stdlog] 2022-10-28 20:58:08,758 avocado.utils.process INFO | Running 'ctrlaltdel hard'
+[stdlog] 2022-10-28 20:58:08,760 avocado.utils.process INFO | Command 'ctrlaltdel hard' finished with 0 after 0.001133073s
+[stdlog] 2022-10-28 20:58:08,760 avocado.utils.process INFO | Running 'ctrlaltdel'
+[stdlog] 2022-10-28 20:58:08,762 avocado.utils.process DEBUG| [stdout] hard
+[stdlog] 2022-10-28 20:58:08,762 avocado.utils.process INFO | Command 'ctrlaltdel' finished with 0 after 0.001359287s
+[stdlog] 2022-10-28 20:58:08,762 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:08,762 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:09,044 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:09,051 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:09,052 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:09,052 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:09,339 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.576295904s
+[stdlog] 2022-10-28 20:58:09,340 avocado.utils.process INFO | Running 'ctrlaltdel soft'
+[stdlog] 2022-10-28 20:58:09,342 avocado.utils.process INFO | Command 'ctrlaltdel soft' finished with 0 after 0.001302947s
+[stdlog] 2022-10-28 20:58:09,343 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_ctrlaltdel_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:09,343 avocado.test INFO | 

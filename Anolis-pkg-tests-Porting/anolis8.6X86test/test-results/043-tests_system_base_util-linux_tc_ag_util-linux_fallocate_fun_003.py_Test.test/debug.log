@@ -1,0 +1,44 @@
+[stdlog] 2022-10-28 20:58:52,960 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_fallocate_fun_003.py:Test.test
+[stdlog] 2022-10-28 20:58:52,961 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:52,961 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:52,961 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_fallocate_fun_003.py
+[stdlog] 2022-10-28 20:58:52,961 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:52,962 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_fallocate_fun_003.py:Test.test
+[stdlog] 2022-10-28 20:58:52,962 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:52,962 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:52,962 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:52,970 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:52,971 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007135097s
+[stdlog] 2022-10-28 20:58:52,971 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:53,251 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:21 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:53,525 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:53,526 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:53,527 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:53,816 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.844614121s
+[stdlog] 2022-10-28 20:58:53,817 avocado.utils.process INFO | Running 'fallocate --length 100M test_fallocate.txt'
+[stdlog] 2022-10-28 20:58:53,975 avocado.utils.process INFO | Command 'fallocate --length 100M test_fallocate.txt' finished with 0 after 0.157296682s
+[stdlog] 2022-10-28 20:58:53,975 avocado.utils.process INFO | Running 'fallocate --collapse-range --offset 0 --length 80m test_fallocate.txt'
+[stdlog] 2022-10-28 20:58:54,119 avocado.utils.process INFO | Command 'fallocate --collapse-range --offset 0 --length 80m test_fallocate.txt' finished with 0 after 0.143029627s
+[stdlog] 2022-10-28 20:58:54,120 avocado.utils.process INFO | Running 'ls -lh test_fallocate.txt |awk -F " " '{print $5}''
+[stdlog] 2022-10-28 20:58:54,124 avocado.utils.process DEBUG| [stdout] 20M
+[stdlog] 2022-10-28 20:58:54,125 avocado.utils.process INFO | Command 'ls -lh test_fallocate.txt |awk -F " " '{print $5}'' finished with 0 after 0.003724786s
+[stdlog] 2022-10-28 20:58:54,125 avocado.utils.process INFO | Running 'fallocate --collapse-range --offset 0 --length 20m test_fallocate.txt'
+[stdlog] 2022-10-28 20:58:54,127 avocado.utils.process INFO | Command 'fallocate --collapse-range --offset 0 --length 20m test_fallocate.txt' finished with 1 after 0.001207912s
+[stdlog] 2022-10-28 20:58:54,127 avocado.utils.process DEBUG| [stderr] fallocate: fallocate failed: Invalid argument
+[stdlog] 2022-10-28 20:58:54,127 avocado.utils.process INFO | Running 'fallocate --collapse-range --offset 0 --length 0 test_fallocate.txt'
+[stdlog] 2022-10-28 20:58:54,129 avocado.utils.process INFO | Command 'fallocate --collapse-range --offset 0 --length 0 test_fallocate.txt' finished with 1 after 0.001253440s
+[stdlog] 2022-10-28 20:58:54,129 avocado.utils.process DEBUG| [stderr] fallocate: invalid length value specified
+[stdlog] 2022-10-28 20:58:54,129 avocado.utils.process INFO | Running 'fallocate --collapse-range --offset 0 --length 1024 /xxxxx/xxxx'
+[stdlog] 2022-10-28 20:58:54,131 avocado.utils.process INFO | Command 'fallocate --collapse-range --offset 0 --length 1024 /xxxxx/xxxx' finished with 1 after 0.001136689s
+[stdlog] 2022-10-28 20:58:54,132 avocado.utils.process DEBUG| [stderr] fallocate: cannot open /xxxxx/xxxx: No such file or directory
+[stdlog] 2022-10-28 20:58:54,132 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:54,132 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:54,412 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:54,419 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:54,420 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:54,420 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:54,712 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.579718856s
+[stdlog] 2022-10-28 20:58:54,712 avocado.utils.process INFO | Running 'rm -rf test_fallocate.txt'
+[stdlog] 2022-10-28 20:58:54,715 avocado.utils.process INFO | Command 'rm -rf test_fallocate.txt' finished with 0 after 0.001305889s
+[stdlog] 2022-10-28 20:58:54,715 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_fallocate_fun_003.py:Test.test
+[stdlog] 2022-10-28 20:58:54,715 avocado.test INFO | 

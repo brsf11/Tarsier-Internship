@@ -1,0 +1,38 @@
+[stdlog] 2022-10-28 20:59:05,180 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:59:05,181 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:05,181 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:59:05,181 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_004.py
+[stdlog] 2022-10-28 20:59:05,181 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:59:05,182 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:59:05,182 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:59:05,182 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:05,182 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:59:05,190 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:59:05,191 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007997015s
+[stdlog] 2022-10-28 20:59:05,191 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:59:05,496 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:33 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:59:05,768 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:05,769 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:05,770 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:06,073 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.880851888s
+[stdlog] 2022-10-28 20:59:06,073 avocado.utils.process INFO | Running 'blkid | head -1 | awk -F 'PARTUUID=' '{print $2'}'
+[stdlog] 2022-10-28 20:59:06,191 avocado.utils.process DEBUG| [stdout] "2522d236-01"
+[stdlog] 2022-10-28 20:59:06,192 avocado.utils.process INFO | Command 'blkid | head -1 | awk -F 'PARTUUID=' '{print $2'}' finished with 0 after 0.117688344s
+[stdlog] 2022-10-28 20:59:06,192 avocado.utils.process INFO | Running 'findfs PARTUUID="2522d236-01"'
+[stdlog] 2022-10-28 20:59:06,194 avocado.utils.process DEBUG| [stdout] /dev/sda1
+[stdlog] 2022-10-28 20:59:06,195 avocado.utils.process INFO | Command 'findfs PARTUUID="2522d236-01"' finished with 0 after 0.002025595s
+[stdlog] 2022-10-28 20:59:06,195 avocado.utils.process INFO | Running 'findfs PARTUUID='
+[stdlog] 2022-10-28 20:59:06,197 avocado.utils.process INFO | Command 'findfs PARTUUID=' finished with 1 after 0.001245554s
+[stdlog] 2022-10-28 20:59:06,197 avocado.utils.process DEBUG| [stderr] findfs: unable to resolve 'PARTUUID='
+[stdlog] 2022-10-28 20:59:06,197 avocado.utils.process INFO | Running 'findfs PARTUUID=xxxxx'
+[stdlog] 2022-10-28 20:59:06,423 avocado.utils.process INFO | Command 'findfs PARTUUID=xxxxx' finished with 1 after 0.225283635s
+[stdlog] 2022-10-28 20:59:06,424 avocado.utils.process DEBUG| [stderr] findfs: unable to resolve 'PARTUUID=xxxxx'
+[stdlog] 2022-10-28 20:59:06,424 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:06,424 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:06,700 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:06,707 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:06,708 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:06,708 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:07,002 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.576474774s
+[stdlog] 2022-10-28 20:59:07,002 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_findfs_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:59:07,002 avocado.test INFO | 

@@ -1,0 +1,43 @@
+[stdlog] 2022-10-28 21:01:17,915 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_login_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:17,915 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:17,916 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:01:17,916 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_login_fun_001.py
+[stdlog] 2022-10-28 21:01:17,916 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:01:17,916 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_login_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:17,916 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:01:17,916 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:17,916 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:01:17,925 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:01:17,925 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007998716s
+[stdlog] 2022-10-28 21:01:17,925 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:01:18,210 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:43:46 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:01:18,495 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:18,497 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:18,497 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:18,765 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.839195616s
+[stdlog] 2022-10-28 21:01:18,766 avocado.utils.process INFO | Running 'login --help'
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process INFO | Command 'login --help' finished with 0 after 0.002284683s
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout] Usage:
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout]  login [-p] [-h <host>] [-H] [[-f] <username>]
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout] Begin a session on the system.
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout] Options:
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout]  -p             do not destroy the environment
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout]  -f             skip a second login authentication
+[stdlog] 2022-10-28 21:01:18,769 avocado.utils.process DEBUG| [stdout]  -h <host>      hostname to be used for utmp logging
+[stdlog] 2022-10-28 21:01:18,770 avocado.utils.process DEBUG| [stdout]  -H             suppress hostname in the login prompt
+[stdlog] 2022-10-28 21:01:18,770 avocado.utils.process DEBUG| [stdout]      --help     display this help
+[stdlog] 2022-10-28 21:01:18,770 avocado.utils.process DEBUG| [stdout]  -V, --version  display version
+[stdlog] 2022-10-28 21:01:18,770 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:18,770 avocado.utils.process DEBUG| [stdout] For more details see login(1).
+[stdlog] 2022-10-28 21:01:18,770 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:01:18,770 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:01:19,054 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:01:19,061 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:19,062 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:19,063 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:19,360 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.589853827s
+[stdlog] 2022-10-28 21:01:19,361 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_login_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:01:19,361 avocado.test INFO | 

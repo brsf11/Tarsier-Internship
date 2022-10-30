@@ -1,0 +1,52 @@
+[stdlog] 2022-10-28 21:00:41,923 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_hwclock_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:00:41,924 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:00:41,924 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:00:41,924 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_hwclock_fun_003.py
+[stdlog] 2022-10-28 21:00:41,924 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:00:41,924 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_hwclock_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:00:41,925 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:00:41,925 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:00:41,925 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:00:41,932 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:00:41,933 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007263826s
+[stdlog] 2022-10-28 21:00:41,933 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:00:42,216 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:43:10 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:00:42,493 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:00:42,494 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:00:42,494 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:00:42,836 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.902320959s
+[stdlog] 2022-10-28 21:00:42,837 avocado.utils.process INFO | Running 'date "+%Y-%m-%d %H:%M:%S"'
+[stdlog] 2022-10-28 21:00:42,839 avocado.utils.process DEBUG| [stdout] 2022-10-28 21:00:42
+[stdlog] 2022-10-28 21:00:42,839 avocado.utils.process INFO | Command 'date "+%Y-%m-%d %H:%M:%S"' finished with 0 after 0.001509942s
+[stdlog] 2022-10-28 21:00:42,839 avocado.utils.process INFO | Running 'hwclock'
+[stdlog] 2022-10-28 21:00:43,299 avocado.utils.process INFO | Command 'hwclock' finished with 0 after 0.458794120s
+[stdlog] 2022-10-28 21:00:43,299 avocado.utils.process DEBUG| [stdout] 2022-10-28 21:00:44.542381+08:00
+[stdlog] 2022-10-28 21:00:43,299 avocado.utils.process INFO | Running 'hwclock | awk '{print $1 }''
+[stdlog] 2022-10-28 21:00:44,299 avocado.utils.process DEBUG| [stdout] 2022-10-28
+[stdlog] 2022-10-28 21:00:44,300 avocado.utils.process INFO | Command 'hwclock | awk '{print $1 }'' finished with 0 after 0.999541835s
+[stdlog] 2022-10-28 21:00:44,300 avocado.utils.process INFO | Running 'hwclock --hctosys'
+[stdlog] 2022-10-28 21:00:47,000 avocado.utils.process INFO | Command 'hwclock --hctosys' finished with 0 after 0.998617783s
+[stdlog] 2022-10-28 21:00:47,002 avocado.utils.process INFO | Running 'date '+%Y-%m-%d %H:%M:%S' | grep 2022-10-28'
+[stdlog] 2022-10-28 21:00:47,005 avocado.utils.process DEBUG| [stdout] 2022-10-28 21:00:47
+[stdlog] 2022-10-28 21:00:47,005 avocado.utils.process INFO | Command 'date '+%Y-%m-%d %H:%M:%S' | grep 2022-10-28' finished with 0 after 0.002390689s
+[stdlog] 2022-10-28 21:00:47,005 avocado.utils.process INFO | Running 'hwclock --set --date 2022-02-02'
+[stdlog] 2022-10-28 21:00:47,508 avocado.utils.process INFO | Command 'hwclock --set --date 2022-02-02' finished with 0 after 0.502052061s
+[stdlog] 2022-10-28 21:00:47,508 avocado.utils.process INFO | Running 'hwclock --hctosys'
+[stdlog] 2022-02-02 00:00:01,007 avocado.utils.process INFO | Command 'hwclock --hctosys' finished with 0 after 0.497442721s
+[stdlog] 2022-02-02 00:00:01,008 avocado.utils.process INFO | Running 'date '+%Y-%m-%d %H:%M:%S' | grep 2022-02-02'
+[stdlog] 2022-02-02 00:00:01,011 avocado.utils.process DEBUG| [stdout] 2022-02-02 00:00:01
+[stdlog] 2022-02-02 00:00:01,011 avocado.utils.process INFO | Command 'date '+%Y-%m-%d %H:%M:%S' | grep 2022-02-02' finished with 0 after 0.002379026s
+[stdlog] 2022-02-02 00:00:01,011 avocado.test INFO | teardown
+[stdlog] 2022-02-02 00:00:01,011 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-02-02 00:00:01,290 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-02-02 00:00:01,297 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-02-02 00:00:01,298 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-02-02 00:00:01,299 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-02-02 00:00:01,599 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.587079727s
+[stdlog] 2022-02-02 00:00:01,599 avocado.utils.process INFO | Running 'date -s "2022-10-28 21:00:42"'
+[stdlog] 2022-10-28 21:00:42,007 avocado.utils.process DEBUG| [stdout] Fri Oct 28 21:00:42 CST 2022
+[stdlog] 2022-10-28 21:00:42,007 avocado.utils.process INFO | Command 'date -s "2022-10-28 21:00:42"' finished with 0 after 0.008608154s
+[stdlog] 2022-10-28 21:00:42,007 avocado.utils.process INFO | Running 'hwclock --set --date "2022-10-28 21:00:44.542381+08:00"'
+[stdlog] 2022-10-28 21:00:42,510 avocado.utils.process INFO | Command 'hwclock --set --date "2022-10-28 21:00:44.542381+08:00"' finished with 0 after 0.501701351s
+[stdlog] 2022-10-28 21:00:42,510 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_hwclock_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:00:42,510 avocado.test INFO | 

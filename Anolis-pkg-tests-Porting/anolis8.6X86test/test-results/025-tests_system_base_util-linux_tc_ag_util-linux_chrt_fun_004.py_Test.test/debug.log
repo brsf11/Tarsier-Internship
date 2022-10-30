@@ -1,0 +1,83 @@
+[stdlog] 2022-10-28 20:57:58,797 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:57:58,798 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:58,798 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:57:58,798 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_004.py
+[stdlog] 2022-10-28 20:57:58,798 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:57:58,799 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:57:58,799 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:57:58,799 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:58,799 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:57:58,806 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:57:58,807 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007282502s
+[stdlog] 2022-10-28 20:57:58,807 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:57:59,096 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:27 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:57:59,366 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:59,368 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:59,368 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:59,659 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.850682895s
+[stdlog] 2022-10-28 20:57:59,661 avocado.utils.process INFO | Running 'ps aux | grep "sleep 10000" | grep -v grep| awk "{print \$2}"'
+[stdlog] 2022-10-28 20:57:59,671 avocado.utils.process DEBUG| [stdout] 5596
+[stdlog] 2022-10-28 20:57:59,671 avocado.utils.process INFO | Command 'ps aux | grep "sleep 10000" | grep -v grep| awk "{print \$2}"' finished with 0 after 0.009694667s
+[stdlog] 2022-10-28 20:57:59,672 avocado.utils.process INFO | Running 'chrt -T 10000 -P 100000 -D 100000 --deadline --pid 0 5596'
+[stdlog] 2022-10-28 20:57:59,674 avocado.utils.process INFO | Command 'chrt -T 10000 -P 100000 -D 100000 --deadline --pid 0 5596' finished with 0 after 0.001543477s
+[stdlog] 2022-10-28 20:57:59,674 avocado.utils.process INFO | Running 'chrt -p 5596'
+[stdlog] 2022-10-28 20:57:59,676 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling policy: SCHED_DEADLINE
+[stdlog] 2022-10-28 20:57:59,676 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling priority: 0
+[stdlog] 2022-10-28 20:57:59,676 avocado.utils.process DEBUG| [stdout] pid 5596's current runtime/deadline/period parameters: 10000/100000/100000
+[stdlog] 2022-10-28 20:57:59,676 avocado.utils.process INFO | Command 'chrt -p 5596' finished with 0 after 0.001541987s
+[stdlog] 2022-10-28 20:57:59,677 avocado.utils.process INFO | Running 'chrt --rr --pid 1 5596'
+[stdlog] 2022-10-28 20:57:59,678 avocado.utils.process INFO | Command 'chrt --rr --pid 1 5596' finished with 0 after 0.001110633s
+[stdlog] 2022-10-28 20:57:59,679 avocado.utils.process INFO | Running 'chrt -p 5596'
+[stdlog] 2022-10-28 20:57:59,680 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling policy: SCHED_RR
+[stdlog] 2022-10-28 20:57:59,681 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling priority: 1
+[stdlog] 2022-10-28 20:57:59,681 avocado.utils.process INFO | Command 'chrt -p 5596' finished with 0 after 0.001503939s
+[stdlog] 2022-10-28 20:57:59,681 avocado.utils.process INFO | Running 'chrt --batch --pid 0 5596'
+[stdlog] 2022-10-28 20:57:59,683 avocado.utils.process INFO | Command 'chrt --batch --pid 0 5596' finished with 0 after 0.001135351s
+[stdlog] 2022-10-28 20:57:59,683 avocado.utils.process INFO | Running 'chrt -p 5596'
+[stdlog] 2022-10-28 20:57:59,685 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling policy: SCHED_BATCH
+[stdlog] 2022-10-28 20:57:59,685 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling priority: 0
+[stdlog] 2022-10-28 20:57:59,685 avocado.utils.process INFO | Command 'chrt -p 5596' finished with 0 after 0.001437976s
+[stdlog] 2022-10-28 20:57:59,685 avocado.utils.process INFO | Running 'chrt --fifo --pid 1 5596'
+[stdlog] 2022-10-28 20:57:59,687 avocado.utils.process INFO | Command 'chrt --fifo --pid 1 5596' finished with 0 after 0.001144866s
+[stdlog] 2022-10-28 20:57:59,687 avocado.utils.process INFO | Running 'chrt -p 5596'
+[stdlog] 2022-10-28 20:57:59,690 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling policy: SCHED_FIFO
+[stdlog] 2022-10-28 20:57:59,690 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling priority: 1
+[stdlog] 2022-10-28 20:57:59,690 avocado.utils.process INFO | Command 'chrt -p 5596' finished with 0 after 0.002022714s
+[stdlog] 2022-10-28 20:57:59,690 avocado.utils.process INFO | Running 'chrt --idle --pid 0 5596'
+[stdlog] 2022-10-28 20:57:59,692 avocado.utils.process INFO | Command 'chrt --idle --pid 0 5596' finished with 0 after 0.001206450s
+[stdlog] 2022-10-28 20:57:59,693 avocado.utils.process INFO | Running 'chrt -p 5596'
+[stdlog] 2022-10-28 20:57:59,694 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling policy: SCHED_IDLE
+[stdlog] 2022-10-28 20:57:59,694 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling priority: 0
+[stdlog] 2022-10-28 20:57:59,695 avocado.utils.process INFO | Command 'chrt -p 5596' finished with 0 after 0.001375960s
+[stdlog] 2022-10-28 20:57:59,695 avocado.utils.process INFO | Running 'chrt --other --pid 0 5596'
+[stdlog] 2022-10-28 20:57:59,697 avocado.utils.process INFO | Command 'chrt --other --pid 0 5596' finished with 0 after 0.001179302s
+[stdlog] 2022-10-28 20:57:59,697 avocado.utils.process INFO | Running 'chrt -p 5596'
+[stdlog] 2022-10-28 20:57:59,699 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling policy: SCHED_OTHER
+[stdlog] 2022-10-28 20:57:59,699 avocado.utils.process DEBUG| [stdout] pid 5596's current scheduling priority: 0
+[stdlog] 2022-10-28 20:57:59,699 avocado.utils.process INFO | Command 'chrt -p 5596' finished with 0 after 0.001427719s
+[stdlog] 2022-10-28 20:57:59,699 avocado.utils.process INFO | Running 'chrt --other --pid 0 abc'
+[stdlog] 2022-10-28 20:57:59,701 avocado.utils.process INFO | Command 'chrt --other --pid 0 abc' finished with 1 after 0.001144641s
+[stdlog] 2022-10-28 20:57:59,701 avocado.utils.process DEBUG| [stderr] chrt: invalid PID argument: 'abc'
+[stdlog] 2022-10-28 20:57:59,701 avocado.utils.process INFO | Running 'chrt --other --pid 0 0'
+[stdlog] 2022-10-28 20:57:59,703 avocado.utils.process INFO | Command 'chrt --other --pid 0 0' finished with 127 after 0.001205650s
+[stdlog] 2022-10-28 20:57:59,704 avocado.utils.process DEBUG| [stderr] chrt: failed to execute 0: No such file or directory
+[stdlog] 2022-10-28 20:57:59,704 avocado.utils.process INFO | Running 'chrt --other --pid 0 2147483647'
+[stdlog] 2022-10-28 20:57:59,706 avocado.utils.process INFO | Command 'chrt --other --pid 0 2147483647' finished with 1 after 0.001543709s
+[stdlog] 2022-10-28 20:57:59,707 avocado.utils.process DEBUG| [stderr] chrt: failed to set pid 2147483647's policy: No such process
+[stdlog] 2022-10-28 20:57:59,707 avocado.utils.process INFO | Running 'chrt --other --pid 0 2147483648'
+[stdlog] 2022-10-28 20:57:59,709 avocado.utils.process INFO | Command 'chrt --other --pid 0 2147483648' finished with 1 after 0.001323352s
+[stdlog] 2022-10-28 20:57:59,709 avocado.utils.process DEBUG| [stderr] chrt: invalid PID argument: '2147483648': Numerical result out of range
+[stdlog] 2022-10-28 20:57:59,709 avocado.utils.process INFO | Running 'chrt --other --pid   '
+[stdlog] 2022-10-28 20:57:59,711 avocado.utils.process INFO | Command 'chrt --other --pid   ' finished with 1 after 0.001111854s
+[stdlog] 2022-10-28 20:57:59,711 avocado.utils.process DEBUG| [stderr] chrt: invalid PID argument: '--pid'
+[stdlog] 2022-10-28 20:57:59,711 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:57:59,711 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:57:59,994 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:00,001 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:00,002 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:00,002 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:00,277 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.565341924s
+[stdlog] 2022-10-28 20:58:00,278 avocado.utils.process INFO | Running 'ps aux | grep "sleep 10000" | grep -v grep| awk "{print \$2}" | xargs kill -9'
+[stdlog] 2022-10-28 20:58:00,300 avocado.utils.process INFO | Command 'ps aux | grep "sleep 10000" | grep -v grep| awk "{print \$2}" | xargs kill -9' finished with 0 after 0.021821877s
+[stdlog] 2022-10-28 20:58:00,301 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_004.py:Test.test
+[stdlog] 2022-10-28 20:58:00,301 avocado.test INFO | 

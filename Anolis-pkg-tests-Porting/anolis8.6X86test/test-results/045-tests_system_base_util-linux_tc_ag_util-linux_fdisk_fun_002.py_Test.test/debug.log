@@ -1,0 +1,40 @@
+[stdlog] 2022-10-28 20:58:57,201 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:57,202 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:57,202 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:57,202 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_002.py
+[stdlog] 2022-10-28 20:58:57,202 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:57,202 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:57,202 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:57,202 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:57,202 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:57,211 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:57,212 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.008526128s
+[stdlog] 2022-10-28 20:58:57,212 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:57,506 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:25 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:57,774 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:57,775 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:57,776 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:58,110 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.897316996s
+[stdlog] 2022-10-28 20:58:58,110 avocado.utils.process INFO | Running 'fdisk -l |head -1 |awk -F " " '{printf $2}''
+[stdlog] 2022-10-28 20:58:58,339 avocado.utils.process DEBUG| [stdout] /dev/sda:
+[stdlog] 2022-10-28 20:58:58,340 avocado.utils.process INFO | Command 'fdisk -l |head -1 |awk -F " " '{printf $2}'' finished with 0 after 0.228290245s
+[stdlog] 2022-10-28 20:58:58,493 avocado.test ERROR| 
+[stdlog] 2022-10-28 20:58:58,494 avocado.test ERROR| Reproduced traceback from: /usr/local/lib/python3.6/site-packages/avocado/core/test.py:761
+[stdlog] 2022-10-28 20:58:58,495 avocado.test ERROR| Traceback (most recent call last):
+[stdlog] 2022-10-28 20:58:58,495 avocado.test ERROR|   File "/root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_002.py", line 33, in test
+[stdlog] 2022-10-28 20:58:58,495 avocado.test ERROR|     self.assertTrue(self.index is 0, 'All space for primary partitions is in use')
+[stdlog] 2022-10-28 20:58:58,495 avocado.test ERROR|   File "/usr/lib64/python3.6/unittest/case.py", line 699, in assertTrue
+[stdlog] 2022-10-28 20:58:58,495 avocado.test ERROR|     raise self.failureException(msg)
+[stdlog] 2022-10-28 20:58:58,495 avocado.test ERROR| AssertionError: False is not true : All space for primary partitions is in use
+[stdlog] 2022-10-28 20:58:58,495 avocado.test ERROR| 
+[stdlog] 2022-10-28 20:58:58,495 avocado.test DEBUG| Local variables:
+[stdlog] 2022-10-28 20:58:58,507 avocado.test DEBUG|  -> self <class 'tc_ag_util-linux_fdisk_fun_002.Test'>: 1-tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:58,507 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:58,507 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:58,783 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:58,789 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:58,790 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:58,791 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:59,084 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.575756540s
+[stdlog] 2022-10-28 20:58:59,084 avocado.test ERROR| FAIL 1-tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_002.py:Test.test -> AssertionError: False is not true : All space for primary partitions is in use
+[stdlog] 2022-10-28 20:58:59,084 avocado.test INFO | 

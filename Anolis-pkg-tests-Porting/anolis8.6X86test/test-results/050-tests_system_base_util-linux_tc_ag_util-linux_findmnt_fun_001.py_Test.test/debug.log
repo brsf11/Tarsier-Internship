@@ -1,0 +1,63 @@
+[stdlog] 2022-10-28 20:59:07,239 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:59:07,239 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:07,240 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:59:07,240 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_001.py
+[stdlog] 2022-10-28 20:59:07,240 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:59:07,240 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:59:07,240 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:59:07,240 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:59:07,240 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:59:07,248 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:59:07,248 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007177730s
+[stdlog] 2022-10-28 20:59:07,249 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:59:07,537 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:35 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:59:07,807 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:07,808 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:07,808 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:08,098 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.848472416s
+[stdlog] 2022-10-28 20:59:08,098 avocado.utils.process INFO | Running 'findmnt'
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] TARGET                                SOURCE              FSTYPE     OPTIONS
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] /                                     /dev/mapper/ao-root xfs        rw,relatime,attr2,inode64,noquota
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] ├─/sys                                sysfs               sysfs      rw,nosuid,nodev,noexec,relatime
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ ├─/sys/kernel/security              securityfs          securityfs rw,nosuid,nodev,noexec,relatime
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ ├─/sys/fs/cgroup                    tmpfs               tmpfs      ro,nosuid,nodev,noexec,mode=755
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/systemd          cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/blkio            cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,blkio
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/memory           cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,memory
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/devices          cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,devices
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/cpu,cpuacct      cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,cpu,cpuacct
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/rdma             cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,rdma
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/freezer          cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,freezer
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/pids             cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,pids
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/net_cls,net_prio cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,net_cls,net_prio
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/hugetlb          cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,hugetlb
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ ├─/sys/fs/cgroup/perf_event       cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,perf_event
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ │ └─/sys/fs/cgroup/cpuset           cgroup              cgroup     rw,nosuid,nodev,noexec,relatime,cpuset
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ ├─/sys/fs/pstore                    pstore              pstore     rw,nosuid,nodev,noexec,relatime
+[stdlog] 2022-10-28 20:59:08,102 avocado.utils.process DEBUG| [stdout] │ ├─/sys/fs/bpf                       bpf                 bpf        rw,nosuid,nodev,noexec,relatime,mode=700
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ ├─/sys/kernel/tracing               none                tracefs    rw,relatime
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ ├─/sys/kernel/debug                 debugfs             debugfs    rw,relatime
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ ├─/sys/fs/fuse/connections          fusectl             fusectl    rw,relatime
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ └─/sys/kernel/config                configfs            configfs   rw,relatime
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] ├─/proc                               proc                proc       rw,nosuid,nodev,noexec,relatime
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ └─/proc/sys/fs/binfmt_misc          systemd-1           autofs     rw,relatime,fd=33,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=19168
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] ├─/dev                                devtmpfs            devtmpfs   rw,nosuid,size=3933704k,nr_inodes=983426,mode=755
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ ├─/dev/shm                          tmpfs               tmpfs      rw,nosuid,nodev
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ ├─/dev/pts                          devpts              devpts     rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ ├─/dev/hugepages                    hugetlbfs           hugetlbfs  rw,relatime,pagesize=2M
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ └─/dev/mqueue                       mqueue              mqueue     rw,relatime
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] ├─/run                                tmpfs               tmpfs      rw,nosuid,nodev,mode=755
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ ├─/run/user/0                       tmpfs               tmpfs      rw,nosuid,nodev,relatime,size=792640k,mode=700
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] │ └─/run/user/42                      tmpfs               tmpfs      rw,nosuid,nodev,relatime,size=792640k,mode=700,uid=42,gid=42
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] ├─/boot                               /dev/sda1           xfs        rw,relatime,attr2,inode64,noquota
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process DEBUG| [stdout] └─/var/lib/nfs/rpc_pipefs             sunrpc              rpc_pipefs rw,relatime
+[stdlog] 2022-10-28 20:59:08,103 avocado.utils.process INFO | Command 'findmnt' finished with 0 after 0.004291910s
+[stdlog] 2022-10-28 20:59:08,103 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:59:08,104 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:59:08,387 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:59:08,394 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:59:08,395 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:59:08,396 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:59:08,670 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.565756141s
+[stdlog] 2022-10-28 20:59:08,670 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_findmnt_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:59:08,670 avocado.test INFO | 

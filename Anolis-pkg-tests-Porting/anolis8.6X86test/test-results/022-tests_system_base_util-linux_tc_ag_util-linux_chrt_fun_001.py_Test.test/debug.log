@@ -1,0 +1,38 @@
+[stdlog] 2022-10-28 20:57:53,264 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:57:53,265 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:53,265 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:57:53,265 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_001.py
+[stdlog] 2022-10-28 20:57:53,265 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:57:53,265 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:57:53,265 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:57:53,266 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:53,266 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:57:53,273 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:57:53,274 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007099993s
+[stdlog] 2022-10-28 20:57:53,274 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:57:53,564 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:21 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:57:53,849 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:53,850 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:53,850 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:54,115 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.840258326s
+[stdlog] 2022-10-28 20:57:54,117 avocado.utils.process INFO | Running 'ps aux | grep "sleep 1000" | grep -v grep| awk "{print \$2}"|head -1'
+[stdlog] 2022-10-28 20:57:54,164 avocado.utils.process DEBUG| [stdout] 5513
+[stdlog] 2022-10-28 20:57:54,164 avocado.utils.process INFO | Command 'ps aux | grep "sleep 1000" | grep -v grep| awk "{print \$2}"|head -1' finished with 0 after 0.045649430s
+[stdlog] 2022-10-28 20:57:54,164 avocado.utils.process INFO | Running 'chrt --pid 5513'
+[stdlog] 2022-10-28 20:57:54,167 avocado.utils.process INFO | Command 'chrt --pid 5513' finished with 0 after 0.002073099s
+[stdlog] 2022-10-28 20:57:54,168 avocado.utils.process DEBUG| [stdout] pid 5513's current scheduling policy: SCHED_OTHER
+[stdlog] 2022-10-28 20:57:54,168 avocado.utils.process DEBUG| [stdout] pid 5513's current scheduling priority: 0
+[stdlog] 2022-10-28 20:57:54,168 avocado.utils.process INFO | Running 'kill -9 5513'
+[stdlog] 2022-10-28 20:57:54,170 avocado.utils.process INFO | Command 'kill -9 5513' finished with 0 after 0.001005029s
+[stdlog] 2022-10-28 20:57:54,170 avocado.utils.process INFO | Running 'chrt --pid 5513'
+[stdlog] 2022-10-28 20:57:54,172 avocado.utils.process INFO | Command 'chrt --pid 5513' finished with 1 after 0.001171769s
+[stdlog] 2022-10-28 20:57:54,172 avocado.utils.process DEBUG| [stderr] chrt: failed to get pid 5513's policy: No such process
+[stdlog] 2022-10-28 20:57:54,172 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:57:54,172 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:57:54,459 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:57:54,467 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:54,468 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:54,468 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:54,743 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.570231674s
+[stdlog] 2022-10-28 20:57:54,744 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_chrt_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:57:54,744 avocado.test INFO | 

@@ -1,0 +1,50 @@
+[stdlog] 2022-10-28 20:58:55,115 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:55,117 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:55,117 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:55,117 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_001.py
+[stdlog] 2022-10-28 20:58:55,117 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:55,117 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:55,117 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:55,117 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:55,117 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:55,125 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:55,126 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007198093s
+[stdlog] 2022-10-28 20:58:55,126 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:55,410 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:23 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:55,682 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:55,683 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:55,683 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:55,964 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.837450807s
+[stdlog] 2022-10-28 20:58:55,964 avocado.utils.process INFO | Running 'fdisk -l'
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Disk /dev/sda: 40 GiB, 42949672960 bytes, 83886080 sectors
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Units: sectors of 1 * 512 = 512 bytes
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Sector size (logical/physical): 512 bytes / 512 bytes
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] I/O size (minimum/optimal): 512 bytes / 512 bytes
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Disklabel type: dos
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Disk identifier: 0x2522d236
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Device     Boot   Start      End  Sectors Size Id Type
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] /dev/sda1  *       2048  2099199  2097152   1G 83 Linux
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] /dev/sda2       2099200 83886079 81786880  39G 8e Linux LVM
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Disk /dev/mapper/ao-root: 35 GiB, 37576769536 bytes, 73392128 sectors
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Units: sectors of 1 * 512 = 512 bytes
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Sector size (logical/physical): 512 bytes / 512 bytes
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] I/O size (minimum/optimal): 512 bytes / 512 bytes
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Disk /dev/mapper/ao-swap: 4 GiB, 4294967296 bytes, 8388608 sectors
+[stdlog] 2022-10-28 20:58:56,192 avocado.utils.process DEBUG| [stdout] Units: sectors of 1 * 512 = 512 bytes
+[stdlog] 2022-10-28 20:58:56,193 avocado.utils.process DEBUG| [stdout] Sector size (logical/physical): 512 bytes / 512 bytes
+[stdlog] 2022-10-28 20:58:56,193 avocado.utils.process DEBUG| [stdout] I/O size (minimum/optimal): 512 bytes / 512 bytes
+[stdlog] 2022-10-28 20:58:56,193 avocado.utils.process INFO | Command 'fdisk -l' finished with 0 after 0.227298393s
+[stdlog] 2022-10-28 20:58:56,193 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:56,193 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:56,473 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:56,480 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:56,481 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:56,481 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:56,814 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.620381130s
+[stdlog] 2022-10-28 20:58:56,815 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_fdisk_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:56,815 avocado.test INFO | 

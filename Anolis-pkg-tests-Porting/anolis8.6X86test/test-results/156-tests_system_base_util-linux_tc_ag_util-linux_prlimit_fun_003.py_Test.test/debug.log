@@ -1,0 +1,39 @@
+[stdlog] 2022-10-28 21:03:28,645 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_prlimit_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:03:28,646 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:03:28,646 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:03:28,646 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_prlimit_fun_003.py
+[stdlog] 2022-10-28 21:03:28,646 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:03:28,647 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_prlimit_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:03:28,647 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:03:28,647 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:03:28,647 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:03:28,655 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:03:28,656 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007900759s
+[stdlog] 2022-10-28 21:03:28,656 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:03:28,942 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:45:56 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:03:29,214 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:03:29,215 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:03:29,215 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:03:29,488 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.831139550s
+[stdlog] 2022-10-28 21:03:29,490 avocado.utils.process INFO | Running 'ps aux | grep "sleep 1000" | grep -v grep| awk "{print \$2}"|head -1'
+[stdlog] 2022-10-28 21:03:29,502 avocado.utils.process DEBUG| [stdout] 8621
+[stdlog] 2022-10-28 21:03:29,502 avocado.utils.process INFO | Command 'ps aux | grep "sleep 1000" | grep -v grep| awk "{print \$2}"|head -1' finished with 0 after 0.011047792s
+[stdlog] 2022-10-28 21:03:29,502 avocado.utils.process INFO | Running 'cat /proc/8621/limits | grep 'Max open files'|awk -F ' ' '{print $4}''
+[stdlog] 2022-10-28 21:03:29,506 avocado.utils.process DEBUG| [stdout] 1024
+[stdlog] 2022-10-28 21:03:29,507 avocado.utils.process INFO | Command 'cat /proc/8621/limits | grep 'Max open files'|awk -F ' ' '{print $4}'' finished with 0 after 0.003378122s
+[stdlog] 2022-10-28 21:03:29,507 avocado.utils.process INFO | Running 'prlimit --nofile=1025 --pid 8621'
+[stdlog] 2022-10-28 21:03:29,509 avocado.utils.process INFO | Command 'prlimit --nofile=1025 --pid 8621' finished with 0 after 0.001270140s
+[stdlog] 2022-10-28 21:03:29,509 avocado.utils.process INFO | Running 'cat /proc/8621/limits | grep 'Max open files'|awk -F ' ' '{print $4}''
+[stdlog] 2022-10-28 21:03:29,513 avocado.utils.process DEBUG| [stdout] 1025
+[stdlog] 2022-10-28 21:03:29,513 avocado.utils.process INFO | Command 'cat /proc/8621/limits | grep 'Max open files'|awk -F ' ' '{print $4}'' finished with 0 after 0.003295926s
+[stdlog] 2022-10-28 21:03:29,514 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:03:29,514 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:03:29,795 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:03:29,802 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:03:29,803 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:03:29,804 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:03:30,117 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.602332905s
+[stdlog] 2022-10-28 21:03:30,117 avocado.utils.process INFO | Running 'kill -9 8621'
+[stdlog] 2022-10-28 21:03:30,119 avocado.utils.process INFO | Command 'kill -9 8621' finished with 0 after 0.001166752s
+[stdlog] 2022-10-28 21:03:30,119 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_prlimit_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:03:30,120 avocado.test INFO | 

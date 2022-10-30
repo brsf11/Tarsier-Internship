@@ -1,0 +1,582 @@
+[stdlog] 2022-10-28 20:58:18,363 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:18,364 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:18,364 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:18,364 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_002.py
+[stdlog] 2022-10-28 20:58:18,364 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:18,364 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:18,365 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:18,365 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:18,365 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:18,372 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:18,373 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007159526s
+[stdlog] 2022-10-28 20:58:18,373 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:18,659 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:46 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:18,935 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:18,937 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:18,937 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:19,217 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.843438821s
+[stdlog] 2022-10-28 20:58:19,217 avocado.utils.process INFO | Running 'dmesg --level err'
+[stdlog] 2022-10-28 20:58:19,221 avocado.utils.process DEBUG| [stdout] [    0.948824] integrity: Unable to open file: /etc/keys/x509_ima.der (-2)
+[stdlog] 2022-10-28 20:58:19,221 avocado.utils.process DEBUG| [stdout] [    0.948825] integrity: Unable to open file: /etc/keys/x509_evm.der (-2)
+[stdlog] 2022-10-28 20:58:19,221 avocado.utils.process DEBUG| [stdout] [    1.410176] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+[stdlog] 2022-10-28 20:58:19,221 avocado.utils.process DEBUG| [stdout] [    1.410625] [drm:vmw_host_log [vmwgfx]] *ERROR* Failed to send host log message.
+[stdlog] 2022-10-28 20:58:19,221 avocado.utils.process DEBUG| [stdout] [   72.642878] [drm:vmw_sou_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
+[stdlog] 2022-10-28 20:58:19,221 avocado.utils.process INFO | Command 'dmesg --level err' finished with 0 after 0.002681692s
+[stdlog] 2022-10-28 20:58:19,221 avocado.utils.process INFO | Running 'dmesg --level debug'
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.001699] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.001700] e820: remove [mem 0x000a0000-0x000fffff] usable
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.001710] MTRR default type: uncachable
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.001710] MTRR variable ranges disabled:
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042358] BRK [0x108801000, 0x108801fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042359] BRK [0x108802000, 0x108802fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042360] BRK [0x108803000, 0x108803fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042376] BRK [0x108804000, 0x108804fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042377] BRK [0x108805000, 0x108805fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042412] BRK [0x108806000, 0x108806fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042416] BRK [0x108807000, 0x108807fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042420] BRK [0x108808000, 0x108808fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042431] BRK [0x108809000, 0x108809fff] PGTABLE
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.042737] ACPI: Local APIC address 0xfee00000
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.043791] On node 0 totalpages: 2097038
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.043792]   DMA zone: 64 pages used for memmap
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.043793]   DMA zone: 21 pages reserved
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.043793]   DMA zone: 3998 pages, LIFO batch:0
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.043806]   DMA32 zone: 14272 pages used for memmap
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.043806]   DMA32 zone: 913392 pages, LIFO batch:63
+[stdlog] 2022-10-28 20:58:19,224 avocado.utils.process DEBUG| [stdout] [    0.052576]   Normal zone: 18432 pages used for memmap
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.052578]   Normal zone: 1179648 pages, LIFO batch:63
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.064833] ACPI: Local APIC address 0xfee00000
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.064878] ACPI: IRQ0 used by override.
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.064878] ACPI: IRQ9 used by override.
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.067984] pcpu-alloc: s151552 r8192 d28672 u2097152 alloc=1*2097152
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.067985] pcpu-alloc: [0] 0 
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.329503] PCI: pci_cache_line_size set to 64 bytes
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.329604] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.329606] e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.339246] pnp 00:00: Plug and Play ACPI device, IDs PNP0303 (active)
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    0.340446] pnp 00:01: Plug and Play ACPI device, IDs PNP0f03 (active)
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    1.359184] libata version 3.00 loaded.
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    1.359454] ata_piix 0000:00:01.1: version 2.13
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    1.386295] ahci 0000:00:0d.0: version 3.0
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    1.775762] sr 0:0:0:0: Attached scsi CD-ROM sr0
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    1.803641] sr 1:0:0:0: Attached scsi CD-ROM sr1
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    1.803931] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process DEBUG| [stdout] [    2.469354] PM: Image not found (code -22)
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process INFO | Command 'dmesg --level debug' finished with 0 after 0.003355922s
+[stdlog] 2022-10-28 20:58:19,225 avocado.utils.process INFO | Running 'dmesg --level alert'
+[stdlog] 2022-10-28 20:58:19,228 avocado.utils.process INFO | Command 'dmesg --level alert' finished with 0 after 0.001761350s
+[stdlog] 2022-10-28 20:58:19,228 avocado.utils.process INFO | Running 'dmesg --level notice'
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.000000] Linux version 4.19.91-26.an8.x86_64 (mockbuild@anolis-build-01.openanolis.cn) (gcc version 8.5.0 20210514 (Anolis 8.5.0-10.0.1) (GCC)) #1 SMP Tue May 24 13:10:09 CST 2022
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.067674] random: get_random_bytes called from start_kernel+0x85/0x523 with crng_init=0
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.068002] Kernel command line: BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.19.91-26.an8.x86_64 root=/dev/mapper/ao-root ro crashkernel=auto resume=/dev/mapper/ao-swap rd.lvm.lv=ao/root rd.lvm.lv=ao/swap rhgb quiet crashkernel=0M-2G:0M,2G-8G:192M,8G-:256M
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.214342] audit: type=2000 audit(1666942900.668:1): state=initialized audit_enabled=0 res=1
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.328839] SCSI subsystem initialized
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.339246] VFS: Disk quotas dquot_6.6.0
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.827347] Initialise system trusted keyrings
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.827347] Key type blacklist registered
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.827347] Allocating IMA blacklist keyring.
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.860405] Key type asymmetric registered
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.860405] Asymmetric key parser 'x509' registered
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.925374] Loading compiled-in X.509 certificates
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.942885] Loaded X.509 cert 'Build time autogenerated kernel key: 8ee38a56637381971b9abe6d85506b7328c9217c'
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.944666] Key type big_key registered
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.946140] Key type trusted registered
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.947726] Key type encrypted registered
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.995343] random: systemd: uninitialized urandom read (16 bytes read)
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.995436] random: systemd: uninitialized urandom read (16 bytes read)
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    0.995504] random: systemd: uninitialized urandom read (16 bytes read)
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    1.026615] fuse: module verification failed: signature and/or required key missing - tainting kernel
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    1.533943] scsi 0:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    1.534664] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    1.736005] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+[stdlog] 2022-10-28 20:58:19,231 avocado.utils.process DEBUG| [stdout] [    1.744466] scsi 0:0:0:0: Attached scsi generic sg0 type 5
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    1.744523] scsi 1:0:0:0: Attached scsi generic sg1 type 5
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    1.744570] scsi 2:0:0:0: Attached scsi generic sg2 type 0
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    1.803926] sd 2:0:0:0: [sda] 83886080 512-byte logical blocks: (42.9 GB/40.0 GiB)
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    1.803931] sd 2:0:0:0: [sda] Write Protect is off
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    1.803938] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    1.807140] sd 2:0:0:0: [sda] Attached SCSI disk
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    2.450748] random: fast init done
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    2.451123] random: crng init done
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    2.451123] random: 7 urandom warning(s) missed due to ratelimiting
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    2.536535] XFS (dm-0): Mounting V5 Filesystem
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [    4.917381] audit: type=1404 audit(1666942894.469:2): enforcing=0 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=0 old-enabled=1 lsm=selinux res=1
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process DEBUG| [stdout] [   22.513885] XFS (sda1): Mounting V5 Filesystem
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process INFO | Command 'dmesg --level notice' finished with 0 after 0.003246416s
+[stdlog] 2022-10-28 20:58:19,232 avocado.utils.process INFO | Running 'dmesg --level crit'
+[stdlog] 2022-10-28 20:58:19,235 avocado.utils.process INFO | Command 'dmesg --level crit' finished with 0 after 0.001866299s
+[stdlog] 2022-10-28 20:58:19,235 avocado.utils.process INFO | Running 'dmesg --level info'
+[stdlog] 2022-10-28 20:58:19,238 avocado.utils.process DEBUG| [stdout] [    0.000000] Command line: BOOT_IMAGE=(hd0,msdos1)/vmlinuz-4.19.91-26.an8.x86_64 root=/dev/mapper/ao-root ro crashkernel=auto resume=/dev/mapper/ao-swap rd.lvm.lv=ao/root rd.lvm.lv=ao/swap rhgb quiet crashkernel=0M-2G:0M,2G-8G:192M,8G-:256M
+[stdlog] 2022-10-28 20:58:19,238 avocado.utils.process DEBUG| [stdout] [    0.000000] KERNEL supported cpus:
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000]   Intel GenuineIntel
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000]   AMD AuthenticAMD
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000]   Hygon HygonGenuine
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000]   Centaur CentaurHauls
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000]   zhaoxin   Shanghai  
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-provided physical RAM map:
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000021fffffff] usable
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] NX (Execute Disable) protection: active
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] SMBIOS 2.5 present.
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] Hypervisor detected: KVM
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] kvm-clock: cpu 0, msr 108601001, primary cpu clock
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000000] kvm-clock: using sched offset of 9363329594 cycles
+[stdlog] 2022-10-28 20:58:19,239 avocado.utils.process DEBUG| [stdout] [    0.000001] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.000002] tsc: Detected 2903.998 MHz processor
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.001702] last_pfn = 0x220000 max_arch_pfn = 0x400000000
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.001712] Disabled
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.001712] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.001713] CPU MTRRs all blank - virtualized system.
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.001715] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.001717] last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.001759] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042694] RAMDISK: [mem 0x3192d000-0x34c8efff]
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042702] ACPI: Early table checksum verification disabled
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042715] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042718] ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042721] ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042724] ACPI: DSDT 0x00000000DFFF0610 002353 (v02 VBOX   VBOXBIOS 00000002 INTL 20220331)
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042726] ACPI: FACS 0x00000000DFFF0200 000040
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042728] ACPI: FACS 0x00000000DFFF0200 000040
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042729] ACPI: APIC 0x00000000DFFF0240 000054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042731] ACPI: SSDT 0x00000000DFFF02A0 00036C (v01 VBOX   VBOXCPUT 00000002 INTL 20220331)
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042940] No NUMA configuration found
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042941] Faking a node at [mem 0x0000000000000000-0x000000021fffffff]
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.042948] NODE_DATA(0) allocated [mem 0x21ffd1000-0x21fffbfff]
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043062] Reserving 192MB of memory at 592MB for crashkernel (System RAM: 8191MB)
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043298] Zone ranges:
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043298]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043299]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043299]   Normal   [mem 0x0000000100000000-0x000000021fffffff]
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043300]   Device   empty
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043301] Movable zone start for each node
+[stdlog] 2022-10-28 20:58:19,240 avocado.utils.process DEBUG| [stdout] [    0.043302] Early memory node ranges
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.043303]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.043303]   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.043303]   node   0: [mem 0x0000000100000000-0x000000021fffffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.043790] Zeroed struct page in unavailable ranges: 114 pages
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.043790] Initmem setup node 0 [mem 0x0000000000001000-0x000000021fffffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064829] ACPI: PM-Timer IO Port: 0x4008
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064874] IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064876] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064877] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064880] Using ACPI (MADT) for SMP configuration information
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064884] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064899] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064900] PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064900] PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064900] PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064901] PM: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064901] PM: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064902] PM: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064903] PM: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064904] [mem 0xe0000000-0xfebfffff] available for PCI devices
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064904] Booting paravirtualized kernel on KVM
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.064906] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.067680] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.067981] percpu: Embedded 46 pages/cpu s151552 r8192 d28672 u2097152
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.068001] Built 1 zonelists, mobility grouping on.  Total pages: 2064249
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.068002] Policy zone: Normal
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.089375] Memory: 7867372K/8388152K available (12300K kernel code, 2606K rwdata, 4096K rodata, 2344K init, 46460K bss, 520780K reserved, 0K cma-reserved)
+[stdlog] 2022-10-28 20:58:19,241 avocado.utils.process DEBUG| [stdout] [    0.089755] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.089763] Kernel/User page tables isolation: enabled
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.089772] ftrace: allocating 38671 entries in 152 pages
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.090170] rcu: Hierarchical RCU implementation.
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.090171] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.090172] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.091189] NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 16
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.096199] Console: colour VGA+ 80x25
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.096202] console [tty0] enabled
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.096215] ACPI: Core revision 20180810
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.096289] APIC: Switch to symmetric I/O mode setup
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.096446] x2apic enabled
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.096597] Switched APIC routing to physical x2apic.
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.097326] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.097341] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x29dc03c1beb, max_idle_ns: 440795205215 ns
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.097353] Calibrating delay loop (skipped) preset value.. 5807.99 BogoMIPS (lpj=2903998)
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.097355] pid_max: default: 32768 minimum: 301
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.097378] Security Framework initialized
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.097380] Yama: becoming mindful.
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.097382] SELinux:  Initializing.
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100142] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100751] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes)
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100766] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100774] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes)
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100992] process: using mwait in idle threads
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100995] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100996] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100997] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100998] Spectre V2 : Mitigation: Full generic retpoline
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] [    0.100999] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on cont
+[stdlog] 2022-10-28 20:58:19,242 avocado.utils.process DEBUG| [stdout] ext switch
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.100999] Speculative Store Bypass: Vulnerable
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.101034] MDS: Mitigation: Clear CPU buffers
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.111067] Freeing SMP alternatives memory: 36K
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.213911] smpboot: CPU0: Intel(R) Core(TM) i7-10700 CPU @ 2.90GHz (family: 0x6, model: 0xa5, stepping: 0x5)
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214003] Performance Events: unsupported p6 CPU model 165 no PMU driver, software events only.
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214328] rcu: Hierarchical SRCU implementation.
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] smp: Bringing up secondary CPUs ...
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] smp: Brought up 1 node, 1 CPU
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] smpboot: Max logical packages: 1
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] smpboot: Total of 1 processors activated (5807.99 BogoMIPS)
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] devtmpfs: initialized
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] x86/mm: Memory block size: 128MB
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] futex hash table entries: 256 (order: 2, 16384 bytes)
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] pinctrl core: initialized pinctrl subsystem
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] RTC time:  7:41:29, date: 10/28/22
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] NET: Registered protocol family 16
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] audit: initializing netlink subsys (disabled)
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] cpuidle: using governor menu
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] ACPI: bus type PCI registered
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] PCI: Using configuration type 1 for base access
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] cryptd: max_cpu_qlen set to 1000
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] ACPI: Added _OSI(Module Device)
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] ACPI: Added _OSI(Processor Device)
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] ACPI: Added _OSI(3.0 _SCP Extensions)
+[stdlog] 2022-10-28 20:58:19,243 avocado.utils.process DEBUG| [stdout] [    0.214342] ACPI: Added _OSI(Processor Aggregator Device)
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.214342] ACPI: Added _OSI(Linux-Dell-Video)
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.214342] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.215720] ACPI: 2 ACPI AML tables successfully acquired and loaded
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.216701] ACPI: Interpreter enabled
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.216707] ACPI: (supports S0 S5)
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.216708] ACPI: Using IOAPIC for interrupt routing
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.216807] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.216865] ACPI: Enabled 2 GPEs in block 00 to 07
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.219698] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.219700] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.219884] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220058] PCI host bridge to bus 0000:00
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220059] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220060] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220060] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220061] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220062] pci_bus 0000:00: root bus resource [bus 00-ff]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220084] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220616] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.220966] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.221348] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.221419] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.221419] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.221420] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.221420] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.221544] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+[stdlog] 2022-10-28 20:58:19,244 avocado.utils.process DEBUG| [stdout] [    0.223364] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+[stdlog] 2022-10-28 20:58:19,245 avocado.utils.process INFO | Command 'dmesg --level info' finished with 0 after 0.008544832s
+[stdlog] 2022-10-28 20:58:19,394 avocado.utils.process DEBUG| [stdout] [    0.225364] pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe7ffffff pref]
+[stdlog] 2022-10-28 20:58:19,394 avocado.utils.process DEBUG| [stdout] [    0.227364] pci 0000:00:02.0: reg 0x18: [mem 0xf0000000-0xf01fffff]
+[stdlog] 2022-10-28 20:58:19,394 avocado.utils.process DEBUG| [stdout] [    0.243479] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+[stdlog] 2022-10-28 20:58:19,394 avocado.utils.process DEBUG| [stdout] [    0.245406] pci 0000:00:03.0: reg 0x10: [mem 0xf0200000-0xf021ffff]
+[stdlog] 2022-10-28 20:58:19,394 avocado.utils.process DEBUG| [stdout] [    0.249391] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.260524] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.261395] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.264363] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.266379] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.276361] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.276424] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.276453] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.277344] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.278418] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+[stdlog] 2022-10-28 20:58:19,395 avocado.utils.process DEBUG| [stdout] [    0.294365] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.294624] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.294629] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.295424] pci 0000:00:08.0: [8086:100e] type 00 class 0x020000
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.296404] pci 0000:00:08.0: reg 0x10: [mem 0xf0820000-0xf083ffff]
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.300387] pci 0000:00:08.0: reg 0x18: [io  0xd240-0xd247]
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.310620] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.312403] pci 0000:00:0d.0: reg 0x10: [io  0xd248-0xd24f]
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.314386] pci 0000:00:0d.0: reg 0x14: [io  0xd250-0xd253]
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.316388] pci 0000:00:0d.0: reg 0x18: [io  0xd258-0xd25f]
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.319384] pci 0000:00:0d.0: reg 0x1c: [io  0xd260-0xd263]
+[stdlog] 2022-10-28 20:58:19,577 avocado.utils.process DEBUG| [stdout] [    0.321387] pci 0000:00:0d.0: reg 0x20: [io  0xd270-0xd27f]
+[stdlog] 2022-10-28 20:58:19,578 avocado.utils.process DEBUG| [stdout] [    0.323386] pci 0000:00:0d.0: reg 0x24: [mem 0xf0840000-0xf0841fff]
+[stdlog] 2022-10-28 20:58:19,578 avocado.utils.process DEBUG| [stdout] [    0.328355] ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+[stdlog] 2022-10-28 20:58:19,578 avocado.utils.process DEBUG| [stdout] [    0.328478] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+[stdlog] 2022-10-28 20:58:19,578 avocado.utils.process DEBUG| [stdout] [    0.328522] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+[stdlog] 2022-10-28 20:58:19,578 avocado.utils.process DEBUG| [stdout] [    0.328565] ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328748] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328749] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328751] pci 0000:00:02.0: vgaarb: bridge control possible
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328751] vgaarb: loaded
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328856] ACPI: bus type USB registered
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328866] usbcore: registered new interface driver usbfs
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328870] usbcore: registered new interface driver hub
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328877] usbcore: registered new device driver usb
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328897] pps_core: LinuxPPS API ver. 1 registered
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328897] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328898] PTP clock support registered
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.328945] EDAC MC: Ver: 3.0.0
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.329502] PCI: Using ACPI for IRQ routing
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.329677] NetLabel: Initializing
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.329678] NetLabel:  domain hash size = 128
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.329678] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[stdlog] 2022-10-28 20:58:19,755 avocado.utils.process DEBUG| [stdout] [    0.329692] NetLabel:  unlabeled traffic allowed by default
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.330360] clocksource: Switched to clocksource kvm-clock
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.339246] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.339246] pnp: PnP ACPI init
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.340800] pnp: PnP ACPI: found 2 devices
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.346239] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.346246] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.346247] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.346248] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.346249] pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.346287] NET: Registered protocol family 2
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.346611] IP idents hash table entries: 131072 (order: 8, 1048576 bytes)
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.347151] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes)
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.347167] TCP established hash table entries: 65536 (order: 7, 524288 bytes)
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.347235] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.347306] TCP: Hash tables configured (established 65536 bind 65536)
+[stdlog] 2022-10-28 20:58:19,918 avocado.utils.process DEBUG| [stdout] [    0.347330] UDP hash table entries: 4096 (order: 5, 131072 bytes)
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.347342] UDP-Lite hash table entries: 4096 (order: 5, 131072 bytes)
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.347612] NET: Registered protocol family 1
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.347618] NET: Registered protocol family 44
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.347635] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.347641] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.347664] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] 0x000dffff]
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.348297] PCI: CLS 0 bytes, default 64
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.348354] Unpacking initramfs...
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] Freeing initrd memory: 52616K
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] software IO TLB: mapped [mem 0xdbff0000-0xdfff0000] (64MB)
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x29dc03c1beb, max_idle_ns: 440795205215 ns
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] alg: No test for cfb(sm4) (cfb-sm4-aesni-avx)
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] alg: No test for cfb(sm4) (cfb-sm4-aesni-avx2)
+[stdlog] 2022-10-28 20:58:20,083 avocado.utils.process DEBUG| [stdout] [    0.827347] workingset: timestamp_bits=35 max_order=21 bucket_order=0
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.827347] zbud: loaded
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] NET: Registered protocol family 38
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] io scheduler noop registered
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] io scheduler deadline registered (default)
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] io scheduler cfq registered
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] io scheduler mq-deadline registered (default)
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] io scheduler kyber registered
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] io scheduler bfq registered
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.860405] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.870066] ACPI: AC Adapter [AC] (on-line)
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.870095] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.870106] ACPI: Power Button [PWRF]
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.870155] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.870159] ACPI: Sleep Button [SLPF]
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.870625] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[stdlog] 2022-10-28 20:58:20,256 avocado.utils.process DEBUG| [stdout] [    0.870813] Non-volatile memory driver v1.3
+[stdlog] 2022-10-28 20:58:20,418 avocado.utils.process DEBUG| [stdout] [    0.870826] Linux agpgart interface v0.103
+[stdlog] 2022-10-28 20:58:20,418 avocado.utils.process DEBUG| [stdout] [    0.870956] rdac: device handler registered
+[stdlog] 2022-10-28 20:58:20,418 avocado.utils.process DEBUG| [stdout] [    0.870975] hp_sw: device handler registered
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.870976] emc: device handler registered
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.870986] alua: device handler registered
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871015] libphy: Fixed MDIO Bus: probed
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871038] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871039] ehci-pci: EHCI PCI platform driver
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871044] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871045] ohci-pci: OHCI PCI platform driver
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871388] ohci-pci 0000:00:06.0: OHCI PCI host controller
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871415] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.871464] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.923719] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 4.19
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.923720] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.923720] usb usb1: Product: OHCI PCI host controller
+[stdlog] 2022-10-28 20:58:20,419 avocado.utils.process DEBUG| [stdout] [    0.923721] usb usb1: Manufacturer: Linux 4.19.91-26.an8.x86_64 ohci_hcd
+[stdlog] 2022-10-28 20:58:20,596 avocado.utils.process DEBUG| [stdout] [    0.923722] usb usb1: SerialNumber: 0000:00:06.0
+[stdlog] 2022-10-28 20:58:20,596 avocado.utils.process DEBUG| [stdout] [    0.923822] hub 1-0:1.0: USB hub found
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.923832] hub 1-0:1.0: 12 ports detected
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924038] usbcore: registered new interface driver usbserial_generic
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924040] usbserial: USB Serial support registered for generic
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924059] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924347] serio: i8042 KBD port at 0x60,0x64 irq 1
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924347] serio: i8042 AUX port at 0x60,0x64 irq 12
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924711] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924838] rtc_cmos rtc_cmos: registered as rtc0
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924846] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924852] intel_pstate: CPU model not supported
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924853] cpuidle: using governor haltpoll
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924908] hidraw: raw HID events driver (C) Jiri Kosina
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924948] usbcore: registered new interface driver usbhid
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924948] usbhid: USB HID core driver
+[stdlog] 2022-10-28 20:58:20,597 avocado.utils.process DEBUG| [stdout] [    0.924973] drop_monitor: Initializing network drop monitor service
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.925015] Initializing XFRM netlink socket
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.925082] NET: Registered protocol family 10
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.925189] Segment Routing with IPv6
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.925199] NET: Registered protocol family 17
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.925276] mce: Using 0 MCE banks
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.925286] sched_clock: Marking stable (918462676, 6016061)->(927413470, -2934733)
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.925365] registered taskstats version 1
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.942894] zswap: loaded using pool lzo/zbud
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.942923] page_owner is disabled
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.947734] ima: No TPM chip found, activating TPM-bypass!
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.947739] ima: Allocated hash algorithm: sha256
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.947747] evm: Initialising EVM extended attributes:
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.947748] evm: security.selinux
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.947748] evm: security.SMACK64
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.947748] evm: security.SMACK64EXEC
+[stdlog] 2022-10-28 20:58:20,775 avocado.utils.process DEBUG| [stdout] [    0.947749] evm: security.SMACK64TRANSMUTE
+[stdlog] 2022-10-28 20:58:20,776 avocado.utils.process DEBUG| [stdout] [    0.947749] evm: security.SMACK64MMAP
+[stdlog] 2022-10-28 20:58:20,776 avocado.utils.process DEBUG| [stdout] [    0.947749] evm: security.ima
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.947749] evm: security.capability
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.947750] evm: HMAC attrs: 0x1
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.947889]   Magic number: 10:4:674
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.947966] rtc_cmos rtc_cmos: setting system clock to 2022-10-28 07:41:30 UTC (1666942890)
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.947984] RAS: Correctable Errors collector initialized.
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.948804] NMI watchdog: Perf NMI watchdog permanently disabled
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.949802] Freeing unused decrypted memory: 2040K
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.950155] Freeing unused kernel image memory: 2344K
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.950440] Write protecting the kernel read-only data: 18432k
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.950723] Freeing unused kernel image memory: 2024K
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.950736] rodata_test: all tests were successful
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.950737] Run /init as init process
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.955621] systemd[1]: systemd 239 (239-58.0.1.an8) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.955642] systemd[1]: Detected virtualization oracle.
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.955645] systemd[1]: Detected architecture x86-64.
+[stdlog] 2022-10-28 20:58:20,941 avocado.utils.process DEBUG| [stdout] [    0.955646] systemd[1]: Running in initial RAM disk.
+[stdlog] 2022-10-28 20:58:21,105 avocado.utils.process DEBUG| [stdout] [    0.956699] systemd[1]: Set hostname to <localhost.localdomain>.
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    0.995406] systemd[1]: Listening on udev Control Socket.
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    0.995489] systemd[1]: Listening on Journal Socket (/dev/log).
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    0.995535] systemd[1]: Listening on udev Kernel Socket.
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    0.995546] systemd[1]: Reached target Slices.
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    0.996265] systemd[1]: Created slice system-systemd\x2dhibernate\x2dresume.slice.
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.034825] fuse init (API version 7.27)
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.035647] version 39.2
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.035811] ipmi device interface
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.213153] device-mapper: uevent: version 1.0.3
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.213193] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.350076] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.350077] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.364538] scsi host0: ata_piix
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.365564] scsi host1: ata_piix
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.365588] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+[stdlog] 2022-10-28 20:58:21,106 avocado.utils.process DEBUG| [stdout] [    1.365588] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.386655] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.386737] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.386738] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401410] [drm] DMA map mode: Using physical TTM page addresses.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401439] [drm] Capabilities:
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401439] [drm]   Rect copy.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401439] [drm]   Cursor.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401439] [drm]   Cursor bypass.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401439] [drm]   Cursor bypass 2.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401440] [drm]   Alpha cursor.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401440] [drm]   Extended Fifo.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401440] [drm]   Pitchlock.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401440] [drm]   Irq mask.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401440] [drm]   GMR.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401441] [drm]   Traces.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401441] [drm]   GMR2.
+[stdlog] 2022-10-28 20:58:21,282 avocado.utils.process DEBUG| [stdout] [    1.401441] [drm]   Screen Object 2.
+[stdlog] 2022-10-28 20:58:21,283 avocado.utils.process DEBUG| [stdout] [    1.401441] [drm]   Command Buffers.
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.401442] [drm] Max GMR ids is 8192
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.401442] [drm] Max number of GMR pages is 1048576
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.401442] [drm] Max dedicated hypervisor surface memory is 393216 kiB
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.401443] [drm] Maximum display memory size is 131072 kiB
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.401443] [drm] VRAM at 0xe0000000 size is 131072 kiB
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.401443] [drm] MMIO at 0xf0000000 size is 2048 kiB
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.401444] [drm] global init.
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.403094] scsi host2: ahci
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.403136] ata3: SATA max UDMA/133 abar m8192@0xf0840000 port 0xf0840100 irq 21
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.405045] [TTM] Zone  kernel: Available graphics memory: 3963216 kiB
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.405046] [TTM] Zone   dma32: Available graphics memory: 2097152 kiB
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.405046] [TTM] Initializing pool allocat
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] or
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.405049] [TTM] Initializing DMA pool allocator
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.409464] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.409464] [drm] No driver support for vblank timestamp query.
+[stdlog] 2022-10-28 20:58:21,445 avocado.utils.process DEBUG| [stdout] [    1.409615] [drm] Screen Objects Display Unit initialized
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.409661] [drm] width 720
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.409670] [drm] height 400
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.409671] [drm] bpp 32
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.409831] [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.410159] [drm] Using command buffers with DMA pool.
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.410164] [drm] DX: no.
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.410165] [drm] Atomic: yes.
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.410165] [drm] SM4_1: no.
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.433189] fbcon: svgadrmfb (fb0) is primary device
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.434559] Console: switching to colour frame buffer device 100x37
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.441142] [drm] Initialized vmwgfx 2.15.0 20180704 for 0000:00:02.0 on minor 0
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.532934] ata1.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.533085] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.728111] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.731967] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.731968] ata3.00: 83886080 sectors, multi 128: LBA48 NCQ (depth 32)
+[stdlog] 2022-10-28 20:58:21,621 avocado.utils.process DEBUG| [stdout] [    1.735893] ata3.00: configured for UDMA/133
+[stdlog] 2022-10-28 20:58:21,796 avocado.utils.process DEBUG| [stdout] [    1.775271] sr 0:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+[stdlog] 2022-10-28 20:58:21,796 avocado.utils.process DEBUG| [stdout] [    1.775273] cdrom: Uniform CD-ROM driver Revision: 3.20
+[stdlog] 2022-10-28 20:58:21,796 avocado.utils.process DEBUG| [stdout] [    1.803197] sr 1:0:0:0: [sr1] scsi3-mmc drive: 32x/32x xa/form2 tray
+[stdlog] 2022-10-28 20:58:21,796 avocado.utils.process DEBUG| [stdout] [    1.806751]  sda: sda1 sda2
+[stdlog] 2022-10-28 20:58:21,796 avocado.utils.process DEBUG| [stdout] [    1.862163] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:d6:45:6f
+[stdlog] 2022-10-28 20:58:21,796 avocado.utils.process DEBUG| [stdout] [    1.862165] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    2.229859] e1000 0000:00:08.0 eth1: (PCI:33MHz:32-bit) 08:00:27:aa:c7:9e
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    2.229861] e1000 0000:00:08.0 eth1: Intel(R) PRO/1000 Network Connection
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    2.230970] e1000 0000:00:08.0 enp0s8: renamed from eth1
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    2.232484] e1000 0000:00:03.0 enp0s3: renamed from eth0
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    2.529535] SGI XFS with ACLs, security attributes, no debug enabled
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    2.952631] XFS (dm-0): Ending clean mount
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    4.915302] SELinux:  Disabled at runtime.
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    5.036039] systemd[1]: systemd 239 (239-58.0.1.an8) running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=legacy)
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    5.036056] systemd[1]: Detected virtualization oracle.
+[stdlog] 2022-10-28 20:58:21,797 avocado.utils.process DEBUG| [stdout] [    5.036059] systemd[1]: Detected architecture x86-64.
+[stdlog] 2022-10-28 20:58:21,964 avocado.utils.process DEBUG| [stdout] [    5.107767] systemd[1]: Set hostname to <localhost.localdomain>.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.189927] systemd[1]: systemd-journald.service: Succeeded.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.190312] systemd[1]: initrd-switch-root.service: Succeeded.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.190496] systemd[1]: Stopped Switch Root.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.190660] systemd[1]: systemd-journald.service: Service has no hold-off time (RestartSec=0), scheduling restart.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.190697] systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.190704] systemd[1]: Stopped Journal Service.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.191116] systemd[1]: Starting Journal Service...
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.304267] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.304430] systemd[1]: Created slice User and Session Slice.
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   13.304939] systemd[1]: Mounting Huge Pages File System...
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   14.212479] Adding 4194300k swap on /dev/mapper/ao-swap.  Priority:-2 extents:1 across:4194300k FS
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   19.669935] ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   19.669993] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input4
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   19.856266] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+[stdlog] 2022-10-28 20:58:21,965 avocado.utils.process DEBUG| [stdout] [   20.019016] input: PC Speaker as /devices/platform/pcspkr/input/input6
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   20.161791] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   20.518388] mousedev: PS/2 mouse device common for all mice
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   20.538205] AVX2 version of gcm_enc/dec engaged.
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   20.538206] AES CTR mode by8 optimization enabled
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   20.827987] alg: No test for pcbc(aes) (pcbc-aes-aesni)
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   21.944660] snd_intel8x0 0000:00:05.0: white list rate for 1028:0177 is 48000
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   22.986799] XFS (sda1): Ending clean mount
+[stdlog] 2022-10-28 20:58:22,127 avocado.utils.process DEBUG| [stdout] [   23.774083] RPC: Registered named UNIX socket transport module.
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   23.774083] RPC: Registered udp transport module.
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   23.774084] RPC: Registered tcp transport module.
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   23.774084] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   46.145637] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   46.146777] IPv6: ADDRCONF(NETDEV_UP): enp0s3: link is not ready
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   46.152115] IPv6: ADDRCONF(NETDEV_UP): enp0s8: link is not ready
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   46.153262] IPv6: ADDRCONF(NETDEV_UP): enp0s8: link is not ready
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   46.153327] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[stdlog] 2022-10-28 20:58:22,128 avocado.utils.process DEBUG| [stdout] [   46.153567] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+[stdlog] 2022-10-28 20:58:22,291 avocado.utils.process DEBUG| [stdout] [   46.156385] e1000: enp0s8 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[stdlog] 2022-10-28 20:58:22,291 avocado.utils.process DEBUG| [stdout] [   46.156684] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s8: link becomes ready
+[stdlog] 2022-10-28 20:58:22,291 avocado.utils.process DEBUG| [stdout] [   55.262098] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[stdlog] 2022-10-28 20:58:22,292 avocado.utils.process INFO | Running 'dmesg --level emerg'
+[stdlog] 2022-10-28 20:58:22,295 avocado.utils.process INFO | Command 'dmesg --level emerg' finished with 0 after 0.001972542s
+[stdlog] 2022-10-28 20:58:22,295 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:22,295 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:22,575 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:22,582 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:22,583 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:22,584 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:22,904 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.608556334s
+[stdlog] 2022-10-28 20:58:22,905 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_dmesg_fun_002.py:Test.test
+[stdlog] 2022-10-28 20:58:22,905 avocado.test INFO | 

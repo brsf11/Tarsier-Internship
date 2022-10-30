@@ -1,0 +1,29 @@
+[stdlog] 2022-10-28 21:00:31,145 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_getopt_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:00:31,146 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:00:31,146 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:00:31,146 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_getopt_fun_001.py
+[stdlog] 2022-10-28 21:00:31,146 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:00:31,146 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_getopt_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:00:31,146 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:00:31,146 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:00:31,147 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:00:31,155 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:00:31,155 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007289888s
+[stdlog] 2022-10-28 21:00:31,156 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:00:31,450 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:42:59 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:00:31,723 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:00:31,724 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:00:31,724 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:00:32,055 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.898568038s
+[stdlog] 2022-10-28 21:00:32,055 avocado.utils.process INFO | Running 'getopt --options vV --longoptions verbose,version -- --version --verbose'
+[stdlog] 2022-10-28 21:00:32,058 avocado.utils.process DEBUG| [stdout]  --version --verbose --
+[stdlog] 2022-10-28 21:00:32,058 avocado.utils.process INFO | Command 'getopt --options vV --longoptions verbose,version -- --version --verbose' finished with 0 after 0.001547115s
+[stdlog] 2022-10-28 21:00:32,058 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:00:32,058 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:00:32,340 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:00:32,347 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:00:32,348 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:00:32,348 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:00:32,629 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.569793318s
+[stdlog] 2022-10-28 21:00:32,629 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_getopt_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:00:32,629 avocado.test INFO | 

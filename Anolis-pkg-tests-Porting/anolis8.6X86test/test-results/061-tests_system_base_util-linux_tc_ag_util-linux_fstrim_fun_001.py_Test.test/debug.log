@@ -1,0 +1,28 @@
+[stdlog] 2022-10-28 21:00:25,051 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_fstrim_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:00:25,052 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:00:25,053 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:00:25,053 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_fstrim_fun_001.py
+[stdlog] 2022-10-28 21:00:25,053 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:00:25,053 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_fstrim_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:00:25,053 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:00:25,053 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:00:25,053 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:00:25,061 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:00:25,062 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007240382s
+[stdlog] 2022-10-28 21:00:25,062 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:00:25,350 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:42:53 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:00:25,626 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:00:25,627 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:00:25,627 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:00:25,907 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.844423198s
+[stdlog] 2022-10-28 21:00:25,907 avocado.utils.process INFO | Running 'fstrim --all'
+[stdlog] 2022-10-28 21:00:25,935 avocado.utils.process INFO | Command 'fstrim --all' finished with 0 after 0.026294866s
+[stdlog] 2022-10-28 21:00:25,935 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:00:25,935 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:00:26,213 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:00:26,221 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:00:26,222 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:00:26,222 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:00:26,534 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.597952376s
+[stdlog] 2022-10-28 21:00:26,534 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_fstrim_fun_001.py:Test.test
+[stdlog] 2022-10-28 21:00:26,535 avocado.test INFO | 

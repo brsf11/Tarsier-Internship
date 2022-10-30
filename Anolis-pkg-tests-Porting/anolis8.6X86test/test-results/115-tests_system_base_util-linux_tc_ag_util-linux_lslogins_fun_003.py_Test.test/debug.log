@@ -1,0 +1,31 @@
+[stdlog] 2022-10-28 21:02:06,542 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:02:06,543 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:06,543 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:02:06,543 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_003.py
+[stdlog] 2022-10-28 21:02:06,543 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:02:06,543 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:02:06,543 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:02:06,543 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:02:06,543 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:02:06,552 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:02:06,552 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007972481s
+[stdlog] 2022-10-28 21:02:06,552 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:02:06,840 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:44:34 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:02:07,110 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:07,111 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:07,111 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:07,464 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.910464181s
+[stdlog] 2022-10-28 21:02:07,464 avocado.utils.process INFO | Running 'lslogins --user-accs'
+[stdlog] 2022-10-28 21:02:07,469 avocado.utils.process DEBUG| [stdout]  UID USER   PROC PWD-LOCK PWD-DENY LAST-LOGIN GECOS
+[stdlog] 2022-10-28 21:02:07,469 avocado.utils.process DEBUG| [stdout]    0 root    117        0        0      15:46 root
+[stdlog] 2022-10-28 21:02:07,469 avocado.utils.process DEBUG| [stdout] 1000 brsf11    0        0        0      11:21 brsf11
+[stdlog] 2022-10-28 21:02:07,470 avocado.utils.process INFO | Command 'lslogins --user-accs' finished with 0 after 0.004730460s
+[stdlog] 2022-10-28 21:02:07,470 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:02:07,470 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:02:07,754 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:02:07,761 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:02:07,762 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:02:07,763 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:02:08,070 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.599592648s
+[stdlog] 2022-10-28 21:02:08,071 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lslogins_fun_003.py:Test.test
+[stdlog] 2022-10-28 21:02:08,071 avocado.test INFO | 

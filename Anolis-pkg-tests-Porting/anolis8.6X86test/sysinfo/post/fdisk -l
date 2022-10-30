@@ -1,0 +1,22 @@
+Disk /dev/sda: 40 GiB, 42949672960 bytes, 83886080 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x2522d236
+
+Device     Boot   Start      End  Sectors Size Id Type
+/dev/sda1  *       2048  2099199  2097152   1G 83 Linux
+/dev/sda2       2099200 83886079 81786880  39G 8e Linux LVM
+
+
+Disk /dev/mapper/ao-root: 35 GiB, 37576769536 bytes, 73392128 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/mapper/ao-swap: 4 GiB, 4294967296 bytes, 8388608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes

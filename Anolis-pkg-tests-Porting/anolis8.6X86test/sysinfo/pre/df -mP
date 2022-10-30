@@ -1,0 +1,9 @@
+Filesystem          1048576-blocks  Used Available Capacity Mounted on
+devtmpfs                      3842     0      3842       0% /dev
+tmpfs                         3871     0      3871       0% /dev/shm
+tmpfs                         3871    10      3862       1% /run
+tmpfs                         3871     0      3871       0% /sys/fs/cgroup
+/dev/mapper/ao-root          35819  6087     29732      17% /
+/dev/sda1                     1014   241       774      24% /boot
+tmpfs                          775     1       775       1% /run/user/42
+tmpfs                          775     0       775       0% /run/user/0

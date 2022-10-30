@@ -1,0 +1,50 @@
+[stdlog] 2022-10-28 20:57:42,736 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_cal_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:57:42,737 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:42,737 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:57:42,737 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_cal_fun_001.py
+[stdlog] 2022-10-28 20:57:42,737 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:57:42,737 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_cal_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:57:42,737 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:57:42,737 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:57:42,738 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:57:42,746 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:57:42,747 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007392160s
+[stdlog] 2022-10-28 20:57:42,747 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:57:43,053 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:40:11 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:57:43,325 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:57:43,326 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:57:43,326 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:57:43,640 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.891836916s
+[stdlog] 2022-10-28 20:57:43,640 avocado.utils.process INFO | Running 'date "+%Y-%m-%d %H:%M:%S"'
+[stdlog] 2022-10-28 20:57:43,643 avocado.utils.process DEBUG| [stdout] 2022-10-28 20:57:43
+[stdlog] 2022-10-28 20:57:43,643 avocado.utils.process INFO | Command 'date "+%Y-%m-%d %H:%M:%S"' finished with 0 after 0.001562241s
+[stdlog] 2022-10-28 20:57:43,643 avocado.utils.process INFO | Running 'date | awk -F ' ' '{print $2 }''
+[stdlog] 2022-10-28 20:57:43,646 avocado.utils.process DEBUG| [stdout] Oct
+[stdlog] 2022-10-28 20:57:43,647 avocado.utils.process INFO | Command 'date | awk -F ' ' '{print $2 }'' finished with 0 after 0.002931382s
+[stdlog] 2022-10-28 20:57:43,647 avocado.utils.process INFO | Running 'date | awk -F ' ' '{print $6 }''
+[stdlog] 2022-10-28 20:57:43,651 avocado.utils.process DEBUG| [stdout] 2022
+[stdlog] 2022-10-28 20:57:43,651 avocado.utils.process INFO | Command 'date | awk -F ' ' '{print $6 }'' finished with 0 after 0.003275197s
+[stdlog] 2022-10-28 20:57:43,651 avocado.utils.process INFO | Running 'cal |grep Oct'
+[stdlog] 2022-10-28 20:57:43,679 avocado.utils.process INFO | Command 'cal |grep Oct' finished with 0 after 0.026492241s
+[stdlog] 2022-10-28 20:57:43,679 avocado.utils.process DEBUG| [stdout]     October 2022    
+[stdlog] 2022-10-28 20:57:43,680 avocado.utils.process INFO | Running 'cal |grep 2022'
+[stdlog] 2022-10-28 20:57:43,683 avocado.utils.process DEBUG| [stdout]     October 2022    
+[stdlog] 2022-10-28 20:57:43,683 avocado.utils.process INFO | Command 'cal |grep 2022' finished with 0 after 0.002552013s
+[stdlog] 2022-10-28 20:57:43,684 avocado.utils.process INFO | Running 'date -s 07/22/2022'
+[stdlog] 2022-07-22 00:00:00,007 avocado.utils.process DEBUG| [stdout] Fri Jul 22 00:00:00 CST 2022
+[stdlog] 2022-07-22 00:00:00,009 avocado.utils.process INFO | Command 'date -s 07/22/2022' finished with 0 after 0.010856563s
+[stdlog] 2022-07-22 00:00:00,010 avocado.utils.process INFO | Running 'cal |grep 'July 2022''
+[stdlog] 2022-07-22 00:00:00,013 avocado.utils.process DEBUG| [stdout]       July 2022     
+[stdlog] 2022-07-22 00:00:00,013 avocado.utils.process INFO | Command 'cal |grep 'July 2022'' finished with 0 after 0.002601196s
+[stdlog] 2022-07-22 00:00:00,013 avocado.test INFO | teardown
+[stdlog] 2022-07-22 00:00:00,013 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-07-22 00:00:00,314 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-07-22 00:00:00,321 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-07-22 00:00:00,322 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-07-22 00:00:00,323 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-07-22 00:00:00,605 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.591036642s
+[stdlog] 2022-07-22 00:00:00,606 avocado.utils.process INFO | Running 'date -s "2022-10-28 20:57:43"'
+[stdlog] 2022-10-28 20:57:43,005 avocado.utils.process DEBUG| [stdout] Fri Oct 28 20:57:43 CST 2022
+[stdlog] 2022-10-28 20:57:43,007 avocado.utils.process INFO | Command 'date -s "2022-10-28 20:57:43"' finished with 0 after 0.008072475s
+[stdlog] 2022-10-28 20:57:43,007 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_cal_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:57:43,007 avocado.test INFO | 

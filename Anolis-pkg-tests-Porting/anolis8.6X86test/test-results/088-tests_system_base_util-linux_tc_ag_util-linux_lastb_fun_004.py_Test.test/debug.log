@@ -1,0 +1,37 @@
+[stdlog] 2022-10-28 21:01:14,127 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_004.py:Test.test
+[stdlog] 2022-10-28 21:01:14,128 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:14,129 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 21:01:14,129 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_004.py
+[stdlog] 2022-10-28 21:01:14,129 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 21:01:14,129 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_004.py:Test.test
+[stdlog] 2022-10-28 21:01:14,129 avocado.test INFO | setup
+[stdlog] 2022-10-28 21:01:14,129 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 21:01:14,129 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 21:01:14,137 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 21:01:14,138 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007763063s
+[stdlog] 2022-10-28 21:01:14,138 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 21:01:14,429 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:43:42 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 21:01:14,696 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:14,697 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:14,697 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:15,016 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.876614513s
+[stdlog] 2022-10-28 21:01:15,016 avocado.utils.process INFO | Running 'lastb --present 00:00'
+[stdlog] 2022-10-28 21:01:15,019 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:15,019 avocado.utils.process DEBUG| [stdout] btmp begins Tue Oct 18 22:11:52 2022
+[stdlog] 2022-10-28 21:01:15,019 avocado.utils.process INFO | Command 'lastb --present 00:00' finished with 0 after 0.001807182s
+[stdlog] 2022-10-28 21:01:15,019 avocado.utils.process INFO | Running 'lastb --present 2023-01-01 00:00'
+[stdlog] 2022-10-28 21:01:15,021 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 21:01:15,021 avocado.utils.process DEBUG| [stdout] btmp begins Tue Oct 18 22:11:52 2022
+[stdlog] 2022-10-28 21:01:15,022 avocado.utils.process INFO | Command 'lastb --present 2023-01-01 00:00' finished with 0 after 0.001563434s
+[stdlog] 2022-10-28 21:01:15,022 avocado.utils.process INFO | Running 'lastb --present xxxxx'
+[stdlog] 2022-10-28 21:01:15,024 avocado.utils.process INFO | Command 'lastb --present xxxxx' finished with 1 after 0.001256965s
+[stdlog] 2022-10-28 21:01:15,024 avocado.utils.process DEBUG| [stderr] lastb: invalid time value "xxxxx"
+[stdlog] 2022-10-28 21:01:15,024 avocado.test INFO | teardown
+[stdlog] 2022-10-28 21:01:15,024 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 21:01:15,303 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 21:01:15,310 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 21:01:15,311 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 21:01:15,311 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 21:01:15,913 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.888166605s
+[stdlog] 2022-10-28 21:01:15,913 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_lastb_fun_004.py:Test.test
+[stdlog] 2022-10-28 21:01:15,914 avocado.test INFO | 

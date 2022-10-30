@@ -1,0 +1,60 @@
+[stdlog] 2022-10-28 20:58:47,000 avocado.test INFO | INIT 1-tests/system_base/util-linux/tc_ag_util-linux_eject_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:47,001 avocado.test DEBUG| PARAMS (key=timeout, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:47,001 avocado.test DEBUG| Test metadata:
+[stdlog] 2022-10-28 20:58:47,001 avocado.test DEBUG|   filename: /root/GitRepo/anolis-pkg-tests/tests/system_base/util-linux/tc_ag_util-linux_eject_fun_001.py
+[stdlog] 2022-10-28 20:58:47,001 avocado.test DEBUG|   teststmpdir: /var/tmp/avocado_cmoau920
+[stdlog] 2022-10-28 20:58:47,002 avocado.test INFO | START 1-tests/system_base/util-linux/tc_ag_util-linux_eject_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:47,002 avocado.test INFO | setup
+[stdlog] 2022-10-28 20:58:47,002 avocado.test DEBUG| PARAMS (key=remote, path=*, default=None) => None
+[stdlog] 2022-10-28 20:58:47,002 avocado.utils.process INFO | Running 'rpm -q util-linux'
+[stdlog] 2022-10-28 20:58:47,010 avocado.utils.process DEBUG| [stdout] util-linux-2.32.1-35.0.1.an8.x86_64
+[stdlog] 2022-10-28 20:58:47,010 avocado.utils.process INFO | Command 'rpm -q util-linux' finished with 0 after 0.007430794s
+[stdlog] 2022-10-28 20:58:47,010 avocado.utils.process INFO | Running 'yum update util-linux -y'
+[stdlog] 2022-10-28 20:58:47,305 avocado.utils.process DEBUG| [stdout] Last metadata expiration check: 2:41:15 ago on Fri 28 Oct 2022 06:17:32 PM CST.
+[stdlog] 2022-10-28 20:58:47,577 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:47,579 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:47,579 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:47,876 avocado.utils.process INFO | Command 'yum update util-linux -y' finished with 0 after 0.864979837s
+[stdlog] 2022-10-28 20:58:47,877 avocado.utils.process INFO | Running 'eject -help'
+[stdlog] 2022-10-28 20:58:47,880 avocado.utils.process INFO | Command 'eject -help' finished with 0 after 0.002461144s
+[stdlog] 2022-10-28 20:58:47,880 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:47,880 avocado.utils.process DEBUG| [stdout] Usage:
+[stdlog] 2022-10-28 20:58:47,880 avocado.utils.process DEBUG| [stdout]  eject [options] [<device>|<mountpoint>]
+[stdlog] 2022-10-28 20:58:47,880 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:47,880 avocado.utils.process DEBUG| [stdout] Eject removable media.
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout] Options:
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -a, --auto <on|off>         turn auto-eject feature on or off
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -c, --changerslot <slot>    switch discs on a CD-ROM changer
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -d, --default               display default device
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -f, --floppy                eject floppy
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -F, --force                 don't care about device type
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -i, --manualeject <on|off>  toggle manual eject protection on/off
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -m, --no-unmount            do not unmount device even if it is mounted
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -M, --no-partitions-unmount do not unmount another partitions
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -n, --noop                  don't eject, just show device found
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -p, --proc                  use /proc/mounts instead of /etc/mtab
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -q, --tape                  eject tape
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -r, --cdrom                 eject CD-ROM
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -s, --scsi                  eject SCSI device
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -t, --trayclose             close tray
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -T, --traytoggle            toggle tray
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -v, --verbose               enable verbose output
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -x, --cdspeed <speed>       set CD-ROM max speed
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -X, --listspeed             list CD-ROM available speeds
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -h, --help                  display this help
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout]  -V, --version               display version
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout] By default tries -r, -s, -f, and -q in order until success.
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout] 
+[stdlog] 2022-10-28 20:58:47,881 avocado.utils.process DEBUG| [stdout] For more details see eject(1).
+[stdlog] 2022-10-28 20:58:47,882 avocado.test INFO | teardown
+[stdlog] 2022-10-28 20:58:47,882 avocado.utils.process INFO | Running 'yum erase  -y'
+[stdlog] 2022-10-28 20:58:48,164 avocado.utils.process DEBUG| [stderr] No packages marked for removal.
+[stdlog] 2022-10-28 20:58:48,171 avocado.utils.process DEBUG| [stdout] Dependencies resolved.
+[stdlog] 2022-10-28 20:58:48,172 avocado.utils.process DEBUG| [stdout] Nothing to do.
+[stdlog] 2022-10-28 20:58:48,172 avocado.utils.process DEBUG| [stdout] Complete!
+[stdlog] 2022-10-28 20:58:48,483 avocado.utils.process INFO | Command 'yum erase  -y' finished with 0 after 0.600141067s
+[stdlog] 2022-10-28 20:58:48,483 avocado.test INFO | PASS 1-tests/system_base/util-linux/tc_ag_util-linux_eject_fun_001.py:Test.test
+[stdlog] 2022-10-28 20:58:48,483 avocado.test INFO | 
