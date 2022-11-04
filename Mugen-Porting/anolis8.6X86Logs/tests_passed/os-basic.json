@@ -56,10 +56,6 @@
             "name": "oe_test_server_openssh_restart"
         },
         {
-            "name": "oe_test_server_openssh_key",
-            "machine num": 2
-        },
-        {
             "name": "oe_test_server_httpd_checkfirewall"
         },
         {
@@ -70,19 +66,7 @@
         },
         {
             "name": "oe_test_password_blank"
-        },
-        {
-            "name": "oe_test_nmcli_systemd_resolved",
-            "add network interface": 2
-        },
-        {
-            "name": "oe_test_nmcli_general",
-            "add network interface": 2
-        },
-        {
-            "name": "oe_test_nmcli_cancel_auto",
-            "add network interface": 2
-        },
+        }
         {
             "name": "oe_test_ProcMgmt_vmstat"
         },
@@ -172,15 +156,7 @@
         },
         {
             "name": "oe_test_man"
-        },
-        {
-            "name": "oe_test_net_cmd_ping",
-            "add network interface": 2
-        },
-        {
-            "name": "oe_test_net_conninfo_lsof",
-            "add network interface": 2
-        },
+        }
         {
             "name": "oe_test_basic_UserMgmt_permission"
         },
