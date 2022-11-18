@@ -1,0 +1,9 @@
+Thu Nov 17 04:05:35 2022 - INFO  - Start to run test.
+Linux anolis-riscv 5.14.18-100.2.riscv64.an8.riscv64 #1 SMP Mon Jun 13 14:42:51 CST 2022 riscv64 riscv64 riscv64 GNU/Linux
+riscv64
+anolis-riscv
+5.14.18-100.2.riscv64.an8.riscv64
+Usage: uname [OPTION]...
+Thu Nov 17 04:05:35 2022 - INFO  - End to run test.
+Thu Nov 17 04:05:36 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:05:37 2022 - INFO  - oe_test_uname.sh post_test

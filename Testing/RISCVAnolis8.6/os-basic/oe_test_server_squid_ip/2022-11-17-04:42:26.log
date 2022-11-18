@@ -1,0 +1,37 @@
+Thu Nov 17 04:42:28 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+A dependency job for firewalld.service failed. See 'journalctl -xe' for details.
+Thu Nov 17 04:42:30 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:42:30 2022 - INFO  - Start to run test.
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Thu Nov 17 04:42:31 2022 - ERROR - oe_test_server_squid_ip.sh line 31
+grep: /etc/squid/squid.conf: No such file or directory
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Failed to enable unit: Unit file squid.service does not exist.
+Thu Nov 17 04:42:32 2022 - ERROR - oe_test_server_squid_ip.sh line 35
+oe_test_server_squid_ip.sh: line 36: /etc/squid/squid.conf: No such file or directory
+Error: DBUS_ERROR: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+Thu Nov 17 04:42:34 2022 - ERROR - oe_test_server_squid_ip.sh line 38
+Error: DBUS_ERROR: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+Thu Nov 17 04:42:37 2022 - ERROR - oe_test_server_squid_ip.sh line 40
+Failed to restart squid.service: Unit squid.service not found.
+Thu Nov 17 04:42:38 2022 - ERROR - oe_test_server_squid_ip.sh line 42
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+curl: (7) Failed to connect to 127.0.0.1 port 8080 after 28 ms: Connection refused
+Thu Nov 17 04:42:41 2022 - ERROR - oe_test_server_squid_ip.sh line 45
+ls: cannot access 'baidu': No such file or directory
+Thu Nov 17 04:42:42 2022 - ERROR - oe_test_server_squid_ip.sh line 47
+Thu Nov 17 04:42:42 2022 - INFO  - End to run test.
+Thu Nov 17 04:42:43 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:42:43 2022 - INFO  - Start to restore the test environment.
+sed: can't read /etc/squid/squid.conf: No such file or directory
+sed: can't read /etc/squid/squid.conf: No such file or directory
+Thu Nov 17 04:42:44 2022 - WARN  - no thing to do.
+Thu Nov 17 04:42:45 2022 - INFO  - End to restore the test environment.

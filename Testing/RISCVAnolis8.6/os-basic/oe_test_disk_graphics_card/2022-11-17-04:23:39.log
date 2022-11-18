@@ -1,0 +1,29 @@
+Thu Nov 17 04:23:41 2022 - INFO  - Start to pre the test env
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:23:42 2022 - INFO  - End to pre the test env
+Thu Nov 17 04:23:43 2022 - INFO  - Start to run test.
+oe_test_disk_graphics_card.sh: line 28: lspci: command not found
+Thu Nov 17 04:23:43 2022 - ERROR - oe_test_disk_graphics_card.sh line 29
+oe_test_disk_graphics_card.sh: line 30: dmidecode: command not found
+Thu Nov 17 04:23:44 2022 - ERROR - oe_test_disk_graphics_card.sh line 31
+oe_test_disk_graphics_card.sh: line 32: dmidecode: command not found
+Thu Nov 17 04:23:45 2022 - ERROR - oe_test_disk_graphics_card.sh line 33
+id: ‘testuser’: no such user
+useradd: group testuser exists - if you want to add this user to that group, use -g.
+usermod: Warning: missing or non-executable shell '/bin/csh'
+usermod: user 'testuser' does not exist
+Thu Nov 17 04:23:45 2022 - ERROR - oe_test_disk_graphics_card.sh line 36
+su: user testuser does not exist or the user entry does not contain all the required fields
+sudo: lshw: command not found
+Thu Nov 17 04:23:46 2022 - ERROR - oe_test_disk_graphics_card.sh line 40
+Thu Nov 17 04:23:47 2022 - INFO  - End to run test.
+Thu Nov 17 04:23:47 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:23:48 2022 - INFO  - Start to clean env.
+userdel: user 'testuser' does not exist
+Thu Nov 17 04:23:49 2022 - WARN  - no thing to do.
+Thu Nov 17 04:23:49 2022 - INFO  - End to clean env.

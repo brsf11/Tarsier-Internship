@@ -1,0 +1,626 @@
+Thu Nov 17 04:19:54 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:19:56 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:19:56 2022 - INFO  - Start to run test.
+===========loop 0==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:19:57 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:19:57 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:19:58 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:19:59 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 1==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:00 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:00 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:01 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:02 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 2==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:03 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:03 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:04 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:05 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 3==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:06 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:07 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:07 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:09 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 4==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:09 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:10 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:10 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:12 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 5==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:12 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:13 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:14 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:15 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 6==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:15 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:16 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:17 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:18 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 7==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:19 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:19 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:20 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:21 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 8==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:22 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:22 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:23 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:24 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 9==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:25 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:25 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:26 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:27 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 10==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:28 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:28 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:29 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:30 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 11==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:31 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:32 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:32 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:33 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 12==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:34 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:35 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:35 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:36 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 13==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:37 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:38 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:38 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:40 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 14==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:40 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:41 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:41 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:43 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 15==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:43 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:44 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:45 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:46 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 16==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:46 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:47 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:48 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:49 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 17==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:49 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:50 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:51 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:52 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 18==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:52 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:53 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:54 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:55 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 19==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:56 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:56 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:57 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:20:58 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 20==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:20:59 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:20:59 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:00 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:01 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 21==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:02 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:02 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:03 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:04 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 22==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:05 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:05 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:06 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:07 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 23==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:08 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:08 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:09 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:10 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 24==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:11 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:12 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:12 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:13 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 25==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:14 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:15 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:15 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:16 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 26==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:17 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:18 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:19 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:20 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 27==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:20 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:21 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:22 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:23 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 28==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:23 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:24 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:25 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:26 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 29==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:27 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:27 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:28 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:29 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 30==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:30 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:30 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:31 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:32 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 31==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:33 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:33 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:34 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:35 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 32==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:36 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:36 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:37 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:38 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 33==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:39 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:39 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:40 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:41 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 34==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:42 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:43 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:43 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:44 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 35==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:45 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:46 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:46 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:48 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 36==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:48 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:49 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:49 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:51 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 37==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:51 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:52 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:52 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:54 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 38==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:54 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:55 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:55 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:21:57 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 39==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:57 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:21:58 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:21:58 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:00 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 40==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:00 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:01 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:02 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:03 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 41==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:03 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:04 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:05 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:06 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 42==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:07 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:07 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:08 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:09 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 43==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:10 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:10 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:11 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:12 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 44==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:13 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:13 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:14 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:15 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 45==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:16 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:16 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:17 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:18 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 46==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:19 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:19 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:20 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:21 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 47==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:22 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:22 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:23 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:24 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 48==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:25 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:26 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:26 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:28 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 49==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:28 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:29 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:29 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:31 2022 - ERROR - oe_test_reboot.sh line 44
+===========loop 50==============
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:31 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:22:32 2022 - ERROR - oe_test_reboot.sh line 35
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:22:33 2022 - ERROR - Failed in remote CMD operation:1
+ping: usage error: Destination address required
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:22:34 2022 - ERROR - oe_test_reboot.sh line 44
+Thu Nov 17 04:22:34 2022 - INFO  - End to run test.
+Thu Nov 17 04:22:35 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:22:35 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 04:22:36 2022 - WARN  - no thing to do.
+Thu Nov 17 04:22:36 2022 - INFO  - End to restore the test environment.

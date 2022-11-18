@@ -1,0 +1,142 @@
+Thu Nov 17 05:07:12 2022 - INFO  - Start environment preparation.
+Repository anolis-riscv is listed more than once in the configuration
+Repository anolis-riscv-source is listed more than once in the configuration
+Errors during downloading metadata for repository 'AppStream':
+  - Curl error (6): Couldn't resolve host name for http://mirrors.openanolis.cn/anolis/8/AppStream/riscv64/os/repodata/repomd.xml [Could not resolve host: mirrors.openanolis.cn]
+Error: Failed to download metadata for repo 'AppStream': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+Errors during downloading metadata for repository 'BaseOS':
+  - Curl error (6): Couldn't resolve host name for http://mirrors.openanolis.cn/anolis/8/BaseOS/riscv64/os/repodata/repomd.xml [Could not resolve host: mirrors.openanolis.cn]
+Error: Failed to download metadata for repo 'BaseOS': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+Errors during downloading metadata for repository 'Extras':
+  - Curl error (6): Couldn't resolve host name for http://mirrors.openanolis.cn/anolis/8/Extras/riscv64/os/repodata/repomd.xml [Could not resolve host: mirrors.openanolis.cn]
+Error: Failed to download metadata for repo 'Extras': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+Errors during downloading metadata for repository 'PowerTools':
+  - Curl error (6): Couldn't resolve host name for http://mirrors.openanolis.cn/anolis/8/PowerTools/riscv64/os/repodata/repomd.xml [Could not resolve host: mirrors.openanolis.cn]
+Error: Failed to download metadata for repo 'PowerTools': Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+Ignoring repositories: AppStream, BaseOS, Extras, PowerTools
+/home/brsf11/mugen-riscv
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 05:07:20 2022 - ERROR - ../common/mysql_pre.sh line 35
+chmod: cannot access '/usr/local/mysql/support-files/mysql.server': No such file or directory
+cp: cannot stat '/usr/local/mysql/support-files/mysql.server': No such file or directory
+error reading information on service mysql: No such file or directory
+Redirecting to /bin/systemctl start mysql.service
+Failed to connect to bus: No such file or directory
+Thu Nov 17 05:07:22 2022 - ERROR - ../common/mysql_pre.sh line 68
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:23 2022 - ERROR - ../common/mysql_pre.sh line 70
+Unit mysql.service could not be found.
+Thu Nov 17 05:07:23 2022 - ERROR - ../common/mysql_pre.sh line 72
+Thu Nov 17 05:07:24 2022 - INFO  - Environmental preparation is over.
+Thu Nov 17 05:07:25 2022 - INFO  - Start executing testcase.
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:25 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:07:26 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:27 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:07:27 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:07:28 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:31 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:07:32 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:33 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:07:33 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:07:34 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:37 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:07:38 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:39 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:07:39 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:07:40 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:43 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:07:44 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:45 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:07:45 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:07:46 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:49 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:07:50 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:50 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:07:51 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:07:52 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:55 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:07:56 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:07:56 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:07:57 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:07:58 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:01 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:08:02 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:02 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:08:03 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:08:04 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:07 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:08:08 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:09 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:08:09 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:08:10 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:13 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:08:14 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:15 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:08:15 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:08:16 2022 - ERROR - oe_test_server_mysql.sh line 52
+Failed to start mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:19 2022 - ERROR - oe_test_server_mysql.sh line 42
+Unit mysql.service could not be found.
+Thu Nov 17 05:08:20 2022 - ERROR - oe_test_server_mysql.sh line 44
+Failed to restart mysql.service: Unit mysql.service not found.
+Thu Nov 17 05:08:20 2022 - ERROR - oe_test_server_mysql.sh line 47
+Failed to stop mysql.service: Unit mysql.service not loaded.
+Thu Nov 17 05:08:21 2022 - ERROR - oe_test_server_mysql.sh line 50
+Failed to disable unit: Unit file mysql.service does not exist.
+Thu Nov 17 05:08:22 2022 - ERROR - oe_test_server_mysql.sh line 52
+Thu Nov 17 05:08:25 2022 - INFO  - End of testcase execution.
+Thu Nov 17 05:08:25 2022 - ERROR - failed to execute the case.
+Thu Nov 17 05:08:26 2022 - INFO  - start environment cleanup.
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+Thu Nov 17 05:08:28 2022 - WARN  - no thing to do.
+Thu Nov 17 05:08:28 2022 - INFO  - Finish environment cleanup.

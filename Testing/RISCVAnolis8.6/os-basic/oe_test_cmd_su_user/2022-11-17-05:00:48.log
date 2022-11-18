@@ -1,0 +1,14 @@
+Thu Nov 17 05:00:50 2022 - INFO  - Start to prepare the test environment.
+Thu Nov 17 05:00:51 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 05:00:51 2022 - INFO  - Start to run test.
+Changing password for user testuser.
+passwd: all authentication tokens updated successfully.
+testuser
+root
+anaconda-ks.cfg
+GitRepo
+Usage:
+Thu Nov 17 05:00:56 2022 - INFO  - End to run test.
+Thu Nov 17 05:00:57 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 05:00:58 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 05:00:59 2022 - INFO  - End to restore the test environment.

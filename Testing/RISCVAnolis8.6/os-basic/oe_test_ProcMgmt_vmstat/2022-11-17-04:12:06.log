@@ -1,0 +1,19 @@
+Thu Nov 17 04:12:08 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:12:09 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:12:10 2022 - INFO  - Start to run test.
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 16033432  16648 142836    0    0     3     2   11   12  2  1 97  0  0
+        10741 forks
+Options:
+Thu Nov 17 04:12:10 2022 - INFO  - End to run test.
+Thu Nov 17 04:12:11 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:12:12 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 04:12:12 2022 - WARN  - no thing to do.
+Thu Nov 17 04:12:13 2022 - INFO  - End to restore the test environment.

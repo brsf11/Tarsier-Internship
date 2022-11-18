@@ -1,0 +1,37 @@
+Thu Nov 17 04:19:21 2022 - INFO  - Start to run test.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:19:22 2022 - ERROR - Failed in remote CMD operation:1
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:19:23 2022 - ERROR - Failed in remote CMD operation:1
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:19:24 2022 - ERROR - Failed in remote CMD operation:1
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/remote_reboot.py", line 30, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:19:26 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:19:26 2022 - ERROR - oe_test_system_monitor_reboot.sh line 30
+Thu Nov 17 04:19:27 2022 - WARN  - the remote password uses the default configuration.
+Thu Nov 17 04:19:27 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/rebootlog2 .
+ssh: Could not resolve hostname : Name or service not known
+scp: Connection closed
+Thu Nov 17 04:19:28 2022 - ERROR - Failed in remote SCP operation: 255
+Thu Nov 17 04:19:29 2022 - ERROR - oe_test_system_monitor_reboot.sh line 32
+cat: rebootlog2: No such file or directory
+Thu Nov 17 04:19:29 2022 - ERROR - oe_test_system_monitor_reboot.sh line 35
+Thu Nov 17 04:19:30 2022 - INFO  - End to run test.
+Thu Nov 17 04:19:30 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:19:31 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 04:19:32 2022 - INFO  - End to restore the test environment.

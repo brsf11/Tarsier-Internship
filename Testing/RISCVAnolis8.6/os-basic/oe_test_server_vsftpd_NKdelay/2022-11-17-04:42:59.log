@@ -1,0 +1,26 @@
+Thu Nov 17 04:43:01 2022 - INFO  - Start loading data!
+Thu Nov 17 04:43:02 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:43:03 2022 - INFO  - Loading data is complete!
+Thu Nov 17 04:43:03 2022 - INFO  - Start to prepare the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:43:04 2022 - ERROR - Failed in remote CMD operation:1
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:43:15 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:43:15 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:43:16 2022 - INFO  - Start to run test.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:43:17 2022 - ERROR - Failed in remote CMD operation:1
+oe_test_server_vsftpd_NKdelay.sh: line 43: ftp: command not found
+Thu Nov 17 04:43:17 2022 - ERROR - oe_test_server_vsftpd_NKdelay.sh line 49
+find: ‘download_file1.txt’: No such file or directory
+Thu Nov 17 04:43:18 2022 - ERROR - oe_test_server_vsftpd_NKdelay.sh line 53
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:43:19 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:43:19 2022 - INFO  - End to run test.
+Thu Nov 17 04:43:20 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:43:20 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:43:21 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:43:22 2022 - WARN  - no thing to do.
+Thu Nov 17 04:43:22 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,125 @@
+Thu Nov 17 04:43:37 2022 - INFO  - Start to pre test.
+Thu Nov 17 04:43:38 2022 - INFO  - Start to pre test.
+Thu Nov 17 04:43:38 2022 - INFO  - Start to run test.
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 82.1338 s, 5.8 MB/s
+Thu Nov 17 04:45:01 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 32
+Thu Nov 17 04:45:02 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 34
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 13.7305 s, 34.6 MB/s
+Thu Nov 17 04:45:17 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 36
+Thu Nov 17 04:45:17 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 38
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 80.9695 s, 5.9 MB/s
+Thu Nov 17 04:46:39 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 32
+Thu Nov 17 04:46:40 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 34
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 13.7347 s, 34.6 MB/s
+Thu Nov 17 04:46:55 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 36
+Thu Nov 17 04:46:55 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 38
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 81.5443 s, 5.8 MB/s
+Thu Nov 17 04:48:18 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 32
+Thu Nov 17 04:48:19 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 34
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 13.796 s, 34.4 MB/s
+Thu Nov 17 04:48:34 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 36
+Thu Nov 17 04:48:34 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 38
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 81.6008 s, 5.8 MB/s
+Thu Nov 17 04:49:57 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 32
+Thu Nov 17 04:49:58 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 34
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 13.6958 s, 34.7 MB/s
+Thu Nov 17 04:50:12 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 36
+Thu Nov 17 04:50:13 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 38
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 81.7694 s, 5.8 MB/s
+Thu Nov 17 04:51:36 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 32
+Thu Nov 17 04:51:36 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 34
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 14.0002 s, 33.9 MB/s
+Thu Nov 17 04:51:52 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 36
+Thu Nov 17 04:51:52 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 38
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 81.0822 s, 5.9 MB/s
+Thu Nov 17 04:53:14 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 32
+Thu Nov 17 04:53:15 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 34
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 13.6896 s, 34.7 MB/s
+Thu Nov 17 04:53:30 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 36
+Thu Nov 17 04:53:30 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 38
+dd: error writing 'myfile20221117': No space left on device
+453+0 records in
+452+0 records out
+474845184 bytes (475 MB, 453 MiB) copied, 82.3277 s, 5.8 MB/s
+Thu Nov 17 04:54:54 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 32
+Thu Nov 17 04:54:54 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 34
+dd: error writinoe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:31 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:32 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:32 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:33 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:33 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:34 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:35 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:35 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:36 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:37 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:37 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:38 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:38 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:39 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:40 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:40 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:41 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:41 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+oe_test_IOaccess_500Mfile.sh: line 61: unzip: command not found
+Thu Nov 17 05:00:42 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 62
+ls: cannot access 'myfile20221117': No such file or directory
+Thu Nov 17 05:00:42 2022 - ERROR - oe_test_IOaccess_500Mfile.sh line 64
+Thu Nov 17 05:00:43 2022 - INFO  - End to run test.
+Thu Nov 17 05:00:43 2022 - ERROR - failed to execute the case.
+Thu Nov 17 05:00:44 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 05:00:45 2022 - INFO  - End to restore the test environment.

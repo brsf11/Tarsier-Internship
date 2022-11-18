@@ -1,0 +1,12 @@
+Thu Nov 17 04:43:27 2022 - INFO  - Start loading data!
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:43:28 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:43:29 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/diskfile ./diskfile
+ssh: Could not resolve hostname : Name or service not known
+scp: Connection closed
+Thu Nov 17 04:43:30 2022 - ERROR - Failed in remote SCP operation: 255
+awk: fatal: cannot open file `diskfile' for reading: No such file or directory
+Thu Nov 17 04:43:30 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:43:31 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:43:32 2022 - WARN  - no thing to do.
+Thu Nov 17 04:43:32 2022 - INFO  - End to restore the test environment.

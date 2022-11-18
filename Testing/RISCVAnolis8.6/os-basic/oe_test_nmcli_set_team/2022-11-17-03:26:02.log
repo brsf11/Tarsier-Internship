@@ -1,0 +1,44 @@
+Thu Nov 17 03:26:04 2022 - INFO  - Start to run test.
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:05 2022 - ERROR - oe_test_nmcli_set_team.sh line 25
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:05 2022 - ERROR - oe_test_nmcli_set_team.sh line 27
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:06 2022 - ERROR - oe_test_nmcli_set_team.sh line 29
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:07 2022 - ERROR - oe_test_nmcli_set_team.sh line 31
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:07 2022 - ERROR - oe_test_nmcli_set_team.sh line 33
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:08 2022 - ERROR - oe_test_nmcli_set_team.sh line 35
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:09 2022 - ERROR - oe_test_nmcli_set_team.sh line 37
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:10 2022 - ERROR - oe_test_nmcli_set_team.sh line 39
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:10 2022 - ERROR - oe_test_nmcli_set_team.sh line 41
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:11 2022 - ERROR - oe_test_nmcli_set_team.sh line 43
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:12 2022 - ERROR - oe_test_nmcli_set_team.sh line 45
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:12 2022 - ERROR - oe_test_nmcli_set_team.sh line 47
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:13 2022 - ERROR - oe_test_nmcli_set_team.sh line 49
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:14 2022 - ERROR - oe_test_nmcli_set_team.sh line 51
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:14 2022 - ERROR - oe_test_nmcli_set_team.sh line 53
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:15 2022 - ERROR - oe_test_nmcli_set_team.sh line 55
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:16 2022 - ERROR - oe_test_nmcli_set_team.sh line 57
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:16 2022 - ERROR - oe_test_nmcli_set_team.sh line 59
+oe_test_nmcli_set_team.sh: line 60: teamdctl: command not found
+Thu Nov 17 03:26:17 2022 - ERROR - oe_test_nmcli_set_team.sh line 61
+Error: Could not create NMClient object: Could not connect: No such file or directory.
+Thu Nov 17 03:26:18 2022 - ERROR - oe_test_nmcli_set_team.sh line 63
+Thu Nov 17 03:26:18 2022 - INFO  - End to run test.
+Thu Nov 17 03:26:19 2022 - ERROR - failed to execute the case.
+Thu Nov 17 03:26:19 2022 - INFO  - oe_test_nmcli_set_team.sh post_test

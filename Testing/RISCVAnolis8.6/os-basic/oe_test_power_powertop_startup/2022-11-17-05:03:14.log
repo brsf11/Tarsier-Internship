@@ -1,0 +1,20 @@
+Thu Nov 17 05:03:17 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 05:03:18 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 05:03:18 2022 - INFO  - Start to run test.
+Failed to enable unit: Unit file powertop.service does not exist.
+Thu Nov 17 05:03:19 2022 - ERROR - oe_test_power_powertop_startup.sh line 30
+Failed to get unit file state for powertop.service: No such file or directory
+Thu Nov 17 05:03:20 2022 - ERROR - oe_test_power_powertop_startup.sh line 32
+Failed to start powertop.service: Unit powertop.service not found.
+Thu Nov 17 05:03:20 2022 - ERROR - oe_test_power_powertop_startup.sh line 34
+Thu Nov 17 05:03:21 2022 - INFO  - End to run test.
+Thu Nov 17 05:03:21 2022 - ERROR - failed to execute the case.
+Thu Nov 17 05:03:22 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 05:03:22 2022 - WARN  - no thing to do.
+Thu Nov 17 05:03:23 2022 - INFO  - End to restore the test environment.

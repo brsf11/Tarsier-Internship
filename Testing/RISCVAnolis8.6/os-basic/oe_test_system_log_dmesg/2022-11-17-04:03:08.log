@@ -1,0 +1,7 @@
+Thu Nov 17 04:03:10 2022 - INFO  - Start executing testcase.
+[    0.000000] Linux version 5.14.18-100.2.riscv64.an8.riscv64 (root@cdf260fb60084207bbe0f3b2f6fe0e16) (gcc (GCC) 12.0.1 20220214 (Red Hat 12.0.1-0), GNU ld version 2.37-26.an8) #1 SMP Mon Jun 13 14:42:51 CST 2022
+[    0.049687] smp: Bringing up secondary CPUs ...
+[    0.066600] smp: Brought up 1 node, 8 CPUs
+Thu Nov 17 04:03:11 2022 - INFO  - End of testcase execution.
+Thu Nov 17 04:03:11 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:03:12 2022 - INFO  - oe_test_system_log_dmesg.sh post_test

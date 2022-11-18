@@ -1,0 +1,18 @@
+Thu Nov 17 04:03:17 2022 - INFO  - Start to prepare the test environment.
+Thu Nov 17 04:03:17 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:03:18 2022 - INFO  - Start to run test.
+oe_test_ProcMgmt_crontab_cronfile.sh: line 29: crontab: command not found
+oe_test_ProcMgmt_crontab_cronfile.sh: line 31: crontab: command not found
+Thu Nov 17 04:03:19 2022 - ERROR - oe_test_ProcMgmt_crontab_cronfile.sh line 32
+oe_test_ProcMgmt_crontab_cronfile.sh: line 35: crontab: command not found
+oe_test_ProcMgmt_crontab_cronfile.sh: line 36: crontab: command not found
+Thu Nov 17 04:03:19 2022 - ERROR - oe_test_ProcMgmt_crontab_cronfile.sh line 37
+Thu Nov 17 11:59:50 PM EST 2022
+grep: /tmp/test.txt: No such file or directory
+Fri Nov 18 00:00:51 2022 - ERROR - oe_test_ProcMgmt_crontab_cronfile.sh line 42
+Fri Nov 18 00:00:51 2022 - INFO  - End to run test.
+Fri Nov 18 00:00:52 2022 - ERROR - failed to execute the case.
+Fri Nov 18 00:00:52 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 04:04:17 AM EST 2022
+oe_test_ProcMgmt_crontab_cronfile.sh: line 49: crontab: command not found
+Thu Nov 17 04:04:17 2022 - INFO  - End to restore the test environment.

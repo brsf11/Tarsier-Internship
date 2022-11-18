@@ -1,0 +1,31 @@
+Thu Nov 17 04:06:00 2022 - INFO  - Start to prepare the test environment.
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:01 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:06:01 2022 - INFO  - Start to run test.
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:02 2022 - ERROR - oe_test_timedatectl.sh line 31
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:03 2022 - ERROR - oe_test_timedatectl.sh line 33
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:09 2022 - ERROR - oe_test_timedatectl.sh line 36
+Failed to connect to bus: No such file or directory
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:15 2022 - ERROR - oe_test_timedatectl.sh line 40
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:16 2022 - ERROR - oe_test_timedatectl.sh line 42
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:17 2022 - ERROR - oe_test_timedatectl.sh line 44
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:17 2022 - ERROR - oe_test_timedatectl.sh line 46
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:18 2022 - ERROR - oe_test_timedatectl.sh line 48
+Failed to connect to bus: No such file or directory
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:19 2022 - ERROR - oe_test_timedatectl.sh line 51
+Thu Nov 17 04:06:19 2022 - INFO  - End to run test.
+Thu Nov 17 04:06:20 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:06:20 2022 - INFO  - Start to restore the test environment.
+Failed to connect to bus: No such file or directory
+Failed to connect to bus: No such file or directory
+Thu Nov 17 04:06:00 AM EST 2022
+Thu Nov 17 04:06:01 2022 - INFO  - End to restore the test environment.

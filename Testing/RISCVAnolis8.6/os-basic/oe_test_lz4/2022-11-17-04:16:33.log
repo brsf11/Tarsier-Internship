@@ -1,0 +1,28 @@
+Thu Nov 17 04:16:35 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:16:37 2022 - INFO  - End of environmental preparation!
+Thu Nov 17 04:16:37 2022 - INFO  - Start to run test.
+oe_test_lz4.sh: line 32: lz4: command not found
+Thu Nov 17 04:16:38 2022 - ERROR - compress file error
+Thu Nov 17 04:16:38 2022 - ERROR - oe_test_lz4.sh line 33
+Thu Nov 17 04:16:39 2022 - ERROR - check compile file error
+Thu Nov 17 04:16:40 2022 - ERROR - oe_test_lz4.sh line 35
+oe_test_lz4.sh: line 37: lz4: command not found
+Thu Nov 17 04:16:40 2022 - ERROR - decompress file error
+Thu Nov 17 04:16:41 2022 - ERROR - oe_test_lz4.sh line 38
+ls: cannot access 'lz4_test.txt': No such file or directory
+Thu Nov 17 04:16:41 2022 - ERROR - check decompress result error
+Thu Nov 17 04:16:42 2022 - ERROR - oe_test_lz4.sh line 40
+oe_test_lz4.sh: line 41: lz4: command not found
+Thu Nov 17 04:16:42 2022 - ERROR - view help msg error
+Thu Nov 17 04:16:43 2022 - ERROR - oe_test_lz4.sh line 42
+Thu Nov 17 04:16:43 2022 - INFO  - End to run test.
+Thu Nov 17 04:16:44 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:16:45 2022 - INFO  - start environment cleanup.
+Thu Nov 17 04:16:45 2022 - WARN  - no thing to do.
+Thu Nov 17 04:16:46 2022 - INFO  - Finish environment cleanup!

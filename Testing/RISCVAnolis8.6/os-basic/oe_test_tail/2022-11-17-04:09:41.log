@@ -1,0 +1,17 @@
+Thu Nov 17 04:09:43 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:09:45 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:09:45 2022 - INFO  - Start to run test.
+oe_test_tail.sh: line 32: 2022-11-17T03:23:47-0500: command not found
+oe_test_tail.sh: line 33: 2022-11-17T03:23:47-0500: command not found
+Usage: tail [OPTION]... [FILE]...
+Thu Nov 17 04:09:46 2022 - INFO  - End to run test.
+Thu Nov 17 04:09:46 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:09:47 2022 - INFO  - start environment cleanup.
+Thu Nov 17 04:09:47 2022 - WARN  - no thing to do.
+Thu Nov 17 04:09:48 2022 - INFO  - Finish environment cleanup!

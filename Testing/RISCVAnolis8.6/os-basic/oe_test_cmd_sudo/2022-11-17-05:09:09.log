@@ -1,0 +1,16 @@
+Thu Nov 17 05:09:12 2022 - INFO  - Start to prepare the test environment.
+Changing password for user test.
+passwd: all authentication tokens updated successfully.
+Thu Nov 17 05:09:13 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 05:09:14 2022 - INFO  - Start to run test.
+User root may run the following commands on anolis-riscv:
+User test may run the following commands on anolis-riscv:
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-ABknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-ABknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+usage: sudo [-ABbEHknPS] [-r role] [-t type] [-C num] [-D directory] [-g group]
+usage: sudo -e [-ABknS] [-r role] [-t type] [-C num] [-D directory] [-g group]
+Thu Nov 17 05:09:16 2022 - INFO  - End to run test.
+Thu Nov 17 05:09:16 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 05:09:17 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 05:09:18 2022 - INFO  - End to restore the test environment.

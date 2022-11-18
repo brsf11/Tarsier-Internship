@@ -1,0 +1,8 @@
+Thu Nov 17 05:09:51 2022 - INFO  - Start to config params of the case.
+Thu Nov 17 05:12:39 2022 - INFO  - End to config params of the case.
+Thu Nov 17 05:12:40 2022 - INFO  - Start executing testcase.
+nls_cp874              20480  0
+Thu Nov 17 05:12:41 2022 - INFO  - End of testcase execution.
+Thu Nov 17 05:12:41 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 05:12:42 2022 - INFO  - start environment cleanup.
+Thu Nov 17 05:12:43 2022 - INFO  - Finish environment cleanup.

@@ -1,0 +1,30 @@
+Thu Nov 17 04:17:48 2022 - INFO  - Start to prepare the test environment.
+id: ‘testuser1’: no such user
+Thu Nov 17 04:17:49 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:17:50 2022 - INFO  - Start to run test.
+useradd: Permission denied.
+useradd: cannot lock /etc/passwd; try again later.
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+id: ‘test’: no such user
+usermod: Permission denied.
+usermod: cannot lock /etc/passwd; try again later.
+test:x:666:1004::/home/test:/bin/bash
+groupadd: group 'testgroup' already exists
+groupmod: GID '555' already exists
+testgroup:x:1004:
+groupmod: GID '555' already exists
+Thu Nov 17 04:18:01 2022 - ERROR - oe_test_basic_UserMgmt_permission.sh line 52
+Thu Nov 17 04:18:02 2022 - ERROR - oe_test_basic_UserMgmt_permission.sh line 54
+Thu Nov 17 04:18:03 2022 - INFO  - End to run test.
+Thu Nov 17 04:18:03 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:18:04 2022 - INFO  - End to clean the test environment.
+Thu Nov 17 04:18:05 2022 - INFO  - End to clean the test environment.

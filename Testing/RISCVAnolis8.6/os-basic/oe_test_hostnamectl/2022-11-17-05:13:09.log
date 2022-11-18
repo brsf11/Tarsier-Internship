@@ -1,0 +1,36 @@
+Thu Nov 17 05:13:11 2022 - INFO  - Start to pre test.
+Thu Nov 17 05:13:11 2022 - INFO  - Start to pre test.
+Thu Nov 17 05:13:12 2022 - INFO  - Start to run test.
+Failed to connect to bus: No such file or directory
+Thu Nov 17 05:13:13 2022 - ERROR - oe_test_hostnamectl.sh line 29
+Failed to connect to bus: No such file or directory
+Failed to connect to bus: No such file or directory
+Thu Nov 17 05:13:13 2022 - ERROR - oe_test_hostnamectl.sh line 32
+Failed to connect to bus: No such file or directory
+Failed to connect to bus: No such file or directory
+Thu Nov 17 05:13:14 2022 - ERROR - oe_test_hostnamectl.sh line 35
+Failed to connect to bus: No such file or directory
+Failed to connect to bus: No such file or directory
+spawn hostnamectl set-hostname -H root@ new_host
+[0;1;31mFailed to connect to bus: Invalid argument[0m
+expect: spawn id exp4 not open
+    while executing
+"expect eof"
+[0;1;31mFailed to connect to bus: Invalid argument[0m
+Thu Nov 17 05:13:15 2022 - ERROR - oe_test_hostnamectl.sh line 57
+spawn hostnamectl status -H root@
+[0;1;31mFailed to connect to bus: Invalid argument[0m
+expect: spawn id exp4 not open
+    while executing
+"expect eof"
+Thu Nov 17 05:13:16 2022 - ERROR - oe_test_hostnamectl.sh line 76
+Thu Nov 17 05:13:17 2022 - INFO  - End to run test.
+Thu Nov 17 05:13:17 2022 - ERROR - failed to execute the case.
+Thu Nov 17 05:13:18 2022 - INFO  - Start to restore the test environment.
+Failed to connect to bus: No such file or directory
+spawn hostnamectl set-hostname -H root@ anolis-riscv
+[0;1;31mFailed to connect to bus: Invalid argument[0m
+expect: spawn id exp4 not open
+    while executing
+"expect eof"
+Thu Nov 17 05:13:19 2022 - INFO  - End to restore the test environment.

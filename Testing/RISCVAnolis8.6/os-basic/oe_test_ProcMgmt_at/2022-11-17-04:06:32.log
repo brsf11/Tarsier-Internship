@@ -1,0 +1,36 @@
+Thu Nov 17 04:06:34 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Failed to start atd.service: Unit atd.service not found.
+oe_test_ProcMgmt_at.sh: line 26: atq: command not found
+Thu Nov 17 04:06:35 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:06:36 2022 - INFO  - Start to run test.
+oe_test_ProcMgmt_at.sh: line 37: at: command not found
+oe_test_ProcMgmt_at.sh: line 38: at: command not found
+oe_test_ProcMgmt_at.sh: line 39: at: command not found
+oe_test_ProcMgmt_at.sh: line 40: at: command not found
+oe_test_ProcMgmt_at.sh: line 41: at: command not found
+oe_test_ProcMgmt_at.sh: line 42: at: command not found
+oe_test_ProcMgmt_at.sh: line 43: at: command not found
+oe_test_ProcMgmt_at.sh: line 44: atq: command not found
+Thu Nov 17 04:06:36 2022 - ERROR - oe_test_ProcMgmt_at.sh line 45
+Thu Nov 17 11:29:30 PM EST 2022
+grep: /tmp/test: No such file or directory
+Thu Nov 17 23:30:31 2022 - ERROR - oe_test_ProcMgmt_at.sh line 50
+Thu Nov 17 23:30:31 2022 - INFO  - End to run test.
+Thu Nov 17 23:30:32 2022 - ERROR - failed to execute the case.
+Thu Nov 17 23:30:33 2022 - INFO  - Start to restore the test environment.
+oe_test_ProcMgmt_at.sh: line 57: atrm: command not found
+oe_test_ProcMgmt_at.sh: line 57: atrm: command not found
+oe_test_ProcMgmt_at.sh: line 57: atrm: command not found
+oe_test_ProcMgmt_at.sh: line 57: atrm: command not found
+oe_test_ProcMgmt_at.sh: line 57: atrm: command not found
+oe_test_ProcMgmt_at.sh: line 57: atrm: command not found
+oe_test_ProcMgmt_at.sh: line 57: atrm: command not found
+Thu Nov 17 04:07:35 AM EST 2022
+Thu Nov 17 04:07:35 2022 - WARN  - no thing to do.
+Thu Nov 17 04:07:36 2022 - INFO  - End to restore the test environment.

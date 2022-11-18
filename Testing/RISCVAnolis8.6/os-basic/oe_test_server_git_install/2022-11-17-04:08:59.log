@@ -1,0 +1,45 @@
+Thu Nov 17 04:09:01 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:09:02 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:09:03 2022 - INFO  - Start to run test.
+oe_test_server_git_install.sh: line 29: git: command not found
+Thu Nov 17 04:09:03 2022 - ERROR - oe_test_server_git_install.sh line 30
+oe_test_server_git_install.sh: line 31: git: command not found
+Thu Nov 17 04:09:04 2022 - ERROR - oe_test_server_git_install.sh line 32
+oe_test_server_git_install.sh: line 33: git: command not found
+Thu Nov 17 04:09:05 2022 - ERROR - oe_test_server_git_install.sh line 34
+oe_test_server_git_install.sh: line 35: git: command not found
+Thu Nov 17 04:09:05 2022 - ERROR - oe_test_server_git_install.sh line 37
+oe_test_server_git_install.sh: line 40: git: command not found
+oe_test_server_git_install.sh: line 42: git: command not found
+Thu Nov 17 04:09:06 2022 - ERROR - oe_test_server_git_install.sh line 43
+oe_test_server_git_install.sh: line 44: git: command not found
+Thu Nov 17 04:09:06 2022 - ERROR - oe_test_server_git_install.sh line 45
+oe_test_server_git_install.sh: line 46: git: command not found
+Thu Nov 17 04:09:07 2022 - ERROR - oe_test_server_git_install.sh line 47
+oe_test_server_git_install.sh: line 48: git: command not found
+Thu Nov 17 04:09:07 2022 - ERROR - oe_test_server_git_install.sh line 49
+oe_test_server_git_install.sh: line 50: git: command not found
+Thu Nov 17 04:09:08 2022 - ERROR - oe_test_server_git_install.sh line 51
+oe_test_server_git_install.sh: line 53: git: command not found
+Thu Nov 17 04:09:09 2022 - ERROR - oe_test_server_git_install.sh line 54
+oe_test_server_git_install.sh: line 55: git: command not found
+Thu Nov 17 04:09:09 2022 - ERROR - oe_test_server_git_install.sh line 56
+oe_test_server_git_install.sh: line 57: git: command not found
+Thu Nov 17 04:09:10 2022 - ERROR - oe_test_server_git_install.sh line 58
+oe_test_server_git_install.sh: line 59: git: command not found
+Thu Nov 17 04:09:10 2022 - ERROR - oe_test_server_git_install.sh line 60
+oe_test_server_git_install.sh: line 61: git: command not found
+oe_test_server_git_install.sh: line 62: git: command not found
+Thu Nov 17 04:09:11 2022 - ERROR - oe_test_server_git_install.sh line 62
+/home/brsf11/mugen-riscv/testcases/system-test/system-integration/os-basic/oe_test_server_git_install
+Thu Nov 17 04:09:11 2022 - INFO  - End to run test.
+Thu Nov 17 04:09:12 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:09:12 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 04:09:13 2022 - WARN  - no thing to do.
+Thu Nov 17 04:09:14 2022 - INFO  - End to restore the test environment.

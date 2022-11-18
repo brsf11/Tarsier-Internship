@@ -1,0 +1,31 @@
+Thu Nov 17 04:08:46 2022 - INFO  - Start to prepare the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:08:47 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:08:47 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:08:48 2022 - INFO  - Start to run test.
+spawn ssh @
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+spawn ssh test1@
+ssh: Could not resolve hostname : Name or service not known
+spawn ssh test2@
+ssh: Could not resolve hostname : Name or service not known
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:08:50 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:08:50 2022 - WARN  - the remote password uses the default configuration.
+Thu Nov 17 04:08:51 2022 - WARN  - the connect port using the default configuration
+spawn scp -P 22 -r @:/tmp/rebootlog1 .
+ssh: Could not resolve hostname : Name or service not known
+scp: Connection closed
+Thu Nov 17 04:08:52 2022 - ERROR - Failed in remote SCP operation: 255
+Thu Nov 17 04:08:53 2022 - ERROR - oe_test_system_monitor_login.sh line 74
+cat: rebootlog1: No such file or directory
+Thu Nov 17 04:08:53 2022 - ERROR - oe_test_system_monitor_login.sh line 77
+Thu Nov 17 04:08:54 2022 - INFO  - End to run test.
+Thu Nov 17 04:08:54 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:08:55 2022 - INFO  - Start to restore the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:08:55 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:08:56 2022 - INFO  - End to restore the test environment.

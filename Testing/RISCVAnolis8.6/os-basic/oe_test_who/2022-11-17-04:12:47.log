@@ -1,0 +1,8 @@
+Thu Nov 17 04:12:50 2022 - INFO  - Start to run test.
+brsf11   pts/0        2022-11-17 02:56 (192.168.122.1)
+         system boot  2022-11-17 02:55
+brsf11   pts/0        2022-11-17 02:56 (192.168.122.1)
+Usage: who [OPTION]... [ FILE | ARG1 ARG2 ]
+Thu Nov 17 04:12:50 2022 - INFO  - End to run test.
+Thu Nov 17 04:12:51 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:12:51 2022 - INFO  - oe_test_who.sh post_test

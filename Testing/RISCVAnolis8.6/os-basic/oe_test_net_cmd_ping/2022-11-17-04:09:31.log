@@ -1,0 +1,14 @@
+Thu Nov 17 04:09:34 2022 - INFO  - Start to run test.
+PING www.mytest.com (127.0.0.1) 56(84) bytes of data.
+64 bytes from anolis-riscv (127.0.0.1): icmp_seq=1 ttl=64 time=0.279 ms
+64 bytes from anolis-riscv (127.0.0.1): icmp_seq=2 ttl=64 time=0.875 ms
+64 bytes from anolis-riscv (127.0.0.1): icmp_seq=3 ttl=64 time=0.845 ms
+
+--- www.mytest.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2005ms
+rtt min/avg/max/mdev = 0.279/0.666/0.875/0.274 ms
+Usage
+Thu Nov 17 04:09:36 2022 - INFO  - End to run test.
+Thu Nov 17 04:09:37 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:09:37 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 04:09:38 2022 - INFO  - End to restore the test environment.

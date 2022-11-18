@@ -1,0 +1,28 @@
+Thu Nov 17 04:17:21 2022 - INFO  - Start environmental preparation.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:17:22 2022 - INFO  - End of environmental preparation!
+Thu Nov 17 04:17:23 2022 - INFO  - Start to run test.
+oe_test_exiv2.sh: line 31: exiv2: command not found
+Thu Nov 17 04:17:23 2022 - ERROR - view image info error
+Thu Nov 17 04:17:24 2022 - ERROR - oe_test_exiv2.sh line 32
+oe_test_exiv2.sh: line 34: exiv2: command not found
+Thu Nov 17 04:17:24 2022 - ERROR - view image details info error before add
+Thu Nov 17 04:17:25 2022 - ERROR - oe_test_exiv2.sh line 35
+oe_test_exiv2.sh: line 42: exiv2: command not found
+Thu Nov 17 04:17:25 2022 - ERROR - add image info error
+Thu Nov 17 04:17:26 2022 - ERROR - oe_test_exiv2.sh line 43
+oe_test_exiv2.sh: line 45: exiv2: command not found
+Thu Nov 17 04:17:26 2022 - ERROR - view image details info error after add
+Thu Nov 17 04:17:27 2022 - ERROR - oe_test_exiv2.sh line 46
+Thu Nov 17 04:17:27 2022 - ERROR - query image info error after add
+Thu Nov 17 04:17:28 2022 - ERROR - oe_test_exiv2.sh line 48
+Thu Nov 17 04:17:29 2022 - INFO  - End to run test.
+Thu Nov 17 04:17:29 2022 - ERROR - failed to execute the case.
+Thu Nov 17 04:17:30 2022 - INFO  - start environment cleanup.
+Thu Nov 17 04:17:30 2022 - WARN  - no thing to do.
+Thu Nov 17 04:17:31 2022 - INFO  - Finish environment cleanup!

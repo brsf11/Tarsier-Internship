@@ -1,0 +1,17 @@
+Thu Nov 17 05:04:46 2022 - INFO  - Start to run test.
+NetworkManager.service is not active, cannot reload.
+grep: /etc/resolv.conf: No such file or directory
+Thu Nov 17 05:04:46 2022 - ERROR - oe_test_nmcli_cancel_auto.sh line 26
+rm: cannot remove '/etc/resolv.conf': No such file or directory
+NetworkManager.service is not active, cannot reload.
+NetworkManager.service is not active, cannot reload.
+grep: /etc/resolv.conf: No such file or directory
+Thu Nov 17 05:04:47 2022 - ERROR - oe_test_nmcli_cancel_auto.sh line 36
+rm: cannot remove '/etc/resolv.conf': No such file or directory
+NetworkManager.service is not active, cannot reload.
+## test
+Thu Nov 17 05:04:48 2022 - INFO  - End to run test.
+Thu Nov 17 05:04:49 2022 - ERROR - failed to execute the case.
+Thu Nov 17 05:04:49 2022 - INFO  - Start to restore the test environment.
+NetworkManager.service is not active, cannot reload.
+Thu Nov 17 05:04:50 2022 - INFO  - End to restore the test environment.

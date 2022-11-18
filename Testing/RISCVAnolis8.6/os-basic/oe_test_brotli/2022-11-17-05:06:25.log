@@ -1,0 +1,14 @@
+Thu Nov 17 05:06:28 2022 - INFO  - Start environmental preparation.
+Thu Nov 17 05:06:28 2022 - INFO  - End of environmental preparation!
+Thu Nov 17 05:06:29 2022 - INFO  - Start to run test.
+test.tar
+oe_test_brotli.sh: line 31: brotli: command not found
+Thu Nov 17 05:06:29 2022 - ERROR - excute brotli error
+Thu Nov 17 05:06:30 2022 - ERROR - oe_test_brotli.sh line 32
+ls: cannot access 'test.tar.br': No such file or directory
+Thu Nov 17 05:06:30 2022 - ERROR - check test.tar.br file error
+Thu Nov 17 05:06:31 2022 - ERROR - oe_test_brotli.sh line 34
+Thu Nov 17 05:06:31 2022 - INFO  - End to run test.
+Thu Nov 17 05:06:32 2022 - ERROR - failed to execute the case.
+Thu Nov 17 05:06:33 2022 - INFO  - start environment cleanup.
+Thu Nov 17 05:06:33 2022 - INFO  - Finish environment cleanup!

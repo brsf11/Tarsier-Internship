@@ -1,0 +1,50 @@
+Thu Nov 17 04:17:36 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:17:37 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:17:38 2022 - INFO  - Start to run test.
+spawn ssh-keygen -t ecdsa
+Generating public/private ecdsa key pair.
+Enter file in which to save the key (/root/.ssh/id_ecdsa): 
+
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_ecdsa
+Your public key has been saved in /root/.ssh/id_ecdsa.pub
+The key fingerprint is:
+SHA256:HXCAaxngZ+ydgAod5cqHO7wYI5+0shMD76NC7K/tOLk root@anolis-riscv
+The key's randomart image is:
++---[ECDSA 256]---+
+|  ..o. .o..      |
+| . + oo  o       |
+|. . + =+  .      |
+|.o + ++o o .     |
+|o.= ... S .      |
+|o+.o             |
+|*+*              |
+|=X==             |
+|=E@=             |
++----[SHA256]-----+
+spawn ssh-copy-id root@
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_ecdsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname : Name or service not known
+
+expect: spawn id exp5 not open
+    while executing
+"expect eof"
+spawn ssh root@
+ssh: Could not resolve hostname : Name or service not known
+expect: spawn id exp5 not open
+    while executing
+"expect eof"
+Thu Nov 17 04:17:41 2022 - INFO  - End to run test.
+Thu Nov 17 04:17:41 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:17:42 2022 - INFO  - Start to restores the test environment.
+Usage: sshcmd.sh -c "command" -i "remote machinet ip" [-u login_user] [-p login_password] [-o port] [-t timeout]Thu Nov 17 04:17:42 2022 - ERROR - Failed in remote CMD operation:1
+Thu Nov 17 04:17:43 2022 - INFO  - End to restore the test environment.

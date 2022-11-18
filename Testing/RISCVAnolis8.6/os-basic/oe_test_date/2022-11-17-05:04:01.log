@@ -1,0 +1,13 @@
+Thu Nov 17 05:04:03 2022 - INFO  - Start to prepare the test environment.
+Thu Nov 17 05:04:04 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 05:04:05 2022 - INFO  - Start to run test.
+Wed Jan  1 12:00:00 AM EST 2020
+Thu Nov 17 09:30:00 AM EST 2022
+Wed Feb  4 09:30:00 AM EST 2015
+Failed to connect to bus: No such file or directory
+Wed Feb  4 09:30:01 2015 - ERROR - oe_test_date.sh line 40
+Wed Feb  4 09:30:02 2015 - INFO  - End to run test.
+Wed Feb  4 09:30:02 2015 - ERROR - failed to execute the case.
+Wed Feb  4 09:30:03 2015 - INFO  - Start to restore the test environment.
+Thu Nov 17 05:04:04 AM EST 2022
+Thu Nov 17 05:04:05 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,12 @@
+Thu Nov 17 04:19:13 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+A dependency job for firewalld.service failed. See 'journalctl -xe' for details.
+Thu Nov 17 04:19:15 2022 - INFO  - Start to restore the test environment.
+oe_test_server_httpd_checkfirewall.sh: line 42: [: -ne: unary operator expected
+Thu Nov 17 04:19:15 2022 - WARN  - no thing to do.
+Thu Nov 17 04:19:16 2022 - INFO  - End to restore the test environment.

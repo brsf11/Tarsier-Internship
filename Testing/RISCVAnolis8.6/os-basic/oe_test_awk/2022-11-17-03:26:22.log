@@ -1,0 +1,12 @@
+Thu Nov 17 03:26:24 2022 - INFO  - Start to prepare the test environment.
+Thu Nov 17 03:26:25 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 03:26:26 2022 - INFO  - Start to run test.
+root
+Thu Nov 17 03:26:26 2022 - ERROR - check cpuid result fail
+Thu Nov 17 03:26:27 2022 - ERROR - oe_test_awk.sh line 34
+Usage: awk [POSIX or GNU style options] -f progfile [--] file ...
+Usage: awk [POSIX or GNU style options] [--] 'program' file ...
+Thu Nov 17 03:26:27 2022 - INFO  - End to run test.
+Thu Nov 17 03:26:28 2022 - ERROR - failed to execute the case.
+Thu Nov 17 03:26:28 2022 - INFO  - start environment cleanup.
+Thu Nov 17 03:26:29 2022 - INFO  - Finish environment cleanup!

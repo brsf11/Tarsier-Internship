@@ -1,0 +1,7 @@
+Thu Nov 17 04:07:56 2022 - INFO  - env configure
+Changing password for user tester.
+passwd: all authentication tokens updated successfully.
+root
+tester
+Thu Nov 17 04:07:58 2022 - INFO  - succeed to execute the case.
+Thu Nov 17 04:07:59 2022 - INFO  - start environment cleanup.

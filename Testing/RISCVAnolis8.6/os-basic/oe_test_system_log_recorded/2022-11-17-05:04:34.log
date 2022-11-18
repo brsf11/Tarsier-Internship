@@ -1,0 +1,6 @@
+Thu Nov 17 05:04:36 2022 - INFO  - Start executing testcase.
+#Storage=auto
+Thu Nov 17 05:04:39 2022 - INFO  - End of testcase execution.
+Thu Nov 17 05:04:39 2022 - ERROR - failed to execute the case.
+Thu Nov 17 05:04:40 2022 - INFO  - start environment cleanup.
+Thu Nov 17 05:04:40 2022 - INFO  - Finish environment cleanup.

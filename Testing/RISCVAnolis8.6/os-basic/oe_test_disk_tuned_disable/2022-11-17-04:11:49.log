@@ -1,0 +1,14 @@
+Thu Nov 17 04:11:51 2022 - INFO  - Start to prepare the test environment.
+Traceback (most recent call last):
+  File "/home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py", line 29, in <module>
+    import ssh_cmd
+  File "/home/brsf11/mugen-riscv/libs/locallibs/ssh_cmd.py", line 23, in <module>
+    import paramiko
+ModuleNotFoundError: No module named 'paramiko'
+Thu Nov 17 04:11:52 2022 - INFO  - End to prepare the test environment.
+Thu Nov 17 04:11:53 2022 - INFO  - Start to run test.
+Failed to enable unit: Unit file tuned.service does not exist.
+Thu Nov 17 04:11:53 2022 - ERROR - oe_test_disk_tuned_disable.sh line 29
+Thu Nov 17 04:11:54 2022 - INFO  - Start to restore the test environment.
+Thu Nov 17 04:11:54 2022 - WARN  - no thing to do.
+Thu Nov 17 04:11:55 2022 - INFO  - End to restore the test environment.
