@@ -1,0 +1,57 @@
++ source /home/brsf11/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /home/brsf11/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Nov 24 03:10:44 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL firewalld
++ pkgs=firewalld
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /home/brsf11/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs firewalld --node 1 --tempfile ''
+Thu Nov 24 03:10:52 2022 - INFO  - pkgs:(firewalld) is already installed
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ systemctl start firewalld
+A dependency job for firewalld.service failed. See 'journalctl -xe' for details.
++ systemctl status firewalld
++ grep running
++ exit 1
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Nov 24 03:10:52 2022 - INFO  - Start to restore the test environment.
++ '[' -ne 1 ']'
+oe_test_server_httpd_checkfirewall.sh: line 42: [: -ne: unary operator expected
++ systemctl stop firewalld
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Thu Nov 24 03:10:53 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Nov 24 03:10:54 2022 - INFO  - End to restore the test environment.

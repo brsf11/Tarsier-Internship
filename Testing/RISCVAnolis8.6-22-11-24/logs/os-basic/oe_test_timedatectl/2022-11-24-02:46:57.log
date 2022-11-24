@@ -1,0 +1,241 @@
++ source /home/brsf11/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /home/brsf11/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Nov 24 02:46:59 2022 - INFO  - Start to prepare the test environment.
+++ date '+%Y-%m-%d %H:%M:%S'
++ time='2022-11-24 02:46:59'
++ timedatectl set-ntp no
+Failed to connect to bus: No such file or directory
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Nov 24 02:47:00 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Nov 24 02:47:00 2022 - INFO  - Start to run test.
++ timedatectl
++ grep 'Local time'
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 31'
++ message='oe_test_timedatectl.sh line 31'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 31'
+Thu Nov 24 02:47:01 2022 - ERROR - oe_test_timedatectl.sh line 31
++ return 0
++ timedatectl set-ntp yes
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 33'
++ message='oe_test_timedatectl.sh line 33'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 33'
+Thu Nov 24 02:47:02 2022 - ERROR - oe_test_timedatectl.sh line 33
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ grep 'NTP service'
++ timedatectl
++ grep ' active'
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 36'
++ message='oe_test_timedatectl.sh line 36'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 36'
+Thu Nov 24 02:47:08 2022 - ERROR - oe_test_timedatectl.sh line 36
++ return 0
++ timedatectl set-ntp no
+Failed to connect to bus: No such file or directory
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ timedatectl set-time 2019-08-14
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 40'
++ message='oe_test_timedatectl.sh line 40'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 40'
+Thu Nov 24 02:47:15 2022 - ERROR - oe_test_timedatectl.sh line 40
++ return 0
++ timedatectl
++ grep 'Local time'
++ grep 2019-08-14
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 42'
++ message='oe_test_timedatectl.sh line 42'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 42'
+Thu Nov 24 02:47:15 2022 - ERROR - oe_test_timedatectl.sh line 42
++ return 0
++ timedatectl set-time 15:00:00
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 44'
++ message='oe_test_timedatectl.sh line 44'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 44'
+Thu Nov 24 02:47:16 2022 - ERROR - oe_test_timedatectl.sh line 44
++ return 0
++ timedatectl
++ grep 'Local time'
++ grep 15:00
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 46'
++ message='oe_test_timedatectl.sh line 46'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 46'
+Thu Nov 24 02:47:16 2022 - ERROR - oe_test_timedatectl.sh line 46
++ return 0
+++ timedatectl list-timezones
+++ wc -l
+++ grep Asia
+Failed to connect to bus: No such file or directory
++ ret=0
++ CHECK_RESULT 0 0 1
++ actual_result=0
++ expect_result=0
++ mode=1
++ error_log=
++ '[' -z 0 ']'
++ '[' 1 -eq 0 ']'
++ test 0x == 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 48'
++ message='oe_test_timedatectl.sh line 48'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 48'
+Thu Nov 24 02:47:17 2022 - ERROR - oe_test_timedatectl.sh line 48
++ return 0
++ timedatectl set-timezone Asia/Beijing
+Failed to connect to bus: No such file or directory
++ timedatectl
++ grep 'Asia\/Beijing'
+Failed to connect to bus: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_timedatectl.sh line 51'
++ message='oe_test_timedatectl.sh line 51'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_timedatectl.sh line 51'
+Thu Nov 24 02:47:18 2022 - ERROR - oe_test_timedatectl.sh line 51
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Nov 24 02:47:18 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Nov 24 02:47:19 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Nov 24 02:47:19 2022 - INFO  - Start to restore the test environment.
++ timedatectl set-timezone Asia/Shanghai
+Failed to connect to bus: No such file or directory
++ timedatectl set-ntp yes
+Failed to connect to bus: No such file or directory
++ date -s '2022-11-24 02:46:59'
+Thu Nov 24 02:46:59 AM EST 2022
++ hwclock -w
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /home/brsf11/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Nov 24 02:47:00 2022 - INFO  - End to restore the test environment.
