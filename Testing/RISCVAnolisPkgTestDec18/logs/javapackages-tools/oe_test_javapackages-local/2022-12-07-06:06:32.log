@@ -1,0 +1,178 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 06:06:34 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL javapackages-local
++ pkgs=javapackages-local
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs javapackages-local --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:03:33 ago on Wed 07 Dec 2022 06:03:22 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides /usr/bin/xmvn-install needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-resolve needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-subst needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides java-17-openjdk-devel needed by javapackages-local-6.0.0-7.an8.noarch
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:03:33 ago on Wed 07 Dec 2022 06:03:22 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides /usr/bin/xmvn-install needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-resolve needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-subst needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides java-17-openjdk-devel needed by javapackages-local-6.0.0-7.an8.noarch
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 06:06:57 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 06:06:57 2022 - INFO  - Start to run test.
++ abs2rel /1/2/3/a/b/c /1/2/3
++ grep a/b/c
+oe_test_javapackages-local.sh: line 30: abs2rel: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_javapackages-local.sh line 31'
++ message='oe_test_javapackages-local.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_javapackages-local.sh line 31'
+Wed Dec  7 06:06:58 2022 - ERROR - oe_test_javapackages-local.sh line 31
++ return 0
++ abs2rel foo/bar foo/baz
++ grep ../bar
+oe_test_javapackages-local.sh: line 32: abs2rel: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_javapackages-local.sh line 33'
++ message='oe_test_javapackages-local.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_javapackages-local.sh line 33'
+Wed Dec  7 06:06:58 2022 - ERROR - oe_test_javapackages-local.sh line 33
++ return 0
++ gradle-local build
+oe_test_javapackages-local.sh: line 34: gradle-local: command not found
++ xmvn-builddep --help
++ grep 'Usage: /usr/bin/xmvn-builddep'
+oe_test_javapackages-local.sh: line 35: xmvn-builddep: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_javapackages-local.sh line 36'
++ message='oe_test_javapackages-local.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_javapackages-local.sh line 36'
+Wed Dec  7 06:06:59 2022 - ERROR - oe_test_javapackages-local.sh line 36
++ return 0
++ xmvn-builddep build.log
+oe_test_javapackages-local.sh: line 37: xmvn-builddep: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_javapackages-local.sh line 38'
++ message='oe_test_javapackages-local.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_javapackages-local.sh line 38'
+Wed Dec  7 06:07:00 2022 - ERROR - oe_test_javapackages-local.sh line 38
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 06:07:00 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 4
++ test 4 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 06:07:01 2022 - ERROR - failed to execute the case.
++ exit 4
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 06:07:01 2022 - INFO  - Start to restore the test environment.
++ rm -rf build.log .gradle build
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:03:33 ago on Wed 07 Dec 2022 06:03:22 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides /usr/bin/xmvn-install needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-resolve needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-subst needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides java-17-openjdk-devel needed by javapackages-local-6.0.0-7.an8.noarch
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:03:33 ago on Wed 07 Dec 2022 06:03:22 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides /usr/bin/xmvn-install needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-resolve needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides /usr/bin/xmvn-subst needed by javapackages-local-6.0.0-7.an8.noarch
+  - nothing provides java-17-openjdk-devel needed by javapackages-local-6.0.0-7.an8.noarch
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: "Last metadata expiration check: 0:03:33 ago on Wed 07 Dec 2022 06:03:22 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides /usr/bin/xmvn-install needed by javapackages-local-6.0.0-7.an8.noarch\n  - nothing provides /usr/bin/xmvn-resolve needed by javapackages-local-6.0.0-7.an8.noarch\n  - nothing provides /usr/bin/xmvn-subst needed by javapackages-local-6.0.0-7.an8.noarch\n  - nothing provides java-17-openjdk-devel needed by javapackages-local-6.0.0-7.an8.noarch\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 06:07:04 2022 - INFO  - Finish restoring the test environment.

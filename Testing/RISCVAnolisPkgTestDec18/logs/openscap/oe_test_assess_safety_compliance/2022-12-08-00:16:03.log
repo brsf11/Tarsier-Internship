@@ -1,0 +1,223 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Thu Dec  8 00:16:05 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL 'openscap scap-security-guide'
++ pkgs='openscap scap-security-guide'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'openscap scap-security-guide' --node 1 --tempfile ''
+Thu Dec  8 00:16:13 2022 - ERROR - pkgs:(scap-security-guide) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ DNF_INSTALL 'openscap scap-security-guide' 2
++ pkgs='openscap scap-security-guide'
++ node=2
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'openscap scap-security-guide' --node 2 --tempfile ''
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 176, in <module>
+    exitcode, output = rpm_install(args.pkgs, args.node, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 66, in rpm_install
+    conn = ssh_cmd.pssh_conn(
+  File "/root/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ xccdf_path=/usr/share/xml/scap/ssg/content/ssg-ol8-xccdf.xml
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Thu Dec  8 00:16:15 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start executing testcase.'
++ message='Start executing testcase.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start executing testcase.'
+Thu Dec  8 00:16:16 2022 - INFO  - Start executing testcase.
++ oscap info /usr/share/xml/scap/ssg/content/ssg-ol8-xccdf.xml
++ grep -rn 'Document type: XCCDF Checklist'
+oe_test_assess_safety_compliance.sh: line 32: oscap: command not found
+oe_test_assess_safety_compliance.sh:32:    oscap info $xccdf_path | grep -rn "Document type: XCCDF Checklist"
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ oscap info --profile ospp /usr/share/xml/scap/ssg/content/ssg-ol8-xccdf.xml
++ grep ospp
+oe_test_assess_safety_compliance.sh: line 34: oscap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_assess_safety_compliance.sh line 35'
++ message='oe_test_assess_safety_compliance.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_assess_safety_compliance.sh line 35'
+Thu Dec  8 00:16:16 2022 - ERROR - oe_test_assess_safety_compliance.sh line 35
++ return 0
++ oscap xccdf eval --report /tmp/report.html --profile ospp /usr/share/xml/scap/ssg/content/ssg-ol8-xccdf.xml
+oe_test_assess_safety_compliance.sh: line 36: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_assess_safety_compliance.sh line 37'
++ message='oe_test_assess_safety_compliance.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_assess_safety_compliance.sh line 37'
+Thu Dec  8 00:16:17 2022 - ERROR - oe_test_assess_safety_compliance.sh line 37
++ return 0
++ grep OpenSCAP /tmp/report.html
+grep: /tmp/report.html: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_assess_safety_compliance.sh line 39'
++ message='oe_test_assess_safety_compliance.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_assess_safety_compliance.sh line 39'
+Thu Dec  8 00:16:17 2022 - ERROR - oe_test_assess_safety_compliance.sh line 39
++ return 0
++ expect -c '
+        set timeout 300
+        spawn oscap-ssh @ 22 xccdf eval --report /tmp/remote_report.html /usr/share/xml/scap/ssg/content/ssg-ol8-xccdf.xml
+        expect {
+            "*yes/no*" {
+                send "yes\r"
+                exp_continue
+            }
+            "s password: " {
+                send "\r"
+                exp_continue
+            }
+            timeout
+        }
+    '
+spawn oscap-ssh @ 22 xccdf eval --report /tmp/remote_report.html /usr/share/xml/scap/ssg/content/ssg-ol8-xccdf.xml
+couldn't execute "oscap-ssh": no such file or directory
+    while executing
+"spawn oscap-ssh @ 22 xccdf eval --report /tmp/remote_report.html /usr/share/xml/scap/ssg/content/ssg-ol8-xccdf.xml"
++ grep OpenSCAP /tmp/remote_report.html
+grep: /tmp/remote_report.html: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_assess_safety_compliance.sh line 56'
++ message='oe_test_assess_safety_compliance.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_assess_safety_compliance.sh line 56'
+Thu Dec  8 00:16:18 2022 - ERROR - oe_test_assess_safety_compliance.sh line 56
++ return 0
++ LOG_INFO 'Finish testcase execution.'
++ message='Finish testcase execution.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish testcase execution.'
+Thu Dec  8 00:16:19 2022 - INFO  - Finish testcase execution.
++ CASE_RESULT 0
++ case_re=0
++ test -z 4
++ test 4 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Dec  8 00:16:19 2022 - ERROR - failed to execute the case.
++ exit 4
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Dec  8 00:16:20 2022 - INFO  - start environment cleanup.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Thu Dec  8 00:16:21 2022 - WARN  - no thing to do.
++ return 0
++ DNF_REMOVE 2 'openscap scap-security-guide'
++ node=2
++ pkg_list='openscap scap-security-guide'
++ mode=0
++ [[ -z '' ]]
++ [[ -z openscap scap-security-guide ]]
++ '[' 0 -ne 0 ']'
++ '[' 2 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 2 --pkgs 'openscap scap-security-guide' --tempfile ''
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 142, in rpm_remove
+    conn = ssh_cmd.pssh_conn(
+  File "/root/mugen-riscv/libs/locallibs/ssh_cmd.py", line 53, in pssh_conn
+    conn.connect(ip, port, user, password, timeout=timeout)
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 340, in connect
+    to_try = list(self._families_and_addresses(hostname, port))
+  File "/usr/lib/python3.10/site-packages/paramiko/client.py", line 203, in _families_and_addresses
+    addrinfos = socket.getaddrinfo(
+  File "/usr/lib64/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
++ '[' 0 -ne 0 ']'
++ rm -rf /tmp/remote_report.html /tmp/report.html
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Dec  8 00:16:23 2022 - INFO  - Finish environment cleanup!

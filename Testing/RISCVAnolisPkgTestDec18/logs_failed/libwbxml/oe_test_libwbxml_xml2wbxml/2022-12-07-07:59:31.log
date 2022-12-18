@@ -1,0 +1,212 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 07:59:34 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL libwbxml
++ pkgs=libwbxml
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs libwbxml --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpheegz9hd
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpheegz9hd
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Wed Dec  7 08:00:01 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 08:00:01 2022 - INFO  - Start to run test.
++ xml2wbxml -o output.wbxml input.xml
+xml2wbxml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  xml2wbxml -o output.wbxml input.xml
+  xml2wbxml -k -n -v 1.1 -o output.wbxml input.xml
+
+Options: 
+    -o output.wbxml : output file
+    -k : keep ignorable whitespaces (Default: ignore)
+    -n : do NOT generate String Table (Default: generate)
+    -v X (WBXML Version of output document)
+       1.0 : WBXML 1.0
+       1.1 : WBXML 1.1
+       1.2 : WBXML 1.2
+       1.3 : WBXML 1.3
+    -a : anonymous format
+         do NOT include any format information (e.g. public ID or DTD)
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -f output.wbxml
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_xml2wbxml.sh line 33'
++ message='oe_test_libwbxml_xml2wbxml.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_xml2wbxml.sh line 33'
+Wed Dec  7 08:00:02 2022 - ERROR - oe_test_libwbxml_xml2wbxml.sh line 33
++ return 0
++ cp output.wbxml input.wbxml
+cp: cannot stat 'output.wbxml': No such file or directory
++ xml2wbxml -k -n -v 1.1 -o output.wbxml input.xml
+xml2wbxml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  xml2wbxml -o output.wbxml input.xml
+  xml2wbxml -k -n -v 1.1 -o output.wbxml input.xml
+
+Options: 
+    -o output.wbxml : output file
+    -k : keep ignorable whitespaces (Default: ignore)
+    -n : do NOT generate String Table (Default: generate)
+    -v X (WBXML Version of output document)
+       1.0 : WBXML 1.0
+       1.1 : WBXML 1.1
+       1.2 : WBXML 1.2
+       1.3 : WBXML 1.3
+    -a : anonymous format
+         do NOT include any format information (e.g. public ID or DTD)
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ strings output.wbxml
++ grep EFGH
+oe_test_libwbxml_xml2wbxml.sh: line 37: strings: command not found
++ CHECK_RESULT 1 1
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ xml2wbxml -a input.xml -o output.wbxml
+xml2wbxml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  xml2wbxml -o output.wbxml input.xml
+  xml2wbxml -k -n -v 1.1 -o output.wbxml input.xml
+
+Options: 
+    -o output.wbxml : output file
+    -k : keep ignorable whitespaces (Default: ignore)
+    -n : do NOT generate String Table (Default: generate)
+    -v X (WBXML Version of output document)
+       1.0 : WBXML 1.0
+       1.1 : WBXML 1.1
+       1.2 : WBXML 1.2
+       1.3 : WBXML 1.3
+    -a : anonymous format
+         do NOT include any format information (e.g. public ID or DTD)
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ strings output.wbxml
+oe_test_libwbxml_xml2wbxml.sh: line 41: strings: command not found
++ grep MICROSOFT
++ CHECK_RESULT 1 1
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 08:00:03 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 08:00:03 2022 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 08:00:04 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpheegz9hd ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpheegz9hd
++ '[' 0 -ne 0 ']'
+++ ls
+++ grep -vE '.sh|input.xml'
++ del_file=
++ rm -rf
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 08:00:13 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,373 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 08:59:23 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox'
++ pkgs='lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox' --node 1 --tempfile ''
+Wed Dec  7 08:59:31 2022 - ERROR - pkgs:(lxcfs-tools busybox) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
+++ rpm -qa lxc
+++ awk -F - '{print $2}'
++ version=
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Wed Dec  7 08:59:32 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 08:59:33 2022 - INFO  - Start to run test.
++ lxc-create -t /usr/share/lxc/templates/lxc-busybox -n myEuler1
+oe_test_lxc_unfreeze_destroy.sh: line 30: lxc-create: command not found
++ CHECK_RESULT 127 0 0 'Failed to set up container.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to set up container.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to set up container.'
++ LOG_ERROR 'Failed to set up container.'
++ message='Failed to set up container.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to set up container.'
+Wed Dec  7 08:59:33 2022 - ERROR - Failed to set up container.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 31'
++ message='oe_test_lxc_unfreeze_destroy.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 31'
+Wed Dec  7 08:59:34 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 31
++ return 0
++ lxc-start myEuler1
+oe_test_lxc_unfreeze_destroy.sh: line 32: lxc-start: command not found
++ lxc-unfreeze --help
++ grep -i Usage
++ CHECK_RESULT 1 0 0 'Check lxc-unfreeze --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-unfreeze --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-unfreeze --help failed.'
++ LOG_ERROR 'Check lxc-unfreeze --help failed.'
++ message='Check lxc-unfreeze --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-unfreeze --help failed.'
+Wed Dec  7 08:59:35 2022 - ERROR - Check lxc-unfreeze --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 34'
++ message='oe_test_lxc_unfreeze_destroy.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 34'
+Wed Dec  7 08:59:35 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 34
++ return 0
++ lxc-unfreeze --usage
++ grep -i 'Usage: lxc-unfreeze'
++ CHECK_RESULT 1 0 0 'Check lxc-unfreeze --usage failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-unfreeze --usage failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-unfreeze --usage failed.'
++ LOG_ERROR 'Check lxc-unfreeze --usage failed.'
++ message='Check lxc-unfreeze --usage failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-unfreeze --usage failed.'
+Wed Dec  7 08:59:36 2022 - ERROR - Check lxc-unfreeze --usage failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 36'
++ message='oe_test_lxc_unfreeze_destroy.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 36'
+Wed Dec  7 08:59:36 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 36
++ return 0
++ lxc-unfreeze --version
++ grep
+oe_test_lxc_unfreeze_destroy.sh: line 37: lxc-unfreeze: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ CHECK_RESULT 2 0 0 'Check lxc-unfreeze --version failed.'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Check lxc-unfreeze --version failed.'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Check lxc-unfreeze --version failed.'
++ LOG_ERROR 'Check lxc-unfreeze --version failed.'
++ message='Check lxc-unfreeze --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-unfreeze --version failed.'
+Wed Dec  7 08:59:37 2022 - ERROR - Check lxc-unfreeze --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 38'
++ message='oe_test_lxc_unfreeze_destroy.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 38'
+Wed Dec  7 08:59:38 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 38
++ return 0
++ lxc-freeze myEuler1
+oe_test_lxc_unfreeze_destroy.sh: line 39: lxc-freeze: command not found
++ CHECK_RESULT 127 0 0 'Check lxc-freeze failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check lxc-freeze failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check lxc-freeze failed.'
++ LOG_ERROR 'Check lxc-freeze failed.'
++ message='Check lxc-freeze failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-freeze failed.'
+Wed Dec  7 08:59:38 2022 - ERROR - Check lxc-freeze failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 40'
++ message='oe_test_lxc_unfreeze_destroy.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 40'
+Wed Dec  7 08:59:39 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 40
++ return 0
++ lxc-info myEuler1
++ grep State
+oe_test_lxc_unfreeze_destroy.sh: line 41: lxc-info: command not found
++ grep FROZEN
++ CHECK_RESULT 1 0 0 'Check lxc-info failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-info failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-info failed.'
++ LOG_ERROR 'Check lxc-info failed.'
++ message='Check lxc-info failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-info failed.'
+Wed Dec  7 08:59:39 2022 - ERROR - Check lxc-info failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 42'
++ message='oe_test_lxc_unfreeze_destroy.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 42'
+Wed Dec  7 08:59:40 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 42
++ return 0
++ lxc-unfreeze -n myEuler1
+oe_test_lxc_unfreeze_destroy.sh: line 43: lxc-unfreeze: command not found
++ CHECK_RESULT 127 0 0 'Check lxc-unfreeze failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check lxc-unfreeze failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check lxc-unfreeze failed.'
++ LOG_ERROR 'Check lxc-unfreeze failed.'
++ message='Check lxc-unfreeze failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-unfreeze failed.'
+Wed Dec  7 08:59:40 2022 - ERROR - Check lxc-unfreeze failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 44'
++ message='oe_test_lxc_unfreeze_destroy.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 44'
+Wed Dec  7 08:59:41 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 44
++ return 0
++ lxc-info myEuler1
++ grep State
+oe_test_lxc_unfreeze_destroy.sh: line 45: lxc-info: command not found
++ grep RUNNING
++ CHECK_RESULT 1 0 0 'Check lxc-info failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-info failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-info failed.'
++ LOG_ERROR 'Check lxc-info failed.'
++ message='Check lxc-info failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-info failed.'
+Wed Dec  7 08:59:42 2022 - ERROR - Check lxc-info failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 46'
++ message='oe_test_lxc_unfreeze_destroy.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 46'
+Wed Dec  7 08:59:42 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 46
++ return 0
++ lxc-destroy --help
++ grep -i Usage
++ CHECK_RESULT 1 0 0 'Check lxc-destroy --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-destroy --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-destroy --help failed.'
++ LOG_ERROR 'Check lxc-destroy --help failed.'
++ message='Check lxc-destroy --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-destroy --help failed.'
+Wed Dec  7 08:59:43 2022 - ERROR - Check lxc-destroy --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 49'
++ message='oe_test_lxc_unfreeze_destroy.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 49'
+Wed Dec  7 08:59:43 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 49
++ return 0
++ lxc-destroy --usage
++ grep -i 'Usage: lxc-destroy'
++ CHECK_RESULT 1 0 0 'Check lxc-destroy --usage failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-destroy --usage failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-destroy --usage failed.'
++ LOG_ERROR 'Check lxc-destroy --usage failed.'
++ message='Check lxc-destroy --usage failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-destroy --usage failed.'
+Wed Dec  7 08:59:44 2022 - ERROR - Check lxc-destroy --usage failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 51'
++ message='oe_test_lxc_unfreeze_destroy.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 51'
+Wed Dec  7 08:59:45 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 51
++ return 0
++ lxc-destroy --version
++ grep
+oe_test_lxc_unfreeze_destroy.sh: line 52: lxc-destroy: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ CHECK_RESULT 2 0 0 'Check lxc-destroy --version failed.'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Check lxc-destroy --version failed.'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Check lxc-destroy --version failed.'
++ LOG_ERROR 'Check lxc-destroy --version failed.'
++ message='Check lxc-destroy --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-destroy --version failed.'
+Wed Dec  7 08:59:45 2022 - ERROR - Check lxc-destroy --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 53'
++ message='oe_test_lxc_unfreeze_destroy.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 53'
+Wed Dec  7 08:59:46 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 53
++ return 0
++ lxc-stop myEuler1
+oe_test_lxc_unfreeze_destroy.sh: line 54: lxc-stop: command not found
++ CHECK_RESULT 127 0 0 'Check lxc-stop failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check lxc-stop failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check lxc-stop failed.'
++ LOG_ERROR 'Check lxc-stop failed.'
++ message='Check lxc-stop failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-stop failed.'
+Wed Dec  7 08:59:46 2022 - ERROR - Check lxc-stop failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 55'
++ message='oe_test_lxc_unfreeze_destroy.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 55'
+Wed Dec  7 08:59:47 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 55
++ return 0
++ lxc-destroy -n myEuler1
+oe_test_lxc_unfreeze_destroy.sh: line 56: lxc-destroy: command not found
++ CHECK_RESULT 127 0 0 'Check lxc-destroy -n failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check lxc-destroy -n failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check lxc-destroy -n failed.'
++ LOG_ERROR 'Check lxc-destroy -n failed.'
++ message='Check lxc-destroy -n failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-destroy -n failed.'
+Wed Dec  7 08:59:47 2022 - ERROR - Check lxc-destroy -n failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_unfreeze_destroy.sh line 57'
++ message='oe_test_lxc_unfreeze_destroy.sh line 57'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_unfreeze_destroy.sh line 57'
+Wed Dec  7 08:59:48 2022 - ERROR - oe_test_lxc_unfreeze_destroy.sh line 57
++ return 0
++ lxc-ls
++ grep myEuler1
+oe_test_lxc_unfreeze_destroy.sh: line 58: lxc-ls: command not found
++ CHECK_RESULT 1 1 0 'Check lxc-ls failed.'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='Check lxc-ls failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 08:59:49 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 13
++ test 13 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 08:59:49 2022 - ERROR - failed to execute the case.
++ exit 13
++ post_test
++ LOG_INFO 'Start to restore the tet environment.'
++ message='Start to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the tet environment.'
+Wed Dec  7 08:59:50 2022 - INFO  - Start to restore the tet environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Wed Dec  7 08:59:50 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the tet environment.'
++ message='End to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the tet environment.'
+Wed Dec  7 08:59:51 2022 - INFO  - End to restore the tet environment.

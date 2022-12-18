@@ -1,0 +1,317 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 02:19:47 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL freeradius
++ pkgs=freeradius
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs freeradius --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpy37145au
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpy37145au
++ echo -e 'show version\nquit'
+++ rpm -q freeradius
+++ awk -F - '{print $2}'
++ radiusd_version=3.0.25
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Wed Dec  7 02:20:23 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 02:20:23 2022 - INFO  - Start to run test.
++ radiusd -v
++ grep 3.0.25
+radiusd: FreeRADIUS Version 3.0.25, for host riscv64-koji-linux-gnu
+FreeRADIUS Version 3.0.25
++ CHECK_RESULT 0 0 0 'radiusd -v execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radiusd -v execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ CHECK_RESULT 0 0 0 'radiusd -X execution failed.'
++ radiusd -X
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radiusd -X execution failed.'
++ grep Loading
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ pgrep -f 'radiusd -X'
++ kill -9 1322
++ ln -s /etc/raddb/sites-available/control-socket /etc/raddb/sites-enabled/control-socket
++ systemctl start radiusd
+Job for radiusd.service failed because the control process exited with error code.
+See "systemctl status radiusd.service" and "journalctl -xeu radiusd.service" for details.
++ SLEEP_WAIT 2
++ wait_time=2
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 2 --cmd '' --mode 1
++ radmin -d /etc/raddb
++ grep 3.0.25
+radmin: Failed connecting to /var/run/radiusd/radiusd.sock: No such file or directory
+Perhaps you need to run the commands:	cd /etc/raddb
+	ln -s sites-available/control-socket sites-enabled/control-socket
+and then re-start the server?
++ CHECK_RESULT 1 0 0 'radmin -d execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radmin -d execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radmin -d execution failed.'
++ LOG_ERROR 'radmin -d execution failed.'
++ message='radmin -d execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radmin -d execution failed.'
+Wed Dec  7 02:20:28 2022 - ERROR - radmin -d execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 43'
++ message='oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 43'
+Wed Dec  7 02:20:28 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 43
++ return 0
++ radmin -D /usr/share/freeradius
++ grep 3.0.25
+radmin: Failed connecting to /var/run/radiusd/radiusd.sock: No such file or directory
+Perhaps you need to run the commands:	cd /etc/raddb
+	ln -s sites-available/control-socket sites-enabled/control-socket
+and then re-start the server?
++ CHECK_RESULT 1 0 0 'radmin -D execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radmin -D execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radmin -D execution failed.'
++ LOG_ERROR 'radmin -D execution failed.'
++ message='radmin -D execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radmin -D execution failed.'
+Wed Dec  7 02:20:29 2022 - ERROR - radmin -D execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 45'
++ message='oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 45'
+Wed Dec  7 02:20:29 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 45
++ return 0
++ radmin -e 'show version'
++ grep 3.0.25
+radmin: Failed connecting to /var/run/radiusd/radiusd.sock: No such file or directory
+Perhaps you need to run the commands:	cd /etc/raddb
+	ln -s sites-available/control-socket sites-enabled/control-socket
+and then re-start the server?
++ CHECK_RESULT 1 0 0 'radmin -e execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radmin -e execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radmin -e execution failed.'
++ LOG_ERROR 'radmin -e execution failed.'
++ message='radmin -e execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radmin -e execution failed.'
+Wed Dec  7 02:20:30 2022 - ERROR - radmin -e execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 47'
++ message='oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 47'
+Wed Dec  7 02:20:31 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 47
++ return 0
+++ radmin -E
+++ grep -c 'show version'
+radmin: Failed connecting to /var/run/radiusd/radiusd.sock: No such file or directory
+Perhaps you need to run the commands:	cd /etc/raddb
+	ln -s sites-available/control-socket sites-enabled/control-socket
+and then re-start the server?
++ '[' 0 -eq 2 ']'
++ CHECK_RESULT 1 0 0 'radmin -E execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radmin -E execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radmin -E execution failed.'
++ LOG_ERROR 'radmin -E execution failed.'
++ message='radmin -E execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radmin -E execution failed.'
+Wed Dec  7 02:20:32 2022 - ERROR - radmin -E execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 49'
++ message='oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 49'
+Wed Dec  7 02:20:32 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 49
++ return 0
++ radmin -f /var/run/radiusd/radiusd.sock
++ grep 3.0.25
+radmin: Failed connecting to /var/run/radiusd/radiusd.sock: No such file or directory
+Perhaps you need to run the commands:	cd /etc/raddb
+	ln -s sites-available/control-socket sites-enabled/control-socket
+and then re-start the server?
++ CHECK_RESULT 1 0 0 'radmin -f execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radmin -f execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radmin -f execution failed.'
++ LOG_ERROR 'radmin -f execution failed.'
++ message='radmin -f execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radmin -f execution failed.'
+Wed Dec  7 02:20:33 2022 - ERROR - radmin -f execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 51'
++ message='oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 51'
+Wed Dec  7 02:20:33 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 51
++ return 0
++ radmin -h
++ grep Usage
+Usage: radmin [ args ]
++ CHECK_RESULT 0 0 0 'radmin -h execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radmin -h execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radmin -i /tmp/radminfile
++ grep 3.0.25
+radmin: Failed connecting to /var/run/radiusd/radiusd.sock: No such file or directory
+Perhaps you need to run the commands:	cd /etc/raddb
+	ln -s sites-available/control-socket sites-enabled/control-socket
+and then re-start the server?
++ CHECK_RESULT 1 0 0 'radmin -i execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radmin -i execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radmin -i execution failed.'
++ LOG_ERROR 'radmin -i execution failed.'
++ message='radmin -i execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radmin -i execution failed.'
+Wed Dec  7 02:20:34 2022 - ERROR - radmin -i execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 55'
++ message='oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 55'
+Wed Dec  7 02:20:35 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 55
++ return 0
++ cp /etc/raddb/radiusd.conf /etc/raddb/test.conf
++ radmin -n test
++ grep 3.0.25
+radmin: Failed connecting to /var/run/radiusd/radiusd.sock: No such file or directory
+Perhaps you need to run the commands:	cd /etc/raddb
+	ln -s sites-available/control-socket sites-enabled/control-socket
+and then re-start the server?
++ CHECK_RESULT 1 0 0 'radmin -n execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radmin -n execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radmin -n execution failed.'
++ LOG_ERROR 'radmin -n execution failed.'
++ message='radmin -n execution failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radmin -n execution failed.'
+Wed Dec  7 02:20:36 2022 - ERROR - radmin -n execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 58'
++ message='oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 58'
+Wed Dec  7 02:20:36 2022 - ERROR - oe_test_freeradius_freeradius_radiusdAndRadmin.sh line 58
++ return 0
++ '[' '!' -s /tmp/test ']'
++ CHECK_RESULT 0 0 0 'radmin -q execution failed.'
++ actual_result=0
++ radmin -q
++ expect_result=0
++ mode=0
++ error_log='radmin -q execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ pgrep -f 'radmin -q'
++ kill -9 1364
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 02:20:37 2022 - INFO  - End to run test.
+/root/mugen-riscv/libs/locallibs/common_lib_python.sh: line 19:  1364 Killed                  radmin -q > /tmp/test
++ CASE_RESULT 0
++ case_re=0
++ test -z 7
++ test 7 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 02:20:38 2022 - ERROR - failed to execute the case.
++ exit 7
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 02:20:38 2022 - INFO  - Start to restore the test environment.
++ systemctl stop radiusd
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpy37145au ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpy37145au
++ '[' 0 -ne 0 ']'
++ rm -rf /etc/raddb
++ rm -rf /var/log/radius
++ rm -rf /tmp/radminfile
++ rm -rf /tmp/test
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 02:20:51 2022 - INFO  - End to restore the test environment.

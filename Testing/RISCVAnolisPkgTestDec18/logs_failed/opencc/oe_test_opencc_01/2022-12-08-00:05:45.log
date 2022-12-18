@@ -1,0 +1,291 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Dec  8 00:05:47 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL opencc
++ pkgs=opencc
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs opencc --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp44g1ylbr
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp44g1ylbr
++ result='sim_chinese55.txt not found or not accessible.'
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Dec  8 00:06:21 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Dec  8 00:06:22 2022 - INFO  - Start to run test.
+++ ls /usr/share/opencc
+++ grep -cE 'hk2s|s2hk|s2t|s2tw|s2twp|t2hk|t2s|t2tw|tw2s|tw2sp'
++ CHECK_RESULT 10 10
++ actual_result=10
++ expect_result=10
++ mode=0
++ error_log=
++ '[' -z 10 ']'
++ '[' 0 -eq 0 ']'
++ test 10x '!=' 10x
++ return 0
++ echo 测试工程师　
++ opencc -i sim_chinese.txt -o ./sim_chinese_zh.txt -c s2t.json
+oe_test_opencc_01.sh: line 30: opencc: command not found
+++ grep -cE 測試工程師 ./sim_chinese_zh.txt
+grep: ./sim_chinese_zh.txt: No such file or directory
++ CHECK_RESULT '' 1
++ actual_result=
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z '' ']'
++ LOG_ERROR 'Missing actual error code.'
++ message='Missing actual error code.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Missing actual error code.'
+Thu Dec  8 00:06:23 2022 - ERROR - Missing actual error code.
++ return 1
++ opencc -i sim_chinese_zh.txt -o sim_chinese1.txt -c t2s.json
+oe_test_opencc_01.sh: line 32: opencc: command not found
+++ grep -cE 测试工程师 ./sim_chinese1.txt
+grep: ./sim_chinese1.txt: No such file or directory
++ CHECK_RESULT '' 1
++ actual_result=
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z '' ']'
++ LOG_ERROR 'Missing actual error code.'
++ message='Missing actual error code.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Missing actual error code.'
+Thu Dec  8 00:06:23 2022 - ERROR - Missing actual error code.
++ return 1
++ echo 毕竟　
++ opencc -i ./sim_chinese.txt -o ./sim_chinese_zhw.txt -c s2tw.json
+oe_test_opencc_01.sh: line 35: opencc: command not found
+++ grep -cE 畢竟 ./sim_chinese_zhw.txt
+grep: ./sim_chinese_zhw.txt: No such file or directory
++ CHECK_RESULT '' 1
++ actual_result=
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z '' ']'
++ LOG_ERROR 'Missing actual error code.'
++ message='Missing actual error code.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Missing actual error code.'
+Thu Dec  8 00:06:24 2022 - ERROR - Missing actual error code.
++ return 1
++ opencc -i ./sim_chinese.txt -o ./sim_chinese_zhhk.txt -c s2hk.json
+oe_test_opencc_01.sh: line 37: opencc: command not found
+++ grep -cE 畢竟 ./sim_chinese_zhhk.txt
+grep: ./sim_chinese_zhhk.txt: No such file or directory
++ CHECK_RESULT '' 1
++ actual_result=
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z '' ']'
++ LOG_ERROR 'Missing actual error code.'
++ message='Missing actual error code.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Missing actual error code.'
+Thu Dec  8 00:06:24 2022 - ERROR - Missing actual error code.
++ return 1
++ opencc -i .sim_chinese.txt -o .sim_chinese_zh.txt -c s2t.json
+oe_test_opencc_01.sh: line 39: opencc: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_opencc_01.sh line 40'
++ message='oe_test_opencc_01.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_opencc_01.sh line 40'
+Thu Dec  8 00:06:25 2022 - ERROR - oe_test_opencc_01.sh line 40
++ return 0
+++ ls
+++ grep -cE sim_chinese55.txt
++ CHECK_RESULT 0 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ opencc -i sim_chinese55.txt -o sim_chinese_zhｗ.txt -c s2tw.json
+oe_test_opencc_01.sh: line 42: opencc: command not found
++ CHECK_RESULT '' sim_chinese55.txt not found or not accessible.
++ actual_result=
++ expect_result=sim_chinese55.txt
++ mode=not
++ error_log=found
++ '[' -z '' ']'
++ LOG_ERROR 'Missing actual error code.'
++ message='Missing actual error code.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Missing actual error code.'
+Thu Dec  8 00:06:26 2022 - ERROR - Missing actual error code.
++ return 1
++ echo 123456　
++ opencc -i ./sim_chinese.txt -o ./sim_chinese_zh1.txt -c s2t.json
+oe_test_opencc_01.sh: line 44: opencc: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_opencc_01.sh line 45'
++ message='oe_test_opencc_01.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_opencc_01.sh line 45'
+Thu Dec  8 00:06:26 2022 - ERROR - oe_test_opencc_01.sh line 45
++ return 0
++ grep 123456 ./sim_chinese_zh1.txt
+grep: ./sim_chinese_zh1.txt: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_opencc_01.sh line 47'
++ message='oe_test_opencc_01.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_opencc_01.sh line 47'
+Thu Dec  8 00:06:27 2022 - ERROR - oe_test_opencc_01.sh line 47
++ return 0
++ echo abcd　
++ opencc -i ./sim_chinese.txt -o ./sim_chinese_zh2.txt -c s2t.json
+oe_test_opencc_01.sh: line 49: opencc: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_opencc_01.sh line 50'
++ message='oe_test_opencc_01.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_opencc_01.sh line 50'
+Thu Dec  8 00:06:27 2022 - ERROR - oe_test_opencc_01.sh line 50
++ return 0
++ grep abcd ./sim_chinese_zh2.txt
+grep: ./sim_chinese_zh2.txt: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_opencc_01.sh line 52'
++ message='oe_test_opencc_01.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_opencc_01.sh line 52'
+Thu Dec  8 00:06:28 2022 - ERROR - oe_test_opencc_01.sh line 52
++ return 0
++ echo '$%^　'
++ opencc -i ./sim_chinese.txt -o ./sim_chinese_zh3.txt -c s2t.json
+oe_test_opencc_01.sh: line 54: opencc: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_opencc_01.sh line 55'
++ message='oe_test_opencc_01.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_opencc_01.sh line 55'
+Thu Dec  8 00:06:28 2022 - ERROR - oe_test_opencc_01.sh line 55
++ return 0
++ grep '$%^' ./sim_chinese_zh3.txt
+grep: ./sim_chinese_zh3.txt: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_opencc_01.sh line 57'
++ message='oe_test_opencc_01.sh line 57'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_opencc_01.sh line 57'
+Thu Dec  8 00:06:29 2022 - ERROR - oe_test_opencc_01.sh line 57
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Dec  8 00:06:30 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 7
++ test 7 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Dec  8 00:06:30 2022 - ERROR - failed to execute the case.
++ exit 7
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Dec  8 00:06:31 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp44g1ylbr ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp44g1ylbr
++ '[' 0 -ne 0 ']'
++ rm -rf ./sim_chinese.txt
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Dec  8 00:06:39 2022 - INFO  - End to restore the test environment.

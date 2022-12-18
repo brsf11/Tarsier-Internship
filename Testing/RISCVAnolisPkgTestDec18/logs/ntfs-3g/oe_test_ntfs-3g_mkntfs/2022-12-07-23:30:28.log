@@ -1,0 +1,361 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:30:31 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpkka_flmw
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpkka_flmw
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:31:04 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:31:04 2022 - INFO  - Start to run test.
++ mkntfs --help
++ grep 'Usage: mkntfs \[options\]'
++ CHECK_RESULT 1 0 0 'Check mkntfs --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --help failed.'
++ LOG_ERROR 'Check mkntfs --help failed.'
++ message='Check mkntfs --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --help failed.'
+Wed Dec  7 23:31:05 2022 - ERROR - Check mkntfs --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 31'
++ message='oe_test_ntfs-3g_mkntfs.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 31'
+Wed Dec  7 23:31:05 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 31
++ return 0
++ mkntfs --version
++ grep 'mkntfs v'
++ CHECK_RESULT 1 0 0 'Check mkntfs --version failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --version failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --version failed.'
++ LOG_ERROR 'Check mkntfs --version failed.'
++ message='Check mkntfs --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --version failed.'
+Wed Dec  7 23:31:06 2022 - ERROR - Check mkntfs --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 33'
++ message='oe_test_ntfs-3g_mkntfs.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 33'
+Wed Dec  7 23:31:06 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 33
++ return 0
++ mkntfs --fast /dev/vdb
++ grep 'mkntfs completed successfully'
+oe_test_ntfs-3g_mkntfs.sh: line 34: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --fast failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --fast failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --fast failed.'
++ LOG_ERROR 'Check mkntfs --fast failed.'
++ message='Check mkntfs --fast failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --fast failed.'
+Wed Dec  7 23:31:07 2022 - ERROR - Check mkntfs --fast failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 35'
++ message='oe_test_ntfs-3g_mkntfs.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 35'
+Wed Dec  7 23:31:07 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 35
++ return 0
++ mkntfs --quick /dev/vdb
++ grep 'mkntfs completed successfully'
+oe_test_ntfs-3g_mkntfs.sh: line 36: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --quick failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --quick failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --quick failed.'
++ LOG_ERROR 'Check mkntfs --quick failed.'
++ message='Check mkntfs --quick failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --quick failed.'
+Wed Dec  7 23:31:08 2022 - ERROR - Check mkntfs --quick failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 37'
++ message='oe_test_ntfs-3g_mkntfs.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 37'
+Wed Dec  7 23:31:09 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 37
++ return 0
++ mkntfs --label 5 /dev/vdb
++ grep 'mkntfs completed successfully'
+oe_test_ntfs-3g_mkntfs.sh: line 38: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --label failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --label failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --label failed.'
++ LOG_ERROR 'Check mkntfs --label failed.'
++ message='Check mkntfs --label failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --label failed.'
+Wed Dec  7 23:31:09 2022 - ERROR - Check mkntfs --label failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 39'
++ message='oe_test_ntfs-3g_mkntfs.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 39'
+Wed Dec  7 23:31:10 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 39
++ return 0
++ mkntfs --enable-compression /dev/vdb
++ grep 'mkntfs completed successfully'
+oe_test_ntfs-3g_mkntfs.sh: line 40: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --enable-compression failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --enable-compression failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --enable-compression failed.'
++ LOG_ERROR 'Check mkntfs --enable-compression failed.'
++ message='Check mkntfs --enable-compression failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --enable-compression failed.'
+Wed Dec  7 23:31:10 2022 - ERROR - Check mkntfs --enable-compression failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 41'
++ message='oe_test_ntfs-3g_mkntfs.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 41'
+Wed Dec  7 23:31:11 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 41
++ return 0
++ mkntfs --no-indexing /dev/vdb
++ grep 'mkntfs completed successfully'
+oe_test_ntfs-3g_mkntfs.sh: line 42: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --no-indexing failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --no-indexing failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --no-indexing failed.'
++ LOG_ERROR 'Check mkntfs --no-indexing failed.'
++ message='Check mkntfs --no-indexing failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --no-indexing failed.'
+Wed Dec  7 23:31:11 2022 - ERROR - Check mkntfs --no-indexing failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 43'
++ message='oe_test_ntfs-3g_mkntfs.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 43'
+Wed Dec  7 23:31:12 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 43
++ return 0
++ mkntfs --no-action /dev/vdb
++ grep 'Running in READ-ONLY mode'
+oe_test_ntfs-3g_mkntfs.sh: line 44: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --no-action failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --no-action failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --no-action failed.'
++ LOG_ERROR 'Check mkntfs --no-action failed.'
++ message='Check mkntfs --no-action failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --no-action failed.'
+Wed Dec  7 23:31:13 2022 - ERROR - Check mkntfs --no-action failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 45'
++ message='oe_test_ntfs-3g_mkntfs.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 45'
+Wed Dec  7 23:31:13 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 45
++ return 0
++ mkntfs --fast /dev/vdb --cluster-size 512 --sector-size 256 --partition-start 256 --heads 10 --sectors-per-track 16 --mft-zone-multiplier 10 --zero-time --force
++ grep 'mkntfs completed successfully'
+oe_test_ntfs-3g_mkntfs.sh: line 46: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.'
++ LOG_ERROR 'Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.'
++ message='Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.'
+Wed Dec  7 23:31:14 2022 - ERROR - Check mkntfs --cluster-size --sector-size --partition-start --heads --sectors-per-track --mft-zone-multiplier --zero-time --force failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 47'
++ message='oe_test_ntfs-3g_mkntfs.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 47'
+Wed Dec  7 23:31:14 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 47
++ return 0
++ mkntfs --fast /dev/vdb --quiet
+oe_test_ntfs-3g_mkntfs.sh: line 48: mkntfs: command not found
++ CHECK_RESULT 127 0 0 'Check mkntfs --quiet failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --quiet failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check mkntfs --quiet failed.'
++ LOG_ERROR 'Check mkntfs --quiet failed.'
++ message='Check mkntfs --quiet failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --quiet failed.'
+Wed Dec  7 23:31:15 2022 - ERROR - Check mkntfs --quiet failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 49'
++ message='oe_test_ntfs-3g_mkntfs.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 49'
+Wed Dec  7 23:31:15 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 49
++ return 0
++ mkntfs --fast /dev/vdb --verbose
++ grep 'mkntfs completed successfully'
+oe_test_ntfs-3g_mkntfs.sh: line 50: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --verbose failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --verbose failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --verbose failed.'
++ LOG_ERROR 'Check mkntfs --verbose failed.'
++ message='Check mkntfs --verbose failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --verbose failed.'
+Wed Dec  7 23:31:16 2022 - ERROR - Check mkntfs --verbose failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 51'
++ message='oe_test_ntfs-3g_mkntfs.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 51'
+Wed Dec  7 23:31:16 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 51
++ return 0
++ mkntfs --fast /dev/vdb --license
++ grep 'This program'
+oe_test_ntfs-3g_mkntfs.sh: line 52: mkntfs: command not found
++ CHECK_RESULT 1 0 0 'Check mkntfs --license failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mkntfs --license failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mkntfs --license failed.'
++ LOG_ERROR 'Check mkntfs --license failed.'
++ message='Check mkntfs --license failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mkntfs --license failed.'
+Wed Dec  7 23:31:17 2022 - ERROR - Check mkntfs --license failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_mkntfs.sh line 53'
++ message='oe_test_ntfs-3g_mkntfs.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_mkntfs.sh line 53'
+Wed Dec  7 23:31:17 2022 - ERROR - oe_test_ntfs-3g_mkntfs.sh line 53
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:31:18 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 12
++ test 12 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:31:19 2022 - ERROR - failed to execute the case.
++ exit 12
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:31:19 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdb contains a ext4 file system
+	created on Wed Dec  7 23:30:13 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: 6170b271-8eb6-4773-8b19-b7b8e2d7da8e
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpkka_flmw ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpkka_flmw
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:31:29 2022 - INFO  - Finish restoring the test environment.

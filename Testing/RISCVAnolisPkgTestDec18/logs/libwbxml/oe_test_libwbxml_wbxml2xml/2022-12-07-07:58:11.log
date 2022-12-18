@@ -1,0 +1,3447 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 07:58:13 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL libwbxml
++ pkgs=libwbxml
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs libwbxml --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpl7xqap52
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpl7xqap52
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Wed Dec  7 07:58:49 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 07:58:50 2022 - INFO  - Start to run test.
++ xml2wbxml -o input.wbxml input.xml
+xml2wbxml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  xml2wbxml -o output.wbxml input.xml
+  xml2wbxml -k -n -v 1.1 -o output.wbxml input.xml
+
+Options: 
+    -o output.wbxml : output file
+    -k : keep ignorable whitespaces (Default: ignore)
+    -n : do NOT generate String Table (Default: generate)
+    -v X (WBXML Version of output document)
+       1.0 : WBXML 1.0
+       1.1 : WBXML 1.1
+       1.2 : WBXML 1.2
+       1.3 : WBXML 1.3
+    -a : anonymous format
+         do NOT include any format information (e.g. public ID or DTD)
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ wbxml2xml -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep -i Polic output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 34'
++ message='oe_test_libwbxml_wbxml2xml.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 34'
+Wed Dec  7 07:58:51 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 34
++ return 0
++ diff -w input.xml output.xml
+diff: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 36'
++ message='oe_test_libwbxml_wbxml2xml.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 36'
+Wed Dec  7 07:58:51 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 36
++ return 0
++ cp output.xml output.xml-bak
+cp: cannot stat 'output.xml': No such file or directory
++ wbxml2xml -m 0 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep '><' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 41'
++ message='oe_test_libwbxml_wbxml2xml.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 41'
+Wed Dec  7 07:58:52 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 41
++ return 0
++ wbxml2xml -m 1 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ diff output.xml output.xml-bak
+diff: output.xml: No such file or directory
+diff: output.xml-bak: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 45'
++ message='oe_test_libwbxml_wbxml2xml.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 45'
+Wed Dec  7 07:58:53 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 45
++ return 0
++ wbxml2xml -m 2 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep '><' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 49'
++ message='oe_test_libwbxml_wbxml2xml.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 49'
+Wed Dec  7 07:58:53 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 49
++ return 0
++ wbxml2xml -i 8 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ wc -c output.xml
++ grep 321
+wc: output.xml: No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 53'
++ message='oe_test_libwbxml_wbxml2xml.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 53'
+Wed Dec  7 07:58:54 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 53
++ return 0
++ rm -rf output.xml
++ wbxml2xml -k -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -f output.xml
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 58'
++ message='oe_test_libwbxml_wbxml2xml.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 58'
+Wed Dec  7 07:58:54 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 58
++ return 0
++ wbxml2xml -l WML10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'WML 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 62'
++ message='oe_test_libwbxml_wbxml2xml.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 62'
+Wed Dec  7 07:58:55 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 62
++ return 0
++ wbxml2xml -l WML11 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'WML 1.1' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 66'
++ message='oe_test_libwbxml_wbxml2xml.sh line 66'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 66'
+Wed Dec  7 07:58:56 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 66
++ return 0
++ wbxml2xml -l WML12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'WML 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 70'
++ message='oe_test_libwbxml_wbxml2xml.sh line 70'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 70'
+Wed Dec  7 07:58:56 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 70
++ return 0
++ wbxml2xml -l WML13 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'WML 1.3' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 74'
++ message='oe_test_libwbxml_wbxml2xml.sh line 74'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 74'
+Wed Dec  7 07:58:57 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 74
++ return 0
++ wbxml2xml -l CSP11 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'CSP 1.1' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 78'
++ message='oe_test_libwbxml_wbxml2xml.sh line 78'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 78'
+Wed Dec  7 07:58:58 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 78
++ return 0
++ wbxml2xml -l CSP12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'CSP 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 82'
++ message='oe_test_libwbxml_wbxml2xml.sh line 82'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 82'
+Wed Dec  7 07:58:58 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 82
++ return 0
++ wbxml2xml -l WTA10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'WTA 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 86'
++ message='oe_test_libwbxml_wbxml2xml.sh line 86'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 86'
+Wed Dec  7 07:58:59 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 86
++ return 0
++ wbxml2xml -l WTAWML12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'WTA-WML 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 90'
++ message='oe_test_libwbxml_wbxml2xml.sh line 90'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 90'
+Wed Dec  7 07:59:00 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 90
++ return 0
++ wbxml2xml -l CHANNEL11 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'CHANNEL 1.1' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 94'
++ message='oe_test_libwbxml_wbxml2xml.sh line 94'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 94'
+Wed Dec  7 07:59:00 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 94
++ return 0
++ wbxml2xml -l CHANNEL12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'CHANNEL 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 98'
++ message='oe_test_libwbxml_wbxml2xml.sh line 98'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 98'
+Wed Dec  7 07:59:01 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 98
++ return 0
++ wbxml2xml -l SI10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'SI 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 102'
++ message='oe_test_libwbxml_wbxml2xml.sh line 102'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 102'
+Wed Dec  7 07:59:02 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 102
++ return 0
++ wbxml2xml -l SL10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'SL 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 106'
++ message='oe_test_libwbxml_wbxml2xml.sh line 106'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 106'
+Wed Dec  7 07:59:02 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 106
++ return 0
++ wbxml2xml -l CO10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'CO 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 110'
++ message='oe_test_libwbxml_wbxml2xml.sh line 110'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 110'
+Wed Dec  7 07:59:03 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 110
++ return 0
++ wbxml2xml -l PROV10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'PROV 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 114'
++ message='oe_test_libwbxml_wbxml2xml.sh line 114'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 114'
+Wed Dec  7 07:59:04 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 114
++ return 0
++ wbxml2xml -l EMN10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'EMN 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 118'
++ message='oe_test_libwbxml_wbxml2xml.sh line 118'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 118'
+Wed Dec  7 07:59:05 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 118
++ return 0
++ wbxml2xml -l DRMREL10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'DRMREL 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 122'
++ message='oe_test_libwbxml_wbxml2xml.sh line 122'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 122'
+Wed Dec  7 07:59:05 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 122
++ return 0
++ wbxml2xml -l SYNCML10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'SyncML 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 126'
++ message='oe_test_libwbxml_wbxml2xml.sh line 126'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 126'
+Wed Dec  7 07:59:06 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 126
++ return 0
++ wbxml2xml -l DEVINF10 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'DevInf 1.0' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 130'
++ message='oe_test_libwbxml_wbxml2xml.sh line 130'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 130'
+Wed Dec  7 07:59:07 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 130
++ return 0
++ wbxml2xml -l SYNCML11 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'SyncML 1.1' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 134'
++ message='oe_test_libwbxml_wbxml2xml.sh line 134'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 134'
+Wed Dec  7 07:59:07 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 134
++ return 0
++ wbxml2xml -l DEVINF11 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'DevInf 1.1' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 138'
++ message='oe_test_libwbxml_wbxml2xml.sh line 138'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 138'
+Wed Dec  7 07:59:08 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 138
++ return 0
++ wbxml2xml -l METINF11 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'MetInf 1.1' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 142'
++ message='oe_test_libwbxml_wbxml2xml.sh line 142'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 142'
+Wed Dec  7 07:59:09 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 142
++ return 0
++ wbxml2xml -l SYNCML12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'SyncML 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 146'
++ message='oe_test_libwbxml_wbxml2xml.sh line 146'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 146'
+Wed Dec  7 07:59:09 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 146
++ return 0
++ wbxml2xml -l DEVINF12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'DevInf 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 150'
++ message='oe_test_libwbxml_wbxml2xml.sh line 150'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 150'
+Wed Dec  7 07:59:10 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 150
++ return 0
++ wbxml2xml -l METINF12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'MetInf 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 154'
++ message='oe_test_libwbxml_wbxml2xml.sh line 154'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 154'
+Wed Dec  7 07:59:11 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 154
++ return 0
++ wbxml2xml -l DMDDF12 -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep 'DM-DDF 1.2' output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 158'
++ message='oe_test_libwbxml_wbxml2xml.sh line 158'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 158'
+Wed Dec  7 07:59:11 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 158
++ return 0
++ wbxml2xml -l OTA -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep SYSTEM output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 162'
++ message='oe_test_libwbxml_wbxml2xml.sh line 162'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 162'
+Wed Dec  7 07:59:12 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 162
++ return 0
++ wbxml2xml -l AIRSYNC -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep AirSync output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 166'
++ message='oe_test_libwbxml_wbxml2xml.sh line 166'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 166'
+Wed Dec  7 07:59:12 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 166
++ return 0
++ wbxml2xml -l ACTIVESYNC -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep ActiveSync output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 170'
++ message='oe_test_libwbxml_wbxml2xml.sh line 170'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 170'
+Wed Dec  7 07:59:13 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 170
++ return 0
++ wbxml2xml -l CONML -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep ConML output.xml
+grep: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 174'
++ message='oe_test_libwbxml_wbxml2xml.sh line 174'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 174'
+Wed Dec  7 07:59:14 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 174
++ return 0
++ rm -rf output.xml
++ wbxml2xml -c ASCII -o output.xml input.wbxml
+wbxml2xml [libwbxml 0.11.7] by OpenSync
+This library was originally written by Aymerick Jehanne <aymerick@jehanne.org>
+If you use this tool, please send feedbacks to opensync-users@opensync.org
+http://libwbxml.opensync.org/
+Usage: 
+  wbxml2xml -o output.xml input.wbxml
+  wbxml2xml -i 4 -l CSP12 -o output.xml input.wbxml
+
+Options: 
+    -o output.xml : output file
+    -m X (Generation mode - Default: 1) with:
+       0: Compact Generation
+       1: Indent Generation
+       2: Canonical Generation
+    -i X (Indent delta when using mode '1' - Default: 1)
+    -k (Keep Ignorable Whitespaces - Default: FALSE)
+    -l X (Force Language Type of document to parse)
+       WML10 : WML 1.0
+       WML11 : WML 1.1
+       WML12 : WML 1.2
+       WML13 : WML 1.3
+       WTA10 : WTA 1.0
+       WTAWML12 : WTAWML 1.2
+       CHANNEL11 : CHANNEL 1.1
+       CHANNEL12 : CHANNEL 1.2
+       SI10 : SI 1.0
+       SL10 : SL 1.0
+       CO10 : CO 1.0
+       PROV10 : PROV 1.0
+       EMN10 : EMN 1.0
+       DRMREL10 : DRMREL 1.0
+       OTA : OTA Settings
+       SYNCML10 : SYNCML 1.0
+       DEVINF10 : DEVINF 1.0
+       SYNCML11 : SYNCML 1.1
+       DEVINF11 : DEVINF 1.1
+       METINF11 : METINF 1.1
+       SYNCML12 : SYNCML 1.2
+       DEVINF12 : DEVINF 1.2
+       METINF12 : METINF 1.2
+       DMDDF12  : DMDDF  1.2
+       CSP11 : WV CSP 1.1
+       CSP12 : WV CSP 1.2
+       AIRSYNC    : Microsoft AirSync    (SynCE namespaces) 
+       ACTIVESYNC : Microsoft ActiveSync (original namespaces)
+       CONML : Nokia ConML
+    -c X (Set character set if the document does not specify one)
+       ASCII           : US ASCII
+       ISO-8859-1      : ISO-8859-1 (Western European)
+       ISO-8859-2      : ISO-8859-2 (Central European)
+       ISO-8859-3      : ISO-8859-3 (South European)
+       ISO-8859-4      : ISO-8859-4 (North European)
+       ISO-8859-5      : ISO-8859-5 (Latin/Cyrillic)
+       ISO-8859-6      : ISO-8859-6 (Latin/Arabic)
+       ISO-8859-7      : ISO-8859-7 (Latin/Greek)
+       ISO-8859-8      : ISO-8859-8 (Latin/Hebrew)
+       ISO-8859-9      : ISO-8859-9 (Latin/Turkish)
+       ISO-10646-UCS-2 : UCS-2
+       SHIFT_JIS       : Shift JIS (Japanese character set)
+       BIG5            : Big5 (Chinese character set)
+       UTF-8           : UTF-8
+       UTF-16          : UTF-16
+
+Note: '-' can be used to mean stdin on input or stdout on output
+
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -f output.xml
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 179'
++ message='oe_test_libwbxml_wbxml2xml.sh line 179'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 179'
+Wed Dec  7 07:59:14 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 179
++ return 0
++ diff -w input.xml output.xml
+diff: output.xml: No such file or directory
++ CHECK_RESULT 2
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libwbxml_wbxml2xml.sh line 181'
++ message='oe_test_libwbxml_wbxml2xml.sh line 181'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libwbxml_wbxml2xml.sh line 181'
+Wed Dec  7 07:59:15 2022 - ERROR - oe_test_libwbxml_wbxml2xml.sh line 181
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 07:59:16 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 38
++ test 38 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 07:59:16 2022 - ERROR - failed to execute the case.
++ exit 38
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 07:59:17 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpl7xqap52 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpl7xqap52
++ '[' 0 -ne 0 ']'
+++ ls
+++ grep -vE '.sh|input.xml'
++ del_file=
++ rm -rf
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 07:59:25 2022 - INFO  - End to restore the test environment.

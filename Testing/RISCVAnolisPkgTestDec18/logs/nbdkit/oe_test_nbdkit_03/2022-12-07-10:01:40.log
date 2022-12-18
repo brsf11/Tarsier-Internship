@@ -1,0 +1,403 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 10:01:43 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'nbdkit nbdkit-server nbdkit-plugins gnutls-utils'
++ pkgs='nbdkit nbdkit-server nbdkit-plugins gnutls-utils'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'nbdkit nbdkit-server nbdkit-plugins gnutls-utils' --node 1 --tempfile ''
+Wed Dec  7 10:01:50 2022 - ERROR - pkgs:(nbdkit-plugins) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Wed Dec  7 10:01:51 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 10:01:52 2022 - INFO  - Start to run test.
++ certtool --generate-privkey
+oe_test_nbdkit_03.sh: line 30: certtool: command not found
++ chmod 0600 ca-key.pem
++ certtool --generate-privkey
+oe_test_nbdkit_03.sh: line 32: certtool: command not found
++ chmod 0600 server-key.pem
++ certtool --generate-privkey
+oe_test_nbdkit_03.sh: line 34: certtool: command not found
++ chmod 0600 client-key.pem
++ nbdkit --tls-certificates=/root/ndbkit/ example1
+oe_test_nbdkit_03.sh: line 36: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 37'
++ message='oe_test_nbdkit_03.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 37'
+Wed Dec  7 10:01:53 2022 - ERROR - oe_test_nbdkit_03.sh line 37
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 996
+oe_test_nbdkit_03.sh: line 38: kill: (996) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 39'
++ message='oe_test_nbdkit_03.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 39'
+Wed Dec  7 10:01:53 2022 - ERROR - oe_test_nbdkit_03.sh line 39
++ return 0
++ mkdir -m 0700 /tmp/keys
++ psktool -u rich -p /tmp/keys/keys.psk
+oe_test_nbdkit_03.sh: line 41: psktool: command not found
++ nbdkit --tls=require --tls-psk=/tmp/keys/keys.psk example1
+oe_test_nbdkit_03.sh: line 42: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 43'
++ message='oe_test_nbdkit_03.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 43'
+Wed Dec  7 10:01:54 2022 - ERROR - oe_test_nbdkit_03.sh line 43
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 1005
+oe_test_nbdkit_03.sh: line 44: kill: (1005) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 45'
++ message='oe_test_nbdkit_03.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 45'
+Wed Dec  7 10:01:55 2022 - ERROR - oe_test_nbdkit_03.sh line 45
++ return 0
++ nbdkit --tls=on --tls-psk=/tmp/keys/keys.psk example1
+oe_test_nbdkit_03.sh: line 46: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 47'
++ message='oe_test_nbdkit_03.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 47'
+Wed Dec  7 10:01:55 2022 - ERROR - oe_test_nbdkit_03.sh line 47
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 1012
+oe_test_nbdkit_03.sh: line 48: kill: (1012) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 49'
++ message='oe_test_nbdkit_03.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 49'
+Wed Dec  7 10:01:56 2022 - ERROR - oe_test_nbdkit_03.sh line 49
++ return 0
++ nbdkit --tls off example1
+oe_test_nbdkit_03.sh: line 50: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 51'
++ message='oe_test_nbdkit_03.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 51'
+Wed Dec  7 10:01:57 2022 - ERROR - oe_test_nbdkit_03.sh line 51
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 1019
+oe_test_nbdkit_03.sh: line 52: kill: (1019) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 53'
++ message='oe_test_nbdkit_03.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 53'
+Wed Dec  7 10:01:58 2022 - ERROR - oe_test_nbdkit_03.sh line 53
++ return 0
++ nbdkit --tls-verify-peer example1
+oe_test_nbdkit_03.sh: line 54: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 55'
++ message='oe_test_nbdkit_03.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 55'
+Wed Dec  7 10:01:58 2022 - ERROR - oe_test_nbdkit_03.sh line 55
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 1026
+oe_test_nbdkit_03.sh: line 56: kill: (1026) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 57'
++ message='oe_test_nbdkit_03.sh line 57'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 57'
+Wed Dec  7 10:01:59 2022 - ERROR - oe_test_nbdkit_03.sh line 57
++ return 0
++ nbdkit -U - example1
+oe_test_nbdkit_03.sh: line 58: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 59'
++ message='oe_test_nbdkit_03.sh line 59'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 59'
+Wed Dec  7 10:02:00 2022 - ERROR - oe_test_nbdkit_03.sh line 59
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 1033
+oe_test_nbdkit_03.sh: line 60: kill: (1033) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 61'
++ message='oe_test_nbdkit_03.sh line 61'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 61'
+Wed Dec  7 10:02:01 2022 - ERROR - oe_test_nbdkit_03.sh line 61
++ return 0
++ nbdkit -u root example1
+oe_test_nbdkit_03.sh: line 62: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 63'
++ message='oe_test_nbdkit_03.sh line 63'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 63'
+Wed Dec  7 10:02:01 2022 - ERROR - oe_test_nbdkit_03.sh line 63
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 1040
+oe_test_nbdkit_03.sh: line 64: kill: (1040) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 65'
++ message='oe_test_nbdkit_03.sh line 65'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 65'
+Wed Dec  7 10:02:02 2022 - ERROR - oe_test_nbdkit_03.sh line 65
++ return 0
++ nbdkit -v example1
+oe_test_nbdkit_03.sh: line 66: nbdkit: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 67'
++ message='oe_test_nbdkit_03.sh line 67'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 67'
+Wed Dec  7 10:02:03 2022 - ERROR - oe_test_nbdkit_03.sh line 67
++ return 0
+++ ps -aux
+++ grep example1
+++ awk 'NR==1{print $2}'
++ kill -9 1047
+oe_test_nbdkit_03.sh: line 68: kill: (1047) - No such process
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 69'
++ message='oe_test_nbdkit_03.sh line 69'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 69'
+Wed Dec  7 10:02:03 2022 - ERROR - oe_test_nbdkit_03.sh line 69
++ return 0
+++ rpm -qa nbdkit
+++ awk -F - '{print $2}'
++ nbdkit_version=
++ nbdkit -V
+oe_test_nbdkit_03.sh: line 71: nbdkit: command not found
++ grep ''
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nbdkit_03.sh line 72'
++ message='oe_test_nbdkit_03.sh line 72'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nbdkit_03.sh line 72'
+Wed Dec  7 10:02:05 2022 - ERROR - oe_test_nbdkit_03.sh line 72
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 10:02:06 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 17
++ test 17 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 10:02:06 2022 - ERROR - failed to execute the case.
++ exit 17
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 10:02:07 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Wed Dec  7 10:02:07 2022 - WARN  - no thing to do.
++ return 0
++ rm -rf ca-key.pem client-key.pem server-key.pem /tmp/keys
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 10:02:08 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,352 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:43:35 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp_9696szt
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp_9696szt
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ mkdir -p /mnt/windows
++ ntfs-3g /dev/vdb /mnt/windows
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ mkdir /mnt/windows/test
++ touch test.txt /mnt/windows/test.txt /mnt/windows/test/a.txt
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:44:08 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:44:09 2022 - INFO  - Start to run test.
++ ntfssecaudit --help
++ grep Usage:
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit --help failed.'
++ LOG_ERROR 'Check ntfssecaudit --help failed.'
++ message='Check ntfssecaudit --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit --help failed.'
+Wed Dec  7 23:44:09 2022 - ERROR - Check ntfssecaudit --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 36'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 36'
+Wed Dec  7 23:44:10 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 36
++ return 0
++ ntfssecaudit --version
++ grep 'ntfssecaudit v'
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit --version failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit --version failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit --version failed.'
++ LOG_ERROR 'Check ntfssecaudit --version failed.'
++ message='Check ntfssecaudit --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit --version failed.'
+Wed Dec  7 23:44:11 2022 - ERROR - Check ntfssecaudit --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 38'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 38'
+Wed Dec  7 23:44:11 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 38
++ return 0
++ ntfssecaudit -t
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 39: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit -t failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit -t failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit -t failed.'
++ LOG_ERROR 'Check ntfssecaudit -t failed.'
++ message='Check ntfssecaudit -t failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit -t failed.'
+Wed Dec  7 23:44:12 2022 - ERROR - Check ntfssecaudit -t failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 40'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 40'
+Wed Dec  7 23:44:12 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 40
++ return 0
++ ntfssecaudit -h test.txt
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 41: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit -h failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit -h failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit -h failed.'
++ LOG_ERROR 'Check ntfssecaudit -h failed.'
++ message='Check ntfssecaudit -h failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit -h failed.'
+Wed Dec  7 23:44:13 2022 - ERROR - Check ntfssecaudit -h failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 42'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 42'
+Wed Dec  7 23:44:13 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 42
++ return 0
++ ntfssecaudit -arv /dev/vdb
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 43: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit -arv failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit -arv failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit -arv failed.'
++ LOG_ERROR 'Check ntfssecaudit -arv failed.'
++ message='Check ntfssecaudit -arv failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit -arv failed.'
+Wed Dec  7 23:44:14 2022 - ERROR - Check ntfssecaudit -arv failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 44'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 44'
+Wed Dec  7 23:44:14 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 44
++ return 0
++ ntfssecaudit -v /dev/vdb test.txt
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 45: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit -v failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit -v failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit -v failed.'
++ LOG_ERROR 'Check ntfssecaudit -v failed.'
++ message='Check ntfssecaudit -v failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit -v failed.'
+Wed Dec  7 23:44:15 2022 - ERROR - Check ntfssecaudit -v failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 46'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 46'
+Wed Dec  7 23:44:16 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 46
++ return 0
++ ntfssecaudit -rv /dev/vdb test
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 47: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit -rv failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit -rv failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit -rv failed.'
++ LOG_ERROR 'Check ntfssecaudit -rv failed.'
++ message='Check ntfssecaudit -rv failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit -rv failed.'
+Wed Dec  7 23:44:16 2022 - ERROR - Check ntfssecaudit -rv failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 48'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 48'
+Wed Dec  7 23:44:17 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 48
++ return 0
++ ntfssecaudit -bv /dev/vdb test
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 49: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit -bv failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit -bv failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit -bv failed.'
++ LOG_ERROR 'Check ntfssecaudit -bv failed.'
++ message='Check ntfssecaudit -bv failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit -bv failed.'
+Wed Dec  7 23:44:17 2022 - ERROR - Check ntfssecaudit -bv failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 50'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 50'
+Wed Dec  7 23:44:18 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 50
++ return 0
++ ntfssecaudit -sev /dev/vdb test.txt
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 51: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit -sev failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit -sev failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit -sev failed.'
++ LOG_ERROR 'Check ntfssecaudit -sev failed.'
++ message='Check ntfssecaudit -sev failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit -sev failed.'
+Wed Dec  7 23:44:18 2022 - ERROR - Check ntfssecaudit -sev failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 52'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 52'
+Wed Dec  7 23:44:19 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 52
++ return 0
++ ntfssecaudit /dev/vdb 777 test.txt
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 53: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit perms file failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit perms file failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit perms file failed.'
++ LOG_ERROR 'Check ntfssecaudit perms file failed.'
++ message='Check ntfssecaudit perms file failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit perms file failed.'
+Wed Dec  7 23:44:19 2022 - ERROR - Check ntfssecaudit perms file failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 54'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 54'
+Wed Dec  7 23:44:20 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 54
++ return 0
++ ntfssecaudit -rv /dev/vdb 777 test
++ grep 'No errors were found'
+oe_test_ntfs-3g_ntfssecaudit.sh: line 55: ntfssecaudit: command not found
++ CHECK_RESULT 1 0 0 'Check ntfssecaudit perms directory failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfssecaudit perms directory failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfssecaudit perms directory failed.'
++ LOG_ERROR 'Check ntfssecaudit perms directory failed.'
++ message='Check ntfssecaudit perms directory failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfssecaudit perms directory failed.'
+Wed Dec  7 23:44:21 2022 - ERROR - Check ntfssecaudit perms directory failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfssecaudit.sh line 56'
++ message='oe_test_ntfs-3g_ntfssecaudit.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfssecaudit.sh line 56'
+Wed Dec  7 23:44:21 2022 - ERROR - oe_test_ntfs-3g_ntfssecaudit.sh line 56
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:44:22 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 11
++ test 11 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:44:22 2022 - ERROR - failed to execute the case.
++ exit 11
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:44:23 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdb contains a ext4 file system
+	created on Wed Dec  7 23:43:17 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: cfab827a-09cf-4e18-b1b9-5cafbcb20a40
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ rm -rf /mnt/windows test.txt
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp_9696szt ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp_9696szt
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:44:33 2022 - INFO  - Finish restoring the test environment.

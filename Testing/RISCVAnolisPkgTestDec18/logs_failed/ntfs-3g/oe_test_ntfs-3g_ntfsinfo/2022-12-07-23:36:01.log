@@ -1,0 +1,307 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:36:04 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmps1ercs91
++ '[' -z '' ']'
++ tmpfile=/tmp/tmps1ercs91
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ mkdir -p /mnt/windows
++ ntfs-3g /dev/vdb /mnt/windows
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ touch /mnt/windows/test.txt
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:36:37 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:36:38 2022 - INFO  - Start to run test.
++ ntfsinfo --help
++ grep 'Usage: ntfsinfo \[options\]'
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --help failed.'
++ LOG_ERROR 'Check ntfsinfo --help failed.'
++ message='Check ntfsinfo --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --help failed.'
+Wed Dec  7 23:36:38 2022 - ERROR - Check ntfsinfo --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 35'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 35'
+Wed Dec  7 23:36:39 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 35
++ return 0
++ ntfsinfo --version
++ grep 'ntfsinfo v'
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --version failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --version failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --version failed.'
++ LOG_ERROR 'Check ntfsinfo --version failed.'
++ message='Check ntfsinfo --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --version failed.'
+Wed Dec  7 23:36:39 2022 - ERROR - Check ntfsinfo --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 37'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 37'
+Wed Dec  7 23:36:40 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 37
++ return 0
++ ntfsinfo --inode 5 /dev/vdb
++ grep 'End of inode reached'
+oe_test_ntfs-3g_ntfsinfo.sh: line 38: ntfsinfo: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --inode failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --inode failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --inode failed.'
++ LOG_ERROR 'Check ntfsinfo --inode failed.'
++ message='Check ntfsinfo --inode failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --inode failed.'
+Wed Dec  7 23:36:40 2022 - ERROR - Check ntfsinfo --inode failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 39'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 39'
+Wed Dec  7 23:36:41 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 39
++ return 0
++ ntfsinfo /dev/vdb --file test.txt
++ grep 'End of inode reached'
+oe_test_ntfs-3g_ntfsinfo.sh: line 40: ntfsinfo: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --file failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --file failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --file failed.'
++ LOG_ERROR 'Check ntfsinfo --file failed.'
++ message='Check ntfsinfo --file failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --file failed.'
+Wed Dec  7 23:36:42 2022 - ERROR - Check ntfsinfo --file failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 41'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 41'
+Wed Dec  7 23:36:42 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 41
++ return 0
++ ntfsinfo /dev/vdb --mft
++ grep 'FILE_Bitmap Data Attribute Information'
+oe_test_ntfs-3g_ntfsinfo.sh: line 42: ntfsinfo: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --mft failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --mft failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --mft failed.'
++ LOG_ERROR 'Check ntfsinfo --mft failed.'
++ message='Check ntfsinfo --mft failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --mft failed.'
+Wed Dec  7 23:36:43 2022 - ERROR - Check ntfsinfo --mft failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 43'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 43'
+Wed Dec  7 23:36:43 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 43
++ return 0
++ ntfsinfo /dev/vdb -t --inode 5
++ grep 'End of inode reached'
+oe_test_ntfs-3g_ntfsinfo.sh: line 44: ntfsinfo: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --notime failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --notime failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --notime failed.'
++ LOG_ERROR 'Check ntfsinfo --notime failed.'
++ message='Check ntfsinfo --notime failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --notime failed.'
+Wed Dec  7 23:36:44 2022 - ERROR - Check ntfsinfo --notime failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 45'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 45'
+Wed Dec  7 23:36:44 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 45
++ return 0
++ ntfsinfo /dev/vdb --force --inode 5
++ grep 'End of inode reached'
+oe_test_ntfs-3g_ntfsinfo.sh: line 46: ntfsinfo: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --force failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --force failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --force failed.'
++ LOG_ERROR 'Check ntfsinfo --force failed.'
++ message='Check ntfsinfo --force failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --force failed.'
+Wed Dec  7 23:36:45 2022 - ERROR - Check ntfsinfo --force failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 47'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 47'
+Wed Dec  7 23:36:45 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 47
++ return 0
++ ntfsinfo /dev/vdb --quiet --inode 5
++ grep 'End of inode reached'
+oe_test_ntfs-3g_ntfsinfo.sh: line 48: ntfsinfo: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --quiet failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --quiet failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --quiet failed.'
++ LOG_ERROR 'Check ntfsinfo --quiet failed.'
++ message='Check ntfsinfo --quiet failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --quiet failed.'
+Wed Dec  7 23:36:46 2022 - ERROR - Check ntfsinfo --quiet failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 49'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 49'
+Wed Dec  7 23:36:47 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 49
++ return 0
++ ntfsinfo /dev/vdb --verbose --inode 5
++ grep 'End of inode reached'
+oe_test_ntfs-3g_ntfsinfo.sh: line 50: ntfsinfo: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsinfo --verbose failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsinfo --verbose failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsinfo --verbose failed.'
++ LOG_ERROR 'Check ntfsinfo --verbose failed.'
++ message='Check ntfsinfo --verbose failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsinfo --verbose failed.'
+Wed Dec  7 23:36:47 2022 - ERROR - Check ntfsinfo --verbose failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsinfo.sh line 51'
++ message='oe_test_ntfs-3g_ntfsinfo.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsinfo.sh line 51'
+Wed Dec  7 23:36:48 2022 - ERROR - oe_test_ntfs-3g_ntfsinfo.sh line 51
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:36:48 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:36:49 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:36:49 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdb contains a ext4 file system
+	created on Wed Dec  7 23:35:45 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: 75b92652-4e71-4584-8399-baa048654b5e
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ rm -rf /mnt/windows
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmps1ercs91 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmps1ercs91
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:37:00 2022 - INFO  - Finish restoring the test environment.

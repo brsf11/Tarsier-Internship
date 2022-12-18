@@ -1,0 +1,11 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/cmake",
+    "cases": [
+        {
+            "name": "oe_test_ccmake"
+        },
+        {
+            "name": "oe_test_ccmake3"
+        }
+    ]
+}

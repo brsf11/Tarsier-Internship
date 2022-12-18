@@ -1,0 +1,309 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Tue Dec  6 23:21:37 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL cups
++ pkgs=cups
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs cups --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:02:18 ago on Tue 06 Dec 2022 11:19:40 PM EST.
+Error: 
+ Problem: package cups-1:2.4.1-2.an8.riscv64 requires cups-filters, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides liberation-mono-fonts needed by cups-filters-1.28.11-3.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:02:18 ago on Tue 06 Dec 2022 11:19:40 PM EST.
+Error: 
+ Problem: package cups-1:2.4.1-2.an8.riscv64 requires cups-filters, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides liberation-mono-fonts needed by cups-filters-1.28.11-3.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Tue Dec  6 23:22:00 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Tue Dec  6 23:22:00 2022 - INFO  - Start to run test.
++ test_execution cups.socket
++ service=cups.socket
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-06 23:22:00'
++ test_restart cups.socket
++ service=cups.socket
++ systemctl restart cups.socket
+Failed to restart cups.socket: Unit cups.socket not found.
++ CHECK_RESULT 5 0 0 'cups.socket restart failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='cups.socket restart failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'cups.socket restart failed'
++ LOG_ERROR 'cups.socket restart failed'
++ message='cups.socket restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'cups.socket restart failed'
+Tue Dec  6 23:22:01 2022 - ERROR - cups.socket restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 34'
++ message='../common/common_lib.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 34'
+Tue Dec  6 23:22:01 2022 - ERROR - ../common/common_lib.sh line 34
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status cups.socket
++ grep 'Active: active'
+Unit cups.socket could not be found.
++ CHECK_RESULT 1 0 0 'cups.socket restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='cups.socket restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'cups.socket restart failed'
++ LOG_ERROR 'cups.socket restart failed'
++ message='cups.socket restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'cups.socket restart failed'
+Tue Dec  6 23:22:08 2022 - ERROR - cups.socket restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 37'
++ message='../common/common_lib.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 37'
+Tue Dec  6 23:22:08 2022 - ERROR - ../common/common_lib.sh line 37
++ return 0
++ systemctl stop cups.socket
+Failed to stop cups.socket: Unit cups.socket not loaded.
++ CHECK_RESULT 5 0 0 'cups.socket stop failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='cups.socket stop failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'cups.socket stop failed'
++ LOG_ERROR 'cups.socket stop failed'
++ message='cups.socket stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'cups.socket stop failed'
+Tue Dec  6 23:22:09 2022 - ERROR - cups.socket stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 39'
++ message='../common/common_lib.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 39'
+Tue Dec  6 23:22:09 2022 - ERROR - ../common/common_lib.sh line 39
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status cups.socket
++ grep 'Active: inactive'
+Unit cups.socket could not be found.
++ CHECK_RESULT 1 0 0 'cups.socket stop failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='cups.socket stop failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'cups.socket stop failed'
++ LOG_ERROR 'cups.socket stop failed'
++ message='cups.socket stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'cups.socket stop failed'
+Tue Dec  6 23:22:16 2022 - ERROR - cups.socket stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 42'
++ message='../common/common_lib.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 42'
+Tue Dec  6 23:22:16 2022 - ERROR - ../common/common_lib.sh line 42
++ return 0
++ systemctl start cups.socket
+Failed to start cups.socket: Unit cups.socket not found.
++ CHECK_RESULT 5 0 0 'cups.socket start failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='cups.socket start failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'cups.socket start failed'
++ LOG_ERROR 'cups.socket start failed'
++ message='cups.socket start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'cups.socket start failed'
+Tue Dec  6 23:22:17 2022 - ERROR - cups.socket start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 44'
++ message='../common/common_lib.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 44'
+Tue Dec  6 23:22:17 2022 - ERROR - ../common/common_lib.sh line 44
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ grep 'Active: active'
++ systemctl status cups.socket
+Unit cups.socket could not be found.
++ CHECK_RESULT 1 0 0 'cups.socket start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='cups.socket start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'cups.socket start failed'
++ LOG_ERROR 'cups.socket start failed'
++ message='cups.socket start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'cups.socket start failed'
+Tue Dec  6 23:22:24 2022 - ERROR - cups.socket start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 47'
++ message='../common/common_lib.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 47'
+Tue Dec  6 23:22:24 2022 - ERROR - ../common/common_lib.sh line 47
++ return 0
++ test_enabled cups.socket
++ service=cups.socket
+++ systemctl is-enabled cups.socket
+Failed to get unit file state for cups.socket: No such file or directory
++ state=
++ '[' '' == enabled ']'
++ '[' '' == disabled ']'
++ '[' '' == masked ']'
++ '[' '' == static ']'
++ LOG_INFO 'Unit is indirect, ignoring.'
++ message='Unit is indirect, ignoring.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Unit is indirect, ignoring.'
+Tue Dec  6 23:22:25 2022 - INFO  - Unit is indirect, ignoring.
++ journalctl --since '2022-12-06 23:22:00' -u cups.socket
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ CHECK_RESULT 1 0 1 'There is an error message for the log of cups.socket'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of cups.socket'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ systemctl start cups.socket
+Failed to start cups.socket: Unit cups.socket not found.
++ systemctl reload cups.socket
++ grep 'Job type reload is not applicable for unit cups.socket'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_socket_cups.sh line 33'
++ message='oe_test_socket_cups.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_socket_cups.sh line 33'
+Tue Dec  6 23:22:26 2022 - ERROR - oe_test_socket_cups.sh line 33
++ return 0
++ systemctl status cups.socket
++ grep 'Active: active'
+Unit cups.socket could not be found.
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_socket_cups.sh line 35'
++ message='oe_test_socket_cups.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_socket_cups.sh line 35'
+Tue Dec  6 23:22:27 2022 - ERROR - oe_test_socket_cups.sh line 35
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Tue Dec  6 23:22:27 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 8
++ test 8 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Tue Dec  6 23:22:28 2022 - ERROR - failed to execute the case.
++ exit 8
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Tue Dec  6 23:22:28 2022 - INFO  - start environment cleanup.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:02:18 ago on Tue 06 Dec 2022 11:19:40 PM EST.
+Error: 
+ Problem: package cups-1:2.4.1-2.an8.riscv64 requires cups-filters, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides liberation-mono-fonts needed by cups-filters-1.28.11-3.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:02:18 ago on Tue 06 Dec 2022 11:19:40 PM EST.
+Error: 
+ Problem: package cups-1:2.4.1-2.an8.riscv64 requires cups-filters, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides liberation-mono-fonts needed by cups-filters-1.28.11-3.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:18 ago on Tue 06 Dec 2022 11:19:40 PM EST.\nError: \n Problem: package cups-1:2.4.1-2.an8.riscv64 requires cups-filters, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides liberation-mono-fonts needed by cups-filters-1.28.11-3.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Tue Dec  6 23:22:31 2022 - INFO  - Finish environment cleanup!

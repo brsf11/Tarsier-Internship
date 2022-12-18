@@ -1,0 +1,11 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/rubygem-bundler",
+    "cases": [
+        {
+            "name": "oe_test_rubygem-bundler_bundle_02"
+        },
+        {
+            "name": "oe_test_rubygem-bundler_bundle_05"
+        }
+    ]
+}

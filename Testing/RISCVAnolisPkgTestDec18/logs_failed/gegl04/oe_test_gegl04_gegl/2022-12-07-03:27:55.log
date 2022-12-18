@@ -1,0 +1,157 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n function ']'
++ config_params
++ LOG_INFO 'This test case has no config params to load!'
++ message='This test case has no config params to load!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'This test case has no config params to load!'
+Wed Dec  7 03:27:58 2022 - INFO  - This test case has no config params to load!
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 03:27:58 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL gegl04
++ pkgs=gegl04
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs gegl04 --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:28:09 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libbabl-0.1.so.0()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libbabl-0.1.so.0(V0_1_0)(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libumfpack.so.5()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:28:09 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libbabl-0.1.so.0()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libbabl-0.1.so.0(V0_1_0)(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libumfpack.so.5()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 03:28:27 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 03:28:28 2022 - INFO  - Start to run test.
++ gegl -h
++ grep usage
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_gegl04_gegl.sh line 32'
++ message='oe_test_gegl04_gegl.sh line 32'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_gegl04_gegl.sh line 32'
+Wed Dec  7 03:28:28 2022 - ERROR - oe_test_gegl04_gegl.sh line 32
++ return 0
++ gegl --list-all
++ grep :
+oe_test_gegl04_gegl.sh: line 33: gegl: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_gegl04_gegl.sh line 34'
++ message='oe_test_gegl04_gegl.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_gegl04_gegl.sh line 34'
+Wed Dec  7 03:28:29 2022 - ERROR - oe_test_gegl04_gegl.sh line 34
++ return 0
++ gegl gegl -X -v -p
++ grep 'Parsed commandline'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_gegl04_gegl.sh line 36'
++ message='oe_test_gegl04_gegl.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_gegl04_gegl.sh line 36'
+Wed Dec  7 03:28:29 2022 - ERROR - oe_test_gegl04_gegl.sh line 36
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 03:28:30 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 3
++ test 3 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 03:28:31 2022 - ERROR - failed to execute the case.
++ exit 3
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 03:28:31 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:28:09 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libbabl-0.1.so.0()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libbabl-0.1.so.0(V0_1_0)(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libumfpack.so.5()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:28:09 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libbabl-0.1.so.0()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libbabl-0.1.so.0(V0_1_0)(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+  - nothing provides libumfpack.so.5()(64bit) needed by gegl04-0.4.34-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:28:09 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides libbabl-0.1.so.0()(64bit) needed by gegl04-0.4.34-2.an8.riscv64\n  - nothing provides libbabl-0.1.so.0(V0_1_0)(64bit) needed by gegl04-0.4.34-2.an8.riscv64\n  - nothing provides libumfpack.so.5()(64bit) needed by gegl04-0.4.34-2.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 03:28:33 2022 - INFO  - Finish restoring the test environment.

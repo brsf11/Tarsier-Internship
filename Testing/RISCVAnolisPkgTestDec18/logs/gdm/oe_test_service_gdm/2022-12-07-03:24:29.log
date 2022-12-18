@@ -1,0 +1,346 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Wed Dec  7 03:24:32 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL gdm
++ pkgs=gdm
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs gdm --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:24:43 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides setxkbmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-shell needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides xmodmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session-wayland-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-settings-daemon >= 3.27.90 needed by gdm-1:41.3-3.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:24:43 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides setxkbmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-shell needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides xmodmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session-wayland-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-settings-daemon >= 3.27.90 needed by gdm-1:41.3-3.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Wed Dec  7 03:25:01 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Wed Dec  7 03:25:02 2022 - INFO  - Start testing...
++ test_execution gdm.service
++ service=gdm.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-07 03:25:02'
++ test_restart gdm.service
++ service=gdm.service
++ systemctl restart gdm.service
+Failed to restart gdm.service: Unit gdm.service not found.
++ CHECK_RESULT 5 0 0 'gdm.service restart failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='gdm.service restart failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'gdm.service restart failed'
++ LOG_ERROR 'gdm.service restart failed'
++ message='gdm.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service restart failed'
+Wed Dec  7 03:25:02 2022 - ERROR - gdm.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 34'
++ message='../common/common_lib.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 34'
+Wed Dec  7 03:25:03 2022 - ERROR - ../common/common_lib.sh line 34
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status gdm.service
++ grep 'Active: active'
+Unit gdm.service could not be found.
++ CHECK_RESULT 1 0 0 'gdm.service restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='gdm.service restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'gdm.service restart failed'
++ LOG_ERROR 'gdm.service restart failed'
++ message='gdm.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service restart failed'
+Wed Dec  7 03:25:09 2022 - ERROR - gdm.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 37'
++ message='../common/common_lib.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 37'
+Wed Dec  7 03:25:10 2022 - ERROR - ../common/common_lib.sh line 37
++ return 0
++ systemctl stop gdm.service
+Failed to stop gdm.service: Unit gdm.service not loaded.
++ CHECK_RESULT 5 0 0 'gdm.service stop failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='gdm.service stop failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'gdm.service stop failed'
++ LOG_ERROR 'gdm.service stop failed'
++ message='gdm.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service stop failed'
+Wed Dec  7 03:25:10 2022 - ERROR - gdm.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 39'
++ message='../common/common_lib.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 39'
+Wed Dec  7 03:25:11 2022 - ERROR - ../common/common_lib.sh line 39
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status gdm.service
++ grep 'Active: inactive'
+Unit gdm.service could not be found.
++ CHECK_RESULT 1 0 0 'gdm.service stop failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='gdm.service stop failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'gdm.service stop failed'
++ LOG_ERROR 'gdm.service stop failed'
++ message='gdm.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service stop failed'
+Wed Dec  7 03:25:17 2022 - ERROR - gdm.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 42'
++ message='../common/common_lib.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 42'
+Wed Dec  7 03:25:18 2022 - ERROR - ../common/common_lib.sh line 42
++ return 0
++ systemctl start gdm.service
+Failed to start gdm.service: Unit gdm.service not found.
++ CHECK_RESULT 5 0 0 'gdm.service start failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='gdm.service start failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'gdm.service start failed'
++ LOG_ERROR 'gdm.service start failed'
++ message='gdm.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service start failed'
+Wed Dec  7 03:25:18 2022 - ERROR - gdm.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 44'
++ message='../common/common_lib.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 44'
+Wed Dec  7 03:25:19 2022 - ERROR - ../common/common_lib.sh line 44
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status gdm.service
++ grep 'Active: active'
+Unit gdm.service could not be found.
++ CHECK_RESULT 1 0 0 'gdm.service start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='gdm.service start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'gdm.service start failed'
++ LOG_ERROR 'gdm.service start failed'
++ message='gdm.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service start failed'
+Wed Dec  7 03:25:25 2022 - ERROR - gdm.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 47'
++ message='../common/common_lib.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 47'
+Wed Dec  7 03:25:26 2022 - ERROR - ../common/common_lib.sh line 47
++ return 0
++ test_enabled gdm.service
++ service=gdm.service
+++ systemctl is-enabled gdm.service
+Failed to get unit file state for gdm.service: No such file or directory
++ state=
++ '[' '' == enabled ']'
++ '[' '' == disabled ']'
++ '[' '' == masked ']'
++ '[' '' == static ']'
++ LOG_INFO 'Unit is indirect, ignoring.'
++ message='Unit is indirect, ignoring.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Unit is indirect, ignoring.'
+Wed Dec  7 03:25:26 2022 - INFO  - Unit is indirect, ignoring.
++ grep -i 'fail\|error'
++ journalctl --since '2022-12-07 03:25:02' -u gdm.service
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ CHECK_RESULT 1 0 1 'There is an error message for the log of gdm.service'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of gdm.service'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ systemctl start gdm.service
+Failed to start gdm.service: Unit gdm.service not found.
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ sed -i 's\ExecStart=/usr/sbin/gdm\ExecStart=/usr/sbin/gdm --fatal-warnings\g' /usr/lib/systemd/system/gdm.service
+sed: can't read /usr/lib/systemd/system/gdm.service: No such file or directory
++ systemctl daemon-reload
++ systemctl reload gdm.service
+Failed to reload gdm.service: Unit gdm.service not found.
++ CHECK_RESULT 5 0 0 'gdm.service reload failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='gdm.service reload failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'gdm.service reload failed'
++ LOG_ERROR 'gdm.service reload failed'
++ message='gdm.service reload failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service reload failed'
+Wed Dec  7 03:25:35 2022 - ERROR - gdm.service reload failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_gdm.sh line 36'
++ message='oe_test_service_gdm.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_gdm.sh line 36'
+Wed Dec  7 03:25:36 2022 - ERROR - oe_test_service_gdm.sh line 36
++ return 0
++ systemctl status gdm.service
++ grep 'Active: active'
+Unit gdm.service could not be found.
++ CHECK_RESULT 1 0 0 'gdm.service reload causes the service status to change'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='gdm.service reload causes the service status to change'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'gdm.service reload causes the service status to change'
++ LOG_ERROR 'gdm.service reload causes the service status to change'
++ message='gdm.service reload causes the service status to change'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gdm.service reload causes the service status to change'
+Wed Dec  7 03:25:36 2022 - ERROR - gdm.service reload causes the service status to change
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_gdm.sh line 38'
++ message='oe_test_service_gdm.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_gdm.sh line 38'
+Wed Dec  7 03:25:37 2022 - ERROR - oe_test_service_gdm.sh line 38
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Wed Dec  7 03:25:37 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 8
++ test 8 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 03:25:38 2022 - ERROR - failed to execute the case.
++ exit 8
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Wed Dec  7 03:25:38 2022 - INFO  - start environment cleanup.
++ sed -i 's\ExecStart=/usr/sbin/gdm --fatal-warnings\ExecStart=/usr/sbin/gdm\g' /usr/lib/systemd/system/gdm.service
+sed: can't read /usr/lib/systemd/system/gdm.service: No such file or directory
++ systemctl daemon-reload
++ systemctl reload gdm.service
+Failed to reload gdm.service: Unit gdm.service not found.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:24:43 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides setxkbmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-shell needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides xmodmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session-wayland-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-settings-daemon >= 3.27.90 needed by gdm-1:41.3-3.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:24:43 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides setxkbmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-shell needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides xmodmap needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-session-wayland-session needed by gdm-1:41.3-3.an8.riscv64
+  - nothing provides gnome-settings-daemon >= 3.27.90 needed by gdm-1:41.3-3.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:24:43 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides setxkbmap needed by gdm-1:41.3-3.an8.riscv64\n  - nothing provides gnome-shell needed by gdm-1:41.3-3.an8.riscv64\n  - nothing provides xmodmap needed by gdm-1:41.3-3.an8.riscv64\n  - nothing provides gnome-session needed by gdm-1:41.3-3.an8.riscv64\n  - nothing provides gnome-session-wayland-session needed by gdm-1:41.3-3.an8.riscv64\n  - nothing provides gnome-settings-daemon >= 3.27.90 needed by gdm-1:41.3-3.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Wed Dec  7 03:25:43 2022 - INFO  - Finish environment cleanup!

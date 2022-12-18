@@ -1,0 +1,479 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Tue Dec  6 22:34:29 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'colm colm-devel'
++ pkgs='colm colm-devel'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'colm colm-devel' --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpxi34rjrm
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpxi34rjrm
++ touch mu.txt
++ cat
++ gcc zjl.c -o zhu
+oe_test_colm.sh: line 43: gcc: command not found
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Tue Dec  6 22:35:29 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Tue Dec  6 22:35:29 2022 - INFO  - Start to run test.
++ colm --help
++ grep usage
+usage: colm [options] file
+   -h, -H, -?, --help   print this usage and exit
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ colm --version
++ grep 'Colm version'
+Colm version 0.13.0.7 May 2019
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ colm -b zhu mu.txt -d
++ grep 'compiling with'
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
+compiling with: 'gcc -Wall -Wwrite-strings -g -o mu mu.c -I/usr/include -L/usr/lib -Wl,-rpath,/usr/lib -lcolm'
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -f mu.c -a -f mu
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 56'
++ message='oe_test_colm.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 56'
+Tue Dec  6 22:35:30 2022 - ERROR - oe_test_colm.sh line 56
++ return 0
++ file mu
++ grep executable
+oe_test_colm.sh: line 57: file: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 58'
++ message='oe_test_colm.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 58'
+Tue Dec  6 22:35:30 2022 - ERROR - oe_test_colm.sh line 58
++ return 0
++ grep zhu_read_reduce mu.c
+void zhu_read_reduce( program_t *prg, int reducer, input_t *stream );
+	&zhu_read_reduce,
+void zhu_read_reduce( program_t *prg, int reducer, input_t *stream ) {}
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ colm -o zhu mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 62'
++ message='oe_test_colm.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 62'
+Tue Dec  6 22:35:31 2022 - ERROR - oe_test_colm.sh line 62
++ return 0
++ grep colm_object_read_reduce zhu.c
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream );
+	&colm_object_read_reduce,
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream ) {}
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ colm -e zhu mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 66'
++ message='oe_test_colm.sh line 66'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 66'
+Tue Dec  6 22:35:32 2022 - ERROR - oe_test_colm.sh line 66
++ return 0
++ test -f mu.c -a -f mu
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 68'
++ message='oe_test_colm.sh line 68'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 68'
+Tue Dec  6 22:35:33 2022 - ERROR - oe_test_colm.sh line 68
++ return 0
++ file mu
++ grep executable
+oe_test_colm.sh: line 69: file: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 70'
++ message='oe_test_colm.sh line 70'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 70'
+Tue Dec  6 22:35:33 2022 - ERROR - oe_test_colm.sh line 70
++ return 0
++ grep colm_object_read_reduce mu.c
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream );
+	&colm_object_read_reduce,
+void colm_object_read_reduce( program_t *prg, int reducer, input_t *stream ) {}
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rm -f mu mu.c zhu
++ gcc zjl.c -o zhu
+oe_test_colm.sh: line 74: gcc: command not found
++ colm -x zhu mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 76'
++ message='oe_test_colm.sh line 76'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 76'
+Tue Dec  6 22:35:34 2022 - ERROR - oe_test_colm.sh line 76
++ return 0
++ test -f mu.c -a -f mu
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 78'
++ message='oe_test_colm.sh line 78'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 78'
+Tue Dec  6 22:35:34 2022 - ERROR - oe_test_colm.sh line 78
++ return 0
++ file zhu
++ grep 'ASCII text'
+oe_test_colm.sh: line 79: file: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 80'
++ message='oe_test_colm.sh line 80'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 80'
+Tue Dec  6 22:35:35 2022 - ERROR - oe_test_colm.sh line 80
++ return 0
++ rm -f mu mu.c zhu
++ gcc zjl.c -shared -fPIC -o zhu
+oe_test_colm.sh: line 82: gcc: command not found
++ colm -a zhu mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 84'
++ message='oe_test_colm.sh line 84'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 84'
+Tue Dec  6 22:35:36 2022 - ERROR - oe_test_colm.sh line 84
++ return 0
++ test -f mu.c -a -f mu
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 86'
++ message='oe_test_colm.sh line 86'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 86'
+Tue Dec  6 22:35:36 2022 - ERROR - oe_test_colm.sh line 86
++ return 0
++ file mu
++ grep executable
+oe_test_colm.sh: line 87: file: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 88'
++ message='oe_test_colm.sh line 88'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 88'
+Tue Dec  6 22:35:37 2022 - ERROR - oe_test_colm.sh line 88
++ return 0
++ colm -E N=V mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 90'
++ message='oe_test_colm.sh line 90'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 90'
+Tue Dec  6 22:35:38 2022 - ERROR - oe_test_colm.sh line 90
++ return 0
++ colm -I /tmp/colm/include_path mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 92'
++ message='oe_test_colm.sh line 92'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 92'
+Tue Dec  6 22:35:38 2022 - ERROR - oe_test_colm.sh line 92
++ return 0
++ colm -i mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 94'
++ message='oe_test_colm.sh line 94'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 94'
+Tue Dec  6 22:35:39 2022 - ERROR - oe_test_colm.sh line 94
++ return 0
++ colm -L /tmp/colm/library_path mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 96'
++ message='oe_test_colm.sh line 96'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 96'
+Tue Dec  6 22:35:40 2022 - ERROR - oe_test_colm.sh line 96
++ return 0
++ colm -l mu.txt
+sh: line 1: gcc: command not found
+error: colm: there was a problem compiling the output
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_colm.sh line 98'
++ message='oe_test_colm.sh line 98'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_colm.sh line 98'
+Tue Dec  6 22:35:40 2022 - ERROR - oe_test_colm.sh line 98
++ return 0
++ colm -c mu.txt
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ colm -b zhu mu.txt -V
++ grep digraph
+digraph  {
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Tue Dec  6 22:35:41 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 17
++ test 17 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Tue Dec  6 22:35:42 2022 - ERROR - failed to execute the case.
++ exit 17
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Tue Dec  6 22:35:42 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpxi34rjrm ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpxi34rjrm
++ '[' 0 -ne 0 ']'
++ rm -f mu mu.c mu.txt zjl.c zhu zhu.c
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Tue Dec  6 22:35:51 2022 - INFO  - End to restore the test environment.

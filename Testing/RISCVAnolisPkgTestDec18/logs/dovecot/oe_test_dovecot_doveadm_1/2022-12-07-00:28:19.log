@@ -1,0 +1,442 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the database config.'
++ message='Start to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the database config.'
+Wed Dec  7 00:28:21 2022 - INFO  - Start to prepare the database config.
++ DNF_INSTALL dovecot
++ pkgs=dovecot
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs dovecot --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:03:46 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:03:46 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ cp /etc/dovecot/conf.d/10-ssl.conf /etc/dovecot/conf.d/10-ssl.conf.bak
+cp: cannot stat '/etc/dovecot/conf.d/10-ssl.conf': No such file or directory
++ sed -i '/ssl_key = <\/etc\/pki\/dovecot\/private\/dovecot.pem/d' /etc/dovecot/conf.d/10-ssl.conf
+sed: can't read /etc/dovecot/conf.d/10-ssl.conf: No such file or directory
++ systemctl restart dovecot
+Failed to restart dovecot.service: Unit dovecot.service not found.
++ LOG_INFO 'End to prepare the database config.'
++ message='End to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the database config.'
+Wed Dec  7 00:28:44 2022 - INFO  - End to prepare the database config.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 00:28:44 2022 - INFO  - Start to run test.
++ doveadm -D who
+oe_test_dovecot_doveadm_1.sh: line 35: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm who detail failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm who detail failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm who detail failed.'
++ LOG_ERROR 'Check doveadm who detail failed.'
++ message='Check doveadm who detail failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm who detail failed.'
+Wed Dec  7 00:28:45 2022 - ERROR - Check doveadm who detail failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 36'
++ message='oe_test_dovecot_doveadm_1.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 36'
+Wed Dec  7 00:28:45 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 36
++ return 0
++ doveadm -v who
+oe_test_dovecot_doveadm_1.sh: line 37: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm who verbose failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm who verbose failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm who verbose failed.'
++ LOG_ERROR 'Check doveadm who verbose failed.'
++ message='Check doveadm who verbose failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm who verbose failed.'
+Wed Dec  7 00:28:46 2022 - ERROR - Check doveadm who verbose failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 38'
++ message='oe_test_dovecot_doveadm_1.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 38'
+Wed Dec  7 00:28:46 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 38
++ return 0
++ doveadm who -1
+oe_test_dovecot_doveadm_1.sh: line 39: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm who -1 failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm who -1 failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm who -1 failed.'
++ LOG_ERROR 'Check doveadm who -1 failed.'
++ message='Check doveadm who -1 failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm who -1 failed.'
+Wed Dec  7 00:28:47 2022 - ERROR - Check doveadm who -1 failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 40'
++ message='oe_test_dovecot_doveadm_1.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 40'
+Wed Dec  7 00:28:47 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 40
++ return 0
++ doveadm who 127.0.0.1
+oe_test_dovecot_doveadm_1.sh: line 41: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm who 127.0.0.1 failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm who 127.0.0.1 failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm who 127.0.0.1 failed.'
++ LOG_ERROR 'Check doveadm who 127.0.0.1 failed.'
++ message='Check doveadm who 127.0.0.1 failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm who 127.0.0.1 failed.'
+Wed Dec  7 00:28:48 2022 - ERROR - Check doveadm who 127.0.0.1 failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 42'
++ message='oe_test_dovecot_doveadm_1.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 42'
+Wed Dec  7 00:28:49 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 42
++ return 0
++ doveadm who 0022
+oe_test_dovecot_doveadm_1.sh: line 43: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm who 0022 failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm who 0022 failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm who 0022 failed.'
++ LOG_ERROR 'Check doveadm who 0022 failed.'
++ message='Check doveadm who 0022 failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm who 0022 failed.'
+Wed Dec  7 00:28:49 2022 - ERROR - Check doveadm who 0022 failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 44'
++ message='oe_test_dovecot_doveadm_1.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 44'
+Wed Dec  7 00:28:50 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 44
++ return 0
++ doveadm pw -l
+oe_test_dovecot_doveadm_1.sh: line 46: doveadm: command not found
++ printf 'password\npassword\n'
++ doveadm pw
+oe_test_dovecot_doveadm_1.sh: line 47: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm pw failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm pw failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm pw failed.'
++ LOG_ERROR 'Check doveadm pw failed.'
++ message='Check doveadm pw failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm pw failed.'
+Wed Dec  7 00:28:50 2022 - ERROR - Check doveadm pw failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 48'
++ message='oe_test_dovecot_doveadm_1.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 48'
+Wed Dec  7 00:28:51 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 48
++ return 0
++ doveadm pw -p password
+oe_test_dovecot_doveadm_1.sh: line 49: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm pw -p failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm pw -p failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm pw -p failed.'
++ LOG_ERROR 'Check doveadm pw -p failed.'
++ message='Check doveadm pw -p failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm pw -p failed.'
+Wed Dec  7 00:28:51 2022 - ERROR - Check doveadm pw -p failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 50'
++ message='oe_test_dovecot_doveadm_1.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 50'
+Wed Dec  7 00:28:52 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 50
++ return 0
++ printf 'password\npassword\n'
++ doveadm pw -r 1002
++ ps -ef
+oe_test_dovecot_doveadm_1.sh: line 51: doveadm: command not found
++ grep 'doveadm pw -r 1002'
++ grep -v grep
++ CHECK_RESULT 1 0 0 'Check doveadm pw -r failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check doveadm pw -r failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check doveadm pw -r failed.'
++ LOG_ERROR 'Check doveadm pw -r failed.'
++ message='Check doveadm pw -r failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm pw -r failed.'
+Wed Dec  7 00:28:52 2022 - ERROR - Check doveadm pw -r failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 53'
++ message='oe_test_dovecot_doveadm_1.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 53'
+Wed Dec  7 00:28:53 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 53
++ return 0
++ printf 'password\npassword\n'
++ doveadm pw -u testuser
+oe_test_dovecot_doveadm_1.sh: line 54: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm pw -u failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm pw -u failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm pw -u failed.'
++ LOG_ERROR 'Check doveadm pw -u failed.'
++ message='Check doveadm pw -u failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm pw -u failed.'
+Wed Dec  7 00:28:53 2022 - ERROR - Check doveadm pw -u failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 55'
++ message='oe_test_dovecot_doveadm_1.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 55'
+Wed Dec  7 00:28:54 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 55
++ return 0
++ printf 'password\npassword\n'
++ doveadm pw -V
+oe_test_dovecot_doveadm_1.sh: line 56: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm pw -V failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm pw -V failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm pw -V failed.'
++ LOG_ERROR 'Check doveadm pw -V failed.'
++ message='Check doveadm pw -V failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm pw -V failed.'
+Wed Dec  7 00:28:55 2022 - ERROR - Check doveadm pw -V failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 57'
++ message='oe_test_dovecot_doveadm_1.sh line 57'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 57'
+Wed Dec  7 00:28:55 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 57
++ return 0
++ printf 'password\npassword\n'
++ doveadm pw -s SHA512-CRYPT
+oe_test_dovecot_doveadm_1.sh: line 58: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm pw -s failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm pw -s failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm pw -s failed.'
++ LOG_ERROR 'Check doveadm pw -s failed.'
++ message='Check doveadm pw -s failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm pw -s failed.'
+Wed Dec  7 00:28:56 2022 - ERROR - Check doveadm pw -s failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 59'
++ message='oe_test_dovecot_doveadm_1.sh line 59'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 59'
+Wed Dec  7 00:28:56 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 59
++ return 0
++ doveadm log errors
+oe_test_dovecot_doveadm_1.sh: line 61: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm log errors failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm log errors failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm log errors failed.'
++ LOG_ERROR 'Check doveadm log errors failed.'
++ message='Check doveadm log errors failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm log errors failed.'
+Wed Dec  7 00:28:57 2022 - ERROR - Check doveadm log errors failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 62'
++ message='oe_test_dovecot_doveadm_1.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 62'
+Wed Dec  7 00:28:57 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 62
++ return 0
++ doveadm log find
+oe_test_dovecot_doveadm_1.sh: line 63: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm log find failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm log find failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm log find failed.'
++ LOG_ERROR 'Check doveadm log find failed.'
++ message='Check doveadm log find failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm log find failed.'
+Wed Dec  7 00:28:58 2022 - ERROR - Check doveadm log find failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 64'
++ message='oe_test_dovecot_doveadm_1.sh line 64'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 64'
+Wed Dec  7 00:28:58 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 64
++ return 0
++ doveadm log reopen
+oe_test_dovecot_doveadm_1.sh: line 65: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm log reopen failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm log reopen failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm log reopen failed.'
++ LOG_ERROR 'Check doveadm log reopen failed.'
++ message='Check doveadm log reopen failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm log reopen failed.'
+Wed Dec  7 00:28:59 2022 - ERROR - Check doveadm log reopen failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 66'
++ message='oe_test_dovecot_doveadm_1.sh line 66'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 66'
+Wed Dec  7 00:28:59 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 66
++ return 0
++ doveadm log test
+oe_test_dovecot_doveadm_1.sh: line 67: doveadm: command not found
++ CHECK_RESULT 127 0 0 'Check doveadm log test failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check doveadm log test failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check doveadm log test failed.'
++ LOG_ERROR 'Check doveadm log test failed.'
++ message='Check doveadm log test failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveadm log test failed.'
+Wed Dec  7 00:29:00 2022 - ERROR - Check doveadm log test failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_doveadm_1.sh line 68'
++ message='oe_test_dovecot_doveadm_1.sh line 68'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_doveadm_1.sh line 68'
+Wed Dec  7 00:29:00 2022 - ERROR - oe_test_dovecot_doveadm_1.sh line 68
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 00:29:01 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 15
++ test 15 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 00:29:01 2022 - ERROR - failed to execute the case.
++ exit 15
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 00:29:02 2022 - INFO  - Start to restore the test environment.
++ systemctl stop dovecot
+Failed to stop dovecot.service: Unit dovecot.service not loaded.
++ rm -f 'a.sh*' /etc/dovecot/conf.d/10-ssl.conf
++ mv /etc/dovecot/conf.d/10-ssl.conf.bak /etc/dovecot/conf.d/10-ssl.conf
+mv: cannot stat '/etc/dovecot/conf.d/10-ssl.conf.bak': No such file or directory
+++ ps -ef
+++ grep doveadm
+++ grep -Ev 'grep|.sh'
+++ awk '{print $2}'
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:03:46 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:03:46 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:03:46 ago on Wed 07 Dec 2022 12:24:56 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64\n  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64\n  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 00:29:05 2022 - INFO  - End to restore the test environment.

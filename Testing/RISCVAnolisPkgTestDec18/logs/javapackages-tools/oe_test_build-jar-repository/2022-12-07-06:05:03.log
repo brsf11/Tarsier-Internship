@@ -1,0 +1,213 @@
++ source ../common/common_javapackages-tools.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 06:05:05 2022 - INFO  - Start to prepare the test environment.
++ deploy_env
++ DNF_INSTALL junit
++ pkgs=junit
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs junit --node 1 --tempfile ''
+Wed Dec  7 06:05:12 2022 - ERROR - pkgs:(junit) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
+++ grep 'java-.*-openjdk'
+++ rpm -qa 'java*'
+++ awk -F - '{print $2}'
++ java_version=
++ DNF_INSTALL 'javapackages-tools java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j'
++ pkgs='javapackages-tools java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'javapackages-tools java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j' --node 1 --tempfile ''
+Wed Dec  7 06:05:21 2022 - ERROR - pkgs:(java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 06:05:22 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 06:05:22 2022 - INFO  - Start to run test.
++ build-jar-repository -s ./ log4j.jar
+oe_test_build-jar-repository.sh: line 30: build-jar-repository: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_build-jar-repository.sh line 31'
++ message='oe_test_build-jar-repository.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_build-jar-repository.sh line 31'
+Wed Dec  7 06:05:23 2022 - ERROR - oe_test_build-jar-repository.sh line 31
++ return 0
++ build-jar-repository -h ./ junit.jar
+oe_test_build-jar-repository.sh: line 32: build-jar-repository: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_build-jar-repository.sh line 33'
++ message='oe_test_build-jar-repository.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_build-jar-repository.sh line 33'
+Wed Dec  7 06:05:23 2022 - ERROR - oe_test_build-jar-repository.sh line 33
++ return 0
++ build-jar-repository -c ./ easymock.jar
+oe_test_build-jar-repository.sh: line 34: build-jar-repository: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_build-jar-repository.sh line 35'
++ message='oe_test_build-jar-repository.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_build-jar-repository.sh line 35'
+Wed Dec  7 06:05:24 2022 - ERROR - oe_test_build-jar-repository.sh line 35
++ return 0
++ build-jar-repository -p ./ qdox.jar
+oe_test_build-jar-repository.sh: line 36: build-jar-repository: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_build-jar-repository.sh line 37'
++ message='oe_test_build-jar-repository.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_build-jar-repository.sh line 37'
+Wed Dec  7 06:05:24 2022 - ERROR - oe_test_build-jar-repository.sh line 37
++ return 0
++ rebuild-jar-repository -c ./ easymock.jar
+oe_test_build-jar-repository.sh: line 38: rebuild-jar-repository: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_build-jar-repository.sh line 39'
++ message='oe_test_build-jar-repository.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_build-jar-repository.sh line 39'
+Wed Dec  7 06:05:25 2022 - ERROR - oe_test_build-jar-repository.sh line 39
++ return 0
++ rebuild-jar-repository -h ./ junit.jar
+oe_test_build-jar-repository.sh: line 40: rebuild-jar-repository: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_build-jar-repository.sh line 41'
++ message='oe_test_build-jar-repository.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_build-jar-repository.sh line 41'
+Wed Dec  7 06:05:26 2022 - ERROR - oe_test_build-jar-repository.sh line 41
++ return 0
++ rebuild-jar-repository -s ./ log4j.jar
+oe_test_build-jar-repository.sh: line 42: rebuild-jar-repository: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_build-jar-repository.sh line 43'
++ message='oe_test_build-jar-repository.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_build-jar-repository.sh line 43'
+Wed Dec  7 06:05:26 2022 - ERROR - oe_test_build-jar-repository.sh line 43
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 06:05:27 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 7
++ test 7 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 06:05:27 2022 - ERROR - failed to execute the case.
++ exit 7
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 06:05:28 2022 - INFO  - Start to restore the test environment.
++ clear_env
+++ ls
+++ grep -v .sh
++ roc=
++ rm -rf
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Wed Dec  7 06:05:28 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 06:05:29 2022 - INFO  - Finish restoring the test environment.

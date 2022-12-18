@@ -1,0 +1,23 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/ruby",
+    "cases": [
+        {
+            "name": "oe_test_erb"
+        },
+        {
+            "name": "oe_test_irb_01"
+        },
+        {
+            "name": "oe_test_irb_03"
+        },
+        {
+            "name": "oe_test_rake_03"
+        },
+        {
+            "name": "oe_test_rdoc_01"
+        },
+        {
+            "name": "oe_test_ruby"
+        }
+    ]
+}

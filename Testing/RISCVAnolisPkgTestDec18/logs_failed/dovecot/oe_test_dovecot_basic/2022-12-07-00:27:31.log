@@ -1,0 +1,376 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the database config.'
++ message='Start to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the database config.'
+Wed Dec  7 00:27:34 2022 - INFO  - Start to prepare the database config.
++ DNF_INSTALL dovecot
++ pkgs=dovecot
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs dovecot --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:02:58 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:02:58 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ systemctl restart dovecot
+Failed to restart dovecot.service: Unit dovecot.service not found.
++ LOG_INFO 'End to prepare the database config.'
++ message='End to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the database config.'
+Wed Dec  7 00:27:56 2022 - INFO  - End to prepare the database config.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 00:27:56 2022 - INFO  - Start to run test.
++ dovecot --version
+oe_test_dovecot_basic.sh: line 33: dovecot: command not found
++ CHECK_RESULT 127 0 0 'Check dovecot version failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check dovecot version failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check dovecot version failed.'
++ LOG_ERROR 'Check dovecot version failed.'
++ message='Check dovecot version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check dovecot version failed.'
+Wed Dec  7 00:27:57 2022 - ERROR - Check dovecot version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 34'
++ message='oe_test_dovecot_basic.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 34'
+Wed Dec  7 00:27:58 2022 - ERROR - oe_test_dovecot_basic.sh line 34
++ return 0
++ dovecot --help
+oe_test_dovecot_basic.sh: line 35: dovecot: command not found
++ CHECK_RESULT 127 0 0 'Check dovecot help failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check dovecot help failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check dovecot help failed.'
++ LOG_ERROR 'Check dovecot help failed.'
++ message='Check dovecot help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check dovecot help failed.'
+Wed Dec  7 00:27:58 2022 - ERROR - Check dovecot help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 36'
++ message='oe_test_dovecot_basic.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 36'
+Wed Dec  7 00:27:59 2022 - ERROR - oe_test_dovecot_basic.sh line 36
++ return 0
++ dovecot -n
+oe_test_dovecot_basic.sh: line 37: dovecot: command not found
+++ uname -r
++ grep 5.14.18-100.2.riscv64.an8.riscv64
++ CHECK_RESULT 1 0 0 'Check dovecot non default config failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check dovecot non default config failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check dovecot non default config failed.'
++ LOG_ERROR 'Check dovecot non default config failed.'
++ message='Check dovecot non default config failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check dovecot non default config failed.'
+Wed Dec  7 00:27:59 2022 - ERROR - Check dovecot non default config failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 38'
++ message='oe_test_dovecot_basic.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 38'
+Wed Dec  7 00:28:00 2022 - ERROR - oe_test_dovecot_basic.sh line 38
++ return 0
++ doveconf -n
+oe_test_dovecot_basic.sh: line 39: doveconf: command not found
+++ uname -r
++ grep 5.14.18-100.2.riscv64.an8.riscv64
++ CHECK_RESULT 1 0 0 'Check doveconf non default config failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check doveconf non default config failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check doveconf non default config failed.'
++ LOG_ERROR 'Check doveconf non default config failed.'
++ message='Check doveconf non default config failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveconf non default config failed.'
+Wed Dec  7 00:28:00 2022 - ERROR - Check doveconf non default config failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 40'
++ message='oe_test_dovecot_basic.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 40'
+Wed Dec  7 00:28:01 2022 - ERROR - oe_test_dovecot_basic.sh line 40
++ return 0
++ dovecot -a
+oe_test_dovecot_basic.sh: line 41: dovecot: command not found
++ grep -q service
++ CHECK_RESULT 1 0 0 'Check dovecot all config failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check dovecot all config failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check dovecot all config failed.'
++ LOG_ERROR 'Check dovecot all config failed.'
++ message='Check dovecot all config failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check dovecot all config failed.'
+Wed Dec  7 00:28:01 2022 - ERROR - Check dovecot all config failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 42'
++ message='oe_test_dovecot_basic.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 42'
+Wed Dec  7 00:28:02 2022 - ERROR - oe_test_dovecot_basic.sh line 42
++ return 0
++ doveconf
++ grep -q service
+oe_test_dovecot_basic.sh: line 43: doveconf: command not found
++ CHECK_RESULT 1 0 0 'Check doveconf failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check doveconf failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check doveconf failed.'
++ LOG_ERROR 'Check doveconf failed.'
++ message='Check doveconf failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check doveconf failed.'
+Wed Dec  7 00:28:02 2022 - ERROR - Check doveconf failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 44'
++ message='oe_test_dovecot_basic.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 44'
+Wed Dec  7 00:28:03 2022 - ERROR - oe_test_dovecot_basic.sh line 44
++ return 0
++ dovecot --hostdomain
++ grep -q localhost
+oe_test_dovecot_basic.sh: line 45: dovecot: command not found
++ CHECK_RESULT 1 0 0 'Check dovecot hostdomain failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check dovecot hostdomain failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check dovecot hostdomain failed.'
++ LOG_ERROR 'Check dovecot hostdomain failed.'
++ message='Check dovecot hostdomain failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check dovecot hostdomain failed.'
+Wed Dec  7 00:28:04 2022 - ERROR - Check dovecot hostdomain failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 46'
++ message='oe_test_dovecot_basic.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 46'
+Wed Dec  7 00:28:04 2022 - ERROR - oe_test_dovecot_basic.sh line 46
++ return 0
++ grep -q dovecot /etc/passwd
++ CHECK_RESULT 1 0 0 'Check dovecot user created failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check dovecot user created failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check dovecot user created failed.'
++ LOG_ERROR 'Check dovecot user created failed.'
++ message='Check dovecot user created failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check dovecot user created failed.'
+Wed Dec  7 00:28:05 2022 - ERROR - Check dovecot user created failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 48'
++ message='oe_test_dovecot_basic.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 48'
+Wed Dec  7 00:28:05 2022 - ERROR - oe_test_dovecot_basic.sh line 48
++ return 0
++ CHECK_RESULT 0 0 0 'Set dovecot build options failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Set dovecot build options failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ dovecot reload
+oe_test_dovecot_basic.sh: line 50: dovecot: command not found
++ CHECK_RESULT 127 0 0 'Reload dovecot failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Reload dovecot failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Reload dovecot failed.'
++ LOG_ERROR 'Reload dovecot failed.'
++ message='Reload dovecot failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Reload dovecot failed.'
+Wed Dec  7 00:28:06 2022 - ERROR - Reload dovecot failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 51'
++ message='oe_test_dovecot_basic.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 51'
+Wed Dec  7 00:28:06 2022 - ERROR - oe_test_dovecot_basic.sh line 51
++ return 0
++ dovecot stop
+oe_test_dovecot_basic.sh: line 52: dovecot: command not found
++ CHECK_RESULT 127 0 0 'Stop dovecot failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Stop dovecot failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Stop dovecot failed.'
++ LOG_ERROR 'Stop dovecot failed.'
++ message='Stop dovecot failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Stop dovecot failed.'
+Wed Dec  7 00:28:07 2022 - ERROR - Stop dovecot failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 53'
++ message='oe_test_dovecot_basic.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 53'
+Wed Dec  7 00:28:07 2022 - ERROR - oe_test_dovecot_basic.sh line 53
++ return 0
++ dovecot -c /etc/dovecot/dovecot.conf
+oe_test_dovecot_basic.sh: line 54: dovecot: command not found
++ CHECK_RESULT 127 0 0 'Set dovecot config file failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Set dovecot config file failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Set dovecot config file failed.'
++ LOG_ERROR 'Set dovecot config file failed.'
++ message='Set dovecot config file failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Set dovecot config file failed.'
+Wed Dec  7 00:28:08 2022 - ERROR - Set dovecot config file failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 55'
++ message='oe_test_dovecot_basic.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 55'
+Wed Dec  7 00:28:08 2022 - ERROR - oe_test_dovecot_basic.sh line 55
++ return 0
++ dovecot --build-options /etc/dovecot/dovecot.conf
+oe_test_dovecot_basic.sh: line 56: dovecot: command not found
++ CHECK_RESULT 127 0 0 'Build dovecot failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Build dovecot failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Build dovecot failed.'
++ LOG_ERROR 'Build dovecot failed.'
++ message='Build dovecot failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Build dovecot failed.'
+Wed Dec  7 00:28:09 2022 - ERROR - Build dovecot failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_dovecot_basic.sh line 57'
++ message='oe_test_dovecot_basic.sh line 57'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_dovecot_basic.sh line 57'
+Wed Dec  7 00:28:10 2022 - ERROR - oe_test_dovecot_basic.sh line 57
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 00:28:10 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 12
++ test 12 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 00:28:11 2022 - ERROR - failed to execute the case.
++ exit 12
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 00:28:11 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:02:58 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:02:58 ago on Wed 07 Dec 2022 12:24:56 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:58 ago on Wed 07 Dec 2022 12:24:56 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides libicuuc.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64\n  - nothing provides libicui18n.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64\n  - nothing provides libicudata.so.67()(64bit) needed by dovecot-1:2.3.17.1-2.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
+++ ps -ef
+++ grep dovecot
+++ grep -v grep
+++ grep -v '.sh\|.py'
+++ awk '{print $2}'
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 00:28:14 2022 - INFO  - End to restore the test environment.

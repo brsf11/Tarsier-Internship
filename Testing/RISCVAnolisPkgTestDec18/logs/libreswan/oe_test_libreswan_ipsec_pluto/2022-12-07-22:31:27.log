@@ -1,0 +1,819 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the database config.'
++ message='Start to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the database config.'
+Wed Dec  7 22:31:29 2022 - INFO  - Start to prepare the database config.
++ DNF_INSTALL libreswan
++ pkgs=libreswan
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs libreswan --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp935iw_yn
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp935iw_yn
++ ipsec restart
+Redirecting to: systemctl restart ipsec.service
++ touch testfile
++ test -f /run/pluto/pluto.pid
++ rm -f /run/pluto/pluto.pid
++ LOG_INFO 'End to prepare the database config.'
++ message='End to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the database config.'
+Wed Dec  7 22:32:23 2022 - INFO  - End to prepare the database config.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 22:32:24 2022 - INFO  - Start to run test.
++ ipsec pluto --dnssec-rootkey-file testfile
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --dnssec-rootkey-file failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --dnssec-rootkey-file failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --dnssec-trusted testfile
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --dnssec-trusted failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --dnssec-trusted failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --leak-detective
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --leak-detective failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --leak-detective failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --version
++ CHECK_RESULT 0 0 0 'Check ipsec pluto version failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto version failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --help
++ CHECK_RESULT 0 0 0 'Check ipsec pluto help failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto help failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --debug-none
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --debug-none failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --debug-none failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --debug-all
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --debug-all failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --debug-all failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --debug all
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --debug failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --debug failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --listen 127.0.0.1
+/usr/libexec/ipsec/pluto: bind() will be filtered for 127.0.0.1
+
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --listen failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --listen failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --listen-tcp
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --listen-tcp failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --listen-tcp failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --no-listen-udp
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --no-listen-udp failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --no-listen-udp failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --log-no-ip --stderrlog --logfile testlog
+Dec  7 22:32:27.505993: Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --log-no-ip --stderrlog --logfile testlog failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --log-no-ip --stderrlog --logfile testlog failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --log-no-time --stderrlog
+Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
++ rm -f /run/pluto/pluto.pid
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --log-no-time --stderrlog failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --log-no-time --stderrlog failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --log-no-append --stderrlog
+Dec  7 22:32:27.842387: FIPS Mode: NO
+Dec  7 22:32:27.844381: NSS crypto library initialized
+Dec  7 22:32:27.846847: FIPS mode disabled for pluto daemon
+Dec  7 22:32:27.847017: FIPS HMAC integrity support [disabled]
+Dec  7 22:32:27.850062: libcap-ng support [enabled]
+Dec  7 22:32:27.850213: Linux audit support [enabled]
+Dec  7 22:32:27.850780: Starting Pluto (Libreswan Version 4.6 IKEv2 IKEv1 XFRM XFRMI esp-hw-offload FORK PTHREAD_SETSCHEDPRIO GCC_EXCEPTIONS NSS (IPsec profile) (NSS-PRF) DNSSEC SYSTEMD_WATCHDOG LABELED_IPSEC (SELINUX) SECCOMP LIBCAP_NG LINUX_AUDIT AUTH_PAM NETWORKMANAGER CURL(non-NSS) LDAP(non-NSS)) pid:4576
+Dec  7 22:32:27.850917: core dump dir: /run/pluto
+Dec  7 22:32:27.851050: secrets file: /etc/ipsec.secrets
+Dec  7 22:32:27.851179: leak-detective disabled
+Dec  7 22:32:27.851298: NSS crypto [enabled]
+Dec  7 22:32:27.851417: XAUTH PAM support [enabled]
+Dec  7 22:32:27.851971: initializing libevent in pthreads mode: headers: 2.1.8-stable (2010800); library: 2.1.8-stable (2010800)
+Dec  7 22:32:27.855065: NAT-Traversal support  [enabled]
+Dec  7 22:32:27.858108: Encryption algorithms:
+Dec  7 22:32:27.858738:   AES_CCM_16         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm, aes_ccm_c
+Dec  7 22:32:27.858897:   AES_CCM_12         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_b
+Dec  7 22:32:27.859044:   AES_CCM_8          {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_a
+Dec  7 22:32:27.859214:   3DES_CBC           [*192]         IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     3des
+Dec  7 22:32:27.859357:   CAMELLIA_CTR       {256,192,*128} IKEv1:     ESP     IKEv2:     ESP                      
+Dec  7 22:32:27.859495:   CAMELLIA_CBC       {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP          NSS(CBC)     camellia
+Dec  7 22:32:27.859635:   AES_GCM_16         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm, aes_gcm_c
+Dec  7 22:32:27.859770:   AES_GCM_12         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_b
+Dec  7 22:32:27.859906:   AES_GCM_8          {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_a
+Dec  7 22:32:27.860042:   AES_CTR            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CTR)     aesctr
+Dec  7 22:32:27.860177:   AES_CBC            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     aes
+Dec  7 22:32:27.860319:   NULL_AUTH_AES_GMAC {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_gmac
+Dec  7 22:32:27.860617:   NULL               []             IKEv1:     ESP     IKEv2:     ESP                      
+Dec  7 22:32:27.860764:   CHACHA20_POLY1305  [*256]         IKEv1:             IKEv2: IKE ESP          NSS(AEAD)    chacha20poly1305
+Dec  7 22:32:27.861031: Hash algorithms:
+Dec  7 22:32:27.861233:   MD5                               IKEv1: IKE         IKEv2:                  NSS         
+Dec  7 22:32:27.861374:   SHA1                              IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha
+Dec  7 22:32:27.861506:   SHA2_256                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256
+Dec  7 22:32:27.861635:   SHA2_384                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384
+Dec  7 22:32:27.861762:   SHA2_512                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512
+Dec  7 22:32:27.861875: PRF algorithms:
+Dec  7 22:32:27.862015:   HMAC_MD5                          IKEv1: IKE         IKEv2: IKE              native(HMAC) md5
+Dec  7 22:32:27.862146:   HMAC_SHA1                         IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha, sha1
+Dec  7 22:32:27.862278:   HMAC_SHA2_256                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256, sha2_256
+Dec  7 22:32:27.862407:   HMAC_SHA2_384                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384, sha2_384
+Dec  7 22:32:27.862537:   HMAC_SHA2_512                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512, sha2_512
+Dec  7 22:32:27.862681:   AES_XCBC                          IKEv1:             IKEv2: IKE              native(XCBC) aes128_xcbc
+Dec  7 22:32:27.862795: Integrity algorithms:
+Dec  7 22:32:27.862958:   HMAC_MD5_96                       IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       native(HMAC) md5, hmac_md5
+Dec  7 22:32:27.863094:   HMAC_SHA1_96                      IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha, sha1, sha1_96, hmac_sha1
+Dec  7 22:32:27.863238:   HMAC_SHA2_512_256                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha512, sha2_512, sha2_512_256, hmac_sha2_512
+Dec  7 22:32:27.863374:   HMAC_SHA2_384_192                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha384, sha2_384, sha2_384_192, hmac_sha2_384
+Dec  7 22:32:27.863509:   HMAC_SHA2_256_128                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha2, sha256, sha2_256, sha2_256_128, hmac_sha2_256
+Dec  7 22:32:27.863651:   HMAC_SHA2_256_TRUNCBUG            IKEv1:     ESP AH  IKEv2:         AH                   
+Dec  7 22:32:27.863797:   AES_XCBC_96                       IKEv1:     ESP AH  IKEv2: IKE ESP AH       native(XCBC) aes_xcbc, aes128_xcbc, aes128_xcbc_96
+Dec  7 22:32:27.863927:   AES_CMAC_96                       IKEv1:     ESP AH  IKEv2:     ESP AH  FIPS              aes_cmac
+Dec  7 22:32:27.864060:   NONE                              IKEv1:     ESP     IKEv2: IKE ESP     FIPS              null
+Dec  7 22:32:27.864174: DH algorithms:
+Dec  7 22:32:27.864331:   NONE                              IKEv1:             IKEv2: IKE ESP AH  FIPS NSS(MODP)    null, dh0
+Dec  7 22:32:27.864462:   MODP1536                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       NSS(MODP)    dh5
+Dec  7 22:32:27.864756:   MODP2048                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh14
+Dec  7 22:32:27.864903:   MODP3072                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh15
+Dec  7 22:32:27.865031:   MODP4096                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh16
+Dec  7 22:32:27.865158:   MODP6144                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh17
+Dec  7 22:32:27.865284:   MODP8192                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh18
+Dec  7 22:32:27.865414:   DH19                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_256, ecp256
+Dec  7 22:32:27.865543:   DH20                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_384, ecp384
+Dec  7 22:32:27.865800:   DH21                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_521, ecp521
+Dec  7 22:32:27.865930:   DH31                              IKEv1: IKE         IKEv2: IKE ESP AH       NSS(ECP)     curve25519
+Dec  7 22:32:27.866105: testing CAMELLIA_CBC:
+Dec  7 22:32:27.866258:   Camellia: 16 bytes with 128-bit key
+Dec  7 22:32:27.871856:   Camellia: 16 bytes with 128-bit key
+Dec  7 22:32:27.872386:   Camellia: 16 bytes with 256-bit key
+Dec  7 22:32:27.874729:   Camellia: 16 bytes with 256-bit key
+Dec  7 22:32:27.875300: testing AES_GCM_16:
+Dec  7 22:32:27.875460:   empty string
+Dec  7 22:32:27.876698:   one block
+Dec  7 22:32:27.877186:   two blocks
+Dec  7 22:32:27.877823:   two blocks with associated data
+Dec  7 22:32:27.878429: testing AES_CTR:
+Dec  7 22:32:27.878593:   Encrypting 16 octets using AES-CTR with 128-bit key
+Dec  7 22:32:27.879475:   Encrypting 32 octets using AES-CTR with 128-bit key
+Dec  7 22:32:27.879976:   Encrypting 36 octets using AES-CTR with 128-bit key
+Dec  7 22:32:27.880525:   Encrypting 16 octets using AES-CTR with 192-bit key
+Dec  7 22:32:27.881000:   Encrypting 32 octets using AES-CTR with 192-bit key
+Dec  7 22:32:27.881479:   Encrypting 36 octets using AES-CTR with 192-bit key
+Dec  7 22:32:27.881960:   Encrypting 16 octets using AES-CTR with 256-bit key
+Dec  7 22:32:27.882439:   Encrypting 32 octets using AES-CTR with 256-bit key
+Dec  7 22:32:27.882920:   Encrypting 36 octets using AES-CTR with 256-bit key
+Dec  7 22:32:27.883444: testing AES_CBC:
+Dec  7 22:32:27.883577:   Encrypting 16 bytes (1 block) using AES-CBC with 128-bit key
+Dec  7 22:32:27.884102:   Encrypting 32 bytes (2 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:27.884840:   Encrypting 48 bytes (3 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:27.885367:   Encrypting 64 bytes (4 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:27.885917: testing AES_XCBC:
+Dec  7 22:32:27.886062:   RFC 3566 Test Case 1: AES-XCBC-MAC-96 with 0-byte input
+Dec  7 22:32:27.889521:   RFC 3566 Test Case 2: AES-XCBC-MAC-96 with 3-byte input
+Dec  7 22:32:27.891608:   RFC 3566 Test Case 3: AES-XCBC-MAC-96 with 16-byte input
+Dec  7 22:32:27.893495:   RFC 3566 Test Case 4: AES-XCBC-MAC-96 with 20-byte input
+Dec  7 22:32:27.895895:   RFC 3566 Test Case 5: AES-XCBC-MAC-96 with 32-byte input
+Dec  7 22:32:27.897805:   RFC 3566 Test Case 6: AES-XCBC-MAC-96 with 34-byte input
+Dec  7 22:32:27.899720:   RFC 3566 Test Case 7: AES-XCBC-MAC-96 with 1000-byte input
+Dec  7 22:32:27.903794:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 16)
+Dec  7 22:32:27.905833:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 10)
+Dec  7 22:32:27.908012:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 18)
+Dec  7 22:32:27.911578: testing HMAC_MD5:
+Dec  7 22:32:27.911718:   RFC 2104: MD5_HMAC test 1
+Dec  7 22:32:27.916014:   RFC 2104: MD5_HMAC test 2
+Dec  7 22:32:27.918332:   RFC 2104: MD5_HMAC test 3
+Dec  7 22:32:27.921140: 8 CPU cores online
+Dec  7 22:32:27.921317: starting up 7 helper threads
+Dec  7 22:32:27.922960: started thread for helper 0
+Dec  7 22:32:27.923299: helper(1) seccomp security disabled for crypto helper 1
+Dec  7 22:32:27.924244: started thread for helper 1
+Dec  7 22:32:27.924385: helper(2) seccomp security disabled for crypto helper 2
+Dec  7 22:32:27.925048: started thread for helper 2
+Dec  7 22:32:27.925202: helper(3) seccomp security disabled for crypto helper 3
+Dec  7 22:32:27.925592: started thread for helper 3
+Dec  7 22:32:27.925737: helper(4) seccomp security disabled for crypto helper 4
+Dec  7 22:32:27.926162: started thread for helper 4
+Dec  7 22:32:27.926286: helper(5) seccomp security disabled for crypto helper 5
+Dec  7 22:32:27.926905: started thread for helper 5
+Dec  7 22:32:27.927001: helper(6) seccomp security disabled for crypto helper 6
+Dec  7 22:32:27.927450: started thread for helper 6
+Dec  7 22:32:27.927597: helper(7) seccomp security disabled for crypto helper 7
+Dec  7 22:32:27.927976: using Linux xfrm kernel support code on #1 SMP Mon Jun 13 14:42:51 CST 2022
+Dec  7 22:32:27.930454: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+Dec  7 22:32:27.930943: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+Dec  7 22:32:27.931321: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+Dec  7 22:32:27.931713: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+Dec  7 22:32:27.932045: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+Dec  7 22:32:27.932402: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+Dec  7 22:32:27.939968: selinux support is NOT enabled.
+Dec  7 22:32:27.940573: systemd watchdog not enabled - not sending watchdog keepalives
+Dec  7 22:32:27.953615: seccomp security disabled
++ rm -f /run/pluto/pluto.pid
+Dec  7 22:32:28.080769: Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --log-no-append --stderrlog failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --log-no-append --stderrlog failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ipsec pluto --log-no-audit --stderrlog
+FIPS Mode: NO
+NSS crypto library initialized
+FIPS mode disabled for pluto daemon
+FIPS HMAC integrity support [disabled]
+libcap-ng support [enabled]
+Linux audit support [enabled]
+Starting Pluto (Libreswan Version 4.6 IKEv2 IKEv1 XFRM XFRMI esp-hw-offload FORK PTHREAD_SETSCHEDPRIO GCC_EXCEPTIONS NSS (IPsec profile) (NSS-PRF) DNSSEC SYSTEMD_WATCHDOG LABELED_IPSEC (SELINUX) SECCOMP LIBCAP_NG LINUX_AUDIT AUTH_PAM NETWORKMANAGER CURL(non-NSS) LDAP(non-NSS)) pid:4587
+core dump dir: /run/pluto
+secrets file: /etc/ipsec.secrets
+leak-detective disabled
+NSS crypto [enabled]
+XAUTH PAM support [enabled]
+initializing libevent in pthreads mode: headers: 2.1.8-stable (2010800); library: 2.1.8-stable (2010800)
+NAT-Traversal support  [enabled]
+Encryption algorithms:
+  AES_CCM_16         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm, aes_ccm_c
+  AES_CCM_12         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_b
+  AES_CCM_8          {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_a
+  3DES_CBC           [*192]         IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     3des
+  CAMELLIA_CTR       {256,192,*128} IKEv1:     ESP     IKEv2:     ESP                      
+  CAMELLIA_CBC       {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP          NSS(CBC)     camellia
+  AES_GCM_16         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm, aes_gcm_c
+  AES_GCM_12         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_b
+  AES_GCM_8          {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_a
+  AES_CTR            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CTR)     aesctr
+  AES_CBC            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     aes
+  NULL_AUTH_AES_GMAC {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_gmac
+  NULL               []             IKEv1:     ESP     IKEv2:     ESP                      
+  CHACHA20_POLY1305  [*256]         IKEv1:             IKEv2: IKE ESP          NSS(AEAD)    chacha20poly1305
+Hash algorithms:
+  MD5                               IKEv1: IKE         IKEv2:                  NSS         
+  SHA1                              IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha
+  SHA2_256                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256
+  SHA2_384                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384
+  SHA2_512                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512
+PRF algorithms:
+  HMAC_MD5                          IKEv1: IKE         IKEv2: IKE              native(HMAC) md5
+  HMAC_SHA1                         IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha, sha1
+  HMAC_SHA2_256                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256, sha2_256
+  HMAC_SHA2_384                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384, sha2_384
+  HMAC_SHA2_512                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512, sha2_512
+  AES_XCBC                          IKEv1:             IKEv2: IKE              native(XCBC) aes128_xcbc
+Integrity algorithms:
+  HMAC_MD5_96                       IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       native(HMAC) md5, hmac_md5
+  HMAC_SHA1_96                      IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha, sha1, sha1_96, hmac_sha1
+  HMAC_SHA2_512_256                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha512, sha2_512, sha2_512_256, hmac_sha2_512
+  HMAC_SHA2_384_192                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha384, sha2_384, sha2_384_192, hmac_sha2_384
+  HMAC_SHA2_256_128                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha2, sha256, sha2_256, sha2_256_128, hmac_sha2_256
+  HMAC_SHA2_256_TRUNCBUG            IKEv1:     ESP AH  IKEv2:         AH                   
+  AES_XCBC_96                       IKEv1:     ESP AH  IKEv2: IKE ESP AH       native(XCBC) aes_xcbc, aes128_xcbc, aes128_xcbc_96
+  AES_CMAC_96                       IKEv1:     ESP AH  IKEv2:     ESP AH  FIPS              aes_cmac
+  NONE                              IKEv1:     ESP     IKEv2: IKE ESP     FIPS              null
+DH algorithms:
+  NONE                              IKEv1:             IKEv2: IKE ESP AH  FIPS NSS(MODP)    null, dh0
+  MODP1536                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       NSS(MODP)    dh5
+  MODP2048                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh14
+  MODP3072                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh15
+  MODP4096                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh16
+  MODP6144                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh17
+  MODP8192                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh18
+  DH19                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_256, ecp256
+  DH20                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_384, ecp384
+  DH21                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_521, ecp521
+  DH31                              IKEv1: IKE         IKEv2: IKE ESP AH       NSS(ECP)     curve25519
+testing CAMELLIA_CBC:
+  Camellia: 16 bytes with 128-bit key
+  Camellia: 16 bytes with 128-bit key
+  Camellia: 16 bytes with 256-bit key
+  Camellia: 16 bytes with 256-bit key
+testing AES_GCM_16:
+  empty string
+  one block
+  two blocks
+  two blocks with associated data
+testing AES_CTR:
+  Encrypting 16 octets using AES-CTR with 128-bit key
+  Encrypting 32 octets using AES-CTR with 128-bit key
+  Encrypting 36 octets using AES-CTR with 128-bit key
+  Encrypting 16 octets using AES-CTR with 192-bit key
+  Encrypting 32 octets using AES-CTR with 192-bit key
+  Encrypting 36 octets using AES-CTR with 192-bit key
+  Encrypting 16 octets using AES-CTR with 256-bit key
+  Encrypting 32 octets using AES-CTR with 256-bit key
+  Encrypting 36 octets using AES-CTR with 256-bit key
+testing AES_CBC:
+  Encrypting 16 bytes (1 block) using AES-CBC with 128-bit key
+  Encrypting 32 bytes (2 blocks) using AES-CBC with 128-bit key
+  Encrypting 48 bytes (3 blocks) using AES-CBC with 128-bit key
+  Encrypting 64 bytes (4 blocks) using AES-CBC with 128-bit key
+testing AES_XCBC:
+  RFC 3566 Test Case 1: AES-XCBC-MAC-96 with 0-byte input
+  RFC 3566 Test Case 2: AES-XCBC-MAC-96 with 3-byte input
+  RFC 3566 Test Case 3: AES-XCBC-MAC-96 with 16-byte input
+  RFC 3566 Test Case 4: AES-XCBC-MAC-96 with 20-byte input
+  RFC 3566 Test Case 5: AES-XCBC-MAC-96 with 32-byte input
+  RFC 3566 Test Case 6: AES-XCBC-MAC-96 with 34-byte input
+  RFC 3566 Test Case 7: AES-XCBC-MAC-96 with 1000-byte input
+  RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 16)
+  RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 10)
+  RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 18)
+testing HMAC_MD5:
+  RFC 2104: MD5_HMAC test 1
+  RFC 2104: MD5_HMAC test 2
+  RFC 2104: MD5_HMAC test 3
+8 CPU cores online
+starting up 7 helper threads
+started thread for helper 0
+helper(1) seccomp security disabled for crypto helper 1
+started thread for helper 1
+helper(2) seccomp security disabled for crypto helper 2
+started thread for helper 2
+helper(3) seccomp security disabled for crypto helper 3
+started thread for helper 3
+helper(4) seccomp security disabled for crypto helper 4
+started thread for helper 4
+helper(5) seccomp security disabled for crypto helper 5
+started thread for helper 5
+helper(6) seccomp security disabled for crypto helper 6
+started thread for helper 6
+helper(7) seccomp security disabled for crypto helper 7
+using Linux xfrm kernel support code on #1 SMP Mon Jun 13 14:42:51 CST 2022
+kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+selinux support is NOT enabled.
+systemd watchdog not enabled - not sending watchdog keepalives
+seccomp security disabled
+listening for IKE messages
+Kernel supports NIC esp-hw-offload
+adding UDP interface eth0 10.0.2.15:500
+adding UDP interface eth0 10.0.2.15:4500
+adding UDP interface lo 127.0.0.1:500
+adding UDP interface lo 127.0.0.1:4500
+adding UDP interface lo [::1]:500
+adding UDP interface eth0 [fec0::5054:ff:fe12:3456]:500
+loading secrets from "/etc/ipsec.secrets"
+no secrets filename matched "/etc/ipsec.d/*.secrets"
+listening for IKE messages
+loading secrets from "/etc/ipsec.secrets"
+no secrets filename matched "/etc/ipsec.d/*.secrets"
+Dec  7 22:32:28.369753: Initializing NSS using read-write database "sql:/var/lib/ipsec/nss"
++ CHECK_RESULT 0 0 0 'Check ipsec pluto --log-no-audit --stderrlog failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ipsec pluto --log-no-audit --stderrlog failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Dec  7 22:32:28.498823: FIPS Mode: NO
+Dec  7 22:32:28.500666: NSS crypto library initialized
+Dec  7 22:32:28.503021: FIPS mode disabled for pluto daemon
+Dec  7 22:32:28.503170: FIPS HMAC integrity support [disabled]
+Dec  7 22:32:28.506538: libcap-ng support [enabled]
+Dec  7 22:32:28.506865: Linux audit support [enabled]
+Dec  7 22:32:28.507446: Starting Pluto (Libreswan Version 4.6 IKEv2 IKEv1 XFRM XFRMI esp-hw-offload FORK PTHREAD_SETSCHEDPRIO GCC_EXCEPTIONS NSS (IPsec profile) (NSS-PRF) DNSSEC SYSTEMD_WATCHDOG LABELED_IPSEC (SELINUX) SECCOMP LIBCAP_NG LINUX_AUDIT AUTH_PAM NETWORKMANAGER CURL(non-NSS) LDAP(non-NSS)) pid:4614
+Dec  7 22:32:28.507586: core dump dir: /run/pluto
+Dec  7 22:32:28.507724: secrets file: /etc/ipsec.secrets
+Dec  7 22:32:28.507856: leak-detective disabled
+Dec  7 22:32:28.507978: NSS crypto [enabled]
+Dec  7 22:32:28.508101: XAUTH PAM support [enabled]
+Dec  7 22:32:28.508676: initializing libevent in pthreads mode: headers: 2.1.8-stable (2010800); library: 2.1.8-stable (2010800)
+Dec  7 22:32:28.511873: NAT-Traversal support  [enabled]
+Dec  7 22:32:28.515199: Encryption algorithms:
+Dec  7 22:32:28.516011:   AES_CCM_16         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm, aes_ccm_c
+Dec  7 22:32:28.516177:   AES_CCM_12         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_b
+Dec  7 22:32:28.516328:   AES_CCM_8          {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_a
+Dec  7 22:32:28.516500:   3DES_CBC           [*192]         IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     3des
+Dec  7 22:32:28.516648:   CAMELLIA_CTR       {256,192,*128} IKEv1:     ESP     IKEv2:     ESP                      
+Dec  7 22:32:28.516790:   CAMELLIA_CBC       {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP          NSS(CBC)     camellia
+Dec  7 22:32:28.516937:   AES_GCM_16         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm, aes_gcm_c
+Dec  7 22:32:28.517078:   AES_GCM_12         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_b
+Dec  7 22:32:28.517217:   AES_GCM_8          {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_a
+Dec  7 22:32:28.517357:   AES_CTR            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CTR)     aesctr
+Dec  7 22:32:28.517496:   AES_CBC            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     aes
+Dec  7 22:32:28.517637:   NULL_AUTH_AES_GMAC {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_gmac
+Dec  7 22:32:28.517776:   NULL               []             IKEv1:     ESP     IKEv2:     ESP                      
+Dec  7 22:32:28.517923:   CHACHA20_POLY1305  [*256]         IKEv1:             IKEv2: IKE ESP          NSS(AEAD)    chacha20poly1305
+Dec  7 22:32:28.518056: Hash algorithms:
+Dec  7 22:32:28.518256:   MD5                               IKEv1: IKE         IKEv2:                  NSS         
+Dec  7 22:32:28.518400:   SHA1                              IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha
+Dec  7 22:32:28.518535:   SHA2_256                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256
+Dec  7 22:32:28.518667:   SHA2_384                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384
+Dec  7 22:32:28.518798:   SHA2_512                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512
+Dec  7 22:32:28.518913: PRF algorithms:
+Dec  7 22:32:28.519056:   HMAC_MD5                          IKEv1: IKE         IKEv2: IKE              native(HMAC) md5
+Dec  7 22:32:28.519191:   HMAC_SHA1                         IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha, sha1
+Dec  7 22:32:28.519375:   HMAC_SHA2_256                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256, sha2_256
+Dec  7 22:32:28.519564:   HMAC_SHA2_384                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384, sha2_384
+Dec  7 22:32:28.519699:   HMAC_SHA2_512                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512, sha2_512
+Dec  7 22:32:28.519848:   AES_XCBC                          IKEv1:             IKEv2: IKE              native(XCBC) aes128_xcbc
+Dec  7 22:32:28.519966: Integrity algorithms:
+Dec  7 22:32:28.520132:   HMAC_MD5_96                       IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       native(HMAC) md5, hmac_md5
+Dec  7 22:32:28.520277:   HMAC_SHA1_96                      IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha, sha1, sha1_96, hmac_sha1
+Dec  7 22:32:28.520426:   HMAC_SHA2_512_256                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha512, sha2_512, sha2_512_256, hmac_sha2_512
+Dec  7 22:32:28.520565:   HMAC_SHA2_384_192                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha384, sha2_384, sha2_384_192, hmac_sha2_384
+Dec  7 22:32:28.520704:   HMAC_SHA2_256_128                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha2, sha256, sha2_256, sha2_256_128, hmac_sha2_256
+Dec  7 22:32:28.520845:   HMAC_SHA2_256_TRUNCBUG            IKEv1:     ESP AH  IKEv2:         AH                   
+Dec  7 22:32:28.521122:   AES_XCBC_96                       IKEv1:     ESP AH  IKEv2: IKE ESP AH       native(XCBC) aes_xcbc, aes128_xcbc, aes128_xcbc_96
+Dec  7 22:32:28.521258:   AES_CMAC_96                       IKEv1:     ESP AH  IKEv2:     ESP AH  FIPS              aes_cmac
+Dec  7 22:32:28.521397:   NONE                              IKEv1:     ESP     IKEv2: IKE ESP     FIPS              null
+Dec  7 22:32:28.521515: DH algorithms:
+Dec  7 22:32:28.521676:   NONE                              IKEv1:             IKEv2: IKE ESP AH  FIPS NSS(MODP)    null, dh0
+Dec  7 22:32:28.521810:   MODP1536                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       NSS(MODP)    dh5
+Dec  7 22:32:28.521940:   MODP2048                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh14
+Dec  7 22:32:28.522070:   MODP3072                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh15
+Dec  7 22:32:28.522200:   MODP4096                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh16
+Dec  7 22:32:28.522329:   MODP6144                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh17
+Dec  7 22:32:28.522458:   MODP8192                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh18
+Dec  7 22:32:28.522590:   DH19                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_256, ecp256
+Dec  7 22:32:28.522722:   DH20                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_384, ecp384
+Dec  7 22:32:28.522854:   DH21                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_521, ecp521
+Dec  7 22:32:28.522984:   DH31                              IKEv1: IKE         IKEv2: IKE ESP AH       NSS(ECP)     curve25519
+Dec  7 22:32:28.523159: testing CAMELLIA_CBC:
+Dec  7 22:32:28.523315:   Camellia: 16 bytes with 128-bit key
+Dec  7 22:32:28.529172:   Camellia: 16 bytes with 128-bit key
+Dec  7 22:32:28.529766:   Camellia: 16 bytes with 256-bit key
+Dec  7 22:32:28.531980:   Camellia: 16 bytes with 256-bit key
+Dec  7 22:32:28.532515: testing AES_GCM_16:
+Dec  7 22:32:28.532676:   empty string
+Dec  7 22:32:28.533925:   one block
+Dec  7 22:32:28.534403:   two blocks
+Dec  7 22:32:28.535037:   two blocks with associated data
+Dec  7 22:32:28.535576: testing AES_CTR:
+Dec  7 22:32:28.535736:   Encrypting 16 octets using AES-CTR with 128-bit key
+Dec  7 22:32:28.536755:   Encrypting 32 octets using AES-CTR with 128-bit key
+Dec  7 22:32:28.537257:   Encrypting 36 octets using AES-CTR with 128-bit key
+Dec  7 22:32:28.537796:   Encrypting 16 octets using AES-CTR with 192-bit key
+Dec  7 22:32:28.538327:   Encrypting 32 octets using AES-CTR with 192-bit key
+Dec  7 22:32:28.538807:   Encrypting 36 octets using AES-CTR with 192-bit key
+Dec  7 22:32:28.539282:   Encrypting 16 octets using AES-CTR with 256-bit key
+Dec  7 22:32:28.539754:   Encrypting 32 octets using AES-CTR with 256-bit key
+Dec  7 22:32:28.540231:   Encrypting 36 octets using AES-CTR with 256-bit key
+Dec  7 22:32:28.540749: testing AES_CBC:
+Dec  7 22:32:28.540880:   Encrypting 16 bytes (1 block) using AES-CBC with 128-bit key
+Dec  7 22:32:28.541410:   Encrypting 32 bytes (2 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:28.541954:   Encrypting 48 bytes (3 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:28.542452:   Encrypting 64 bytes (4 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:28.542995: testing AES_XCBC:
+Dec  7 22:32:28.543140:   RFC 3566 Test Case 1: AES-XCBC-MAC-96 with 0-byte input
+Dec  7 22:32:28.546912:   RFC 3566 Test Case 2: AES-XCBC-MAC-96 with 3-byte input
+Dec  7 22:32:28.548995:   RFC 3566 Test Case 3: AES-XCBC-MAC-96 with 16-byte input
+Dec  7 22:32:28.550853:   RFC 3566 Test Case 4: AES-XCBC-MAC-96 with 20-byte input
+Dec  7 22:32:28.552812:   RFC 3566 Test Case 5: AES-XCBC-MAC-96 with 32-byte input
+Dec  7 22:32:28.559132:   RFC 3566 Test Case 6: AES-XCBC-MAC-96 with 34-byte input
+Dec  7 22:32:28.563795:   RFC 3566 Test Case 7: AES-XCBC-MAC-96 with 1000-byte input
+Dec  7 22:32:28.568368:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 16)
+Dec  7 22:32:28.570340:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 10)
+Dec  7 22:32:28.572439:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 18)
+Dec  7 22:32:28.575864: testing HMAC_MD5:
+Dec  7 22:32:28.576038:   RFC 2104: MD5_HMAC test 1
+Dec  7 22:32:28.580623:   RFC 2104: MD5_HMAC test 2
+Dec  7 22:32:28.582959:   RFC 2104: MD5_HMAC test 3
+Dec  7 22:32:28.585837: 8 CPU cores online
+Dec  7 22:32:28.586062: starting up 7 helper threads
+Dec  7 22:32:28.587688: started thread for helper 0
+Dec  7 22:32:28.587922: helper(1) seccomp security disabled for crypto helper 1
+Dec  7 22:32:28.588958: started thread for helper 1
+Dec  7 22:32:28.589200: helper(2) seccomp security disabled for crypto helper 2
+Dec  7 22:32:28.589485: started thread for helper 2
+Dec  7 22:32:28.589691: helper(3) seccomp security disabled for crypto helper 3
+Dec  7 22:32:28.590178: started thread for helper 3
+Dec  7 22:32:28.590319: helper(4) seccomp security disabled for crypto helper 4
+Dec  7 22:32:28.590732: started thread for helper 4
+Dec  7 22:32:28.590858: helper(5) seccomp security disabled for crypto helper 5
+Dec  7 22:32:28.591391: started thread for helper 5
+Dec  7 22:32:28.591555: helper(6) seccomp security disabled for crypto helper 6
+Dec  7 22:32:28.591951: started thread for helper 6
+Dec  7 22:32:28.592086: helper(7) seccomp security disabled for crypto helper 7
+Dec  7 22:32:28.592295: using Linux xfrm kernel support code on #1 SMP Mon Jun 13 14:42:51 CST 2022
+Dec  7 22:32:28.594803: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+Dec  7 22:32:28.595371: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+Dec  7 22:32:28.595755: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+Dec  7 22:32:28.596121: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+Dec  7 22:32:28.596478: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+Dec  7 22:32:28.596809: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+Dec  7 22:32:28.602913: selinux support is NOT enabled.
+Dec  7 22:32:28.603511: systemd watchdog not enabled - not sending watchdog keepalives
+Dec  7 22:32:28.616389: seccomp security disabled
+Dec  7 22:32:28.620050: listening for IKE messages
+Dec  7 22:32:28.622556: Kernel supports NIC esp-hw-offload
+Dec  7 22:32:28.626412: adding UDP interface eth0 10.0.2.15:500
+Dec  7 22:32:28.627123: adding UDP interface eth0 10.0.2.15:4500
+Dec  7 22:32:28.627694: adding UDP interface lo 127.0.0.1:500
+Dec  7 22:32:28.628344: adding UDP interface lo 127.0.0.1:4500
+Dec  7 22:32:28.629074: adding UDP interface lo [::1]:500
+Dec  7 22:32:28.629638: adding UDP interface eth0 [fec0::5054:ff:fe12:3456]:500
+Dec  7 22:32:28.675618: loading secrets from "/etc/ipsec.secrets"
+Dec  7 22:32:28.677344: no secrets filename matched "/etc/ipsec.d/*.secrets"
+Dec  7 22:32:28.678970: listening for IKE messages
+Dec  7 22:32:28.680525: loading secrets from "/etc/ipsec.secrets"
+Dec  7 22:32:28.681149: no secrets filename matched "/etc/ipsec.d/*.secrets"
+Dec  7 22:32:28.718538: FIPS Mode: NO
+Dec  7 22:32:28.720389: NSS crypto library initialized
+Dec  7 22:32:28.722609: FIPS mode disabled for pluto daemon
+Dec  7 22:32:28.722754: FIPS HMAC integrity support [disabled]
+Dec  7 22:32:28.726771: libcap-ng support [enabled]
+Dec  7 22:32:28.727121: Linux audit support [enabled]
+Dec  7 22:32:28.727676: Starting Pluto (Libreswan Version 4.6 IKEv2 IKEv1 XFRM XFRMI esp-hw-offload FORK PTHREAD_SETSCHEDPRIO GCC_EXCEPTIONS NSS (IPsec profile) (NSS-PRF) DNSSEC SYSTEMD_WATCHDOG LABELED_IPSEC (SELINUX) SECCOMP LIBCAP_NG LINUX_AUDIT AUTH_PAM NETWORKMANAGER CURL(non-NSS) LDAP(non-NSS)) pid:4630
+Dec  7 22:32:28.727821: core dump dir: /run/pluto
+Dec  7 22:32:28.728127: secrets file: /etc/ipsec.secrets
+Dec  7 22:32:28.728261: leak-detective disabled
+Dec  7 22:32:28.728382: NSS crypto [enabled]
+Dec  7 22:32:28.728502: XAUTH PAM support [enabled]
+Dec  7 22:32:28.729151: initializing libevent in pthreads mode: headers: 2.1.8-stable (2010800); library: 2.1.8-stable (2010800)
+Dec  7 22:32:28.732153: NAT-Traversal support  [enabled]
+Dec  7 22:32:28.735701: Encryption algorithms:
+Dec  7 22:32:28.736387:   AES_CCM_16         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm, aes_ccm_c
+Dec  7 22:32:28.736554:   AES_CCM_12         {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_b
+Dec  7 22:32:28.736703:   AES_CCM_8          {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_ccm_a
+Dec  7 22:32:28.736879:   3DES_CBC           [*192]         IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     3des
+Dec  7 22:32:28.737025:   CAMELLIA_CTR       {256,192,*128} IKEv1:     ESP     IKEv2:     ESP                      
+Dec  7 22:32:28.737326:   CAMELLIA_CBC       {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP          NSS(CBC)     camellia
+Dec  7 22:32:28.737472:   AES_GCM_16         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm, aes_gcm_c
+Dec  7 22:32:28.737613:   AES_GCM_12         {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_b
+Dec  7 22:32:28.737753:   AES_GCM_8          {256,192,*128} IKEv1:     ESP     IKEv2: IKE ESP     FIPS NSS(GCM)     aes_gcm_a
+Dec  7 22:32:28.737891:   AES_CTR            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CTR)     aesctr
+Dec  7 22:32:28.738039:   AES_CBC            {256,192,*128} IKEv1: IKE ESP     IKEv2: IKE ESP     FIPS NSS(CBC)     aes
+Dec  7 22:32:28.738178:   NULL_AUTH_AES_GMAC {256,192,*128} IKEv1:     ESP     IKEv2:     ESP     FIPS              aes_gmac
+Dec  7 22:32:28.738316:   NULL               []             IKEv1:     ESP     IKEv2:     ESP                      
+Dec  7 22:32:28.738461:   CHACHA20_POLY1305  [*256]         IKEv1:             IKEv2: IKE ESP          NSS(AEAD)    chacha20poly1305
+Dec  7 22:32:28.738591: Hash algorithms:
+Dec  7 22:32:28.738791:   MD5                               IKEv1: IKE         IKEv2:                  NSS         
+Dec  7 22:32:28.738933:   SHA1                              IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha
+Dec  7 22:32:28.739067:   SHA2_256                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256
+Dec  7 22:32:28.739198:   SHA2_384                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384
+Dec  7 22:32:28.739327:   SHA2_512                          IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512
+Dec  7 22:32:28.739440: PRF algorithms:
+Dec  7 22:32:28.739581:   HMAC_MD5                          IKEv1: IKE         IKEv2: IKE              native(HMAC) md5
+Dec  7 22:32:28.739714:   HMAC_SHA1                         IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha, sha1
+Dec  7 22:32:28.739848:   HMAC_SHA2_256                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha2, sha256, sha2_256
+Dec  7 22:32:28.739981:   HMAC_SHA2_384                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha384, sha2_384
+Dec  7 22:32:28.740114:   HMAC_SHA2_512                     IKEv1: IKE         IKEv2: IKE         FIPS NSS          sha512, sha2_512
+Dec  7 22:32:28.740264:   AES_XCBC                          IKEv1:             IKEv2: IKE              native(XCBC) aes128_xcbc
+Dec  7 22:32:28.740379: Integrity algorithms:
+Dec  7 22:32:28.740542:   HMAC_MD5_96                       IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       native(HMAC) md5, hmac_md5
+Dec  7 22:32:28.740680:   HMAC_SHA1_96                      IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha, sha1, sha1_96, hmac_sha1
+Dec  7 22:32:28.740825:   HMAC_SHA2_512_256                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha512, sha2_512, sha2_512_256, hmac_sha2_512
+Dec  7 22:32:28.741102:   HMAC_SHA2_384_192                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha384, sha2_384, sha2_384_192, hmac_sha2_384
+Dec  7 22:32:28.741245:   HMAC_SHA2_256_128                 IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS          sha2, sha256, sha2_256, sha2_256_128, hmac_sha2_256
+Dec  7 22:32:28.741386:   HMAC_SHA2_256_TRUNCBUG            IKEv1:     ESP AH  IKEv2:         AH                   
+Dec  7 22:32:28.741534:   AES_XCBC_96                       IKEv1:     ESP AH  IKEv2: IKE ESP AH       native(XCBC) aes_xcbc, aes128_xcbc, aes128_xcbc_96
+Dec  7 22:32:28.741666:   AES_CMAC_96                       IKEv1:     ESP AH  IKEv2:     ESP AH  FIPS              aes_cmac
+Dec  7 22:32:28.741801:   NONE                              IKEv1:     ESP     IKEv2: IKE ESP     FIPS              null
+Dec  7 22:32:28.741915: DH algorithms:
+Dec  7 22:32:28.742072:   NONE                              IKEv1:             IKEv2: IKE ESP AH  FIPS NSS(MODP)    null, dh0
+Dec  7 22:32:28.742204:   MODP1536                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH       NSS(MODP)    dh5
+Dec  7 22:32:28.742332:   MODP2048                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh14
+Dec  7 22:32:28.742459:   MODP3072                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh15
+Dec  7 22:32:28.742586:   MODP4096                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh16
+Dec  7 22:32:28.742713:   MODP6144                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh17
+Dec  7 22:32:28.742839:   MODP8192                          IKEv1: IKE ESP AH  IKEv2: IKE ESP AH  FIPS NSS(MODP)    dh18
+Dec  7 22:32:28.742969:   DH19                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_256, ecp256
+Dec  7 22:32:28.743098:   DH20                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_384, ecp384
+Dec  7 22:32:28.743227:   DH21                              IKEv1: IKE         IKEv2: IKE ESP AH  FIPS NSS(ECP)     ecp_521, ecp521
+Dec  7 22:32:28.743354:   DH31                              IKEv1: IKE         IKEv2: IKE ESP AH       NSS(ECP)     curve25519
+Dec  7 22:32:28.743529: testing CAMELLIA_CBC:
+Dec  7 22:32:28.743681:   Camellia: 16 bytes with 128-bit key
+Dec  7 22:32:28.749522:   Camellia: 16 bytes with 128-bit key
+Dec  7 22:32:28.750097:   Camellia: 16 bytes with 256-bit key
+Dec  7 22:32:28.752318:   Camellia: 16 bytes with 256-bit key
+Dec  7 22:32:28.752867: testing AES_GCM_16:
+Dec  7 22:32:28.753025:   empty string
+Dec  7 22:32:28.754281:   one block
+Dec  7 22:32:28.759880:   two blocks
+Dec  7 22:32:28.761450:   two blocks with associated data
+Dec  7 22:32:28.762028: testing AES_CTR:
+Dec  7 22:32:28.762188:   Encrypting 16 octets using AES-CTR with 128-bit key
+Dec  7 22:32:28.763070:   Encrypting 32 octets using AES-CTR with 128-bit key
+Dec  7 22:32:28.763586:   Encrypting 36 octets using AES-CTR with 128-bit key
+Dec  7 22:32:28.764138:   Encrypting 16 octets using AES-CTR with 192-bit key
+Dec  7 22:32:28.764913:   Encrypting 32 octets using AES-CTR with 192-bit key
+Dec  7 22:32:28.765440:   Encrypting 36 octets using AES-CTR with 192-bit key
+Dec  7 22:32:28.765927:   Encrypting 16 octets using AES-CTR with 256-bit key
+Dec  7 22:32:28.766479:   Encrypting 32 octets using AES-CTR with 256-bit key
+Dec  7 22:32:28.766976:   Encrypting 36 octets using AES-CTR with 256-bit key
+Dec  7 22:32:28.767506: testing AES_CBC:
+Dec  7 22:32:28.767663:   Encrypting 16 bytes (1 block) using AES-CBC with 128-bit key
+Dec  7 22:32:28.769500:   Encrypting 32 bytes (2 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:28.770074:   Encrypting 48 bytes (3 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:28.770601:   Encrypting 64 bytes (4 blocks) using AES-CBC with 128-bit key
+Dec  7 22:32:28.771196: testing AES_XCBC:
+Dec  7 22:32:28.771339:   RFC 3566 Test Case 1: AES-XCBC-MAC-96 with 0-byte input
+Dec  7 22:32:28.775447:   RFC 3566 Test Case 2: AES-XCBC-MAC-96 with 3-byte input
+Dec  7 22:32:28.778879:   RFC 3566 Test Case 3: AES-XCBC-MAC-96 with 16-byte input
+Dec  7 22:32:28.780770:   RFC 3566 Test Case 4: AES-XCBC-MAC-96 with 20-byte input
+Dec  7 22:32:28.782666:   RFC 3566 Test Case 5: AES-XCBC-MAC-96 with 32-byte input
+Dec  7 22:32:28.784689:   RFC 3566 Test Case 6: AES-XCBC-MAC-96 with 34-byte input
+Dec  7 22:32:28.786600:   RFC 3566 Test Case 7: AES-XCBC-MAC-96 with 1000-byte input
+Dec  7 22:32:28.790646:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 16)
+Dec  7 22:32:28.792498:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 10)
+Dec  7 22:32:28.794732:   RFC 4434 Test Case AES-XCBC-PRF-128 with 20-byte input (key length 18)
+Dec  7 22:32:28.798109: testing HMAC_MD5:
+Dec  7 22:32:28.798260:   RFC 2104: MD5_HMAC test 1
+Dec  7 22:32:28.802165:   RFC 2104: MD5_HMAC test 2
+Dec  7 22:32:28.804405:   RFC 2104: MD5_HMAC test 3
+Dec  7 22:32:28.807456: 8 CPU cores online
+Dec  7 22:32:28.807632: starting up 7 helper threads
+Dec  7 22:32:28.809199: started thread for helper 0
+Dec  7 22:32:28.809538: helper(1) seccomp security disabled for crypto helper 1
+Dec  7 22:32:28.810420: started thread for helper 1
+Dec  7 22:32:28.810554: helper(2) seccomp security disabled for crypto helper 2
+Dec  7 22:32:28.811067: started thread for helper 2
+Dec  7 22:32:28.811198: helper(3) seccomp security disabled for crypto helper 3
+Dec  7 22:32:28.811675: started thread for helper 3
+Dec  7 22:32:28.811947: helper(4) seccomp security disabled for crypto helper 4
+Dec  7 22:32:28.812199: started thread for helper 4
+Dec  7 22:32:28.812324: helper(5) seccomp security disabled for crypto helper 5
+Dec  7 22:32:28.812862: started thread for helper 5
+Dec  7 22:32:28.812997: helper(6) seccomp security disabled for crypto helper 6
+Dec  7 22:32:28.813410: started thread for helper 6
+Dec  7 22:32:28.813536: helper(7) seccomp security disabled for crypto helper 7
+Dec  7 22:32:28.813626: using Linux xfrm kernel support code on #1 SMP Mon Jun 13 14:42:51 CST 2022
+Dec  7 22:32:28.816400: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+Dec  7 22:32:28.816908: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+Dec  7 22:32:28.817279: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+Dec  7 22:32:28.817640: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(in) encountered unexpected policy
+Dec  7 22:32:28.817993: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(fwd) encountered unexpected policy
+Dec  7 22:32:28.818318: kernel: xfrm XFRM_MSG_UPDPOLICY for flow add port bypass(out) encountered unexpected policy
+Dec  7 22:32:28.823685: selinux support is NOT enabled.
+Dec  7 22:32:28.824239: systemd watchdog not enabled - not sending watchdog keepalives
+Dec  7 22:32:28.837359: seccomp security disabled
+Dec  7 22:32:28.841392: listening for IKE messages
+Dec  7 22:32:28.843809: Kernel supports NIC esp-hw-offload
+Dec  7 22:32:28.847266: adding UDP interface eth0 10.0.2.15:500
+Dec  7 22:32:28.847969: adding UDP interface eth0 10.0.2.15:4500
+Dec  7 22:32:28.848511: adding UDP interface lo 127.0.0.1:500
+Dec  7 22:32:28.849049: adding UDP interface lo 127.0.0.1:4500
+Dec  7 22:32:28.849765: adding UDP interface lo [::1]:500
+Dec  7 22:32:28.850325: adding UDP interface eth0 [fec0::5054:ff:fe12:3456]:500
+Dec  7 22:32:28.916373: loading secrets from "/etc/ipsec.secrets"
+Dec  7 22:32:28.918117: no secrets filename matched "/etc/ipsec.d/*.secrets"
+Dec  7 22:32:28.919564: listening for IKE messages
+Dec  7 22:32:28.921115: loading secrets from "/etc/ipsec.secrets"
+Dec  7 22:32:28.921759: no secrets filename matched "/etc/ipsec.d/*.secrets"
+Wed Dec  7 22:32:28 2022 - INFO  - End to run test.
+Dec  7 22:32:28.929981: listening for IKE messages
+Dec  7 22:32:28.931471: loading secrets from "/etc/ipsec.secrets"
+Dec  7 22:32:28.932094: no secrets filename matched "/etc/ipsec.d/*.secrets"
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Wed Dec  7 22:32:29 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 22:32:30 2022 - INFO  - Start to restore the test environment.
++ test -f /run/pluto/pluto.pid
++ rm -f /run/pluto/pluto.pid
++ rm -f /run/pluto/pluto.pid testfile testlog
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp935iw_yn ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp935iw_yn
+Dec  7 22:32:31.595092: listening for IKE messages
+Dec  7 22:32:31.596629: loading secrets from "/etc/ipsec.secrets"
+Dec  7 22:32:31.597223: no secrets filename matched "/etc/ipsec.d/*.secrets"
+Dec  7 22:32:38.000080: shutting down
+Dec  7 22:32:38.006664: shutting down interface eth0 [fec0::5054:ff:fe12:3456]:500
+Dec  7 22:32:38.006860: shutting down interface lo [::1]:500
+Dec  7 22:32:38.006989: shutting down interface lo 127.0.0.1:4500
+Dec  7 22:32:38.007112: shutting down interface lo 127.0.0.1:500
+Dec  7 22:32:38.007234: shutting down interface eth0 10.0.2.15:4500
+Dec  7 22:32:38.007355: shutting down interface eth0 10.0.2.15:500
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 22:32:45 2022 - INFO  - End to restore the test environment.

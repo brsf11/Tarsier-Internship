@@ -1,0 +1,296 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 08:02:26 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL libzip
++ pkgs=libzip
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs libzip --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp4ptu3055
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp4ptu3055
++ mkdir testdir1 testdir2
++ echo hello
++ echo hello
++ echo hello
++ echo HELlo
++ zip -r testdir1.zip testdir1/
+oe_test_libzip_zipcmp.sh: line 28: zip: command not found
++ zip -r testdir2.zip testdir2/
+oe_test_libzip_zipcmp.sh: line 29: zip: command not found
++ cp -r testdir2.zip testdir3.zip
+cp: cannot stat 'testdir2.zip': No such file or directory
++ echo world
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 08:03:00 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 08:03:00 2022 - INFO  - Start to run test.
++ zipcmp -h
++ grep -i usage
+oe_test_libzip_zipcmp.sh: line 37: zipcmp: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 38'
++ message='oe_test_libzip_zipcmp.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 38'
+Wed Dec  7 08:03:01 2022 - ERROR - oe_test_libzip_zipcmp.sh line 38
++ return 0
+++ zipcmp -V
+++ grep -Eo '[0-9]\.[0-9]\.[0-9]'
+oe_test_libzip_zipcmp.sh: line 39: zipcmp: command not found
+++ rpm -qa libzip
+++ awk -F - '{print$2}'
++ test '' == 1.8.0
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 40'
++ message='oe_test_libzip_zipcmp.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 40'
+Wed Dec  7 08:03:02 2022 - ERROR - oe_test_libzip_zipcmp.sh line 40
++ return 0
++ zipcmp -i testdir1.zip testdir2.zip
++ grep -e testdir1/testA -e testdir2/testa
+oe_test_libzip_zipcmp.sh: line 41: zipcmp: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 42'
++ message='oe_test_libzip_zipcmp.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 42'
+Wed Dec  7 08:03:03 2022 - ERROR - oe_test_libzip_zipcmp.sh line 42
++ return 0
++ zipcmp -i testdir2.zip testdir3.zip
+oe_test_libzip_zipcmp.sh: line 43: zipcmp: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 44'
++ message='oe_test_libzip_zipcmp.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 44'
+Wed Dec  7 08:03:04 2022 - ERROR - oe_test_libzip_zipcmp.sh line 44
++ return 0
++ zipcmp -p testdir1.zip testdir2.zip
++ grep -e testdir1/testA -e testdir2/testa
+oe_test_libzip_zipcmp.sh: line 45: zipcmp: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 46'
++ message='oe_test_libzip_zipcmp.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 46'
+Wed Dec  7 08:03:04 2022 - ERROR - oe_test_libzip_zipcmp.sh line 46
++ return 0
++ zipcmp -p testdir2.zip testdir3.zip
+oe_test_libzip_zipcmp.sh: line 47: zipcmp: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 48'
++ message='oe_test_libzip_zipcmp.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 48'
+Wed Dec  7 08:03:05 2022 - ERROR - oe_test_libzip_zipcmp.sh line 48
++ return 0
++ zipcmp -q testdir1.zip testdir2.zip
+oe_test_libzip_zipcmp.sh: line 49: zipcmp: command not found
++ CHECK_RESULT 127 1
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 50'
++ message='oe_test_libzip_zipcmp.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 50'
+Wed Dec  7 08:03:05 2022 - ERROR - oe_test_libzip_zipcmp.sh line 50
++ return 0
++ zipcmp -q testdir2.zip testdir3.zip
+oe_test_libzip_zipcmp.sh: line 51: zipcmp: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 52'
++ message='oe_test_libzip_zipcmp.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 52'
+Wed Dec  7 08:03:06 2022 - ERROR - oe_test_libzip_zipcmp.sh line 52
++ return 0
++ zipcmp -t testdir1.zip testdir2.zip
++ grep -e testdir1/testA -e testdir2/testa
+oe_test_libzip_zipcmp.sh: line 53: zipcmp: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 54'
++ message='oe_test_libzip_zipcmp.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 54'
+Wed Dec  7 08:03:06 2022 - ERROR - oe_test_libzip_zipcmp.sh line 54
++ return 0
++ zipcmp -t testdir2.zip testdir3.zip
+oe_test_libzip_zipcmp.sh: line 55: zipcmp: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 56'
++ message='oe_test_libzip_zipcmp.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 56'
+Wed Dec  7 08:03:07 2022 - ERROR - oe_test_libzip_zipcmp.sh line 56
++ return 0
++ zipcmp -v testdir1.zip testdir2.zip
++ grep -e testdir1/testA -e testdir2/testa
+oe_test_libzip_zipcmp.sh: line 57: zipcmp: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 58'
++ message='oe_test_libzip_zipcmp.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 58'
+Wed Dec  7 08:03:08 2022 - ERROR - oe_test_libzip_zipcmp.sh line 58
++ return 0
++ zipcmp -v testdir2.zip testdir3.zip
+oe_test_libzip_zipcmp.sh: line 59: zipcmp: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipcmp.sh line 60'
++ message='oe_test_libzip_zipcmp.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipcmp.sh line 60'
+Wed Dec  7 08:03:08 2022 - ERROR - oe_test_libzip_zipcmp.sh line 60
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 08:03:09 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 12
++ test 12 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 08:03:09 2022 - ERROR - failed to execute the case.
++ exit 12
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 08:03:10 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp4ptu3055 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp4ptu3055
++ '[' 0 -ne 0 ']'
++ rm -rf testdir1 testdir2 'test*.zip'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 08:03:18 2022 - INFO  - Finish restoring the test environment.

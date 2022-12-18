@@ -1,0 +1,18 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/ipvsadm",
+    "machine num": 4,
+    "cases": [
+        {
+            "name": "oe_test_ipvs_ADD_01"
+        },
+        {
+            "name": "oe_test_ipvs_DEL_01"
+        },
+        {
+            "name": "oe_test_ipvs_MOD_01"
+        },
+        {
+            "name": "oe_test_ipvs_WRONG_COMMAND_01"
+        }
+    ]
+}

@@ -1,0 +1,323 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Wed Dec  7 23:00:04 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL nfs-utils
++ pkgs=nfs-utils
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs nfs-utils --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:08:31 ago on Wed 07 Dec 2022 10:51:53 PM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libevent_core-2.1.so.7()(64bit) needed by nfs-utils-1:2.5.4-2.rc3.an8.1.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:08:31 ago on Wed 07 Dec 2022 10:51:53 PM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libevent_core-2.1.so.7()(64bit) needed by nfs-utils-1:2.5.4-2.rc3.an8.1.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Wed Dec  7 23:00:26 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Wed Dec  7 23:00:27 2022 - INFO  - Start testing...
++ test_execution nfs-server.service
++ service=nfs-server.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-07 23:00:27'
++ test_restart nfs-server.service
++ service=nfs-server.service
++ systemctl restart nfs-server.service
+Failed to restart nfs-server.service: Unit nfs-server.service not found.
++ CHECK_RESULT 5 0 0 'nfs-server.service restart failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service restart failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'nfs-server.service restart failed'
++ LOG_ERROR 'nfs-server.service restart failed'
++ message='nfs-server.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service restart failed'
+Wed Dec  7 23:00:28 2022 - ERROR - nfs-server.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 34'
++ message='../common/common_lib.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 34'
+Wed Dec  7 23:00:28 2022 - ERROR - ../common/common_lib.sh line 34
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status nfs-server.service
++ grep 'Active: active'
+Unit nfs-server.service could not be found.
++ CHECK_RESULT 1 0 0 'nfs-server.service restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'nfs-server.service restart failed'
++ LOG_ERROR 'nfs-server.service restart failed'
++ message='nfs-server.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service restart failed'
+Wed Dec  7 23:00:34 2022 - ERROR - nfs-server.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 37'
++ message='../common/common_lib.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 37'
+Wed Dec  7 23:00:35 2022 - ERROR - ../common/common_lib.sh line 37
++ return 0
++ systemctl stop nfs-server.service
+Failed to stop nfs-server.service: Unit nfs-server.service not loaded.
++ CHECK_RESULT 5 0 0 'nfs-server.service stop failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service stop failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'nfs-server.service stop failed'
++ LOG_ERROR 'nfs-server.service stop failed'
++ message='nfs-server.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service stop failed'
+Wed Dec  7 23:00:36 2022 - ERROR - nfs-server.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 39'
++ message='../common/common_lib.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 39'
+Wed Dec  7 23:00:36 2022 - ERROR - ../common/common_lib.sh line 39
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status nfs-server.service
++ grep 'Active: inactive'
+Unit nfs-server.service could not be found.
++ CHECK_RESULT 1 0 0 'nfs-server.service stop failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service stop failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'nfs-server.service stop failed'
++ LOG_ERROR 'nfs-server.service stop failed'
++ message='nfs-server.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service stop failed'
+Wed Dec  7 23:00:42 2022 - ERROR - nfs-server.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 42'
++ message='../common/common_lib.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 42'
+Wed Dec  7 23:00:43 2022 - ERROR - ../common/common_lib.sh line 42
++ return 0
++ systemctl start nfs-server.service
+Failed to start nfs-server.service: Unit nfs-server.service not found.
++ CHECK_RESULT 5 0 0 'nfs-server.service start failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service start failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'nfs-server.service start failed'
++ LOG_ERROR 'nfs-server.service start failed'
++ message='nfs-server.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service start failed'
+Wed Dec  7 23:00:44 2022 - ERROR - nfs-server.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 44'
++ message='../common/common_lib.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 44'
+Wed Dec  7 23:00:44 2022 - ERROR - ../common/common_lib.sh line 44
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status nfs-server.service
++ grep 'Active: active'
+Unit nfs-server.service could not be found.
++ CHECK_RESULT 1 0 0 'nfs-server.service start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'nfs-server.service start failed'
++ LOG_ERROR 'nfs-server.service start failed'
++ message='nfs-server.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service start failed'
+Wed Dec  7 23:00:50 2022 - ERROR - nfs-server.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 47'
++ message='../common/common_lib.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 47'
+Wed Dec  7 23:00:51 2022 - ERROR - ../common/common_lib.sh line 47
++ return 0
++ test_enabled nfs-server.service
++ service=nfs-server.service
+++ systemctl is-enabled nfs-server.service
+Failed to get unit file state for nfs-server.service: No such file or directory
++ state=
++ '[' '' == enabled ']'
++ '[' '' == disabled ']'
++ '[' '' == masked ']'
++ '[' '' == static ']'
++ LOG_INFO 'Unit is indirect, ignoring.'
++ message='Unit is indirect, ignoring.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Unit is indirect, ignoring.'
+Wed Dec  7 23:00:52 2022 - INFO  - Unit is indirect, ignoring.
++ journalctl --since '2022-12-07 23:00:27' -u nfs-server.service
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ grep -i 'fail\|error'
++ CHECK_RESULT 1 0 1 'There is an error message for the log of nfs-server.service'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of nfs-server.service'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ systemctl start nfs-server.service
+Failed to start nfs-server.service: Unit nfs-server.service not found.
++ sed -i 's\ExecStart=/usr/sbin/rpc.nfsd\ExecStart=/usr/sbin/rpc.nfsd -d\g' /usr/lib/systemd/system/nfs-server.service
+sed: can't read /usr/lib/systemd/system/nfs-server.service: No such file or directory
++ systemctl daemon-reload
++ systemctl reload nfs-server.service
+Failed to reload nfs-server.service: Unit nfs-server.service not found.
++ CHECK_RESULT 5 0 0 'nfs-server.service reload failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service reload failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'nfs-server.service reload failed'
++ LOG_ERROR 'nfs-server.service reload failed'
++ message='nfs-server.service reload failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service reload failed'
+Wed Dec  7 23:00:55 2022 - ERROR - nfs-server.service reload failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_nfs-server.sh line 35'
++ message='oe_test_service_nfs-server.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_nfs-server.sh line 35'
+Wed Dec  7 23:00:55 2022 - ERROR - oe_test_service_nfs-server.sh line 35
++ return 0
++ systemctl status nfs-server.service
++ grep 'active (exited)'
+Unit nfs-server.service could not be found.
++ CHECK_RESULT 1 0 0 'nfs-server.service reload causes the service status to change'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='nfs-server.service reload causes the service status to change'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'nfs-server.service reload causes the service status to change'
++ LOG_ERROR 'nfs-server.service reload causes the service status to change'
++ message='nfs-server.service reload causes the service status to change'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'nfs-server.service reload causes the service status to change'
+Wed Dec  7 23:00:56 2022 - ERROR - nfs-server.service reload causes the service status to change
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_service_nfs-server.sh line 37'
++ message='oe_test_service_nfs-server.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_service_nfs-server.sh line 37'
+Wed Dec  7 23:00:57 2022 - ERROR - oe_test_service_nfs-server.sh line 37
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Wed Dec  7 23:00:57 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 8
++ test 8 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:00:58 2022 - ERROR - failed to execute the case.
++ exit 8
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Wed Dec  7 23:00:58 2022 - INFO  - start environment cleanup.
++ sed -i 's\ExecStart=/usr/sbin/rpc.nfsd -d\ExecStart=/usr/sbin/rpc.nfsd\g' /usr/lib/systemd/system/nfs-server.service
+sed: can't read /usr/lib/systemd/system/nfs-server.service: No such file or directory
++ systemctl daemon-reload
++ systemctl reload nfs-server.service
+Failed to reload nfs-server.service: Unit nfs-server.service not found.
++ systemctl stop nfs-server.service
+Failed to stop nfs-server.service: Unit nfs-server.service not loaded.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:08:31 ago on Wed 07 Dec 2022 10:51:53 PM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libevent_core-2.1.so.7()(64bit) needed by nfs-utils-1:2.5.4-2.rc3.an8.1.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:08:31 ago on Wed 07 Dec 2022 10:51:53 PM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libevent_core-2.1.so.7()(64bit) needed by nfs-utils-1:2.5.4-2.rc3.an8.1.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:08:31 ago on Wed 07 Dec 2022 10:51:53 PM EST.\nError: \n Problem: conflicting requests\n  - nothing provides libevent_core-2.1.so.7()(64bit) needed by nfs-utils-1:2.5.4-2.rc3.an8.1.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Wed Dec  7 23:01:03 2022 - INFO  - Finish environment cleanup!

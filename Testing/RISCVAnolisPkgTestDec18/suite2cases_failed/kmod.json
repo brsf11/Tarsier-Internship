@@ -1,0 +1,20 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/kmod",
+    "cases": [
+        {
+            "name": "oe_test_depmod"
+        },
+        {
+            "name": "oe_test_insmod-lsmod"
+        },
+        {
+            "name": "oe_test_modinfo"
+        },
+        {
+            "name": "oe_test_modprobe"
+        },
+        {
+            "name": "oe_test_rmmod"
+        }
+    ]
+}

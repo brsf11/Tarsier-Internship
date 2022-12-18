@@ -1,0 +1,306 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Wed Dec  7 03:19:55 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL 'ganglia-gmetad ganglia-gmond'
++ pkgs='ganglia-gmetad ganglia-gmond'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'ganglia-gmetad ganglia-gmond' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:20:10 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libmemcached.so.11()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+  - nothing provides libmemcachedutil.so.2()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:20:10 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libmemcached.so.11()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+  - nothing provides libmemcachedutil.so.2()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ systemctl start gmond.service
+Failed to start gmond.service: Unit gmond.service not found.
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Wed Dec  7 03:20:28 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Wed Dec  7 03:20:29 2022 - INFO  - Start testing...
++ test_execution gmetad.service
++ service=gmetad.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-07 03:20:29'
++ test_restart gmetad.service
++ service=gmetad.service
++ systemctl restart gmetad.service
+Failed to restart gmetad.service: Unit gmetad.service not found.
++ CHECK_RESULT 5 0 0 'gmetad.service restart failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='gmetad.service restart failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'gmetad.service restart failed'
++ LOG_ERROR 'gmetad.service restart failed'
++ message='gmetad.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gmetad.service restart failed'
+Wed Dec  7 03:20:29 2022 - ERROR - gmetad.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 34'
++ message='../common/common_lib.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 34'
+Wed Dec  7 03:20:30 2022 - ERROR - ../common/common_lib.sh line 34
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status gmetad.service
++ grep 'Active: active'
+Unit gmetad.service could not be found.
++ CHECK_RESULT 1 0 0 'gmetad.service restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='gmetad.service restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'gmetad.service restart failed'
++ LOG_ERROR 'gmetad.service restart failed'
++ message='gmetad.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gmetad.service restart failed'
+Wed Dec  7 03:20:36 2022 - ERROR - gmetad.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 37'
++ message='../common/common_lib.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 37'
+Wed Dec  7 03:20:36 2022 - ERROR - ../common/common_lib.sh line 37
++ return 0
++ systemctl stop gmetad.service
+Failed to stop gmetad.service: Unit gmetad.service not loaded.
++ CHECK_RESULT 5 0 0 'gmetad.service stop failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='gmetad.service stop failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'gmetad.service stop failed'
++ LOG_ERROR 'gmetad.service stop failed'
++ message='gmetad.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gmetad.service stop failed'
+Wed Dec  7 03:20:37 2022 - ERROR - gmetad.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 39'
++ message='../common/common_lib.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 39'
+Wed Dec  7 03:20:38 2022 - ERROR - ../common/common_lib.sh line 39
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status gmetad.service
++ grep 'Active: inactive'
+Unit gmetad.service could not be found.
++ CHECK_RESULT 1 0 0 'gmetad.service stop failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='gmetad.service stop failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'gmetad.service stop failed'
++ LOG_ERROR 'gmetad.service stop failed'
++ message='gmetad.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gmetad.service stop failed'
+Wed Dec  7 03:20:44 2022 - ERROR - gmetad.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 42'
++ message='../common/common_lib.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 42'
+Wed Dec  7 03:20:44 2022 - ERROR - ../common/common_lib.sh line 42
++ return 0
++ systemctl start gmetad.service
+Failed to start gmetad.service: Unit gmetad.service not found.
++ CHECK_RESULT 5 0 0 'gmetad.service start failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='gmetad.service start failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'gmetad.service start failed'
++ LOG_ERROR 'gmetad.service start failed'
++ message='gmetad.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gmetad.service start failed'
+Wed Dec  7 03:20:45 2022 - ERROR - gmetad.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 44'
++ message='../common/common_lib.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 44'
+Wed Dec  7 03:20:46 2022 - ERROR - ../common/common_lib.sh line 44
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status gmetad.service
++ grep 'Active: active'
+Unit gmetad.service could not be found.
++ CHECK_RESULT 1 0 0 'gmetad.service start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='gmetad.service start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'gmetad.service start failed'
++ LOG_ERROR 'gmetad.service start failed'
++ message='gmetad.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'gmetad.service start failed'
+Wed Dec  7 03:20:52 2022 - ERROR - gmetad.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 47'
++ message='../common/common_lib.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 47'
+Wed Dec  7 03:20:52 2022 - ERROR - ../common/common_lib.sh line 47
++ return 0
++ test_enabled gmetad.service
++ service=gmetad.service
+++ systemctl is-enabled gmetad.service
+Failed to get unit file state for gmetad.service: No such file or directory
++ state=
++ '[' '' == enabled ']'
++ '[' '' == disabled ']'
++ '[' '' == masked ']'
++ '[' '' == static ']'
++ LOG_INFO 'Unit is indirect, ignoring.'
++ message='Unit is indirect, ignoring.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Unit is indirect, ignoring.'
+Wed Dec  7 03:20:53 2022 - INFO  - Unit is indirect, ignoring.
++ journalctl --since '2022-12-07 03:20:29' -u gmetad.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ CHECK_RESULT 1 0 1 'There is an error message for the log of gmetad.service'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of gmetad.service'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ test_reload gmetad.service
++ service=gmetad.service
++ systemctl start gmetad.service
+Failed to start gmetad.service: Unit gmetad.service not found.
++ systemctl reload gmetad.service
++ grep 'Job type reload is not applicable'
++ CHECK_RESULT 1 0 0 'Job type reload is not applicable for unit gmetad.service'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Job type reload is not applicable for unit gmetad.service'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Job type reload is not applicable for unit gmetad.service'
++ LOG_ERROR 'Job type reload is not applicable for unit gmetad.service'
++ message='Job type reload is not applicable for unit gmetad.service'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Job type reload is not applicable for unit gmetad.service'
+Wed Dec  7 03:20:54 2022 - ERROR - Job type reload is not applicable for unit gmetad.service
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 91'
++ message='../common/common_lib.sh line 91'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 91'
+Wed Dec  7 03:20:54 2022 - ERROR - ../common/common_lib.sh line 91
++ return 0
++ systemctl status gmetad.service
++ grep 'Active: active'
+Unit gmetad.service could not be found.
++ systemctl status gmetad.service
++ grep 'inactive (dead)'
+Unit gmetad.service could not be found.
++ return 1
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Wed Dec  7 03:20:55 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 7
++ test 7 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 03:20:56 2022 - ERROR - failed to execute the case.
++ exit 7
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Wed Dec  7 03:20:56 2022 - INFO  - start environment cleanup.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:20:10 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libmemcached.so.11()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+  - nothing provides libmemcachedutil.so.2()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:20:10 AM EST.
+Error: 
+ Problem: conflicting requests
+  - nothing provides libmemcached.so.11()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+  - nothing provides libmemcachedutil.so.2()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:16 ago on Wed 07 Dec 2022 03:20:10 AM EST.\nError: \n Problem: conflicting requests\n  - nothing provides libmemcached.so.11()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64\n  - nothing provides libmemcachedutil.so.2()(64bit) needed by ganglia-gmetad-3.7.2-38.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Wed Dec  7 03:20:58 2022 - INFO  - Finish environment cleanup!

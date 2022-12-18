@@ -1,0 +1,288 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 08:58:16 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox'
++ pkgs='lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox' --node 1 --tempfile ''
+Wed Dec  7 08:58:24 2022 - ERROR - pkgs:(lxcfs-tools busybox) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
+++ rpm -qa lxc
+++ awk -F - '{print $2}'
++ version=
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Wed Dec  7 08:58:25 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 08:58:26 2022 - INFO  - Start to run test.
++ grep -i Usage
++ lxc-create --help
++ CHECK_RESULT 1 0 0 'Check lxc-create --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-create --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-create --help failed.'
++ LOG_ERROR 'Check lxc-create --help failed.'
++ message='Check lxc-create --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-create --help failed.'
+Wed Dec  7 08:58:27 2022 - ERROR - Check lxc-create --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 31'
++ message='oe_test_lxc_create_attach.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 31'
+Wed Dec  7 08:58:27 2022 - ERROR - oe_test_lxc_create_attach.sh line 31
++ return 0
++ lxc-create --usage
++ grep -i 'Usage: lxc-create'
++ CHECK_RESULT 1 0 0 'Check lxc-create --usage failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-create --usage failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-create --usage failed.'
++ LOG_ERROR 'Check lxc-create --usage failed.'
++ message='Check lxc-create --usage failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-create --usage failed.'
+Wed Dec  7 08:58:28 2022 - ERROR - Check lxc-create --usage failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 33'
++ message='oe_test_lxc_create_attach.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 33'
+Wed Dec  7 08:58:28 2022 - ERROR - oe_test_lxc_create_attach.sh line 33
++ return 0
++ lxc-create --version
++ grep
+oe_test_lxc_create_attach.sh: line 34: lxc-create: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ CHECK_RESULT 2 0 0 'Check lxc-create --version failed.'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Check lxc-create --version failed.'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Check lxc-create --version failed.'
++ LOG_ERROR 'Check lxc-create --version failed.'
++ message='Check lxc-create --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-create --version failed.'
+Wed Dec  7 08:58:29 2022 - ERROR - Check lxc-create --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 35'
++ message='oe_test_lxc_create_attach.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 35'
+Wed Dec  7 08:58:29 2022 - ERROR - oe_test_lxc_create_attach.sh line 35
++ return 0
++ lxc-create -t /usr/share/lxc/templates/lxc-busybox -n myEuler1
+oe_test_lxc_create_attach.sh: line 36: lxc-create: command not found
++ CHECK_RESULT 127 0 0 'Failed to set up container.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to set up container.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to set up container.'
++ LOG_ERROR 'Failed to set up container.'
++ message='Failed to set up container.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to set up container.'
+Wed Dec  7 08:58:30 2022 - ERROR - Failed to set up container.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 37'
++ message='oe_test_lxc_create_attach.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 37'
+Wed Dec  7 08:58:31 2022 - ERROR - oe_test_lxc_create_attach.sh line 37
++ return 0
++ lxc-attach --help
++ grep -i Usage
++ CHECK_RESULT 1 0 0 'Check lxc-attach --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-attach --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-attach --help failed.'
++ LOG_ERROR 'Check lxc-attach --help failed.'
++ message='Check lxc-attach --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-attach --help failed.'
+Wed Dec  7 08:58:31 2022 - ERROR - Check lxc-attach --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 39'
++ message='oe_test_lxc_create_attach.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 39'
+Wed Dec  7 08:58:32 2022 - ERROR - oe_test_lxc_create_attach.sh line 39
++ return 0
++ lxc-attach --usage
++ grep -i 'Usage: lxc-attach'
++ CHECK_RESULT 1 0 0 'Check lxc-attach --usage failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-attach --usage failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-attach --usage failed.'
++ LOG_ERROR 'Check lxc-attach --usage failed.'
++ message='Check lxc-attach --usage failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-attach --usage failed.'
+Wed Dec  7 08:58:32 2022 - ERROR - Check lxc-attach --usage failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 41'
++ message='oe_test_lxc_create_attach.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 41'
+Wed Dec  7 08:58:33 2022 - ERROR - oe_test_lxc_create_attach.sh line 41
++ return 0
++ lxc-attach --version
++ grep
+oe_test_lxc_create_attach.sh: line 42: lxc-attach: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ CHECK_RESULT 2 0 0 'Check lxc-attach --version failed.'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Check lxc-attach --version failed.'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Check lxc-attach --version failed.'
++ LOG_ERROR 'Check lxc-attach --version failed.'
++ message='Check lxc-attach --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-attach --version failed.'
+Wed Dec  7 08:58:33 2022 - ERROR - Check lxc-attach --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 43'
++ message='oe_test_lxc_create_attach.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 43'
+Wed Dec  7 08:58:34 2022 - ERROR - oe_test_lxc_create_attach.sh line 43
++ return 0
++ lxc-start myEuler1
+oe_test_lxc_create_attach.sh: line 44: lxc-start: command not found
++ expect -c '
+    log_file testlog2
+    spawn lxc-attach -n myEuler1
+    expect "#"
+    send "exit\r"
+    expect eof
+'
+spawn lxc-attach -n myEuler1
+couldn't execute "lxc-attach": no such file or directory
+    while executing
+"spawn lxc-attach -n myEuler1"
++ grep 'while executing' testlog2
+    while executing
++ CHECK_RESULT 0 1 0 'Check lxc-attach -n failed.'
++ actual_result=0
++ expect_result=1
++ mode=0
++ error_log='Check lxc-attach -n failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 1x
++ test -n 'Check lxc-attach -n failed.'
++ LOG_ERROR 'Check lxc-attach -n failed.'
++ message='Check lxc-attach -n failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-attach -n failed.'
+Wed Dec  7 08:58:35 2022 - ERROR - Check lxc-attach -n failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 53'
++ message='oe_test_lxc_create_attach.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 53'
+Wed Dec  7 08:58:35 2022 - ERROR - oe_test_lxc_create_attach.sh line 53
++ return 0
++ grep exit testlog2
++ CHECK_RESULT 1 0 0 'Failed to exit container.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to exit container.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to exit container.'
++ LOG_ERROR 'Failed to exit container.'
++ message='Failed to exit container.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to exit container.'
+Wed Dec  7 08:58:36 2022 - ERROR - Failed to exit container.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_create_attach.sh line 55'
++ message='oe_test_lxc_create_attach.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_create_attach.sh line 55'
+Wed Dec  7 08:58:37 2022 - ERROR - oe_test_lxc_create_attach.sh line 55
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 08:58:37 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 08:58:38 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the tet environment.'
++ message='Start to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the tet environment.'
+Wed Dec  7 08:58:38 2022 - INFO  - Start to restore the tet environment.
++ rm -rf testlog2
++ lxc-stop myEuler1
+oe_test_lxc_create_attach.sh: line 62: lxc-stop: command not found
++ lxc-destroy myEuler1
+oe_test_lxc_create_attach.sh: line 63: lxc-destroy: command not found
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Wed Dec  7 08:58:39 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the tet environment.'
++ message='End to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the tet environment.'
+Wed Dec  7 08:58:39 2022 - INFO  - End to restore the tet environment.

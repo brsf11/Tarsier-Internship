@@ -1,0 +1,388 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Dec  8 00:14:25 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'openscap scap-security-guide'
++ pkgs='openscap scap-security-guide'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'openscap scap-security-guide' --node 1 --tempfile ''
+Thu Dec  8 00:14:39 2022 - ERROR - pkgs:(scap-security-guide) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Dec  8 00:14:40 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Dec  8 00:14:40 2022 - INFO  - Start to run test.
++ oscap -V
++ grep Version
+oe_test_openscap_01.sh: line 28: oscap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 29'
++ message='oe_test_openscap_01.sh line 29'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 29'
+Thu Dec  8 00:14:41 2022 - ERROR - oe_test_openscap_01.sh line 29
++ return 0
++ oscap --help
++ grep Usage:
+oe_test_openscap_01.sh: line 30: oscap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 31'
++ message='oe_test_openscap_01.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 31'
+Thu Dec  8 00:14:41 2022 - ERROR - oe_test_openscap_01.sh line 31
++ return 0
++ oscap --version
++ grep Version
+oe_test_openscap_01.sh: line 32: oscap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 33'
++ message='oe_test_openscap_01.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 33'
+Thu Dec  8 00:14:42 2022 - ERROR - oe_test_openscap_01.sh line 33
++ return 0
++ oscap info /usr/share/xml/scap/ssg/content/ssg-firefox-ds.xml
++ grep -E 'Imported:|Stream:|Generated:|Version:|Checklists:|Checks:|Dictionaries:'
+oe_test_openscap_01.sh: line 34: oscap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 35'
++ message='oe_test_openscap_01.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 35'
+Thu Dec  8 00:14:43 2022 - ERROR - oe_test_openscap_01.sh line 35
++ return 0
++ oscap info /usr/share/xml/scap/ssg/content/ssg-firefox-xccdf.xml
++ grep -E 'Imported:|Generated:|Referenced check files:'
+oe_test_openscap_01.sh: line 36: oscap: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 37'
++ message='oe_test_openscap_01.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 37'
+Thu Dec  8 00:14:43 2022 - ERROR - oe_test_openscap_01.sh line 37
++ return 0
++ cd /usr/share/xml/scap/ssg/content/
+oe_test_openscap_01.sh: line 38: cd: /usr/share/xml/scap/ssg/content/: No such file or directory
++ oscap oval eval --directives directives.xml --without-syschar --results oval-results.xml ssg-firefox-oval.xml
+oe_test_openscap_01.sh: line 39: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 40'
++ message='oe_test_openscap_01.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 40'
+Thu Dec  8 00:14:44 2022 - ERROR - oe_test_openscap_01.sh line 40
++ return 0
++ oscap oval eval --directives directives.xml --without-syschar --datastream-id ds.xml --oval-id oval.xml --results oval-results.xml ssg-firefox-oval.xml
+oe_test_openscap_01.sh: line 41: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 42'
++ message='oe_test_openscap_01.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 42'
+Thu Dec  8 00:14:44 2022 - ERROR - oe_test_openscap_01.sh line 42
++ return 0
++ oscap xccdf generate guide ssg-firefox-xccdf.xml
+oe_test_openscap_01.sh: line 43: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 44'
++ message='oe_test_openscap_01.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 44'
+Thu Dec  8 00:14:45 2022 - ERROR - oe_test_openscap_01.sh line 44
++ return 0
++ test -f guide.html
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ oscap xccdf generate guide --profile standard ssg-ol7-xccdf.xml
+oe_test_openscap_01.sh: line 47: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 48'
++ message='oe_test_openscap_01.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 48'
+Thu Dec  8 00:14:46 2022 - ERROR - oe_test_openscap_01.sh line 48
++ return 0
++ test -f guide1.html
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ oscap xccdf eval --profile standard --results xccdf-results.xml ssg-ol7-xccdf.xml
+oe_test_openscap_01.sh: line 51: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 52'
++ message='oe_test_openscap_01.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 52'
+Thu Dec  8 00:14:46 2022 - ERROR - oe_test_openscap_01.sh line 52
++ return 0
++ oscap ds sds-split ssg-rhel7-ds.xml extracted/
+oe_test_openscap_01.sh: line 53: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 54'
++ message='oe_test_openscap_01.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 54'
+Thu Dec  8 00:14:47 2022 - ERROR - oe_test_openscap_01.sh line 54
++ return 0
++ test -d extracted
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 56'
++ message='oe_test_openscap_01.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 56'
+Thu Dec  8 00:14:47 2022 - ERROR - oe_test_openscap_01.sh line 56
++ return 0
++ oscap ds sds-validate ssg-rhel7-ds.xml
+oe_test_openscap_01.sh: line 57: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 58'
++ message='oe_test_openscap_01.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 58'
+Thu Dec  8 00:14:48 2022 - ERROR - oe_test_openscap_01.sh line 58
++ return 0
++ oscap cpe validate ssg-rhel7-cpe-oval.xml
+oe_test_openscap_01.sh: line 59: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 60'
++ message='oe_test_openscap_01.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 60'
+Thu Dec  8 00:14:48 2022 - ERROR - oe_test_openscap_01.sh line 60
++ return 0
++ oscap xccdf eval --results results.xml --profile xccdf_org.ssgproject.content_profile_pci-dss ssg-rhel7-ds.xml
+oe_test_openscap_01.sh: line 61: oscap: command not found
++ grep -E 'Title|Rule|Ident|Result'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 62'
++ message='oe_test_openscap_01.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 62'
+Thu Dec  8 00:14:49 2022 - ERROR - oe_test_openscap_01.sh line 62
++ return 0
++ oscap xccdf generate report --output report.html results.xml
+oe_test_openscap_01.sh: line 63: oscap: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 64'
++ message='oe_test_openscap_01.sh line 64'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 64'
+Thu Dec  8 00:14:49 2022 - ERROR - oe_test_openscap_01.sh line 64
++ return 0
++ test -f report.html
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_openscap_01.sh line 66'
++ message='oe_test_openscap_01.sh line 66'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_openscap_01.sh line 66'
+Thu Dec  8 00:14:50 2022 - ERROR - oe_test_openscap_01.sh line 66
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Dec  8 00:14:51 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 17
++ test 17 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Dec  8 00:14:51 2022 - ERROR - failed to execute the case.
++ exit 17
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Dec  8 00:14:52 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Thu Dec  8 00:14:52 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Dec  8 00:14:53 2022 - INFO  - End to restore the test environment.

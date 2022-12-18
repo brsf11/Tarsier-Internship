@@ -1,0 +1,326 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:32:44 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp5ha7d160
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp5ha7d160
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:33:17 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:33:18 2022 - INFO  - Start to run test.
++ ntfsclone --help
++ grep 'Usage: ntfsclone \[OPTIONS\]'
++ CHECK_RESULT 1 0 0 'Check ntfsclone --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --help failed.'
++ LOG_ERROR 'Check ntfsclone --help failed.'
++ message='Check ntfsclone --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --help failed.'
+Wed Dec  7 23:33:18 2022 - ERROR - Check ntfsclone --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 31'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 31'
+Wed Dec  7 23:33:19 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 31
++ return 0
++ ntfsclone --version
++ grep 'ntfsclone v'
++ CHECK_RESULT 1 0 0 'Check ntfsclone --version failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --version failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --version failed.'
++ LOG_ERROR 'Check ntfsclone --version failed.'
++ message='Check ntfsclone --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --version failed.'
+Wed Dec  7 23:33:20 2022 - ERROR - Check ntfsclone --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 33'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 33'
+Wed Dec  7 23:33:20 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 33
++ return 0
++ ntfsclone --output test.txt /dev/vdb
++ grep Syncing
++ CHECK_RESULT 1 0 0 'Check ntfsclone --output failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --output failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --output failed.'
++ LOG_ERROR 'Check ntfsclone --output failed.'
++ message='Check ntfsclone --output failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --output failed.'
+Wed Dec  7 23:33:21 2022 - ERROR - Check ntfsclone --output failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 35'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 35'
+Wed Dec  7 23:33:21 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 35
++ return 0
++ ntfsclone --overwrite /dev/vdb /dev/vdc
++ grep Syncing
++ CHECK_RESULT 1 0 0 'Check ntfsclone --overwrite failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --overwrite failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --overwrite failed.'
++ LOG_ERROR 'Check ntfsclone --overwrite failed.'
++ message='Check ntfsclone --overwrite failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --overwrite failed.'
+Wed Dec  7 23:33:22 2022 - ERROR - Check ntfsclone --overwrite failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 37'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 37'
+Wed Dec  7 23:33:22 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 37
++ return 0
++ ntfsclone --save-image --output backup.img /dev/vdb
++ grep Syncing
++ CHECK_RESULT 1 0 0 'Check ntfsclone --save-image failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --save-image failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --save-image failed.'
++ LOG_ERROR 'Check ntfsclone --save-image failed.'
++ message='Check ntfsclone --save-image failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --save-image failed.'
+Wed Dec  7 23:33:23 2022 - ERROR - Check ntfsclone --save-image failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 39'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 39'
+Wed Dec  7 23:33:23 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 39
++ return 0
++ ntfsclone --restore-image --overwrite /dev/vdb backup.img
++ grep Syncing
++ CHECK_RESULT 1 0 0 'Check ntfsclone --restore-image failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --restore-image failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --restore-image failed.'
++ LOG_ERROR 'Check ntfsclone --restore-image failed.'
++ message='Check ntfsclone --restore-image failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --restore-image failed.'
+Wed Dec  7 23:33:24 2022 - ERROR - Check ntfsclone --restore-image failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 41'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 41'
+Wed Dec  7 23:33:25 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 41
++ return 0
++ ntfsclone --metadata --output ntfsmeta.img /dev/vdb
++ grep Syncing
++ CHECK_RESULT 1 0 0 'Check ntfsclone --metadata failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --metadata failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --metadata failed.'
++ LOG_ERROR 'Check ntfsclone --metadata failed.'
++ message='Check ntfsclone --metadata failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --metadata failed.'
+Wed Dec  7 23:33:25 2022 - ERROR - Check ntfsclone --metadata failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 43'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 43'
+Wed Dec  7 23:33:26 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 43
++ return 0
++ ntfsclone --overwrite /dev/vdb /dev/vdc --rescue
++ grep Syncing
++ CHECK_RESULT 1 0 0 'Check ntfsclone --rescue failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --rescue failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --rescue failed.'
++ LOG_ERROR 'Check ntfsclone --rescue failed.'
++ message='Check ntfsclone --rescue failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --rescue failed.'
+Wed Dec  7 23:33:26 2022 - ERROR - Check ntfsclone --rescue failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 45'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 45'
+Wed Dec  7 23:33:27 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 45
++ return 0
++ ntfsclone --restore-image backup.img --no-action
++ grep completed
++ CHECK_RESULT 1 0 0 'Check ntfsclone --no-action failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --no-action failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --no-action failed.'
++ LOG_ERROR 'Check ntfsclone --no-action failed.'
++ message='Check ntfsclone --no-action failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --no-action failed.'
+Wed Dec  7 23:33:27 2022 - ERROR - Check ntfsclone --no-action failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 47'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 47'
+Wed Dec  7 23:33:28 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 47
++ return 0
++ ntfsclone --metadata --overwrite ntfsmeta.img /dev/vdb --ignore-fs-check
++ grep Syncing
++ CHECK_RESULT 1 0 0 'Check ntfsclone --ignore-fs-check failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsclone --ignore-fs-check failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsclone --ignore-fs-check failed.'
++ LOG_ERROR 'Check ntfsclone --ignore-fs-check failed.'
++ message='Check ntfsclone --ignore-fs-check failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsclone --ignore-fs-check failed.'
+Wed Dec  7 23:33:28 2022 - ERROR - Check ntfsclone --ignore-fs-check failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsclone_01.sh line 49'
++ message='oe_test_ntfs-3g_ntfsclone_01.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsclone_01.sh line 49'
+Wed Dec  7 23:33:29 2022 - ERROR - oe_test_ntfs-3g_ntfsclone_01.sh line 49
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:33:30 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 10
++ test 10 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:33:30 2022 - ERROR - failed to execute the case.
++ exit 10
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:33:31 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdb contains a ext4 file system
+	created on Wed Dec  7 23:32:26 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: 6fbd5102-f548-4b41-8fcb-56ed6be56cdb
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ expect
+spawn mkfs.ext4 /dev/vdc
+y
+mke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: eeb32886-0349-4a17-b7f3-4d31fb920a80
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ rm -rf test.txt backup.img ntfsmeta.img
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp5ha7d160 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp5ha7d160
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:33:42 2022 - INFO  - Finish restoring the test environment.

@@ -1,0 +1,774 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:54:10 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpuxx9s46y
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpuxx9s46y
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ mkdir -p /mnt/windows
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:54:44 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:54:44 2022 - INFO  - Start to run test.
++ lowntfs-3g /dev/vdb /mnt/windows -o hide_dot_files
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o hide_dot_files failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o hide_dot_files failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o hide_dot_files failed.'
++ LOG_ERROR 'Check lowntfs-3g -o hide_dot_files failed.'
++ message='Check lowntfs-3g -o hide_dot_files failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o hide_dot_files failed.'
+Wed Dec  7 23:54:45 2022 - ERROR - Check lowntfs-3g -o hide_dot_files failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 32'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 32'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 32'
+Wed Dec  7 23:54:45 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 32
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:54:46 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 34'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 34'
+Wed Dec  7 23:54:46 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 34
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o windows_names
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o windows_names failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o windows_names failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o windows_names failed.'
++ LOG_ERROR 'Check lowntfs-3g -o windows_names failed.'
++ message='Check lowntfs-3g -o windows_names failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o windows_names failed.'
+Wed Dec  7 23:54:47 2022 - ERROR - Check lowntfs-3g -o windows_names failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 37'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 37'
+Wed Dec  7 23:54:48 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 37
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:54:48 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 39'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 39'
+Wed Dec  7 23:54:49 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 39
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o allow_other
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o allow_other failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o allow_other failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o allow_other failed.'
++ LOG_ERROR 'Check lowntfs-3g -o allow_other failed.'
++ message='Check lowntfs-3g -o allow_other failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o allow_other failed.'
+Wed Dec  7 23:54:49 2022 - ERROR - Check lowntfs-3g -o allow_other failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 42'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 42'
+Wed Dec  7 23:54:50 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 42
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:54:50 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 44'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 44'
+Wed Dec  7 23:54:51 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 44
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o max_read=1000
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o max_read failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o max_read failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o max_read failed.'
++ LOG_ERROR 'Check lowntfs-3g -o max_read failed.'
++ message='Check lowntfs-3g -o max_read failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o max_read failed.'
+Wed Dec  7 23:54:52 2022 - ERROR - Check lowntfs-3g -o max_read failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 47'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 47'
+Wed Dec  7 23:54:52 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 47
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:54:53 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 49'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 49'
+Wed Dec  7 23:54:53 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 49
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o silent
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o silent failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o silent failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o silent failed.'
++ LOG_ERROR 'Check lowntfs-3g -o silent failed.'
++ message='Check lowntfs-3g -o silent failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o silent failed.'
+Wed Dec  7 23:54:54 2022 - ERROR - Check lowntfs-3g -o silent failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 52'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 52'
+Wed Dec  7 23:54:54 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 52
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:54:55 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 54'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 54'
+Wed Dec  7 23:54:56 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 54
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o no_def_opts
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o no_def_opts failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o no_def_opts failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o no_def_opts failed.'
++ LOG_ERROR 'Check lowntfs-3g -o no_def_opts failed.'
++ message='Check lowntfs-3g -o no_def_opts failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o no_def_opts failed.'
+Wed Dec  7 23:54:56 2022 - ERROR - Check lowntfs-3g -o no_def_opts failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 57'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 57'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 57'
+Wed Dec  7 23:54:57 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 57
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:54:57 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 59'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 59'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 59'
+Wed Dec  7 23:54:58 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 59
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o streams_interface=none
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o streams_interface failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o streams_interface failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o streams_interface failed.'
++ LOG_ERROR 'Check lowntfs-3g -o streams_interface failed.'
++ message='Check lowntfs-3g -o streams_interface failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o streams_interface failed.'
+Wed Dec  7 23:54:58 2022 - ERROR - Check lowntfs-3g -o streams_interface failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 62'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 62'
+Wed Dec  7 23:54:59 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 62
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:00 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 64'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 64'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 64'
+Wed Dec  7 23:55:00 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 64
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o user_xattr
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o user_xattr failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o user_xattr failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o user_xattr failed.'
++ LOG_ERROR 'Check lowntfs-3g -o user_xattr failed.'
++ message='Check lowntfs-3g -o user_xattr failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o user_xattr failed.'
+Wed Dec  7 23:55:01 2022 - ERROR - Check lowntfs-3g -o user_xattr failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 67'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 67'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 67'
+Wed Dec  7 23:55:01 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 67
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:02 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 69'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 69'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 69'
+Wed Dec  7 23:55:02 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 69
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o efs_raw
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o efs_raw failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o efs_raw failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o efs_raw failed.'
++ LOG_ERROR 'Check lowntfs-3g -o efs_raw failed.'
++ message='Check lowntfs-3g -o efs_raw failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o efs_raw failed.'
+Wed Dec  7 23:55:03 2022 - ERROR - Check lowntfs-3g -o efs_raw failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 72'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 72'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 72'
+Wed Dec  7 23:55:03 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 72
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:04 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 74'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 74'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 74'
+Wed Dec  7 23:55:05 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 74
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o compression
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o compression failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o compression failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o compression failed.'
++ LOG_ERROR 'Check lowntfs-3g -o compression failed.'
++ message='Check lowntfs-3g -o compression failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o compression failed.'
+Wed Dec  7 23:55:05 2022 - ERROR - Check lowntfs-3g -o compression failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 77'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 77'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 77'
+Wed Dec  7 23:55:06 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 77
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:07 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 79'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 79'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 79'
+Wed Dec  7 23:55:07 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 79
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o nocompression
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o nocompression failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o nocompression failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o nocompression failed.'
++ LOG_ERROR 'Check lowntfs-3g -o nocompression failed.'
++ message='Check lowntfs-3g -o nocompression failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o nocompression failed.'
+Wed Dec  7 23:55:08 2022 - ERROR - Check lowntfs-3g -o nocompression failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 82'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 82'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 82'
+Wed Dec  7 23:55:08 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 82
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:09 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 84'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 84'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 84'
+Wed Dec  7 23:55:09 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 84
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o big_writes
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o big_writes failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o big_writes failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o big_writes failed.'
++ LOG_ERROR 'Check lowntfs-3g -o big_writes failed.'
++ message='Check lowntfs-3g -o big_writes failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o big_writes failed.'
+Wed Dec  7 23:55:10 2022 - ERROR - Check lowntfs-3g -o big_writes failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 87'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 87'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 87'
+Wed Dec  7 23:55:11 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 87
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:11 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 89'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 89'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 89'
+Wed Dec  7 23:55:12 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 89
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o debug
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o debug failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o debug failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o debug failed.'
++ LOG_ERROR 'Check lowntfs-3g -o debug failed.'
++ message='Check lowntfs-3g -o debug failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o debug failed.'
+Wed Dec  7 23:55:12 2022 - ERROR - Check lowntfs-3g -o debug failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 92'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 92'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 92'
+Wed Dec  7 23:55:13 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 92
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:14 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 94'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 94'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 94'
+Wed Dec  7 23:55:14 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 94
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ lowntfs-3g /dev/vdb /mnt/windows -o ignore_case
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ CHECK_RESULT 12 0 0 'Check lowntfs-3g -o ignore_case failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check lowntfs-3g -o ignore_case failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check lowntfs-3g -o ignore_case failed.'
++ LOG_ERROR 'Check lowntfs-3g -o ignore_case failed.'
++ message='Check lowntfs-3g -o ignore_case failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lowntfs-3g -o ignore_case failed.'
+Wed Dec  7 23:55:15 2022 - ERROR - Check lowntfs-3g -o ignore_case failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 97'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 97'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 97'
+Wed Dec  7 23:55:15 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 97
++ return 0
++ df -h
++ grep /dev/vdb
++ CHECK_RESULT 1 0 0 'Check disk mount failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check disk mount failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check disk mount failed.'
++ LOG_ERROR 'Check disk mount failed.'
++ message='Check disk mount failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check disk mount failed.'
+Wed Dec  7 23:55:16 2022 - ERROR - Check disk mount failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 99'
++ message='oe_test_ntfs-3g_lowntfs-3g_03.sh line 99'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_lowntfs-3g_03.sh line 99'
+Wed Dec  7 23:55:16 2022 - ERROR - oe_test_ntfs-3g_lowntfs-3g_03.sh line 99
++ return 0
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:55:17 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 28
++ test 28 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:55:17 2022 - ERROR - failed to execute the case.
++ exit 28
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:55:18 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdb contains a ext4 file system
+	created on Wed Dec  7 23:53:53 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: 6702159d-1522-42c9-b7cf-75e5f80193d1
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ rm -rf /mnt/windows
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpuxx9s46y ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpuxx9s46y
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:55:28 2022 - INFO  - Finish restoring the test environment.

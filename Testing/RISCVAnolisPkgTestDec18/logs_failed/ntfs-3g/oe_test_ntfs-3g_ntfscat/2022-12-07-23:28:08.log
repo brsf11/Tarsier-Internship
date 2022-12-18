@@ -1,0 +1,299 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:28:10 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpr6nvwxtv
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpr6nvwxtv
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:28:50 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:28:51 2022 - INFO  - Start to run test.
++ ntfscat --help
++ grep 'Usage: ntfscat \[options\]'
++ CHECK_RESULT 1 0 0 'Check ntfscat --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfscat --help failed.'
++ LOG_ERROR 'Check ntfscat --help failed.'
++ message='Check ntfscat --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat --help failed.'
+Wed Dec  7 23:28:51 2022 - ERROR - Check ntfscat --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 31'
++ message='oe_test_ntfs-3g_ntfscat.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 31'
+Wed Dec  7 23:28:52 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 31
++ return 0
++ ntfscat --version
++ grep 'ntfscat v'
++ CHECK_RESULT 1 0 0 'Check ntfscat --version failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat --version failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfscat --version failed.'
++ LOG_ERROR 'Check ntfscat --version failed.'
++ message='Check ntfscat --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat --version failed.'
+Wed Dec  7 23:28:53 2022 - ERROR - Check ntfscat --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 33'
++ message='oe_test_ntfs-3g_ntfscat.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 33'
+Wed Dec  7 23:28:53 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 33
++ return 0
++ ntfscat /dev/vdb --inode 5 --attribute INDEX_ROOT
+oe_test_ntfs-3g_ntfscat.sh: line 34: ntfscat: command not found
++ CHECK_RESULT 127 0 0 'Check ntfscat --attribute failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat --attribute failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfscat --attribute failed.'
++ LOG_ERROR 'Check ntfscat --attribute failed.'
++ message='Check ntfscat --attribute failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat --attribute failed.'
+Wed Dec  7 23:28:54 2022 - ERROR - Check ntfscat --attribute failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 35'
++ message='oe_test_ntfs-3g_ntfscat.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 35'
+Wed Dec  7 23:28:54 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 35
++ return 0
++ ntfscat /dev/vdb --inode 15 --attribute-name ''
+oe_test_ntfs-3g_ntfscat.sh: line 36: ntfscat: command not found
++ CHECK_RESULT 127 0 0 'Check ntfscat --attribute-name failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat --attribute-name failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfscat --attribute-name failed.'
++ LOG_ERROR 'Check ntfscat --attribute-name failed.'
++ message='Check ntfscat --attribute-name failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat --attribute-name failed.'
+Wed Dec  7 23:28:55 2022 - ERROR - Check ntfscat --attribute-name failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 37'
++ message='oe_test_ntfs-3g_ntfscat.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 37'
+Wed Dec  7 23:28:55 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 37
++ return 0
++ ntfscat /dev/vdb --inode 4 --force
+oe_test_ntfs-3g_ntfscat.sh: line 38: ntfscat: command not found
++ CHECK_RESULT 127 0 0 'Check ntfscat --force failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat --force failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfscat --force failed.'
++ LOG_ERROR 'Check ntfscat --force failed.'
++ message='Check ntfscat --force failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat --force failed.'
+Wed Dec  7 23:28:56 2022 - ERROR - Check ntfscat --force failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 39'
++ message='oe_test_ntfs-3g_ntfscat.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 39'
+Wed Dec  7 23:28:56 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 39
++ return 0
++ ntfscat /dev/vdb --inode 4 --quiet
+oe_test_ntfs-3g_ntfscat.sh: line 40: ntfscat: command not found
++ CHECK_RESULT 127 0 0 'Check ntfscat --quiet failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat --quiet failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfscat --quiet failed.'
++ LOG_ERROR 'Check ntfscat --quiet failed.'
++ message='Check ntfscat --quiet failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat --quiet failed.'
+Wed Dec  7 23:28:57 2022 - ERROR - Check ntfscat --quiet failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 41'
++ message='oe_test_ntfs-3g_ntfscat.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 41'
+Wed Dec  7 23:28:57 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 41
++ return 0
++ ntfscat /dev/vdb --inode 4 --verbose
+oe_test_ntfs-3g_ntfscat.sh: line 42: ntfscat: command not found
++ CHECK_RESULT 127 0 0 'Check ntfscat --verbose failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat --verbose failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfscat --verbose failed.'
++ LOG_ERROR 'Check ntfscat --verbose failed.'
++ message='Check ntfscat --verbose failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat --verbose failed.'
+Wed Dec  7 23:28:58 2022 - ERROR - Check ntfscat --verbose failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 43'
++ message='oe_test_ntfs-3g_ntfscat.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 43'
+Wed Dec  7 23:28:58 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 43
++ return 0
++ ntfs-3g.probe --help
++ grep 'Usage:.*ntfs-3g.probe'
+Usage:    ntfs-3g.probe <--readonly|--readwrite> <device|image_file>
++ CHECK_RESULT 0 0 0 'Check ntfs-3g.probe --help failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check ntfs-3g.probe --help failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ntfs-3g.probe --readonly /dev/vdb
+NTFS signature is missing.
++ CHECK_RESULT 12 0 0 'Check ntfs-3g.probe --readonly failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check ntfs-3g.probe --readonly failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check ntfs-3g.probe --readonly failed.'
++ LOG_ERROR 'Check ntfs-3g.probe --readonly failed.'
++ message='Check ntfs-3g.probe --readonly failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfs-3g.probe --readonly failed.'
+Wed Dec  7 23:28:59 2022 - ERROR - Check ntfs-3g.probe --readonly failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 47'
++ message='oe_test_ntfs-3g_ntfscat.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 47'
+Wed Dec  7 23:29:00 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 47
++ return 0
++ ntfs-3g.probe --readwrite /dev/vdb
+NTFS signature is missing.
++ CHECK_RESULT 12 0 0 'Check ntfscat ntfs-3g.probe --readwrite failed.'
++ actual_result=12
++ expect_result=0
++ mode=0
++ error_log='Check ntfscat ntfs-3g.probe --readwrite failed.'
++ '[' -z 12 ']'
++ '[' 0 -eq 0 ']'
++ test 12x '!=' 0x
++ test -n 'Check ntfscat ntfs-3g.probe --readwrite failed.'
++ LOG_ERROR 'Check ntfscat ntfs-3g.probe --readwrite failed.'
++ message='Check ntfscat ntfs-3g.probe --readwrite failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscat ntfs-3g.probe --readwrite failed.'
+Wed Dec  7 23:29:00 2022 - ERROR - Check ntfscat ntfs-3g.probe --readwrite failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfscat.sh line 49'
++ message='oe_test_ntfs-3g_ntfscat.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfscat.sh line 49'
+Wed Dec  7 23:29:01 2022 - ERROR - oe_test_ntfs-3g_ntfscat.sh line 49
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:29:01 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 9
++ test 9 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:29:02 2022 - ERROR - failed to execute the case.
++ exit 9
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:29:02 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: 1f5b1dba-b97d-43e9-bab7-097044f2721c
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpr6nvwxtv ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpr6nvwxtv
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:29:13 2022 - INFO  - Finish restoring the test environment.

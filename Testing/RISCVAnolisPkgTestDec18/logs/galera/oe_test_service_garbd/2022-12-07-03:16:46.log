@@ -1,0 +1,338 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Wed Dec  7 03:16:48 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL 'galera mariadb-server-galera mariadb'
++ pkgs='galera mariadb-server-galera mariadb'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'galera mariadb-server-galera mariadb' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:01:37 ago on Wed 07 Dec 2022 03:15:32 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - package mariadb-server-galera-3:10.5.15-1.an8.riscv64 requires mariadb-server(riscv-64) = 3:10.5.15-1.an8, but none of the providers can be installed
+  - conflicting requests
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:01:37 ago on Wed 07 Dec 2022 03:15:32 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - package mariadb-server-galera-3:10.5.15-1.an8.riscv64 requires mariadb-server(riscv-64) = 3:10.5.15-1.an8, but none of the providers can be installed
+  - conflicting requests
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ systemctl start mariadb
+Failed to start mariadb.service: Unit mariadb.service not found.
++ mysqladmin -u root password 123456
+oe_test_service_garbd.sh: line 26: mysqladmin: command not found
++ sed -i 's/#wsrep_cluster_address="dummy:\/\/"/wsrep_cluster_address="gcomm:\/\/"/g' /etc/my.cnf.d/galera.cnf
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
++ sed -i s/#wsrep_node_name=/wsrep_node_name=localhost.localdomain/g /etc/my.cnf.d/galera.cnf
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
++ sed -i s/#wsrep_node_address=/wsrep_node_address=127.0.0.1/g /etc/my.cnf.d/galera.cnf
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
++ sed -i s/wsrep_sst_auth=root:/wsrep_sst_auth=root:123456/g /etc/my.cnf.d/galera.cnf
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
++ sed -i s/wsrep_on=0/wsrep_on=1/g /etc/my.cnf.d/galera.cnf
+sed: can't read /etc/my.cnf.d/galera.cnf: No such file or directory
++ expect
+spawn mysql -u root -p123456
+couldn't execute "mysql": no such file or directory
+    while executing
+"spawn mysql -u root -p123456"
++ echo -e 'GALERA_NODES="127.0.0.1:4567"
+GALERA_GROUP="my_wsrep_cluster"
+GALERA_OPTIONS="gmcast.listen_addr=tcp://0.0.0.0:4569"
+'
++ systemctl restart mariadb
+Failed to restart mariadb.service: Unit mariadb.service not found.
++ service=garbd.service
+++ date '+%Y-%m-%d %T'
++ log_time='2022-12-07 03:17:11'
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Wed Dec  7 03:17:11 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Wed Dec  7 03:17:12 2022 - INFO  - Start testing...
++ test_restart garbd.service
++ service=garbd.service
++ systemctl restart garbd.service
+Failed to restart garbd.service: Unit garbd.service not found.
++ CHECK_RESULT 5 0 0 'garbd.service restart failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='garbd.service restart failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'garbd.service restart failed'
++ LOG_ERROR 'garbd.service restart failed'
++ message='garbd.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'garbd.service restart failed'
+Wed Dec  7 03:17:12 2022 - ERROR - garbd.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 34'
++ message='../common/common_lib.sh line 34'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 34'
+Wed Dec  7 03:17:13 2022 - ERROR - ../common/common_lib.sh line 34
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status garbd.service
++ grep 'Active: active'
+Unit garbd.service could not be found.
++ CHECK_RESULT 1 0 0 'garbd.service restart failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='garbd.service restart failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'garbd.service restart failed'
++ LOG_ERROR 'garbd.service restart failed'
++ message='garbd.service restart failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'garbd.service restart failed'
+Wed Dec  7 03:17:19 2022 - ERROR - garbd.service restart failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 37'
++ message='../common/common_lib.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 37'
+Wed Dec  7 03:17:20 2022 - ERROR - ../common/common_lib.sh line 37
++ return 0
++ systemctl stop garbd.service
+Failed to stop garbd.service: Unit garbd.service not loaded.
++ CHECK_RESULT 5 0 0 'garbd.service stop failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='garbd.service stop failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'garbd.service stop failed'
++ LOG_ERROR 'garbd.service stop failed'
++ message='garbd.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'garbd.service stop failed'
+Wed Dec  7 03:17:21 2022 - ERROR - garbd.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 39'
++ message='../common/common_lib.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 39'
+Wed Dec  7 03:17:21 2022 - ERROR - ../common/common_lib.sh line 39
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status garbd.service
++ grep 'Active: inactive'
+Unit garbd.service could not be found.
++ CHECK_RESULT 1 0 0 'garbd.service stop failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='garbd.service stop failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'garbd.service stop failed'
++ LOG_ERROR 'garbd.service stop failed'
++ message='garbd.service stop failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'garbd.service stop failed'
+Wed Dec  7 03:17:27 2022 - ERROR - garbd.service stop failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 42'
++ message='../common/common_lib.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 42'
+Wed Dec  7 03:17:28 2022 - ERROR - ../common/common_lib.sh line 42
++ return 0
++ systemctl start garbd.service
+Failed to start garbd.service: Unit garbd.service not found.
++ CHECK_RESULT 5 0 0 'garbd.service start failed'
++ actual_result=5
++ expect_result=0
++ mode=0
++ error_log='garbd.service start failed'
++ '[' -z 5 ']'
++ '[' 0 -eq 0 ']'
++ test 5x '!=' 0x
++ test -n 'garbd.service start failed'
++ LOG_ERROR 'garbd.service start failed'
++ message='garbd.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'garbd.service start failed'
+Wed Dec  7 03:17:29 2022 - ERROR - garbd.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 44'
++ message='../common/common_lib.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 44'
+Wed Dec  7 03:17:29 2022 - ERROR - ../common/common_lib.sh line 44
++ return 0
++ SLEEP_WAIT 5
++ wait_time=5
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 5 --cmd '' --mode 1
++ systemctl status garbd.service
++ grep 'Active: active'
+Unit garbd.service could not be found.
++ CHECK_RESULT 1 0 0 'garbd.service start failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='garbd.service start failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'garbd.service start failed'
++ LOG_ERROR 'garbd.service start failed'
++ message='garbd.service start failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'garbd.service start failed'
+Wed Dec  7 03:17:35 2022 - ERROR - garbd.service start failed
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 47'
++ message='../common/common_lib.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 47'
+Wed Dec  7 03:17:36 2022 - ERROR - ../common/common_lib.sh line 47
++ return 0
++ test_enabled garbd.service
++ service=garbd.service
+++ systemctl is-enabled garbd.service
+Failed to get unit file state for garbd.service: No such file or directory
++ state=
++ '[' '' == enabled ']'
++ '[' '' == disabled ']'
++ '[' '' == masked ']'
++ '[' '' == static ']'
++ LOG_INFO 'Unit is indirect, ignoring.'
++ message='Unit is indirect, ignoring.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Unit is indirect, ignoring.'
+Wed Dec  7 03:17:37 2022 - INFO  - Unit is indirect, ignoring.
++ journalctl --since '2022-12-07 03:17:11' -u garbd.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ grep -v 'access file(./gvwstate.dat) failed(No such file or directory)'
++ CHECK_RESULT 1 0 1 'There is an error message for the log of garbd.service'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of garbd.service'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ test_reload garbd.service
++ service=garbd.service
++ systemctl start garbd.service
+Failed to start garbd.service: Unit garbd.service not found.
++ systemctl reload garbd.service
++ grep 'Job type reload is not applicable'
++ CHECK_RESULT 1 0 0 'Job type reload is not applicable for unit garbd.service'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Job type reload is not applicable for unit garbd.service'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Job type reload is not applicable for unit garbd.service'
++ LOG_ERROR 'Job type reload is not applicable for unit garbd.service'
++ message='Job type reload is not applicable for unit garbd.service'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Job type reload is not applicable for unit garbd.service'
+Wed Dec  7 03:17:37 2022 - ERROR - Job type reload is not applicable for unit garbd.service
++ (( exec_result++ ))
++ LOG_ERROR '../common/common_lib.sh line 91'
++ message='../common/common_lib.sh line 91'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message '../common/common_lib.sh line 91'
+Wed Dec  7 03:17:38 2022 - ERROR - ../common/common_lib.sh line 91
++ return 0
++ systemctl status garbd.service
++ grep 'Active: active'
+Unit garbd.service could not be found.
++ systemctl status garbd.service
++ grep 'inactive (dead)'
+Unit garbd.service could not be found.
++ return 1
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Wed Dec  7 03:17:39 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 7
++ test 7 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 03:17:39 2022 - ERROR - failed to execute the case.
++ exit 7
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Wed Dec  7 03:17:40 2022 - INFO  - start environment cleanup.
++ systemctl stop garbd.service
+Failed to stop garbd.service: Unit garbd.service not loaded.
++ systemctl stop mariadb.service
+Failed to stop mariadb.service: Unit mariadb.service not loaded.
++ rm -rf '/var/lib/mysql/*'
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:01:37 ago on Wed 07 Dec 2022 03:15:32 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - package mariadb-server-galera-3:10.5.15-1.an8.riscv64 requires mariadb-server(riscv-64) = 3:10.5.15-1.an8, but none of the providers can be installed
+  - conflicting requests
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:01:37 ago on Wed 07 Dec 2022 03:15:32 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - package mariadb-server-galera-3:10.5.15-1.an8.riscv64 requires mariadb-server(riscv-64) = 3:10.5.15-1.an8, but none of the providers can be installed
+  - conflicting requests
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:01:37 ago on Wed 07 Dec 2022 03:15:32 AM EST.\nError: \n Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch\n  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed\n  - package mariadb-server-galera-3:10.5.15-1.an8.riscv64 requires mariadb-server(riscv-64) = 3:10.5.15-1.an8, but none of the providers can be installed\n  - conflicting requests\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Wed Dec  7 03:17:42 2022 - INFO  - Finish environment cleanup!

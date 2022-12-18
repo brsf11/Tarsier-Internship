@@ -1,0 +1,342 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 08:58:48 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox'
++ pkgs='lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'lxc lxc-devel lxc-libs lxcfs lxcfs-tools tar busybox' --node 1 --tempfile ''
+Wed Dec  7 08:58:55 2022 - ERROR - pkgs:(lxcfs-tools busybox) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
+++ rpm -qa lxc
+++ awk -F - '{print $2}'
++ version=
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Wed Dec  7 08:58:57 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 08:58:57 2022 - INFO  - Start to run test.
++ lxc-create -t /usr/share/lxc/templates/lxc-busybox -n myEuler1
+oe_test_lxc_ls_monitor.sh: line 30: lxc-create: command not found
++ CHECK_RESULT 127 0 0 'Failed to set up container.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Failed to set up container.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Failed to set up container.'
++ LOG_ERROR 'Failed to set up container.'
++ message='Failed to set up container.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to set up container.'
+Wed Dec  7 08:58:58 2022 - ERROR - Failed to set up container.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 31'
++ message='oe_test_lxc_ls_monitor.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 31'
+Wed Dec  7 08:58:59 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 31
++ return 0
++ lxc-ls --help
++ grep -i Usage
++ CHECK_RESULT 1 0 0 'Check lxc-ls --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-ls --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-ls --help failed.'
++ LOG_ERROR 'Check lxc-ls --help failed.'
++ message='Check lxc-ls --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-ls --help failed.'
+Wed Dec  7 08:58:59 2022 - ERROR - Check lxc-ls --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 33'
++ message='oe_test_lxc_ls_monitor.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 33'
+Wed Dec  7 08:59:00 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 33
++ return 0
++ lxc-ls --usage
++ grep -i 'Usage: lxc-ls'
++ CHECK_RESULT 1 0 0 'Check lxc-ls --usage failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-ls --usage failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-ls --usage failed.'
++ LOG_ERROR 'Check lxc-ls --usage failed.'
++ message='Check lxc-ls --usage failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-ls --usage failed.'
+Wed Dec  7 08:59:00 2022 - ERROR - Check lxc-ls --usage failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 35'
++ message='oe_test_lxc_ls_monitor.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 35'
+Wed Dec  7 08:59:01 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 35
++ return 0
++ lxc-ls --version
++ grep
+oe_test_lxc_ls_monitor.sh: line 36: lxc-ls: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ CHECK_RESULT 2 0 0 'Check lxc-ls --version failed.'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Check lxc-ls --version failed.'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Check lxc-ls --version failed.'
++ LOG_ERROR 'Check lxc-ls --version failed.'
++ message='Check lxc-ls --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-ls --version failed.'
+Wed Dec  7 08:59:02 2022 - ERROR - Check lxc-ls --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 37'
++ message='oe_test_lxc_ls_monitor.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 37'
+Wed Dec  7 08:59:02 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 37
++ return 0
++ lxc-ls
++ grep myEuler1
+oe_test_lxc_ls_monitor.sh: line 38: lxc-ls: command not found
++ CHECK_RESULT 1 0 0 'Failed to list myEuler1.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed to list myEuler1.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed to list myEuler1.'
++ LOG_ERROR 'Failed to list myEuler1.'
++ message='Failed to list myEuler1.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to list myEuler1.'
+Wed Dec  7 08:59:03 2022 - ERROR - Failed to list myEuler1.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 39'
++ message='oe_test_lxc_ls_monitor.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 39'
+Wed Dec  7 08:59:04 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 39
++ return 0
++ lxc-ls --stopped
++ grep myEuler1
+oe_test_lxc_ls_monitor.sh: line 40: lxc-ls: command not found
++ CHECK_RESULT 1 0 0 'Check lxc-ls --stopped failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-ls --stopped failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-ls --stopped failed.'
++ LOG_ERROR 'Check lxc-ls --stopped failed.'
++ message='Check lxc-ls --stopped failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-ls --stopped failed.'
+Wed Dec  7 08:59:04 2022 - ERROR - Check lxc-ls --stopped failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 41'
++ message='oe_test_lxc_ls_monitor.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 41'
+Wed Dec  7 08:59:05 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 41
++ return 0
++ lxc-start -n myEuler1
+oe_test_lxc_ls_monitor.sh: line 42: lxc-start: command not found
++ CHECK_RESULT 127 0 0 'Check lxc-start -n failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check lxc-start -n failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check lxc-start -n failed.'
++ LOG_ERROR 'Check lxc-start -n failed.'
++ message='Check lxc-start -n failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-start -n failed.'
+Wed Dec  7 08:59:05 2022 - ERROR - Check lxc-start -n failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 43'
++ message='oe_test_lxc_ls_monitor.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 43'
+Wed Dec  7 08:59:06 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 43
++ return 0
++ lxc-ls --running
++ grep myEuler1
+oe_test_lxc_ls_monitor.sh: line 44: lxc-ls: command not found
++ CHECK_RESULT 1 0 0 'Check lxc-ls --running failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-ls --running failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-ls --running failed.'
++ LOG_ERROR 'Check lxc-ls --running failed.'
++ message='Check lxc-ls --running failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-ls --running failed.'
+Wed Dec  7 08:59:06 2022 - ERROR - Check lxc-ls --running failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 45'
++ message='oe_test_lxc_ls_monitor.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 45'
+Wed Dec  7 08:59:07 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 45
++ return 0
++ lxc-ls --defined
++ grep myEuler1
+oe_test_lxc_ls_monitor.sh: line 46: lxc-ls: command not found
++ CHECK_RESULT 1 0 0 'Check lxc-ls --defined failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-ls --defined failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-ls --defined failed.'
++ LOG_ERROR 'Check lxc-ls --defined failed.'
++ message='Check lxc-ls --defined failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-ls --defined failed.'
+Wed Dec  7 08:59:08 2022 - ERROR - Check lxc-ls --defined failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 47'
++ message='oe_test_lxc_ls_monitor.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 47'
+Wed Dec  7 08:59:08 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 47
++ return 0
++ lxc-monitor --help
++ grep -i Usage
++ CHECK_RESULT 1 0 0 'Check lxc-monitor --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-monitor --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-monitor --help failed.'
++ LOG_ERROR 'Check lxc-monitor --help failed.'
++ message='Check lxc-monitor --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-monitor --help failed.'
+Wed Dec  7 08:59:09 2022 - ERROR - Check lxc-monitor --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 50'
++ message='oe_test_lxc_ls_monitor.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 50'
+Wed Dec  7 08:59:09 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 50
++ return 0
++ lxc-monitor --usage
++ grep -i 'Usage: lxc-monitor'
++ CHECK_RESULT 1 0 0 'Check lxc-monitor --usage failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check lxc-monitor --usage failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check lxc-monitor --usage failed.'
++ LOG_ERROR 'Check lxc-monitor --usage failed.'
++ message='Check lxc-monitor --usage failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-monitor --usage failed.'
+Wed Dec  7 08:59:10 2022 - ERROR - Check lxc-monitor --usage failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 52'
++ message='oe_test_lxc_ls_monitor.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 52'
+Wed Dec  7 08:59:10 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 52
++ return 0
++ lxc-monitor --version
++ grep
+oe_test_lxc_ls_monitor.sh: line 53: lxc-monitor: command not found
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ CHECK_RESULT 2 0 0 'Check lxc-monitor --version failed.'
++ actual_result=2
++ expect_result=0
++ mode=0
++ error_log='Check lxc-monitor --version failed.'
++ '[' -z 2 ']'
++ '[' 0 -eq 0 ']'
++ test 2x '!=' 0x
++ test -n 'Check lxc-monitor --version failed.'
++ LOG_ERROR 'Check lxc-monitor --version failed.'
++ message='Check lxc-monitor --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check lxc-monitor --version failed.'
+Wed Dec  7 08:59:11 2022 - ERROR - Check lxc-monitor --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_lxc_ls_monitor.sh line 54'
++ message='oe_test_lxc_ls_monitor.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_lxc_ls_monitor.sh line 54'
+Wed Dec  7 08:59:12 2022 - ERROR - oe_test_lxc_ls_monitor.sh line 54
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 08:59:12 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 12
++ test 12 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 08:59:13 2022 - ERROR - failed to execute the case.
++ exit 12
++ post_test
++ LOG_INFO 'Start to restore the tet environment.'
++ message='Start to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the tet environment.'
+Wed Dec  7 08:59:13 2022 - INFO  - Start to restore the tet environment.
++ lxc-stop myEuler1
+oe_test_lxc_ls_monitor.sh: line 60: lxc-stop: command not found
++ lxc-destroy myEuler1
+oe_test_lxc_ls_monitor.sh: line 61: lxc-destroy: command not found
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Wed Dec  7 08:59:14 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the tet environment.'
++ message='End to restore the tet environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the tet environment.'
+Wed Dec  7 08:59:15 2022 - INFO  - End to restore the tet environment.

@@ -1,0 +1,330 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:45:40 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp4tyhcn63
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp4tyhcn63
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ mkdir -p /mnt/windows
++ ntfs-3g /dev/vdb /mnt/windows
+NTFS signature is missing.
+Failed to mount '/dev/vdb': Invalid argument
+The device '/dev/vdb' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
++ touch /mnt/windows/test.txt
++ rm -rf /mnt/windows/test.txt
++ umount /mnt/windows
+umount: /mnt/windows: not mounted.
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:46:14 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:46:14 2022 - INFO  - Start to run test.
++ ntfsundelete --help
++ grep 'Usage: ntfsundelete \[options\]'
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --help failed.'
++ LOG_ERROR 'Check ntfsundelete --help failed.'
++ message='Check ntfsundelete --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --help failed.'
+Wed Dec  7 23:46:15 2022 - ERROR - Check ntfsundelete --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 36'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 36'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 36'
+Wed Dec  7 23:46:15 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 36
++ return 0
++ ntfsundelete --version
++ grep 'ntfsundelete v'
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --version failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --version failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --version failed.'
++ LOG_ERROR 'Check ntfsundelete --version failed.'
++ message='Check ntfsundelete --version failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --version failed.'
+Wed Dec  7 23:46:16 2022 - ERROR - Check ntfsundelete --version failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 38'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 38'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 38'
+Wed Dec  7 23:46:16 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 38
++ return 0
++ ntfsundelete --scan /dev/vdb --force
++ grep test.txt
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 39: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --scan failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --scan failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --scan failed.'
++ LOG_ERROR 'Check ntfsundelete --scan failed.'
++ message='Check ntfsundelete --scan failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --scan failed.'
+Wed Dec  7 23:46:17 2022 - ERROR - Check ntfsundelete --scan failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 40'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 40'
+Wed Dec  7 23:46:18 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 40
++ return 0
++ ntfsundelete --percentage 10 /dev/vdb --force
++ grep test.txt
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 41: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --percentage failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --percentage failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --percentage failed.'
++ LOG_ERROR 'Check ntfsundelete --percentage failed.'
++ message='Check ntfsundelete --percentage failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --percentage failed.'
+Wed Dec  7 23:46:18 2022 - ERROR - Check ntfsundelete --percentage failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 42'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 42'
+Wed Dec  7 23:46:19 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 42
++ return 0
++ ntfsundelete --match test.txt /dev/vdb --force
++ grep test.txt
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 43: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --match failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --match failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --match failed.'
++ LOG_ERROR 'Check ntfsundelete --match failed.'
++ message='Check ntfsundelete --match failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --match failed.'
+Wed Dec  7 23:46:19 2022 - ERROR - Check ntfsundelete --match failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 44'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 44'
+Wed Dec  7 23:46:20 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 44
++ return 0
++ ntfsundelete --case --match test.txt /dev/vdb --force
++ grep test.txt
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 45: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --case failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --case failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --case failed.'
++ LOG_ERROR 'Check ntfsundelete --case failed.'
++ message='Check ntfsundelete --case failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --case failed.'
+Wed Dec  7 23:46:20 2022 - ERROR - Check ntfsundelete --case failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 46'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 46'
+Wed Dec  7 23:46:21 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 46
++ return 0
++ ntfsundelete --size 0 /dev/vdb --force
++ grep test.txt
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 47: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --size failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --size failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --size failed.'
++ LOG_ERROR 'Check ntfsundelete --size failed.'
++ message='Check ntfsundelete --size failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --size failed.'
+Wed Dec  7 23:46:22 2022 - ERROR - Check ntfsundelete --size failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 48'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 48'
+Wed Dec  7 23:46:22 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 48
++ return 0
++ ntfsundelete --time 2021y /dev/vdb --force
++ grep test.txt
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 49: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --time failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --time failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --time failed.'
++ LOG_ERROR 'Check ntfsundelete --time failed.'
++ message='Check ntfsundelete --time failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --time failed.'
+Wed Dec  7 23:46:23 2022 - ERROR - Check ntfsundelete --time failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 50'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 50'
+Wed Dec  7 23:46:23 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 50
++ return 0
++ ntfsundelete --undelete --match test.txt /dev/vdb --force
++ grep 'Undeleted '\''test.txt'\'' successfully to test.txt'
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 51: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --undelete failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --undelete failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --undelete failed.'
++ LOG_ERROR 'Check ntfsundelete --undelete failed.'
++ message='Check ntfsundelete --undelete failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --undelete failed.'
+Wed Dec  7 23:46:24 2022 - ERROR - Check ntfsundelete --undelete failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 52'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 52'
+Wed Dec  7 23:46:24 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 52
++ return 0
++ ntfsundelete --inode 7 /dev/vdb --force
++ grep test.txt
+oe_test_ntfs-3g_ntfsundelete_01.sh: line 53: ntfsundelete: command not found
++ CHECK_RESULT 1 0 0 'Check ntfsundelete --inode failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfsundelete --inode failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfsundelete --inode failed.'
++ LOG_ERROR 'Check ntfsundelete --inode failed.'
++ message='Check ntfsundelete --inode failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfsundelete --inode failed.'
+Wed Dec  7 23:46:25 2022 - ERROR - Check ntfsundelete --inode failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfsundelete_01.sh line 54'
++ message='oe_test_ntfs-3g_ntfsundelete_01.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfsundelete_01.sh line 54'
+Wed Dec  7 23:46:25 2022 - ERROR - oe_test_ntfs-3g_ntfsundelete_01.sh line 54
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:46:26 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 10
++ test 10 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:46:26 2022 - ERROR - failed to execute the case.
++ exit 10
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:46:27 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdb contains a ext4 file system
+	created on Wed Dec  7 23:45:23 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: 186156fb-96ef-44ba-800e-93dbd032f05e
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ rm -rf /mnt/windows 'test.txt*'
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp4tyhcn63 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp4tyhcn63
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:46:37 2022 - INFO  - Finish restoring the test environment.

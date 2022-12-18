@@ -1,0 +1,474 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Tue Dec  6 23:53:43 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL djvulibre
++ pkgs=djvulibre
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs djvulibre --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpbhdp2r1f
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpbhdp2r1f
++ cp ../common/test.pdf ./
++ expect
+spawn any2djvu test.pdf
+/-- Started Wed Dec  7 04:54:19 AM UTC 2022: root@anolis-riscv, pid 1443: /usr/bin/any2djvu (cwd /root/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_05)
+WARNING!
+
+any2djvu uses an external server which is willing to perform the
+conversion and requires the document transfer over to that server.
+There is a security issue in operating on documents not intended for
+widespread distribution, which could be partially although not
+completely ameliorated by using a secure web connection.
+
+Do you acknowledge and allow the transmission of the document?
+(Type 'yes' to acknowledge. You can define non-empty environment
+ variable DJVU_ONLINE_ACK to avoid seeing this dialog, or use -a
+ command line parameter to any2djvu).
+[yes/no]:yes
+Wed Dec 7 04:54:19 AM UTC 2022 Processing test ...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0curl: (6) Could not resolve host: any2djvu.djvu.org
+error: something got wrong. check log file
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Tue Dec  6 23:54:30 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ test -f test.djvu
++ CHECK_RESULT 1 0 0 'Check test.djvu not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check test.djvu not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check test.djvu not exist.'
++ LOG_ERROR 'Check test.djvu not exist.'
++ message='Check test.djvu not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check test.djvu not exist.'
+Tue Dec  6 23:54:31 2022 - ERROR - Check test.djvu not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 37'
++ message='oe_test_djvulibre_05.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 37'
+Tue Dec  6 23:54:31 2022 - ERROR - oe_test_djvulibre_05.sh line 37
++ return 0
++ djvused --help
++ grep 'Usage: djvused' result
+Usage: djvused [options] djvufile
++ rm -rf result
++ CHECK_RESULT 0 0 0 'Check djvused --help failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check djvused --help failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ djvused test.djvu -e output-all
+*** [1-11711] Failed to open 'test.djvu': No such file or directory.
+*** (ByteStream.cpp:747)
+*** 'DJVU::GUTF8String DJVU::ByteStream::Stdio::init(const DJVU::GURL&, const char*)'
+
++ CHECK_RESULT 10 0 0 'Check djvused -e failed.'
++ actual_result=10
++ expect_result=0
++ mode=0
++ error_log='Check djvused -e failed.'
++ '[' -z 10 ']'
++ '[' 0 -eq 0 ']'
++ test 10x '!=' 0x
++ test -n 'Check djvused -e failed.'
++ LOG_ERROR 'Check djvused -e failed.'
++ message='Check djvused -e failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvused -e failed.'
+Tue Dec  6 23:54:32 2022 - ERROR - Check djvused -e failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 42'
++ message='oe_test_djvulibre_05.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 42'
+Tue Dec  6 23:54:33 2022 - ERROR - oe_test_djvulibre_05.sh line 42
++ return 0
++ test -f file.dsed
++ CHECK_RESULT 0 0 0 'Check file.dsed not exist.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check file.dsed not exist.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ djvused test.djvu -f file.dsed -s
+*** [1-11711] Failed to open 'test.djvu': No such file or directory.
+*** (ByteStream.cpp:747)
+*** 'DJVU::GUTF8String DJVU::ByteStream::Stdio::init(const DJVU::GURL&, const char*)'
+
++ CHECK_RESULT 10 0 0 'Check djvused -f failed.'
++ actual_result=10
++ expect_result=0
++ mode=0
++ error_log='Check djvused -f failed.'
++ '[' -z 10 ']'
++ '[' 0 -eq 0 ']'
++ test 10x '!=' 0x
++ test -n 'Check djvused -f failed.'
++ LOG_ERROR 'Check djvused -f failed.'
++ message='Check djvused -f failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvused -f failed.'
+Tue Dec  6 23:54:34 2022 - ERROR - Check djvused -f failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 46'
++ message='oe_test_djvulibre_05.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 46'
+Tue Dec  6 23:54:34 2022 - ERROR - oe_test_djvulibre_05.sh line 46
++ return 0
++ djvuserve
++ grep 'Usage: djvuserve' result
+Usage: djvuserve [<djvufile>[/<djvmid>]
++ rm -rf result
++ CHECK_RESULT 0 0 0 'Check djvuserve help failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check djvuserve help failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ djvuserve test.djvu
++ grep 'Location: test.djvu'
+*** File not found
+*** (djvuserve.cpp:397)
+*** 'int main(int, char**)'
+
++ CHECK_RESULT 1 0 0 'Check djvused failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check djvused failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check djvused failed.'
++ LOG_ERROR 'Check djvused failed.'
++ message='Check djvused failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvused failed.'
+Tue Dec  6 23:54:35 2022 - ERROR - Check djvused failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 51'
++ message='oe_test_djvulibre_05.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 51'
+Tue Dec  6 23:54:36 2022 - ERROR - oe_test_djvulibre_05.sh line 51
++ return 0
++ djvutoxml --help
++ grep 'Usage: djvutoxml' result
+Usage: djvutoxml [options] <inputfile> <outputfile>
++ rm -rf result
++ CHECK_RESULT 0 0 0 'Check djvutoxml --help failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check djvutoxml --help failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ djvutoxml --with-anno test.djvu djvutoxml
+*** [1-12411] Failed to get data for URL 'file://localhost/root/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_05/test.djvu'
+*** (DjVuDocument.cpp:200)
+*** 'void DJVU::DjVuDocument::start_init(const DJVU::GURL&, DJVU::GP<DJVU::DjVuPort>, DJVU::DjVuFileCache*)'
+
++ CHECK_RESULT 1 0 0 'Check djvutoxml --with-anno failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check djvutoxml --with-anno failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check djvutoxml --with-anno failed.'
++ LOG_ERROR 'Check djvutoxml --with-anno failed.'
++ message='Check djvutoxml --with-anno failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutoxml --with-anno failed.'
+Tue Dec  6 23:54:37 2022 - ERROR - Check djvutoxml --with-anno failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 56'
++ message='oe_test_djvulibre_05.sh line 56'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 56'
+Tue Dec  6 23:54:37 2022 - ERROR - oe_test_djvulibre_05.sh line 56
++ return 0
++ test -f djvutoxml
++ CHECK_RESULT 1 0 0 'Check djvutoxml not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check djvutoxml not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check djvutoxml not exist.'
++ LOG_ERROR 'Check djvutoxml not exist.'
++ message='Check djvutoxml not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutoxml not exist.'
+Tue Dec  6 23:54:38 2022 - ERROR - Check djvutoxml not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 58'
++ message='oe_test_djvulibre_05.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 58'
+Tue Dec  6 23:54:38 2022 - ERROR - oe_test_djvulibre_05.sh line 58
++ return 0
++ djvutoxml --with-text test.djvu djvutoxml1
+*** [1-12411] Failed to get data for URL 'file://localhost/root/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_05/test.djvu'
+*** (DjVuDocument.cpp:200)
+*** 'void DJVU::DjVuDocument::start_init(const DJVU::GURL&, DJVU::GP<DJVU::DjVuPort>, DJVU::DjVuFileCache*)'
+
++ CHECK_RESULT 1 0 0 'Check djvutoxml --with-text failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check djvutoxml --with-text failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check djvutoxml --with-text failed.'
++ LOG_ERROR 'Check djvutoxml --with-text failed.'
++ message='Check djvutoxml --with-text failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutoxml --with-text failed.'
+Tue Dec  6 23:54:39 2022 - ERROR - Check djvutoxml --with-text failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 60'
++ message='oe_test_djvulibre_05.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 60'
+Tue Dec  6 23:54:40 2022 - ERROR - oe_test_djvulibre_05.sh line 60
++ return 0
++ test -f djvutoxml1
++ CHECK_RESULT 1 0 0 'Check djvutoxml1 not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check djvutoxml1 not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check djvutoxml1 not exist.'
++ LOG_ERROR 'Check djvutoxml1 not exist.'
++ message='Check djvutoxml1 not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutoxml1 not exist.'
+Tue Dec  6 23:54:40 2022 - ERROR - Check djvutoxml1 not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 62'
++ message='oe_test_djvulibre_05.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 62'
+Tue Dec  6 23:54:41 2022 - ERROR - oe_test_djvulibre_05.sh line 62
++ return 0
++ djvutoxml --page 1 test.djvu djvutoxml2
+*** [1-12411] Failed to get data for URL 'file://localhost/root/mugen-riscv/testcases/cli-test/djvulibre/oe_test_djvulibre_05/test.djvu'
+*** (DjVuDocument.cpp:200)
+*** 'void DJVU::DjVuDocument::start_init(const DJVU::GURL&, DJVU::GP<DJVU::DjVuPort>, DJVU::DjVuFileCache*)'
+
++ CHECK_RESULT 1 0 0 'Check djvutoxml --page failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check djvutoxml --page failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check djvutoxml --page failed.'
++ LOG_ERROR 'Check djvutoxml --page failed.'
++ message='Check djvutoxml --page failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutoxml --page failed.'
+Tue Dec  6 23:54:41 2022 - ERROR - Check djvutoxml --page failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 64'
++ message='oe_test_djvulibre_05.sh line 64'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 64'
+Tue Dec  6 23:54:42 2022 - ERROR - oe_test_djvulibre_05.sh line 64
++ return 0
++ test -f djvutoxml2
++ CHECK_RESULT 1 0 0 'Check djvutoxml2 not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check djvutoxml2 not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check djvutoxml2 not exist.'
++ LOG_ERROR 'Check djvutoxml2 not exist.'
++ message='Check djvutoxml2 not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutoxml2 not exist.'
+Tue Dec  6 23:54:42 2022 - ERROR - Check djvutoxml2 not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 66'
++ message='oe_test_djvulibre_05.sh line 66'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 66'
+Tue Dec  6 23:54:43 2022 - ERROR - oe_test_djvulibre_05.sh line 66
++ return 0
++ djvutxt
++ grep 'Usage: djvutxt' result
+Usage: djvutxt [options] <djvufile> [<outputfile>]
++ rm -rf result
++ CHECK_RESULT 0 0 0 'Check djvutxt failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check djvutxt failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ djvutxt -page=1 test.djvu djvutxt1
+djvutxt: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvutxt: 'ByteStream.cpp:747'
++ CHECK_RESULT 10 0 0 'Check djvutxt --page failed.'
++ actual_result=10
++ expect_result=0
++ mode=0
++ error_log='Check djvutxt --page failed.'
++ '[' -z 10 ']'
++ '[' 0 -eq 0 ']'
++ test 10x '!=' 0x
++ test -n 'Check djvutxt --page failed.'
++ LOG_ERROR 'Check djvutxt --page failed.'
++ message='Check djvutxt --page failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutxt --page failed.'
+Tue Dec  6 23:54:44 2022 - ERROR - Check djvutxt --page failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 71'
++ message='oe_test_djvulibre_05.sh line 71'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 71'
+Tue Dec  6 23:54:44 2022 - ERROR - oe_test_djvulibre_05.sh line 71
++ return 0
++ test -f djvutxt1
++ CHECK_RESULT 0 0 0 'Check djvutxt1 not exist.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check djvutxt1 not exist.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ djvutxt -detail=char test.djvu djvutxt2
+djvutxt: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvutxt: 'ByteStream.cpp:747'
++ CHECK_RESULT 10 0 0 'Check djvutxt -detail=char failed.'
++ actual_result=10
++ expect_result=0
++ mode=0
++ error_log='Check djvutxt -detail=char failed.'
++ '[' -z 10 ']'
++ '[' 0 -eq 0 ']'
++ test 10x '!=' 0x
++ test -n 'Check djvutxt -detail=char failed.'
++ LOG_ERROR 'Check djvutxt -detail=char failed.'
++ message='Check djvutxt -detail=char failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutxt -detail=char failed.'
+Tue Dec  6 23:54:45 2022 - ERROR - Check djvutxt -detail=char failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 75'
++ message='oe_test_djvulibre_05.sh line 75'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 75'
+Tue Dec  6 23:54:46 2022 - ERROR - oe_test_djvulibre_05.sh line 75
++ return 0
++ test -f djvutxt2
++ CHECK_RESULT 0 0 0 'Check djvutxt2 not exist.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check djvutxt2 not exist.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ djvutxt -escape test.djvu djvutxt3
+djvutxt: [1-11711] Failed to open 'test.djvu': No such file or directory.
+djvutxt: 'ByteStream.cpp:747'
++ CHECK_RESULT 10 0 0 'Check djvutxt -escape failed.'
++ actual_result=10
++ expect_result=0
++ mode=0
++ error_log='Check djvutxt -escape failed.'
++ '[' -z 10 ']'
++ '[' 0 -eq 0 ']'
++ test 10x '!=' 0x
++ test -n 'Check djvutxt -escape failed.'
++ LOG_ERROR 'Check djvutxt -escape failed.'
++ message='Check djvutxt -escape failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check djvutxt -escape failed.'
+Tue Dec  6 23:54:46 2022 - ERROR - Check djvutxt -escape failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_05.sh line 79'
++ message='oe_test_djvulibre_05.sh line 79'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_05.sh line 79'
+Tue Dec  6 23:54:47 2022 - ERROR - oe_test_djvulibre_05.sh line 79
++ return 0
++ test -f djvutxt3
++ CHECK_RESULT 0 0 0 'Check djvutxt3 not exist.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check djvutxt3 not exist.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Tue Dec  6 23:54:47 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 13
++ test 13 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Tue Dec  6 23:54:48 2022 - ERROR - failed to execute the case.
++ exit 13
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Tue Dec  6 23:54:48 2022 - INFO  - Start to restore the test environment.
+++ ls
+++ grep -v '\.sh'
++ rm -rf djvutxt1 djvutxt2 djvutxt3 file.dsed test-any2djvu.log test.pdf
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpbhdp2r1f ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpbhdp2r1f
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Tue Dec  6 23:55:00 2022 - INFO  - End to restore the test environment.

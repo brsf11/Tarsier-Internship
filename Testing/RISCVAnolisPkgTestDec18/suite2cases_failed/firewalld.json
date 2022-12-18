@@ -1,0 +1,64 @@
+{
+    "path": "${OET_PATH}/testcases/cli-test/firewalld",
+    "machine num": 3,
+    "add network interface": 1,
+    "cases": [
+        {
+            "name": "oe_test_firewalld_add_sourceip"
+        },
+        {
+            "name": "oe_test_firewalld_add_sourceport"
+        },
+        {
+            "name": "oe_test_firewalld_getzone"
+        },
+        {
+            "name": "oe_test_firewalld_ip_camouflage"
+        },
+        {
+            "name": "oe_test_firewalld_list"
+        },
+        {
+            "name": "oe_test_firewalld_lockdown"
+        },
+        {
+            "name": "oe_test_firewalld_log_denied"
+        },
+        {
+            "name": "oe_test_firewalld_new_zone"
+        },
+        {
+            "name": "oe_test_firewalld_runtime_permanent"
+        },
+        {
+            "name": "oe_test_firewalld_set_target"
+        },
+        {
+            "name": "oe_test_firewalld_start_check"
+        },
+        {
+            "name": "oe_test_firewalld_start_status"
+        },
+        {
+            "name": "oe_test_firewalld_start_stop"
+        },
+        {
+            "name": "oe_test_firewalld_whitelist_command"
+        },
+        {
+            "name": "oe_test_firewalld_whitelist_contexts"
+        },
+        {
+            "name": "oe_test_firewalld_whitelist_uids"
+        },
+        {
+            "name": "oe_test_firewalld_whitelist_user"
+        },
+        {
+            "name": "oe_test_firewalld_zone_add_service"
+        },
+        {
+            "name": "oe_test_service_firewalld"
+        }
+    ]
+}

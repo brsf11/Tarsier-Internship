@@ -1,0 +1,465 @@
++ source ../common/common_javapackages-tools.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 06:03:11 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL tar
++ pkgs=tar
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs tar --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp2t71xccn
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp2t71xccn
++ deploy_env
++ DNF_INSTALL junit
++ pkgs=junit
++ node=1
++ '[' -z /tmp/tmp2t71xccn ']'
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs junit --node 1 --tempfile /tmp/tmp2t71xccn
+Wed Dec  7 06:03:53 2022 - ERROR - pkgs:(junit) not found
++ tmpfile2=
++ '[' -z /tmp/tmp2t71xccn ']'
+++ rpm -qa 'java*'
+++ grep 'java-.*-openjdk'
+++ awk -F - '{print $2}'
++ java_version=
++ DNF_INSTALL 'javapackages-tools java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j'
++ pkgs='javapackages-tools java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j'
++ node=1
++ '[' -z /tmp/tmp2t71xccn ']'
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'javapackages-tools java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j' --node 1 --tempfile /tmp/tmp2t71xccn
+Wed Dec  7 06:04:02 2022 - ERROR - pkgs:(java--devel xmvn-resolve objectweb-asm3 beust-jcommander log4j) not found
++ tmpfile2=
++ '[' -z /tmp/tmp2t71xccn ']'
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 06:04:03 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 06:04:03 2022 - INFO  - Start to run test.
++ mkdir hello
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cp '/usr/share/java/*.jar' hello/
+cp: cannot stat '/usr/share/java/*.jar': No such file or directory
++ echo 'public class Hello{
+    public static void main(String[] args){
+        System.out.println("Hello java!");
+    }
+}'
++ tar cvzf hello.tar.gz hello
+hello/
+hello/Hello.java
++ test -f hello.tar.gz
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ touch exclusion
++ clean-binary-files -e exclusion -l -a hello.tar.gz
+oe_test_binary_files_operation.sh: line 43: clean-binary-files: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 44'
++ message='oe_test_binary_files_operation.sh line 44'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 44'
+Wed Dec  7 06:04:04 2022 - ERROR - oe_test_binary_files_operation.sh line 44
++ return 0
++ grep 'remove hello/' instructions
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 46'
++ message='oe_test_binary_files_operation.sh line 46'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 46'
+Wed Dec  7 06:04:05 2022 - ERROR - oe_test_binary_files_operation.sh line 46
++ return 0
++ test -f hello-clean.tar.gz
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 48'
++ message='oe_test_binary_files_operation.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 48'
+Wed Dec  7 06:04:05 2022 - ERROR - oe_test_binary_files_operation.sh line 48
++ return 0
++ check-binary-files -f instructions -a hello-clean.tar.gz
++ grep ERROR
+oe_test_binary_files_operation.sh: line 49: check-binary-files: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 50'
++ message='oe_test_binary_files_operation.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 50'
+Wed Dec  7 06:04:06 2022 - ERROR - oe_test_binary_files_operation.sh line 50
++ return 0
++ rm -rf hello-clean.tar.gz
++ clean-binary-files -f instructions -n -a hello.tar.gz
++ grep 'rm -f "hello/'
+oe_test_binary_files_operation.sh: line 52: clean-binary-files: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 53'
++ message='oe_test_binary_files_operation.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 53'
+Wed Dec  7 06:04:07 2022 - ERROR - oe_test_binary_files_operation.sh line 53
++ return 0
++ test -f hello-clean.tar.gz
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 55'
++ message='oe_test_binary_files_operation.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 55'
+Wed Dec  7 06:04:07 2022 - ERROR - oe_test_binary_files_operation.sh line 55
++ return 0
++ check-binary-files -f instructions -a hello-clean.tar.gz
++ grep ERROR
+oe_test_binary_files_operation.sh: line 56: check-binary-files: command not found
++ CHECK_RESULT 1 1
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ test -f hello-clean-clean.tar.gz
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 59'
++ message='oe_test_binary_files_operation.sh line 59'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 59'
+Wed Dec  7 06:04:08 2022 - ERROR - oe_test_binary_files_operation.sh line 59
++ return 0
++ mv hello hello_old
++ tar zxvf hello-clean-clean.tar.gz
+tar (child): hello-clean-clean.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
++ test -d hello
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 63'
++ message='oe_test_binary_files_operation.sh line 63'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 63'
+Wed Dec  7 06:04:08 2022 - ERROR - oe_test_binary_files_operation.sh line 63
++ return 0
++ create-jar-links -f instructions
++ grep 'build-jar-repository -s'
+oe_test_binary_files_operation.sh: line 64: create-jar-links: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 65'
++ message='oe_test_binary_files_operation.sh line 65'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 65'
+Wed Dec  7 06:04:09 2022 - ERROR - oe_test_binary_files_operation.sh line 65
++ return 0
++ ls -l hello
++ grep '].jar -> /usr/share/java/'
+ls: cannot access 'hello': No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 67'
++ message='oe_test_binary_files_operation.sh line 67'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 67'
+Wed Dec  7 06:04:09 2022 - ERROR - oe_test_binary_files_operation.sh line 67
++ return 0
++ create-jar-links -f instructions -a hello-clean-clean.tar.gz
++ grep 'build-jar-repository -s'
+oe_test_binary_files_operation.sh: line 68: create-jar-links: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 69'
++ message='oe_test_binary_files_operation.sh line 69'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 69'
+Wed Dec  7 06:04:10 2022 - ERROR - oe_test_binary_files_operation.sh line 69
++ return 0
++ test -f hello-clean-clean-clean.tar.gz
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 71'
++ message='oe_test_binary_files_operation.sh line 71'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 71'
+Wed Dec  7 06:04:11 2022 - ERROR - oe_test_binary_files_operation.sh line 71
++ return 0
++ mv hello hello_old2
+mv: cannot stat 'hello': No such file or directory
++ tar zxvf hello-clean-clean-clean.tar.gz
+tar (child): hello-clean-clean-clean.tar.gz: Cannot open: No such file or directory
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
++ ls -l hello
++ grep '].jar -> /usr/share/java/'
+ls: cannot access 'hello': No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 75'
++ message='oe_test_binary_files_operation.sh line 75'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 75'
+Wed Dec  7 06:04:11 2022 - ERROR - oe_test_binary_files_operation.sh line 75
++ return 0
++ create-jar-links -f instructions -p
+oe_test_binary_files_operation.sh: line 76: create-jar-links: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 77'
++ message='oe_test_binary_files_operation.sh line 77'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 77'
+Wed Dec  7 06:04:12 2022 - ERROR - oe_test_binary_files_operation.sh line 77
++ return 0
++ ls -l hello
++ grep -E '].jar -> /usr/share/java/|.jar -> /usr/share/java/'
+ls: cannot access 'hello': No such file or directory
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 79'
++ message='oe_test_binary_files_operation.sh line 79'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 79'
+Wed Dec  7 06:04:13 2022 - ERROR - oe_test_binary_files_operation.sh line 79
++ return 0
++ rm -rf hello-clean-clean-clean.tar.gz
++ create-jar-links -f instructions -p -a hello-clean-clean.tar.gz
+oe_test_binary_files_operation.sh: line 81: create-jar-links: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 82'
++ message='oe_test_binary_files_operation.sh line 82'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 82'
+Wed Dec  7 06:04:13 2022 - ERROR - oe_test_binary_files_operation.sh line 82
++ return 0
++ test -f hello-clean-clean-clean.tar.gz
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 84'
++ message='oe_test_binary_files_operation.sh line 84'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 84'
+Wed Dec  7 06:04:14 2022 - ERROR - oe_test_binary_files_operation.sh line 84
++ return 0
++ diff-jars /usr/share/java/easymock.jar /usr/share/java/junit.jar
++ grep +org/
+oe_test_binary_files_operation.sh: line 85: diff-jars: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_binary_files_operation.sh line 86'
++ message='oe_test_binary_files_operation.sh line 86'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_binary_files_operation.sh line 86'
+Wed Dec  7 06:04:14 2022 - ERROR - oe_test_binary_files_operation.sh line 86
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 06:04:15 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 18
++ test 18 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 06:04:15 2022 - ERROR - failed to execute the case.
++ exit 18
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 06:04:16 2022 - INFO  - Start to restore the test environment.
++ clear_env
+++ ls
+++ grep -v .sh
++ roc='exclusion
+hello_old
+hello.tar.gz
+instructions'
++ rm -rf exclusion hello_old hello.tar.gz instructions
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp2t71xccn ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp2t71xccn
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 06:04:25 2022 - INFO  - Finish restoring the test environment.

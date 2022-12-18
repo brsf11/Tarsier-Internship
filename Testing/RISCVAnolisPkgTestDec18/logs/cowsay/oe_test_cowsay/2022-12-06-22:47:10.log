@@ -1,0 +1,73 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment!'
++ message='Start to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment!'
+Tue Dec  6 22:47:12 2022 - INFO  - Start to prepare the test environment!
++ DNF_INSTALL cowsay
++ pkgs=cowsay
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs cowsay --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpm00bre_b
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpm00bre_b
++ LOG_INFO 'End to prepare the test environment!'
++ message='End to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment!'
+Tue Dec  6 22:47:52 2022 - INFO  - End to prepare the test environment!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Tue Dec  6 22:47:52 2022 - INFO  - Start to run test.
++ cowsay -h
++ grep Usage
+Tue Dec  6 23:17:10 2022 - ERROR - Timeout : Command 'bash -x oe_test_cowsay.sh' timed out after 1799.999365504 seconds
+Usage:
+++ post_test
+++ LOG_INFO 'start environment cleanup.'
+++ message='start environment cleanup.'
+++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Tue Dec  6 23:17:17 2022 - INFO  - start environment cleanup.
+++ DNF_REMOVE
+++ node=1
+++ pkg_list=
+++ mode=0
+++ [[ -z /tmp/tmpm00bre_b ]]
+++ '[' 0 -ne 0 ']'
+++ '[' 1 == 0 ']'
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpm00bre_b
+++ '[' 0 -ne 0 ']'
+++ LOG_INFO 'Finish environment cleanup!'
+++ message='Finish environment cleanup!'
+++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Tue Dec  6 23:17:28 2022 - INFO  - Finish environment cleanup!
++ CHECK_RESULT 0 0 0 'Help information printing failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Help information printing failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cowsay -l
++ grep 'Cow files'
+oe_test_cowsay.sh: line 32: cowsay: command not found

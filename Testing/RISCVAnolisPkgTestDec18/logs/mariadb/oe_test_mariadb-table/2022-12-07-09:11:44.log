@@ -1,0 +1,178 @@
++ source ./common/lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Wed Dec  7 09:11:47 2022 - INFO  - Start environmental preparation.
++ mariadb_init
++ DNF_INSTALL 'mariadb mariadb-server'
++ pkgs='mariadb mariadb-server'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'mariadb mariadb-server' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:02:05 ago on Wed 07 Dec 2022 09:10:05 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - conflicting requests
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:02:05 ago on Wed 07 Dec 2022 09:10:05 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - conflicting requests
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ systemctl start mariadb
+Failed to start mariadb.service: Unit mariadb.service not found.
++ mysqladmin -u root password 123456
+./common/lib.sh: line 24: mysqladmin: command not found
++ mysql -uroot -hlocalhost -p123456
+./common/lib.sh: line 25: mysql: command not found
++ test -d /tmp/mariadbtab
++ mkdir /tmp/mariadbtab
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Wed Dec  7 09:12:12 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Wed Dec  7 09:12:12 2022 - INFO  - Start testing...
++ pushd /tmp/mariadbtab
+/tmp/mariadbtab ~/mugen-riscv/testcases/cli-test/mariadb
++ mysql -uroot -hlocalhost -p123456
+oe_test_mariadb-table.sh: line 32: mysql: command not found
++ grep lisi tmp1_log
++ CHECK_RESULT 1 0 0 'insert table error'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='insert table error'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'insert table error'
++ LOG_ERROR 'insert table error'
++ message='insert table error'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'insert table error'
+Wed Dec  7 09:12:13 2022 - ERROR - insert table error
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_mariadb-table.sh line 40'
++ message='oe_test_mariadb-table.sh line 40'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_mariadb-table.sh line 40'
+Wed Dec  7 09:12:14 2022 - ERROR - oe_test_mariadb-table.sh line 40
++ return 0
++ grep yang tmp1_log
++ CHECK_RESULT 1 0 0 'update table error'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='update table error'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'update table error'
++ LOG_ERROR 'update table error'
++ message='update table error'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'update table error'
+Wed Dec  7 09:12:14 2022 - ERROR - update table error
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_mariadb-table.sh line 42'
++ message='oe_test_mariadb-table.sh line 42'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_mariadb-table.sh line 42'
+Wed Dec  7 09:12:15 2022 - ERROR - oe_test_mariadb-table.sh line 42
++ return 0
++ mysql -uroot -hlocalhost -p123456
+oe_test_mariadb-table.sh: line 43: mysql: command not found
++ grep yang tmp2_log
++ CHECK_RESULT 1 0 1 'delete table error'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='delete table error'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ popd
+~/mugen-riscv/testcases/cli-test/mariadb
++ LOG_INFO 'Finish testing!'
++ message='Finish testing!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish testing!'
+Wed Dec  7 09:12:15 2022 - INFO  - Finish testing!
++ CASE_RESULT 0
++ case_re=0
++ test -z 2
++ test 2 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 09:12:16 2022 - ERROR - failed to execute the case.
++ exit 2
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Wed Dec  7 09:12:17 2022 - INFO  - start environment cleanup.
++ stat /tmp/mariadbtab
+  File: /tmp/mariadbtab
+  Size: 80        	Blocks: 0          IO Block: 4096   directory
+Device: 0,30	Inode: 42          Links: 2
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2022-12-07 09:12:11.621728918 -0500
+Modify: 2022-12-07 09:12:15.301706518 -0500
+Change: 2022-12-07 09:12:15.301706518 -0500
+ Birth: -
++ rm -fr /tmp/mariadbtab
++ mariadb_clear
++ systemctl stop mariadb
+Failed to stop mariadb.service: Unit mariadb.service not loaded.
++ rm -f '/var/lib/mysql/*'
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:02:05 ago on Wed 07 Dec 2022 09:10:05 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - conflicting requests
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:02:05 ago on Wed 07 Dec 2022 09:10:05 AM EST.
+Error: 
+ Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch
+  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed
+  - conflicting requests
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:02:05 ago on Wed 07 Dec 2022 09:10:05 AM EST.\nError: \n Problem: problem with installed package selinux-policy-targeted-36.4-1.an8.noarch\n  - package mariadb-server-3:10.5.15-1.an8.riscv64 requires (mysql-selinux if selinux-policy-targeted), but none of the providers can be installed\n  - conflicting requests\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Wed Dec  7 09:12:20 2022 - INFO  - Finish environment cleanup!

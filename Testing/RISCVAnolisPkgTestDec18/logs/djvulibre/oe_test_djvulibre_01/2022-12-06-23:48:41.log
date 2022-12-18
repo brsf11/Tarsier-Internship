@@ -1,0 +1,470 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Tue Dec  6 23:48:43 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'djvulibre ImageMagick'
++ pkgs='djvulibre ImageMagick'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'djvulibre ImageMagick' --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:00:15 ago on Tue 06 Dec 2022 11:49:05 PM EST.
+Error: 
+ Problem: package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickCore-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickWand-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires ImageMagick-libs(riscv-64) = 6.9.12.40-1.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libIlmImf-2_3.so.24()(64bit) needed by ImageMagick-libs-6.9.12.40-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:00:15 ago on Tue 06 Dec 2022 11:49:05 PM EST.
+Error: 
+ Problem: package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickCore-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickWand-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires ImageMagick-libs(riscv-64) = 6.9.12.40-1.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libIlmImf-2_3.so.24()(64bit) needed by ImageMagick-libs-6.9.12.40-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ cp ../common/test1.jpg ../common/test2.jpg ../common/test3.jpg ../common/test.pdf ./
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Tue Dec  6 23:49:22 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Tue Dec  6 23:49:22 2022 - INFO  - Start to run test.
++ any2djvu --help
++ grep Usage:
+oe_test_djvulibre_01.sh: line 30: any2djvu: command not found
++ CHECK_RESULT 1 0 0 'Check any2djvu --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check any2djvu --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check any2djvu --help failed.'
++ LOG_ERROR 'Check any2djvu --help failed.'
++ message='Check any2djvu --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check any2djvu --help failed.'
+Tue Dec  6 23:49:23 2022 - ERROR - Check any2djvu --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 31'
++ message='oe_test_djvulibre_01.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 31'
+Tue Dec  6 23:49:23 2022 - ERROR - oe_test_djvulibre_01.sh line 31
++ return 0
++ expect
+spawn any2djvu http://barak.pearlmutter.net/papers mesh-preprint.ps.gz
+couldn't execute "any2djvu": no such file or directory
+    while executing
+"spawn any2djvu http://barak.pearlmutter.net/papers mesh-preprint.ps.gz"
++ CHECK_RESULT 1 0 0 'Check any2djvu failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check any2djvu failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check any2djvu failed.'
++ LOG_ERROR 'Check any2djvu failed.'
++ message='Check any2djvu failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check any2djvu failed.'
+Tue Dec  6 23:49:24 2022 - ERROR - Check any2djvu failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 39'
++ message='oe_test_djvulibre_01.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 39'
+Tue Dec  6 23:49:25 2022 - ERROR - oe_test_djvulibre_01.sh line 39
++ return 0
++ test -f mesh-preprint.djvu
++ CHECK_RESULT 1 0 0 'Check mesh-preprint.djvu not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check mesh-preprint.djvu not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check mesh-preprint.djvu not exist.'
++ LOG_ERROR 'Check mesh-preprint.djvu not exist.'
++ message='Check mesh-preprint.djvu not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check mesh-preprint.djvu not exist.'
+Tue Dec  6 23:49:25 2022 - ERROR - Check mesh-preprint.djvu not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 41'
++ message='oe_test_djvulibre_01.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 41'
+Tue Dec  6 23:49:26 2022 - ERROR - oe_test_djvulibre_01.sh line 41
++ return 0
++ expect
+spawn any2djvu test.pdf
+couldn't execute "any2djvu": no such file or directory
+    while executing
+"spawn any2djvu test.pdf"
++ CHECK_RESULT 1 0 0 'Check any2djvu test.pdf failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check any2djvu test.pdf failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check any2djvu test.pdf failed.'
++ LOG_ERROR 'Check any2djvu test.pdf failed.'
++ message='Check any2djvu test.pdf failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check any2djvu test.pdf failed.'
+Tue Dec  6 23:49:27 2022 - ERROR - Check any2djvu test.pdf failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 48'
++ message='oe_test_djvulibre_01.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 48'
+Tue Dec  6 23:49:27 2022 - ERROR - oe_test_djvulibre_01.sh line 48
++ return 0
++ test -f test.djvu
++ CHECK_RESULT 1 0 0 'Check test.djvu not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check test.djvu not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check test.djvu not exist.'
++ LOG_ERROR 'Check test.djvu not exist.'
++ message='Check test.djvu not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check test.djvu not exist.'
+Tue Dec  6 23:49:28 2022 - ERROR - Check test.djvu not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 50'
++ message='oe_test_djvulibre_01.sh line 50'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 50'
+Tue Dec  6 23:49:28 2022 - ERROR - oe_test_djvulibre_01.sh line 50
++ return 0
++ bzz --help
++ grep -E 'DjVuLibre|Usage' result
++ CHECK_RESULT 1 0 0 'Check bzz --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check bzz --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check bzz --help failed.'
++ LOG_ERROR 'Check bzz --help failed.'
++ message='Check bzz --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check bzz --help failed.'
+Tue Dec  6 23:49:29 2022 - ERROR - Check bzz --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 53'
++ message='oe_test_djvulibre_01.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 53'
+Tue Dec  6 23:49:29 2022 - ERROR - oe_test_djvulibre_01.sh line 53
++ return 0
++ bzz -e test.djvu bzz
+oe_test_djvulibre_01.sh: line 54: bzz: command not found
++ CHECK_RESULT 127 0 0 'Check bzz -e failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check bzz -e failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check bzz -e failed.'
++ LOG_ERROR 'Check bzz -e failed.'
++ message='Check bzz -e failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check bzz -e failed.'
+Tue Dec  6 23:49:30 2022 - ERROR - Check bzz -e failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 55'
++ message='oe_test_djvulibre_01.sh line 55'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 55'
+Tue Dec  6 23:49:30 2022 - ERROR - oe_test_djvulibre_01.sh line 55
++ return 0
++ bzz -d test.djvu bzz.djvu
+oe_test_djvulibre_01.sh: line 56: bzz: command not found
++ bzz -d bzz.djvu bzz1
+oe_test_djvulibre_01.sh: line 57: bzz: command not found
++ CHECK_RESULT 127 0 0 'Check bzz -d failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check bzz -d failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check bzz -d failed.'
++ LOG_ERROR 'Check bzz -d failed.'
++ message='Check bzz -d failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check bzz -d failed.'
+Tue Dec  6 23:49:31 2022 - ERROR - Check bzz -d failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 58'
++ message='oe_test_djvulibre_01.sh line 58'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 58'
+Tue Dec  6 23:49:31 2022 - ERROR - oe_test_djvulibre_01.sh line 58
++ return 0
++ c44 --help
++ grep -E 'DjVuLibre|Usage: c44' result
++ CHECK_RESULT 1 0 0 'Check c44 --help failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check c44 --help failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check c44 --help failed.'
++ LOG_ERROR 'Check c44 --help failed.'
++ message='Check c44 --help failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check c44 --help failed.'
+Tue Dec  6 23:49:32 2022 - ERROR - Check c44 --help failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 61'
++ message='oe_test_djvulibre_01.sh line 61'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 61'
+Tue Dec  6 23:49:32 2022 - ERROR - oe_test_djvulibre_01.sh line 61
++ return 0
++ c44 -crcbdelay 10 test1.jpg
+oe_test_djvulibre_01.sh: line 62: c44: command not found
++ CHECK_RESULT 127 0 0 'Check c44 -crcbdelay failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check c44 -crcbdelay failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check c44 -crcbdelay failed.'
++ LOG_ERROR 'Check c44 -crcbdelay failed.'
++ message='Check c44 -crcbdelay failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check c44 -crcbdelay failed.'
+Tue Dec  6 23:49:33 2022 - ERROR - Check c44 -crcbdelay failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 63'
++ message='oe_test_djvulibre_01.sh line 63'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 63'
+Tue Dec  6 23:49:33 2022 - ERROR - oe_test_djvulibre_01.sh line 63
++ return 0
++ test -f test1.djvu
++ CHECK_RESULT 1 0 0 'Check test1.djvu not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check test1.djvu not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check test1.djvu not exist.'
++ LOG_ERROR 'Check test1.djvu not exist.'
++ message='Check test1.djvu not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check test1.djvu not exist.'
+Tue Dec  6 23:49:34 2022 - ERROR - Check test1.djvu not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 65'
++ message='oe_test_djvulibre_01.sh line 65'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 65'
+Tue Dec  6 23:49:35 2022 - ERROR - oe_test_djvulibre_01.sh line 65
++ return 0
++ c44 -crcbfull test2.jpg
+oe_test_djvulibre_01.sh: line 66: c44: command not found
++ CHECK_RESULT 127 0 0 'Check c44 -crcbfull failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check c44 -crcbfull failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check c44 -crcbfull failed.'
++ LOG_ERROR 'Check c44 -crcbfull failed.'
++ message='Check c44 -crcbfull failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check c44 -crcbfull failed.'
+Tue Dec  6 23:49:35 2022 - ERROR - Check c44 -crcbfull failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 67'
++ message='oe_test_djvulibre_01.sh line 67'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 67'
+Tue Dec  6 23:49:36 2022 - ERROR - oe_test_djvulibre_01.sh line 67
++ return 0
++ test -f test2.djvu
++ CHECK_RESULT 1 0 0 'Check test2.djvu not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check test2.djvu not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check test2.djvu not exist.'
++ LOG_ERROR 'Check test2.djvu not exist.'
++ message='Check test2.djvu not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check test2.djvu not exist.'
+Tue Dec  6 23:49:36 2022 - ERROR - Check test2.djvu not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 69'
++ message='oe_test_djvulibre_01.sh line 69'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 69'
+Tue Dec  6 23:49:37 2022 - ERROR - oe_test_djvulibre_01.sh line 69
++ return 0
++ convert test3.jpg test.pbm
+oe_test_djvulibre_01.sh: line 70: convert: command not found
++ c44 -crcbhalf test.pbm test4.djvu
+oe_test_djvulibre_01.sh: line 71: c44: command not found
++ CHECK_RESULT 127 0 0 'Check c44 -crcbhalf failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check c44 -crcbhalf failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check c44 -crcbhalf failed.'
++ LOG_ERROR 'Check c44 -crcbhalf failed.'
++ message='Check c44 -crcbhalf failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check c44 -crcbhalf failed.'
+Tue Dec  6 23:49:37 2022 - ERROR - Check c44 -crcbhalf failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 72'
++ message='oe_test_djvulibre_01.sh line 72'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 72'
+Tue Dec  6 23:49:38 2022 - ERROR - oe_test_djvulibre_01.sh line 72
++ return 0
++ test -f test4.djvu
++ CHECK_RESULT 1 0 0 'Check test4.djvu not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check test4.djvu not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check test4.djvu not exist.'
++ LOG_ERROR 'Check test4.djvu not exist.'
++ message='Check test4.djvu not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check test4.djvu not exist.'
+Tue Dec  6 23:49:38 2022 - ERROR - Check test4.djvu not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 74'
++ message='oe_test_djvulibre_01.sh line 74'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 74'
+Tue Dec  6 23:49:39 2022 - ERROR - oe_test_djvulibre_01.sh line 74
++ return 0
++ c44 -crcbnone test3.jpg test5.djvu
+oe_test_djvulibre_01.sh: line 75: c44: command not found
++ CHECK_RESULT 127 0 0 'Check c44 -crcbnone failed.'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check c44 -crcbnone failed.'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check c44 -crcbnone failed.'
++ LOG_ERROR 'Check c44 -crcbnone failed.'
++ message='Check c44 -crcbnone failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check c44 -crcbnone failed.'
+Tue Dec  6 23:49:39 2022 - ERROR - Check c44 -crcbnone failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 76'
++ message='oe_test_djvulibre_01.sh line 76'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 76'
+Tue Dec  6 23:49:40 2022 - ERROR - oe_test_djvulibre_01.sh line 76
++ return 0
++ test -f test5.djvu
++ CHECK_RESULT 1 0 0 'Check test5.djvu not exist.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check test5.djvu not exist.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check test5.djvu not exist.'
++ LOG_ERROR 'Check test5.djvu not exist.'
++ message='Check test5.djvu not exist.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check test5.djvu not exist.'
+Tue Dec  6 23:49:40 2022 - ERROR - Check test5.djvu not exist.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_djvulibre_01.sh line 78'
++ message='oe_test_djvulibre_01.sh line 78'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_djvulibre_01.sh line 78'
+Tue Dec  6 23:49:41 2022 - ERROR - oe_test_djvulibre_01.sh line 78
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Tue Dec  6 23:49:42 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 17
++ test 17 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Tue Dec  6 23:49:42 2022 - ERROR - failed to execute the case.
++ exit 17
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Tue Dec  6 23:49:43 2022 - INFO  - Start to restore the test environment.
+++ ls
+++ grep -v '\.sh'
++ rm -rf result test1.jpg test2.jpg test3.jpg test.pdf
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:00:15 ago on Tue 06 Dec 2022 11:49:05 PM EST.
+Error: 
+ Problem: package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickCore-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickWand-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires ImageMagick-libs(riscv-64) = 6.9.12.40-1.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libIlmImf-2_3.so.24()(64bit) needed by ImageMagick-libs-6.9.12.40-1.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:00:15 ago on Tue 06 Dec 2022 11:49:05 PM EST.
+Error: 
+ Problem: package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickCore-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickWand-6.Q16.so.7()(64bit), but none of the providers can be installed
+  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires ImageMagick-libs(riscv-64) = 6.9.12.40-1.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libIlmImf-2_3.so.24()(64bit) needed by ImageMagick-libs-6.9.12.40-1.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:15 ago on Tue 06 Dec 2022 11:49:05 PM EST.\nError: \n Problem: package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickCore-6.Q16.so.7()(64bit), but none of the providers can be installed\n  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires libMagickWand-6.Q16.so.7()(64bit), but none of the providers can be installed\n  - package ImageMagick-6.9.12.40-1.an8.riscv64 requires ImageMagick-libs(riscv-64) = 6.9.12.40-1.an8, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libIlmImf-2_3.so.24()(64bit) needed by ImageMagick-libs-6.9.12.40-1.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Tue Dec  6 23:49:45 2022 - INFO  - End to restore the test environment.

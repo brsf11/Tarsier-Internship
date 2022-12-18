@@ -1,0 +1,11 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/lvm2",
+    "cases": [
+        {
+            "name": "oe_test_socket_dm-event"
+        },
+        {
+            "name": "oe_test_socket_lvm2-lvmpolld"
+        }
+    ]
+}

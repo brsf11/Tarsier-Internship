@@ -1,0 +1,17 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/php",
+    "cases": [
+        {
+            "name": "oe_test_phar"
+        },
+        {
+            "name": "oe_test_phar_phar"
+        },
+        {
+            "name": "oe_test_php-fpm"
+        },
+        {
+            "name": "oe_test_service_php-fpm"
+        }
+    ]
+}

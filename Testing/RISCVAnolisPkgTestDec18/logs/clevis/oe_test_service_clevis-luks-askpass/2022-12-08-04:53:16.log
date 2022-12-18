@@ -1,0 +1,153 @@
++ source ../common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ grep expect
++ rpm -qa
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Thu Dec  8 04:53:19 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL clevis-systemd
++ pkgs=clevis-systemd
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs clevis-systemd --node 1 --tempfile ''
++ tmpfile2='Last metadata expiration check: 0:00:16 ago on Thu 08 Dec 2022 04:53:31 AM EST.
+Error: 
+ Problem: package clevis-systemd-18-6.an8.riscv64 requires clevis-luks(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - package clevis-luks-18-6.an8.riscv64 requires clevis(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libjose.so.0()(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides libjose.so.0(LIBJOSE_1.0)(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides jose >= 8 needed by clevis-18-6.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ '[' -z '' ']'
++ tmpfile='Last metadata expiration check: 0:00:16 ago on Thu 08 Dec 2022 04:53:31 AM EST.
+Error: 
+ Problem: package clevis-systemd-18-6.an8.riscv64 requires clevis-luks(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - package clevis-luks-18-6.an8.riscv64 requires clevis(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libjose.so.0()(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides libjose.so.0(LIBJOSE_1.0)(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides jose >= 8 needed by clevis-18-6.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
++ systemctl start clevis-luks-askpass.service
+Failed to start clevis-luks-askpass.service: Unit clevis-luks-askpass.service not found.
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Thu Dec  8 04:53:49 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Thu Dec  8 04:53:50 2022 - INFO  - Start testing...
++ test_oneshot clevis-luks-askpass.service 'inactive (dead)'
++ service=clevis-luks-askpass.service
++ status='inactive (dead)'
++ systemctl status clevis-luks-askpass.service
++ grep Active
++ grep -v 'inactive (dead)'
+Unit clevis-luks-askpass.service could not be found.
++ CHECK_RESULT 1 0 1 'There is an error for the status of clevis-luks-askpass.service'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error for the status of clevis-luks-askpass.service'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ test_enabled clevis-luks-askpass.service
++ service=clevis-luks-askpass.service
+++ systemctl is-enabled clevis-luks-askpass.service
+Failed to get unit file state for clevis-luks-askpass.service: No such file or directory
++ state=
++ '[' '' == enabled ']'
++ '[' '' == disabled ']'
++ '[' '' == masked ']'
++ '[' '' == static ']'
++ LOG_INFO 'Unit is indirect, ignoring.'
++ message='Unit is indirect, ignoring.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Unit is indirect, ignoring.'
+Thu Dec  8 04:53:50 2022 - INFO  - Unit is indirect, ignoring.
++ journalctl -u clevis-luks-askpass.service
++ grep -i 'fail\|error'
++ grep -v -i 'DEBUG\|INFO\|WARNING'
++ CHECK_RESULT 1 0 1 'There is an error message for the log of clevis-luks-askpass.service'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='There is an error message for the log of clevis-luks-askpass.service'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Thu Dec  8 04:53:51 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Thu Dec  8 04:53:52 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Dec  8 04:53:52 2022 - INFO  - start environment cleanup.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z Last metadata expiration check: 0:00:16 ago on Thu 08 Dec 2022 04:53:31 AM EST.
+Error: 
+ Problem: package clevis-systemd-18-6.an8.riscv64 requires clevis-luks(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - package clevis-luks-18-6.an8.riscv64 requires clevis(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libjose.so.0()(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides libjose.so.0(LIBJOSE_1.0)(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides jose >= 8 needed by clevis-18-6.an8.riscv64
+(try to add '--skip-broken' to skip uninstallable packages) ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile 'Last metadata expiration check: 0:00:16 ago on Thu 08 Dec 2022 04:53:31 AM EST.
+Error: 
+ Problem: package clevis-systemd-18-6.an8.riscv64 requires clevis-luks(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - package clevis-luks-18-6.an8.riscv64 requires clevis(riscv-64) = 18-6.an8, but none of the providers can be installed
+  - conflicting requests
+  - nothing provides libjose.so.0()(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides libjose.so.0(LIBJOSE_1.0)(64bit) needed by clevis-18-6.an8.riscv64
+  - nothing provides jose >= 8 needed by clevis-18-6.an8.riscv64
+(try to add '\''--skip-broken'\'' to skip uninstallable packages)'
+Traceback (most recent call last):
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 181, in <module>
+    exitcode = rpm_remove(args.node, args.pkgs, args.tempfile)
+  File "/root/mugen-riscv/libs/locallibs/rpm_manage.py", line 152, in rpm_remove
+    with open(tmpfile, "r") as f:
+OSError: [Errno 36] File name too long: "Last metadata expiration check: 0:00:16 ago on Thu 08 Dec 2022 04:53:31 AM EST.\nError: \n Problem: package clevis-systemd-18-6.an8.riscv64 requires clevis-luks(riscv-64) = 18-6.an8, but none of the providers can be installed\n  - package clevis-luks-18-6.an8.riscv64 requires clevis(riscv-64) = 18-6.an8, but none of the providers can be installed\n  - conflicting requests\n  - nothing provides libjose.so.0()(64bit) needed by clevis-18-6.an8.riscv64\n  - nothing provides libjose.so.0(LIBJOSE_1.0)(64bit) needed by clevis-18-6.an8.riscv64\n  - nothing provides jose >= 8 needed by clevis-18-6.an8.riscv64\n(try to add '--skip-broken' to skip uninstallable packages)"
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Dec  8 04:53:55 2022 - INFO  - Finish environment cleanup!

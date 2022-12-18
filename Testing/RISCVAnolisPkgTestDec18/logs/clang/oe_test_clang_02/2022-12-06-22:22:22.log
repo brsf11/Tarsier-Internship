@@ -1,0 +1,321 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Tue Dec  6 22:22:24 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL clang
++ pkgs=clang
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs clang --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpk5812og1
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpk5812og1
++ cp -r ../common ./tmp
++ cd ./tmp
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Tue Dec  6 22:24:11 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Tue Dec  6 22:24:12 2022 - INFO  - Start to run test.
++ clang -ftime-report test.c
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0104 seconds (0.0105 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0007 ( 17.5%)   0.0034 ( 52.3%)   0.0041 ( 39.1%)   0.0041 ( 39.4%)  LazyCallGraphAnalysis
+   0.0016 ( 41.9%)   0.0012 ( 17.9%)   0.0028 ( 27.0%)   0.0028 ( 26.9%)  AlwaysInlinerPass
+   0.0012 ( 29.7%)   0.0008 ( 12.7%)   0.0020 ( 19.2%)   0.0020 ( 19.0%)  CoroEarlyPass
+   0.0002 (  6.2%)   0.0002 (  2.6%)   0.0004 (  4.0%)   0.0004 (  3.9%)  TargetLibraryAnalysis
+   0.0000 (  0.0%)   0.0004 (  6.3%)   0.0004 (  3.9%)   0.0004 (  3.9%)  FunctionAnalysisManagerCGSCCProxy
+   0.0002 (  4.7%)   0.0001 (  2.0%)   0.0003 (  3.0%)   0.0003 (  3.0%)  ProfileSummaryAnalysis
+   0.0000 (  0.0%)   0.0003 (  4.0%)   0.0003 (  2.5%)   0.0003 (  2.5%)  CoroSplitPass
+   0.0000 (  0.0%)   0.0001 (  2.1%)   0.0001 (  1.3%)   0.0001 (  1.3%)  CoroCleanupPass
+   0.0039 (100.0%)   0.0065 (100.0%)   0.0104 (100.0%)   0.0105 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                         Miscellaneous Ungrouped Timers
+===-------------------------------------------------------------------------===
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.1822 ( 77.7%)   0.0995 ( 63.5%)   0.2817 ( 72.0%)   0.2837 ( 72.0%)  Code Generation Time
+   0.0523 ( 22.3%)   0.0572 ( 36.5%)   0.1095 ( 28.0%)   0.1105 ( 28.0%)  LLVM IR Generation Time
+   0.2345 (100.0%)   0.1567 (100.0%)   0.3912 (100.0%)   0.3942 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      Instruction Selection and Scheduling
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0321 seconds (0.0322 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0025 ( 20.4%)   0.0049 ( 24.9%)   0.0074 ( 23.2%)   0.0074 ( 23.1%)  Type Legalization
+   0.0072 ( 58.8%)   0.0000 (  0.0%)   0.0072 ( 22.5%)   0.0072 ( 22.4%)  Instruction Selection
+   0.0000 (  0.0%)   0.0067 ( 34.0%)   0.0067 ( 21.0%)   0.0068 ( 21.1%)  DAG Combining 1
+   0.0000 (  0.0%)   0.0040 ( 20.3%)   0.0040 ( 12.5%)   0.0040 ( 12.5%)  Instruction Scheduling
+   0.0001 (  0.5%)   0.0036 ( 18.0%)   0.0036 ( 11.3%)   0.0036 ( 11.3%)  Instruction Creation
+   0.0014 ( 11.7%)   0.0000 (  0.0%)   0.0014 (  4.5%)   0.0015 (  4.7%)  DAG Legalization
+   0.0005 (  3.7%)   0.0003 (  1.7%)   0.0008 (  2.5%)   0.0008 (  2.4%)  DAG Combining after legalize types
+   0.0003 (  2.4%)   0.0000 (  0.0%)   0.0003 (  0.9%)   0.0003 (  0.9%)  DAG Combining 2
+   0.0002 (  1.4%)   0.0001 (  0.6%)   0.0003 (  0.9%)   0.0003 (  0.9%)  Vector Legalization
+   0.0001 (  1.1%)   0.0001 (  0.5%)   0.0002 (  0.7%)   0.0002 (  0.7%)  Instruction Scheduling Cleanup
+   0.0123 (100.0%)   0.0198 (100.0%)   0.0321 (100.0%)   0.0322 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                      ... Pass execution timing report ...
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.1273 seconds (0.1282 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0324 ( 38.7%)   0.0308 ( 70.8%)   0.0633 ( 49.7%)   0.0638 ( 49.7%)  RISCV DAG->DAG Pattern Instruction Selection
+   0.0092 ( 11.0%)   0.0043 (  9.9%)   0.0135 ( 10.6%)   0.0136 ( 10.6%)  RISCV Assembly Printer
+   0.0131 ( 15.6%)   0.0000 (  0.0%)   0.0131 ( 10.3%)   0.0132 ( 10.3%)  Expand Atomic instructions
+   0.0053 (  6.4%)   0.0000 (  0.0%)   0.0053 (  4.2%)   0.0054 (  4.2%)  Prologue/Epilogue Insertion & Frame Finalization
+   0.0000 (  0.0%)   0.0053 ( 12.1%)   0.0053 (  4.2%)   0.0053 (  4.2%)  Natural Loop Information
+   0.0039 (  4.7%)   0.0000 (  0.0%)   0.0039 (  3.1%)   0.0039 (  3.1%)  Lower constant intrinsics
+   0.0038 (  4.6%)   0.0000 (  0.0%)   0.0038 (  3.0%)   0.0038 (  3.0%)  Fast Register Allocator
+   0.0020 (  2.4%)   0.0015 (  3.4%)   0.0035 (  2.7%)   0.0035 (  2.7%)  Branch Probability Analysis
+   0.0019 (  2.2%)   0.0000 (  0.0%)   0.0019 (  1.5%)   0.0019 (  1.5%)  Remove unreachable blocks from the CFG
+   0.0018 (  2.2%)   0.0000 (  0.0%)   0.0018 (  1.4%)   0.0018 (  1.4%)  Exception handling preparation
+   0.0001 (  0.1%)   0.0015 (  3.3%)   0.0016 (  1.2%)   0.0016 (  1.2%)  Post-Dominator Tree Construction
+   0.0010 (  1.2%)   0.0000 (  0.0%)   0.0010 (  0.8%)   0.0010 (  0.8%)  Dominator Tree Construction
+   0.0010 (  1.2%)   0.0000 (  0.0%)   0.0010 (  0.8%)   0.0010 (  0.8%)  Two-Address instruction pass
+   0.0008 (  1.0%)   0.0000 (  0.0%)   0.0008 (  0.7%)   0.0008 (  0.7%)  Branch relaxation pass
+   0.0007 (  0.9%)   0.0000 (  0.0%)   0.0007 (  0.6%)   0.0007 (  0.6%)  Basic Alias Analysis (stateless AA impl)
+   0.0007 (  0.8%)   0.0000 (  0.0%)   0.0007 (  0.6%)   0.0007 (  0.6%)  Free MachineFunction
+   0.0005 (  0.6%)   0.0000 (  0.0%)   0.0005 (  0.4%)   0.0005 (  0.4%)  Finalize ISel and expand pseudo-instructions
+   0.0004 (  0.5%)   0.0000 (  0.0%)   0.0004 (  0.3%)   0.0004 (  0.3%)  Post-RA pseudo instruction expansion pass
+   0.0003 (  0.4%)   0.0000 (  0.0%)   0.0003 (  0.3%)   0.0004 (  0.3%)  Expand vector predication intrinsics
+   0.0004 (  0.4%)   0.0000 (  0.0%)   0.0004 (  0.3%)   0.0004 (  0.3%)  Scalarize Masked Memory Intrinsics
+   0.0003 (  0.4%)   0.0000 (  0.0%)   0.0003 (  0.3%)   0.0003 (  0.3%)  Live DEBUG_VALUE analysis
+   0.0003 (  0.4%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Insert stack protectors
+   0.0003 (  0.3%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Function Alias Analysis Results
+   0.0003 (  0.3%)   0.0000 (  0.0%)   0.0003 (  0.2%)   0.0003 (  0.2%)  Eliminate PHI nodes for register allocation
+   0.0002 (  0.2%)   0.0001 (  0.1%)   0.0002 (  0.2%)   0.0002 (  0.2%)  Lazy Branch Probability Analysis
+   0.0002 (  0.3%)   0.0000 (  0.0%)   0.0002 (  0.2%)   0.0002 (  0.2%)  Assumption Cache Tracker
+   0.0002 (  0.2%)   0.0000 (  0.0%)   0.0002 (  0.2%)   0.0002 (  0.2%)  Expand reduction intrinsics
+   0.0002 (  0.2%)   0.0000 (  0.0%)   0.0002 (  0.2%)   0.0002 (  0.2%)  RISCV pseudo instruction expansion pass
+   0.0001 (  0.1%)   0.0001 (  0.1%)   0.0001 (  0.1%)   0.0002 (  0.1%)  Pre-ISel Intrinsic Lowering
+   0.0002 (  0.2%)   0.0000 (  0.0%)   0.0002 (  0.1%)   0.0002 (  0.1%)  Local Stack Slot Allocation
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  RISCV atomic pseudo instruction expansion pass
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Fixup Statepoint Caller Saved
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Insert XRay ops
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Contiguously Lay Out Funclets
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Remove Redundant DEBUG_VALUE analysis
+   0.0001 (  0.2%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Insert fentry calls
+   0.0001 (  0.1%)   0.0000 (  0.1%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Lazy Block Frequency Analysis
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  StackMap Liveness Analysis
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Implement the 'patchable-function' attribute
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Machine Optimization Remark Emitter
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  RISCV Insert VSETVLI pass
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Analyze Machine Code For Garbage Collection
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Shadow Stack GC Lowering
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Lower Garbage Collection Instructions
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Safe Stack instrumentation pass
+   0.0001 (  0.1%)   0.0000 (  0.0%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Lazy Machine Block Frequency Analysis
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Lazy Machine Block Frequency Analysis #2
+   0.0000 (  0.0%)   0.0000 (  0.1%)   0.0001 (  0.1%)   0.0001 (  0.1%)  Machine Optimization Remark Emitter #2
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Create Garbage Collector Module Metadata
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Profile summary info
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Transform Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Library Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Target Pass Configuration
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Module Information
+   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)   0.0000 (  0.0%)  Machine Branch Probability Analysis
+   0.0837 (100.0%)   0.0436 (100.0%)   0.1273 (100.0%)   0.1282 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                                 DWARF Emission
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.0035 seconds (0.0036 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.0015 ( 55.3%)   0.0005 ( 63.4%)   0.0020 ( 57.1%)   0.0020 ( 57.2%)  Debug Info Emission
+   0.0012 ( 44.7%)   0.0003 ( 36.6%)   0.0015 ( 42.9%)   0.0015 ( 42.8%)  DWARF Exception Writer
+   0.0027 (100.0%)   0.0008 (100.0%)   0.0035 (100.0%)   0.0036 (100.0%)  Total
+
+===-------------------------------------------------------------------------===
+                          Clang front-end time report
+===-------------------------------------------------------------------------===
+  Total Execution Time: 0.7460 seconds (0.7524 wall clock)
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+   0.4652 (100.0%)   0.2807 (100.0%)   0.7460 (100.0%)   0.7524 (100.0%)  Clang front-end timer
+   0.4652 (100.0%)   0.2807 (100.0%)   0.7460 (100.0%)   0.7524 (100.0%)  Total
+
+/usr/bin/ld: warning: /tmp/test-c7a5ea.o: mis-matched ISA version 2.0 for 'i' extension, the output version is 2.1
+/usr/bin/ld: warning: /tmp/test-c7a5ea.o: mis-matched ISA version 2.0 for 'a' extension, the output version is 2.1
+/usr/bin/ld: warning: /tmp/test-c7a5ea.o: mis-matched ISA version 2.0 for 'f' extension, the output version is 2.2
+/usr/bin/ld: warning: /tmp/test-c7a5ea.o: mis-matched ISA version 2.0 for 'd' extension, the output version is 2.2
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ clang -dump-raw-token test.c
+clang-13: warning: argument unused during compilation: '-dump-raw-token' [-Wunused-command-line-argument]
+/usr/bin/ld: warning: /tmp/test-9a9261.o: mis-matched ISA version 2.0 for 'i' extension, the output version is 2.1
+/usr/bin/ld: warning: /tmp/test-9a9261.o: mis-matched ISA version 2.0 for 'a' extension, the output version is 2.1
+/usr/bin/ld: warning: /tmp/test-9a9261.o: mis-matched ISA version 2.0 for 'f' extension, the output version is 2.2
+/usr/bin/ld: warning: /tmp/test-9a9261.o: mis-matched ISA version 2.0 for 'd' extension, the output version is 2.2
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ clang test.c -fsyntax-only
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ clang++ -E test.c -o test.i
+clang-13: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -f test.i
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ clang++ -S test.i
+clang-13: warning: treating 'cpp-output' input as 'c++-cpp-output' when in C++ mode, this behavior is deprecated [-Wdeprecated]
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ clang++ -c test.s
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ clang++ -o test test.c
+clang-13: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+/usr/bin/ld: warning: /tmp/test-3af343.o: mis-matched ISA version 2.0 for 'i' extension, the output version is 2.1
+/usr/bin/ld: warning: /tmp/test-3af343.o: mis-matched ISA version 2.0 for 'a' extension, the output version is 2.1
+/usr/bin/ld: warning: /tmp/test-3af343.o: mis-matched ISA version 2.0 for 'f' extension, the output version is 2.2
+/usr/bin/ld: warning: /tmp/test-3af343.o: mis-matched ISA version 2.0 for 'd' extension, the output version is 2.2
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -f test
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ clang-format test.c
+oe_test_clang_02.sh: line 46: clang-format: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_clang_02.sh line 47'
++ message='oe_test_clang_02.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_clang_02.sh line 47'
+Tue Dec  6 22:24:22 2022 - ERROR - oe_test_clang_02.sh line 47
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Tue Dec  6 22:24:23 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Tue Dec  6 22:24:23 2022 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Tue Dec  6 22:24:24 2022 - INFO  - Start to restore the test environment.
++ rm -rf ./tmp
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpk5812og1 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpk5812og1
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Tue Dec  6 22:24:44 2022 - INFO  - End to restore the test environment.

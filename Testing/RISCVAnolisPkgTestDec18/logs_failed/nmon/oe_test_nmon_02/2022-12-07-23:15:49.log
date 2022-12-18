@@ -1,0 +1,898 @@
++ source ./common/common.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Wed Dec  7 23:15:51 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL 'nmon gcc ncurses-devel nfs-utils rpmdevtools rpmlint openeuler-lsb'
++ pkgs='nmon gcc ncurses-devel nfs-utils rpmdevtools rpmlint openeuler-lsb'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'nmon gcc ncurses-devel nfs-utils rpmdevtools rpmlint openeuler-lsb' --node 1 --tempfile ''
+Wed Dec  7 23:16:00 2022 - ERROR - pkgs:(rpmlint openeuler-lsb) not found
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ env_pre
++ systemctl start nfs-server
+Failed to start nfs-server.service: Unit nfs-server.service not found.
++ rpmdev-setuptree
+./common/common.sh: line 24: rpmdev-setuptree: command not found
++ cp ./common/libnvidia-ml.spec /root/rpmbuild/SPECS/
+cp: cannot create regular file '/root/rpmbuild/SPECS/': No such file or directory
++ '[' riscv64 = x86_64 ']'
++ export ARCH=ARM
++ ARCH=ARM
++ wget -P /root/rpmbuild/SOURCES/ https://cn.download.nvidia.com/XFree86/aarch64/470.74/NVIDIA-Linux-aarch64-470.74.run
+./common/common.sh: line 31: wget: command not found
++ dd if=/dev/null of=/root/rpmbuild/SOURCES/null
+dd: failed to open '/root/rpmbuild/SOURCES/null': No such file or directory
++ rpmbuild -ba --nodebuginfo /root/rpmbuild/SPECS/libnvidia-ml.spec
+./common/common.sh: line 34: rpmbuild: command not found
++ rpm -i /root/rpmbuild/RPMS/riscv64/libnvidia-ml-470.74-openEuler.riscv64.rpm
+error: open of /root/rpmbuild/RPMS/riscv64/libnvidia-ml-470.74-openEuler.riscv64.rpm failed: No such file or directory
++ mv /lib64/libnvidia-ml.so.470.74 /lib64/libnvidia-ml.so
+mv: cannot stat '/lib64/libnvidia-ml.so.470.74': No such file or directory
++ ldconfig
++ yumdownloader --source --destdir=./template/ nmon
+./common/common.sh: line 38: yumdownloader: command not found
++ rpm -i './template/nmon*.src.rpm'
+error: File not found by glob: ./template/nmon*.src.rpm
++ gcc -o nmon_openEuler '/root/rpmbuild/SOURCES/lmon*.c' -g -Wall -D JFS -D GETUSER -D LARGEMEM -lncurses -lm -g -D ARM -lnvidia-ml -D NVIDIA_GPU
+./common/common.sh: line 40: gcc: command not found
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Wed Dec  7 23:16:01 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:16:02 2022 - INFO  - Start to run test.
++ expect
+spawn nmon -b
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon -b"
++ CHECK_RESULT 1 0 0 'Failed option: -b'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: -b'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: -b'
++ LOG_ERROR 'Failed option: -b'
++ message='Failed option: -b'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: -b'
+Wed Dec  7 23:16:03 2022 - ERROR - Failed option: -b
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 35'
++ message='oe_test_nmon_02.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 35'
+Wed Dec  7 23:16:03 2022 - ERROR - oe_test_nmon_02.sh line 35
++ return 0
++ expect
+spawn nmon -c5
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon -c5"
++ CHECK_RESULT 1 0 0 'Failed option: -c'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: -c'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: -c'
++ LOG_ERROR 'Failed option: -c'
++ message='Failed option: -c'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: -c'
+Wed Dec  7 23:16:04 2022 - ERROR - Failed option: -c
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 41'
++ message='oe_test_nmon_02.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 41'
+Wed Dec  7 23:16:05 2022 - ERROR - oe_test_nmon_02.sh line 41
++ return 0
++ expect
+spawn nmon -s3
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon -s3"
++ test -f ./template/interactive_-s
++ CHECK_RESULT 1 0 0 'Failed option: -s'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: -s'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: -s'
++ LOG_ERROR 'Failed option: -s'
++ message='Failed option: -s'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: -s'
+Wed Dec  7 23:16:05 2022 - ERROR - Failed option: -s
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 51'
++ message='oe_test_nmon_02.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 51'
+Wed Dec  7 23:16:06 2022 - ERROR - oe_test_nmon_02.sh line 51
++ return 0
++ expect
+spawn ./nmon_openEuler
+couldn't execute "./nmon_openEuler": no such file or directory
+    while executing
+"spawn ./nmon_openEuler"
++ test -f ./template/interactive_a
++ CHECK_RESULT 1 0 0 'Failed option: a'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: a'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: a'
++ LOG_ERROR 'Failed option: a'
++ message='Failed option: a'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: a'
+Wed Dec  7 23:16:07 2022 - ERROR - Failed option: a
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 62'
++ message='oe_test_nmon_02.sh line 62'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 62'
+Wed Dec  7 23:16:07 2022 - ERROR - oe_test_nmon_02.sh line 62
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ CHECK_RESULT 1 0 0 'Failed option: -b'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: -b'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: -b'
++ LOG_ERROR 'Failed option: -b'
++ message='Failed option: -b'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: -b'
+Wed Dec  7 23:16:08 2022 - ERROR - Failed option: -b
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 69'
++ message='oe_test_nmon_02.sh line 69'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 69'
+Wed Dec  7 23:16:09 2022 - ERROR - oe_test_nmon_02.sh line 69
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_c
++ CHECK_RESULT 1 0 0 'Failed option: c'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: c'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: c'
++ LOG_ERROR 'Failed option: c'
++ message='Failed option: c'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: c'
+Wed Dec  7 23:16:09 2022 - ERROR - Failed option: c
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 80'
++ message='oe_test_nmon_02.sh line 80'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 80'
+Wed Dec  7 23:16:10 2022 - ERROR - oe_test_nmon_02.sh line 80
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_C
++ CHECK_RESULT 1 0 0 'Failed option: C'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: C'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: C'
++ LOG_ERROR 'Failed option: C'
++ message='Failed option: C'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: C'
+Wed Dec  7 23:16:11 2022 - ERROR - Failed option: C
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 91'
++ message='oe_test_nmon_02.sh line 91'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 91'
+Wed Dec  7 23:16:11 2022 - ERROR - oe_test_nmon_02.sh line 91
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_d
++ CHECK_RESULT 1 0 0 'Failed option: d'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: d'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: d'
++ LOG_ERROR 'Failed option: d'
++ message='Failed option: d'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: d'
+Wed Dec  7 23:16:12 2022 - ERROR - Failed option: d
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 102'
++ message='oe_test_nmon_02.sh line 102'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 102'
+Wed Dec  7 23:16:13 2022 - ERROR - oe_test_nmon_02.sh line 102
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_D_1
++ CHECK_RESULT 1 0 0 'Failed option: D'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: D'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: D'
++ LOG_ERROR 'Failed option: D'
++ message='Failed option: D'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: D'
+Wed Dec  7 23:16:13 2022 - ERROR - Failed option: D
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 130'
++ message='oe_test_nmon_02.sh line 130'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 130'
+Wed Dec  7 23:16:14 2022 - ERROR - oe_test_nmon_02.sh line 130
++ return 0
+++ lsblk -l
+++ grep disk
+++ awk '{print $1}'
++ echo 'userDefinedDiskGroups vda'
+oe_test_nmon_02.sh: line 131: ./template/uddg: No such file or directory
++ expect
+spawn nmon -g ./template/uddg
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon -g ./template/uddg"
++ test -f ./template/interactive_g_1
++ CHECK_RESULT 1 0 0 'Failed option: g'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: g'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: g'
++ LOG_ERROR 'Failed option: g'
++ message='Failed option: g'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: g'
+Wed Dec  7 23:16:15 2022 - ERROR - Failed option: g
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 145'
++ message='oe_test_nmon_02.sh line 145'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 145'
+Wed Dec  7 23:16:15 2022 - ERROR - oe_test_nmon_02.sh line 145
++ return 0
+++ lsblk -l
+++ grep disk
+++ sed ':t;N;s/\n/\|/;b t'
+++ awk '{print $1}'
++ disk=vda
+++ iostat -d
+++ grep -vE vda
+oe_test_nmon_02.sh: line 147: iostat: command not found
+++ grep -vE 'Linux|Device|^$'
+++ awk '{print $1}'
+++ sed ':t;N;s/\n/\|/;b t'
++ notdisk=
++ expect
+spawn nmon -g auto
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon -g auto"
++ test -f ./template/interactive_G_1
++ CHECK_RESULT 1 0 0 'Failed option: G'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: G'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: G'
++ LOG_ERROR 'Failed option: G'
++ message='Failed option: G'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: G'
+Wed Dec  7 23:16:16 2022 - ERROR - Failed option: G
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 164'
++ message='oe_test_nmon_02.sh line 164'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 164'
+Wed Dec  7 23:16:17 2022 - ERROR - oe_test_nmon_02.sh line 164
++ return 0
++ test -f ./template/interactive_G_2
++ CHECK_RESULT 1 0 1 'Failed option: G'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Failed option: G'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_h
++ CHECK_RESULT 1 0 0 'Failed option: h'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: h'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: h'
++ LOG_ERROR 'Failed option: h'
++ message='Failed option: h'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: h'
+Wed Dec  7 23:16:18 2022 - ERROR - Failed option: h
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 177'
++ message='oe_test_nmon_02.sh line 177'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 177'
+Wed Dec  7 23:16:18 2022 - ERROR - oe_test_nmon_02.sh line 177
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_j_1
++ CHECK_RESULT 1 0 0 'Failed option: j'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: j'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: j'
++ LOG_ERROR 'Failed option: j'
++ message='Failed option: j'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: j'
+Wed Dec  7 23:16:19 2022 - ERROR - Failed option: j
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 191'
++ message='oe_test_nmon_02.sh line 191'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 191'
+Wed Dec  7 23:16:19 2022 - ERROR - oe_test_nmon_02.sh line 191
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_J_1
++ CHECK_RESULT 1 0 0 'Failed option: J'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: J'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: J'
++ LOG_ERROR 'Failed option: J'
++ message='Failed option: J'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: J'
+Wed Dec  7 23:16:20 2022 - ERROR - Failed option: J
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 205'
++ message='oe_test_nmon_02.sh line 205'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 205'
+Wed Dec  7 23:16:21 2022 - ERROR - oe_test_nmon_02.sh line 205
++ return 0
++ test -f ./template/interactive_J_2
++ CHECK_RESULT 1 0 1 'Failed option: J'
++ actual_result=1
++ expect_result=0
++ mode=1
++ error_log='Failed option: J'
++ '[' -z 1 ']'
++ '[' 1 -eq 0 ']'
++ test 1x == 0x
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_k_1
++ CHECK_RESULT 1 0 0 'Failed option: k'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: k'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: k'
++ LOG_ERROR 'Failed option: k'
++ message='Failed option: k'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: k'
+Wed Dec  7 23:16:22 2022 - ERROR - Failed option: k
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 232'
++ message='oe_test_nmon_02.sh line 232'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 232'
+Wed Dec  7 23:16:22 2022 - ERROR - oe_test_nmon_02.sh line 232
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_l_1
++ CHECK_RESULT 1 0 0 'Failed option: l'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: l'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: l'
++ LOG_ERROR 'Failed option: l'
++ message='Failed option: l'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: l'
+Wed Dec  7 23:16:23 2022 - ERROR - Failed option: l
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 246'
++ message='oe_test_nmon_02.sh line 246'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 246'
+Wed Dec  7 23:16:23 2022 - ERROR - oe_test_nmon_02.sh line 246
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_L
++ CHECK_RESULT 1 0 0 'Failed option: L'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: L'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: L'
++ LOG_ERROR 'Failed option: L'
++ message='Failed option: L'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: L'
+Wed Dec  7 23:16:24 2022 - ERROR - Failed option: L
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 257'
++ message='oe_test_nmon_02.sh line 257'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 257'
+Wed Dec  7 23:16:25 2022 - ERROR - oe_test_nmon_02.sh line 257
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_m
++ CHECK_RESULT 1 0 0 'Failed option: m'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: m'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: m'
++ LOG_ERROR 'Failed option: m'
++ message='Failed option: m'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: m'
+Wed Dec  7 23:16:25 2022 - ERROR - Failed option: m
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 268'
++ message='oe_test_nmon_02.sh line 268'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 268'
+Wed Dec  7 23:16:26 2022 - ERROR - oe_test_nmon_02.sh line 268
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_M
++ CHECK_RESULT 1 0 0 'Failed option: M'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: M'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: M'
++ LOG_ERROR 'Failed option: M'
++ message='Failed option: M'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: M'
+Wed Dec  7 23:16:27 2022 - ERROR - Failed option: M
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 279'
++ message='oe_test_nmon_02.sh line 279'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 279'
+Wed Dec  7 23:16:27 2022 - ERROR - oe_test_nmon_02.sh line 279
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_n_1
++ CHECK_RESULT 1 0 0 'Failed option: n'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: n'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: n'
++ LOG_ERROR 'Failed option: n'
++ message='Failed option: n'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: n'
+Wed Dec  7 23:16:28 2022 - ERROR - Failed option: n
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 293'
++ message='oe_test_nmon_02.sh line 293'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 293'
+Wed Dec  7 23:16:29 2022 - ERROR - oe_test_nmon_02.sh line 293
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_N
++ CHECK_RESULT 1 0 0 'Failed option: N'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: N'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: N'
++ LOG_ERROR 'Failed option: N'
++ message='Failed option: N'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: N'
+Wed Dec  7 23:16:30 2022 - ERROR - Failed option: N
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 304'
++ message='oe_test_nmon_02.sh line 304'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 304'
+Wed Dec  7 23:16:30 2022 - ERROR - oe_test_nmon_02.sh line 304
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_o
++ CHECK_RESULT 1 0 0 'Failed option: o'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: o'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: o'
++ LOG_ERROR 'Failed option: o'
++ message='Failed option: o'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: o'
+Wed Dec  7 23:16:31 2022 - ERROR - Failed option: o
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 315'
++ message='oe_test_nmon_02.sh line 315'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 315'
+Wed Dec  7 23:16:31 2022 - ERROR - oe_test_nmon_02.sh line 315
++ return 0
++ expect
+++ ps -e
+++ grep nmon
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_q
++ CHECK_RESULT 1 0 0 'Failed option: q'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: q'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: q'
++ LOG_ERROR 'Failed option: q'
++ message='Failed option: q'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: q'
+Wed Dec  7 23:16:32 2022 - ERROR - Failed option: q
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 325'
++ message='oe_test_nmon_02.sh line 325'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 325'
+Wed Dec  7 23:16:33 2022 - ERROR - oe_test_nmon_02.sh line 325
++ return 0
++ expect
+++ uname -r
+++ uname -v
+++ uname -m
+++ uname -n
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_r_1
++ CHECK_RESULT 1 0 0 'Failed option: r'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: r'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: r'
++ LOG_ERROR 'Failed option: r'
++ message='Failed option: r'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: r'
+Wed Dec  7 23:16:34 2022 - ERROR - Failed option: r
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 382'
++ message='oe_test_nmon_02.sh line 382'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 382'
+Wed Dec  7 23:16:34 2022 - ERROR - oe_test_nmon_02.sh line 382
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_t
++ CHECK_RESULT 1 0 0 'Failed option: t'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: t'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: t'
++ LOG_ERROR 'Failed option: t'
++ message='Failed option: t'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: t'
+Wed Dec  7 23:16:35 2022 - ERROR - Failed option: t
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 393'
++ message='oe_test_nmon_02.sh line 393'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 393'
+Wed Dec  7 23:16:36 2022 - ERROR - oe_test_nmon_02.sh line 393
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_T_1
++ CHECK_RESULT 1 0 0 'Failed option: T'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: T'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: T'
++ LOG_ERROR 'Failed option: T'
++ message='Failed option: T'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: T'
+Wed Dec  7 23:16:36 2022 - ERROR - Failed option: T
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 421'
++ message='oe_test_nmon_02.sh line 421'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 421'
+Wed Dec  7 23:16:37 2022 - ERROR - oe_test_nmon_02.sh line 421
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_u_1
++ CHECK_RESULT 1 0 0 'Failed option: u'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: u'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: u'
++ LOG_ERROR 'Failed option: u'
++ message='Failed option: u'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: u'
+Wed Dec  7 23:16:38 2022 - ERROR - Failed option: u
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 435'
++ message='oe_test_nmon_02.sh line 435'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 435'
+Wed Dec  7 23:16:38 2022 - ERROR - oe_test_nmon_02.sh line 435
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_U
++ CHECK_RESULT 1 0 0 'Failed option: U'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: U'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: U'
++ LOG_ERROR 'Failed option: U'
++ message='Failed option: U'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: U'
+Wed Dec  7 23:16:39 2022 - ERROR - Failed option: U
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 446'
++ message='oe_test_nmon_02.sh line 446'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 446'
+Wed Dec  7 23:16:40 2022 - ERROR - oe_test_nmon_02.sh line 446
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_v
++ CHECK_RESULT 1 0 0 'Failed option: v'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: v'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: v'
++ LOG_ERROR 'Failed option: v'
++ message='Failed option: v'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: v'
+Wed Dec  7 23:16:40 2022 - ERROR - Failed option: v
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 457'
++ message='oe_test_nmon_02.sh line 457'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 457'
+Wed Dec  7 23:16:41 2022 - ERROR - oe_test_nmon_02.sh line 457
++ return 0
++ expect
+spawn nmon
+couldn't execute "nmon": no such file or directory
+    while executing
+"spawn nmon"
++ test -f ./template/interactive_V
++ CHECK_RESULT 1 0 0 'Failed option: V'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Failed option: V'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Failed option: V'
++ LOG_ERROR 'Failed option: V'
++ message='Failed option: V'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed option: V'
+Wed Dec  7 23:16:42 2022 - ERROR - Failed option: V
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nmon_02.sh line 468'
++ message='oe_test_nmon_02.sh line 468'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_nmon_02.sh line 468'
+Wed Dec  7 23:16:42 2022 - ERROR - oe_test_nmon_02.sh line 468
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Wed Dec  7 23:16:43 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 30
++ test 30 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:16:43 2022 - ERROR - failed to execute the case.
++ exit 30
++ post_test
++ LOG_INFO 'Start restore the test environment.'
++ message='Start restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start restore the test environment.'
+Wed Dec  7 23:16:44 2022 - INFO  - Start restore the test environment.
++ env_post
++ systemctl stop nfs-server
+Failed to stop nfs-server.service: Unit nfs-server.service not loaded.
++ unset ARCH
++ rm -rf ./template /root/rpmbuild nmon_openEuler auto '/lib64/libnvidia-ml*'
++ rpm -e --nodeps libnvidia-ml
+error: package libnvidia-ml is not installed
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Wed Dec  7 23:16:45 2022 - WARN  - no thing to do.
++ return 0
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Wed Dec  7 23:16:45 2022 - INFO  - End to restore the test environment.

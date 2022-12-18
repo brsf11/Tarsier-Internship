@@ -1,0 +1,8 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/libosinfo",
+    "cases": [
+        {
+            "name": "oe_test_osinfo-detect"
+        }
+    ]
+}

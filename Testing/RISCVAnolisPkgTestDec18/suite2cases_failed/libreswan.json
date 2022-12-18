@@ -1,0 +1,24 @@
+{
+    "path": "${OET_PATH}/testcases/cli-test/libreswan",
+    "machine num": 2,
+    "cases": [
+        {
+            "name": "oe_test_libreswan_ipsec_02"
+        },
+        {
+            "name": "oe_test_libreswan_ipsec_setup"
+        },
+        {
+            "name": "oe_test_libreswan_ipsec_systemctl"
+        },
+        {
+            "name": "oe_test_service_ipsec"
+        },
+        {
+            "name": "oe_test_host_to_host_vpn"
+        },
+        {
+            "name": "oe_test_site_to_site_vpn"
+        }
+    ]
+}

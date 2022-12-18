@@ -1,0 +1,15 @@
+{
+    "path": "$OET_PATH/testcases/cli-test/openssh",
+    "machine num": 2,
+    "cases": [
+        {
+            "name": "oe_test_openssh_cipher"
+        },
+        {
+            "name": "oe_test_sec_ssh"
+        },
+        {
+            "name": "oe_test_sec_jump_login"
+        }
+    ]
+}

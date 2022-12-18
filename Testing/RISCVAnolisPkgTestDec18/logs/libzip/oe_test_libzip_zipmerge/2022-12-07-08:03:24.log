@@ -1,0 +1,247 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 08:03:27 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL libzip
++ pkgs=libzip
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs libzip --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpup50ssp4
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpup50ssp4
++ mkdir testdir1 testdir2
++ echo hello
++ echo hello
++ echo hello
++ echo HELlo
++ zip -r testdir1.zip testdir1/
+oe_test_libzip_zipmerge.sh: line 28: zip: command not found
++ zip -r testdir2.zip testdir2/
+oe_test_libzip_zipmerge.sh: line 29: zip: command not found
++ cp -r testdir2.zip testdir3.zip
+cp: cannot stat 'testdir2.zip': No such file or directory
++ echo world
++ zip -r testdir4.zip testdir2/
+oe_test_libzip_zipmerge.sh: line 32: zip: command not found
++ cp -r testdir4.zip testdir5.zip
+cp: cannot stat 'testdir4.zip': No such file or directory
++ cp -r testdir1.zip testdir6.zip
+cp: cannot stat 'testdir1.zip': No such file or directory
++ cp -r testdir2.zip testdir7.zip
+cp: cannot stat 'testdir2.zip': No such file or directory
++ cp -r testdir2.zip testdir8.zip
+cp: cannot stat 'testdir2.zip': No such file or directory
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 08:03:54 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 08:03:55 2022 - INFO  - Start to run test.
++ zipmerge -h
++ grep -i usage
+oe_test_libzip_zipmerge.sh: line 42: zipmerge: command not found
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 43'
++ message='oe_test_libzip_zipmerge.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 43'
+Wed Dec  7 08:03:55 2022 - ERROR - oe_test_libzip_zipmerge.sh line 43
++ return 0
+++ zipmerge -V
+++ grep -Eo '[0-9]\.[0-9]\.[0-9]'
+oe_test_libzip_zipmerge.sh: line 44: zipmerge: command not found
+++ rpm -qa libzip
+++ awk -F - '{print$2}'
++ test '' == 1.8.0
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 45'
++ message='oe_test_libzip_zipmerge.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 45'
+Wed Dec  7 08:03:57 2022 - ERROR - oe_test_libzip_zipmerge.sh line 45
++ return 0
++ zipmerge -D testdir2.zip testdir3.zip
++ grep -i 'File already exists'
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 47'
++ message='oe_test_libzip_zipmerge.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 47'
+Wed Dec  7 08:03:58 2022 - ERROR - oe_test_libzip_zipmerge.sh line 47
++ return 0
++ zipmerge -D testdir1.zip testdir3.zip
+oe_test_libzip_zipmerge.sh: line 48: zipmerge: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 49'
++ message='oe_test_libzip_zipmerge.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 49'
+Wed Dec  7 08:03:58 2022 - ERROR - oe_test_libzip_zipmerge.sh line 49
++ return 0
++ zipmerge -I testdir1.zip testdir5.zip
+oe_test_libzip_zipmerge.sh: line 50: zipmerge: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 52'
++ message='oe_test_libzip_zipmerge.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 52'
+Wed Dec  7 08:03:59 2022 - ERROR - oe_test_libzip_zipmerge.sh line 52
++ return 0
++ grep hello tmp2/testdir2/testfile2
+grep: tmp2/testdir2/testfile2: No such file or directory
++ CHECK_RESULT 2 0 1
++ actual_result=2
++ expect_result=0
++ mode=1
++ error_log=
++ '[' -z 2 ']'
++ '[' 1 -eq 0 ']'
++ test 2x == 0x
++ return 0
++ echo -e 'y\ny\ny\n'
++ zipmerge -i testdir6.zip testdir3.zip
+oe_test_libzip_zipmerge.sh: line 55: zipmerge: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 57'
++ message='oe_test_libzip_zipmerge.sh line 57'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 57'
+Wed Dec  7 08:03:59 2022 - ERROR - oe_test_libzip_zipmerge.sh line 57
++ return 0
++ zipmerge -S testdir7.zip testdir4.zip
+oe_test_libzip_zipmerge.sh: line 58: zipmerge: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 60'
++ message='oe_test_libzip_zipmerge.sh line 60'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 60'
+Wed Dec  7 08:04:00 2022 - ERROR - oe_test_libzip_zipmerge.sh line 60
++ return 0
++ echo -e 'y\r'
++ zipmerge -i -s testdir8.zip testdir4.zip
+oe_test_libzip_zipmerge.sh: line 61: zipmerge: command not found
++ CHECK_RESULT 127
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libzip_zipmerge.sh line 63'
++ message='oe_test_libzip_zipmerge.sh line 63'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libzip_zipmerge.sh line 63'
+Wed Dec  7 08:04:00 2022 - ERROR - oe_test_libzip_zipmerge.sh line 63
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 08:04:01 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 8
++ test 8 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 08:04:01 2022 - ERROR - failed to execute the case.
++ exit 8
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 08:04:02 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpup50ssp4 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpup50ssp4
++ '[' 0 -ne 0 ']'
++ rm -rf testdir1 testdir2 'test*.zip' 'tmp*'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 08:04:11 2022 - INFO  - Finish restoring the test environment.

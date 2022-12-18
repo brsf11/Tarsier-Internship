@@ -1,0 +1,374 @@
++ source common/common_lib.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Wed Dec  7 23:34:56 2022 - INFO  - Start to prepare the test environment.
++ get_disk
+++ TEST_DISK
+++ id=1
+++ python3 /root/mugen-riscv/libs/locallibs/get_test_device.py --device disk --node 1
++ disks='vdb vdc vdd vde'
++ disk_list=($disks)
++ disk1=vdb
++ disk2=vdc
++ DNF_INSTALL ntfs-3g
++ pkgs=ntfs-3g
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs ntfs-3g --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpz0d2a7ox
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpz0d2a7ox
++ mkntfs --fast /dev/vdb
+common/common_lib.sh: line 28: mkntfs: command not found
++ mkntfs --fast /dev/vdc
+common/common_lib.sh: line 29: mkntfs: command not found
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Wed Dec  7 23:35:29 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Wed Dec  7 23:35:30 2022 - INFO  - Start to run test.
++ ntfslabel --help
++ grep 'Usage: ntfslabel \[options\]'
++ CHECK_RESULT 1 0 0 'Check ntfslabel --help failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --help failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfslabel --help failed'
++ LOG_ERROR 'Check ntfslabel --help failed'
++ message='Check ntfslabel --help failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --help failed'
+Wed Dec  7 23:35:31 2022 - ERROR - Check ntfslabel --help failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 31'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 31'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 31'
+Wed Dec  7 23:35:31 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 31
++ return 0
++ ntfslabel --version
++ grep 'ntfslabel v'
++ CHECK_RESULT 1 0 0 'Check ntfslabel --version failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --version failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfslabel --version failed'
++ LOG_ERROR 'Check ntfslabel --version failed'
++ message='Check ntfslabel --version failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --version failed'
+Wed Dec  7 23:35:32 2022 - ERROR - Check ntfslabel --version failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 33'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 33'
+Wed Dec  7 23:35:32 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 33
++ return 0
++ ntfslabel --no-action /dev/vdb 5
+oe_test_ntfs-3g_ntfslabel.sh: line 34: ntfslabel: command not found
++ CHECK_RESULT 127 0 0 'Check ntfslabel --no-action failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --no-action failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfslabel --no-action failed'
++ LOG_ERROR 'Check ntfslabel --no-action failed'
++ message='Check ntfslabel --no-action failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --no-action failed'
+Wed Dec  7 23:35:33 2022 - ERROR - Check ntfslabel --no-action failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 35'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 35'
+Wed Dec  7 23:35:33 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 35
++ return 0
++ ntfslabel --force /dev/vdb 5
+oe_test_ntfs-3g_ntfslabel.sh: line 36: ntfslabel: command not found
++ CHECK_RESULT 127 0 0 'Check ntfslabel --force failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --force failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfslabel --force failed'
++ LOG_ERROR 'Check ntfslabel --force failed'
++ message='Check ntfslabel --force failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --force failed'
+Wed Dec  7 23:35:34 2022 - ERROR - Check ntfslabel --force failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 37'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 37'
+Wed Dec  7 23:35:34 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 37
++ return 0
++ ntfslabel --new-serial /dev/vdb 5
++ grep 'New serial number'
+oe_test_ntfs-3g_ntfslabel.sh: line 38: ntfslabel: command not found
++ CHECK_RESULT 1 0 0 'Check ntfslabel --new-serial failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --new-serial failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfslabel --new-serial failed'
++ LOG_ERROR 'Check ntfslabel --new-serial failed'
++ message='Check ntfslabel --new-serial failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --new-serial failed'
+Wed Dec  7 23:35:35 2022 - ERROR - Check ntfslabel --new-serial failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 39'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 39'
+Wed Dec  7 23:35:36 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 39
++ return 0
++ ntfslabel --new-half-serial /dev/vdb 5
++ grep 'New serial number'
+oe_test_ntfs-3g_ntfslabel.sh: line 40: ntfslabel: command not found
++ CHECK_RESULT 1 0 0 'Check ntfslabel --new-half-serial failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --new-half-serial failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfslabel --new-half-serial failed'
++ LOG_ERROR 'Check ntfslabel --new-half-serial failed'
++ message='Check ntfslabel --new-half-serial failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --new-half-serial failed'
+Wed Dec  7 23:35:36 2022 - ERROR - Check ntfslabel --new-half-serial failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 41'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 41'
+Wed Dec  7 23:35:37 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 41
++ return 0
++ ntfslabel --quiet /dev/vdb 5
+oe_test_ntfs-3g_ntfslabel.sh: line 42: ntfslabel: command not found
++ CHECK_RESULT 127 0 0 'Check ntfslabel --quiet failed'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --quiet failed'
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'Check ntfslabel --quiet failed'
++ LOG_ERROR 'Check ntfslabel --quiet failed'
++ message='Check ntfslabel --quiet failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --quiet failed'
+Wed Dec  7 23:35:37 2022 - ERROR - Check ntfslabel --quiet failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 43'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 43'
+Wed Dec  7 23:35:38 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 43
++ return 0
++ ntfslabel --verbose /dev/vdb 5
++ grep 'Serial number'
+oe_test_ntfs-3g_ntfslabel.sh: line 44: ntfslabel: command not found
++ CHECK_RESULT 1 0 0 'Check ntfslabel --verbose failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfslabel --verbose failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfslabel --verbose failed'
++ LOG_ERROR 'Check ntfslabel --verbose failed'
++ message='Check ntfslabel --verbose failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfslabel --verbose failed'
+Wed Dec  7 23:35:38 2022 - ERROR - Check ntfslabel --verbose failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 45'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 45'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 45'
+Wed Dec  7 23:35:39 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 45
++ return 0
++ ntfscmp --help
++ grep 'Usage: ntfscmp \[OPTIONS\]'
++ CHECK_RESULT 1 0 0 'Check ntfscmp --help failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfscmp --help failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfscmp --help failed'
++ LOG_ERROR 'Check ntfscmp --help failed'
++ message='Check ntfscmp --help failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscmp --help failed'
+Wed Dec  7 23:35:39 2022 - ERROR - Check ntfscmp --help failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 47'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 47'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 47'
+Wed Dec  7 23:35:40 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 47
++ return 0
++ ntfscmp --version
++ grep 'ntfscmp v'
++ CHECK_RESULT 1 0 0 'Check ntfscmp --version failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfscmp --version failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfscmp --version failed'
++ LOG_ERROR 'Check ntfscmp --version failed'
++ message='Check ntfscmp --version failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscmp --version failed'
+Wed Dec  7 23:35:41 2022 - ERROR - Check ntfscmp --version failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 49'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 49'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 49'
+Wed Dec  7 23:35:41 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 49
++ return 0
++ ntfscmp --no-progress-bar /dev/vdb /dev/vdc
++ grep ntfscmp
+oe_test_ntfs-3g_ntfslabel.sh: line 50: ntfscmp: command not found
++ CHECK_RESULT 1 0 0 'Check ntfscmp --no-progress-bar failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfscmp --no-progress-bar failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfscmp --no-progress-bar failed'
++ LOG_ERROR 'Check ntfscmp --no-progress-bar failed'
++ message='Check ntfscmp --no-progress-bar failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscmp --no-progress-bar failed'
+Wed Dec  7 23:35:42 2022 - ERROR - Check ntfscmp --no-progress-bar failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 51'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 51'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 51'
+Wed Dec  7 23:35:42 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 51
++ return 0
++ ntfscmp --verbose /dev/vdb /dev/vdc
++ grep '100.00 percent completed'
+oe_test_ntfs-3g_ntfslabel.sh: line 52: ntfscmp: command not found
++ CHECK_RESULT 1 0 0 'Check ntfscmp --verbose failed'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check ntfscmp --verbose failed'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check ntfscmp --verbose failed'
++ LOG_ERROR 'Check ntfscmp --verbose failed'
++ message='Check ntfscmp --verbose failed'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check ntfscmp --verbose failed'
+Wed Dec  7 23:35:43 2022 - ERROR - Check ntfscmp --verbose failed
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ntfs-3g_ntfslabel.sh line 53'
++ message='oe_test_ntfs-3g_ntfslabel.sh line 53'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_ntfs-3g_ntfslabel.sh line 53'
+Wed Dec  7 23:35:43 2022 - ERROR - oe_test_ntfs-3g_ntfslabel.sh line 53
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Wed Dec  7 23:35:44 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 12
++ test 12 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Wed Dec  7 23:35:44 2022 - ERROR - failed to execute the case.
++ exit 12
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Wed Dec  7 23:35:45 2022 - INFO  - Start to restore the test environment.
++ expect
+spawn mkfs.ext4 /dev/vdb
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdb contains a ext4 file system
+	created on Wed Dec  7 23:34:38 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: 17691c1b-ed81-4189-8e78-57614fb6d1fb
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ expect
+spawn mkfs.ext4 /dev/vdc
+y
+mke2fs 1.46.5 (30-Dec-2021)
+/dev/vdc contains a ext4 file system
+	created on Wed Dec  7 23:34:38 2022
+Proceed anyway? (y,N) Discarding device blocks:      0/512000             done                            
+Creating filesystem with 512000 1k blocks and 128016 inodes
+Filesystem UUID: c0d53f9c-d590-4956-9706-90a92db35f4f
+Superblock backups stored on blocks: 
+	8193, 24577, 40961, 57345, 73729, 204801, 221185, 401409
+
+Allocating group tables:  0/63     done                            
+Writing inode tables:  0/63     done                            
+Creating journal (8192 blocks): done
+Writing superblocks and filesystem accounting information:  0/63     done
+
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpz0d2a7ox ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpz0d2a7ox
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Wed Dec  7 23:35:56 2022 - INFO  - Finish restoring the test environment.
