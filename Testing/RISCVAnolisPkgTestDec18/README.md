@@ -44,11 +44,11 @@
     anolisos-disk-new.qcow2由原始镜像anolisos-disk-minimal-an8-Rawhide-sda.raw扩容至22G后转为qcow2格式而来  
 ## 测试结果说明  
 ### 测试结果文件结构  
-- logs文件夹：所有测试用例的日志文件  
-- logs_failed文件夹：所有未通过测试用例的日志文件  
-- suite2cases_failed文件夹:每个测试套中未通过的测试用例，以测试套描述文件的形式  
-- suite2cases_passed文件夹：每个测试套中通过的测试用例，以测试套描述文件的形式  
-- Dec18Test.ods:测试结果的详细数据统计  
+- [logs文件夹](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/RISCVAnolisPkgTestDec18/logs)：所有测试用例的日志文件  
+- [logs_failed文件夹](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/RISCVAnolisPkgTestDec18/logs_failed)：所有未通过测试用例的日志文件  
+- [suite2cases_failed文件夹](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/RISCVAnolisPkgTestDec18/suite2cases_failed):每个测试套中未通过的测试用例，以测试套描述文件的形式  
+- [suite2cases_passed文件夹](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/RISCVAnolisPkgTestDec18/suite2cases_passed)：每个测试套中通过的测试用例，以测试套描述文件的形式  
+- [Dec18Test.ods](https://github.com/brsf11/Tarsier-Internship/blob/main/Testing/RISCVAnolisPkgTestDec18/Dec18Test.ods):测试结果的详细数据统计  
 ### 测试日志说明  
 - 测试日志中包含测试运行时执行的命令和命令的打印信息，以+（一个或多个）开头的行为执行的命令，不以+开头的行为命令的打印信息  
 - 例如fio/oe_test_fio_002日志67~87行  
@@ -84,4 +84,5 @@
     后执行```CHECK_RESULT $? 0 0 "fio-dedupe -c option failed"```比较返回值是否等于0  
     日志```Wed Dec  7 01:12:08 2022 - ERROR - oe_test_fio_002.sh line 33```中提示出错代码对应的用例代码文件为oe_test_fio_002.sh，行数为33行  
 ## 测试结果  
-- 详细结果见Dec18Test.ods  
+- 测试中有大量软件包在安装时遇到依赖缺失的问题（大部分全部未通过的测试套为此问题）。其余的测试套测试正常，测试用例未通过可能是由软件包bug造成，详细结果见未通过测试用例日志[logs_failed](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/RISCVAnolisPkgTestDec18/logs_failed)。
+- 详细结果统计见[Dec18Test.ods](https://github.com/brsf11/Tarsier-Internship/blob/main/Testing/RISCVAnolisPkgTestDec18/Dec18Test.ods)  
