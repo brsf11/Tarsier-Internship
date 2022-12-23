@@ -1,0 +1,233 @@
++ source /root/GitRepo/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/GitRepo/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Dec 22 21:06:27 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'freeradius freeradius-utils'
++ pkgs='freeradius freeradius-utils'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'freeradius freeradius-utils' --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp0u_bpzd5
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp0u_bpzd5
++ cp /var/log/wtmp /var/log/radius/radwtmp
++ test -e /var/log/radius/radwtmp
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Dec 22 21:09:56 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Dec 22 21:09:57 2022 - INFO  - Start to run test.
++ radtimes=3
+++ grep -c oot
+++ radlast -3
++ a=3
++ '[' 3 -eq 3 ']'
++ CHECK_RESULT 0 0 0 'radlast -num execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast -num execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radlast -a
++ awk '{print $NF}'
++ grep -E '([0-9]{1,3}.){3}[0-9]'
+5.10.0-9.oe2203.riscv64
+5.10.0-9.oe2203.riscv64
+10.0.2.2
+5.10.0-9.oe2203.riscv64
++ CHECK_RESULT 0 0 0 'radlast -a execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast -a execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radlast -3 -d
+reboot   system boot  0.0.0.0          Thu Dec 22 20:23   still running
+root     ttyS0        0.0.0.0          Wed Dec 14 16:28 - down   (00:02)
+reboot   system boot  0.0.0.0          Wed Dec 14 16:26 - 16:30  (00:03)
+
+radwtmp begins Wed Dec 14 14:09:44 2022
++ CHECK_RESULT 0 0 0 'radlast -d execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast -d execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radlast --file /var/log/radius/radwtmp
++ grep 'radwtmp begins'
+radwtmp begins Wed Dec 14 14:09:44 2022
+radwtmp begins Wed Dec 14 14:09:44 2022
++ CHECK_RESULT 0 0 0 'radlast --file execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast --file execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radlast --fulltimes
++ grep -E '([0-9]{1,2}:){2}[0-9]{1,2}'
+reboot   system boot  5.10.0-9.oe2203. Thu Dec 22 20:23:06 2022   still running
+root     ttyS0                         Wed Dec 14 16:28:00 2022 - down                      (00:02)
+reboot   system boot  5.10.0-9.oe2203. Wed Dec 14 16:26:47 2022 - Wed Dec 14 16:30:19 2022  (00:03)
+root     pts/0        10.0.2.2         Wed Dec 14 14:23:46 2022 - down                      (00:55)
+root     ttyS0                         Wed Dec 14 14:10:19 2022 - down                      (01:08)
+reboot   system boot  5.10.0-9.oe2203. Wed Dec 14 14:09:44 2022 - Wed Dec 14 15:18:48 2022  (01:09)
+radwtmp begins Wed Dec 14 14:09:44 2022
++ CHECK_RESULT 0 0 0 'radlast --fulltimes execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast --fulltimes execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radlast -i
++ grep -E '([0-9]{1,3}.){3}[0-9]'
+reboot   system boot  0.0.0.0          Thu Dec 22 20:23   still running
+root     ttyS0        0.0.0.0          Wed Dec 14 16:28 - down   (00:02)
+reboot   system boot  0.0.0.0          Wed Dec 14 16:26 - 16:30  (00:03)
+root     pts/0        10.0.2.2         Wed Dec 14 14:23 - down   (00:55)
+root     ttyS0        0.0.0.0          Wed Dec 14 14:10 - down   (01:08)
+reboot   system boot  0.0.0.0          Wed Dec 14 14:09 - 15:18  (01:09)
+radwtmp begins Wed Dec 14 14:09:44 2022
++ CHECK_RESULT 0 0 0 'radlast -i execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast -i execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ radlast -n 3
+++ grep -c oot
++ a=3
++ '[' 3 -eq 3 ']'
++ CHECK_RESULT 0 0 0 'radlast -n execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast -n execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ radlast -R
++ awk '{print $3}'
++ grep -e Mon -e Tue -e Wed -e Sat -e Sun -e Thu -e Sat -e Fri
+Wed
+Wed
+Wed
+Wed
++ CHECK_RESULT 0 0 0 'radlast -R execution failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='radlast -R execution failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ radlast -s 00:00
+++ grep 'logged in'
+++ sed -n '$p'
+++ awk '{print $(NF-3)}'
++ a=
+++ radlast -s 00:00
+++ grep 'logged in'
+++ sed -n '$p'
+++ awk '{print $(NF-3)}'
+++ awk -F : '{print $1":"$2+1}'
++ b=
+++ radlast -s ''
+++ grep 'logged in'
+++ sed -n '$p'
+++ awk '{print $(NF-3)}'
+last: invalid time value ""
++ '[' '' '!=' '' ']'
++ CHECK_RESULT 1 0 0 'radlast -s execution failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='radlast -s execution failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'radlast -s execution failed.'
++ LOG_ERROR 'radlast -s execution failed.'
++ message='radlast -s execution failed.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'radlast -s execution failed.'
+Thu Dec 22 21:10:09 2022 - ERROR - radlast -s execution failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_freeradius_freeradius-utils_radlast.sh line 56'
++ message='oe_test_freeradius_freeradius-utils_radlast.sh line 56'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_freeradius_freeradius-utils_radlast.sh line 56'
+Thu Dec 22 21:10:09 2022 - ERROR - oe_test_freeradius_freeradius-utils_radlast.sh line 56
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Dec 22 21:10:10 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Dec 22 21:10:11 2022 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Dec 22 21:10:11 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp0u_bpzd5 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp0u_bpzd5
++ '[' 0 -ne 0 ']'
++ rm -rf /etc/raddb
++ rm -rf /var/log/radius
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/GitRepo/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Dec 22 21:10:36 2022 - INFO  - End to restore the test environment.
