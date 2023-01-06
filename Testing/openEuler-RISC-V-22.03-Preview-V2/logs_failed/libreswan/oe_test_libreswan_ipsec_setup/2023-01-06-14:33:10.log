@@ -1,0 +1,214 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the database config.'
++ message='Start to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the database config.'
+Fri Jan  6 14:33:13 2023 - INFO  - Start to prepare the database config.
++ DNF_INSTALL libreswan
++ pkgs=libreswan
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs libreswan --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpv4qi4vij
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpv4qi4vij
++ LOG_INFO 'End to prepare the database config.'
++ message='End to prepare the database config.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the database config.'
+Fri Jan  6 14:33:56 2023 - INFO  - End to prepare the database config.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Jan  6 14:33:57 2023 - INFO  - Start to run test.
++ SLEEP_WAIT 2 'ipsec setup --start'
++ wait_time=2
++ cmd='ipsec setup --start'
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 2 --cmd 'ipsec setup --start' --mode 1
+Redirecting to: systemctl start ipsec.service
+Fri Jan  6 14:34:00 2023 - ERROR - Timeout : Command 'ipsec setup --start' timed out after 1.9967537449999782 seconds
++ CHECK_RESULT 143 0 0 'Start failed.'
++ actual_result=143
++ expect_result=0
++ mode=0
++ error_log='Start failed.'
++ '[' -z 143 ']'
++ '[' 0 -eq 0 ']'
++ test 143x '!=' 0x
++ test -n 'Start failed.'
++ LOG_ERROR 'Start failed.'
++ message='Start failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Start failed.'
+Fri Jan  6 14:34:01 2023 - ERROR - Start failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libreswan_ipsec_setup.sh line 33'
++ message='oe_test_libreswan_ipsec_setup.sh line 33'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libreswan_ipsec_setup.sh line 33'
+Fri Jan  6 14:34:02 2023 - ERROR - oe_test_libreswan_ipsec_setup.sh line 33
++ return 0
++ ipsec setup --status
++ grep active
++ CHECK_RESULT 1 0 0 'Check start status failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check start status failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check start status failed.'
++ LOG_ERROR 'Check start status failed.'
++ message='Check start status failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check start status failed.'
+Fri Jan  6 14:34:03 2023 - ERROR - Check start status failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libreswan_ipsec_setup.sh line 35'
++ message='oe_test_libreswan_ipsec_setup.sh line 35'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libreswan_ipsec_setup.sh line 35'
+Fri Jan  6 14:34:04 2023 - ERROR - oe_test_libreswan_ipsec_setup.sh line 35
++ return 0
++ SLEEP_WAIT 2 'ipsec setup --stop'
++ wait_time=2
++ cmd='ipsec setup --stop'
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 2 --cmd 'ipsec setup --stop' --mode 1
+Redirecting to: systemctl stop ipsec.service
+Fri Jan  6 14:34:07 2023 - ERROR - Timeout : Command 'ipsec setup --stop' timed out after 1.9982617229999278 seconds
++ CHECK_RESULT 143 0 0 'Stop failed.'
++ actual_result=143
++ expect_result=0
++ mode=0
++ error_log='Stop failed.'
++ '[' -z 143 ']'
++ '[' 0 -eq 0 ']'
++ test 143x '!=' 0x
++ test -n 'Stop failed.'
++ LOG_ERROR 'Stop failed.'
++ message='Stop failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Stop failed.'
+Fri Jan  6 14:34:08 2023 - ERROR - Stop failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libreswan_ipsec_setup.sh line 37'
++ message='oe_test_libreswan_ipsec_setup.sh line 37'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libreswan_ipsec_setup.sh line 37'
+Cannot open netlink socket: Protocol not supported
+Cannot open netlink socket: Protocol not supported
+Cannot open netlink socket: Protocol not supported
+Fri Jan  6 14:34:09 2023 - ERROR - oe_test_libreswan_ipsec_setup.sh line 37
++ return 0
++ grep inactive
++ ipsec setup --status
++ CHECK_RESULT 1 0 0 'Check stop status failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check stop status failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check stop status failed.'
++ LOG_ERROR 'Check stop status failed.'
++ message='Check stop status failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check stop status failed.'
+Fri Jan  6 14:34:10 2023 - ERROR - Check stop status failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libreswan_ipsec_setup.sh line 39'
++ message='oe_test_libreswan_ipsec_setup.sh line 39'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libreswan_ipsec_setup.sh line 39'
+Fri Jan  6 14:34:11 2023 - ERROR - oe_test_libreswan_ipsec_setup.sh line 39
++ return 0
++ SLEEP_WAIT 2 'ipsec setup --restart'
++ wait_time=2
++ cmd='ipsec setup --restart'
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 2 --cmd 'ipsec setup --restart' --mode 1
+Redirecting to: systemctl restart ipsec.service
+Fri Jan  6 14:34:13 2023 - ERROR - Timeout : Command 'ipsec setup --restart' timed out after 1.9982063229999767 seconds
++ CHECK_RESULT 143 0 0 'Restart failed.'
++ actual_result=143
++ expect_result=0
++ mode=0
++ error_log='Restart failed.'
++ '[' -z 143 ']'
++ '[' 0 -eq 0 ']'
++ test 143x '!=' 0x
++ test -n 'Restart failed.'
++ LOG_ERROR 'Restart failed.'
++ message='Restart failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Restart failed.'
+Fri Jan  6 14:34:14 2023 - ERROR - Restart failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libreswan_ipsec_setup.sh line 41'
++ message='oe_test_libreswan_ipsec_setup.sh line 41'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libreswan_ipsec_setup.sh line 41'
+Fri Jan  6 14:34:15 2023 - ERROR - oe_test_libreswan_ipsec_setup.sh line 41
++ return 0
++ ipsec setup --status
++ grep active
++ CHECK_RESULT 1 0 0 'Check restart status failed.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='Check restart status failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'Check restart status failed.'
++ LOG_ERROR 'Check restart status failed.'
++ message='Check restart status failed.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Check restart status failed.'
+Fri Jan  6 14:34:17 2023 - ERROR - Check restart status failed.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libreswan_ipsec_setup.sh line 43'
++ message='oe_test_libreswan_ipsec_setup.sh line 43'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_libreswan_ipsec_setup.sh line 43'
+Fri Jan  6 14:34:17 2023 - ERROR - oe_test_libreswan_ipsec_setup.sh line 43
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Jan  6 14:34:18 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 6
++ test 6 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Fri Jan  6 14:34:19 2023 - ERROR - failed to execute the case.
++ exit 6
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Jan  6 14:34:20 2023 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpv4qi4vij ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpv4qi4vij
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Jan  6 14:34:42 2023 - INFO  - End to restore the test environment.

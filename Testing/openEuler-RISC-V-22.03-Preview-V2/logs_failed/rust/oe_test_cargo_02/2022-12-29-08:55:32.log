@@ -1,0 +1,265 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment!'
++ message='Start to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment!'
+Thu Dec 29 08:55:35 2022 - INFO  - Start to prepare the test environment!
++ DNF_INSTALL cargo
++ pkgs=cargo
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs cargo --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpfd_0d8qh
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpfd_0d8qh
++ LOG_INFO 'End to prepare the test environment!'
++ message='End to prepare the test environment!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment!'
+Thu Dec 29 08:57:35 2022 - INFO  - End to prepare the test environment!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start executing testcase!'
++ message='Start executing testcase!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start executing testcase!'
+Thu Dec 29 08:57:36 2022 - INFO  - Start executing testcase!
++ cargo new hello_world
+     Created binary (application) `hello_world` package
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ test -d hello_world
++ CHECK_RESULT 0 0 0 'Failed to create a new package'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to create a new package'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cd hello_world
++ cargo build
+   Compiling hello_world v0.1.0 (/root/mugen-riscv/testcases/cli-test/rust/oe_test_cargo_02/hello_world)
+    Finished dev [unoptimized + debuginfo] target(s) in 7.86s
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ./target/debug/hello_world
++ grep 'Hello, world!'
+Hello, world!
++ CHECK_RESULT 0 0 0 'Failed to compile package'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to compile package'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cargo run
++ grep 'Hello, world!'
+    Finished dev [unoptimized + debuginfo] target(s) in 0.28s
+     Running `target/debug/hello_world`
+Hello, world!
++ CHECK_RESULT 0 0 0 'Failed to run package'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to run package'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cargo test
++ grep -E 'running|test result'
+   Compiling hello_world v0.1.0 (/root/mugen-riscv/testcases/cli-test/rust/oe_test_cargo_02/hello_world)
+    Finished test [unoptimized + debuginfo] target(s) in 4.15s
+     Running unittests (target/debug/deps/hello_world-7b304d48eede1a76)
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
++ CHECK_RESULT 0 0 0 'Failed to execute tests'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to execute tests'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep -E 'running|test result'
++ cargo bench
+   Compiling hello_world v0.1.0 (/root/mugen-riscv/testcases/cli-test/rust/oe_test_cargo_02/hello_world)
+    Finished bench [optimized] target(s) in 3.97s
+     Running unittests (target/release/deps/hello_world-6bdd788807046047)
+running 0 tests
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
++ CHECK_RESULT 0 0 0 'Failed to execute the benchmark'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to execute the benchmark'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cargo check
+    Checking hello_world v0.1.0 (/root/mugen-riscv/testcases/cli-test/rust/oe_test_cargo_02/hello_world)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.72s
++ CHECK_RESULT 0 0 0 'Failure check kit'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failure check kit'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cargo doc
+ Documenting hello_world v0.1.0 (/root/mugen-riscv/testcases/cli-test/rust/oe_test_cargo_02/hello_world)
+    Finished dev [unoptimized + debuginfo] target(s) in 10.85s
++ test -d target/doc
++ CHECK_RESULT 0 0 0 'Failed to build the package document'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to build the package document'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cargo clean
++ test -d target
++ CHECK_RESULT 1 1 0 'Failed to delete a file'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='Failed to delete a file'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ mkdir INI
++ cd INI
++ cargo init
+     Created binary (application) package
++ test -d src
++ CHECK_RESULT 0 0 0 'Failed to create a new package'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to create a new package'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cargo update
++ test -f Cargo.lock
++ CHECK_RESULT 0 0 0 'Failed to update file'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Failed to update file'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ curl -s -w '%{http_code}' https://github.com/rust-lang/crates.io-index -o /dev/null
++ https_code=200
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ '[' 200 == 200 ']'
++ cargo search
+    Updating crates.io index
+error: failed to update registry `crates-io`
+
+Caused by:
+  failed to fetch `https://github.com/rust-lang/crates.io-index`
+
+Caused by:
+  network failure seems to have happened
+  if a proxy or similar is necessary `net.git-fetch-with-cli` may help here
+  https://doc.rust-lang.org/cargo/reference/config.html#netgit-fetch-with-cli
+
+Caused by:
+  SSL error: received early EOF; class=Ssl (16); code=Eof (-20)
++ CHECK_RESULT 101 0 0 'Failed to search for serde package'
++ actual_result=101
++ expect_result=0
++ mode=0
++ error_log='Failed to search for serde package'
++ '[' -z 101 ']'
++ '[' 0 -eq 0 ']'
++ test 101x '!=' 0x
++ test -n 'Failed to search for serde package'
++ LOG_ERROR 'Failed to search for serde package'
++ message='Failed to search for serde package'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'Failed to search for serde package'
+Thu Dec 29 09:00:14 2022 - ERROR - Failed to search for serde package
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_cargo_02.sh line 59'
++ message='oe_test_cargo_02.sh line 59'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_cargo_02.sh line 59'
+Thu Dec 29 09:00:15 2022 - ERROR - oe_test_cargo_02.sh line 59
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Dec 29 09:00:16 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Dec 29 09:00:16 2022 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Dec 29 09:00:17 2022 - INFO  - start environment cleanup.
++ rm -rf ../../hello_world
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpfd_0d8qh ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpfd_0d8qh
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Dec 29 09:00:29 2022 - INFO  - Finish environment cleanup!

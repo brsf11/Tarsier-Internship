@@ -1,0 +1,300 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Thu Dec 29 07:01:35 2022 - INFO  - Start environmental preparation.
++ vhost_name=myvhost
++ DNF_INSTALL rabbitmq-server
++ pkgs=rabbitmq-server
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rabbitmq-server --node 1 --tempfile ''
++ tmpfile2=/tmp/tmphazchyn6
++ '[' -z '' ']'
++ tmpfile=/tmp/tmphazchyn6
++ which firewalld
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
++ systemctl restart rabbitmq-server
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Thu Dec 29 07:04:10 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Thu Dec 29 07:04:11 2022 - INFO  - Start testing...
++ rabbitmqctl add_vhost myvhost
+Adding vhost "myvhost" ...
++ rabbitmqctl set_policy -p myvhost ha '^' '{"ha-mode":"all","ha-sync-mode":"automatic"}'
++ grep 'Setting policy'
+Setting policy "ha" for pattern "^" to "{"ha-mode":"all","ha-sync-mode":"automatic"}" with priority "0" for vhost "myvhost" ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl list_policies -p myvhost
++ grep myvhost
+Listing policies for vhost "myvhost" ...
+myvhost	ha	^	all	{"ha-mode":"all","ha-sync-mode":"automatic"}	0
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep myvhost
++ rabbitmqctl clear_policy -p myvhost ha
+Clearing policy "ha" on vhost "myvhost" ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl eval 'rabbit_amqqueue:declare({resource, <<"myvhost">>, queue, <<"test-queue">>}, true, false, [], none, "test").'
+{new,{amqqueue,{resource,<<"myvhost">>,queue,<<"test-queue">>},
+               true,false,none,[],<11415.935.0>,[],[],[],undefined,undefined,
+               [],[],live,0,[],<<"myvhost">>,
+               #{user => "test"},
+               rabbit_classic_queue,#{}}}
++ rabbitmqctl list_queues -p myvhost
++ grep test-queue
+test-queue	0
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl list_queues -p myvhost --offline
++ grep test-queue
++ CHECK_RESULT 1 1 0
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ rabbitmqctl list_queues -p myvhost --online
++ grep test-queue
+test-queue	0
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl list_queues -p myvhost --local
++ grep test-queue
+test-queue	0
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl list_exchanges -p myvhost name type
++ grep topic
+amq.rabbitmq.trace	topic
+amq.topic	topic
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep exchang
++ rabbitmqctl list_bindings -p myvhost
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * node rabbit@openEuler-riscv64 up, 'rabbit' application running
+
+Current node details:
+ * node name: 'rabbitmqcli-160-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: Q5DzcHqsTn9t5t0WJYlmMQ==
+
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_policy.sh line 52'
++ message='oe_test_rabbitmqctl_policy.sh line 52'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_policy.sh line 52'
+Thu Dec 29 07:06:14 2022 - ERROR - oe_test_rabbitmqctl_policy.sh line 52
++ return 0
++ rabbitmqctl list_connections
++ grep connections
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * node rabbit@openEuler-riscv64 up, 'rabbit' application running
+
+Current node details:
+ * node name: 'rabbitmqcli-915-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: Q5DzcHqsTn9t5t0WJYlmMQ==
+
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_policy.sh line 54'
++ message='oe_test_rabbitmqctl_policy.sh line 54'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_policy.sh line 54'
+Thu Dec 29 07:06:35 2022 - ERROR - oe_test_rabbitmqctl_policy.sh line 54
++ return 0
++ rabbitmqctl list_channels
++ grep channels
+Listing channels ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl list_consumers
++ grep consumers
+Listing consumers in vhost / ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Thu Dec 29 07:06:44 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 2
++ test 2 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Dec 29 07:06:45 2022 - ERROR - failed to execute the case.
++ exit 2
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Dec 29 07:06:46 2022 - INFO  - start environment cleanup.
++ systemctl stop rabbitmq-server
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmphazchyn6 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmphazchyn6
++ '[' 0 -ne 0 ']'
++ rm -rf /var/lib/rabbitmq/
+++ pgrep -u rabbitmq
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ which firewalld
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Dec 29 07:08:00 2022 - INFO  - Finish environment cleanup!

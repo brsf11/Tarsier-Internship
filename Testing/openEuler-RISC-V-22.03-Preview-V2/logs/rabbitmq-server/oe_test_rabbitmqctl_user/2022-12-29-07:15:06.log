@@ -1,0 +1,212 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start environmental preparation.'
++ message='Start environmental preparation.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start environmental preparation.'
+Thu Dec 29 07:15:09 2022 - INFO  - Start environmental preparation.
++ DNF_INSTALL rabbitmq-server
++ pkgs=rabbitmq-server
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rabbitmq-server --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp0ilbnc66
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp0ilbnc66
++ user_mq=test
++ passwd_mq=test
++ newpasswd_mq=newtest
++ which firewalld
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
++ systemctl restart rabbitmq-server
++ LOG_INFO 'End of environmental preparation!'
++ message='End of environmental preparation!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of environmental preparation!'
+Thu Dec 29 07:18:12 2022 - INFO  - End of environmental preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start testing...'
++ message='Start testing...'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start testing...'
+Thu Dec 29 07:18:13 2022 - INFO  - Start testing...
++ grep test
++ rabbitmqctl add_user test test
+Adding user "test" ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl authenticate_user test test
++ grep test
+Authenticating user "test" ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl set_user_tags test administrator
++ grep test
+Setting tags for user "test" to [administrator] ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep test
++ rabbitmqctl set_user_tags test
+Setting tags for user "test" to [] ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl list_users
++ grep test
+test	[]
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl change_password test newtest
++ grep test
+Changing password for user "test" ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ rabbitmqctl clear_password test
++ grep test
+Error: unable to perform an operation on node 'rabbit@openEuler-riscv64'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@openEuler-riscv64
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: ['rabbit@openEuler-riscv64']
+
+rabbit@openEuler-riscv64:
+  * connected to epmd (port 4369) on openEuler-riscv64
+  * node rabbit@openEuler-riscv64 up, 'rabbit' application running
+
+Current node details:
+ * node name: 'rabbitmqcli-751-rabbit@openEuler-riscv64'
+ * effective user's home directory: /var/lib/rabbitmq
+ * Erlang cookie hash: dCvEtVgbL6XWiIl9ccjWGA==
+
++ CHECK_RESULT 1
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n ''
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_rabbitmqctl_user.sh line 48'
++ message='oe_test_rabbitmqctl_user.sh line 48'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'oe_test_rabbitmqctl_user.sh line 48'
+Thu Dec 29 07:19:42 2022 - ERROR - oe_test_rabbitmqctl_user.sh line 48
++ return 0
++ rabbitmqctl delete_user test
++ grep test
+Deleting user "test" ...
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'Finish test!'
++ message='Finish test!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish test!'
+Thu Dec 29 07:19:55 2022 - INFO  - Finish test!
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Thu Dec 29 07:19:56 2022 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'start environment cleanup.'
++ message='start environment cleanup.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'start environment cleanup.'
+Thu Dec 29 07:19:56 2022 - INFO  - start environment cleanup.
++ systemctl stop rabbitmq-server
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp0ilbnc66 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp0ilbnc66
++ '[' 0 -ne 0 ']'
++ rm -rf /var/lib/rabbitmq/
+++ pgrep -u rabbitmq
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ which firewalld
+which: no firewalld in (/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin)
++ LOG_INFO 'Finish environment cleanup!'
++ message='Finish environment cleanup!'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish environment cleanup!'
+Thu Dec 29 07:21:01 2022 - INFO  - Finish environment cleanup!

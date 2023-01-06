@@ -1,0 +1,238 @@
++ source common/common_pcp2json.sh
+++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Dec 29 03:01:51 2022 - INFO  - Start to prepare the test environment.
++ deploy_env
++ DNF_INSTALL 'pcp pcp-export-pcp2json pcp-system-tools'
++ pkgs='pcp pcp-export-pcp2json pcp-system-tools'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'pcp pcp-export-pcp2json pcp-system-tools' --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpe44ddmea
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpe44ddmea
++ systemctl enable pmcd
++ systemctl start pmcd
++ systemctl enable pmlogger
++ systemctl start pmlogger
++ SLEEP_WAIT 10
++ wait_time=10
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 10 --cmd '' --mode 1
+++ hostname
++ host_name=openEuler-riscv64
+++ pcp -h openEuler-riscv64
+++ awk -F: '{print $NF}'
+++ grep 'primary logger:'
++ archive_data=' /var/log/pcp/pmlogger/openEuler-riscv64/20221229.03.03'
++ metric_name=disk.dev.write
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Dec 29 03:04:25 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Dec 29 03:04:26 2022 - INFO  - Start to run test.
++ SLEEP_WAIT 30
++ wait_time=30
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 30 --cmd '' --mode 1
++ pcp2json -a /var/log/pcp/pmlogger/openEuler-riscv64/20221229.03.03 disk.dev.write -F OUTFILE
+{ "//": "Writing 1 archived metrics to OUTFILE..." }
+{ "//": "(Ctrl-C to stop)" }
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ grep @interval OUTFILE
+            "@interval": "0",
+            "@interval": "16",
+            "@interval": "7",
+            "@interval": "10",
+            "@interval": "10",
+            "@interval": "10",
+            "@interval": "10",
+            "@interval": "10",
+            "@interval": "10",
+            "@interval": "10",
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ SLEEP_WAIT 2
++ wait_time=2
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 2 --cmd '' --mode 1
++ nohup pcp2json --daemonize disk.dev.write
+++ pgrep -f daemonize
++ kill -9 12994
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pcp2json -H -s 10 -t 2 disk.dev.write
++ grep @interval
+            "@interval": "0",
+            "@interval": "2",
+            "@interval": "2",
+            "@interval": "2",
+            "@interval": "2",
+            "@interval": "2",
+            "@interval": "2",
+            "@interval": "2",
+            "@interval": "2",
+            "@interval": "2",
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pcp2json -G -s 10 -t 2 disk.dev.write
++ grep metrics
+{ "//": "Waiting for 1 metrics to be written to stdout:" }
+        "@metrics": [
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pcp2json -a /var/log/pcp/pmlogger/openEuler-riscv64/20221229.03.03 -S @00 -T @23 -s 10 -t 2 disk.dev.write
++ grep @source
+        "@source": "/var/log/pcp/pmlogger/openEuler-riscv64/20221229.03.03",
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pcp2json -a /var/log/pcp/pmlogger/openEuler-riscv64/20221229.03.03 -O @00 -s 10 -t 2 disk.dev.write
++ grep @source
+        "@source": "/var/log/pcp/pmlogger/openEuler-riscv64/20221229.03.03",
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pcp2json -Z Africa/Lagos -s 10 -t 2 disk.dev.write
++ grep UTC+1
+        "@timezone": "UTC+1"
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pcp2json -z -s 10 -t 2 disk.dev.write
++ grep UTC+8
+        "@timezone": "UTC+8"
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ pcp2json -r -s 10 -t 2 disk.dev.write
++ grep @timezone
+        "@timezone": "UTC+8"
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Dec 29 03:06:42 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Thu Dec 29 03:06:43 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Dec 29 03:06:43 2022 - INFO  - Start to restore the test environment.
++ rm -f OUTFILE
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpe44ddmea ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpe44ddmea
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Dec 29 03:07:56 2022 - INFO  - End to restore the test environment.

@@ -1,0 +1,185 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ grep expect
++ rpm -qa
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Fri Jan  6 12:01:19 2023 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL gradle
++ pkgs=gradle
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs gradle --node 1 --tempfile ''
++ tmpfile2=/tmp/tmp_ctk94u8
++ '[' -z '' ']'
++ tmpfile=/tmp/tmp_ctk94u8
++ mkdir subdir
++ cat
++ cat
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Fri Jan  6 12:11:37 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Jan  6 12:11:37 2023 - INFO  - Start to run test.
++ gradle tasks init
++ grep 'BUILD SUCCESSFUL'
+BUILD SUCCESSFUL in 25s
++ CHECK_RESULT 0 0 0 'Check gradle tasks init failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle tasks init failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ gradle tasks wrapper
++ grep 'BUILD SUCCESSFUL'
+BUILD SUCCESSFUL in 16s
++ CHECK_RESULT 0 0 0 'Check gradle tasks wrapper failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle tasks wrapper failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ cp -f ../common/build.gradle ./
++ gradle -m build
++ grep 'BUILD SUCCESSFUL'
+BUILD SUCCESSFUL in 1m 1s
++ CHECK_RESULT 0 0 0 'Check gradle -m build failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle -m build failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ gradle build --profile
++ grep 'BUILD SUCCESSFUL'
+BUILD SUCCESSFUL in 16s
++ CHECK_RESULT 0 0 0 'Check gradle build --profile failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle build --profile failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ gradle -q -b subdir/myproject.gradle hello
++ grep 'using build file '\''.name'\'' in '\''.parentFile.name'\''.'
+using build file '.name' in '.parentFile.name'.
++ CHECK_RESULT 0 0 0 'Check gradle -q -b failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle -q -b failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ gradle -q -p subdir hello
++ grep 'using build file '\''.name'\'' in '\''.parentFile.name'\''.'
+using build file '.name' in '.parentFile.name'.
++ CHECK_RESULT 0 0 0 'Check gradle -q -p failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle -q -p failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ gradle base
++ grep Task
+The Task.leftShift(Closure) method has been deprecated and is scheduled to be removed in Gradle 5.0. Please use Task.doLast(Action) instead.
++ CHECK_RESULT 0 0 0 'Check gradle base failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle base failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ gradle -q base
++ grep 'BUILD SUCCESSFUL'
++ CHECK_RESULT 1 1 0 'Check gradle -q base failed.'
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log='Check gradle -q base failed.'
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ gradle -w base
++ grep warning
+	(Run with --stacktrace to get the full stack trace of this deprecation warning.)
++ CHECK_RESULT 0 0 0 'Check gradle -w base failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check gradle -w base failed.'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Jan  6 12:15:06 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Fri Jan  6 12:15:06 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Jan  6 12:15:07 2023 - INFO  - Start to restore the test environment.
+++ ls
+++ grep -vE '\.sh'
++ rm -rf build build.gradle gradle gradlew gradlew.bat settings.gradle subdir .gradle/
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmp_ctk94u8 ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmp_ctk94u8
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Jan  6 12:18:34 2023 - INFO  - End to restore the test environment.

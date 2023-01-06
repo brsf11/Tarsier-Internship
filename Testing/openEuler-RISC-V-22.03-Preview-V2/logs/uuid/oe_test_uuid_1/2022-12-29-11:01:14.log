@@ -1,0 +1,234 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Dec 29 11:01:17 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL 'uuid vim'
++ pkgs='uuid vim'
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs 'uuid vim' --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpri_qxi4q
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpri_qxi4q
++ LOG_INFO 'Finish preparing the test environment.'
++ message='Finish preparing the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish preparing the test environment.'
+Thu Dec 29 11:02:07 2022 - INFO  - Finish preparing the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Dec 29 11:02:08 2022 - INFO  - Start to run test.
++ uuid
++ grep -
+2eba792a-8725-11ed-a02f-525400123456
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ uuid -v4
++ grep -
+b42404c3-5469-47e1-b9a3-17edeaab0ad6
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ uuid -v3 ns:URL http://www.baidu.com
++ grep -
+2f67490d-55a4-395e-b540-457195f7aa95
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ uuid -v5 ns:URL http://www.baidu.com
++ grep -
+6bd69026-2b9c-5629-82dd-f92f408b660e
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ uuid
+++ awk -F - '{print $5}'
++ mac_id=525400123456
++ uuid -m
++ grep 525400123456
++ CHECK_RESULT 1 1
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ wc -l
++ uuid -n 10
++ grep 10
+10
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ uuid -n 10 -1
+2efc11c8-8725-11ed-8597-525400123456
+2efc7294-8725-11ed-b27f-525400123456
+2efc76cc-8725-11ed-8c7a-525400123456
+2efc7956-8725-11ed-ae7b-525400123456
+2efc7b22-8725-11ed-848e-525400123456
+2efc7cbc-8725-11ed-8d62-525400123456
+2efc7e56-8725-11ed-bd8e-525400123456
+2efc7ff0-8725-11ed-bca3-525400123456
+2efc8180-8725-11ed-82b0-525400123456
+2efc8342-8725-11ed-b757-525400123456
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ uuid -F BIN
++ grep RT
++ xxd
+00000000: 2f01 4382 8725 11ed 80fc 5254 0012 3456  /.C..%....RT..4V
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ uuid -F STR
++ grep -
+2f0a2dd0-8725-11ed-baca-525400123456
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ uuid -F SIV
++ grep -
++ CHECK_RESULT 1 1
++ actual_result=1
++ expect_result=1
++ mode=0
++ error_log=
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 1x
++ return 0
++ uuid -o uuid_file
++ grep - uuid_file
+2f183bc8-8725-11ed-a0b8-525400123456
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ cat uuid_file
++ id=2f183bc8-8725-11ed-a0b8-525400123456
++ uuid -d 2f183bc8-8725-11ed-a0b8-525400123456
+encode: STR:     2f183bc8-8725-11ed-a0b8-525400123456
+        SIV:     62599543476120291435883172114650510422
+decode: variant: DCE 1.1, ISO/IEC 11578:1996
+        version: 1 (time and node based)
+        content: time:  2022-12-29 03:02:09.201044.0 UTC
+                 clock: 8376 (usually random)
+                 node:  52:54:00:12:34:56 (local unicast)
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End of the test.'
++ message='End of the test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End of the test.'
+Thu Dec 29 11:02:09 2022 - INFO  - End of the test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Thu Dec 29 11:02:10 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Dec 29 11:02:11 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpri_qxi4q ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpri_qxi4q
++ '[' 0 -ne 0 ']'
++ rm -rf uuid_file
++ LOG_INFO 'Finish restoring the test environment.'
++ message='Finish restoring the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Finish restoring the test environment.'
+Thu Dec 29 11:02:32 2022 - INFO  - Finish restoring the test environment.

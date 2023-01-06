@@ -1,0 +1,386 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ grep expect
++ rpm -qa
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Dec 29 07:52:18 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL rsyslog
++ pkgs=rsyslog
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rsyslog --node 1 --tempfile ''
+Thu Dec 29 07:52:26 2022 - INFO  - pkgs:(rsyslog) is already installed
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Dec 29 07:52:27 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Thu Dec 29 07:52:27 2022 - INFO  - Start to run test.
++ facility_list=("auth" "daemon" "security" "lpr" "mail" "syslog" "news" "user" "uucp" "local1")
++ for facility in "${facility_list[@]}"
++ echo 'auth.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=50144
++ logger -t auth -p auth.info testauth50144
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testauth50144 /var/log/test
+Dec 29 07:52:30 openEuler-riscv64 auth[942]: testauth50144
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'daemon.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=54867
++ logger -t daemon -p daemon.info testdaemon54867
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testdaemon54867 /var/log/test
+Dec 29 07:52:34 openEuler-riscv64 daemon[958]: testdaemon54867
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'security.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=66136
++ logger -t security -p security.info testsecurity66136
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testsecurity66136 /var/log/test
+Dec 29 07:52:46 openEuler-riscv64 security[972]: testsecurity66136
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'lpr.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=80951
++ logger -t lpr -p lpr.info testlpr80951
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testlpr80951 /var/log/test
+Dec 29 07:53:01 openEuler-riscv64 lpr[986]: testlpr80951
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'mail.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ cut -c 9-13
+++ date +%s%N
++ time=87249
++ logger -t mail -p mail.info testmail87249
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testmail87249 /var/log/test
+Dec 29 07:53:07 openEuler-riscv64 mail[1000]: testmail87249
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'syslog.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ cut -c 9-13
+++ date +%s%N
++ time=92003
++ logger -t syslog -p syslog.info testsyslog92003
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testsyslog92003 /var/log/test
+Dec 29 07:53:12 openEuler-riscv64 syslog[1014]: testsyslog92003
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'news.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=96662
++ logger -t news -p news.info testnews96662
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testnews96662 /var/log/test
+Dec 29 07:53:16 openEuler-riscv64 news[1028]: testnews96662
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'user.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=01374
++ logger -t user -p user.info testuser01374
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testuser01374 /var/log/test
+Dec 29 07:53:21 openEuler-riscv64 user[1042]: testuser01374
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'uucp.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=07489
++ logger -t uucp -p uucp.info testuucp07489
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testuucp07489 /var/log/test
+Dec 29 07:53:27 openEuler-riscv64 uucp[1056]: testuucp07489
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ for facility in "${facility_list[@]}"
++ echo 'local1.*   /var/log/test'
++ systemctl restart rsyslog
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
+++ date +%s%N
+++ cut -c 9-13
++ time=12179
++ logger -t local1 -p local1.info testlocal112179
++ SLEEP_WAIT 3
++ wait_time=3
++ cmd=
++ mode=1
++ python3 /root/mugen-riscv/libs/locallibs/sleep_wait.py --time 3 --cmd '' --mode 1
++ grep testlocal112179 /var/log/test
+Dec 29 07:53:32 openEuler-riscv64 local1[1072]: testlocal112179
++ CHECK_RESULT 0
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log=
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Thu Dec 29 07:53:36 2022 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Thu Dec 29 07:53:37 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Dec 29 07:53:38 2022 - INFO  - Start to restore the test environment.
++ rm -rf /var/log/test /etc/rsyslog.d/test.conf
++ systemctl restart rsyslog
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Dec 29 07:53:49 2022 - INFO  - End to restore the test environment.

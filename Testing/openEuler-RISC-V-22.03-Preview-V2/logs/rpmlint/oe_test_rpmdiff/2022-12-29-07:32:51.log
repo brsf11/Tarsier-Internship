@@ -1,0 +1,158 @@
++ source /root/mugen-riscv/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen-riscv/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Thu Dec 29 07:32:53 2022 - INFO  - Start to prepare the test environment.
++ DNF_INSTALL rpmlint
++ pkgs=rpmlint
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py install --pkgs rpmlint --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpa7ad53ec
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpa7ad53ec
++ wget https://repo.openeuler.org/openEuler-20.03-LTS/everything/aarch64/Packages/LibRaw-0.19.0-9.oe1.aarch64.rpm
+--2022-12-29 07:33:54--  https://repo.openeuler.org/openEuler-20.03-LTS/everything/aarch64/Packages/LibRaw-0.19.0-9.oe1.aarch64.rpm
+Resolving repo.openeuler.org (repo.openeuler.org)... 49.0.230.196
+Connecting to repo.openeuler.org (repo.openeuler.org)|49.0.230.196|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 298520 (292K) [application/x-redhat-package-manager]
+Saving to: ‘LibRaw-0.19.0-9.oe1.aarch64.rpm’
+
+     0K .......... .......... .......... .......... .......... 17%  338K 1s
+    50K .......... .......... .......... .......... .......... 34%  694K 0s
+   100K .......... .......... .......... .......... .......... 51% 4.41M 0s
+   150K .......... .......... .......... .......... .......... 68%  901K 0s
+   200K .......... .......... .......... .......... .......... 85% 4.47M 0s
+   250K .......... .......... .......... .......... .         100% 4.32M=0.3s
+
+2022-12-29 07:33:55 (951 KB/s) - ‘LibRaw-0.19.0-9.oe1.aarch64.rpm’ saved [298520/298520]
+
++ wget https://repo.openeuler.org/openEuler-20.03-LTS/update/aarch64/Packages/LibRaw-0.19.0-10.oe1.aarch64.rpm
+--2022-12-29 07:33:56--  https://repo.openeuler.org/openEuler-20.03-LTS/update/aarch64/Packages/LibRaw-0.19.0-10.oe1.aarch64.rpm
+Resolving repo.openeuler.org (repo.openeuler.org)... 49.0.230.196
+Connecting to repo.openeuler.org (repo.openeuler.org)|49.0.230.196|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 298764 (292K) [application/x-redhat-package-manager]
+Saving to: ‘LibRaw-0.19.0-10.oe1.aarch64.rpm’
+
+     0K .......... .......... .......... .......... .......... 17%  378K 1s
+    50K .......... .......... .......... .......... .......... 34%  727K 0s
+   100K .......... .......... .......... .......... .......... 51%  742K 0s
+   150K .......... .......... .......... .......... .......... 68%  733K 0s
+   200K .......... .......... .......... .......... .......... 85% 4.41M 0s
+   250K .......... .......... .......... .......... .         100%  634K=0.4s
+
+2022-12-29 07:33:57 (705 KB/s) - ‘LibRaw-0.19.0-10.oe1.aarch64.rpm’ saved [298764/298764]
+
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Thu Dec 29 07:33:58 2022 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test1.'
++ message='Start to run test1.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test1.'
+Thu Dec 29 07:33:58 2022 - INFO  - Start to run test1.
++ rpmdiff LibRaw-0.19.0-10.oe1.aarch64.rpm LibRaw-0.19.0-9.oe1.aarch64.rpm
++ grep 'S.5.......T /usr/lib64/libraw.so.19.0.0'
+S.5.......T /usr/lib64/libraw.so.19.0.0
++ CHECK_RESULT 0 0 0 'rpmdiff failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='rpmdiff failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test1.'
++ message='End to run test1.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test1.'
+Thu Dec 29 07:34:00 2022 - INFO  - End to run test1.
++ LOG_INFO 'Start to run test2.'
++ message='Start to run test2.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test2.'
+Thu Dec 29 07:34:01 2022 - INFO  - Start to run test2.
++ rpmdiff -i 5 LibRaw-0.19.0-10.oe1.aarch64.rpm LibRaw-0.19.0-9.oe1.aarch64.rpm
++ grep 'S.........T /usr/lib64/libraw.so.19.0.0'
+S.........T /usr/lib64/libraw.so.19.0.0
++ CHECK_RESULT 0 0 0 'rpmdiff -i 5 failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='rpmdiff -i 5 failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test2.'
++ message='End to run test2.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test2.'
+Thu Dec 29 07:34:02 2022 - INFO  - End to run test2.
++ LOG_INFO 'Start to run test3.'
++ message='Start to run test3.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to run test3.'
+Thu Dec 29 07:34:03 2022 - INFO  - Start to run test3.
++ rpmdiff -i T LibRaw-0.19.0-10.oe1.aarch64.rpm LibRaw-0.19.0-9.oe1.aarch64.rpm
++ grep 'S.5........ /usr/lib64/libraw.so.19.0.0'
+S.5........ /usr/lib64/libraw.so.19.0.0
++ CHECK_RESULT 0 0 0 'rpmdiff -i T failed'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='rpmdiff -i T failed'
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test3.'
++ message='End to run test3.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to run test3.'
+Thu Dec 29 07:34:05 2022 - INFO  - End to run test3.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Thu Dec 29 07:34:05 2022 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Thu Dec 29 07:34:06 2022 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpa7ad53ec ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen-riscv/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpa7ad53ec
++ '[' 0 -ne 0 ']'
++ rm -rf LibRaw-0.19.0-10.oe1.aarch64.rpm LibRaw-0.19.0-9.oe1.aarch64.rpm
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen-riscv/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Thu Dec 29 07:34:16 2022 - INFO  - End to restore the test environment.
