@@ -1,74 +1,4 @@
 测试套/软件包名,测试用例名,日志文件,原因,Broken testcase,pkg not found,preinstall absent,kernel module absent,file missing,systemd unit restart failure,systemd unit runtime error,systemd unit enable failure,timeout,invalid argument
-lvm2,oe_test_service_lvmlockd,2022-12-29-17:57:10.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-lvm2,oe_test_service_lvmlocks,2022-12-29-17:58:09.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-systemd,oe_test_service_systemd-journal-remote,2022-12-30-11:51:45.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-systemd,oe_test_service_systemd-journal-upload,2022-12-30-11:52:46.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-corosync,oe_test_service_spausedd,2023-01-06-01_52_42.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-nagios,oe_test_service_nagios,2022-12-29-01:00:09.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-openvswitch,oe_test_service_ovn-northd,2022-12-29-02:34:42.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-openvswitch,oe_test_service_openvswitch-ipsec,2022-12-29-02:36:20.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-openvswitch,oe_test_service_ovn-controller-vtep,2022-12-29-02:35:30.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-openvswitch,oe_test_service_ovn-controller,2022-12-29-02:34:14.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-pcp,oe_test_service_pmmgr,2022-12-29-05:16:30.log,"pkg not found
-file missing
-systemd unit restart failure
-systemd unit runtime error
-",0,1,0,0,1,1,1,0,0,0
-systemd,oe_test_socket_systemd-journal-remote,2022-12-30-12:18:27.log,"pkg not found
-file missing
-",0,1,0,0,1,0,0,0,0,0
-nvmetcli,oe_test_service_nvmet,2022-12-29-01:42:23.log,"kernel module absent
-file missing
-systemd unit restart failure
-systemd unit runtime error
-systemd unit enable failure
-",0,0,0,1,1,1,1,1,0,0
-ipmitool,oe_test_service_ipmievd,2023-01-06-12:25:44.log,"kernel module absent
-file missing
-systemd unit restart failure
-systemd unit runtime error
-systemd unit enable failure
-",0,0,0,1,1,1,1,1,0,0
 clamav,oe_test_clamav_clamonacc,2023-01-05-23_29_31.log,"file missing
 timeout
 ",0,0,0,0,1,0,0,0,1,0
@@ -135,18 +65,6 @@ timeout
 podman,oe_test_service_io.podman,2022-12-29-04:26:00.log,"file missing
 systemd unit runtime error
 ",0,0,0,0,1,0,1,0,0,0
-nfs-utils,oe_test_service_nfs-blkmap,2022-12-29-01:14:30.log,"file missing
-systemd unit restart failure
-systemd unit runtime error
-systemd unit enable failure
-invalid argument
-",0,0,0,0,1,1,1,1,0,1
-krb5,oe_test_service_kadmin,2023-01-06-13:39:51.log,"file missing
-systemd unit restart failure
-systemd unit runtime error
-systemd unit enable failure
-invalid argument
-",0,0,0,0,1,1,1,1,0,1
 OpenIPMI,oe_test_service_ipmi,2023-01-05-19_17_35.log,"file missing
 systemd unit restart failure
 systemd unit runtime error
@@ -506,9 +424,6 @@ ipmitool,oe_test_service_exchange-bmc-os-info,2023-01-06-12:24:14.log,"file miss
 systemd unit restart failure
 systemd unit runtime error
 ",0,0,0,0,1,1,1,0,0,0
-pps-tools,oe_test_pps-tools,2022-12-29-05:14:37.log,"file missing
-invalid argument
-",0,0,0,0,1,0,0,0,0,1
 openssh,oe_test_sec_ssh,2022-12-30-11:41:15.log,"file missing
 ",0,0,0,0,1,0,0,0,0,0
 osc,oe_test_osc_build,2022-12-29-18:51:37.log,"file missing
@@ -627,14 +542,6 @@ libreswan,oe_test_libreswan_ipsec_check,2023-01-06-14:29:40.log,"file missing
 ",0,0,0,0,1,0,0,0,0,0
 libreswan,oe_test_libreswan_ipsec_02,2023-01-06-14:24:56.log,"file missing
 ",0,0,0,0,1,0,0,0,0,0
-open-iscsi,oe_test_open-iscsi_iscsistart_iscsiuio,2022-12-29-01:49:28.log,"Broken testcase
-file missing
-timeout
-",1,0,0,0,1,0,0,0,1,0
-open-iscsi,oe_test_open-iscsi_iscsiadm,2022-12-29-01:47:52.log,"Broken testcase
-file missing
-timeout
-",1,0,0,0,1,0,0,0,1,0
 spawn-fcgi,oe_test_service_spawn-fcgi,2022-12-29-09:16:56.log,"systemd unit restart failure
 systemd unit runtime error
 systemd unit enable failure
@@ -681,6 +588,250 @@ systemd unit runtime error
 qemu,oe_test_service_qemu-guest-agent,2022-12-29-05:36:19.log,"systemd unit restart failure
 systemd unit runtime error
 ",0,0,0,0,0,1,1,0,0,0
+systemd,oe_test_service_systemd-fsck-root,2022-12-30-11:44:50.log,"systemd unit runtime error
+",0,0,0,0,0,0,1,0,0,0
+clevis,oe_test_service_clevis-luks-askpass,2023-01-05-23_51_50.log,"systemd unit runtime error
+",0,0,0,0,0,0,1,0,0,0
+crontabs,oe_test_crontabs,2022-12-29-17:28:54.log,,0,0,0,0,0,0,0,0,0,0
+osc,oe_test_osc_04,2022-12-29-18:45:12.log,,0,0,0,0,0,0,0,0,0,0
+systemd,oe_test_target_initrd-switch-root,2022-12-30-12:30:18.log,,0,0,0,0,0,0,0,0,0,0
+ansible,oe_test_ansible_01,2023-01-05-20_18_20.log,,0,0,0,0,0,0,0,0,0,0
+ansible,oe_test_ansible_03,2023-01-05-20_48_48.log,,0,0,0,0,0,0,0,0,0,0
+ansible,oe_test_ansible_04,2023-01-05-20_55_53.log,,0,0,0,0,0,0,0,0,0,0
+auter,oe_test_auter,2023-01-05-21_18_28.log,,0,0,0,0,0,0,0,0,0,0
+dejagnu,oe_test_dejagnu_runtest_02,2023-01-06-02_23_10.log,,0,0,0,0,0,0,0,0,0,0
+mpg123,oe_test_mpg123,2022-12-29-00:47:50.log,,0,0,0,0,0,0,0,0,0,0
+nftables,oe_test_iptables_to_nftables,2022-12-29-01:16:57.log,,0,0,0,0,0,0,0,0,0,0
+nss_wrapper,oe_test_nss_wrapper,2022-12-29-01:35:30.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_lowntfs-3g_02,2022-12-29-02:10:08.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfsls,2022-12-29-01:49:05.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfsundelete_02,2022-12-29-02:01:48.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfssecaudit,2022-12-29-01:58:01.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfsundelete_01,2022-12-29-02:00:29.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_lowntfs-3g_03,2022-12-29-02:11:59.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfs-3g_02,2022-12-29-02:04:44.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfscp,2022-12-29-01:38:43.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfsmove,2022-12-29-01:56:34.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfscluster,2022-12-29-01:55:22.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_lowntfs-3g_01,2022-12-29-02:08:37.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfs-3g_03,2022-12-29-02:06:51.log,,0,0,0,0,0,0,0,0,0,0
+ntfs-3g,oe_test_ntfs-3g_ntfs-3g_01,2022-12-29-02:03:04.log,,0,0,0,0,0,0,0,0,0,0
+pcp-system-tools,oe_test_pcp-iostat,2022-12-29-04:42:38.log,,0,0,0,0,0,0,0,0,0,0
+pcp-system-tools,oe_test_pcp-mpstat_pcp-numastat,2022-12-29-04:48:58.log,,0,0,0,0,0,0,0,0,0,0
+pcp-system-tools,oe_test_pcp-pidstat_02_pcp-ipcs,2022-12-29-04:36:50.log,,0,0,0,0,0,0,0,0,0,0
+pcp,oe_test_pmlogger_daily_01,2022-12-29-04:21:00.log,,0,0,0,0,0,0,0,0,0,0
+pcp,oe_test_pmhostname_pmlock_pmlogger_check,2022-12-29-04:17:02.log,,0,0,0,0,0,0,0,0,0,0
+procinfo,oe_test_procinfo_01,2022-12-29-05:24:09.log,,0,0,0,0,0,0,0,0,0,0
+psacct,oe_test_psacct,2022-12-29-05:31:14.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_18,2022-12-29-05:25:51.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_28,2022-12-29-05:33:32.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_18,2022-12-29-06:17:35.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_19,2022-12-29-06:18:16.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_02,2022-12-29-05:35:07.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_27,2022-12-29-05:32:56.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_11,2022-12-29-06:11:49.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_10,2022-12-29-05:19:37.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_20,2022-12-29-06:19:11.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_26,2022-12-29-06:23:49.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_14,2022-12-29-06:14:14.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_13,2022-12-29-06:13:26.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_02,2022-12-29-04:32:46.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_25,2022-12-29-06:23:02.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_11,2022-12-29-05:20:24.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_14,2022-12-29-05:22:47.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_22,2022-12-29-05:28:50.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_10,2022-12-29-06:11:00.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_12,2022-12-29-05:21:09.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_13,2022-12-29-05:21:59.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_17,2022-12-29-06:16:44.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_23,2022-12-29-06:21:21.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_19,2022-12-29-05:26:38.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_28,2022-12-29-06:25:15.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_23,2022-12-29-05:29:44.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_20,2022-12-29-05:27:23.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_12,2022-12-29-06:12:36.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_22,2022-12-29-06:20:33.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_24,2022-12-29-05:30:27.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_17,2022-12-29-05:25:11.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_27,2022-12-29-06:24:33.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_25,2022-12-29-05:31:20.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_26,2022-12-29-05:32:07.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_21,2022-12-29-05:27:55.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_24,2022-12-29-06:22:05.log,,0,0,0,0,0,0,0,0,0,0
+podman,oe_test_podman_DK_21,2022-12-29-06:19:44.log,,0,0,0,0,0,0,0,0,0,0
+qt5-qttools,oe_test_qt5-qttools_qdoc_02,2023-01-05-13:14:24.log,,0,0,0,0,0,0,0,0,0,0
+qt5-qttools,oe_test_qt5-qttools_qdoc_03,2023-01-05-13:17:52.log,,0,0,0,0,0,0,0,0,0,0
+qt5-qttools,oe_test_qt5-qttools_qdbus-qt5,2023-01-05-13:08:21.log,,0,0,0,0,0,0,0,0,0,0
+rabbitmq-server,oe_test_rabbitmq-plugins,2022-12-29-07:29:18.log,,0,0,0,0,0,0,0,0,0,0
+rabbitmq-server,oe_test_rabbitmqctl_user,2022-12-29-07:15:06.log,,0,0,0,0,0,0,0,0,0,0
+rabbitmq-server,oe_test_rabbitmqctl_policy,2022-12-29-07:01:32.log,,0,0,0,0,0,0,0,0,0,0
+rabbitmq-server,oe_test_rabbitmqctl_access,2022-12-29-06:32:59.log,,0,0,0,0,0,0,0,0,0,0
+rabbitmq-server,oe_test_rabbitmqctl_parameter,2022-12-29-06:52:38.log,,0,0,0,0,0,0,0,0,0,0
+rabbitmq-server,oe_test_rabbitmqctl_app,2022-12-29-06:38:35.log,,0,0,0,0,0,0,0,0,0,0
+rabbitmq-server,oe_test_rabbitmqctl_status,2022-12-29-07:08:05.log,,0,0,0,0,0,0,0,0,0,0
+ruby,oe_test_irb_01,2022-12-29-08:11:18.log,,0,0,0,0,0,0,0,0,0,0
+rust,oe_test_cargo_02,2022-12-29-08:55:32.log,,0,0,0,0,0,0,0,0,0,0
+sos,oe_test_sosreport_04,2022-12-29-10:14:34.log,,0,0,0,0,0,0,0,0,0,0
+targetcli,oe_test_targetcli_02,2022-12-29-10:32:50.log,,0,0,0,0,0,0,0,0,0,0
+targetcli,oe_test_targetcli_01,2022-12-29-10:30:41.log,,0,0,0,0,0,0,0,0,0,0
+webbench,oe_test_webbench,2022-12-29-11:10:24.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_awk,2022-12-29-11:49:39.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_server_httpd_restart,2022-12-29-12:56:46.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_server_squid_blacklist,2022-12-29-12:03:22.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_who,2022-12-29-11:49:05.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_power_powertop2tuned_optimize,2022-12-29-13:14:13.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_nmcli_set_team,2022-12-29-15:03:59.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_server_openssh_secure,2022-12-29-12:08:22.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_server_httpd_checkfirewall,2022-12-29-13:08:38.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_server_squid_ip,2022-12-29-12:00:24.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_server_httpd_tls,2022-12-29-12:52:06.log,,0,0,0,0,0,0,0,0,0,0
+os-basic,oe_test_system_monitor_share_total,2022-12-29-15:02:45.log,,0,0,0,0,0,0,0,0,0,0
+freeradius,oe_test_freeradius_freeradius-utils_radclient2,2023-01-06-11:37:51.log,,0,0,0,0,0,0,0,0,0,0
+gradle,oe_test_gradle_04,2023-01-06-12:35:11.log,,0,0,0,0,0,0,0,0,0,0
+ladspa,oe_test_ladspa_analyseplugin,2023-01-06-13:58:36.log,,0,0,0,0,0,0,0,0,0,0
+ladspa,oe_test_ladspa_applyplugin,2023-01-06-13:59:48.log,,0,0,0,0,0,0,0,0,0,0
+java-1.8.0-openjdk,oe_test_openjdk_appletviewer_clhsdb,2023-01-06-12:38:48.log,,0,0,0,0,0,0,0,0,0,0
+libreswan,oe_test_libreswan_ipsec_whack_1,2023-01-06-14:36:24.log,,0,0,0,0,0,0,0,0,0,0
+libreswan,oe_test_libreswan_ipsec_01,2023-01-06-14:22:45.log,,0,0,0,0,0,0,0,0,0,0
+libreswan,oe_test_libreswan_ipsec_whack_2,2023-01-06-14:38:12.log,,0,0,0,0,0,0,0,0,0,0
+libreswan,oe_test_libreswan_ipsec_whack_3,2023-01-06-14:40:00.log,,0,0,0,0,0,0,0,0,0,0
+libreswan,oe_test_libreswan_ipsec_03,2023-01-06-14:26:26.log,,0,0,0,0,0,0,0,0,0,0
+libreswan,oe_test_libreswan_ipsec_whack_4,2023-01-06-14:41:39.log,,0,0,0,0,0,0,0,0,0,0
+ansible,oe_test_ansible_02,2023-01-05-20_42_30.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+cmake,oe_test_ccmake,2023-01-06-00_30_01.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+cmake,oe_test_ccmake3,2023-01-06-00_32_26.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+openvpn,oe_test_openvpn,2022-12-29-02:18:17.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+opensp,oe_test_opensp_osgmlnorm,2022-12-29-02:20:11.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+qperf,oe_test_qperf_01,2022-12-29-05:46:13.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+podman,oe_test_podman_DK_07,2022-12-29-05:39:12.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+podman,oe_test_podman_07,2022-12-29-04:44:32.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+redis,oe_test_redis_02,2022-12-29-07:04:26.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+redis5,oe_test_redis5_02,2022-12-29-07:11:24.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+redis6,oe_test_redis6_02,2022-12-29-07:11:11.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+rabbitmq-server,oe_test_rabbitmq-plugins_list,2022-12-29-07:21:07.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+rpmdevtools,oe_test_rpmdevtools_rpmargs,2022-12-29-07:32:33.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+rsyslog,oe_test_rsyslog_abnormal_template,2022-12-29-07:49:27.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+rsyslog,oe_test_rsyslog_function_httpd,2022-12-29-07:53:55.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+sos,oe_test_sosreport_02,2022-12-29-09:44:54.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+wireshark,oe_test_tshark_03,2022-12-29-14:50:49.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+freeradius,oe_test_freeradius_freeradius-utils_radeapclient,2023-01-06-11:47:23.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+libreswan,oe_test_libreswan_ipsec_setup,2023-01-06-14:33:10.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+libreswan,oe_test_libreswan_ipsec_systemctl,2023-01-06-14:34:48.log,"timeout
+",0,0,0,0,0,0,0,0,1,0
+open-iscsi,oe_test_open-iscsi_iscsistart_iscsiuio,2022-12-29-01:49:28.log,"Broken testcase
+file missing
+timeout
+",1,0,0,0,1,0,0,0,1,0
+open-iscsi,oe_test_open-iscsi_iscsiadm,2022-12-29-01:47:52.log,"Broken testcase
+file missing
+timeout
+",1,0,0,0,1,0,0,0,1,0
+openmpi,oe_test_openmpi_cluster,2022-12-29-02:02:39.log,"Broken testcase
+timeout
+",1,0,0,0,0,0,0,0,1,0
+rpmdevtools,oe_test_rpmdevtools_rpmdev-wipetree,2022-12-29-07:38:29.log,"Broken testcase
+timeout
+",1,0,0,0,0,0,0,0,1,0
+nfs-utils,oe_test_service_nfs-blkmap,2022-12-29-01:14:30.log,"file missing
+systemd unit restart failure
+systemd unit runtime error
+systemd unit enable failure
+invalid argument
+",0,0,0,0,1,1,1,1,0,1
+krb5,oe_test_service_kadmin,2023-01-06-13:39:51.log,"file missing
+systemd unit restart failure
+systemd unit runtime error
+systemd unit enable failure
+invalid argument
+",0,0,0,0,1,1,1,1,0,1
+pps-tools,oe_test_pps-tools,2022-12-29-05:14:37.log,"file missing
+invalid argument
+",0,0,0,0,1,0,0,0,0,1
+nbdkit,oe_test_nbdkit_02,2022-12-29-01:05:02.log,"invalid argument
+",0,0,0,0,0,0,0,0,0,1
+procinfo,oe_test_procinfo_02,2022-12-29-05:25:28.log,"invalid argument
+",0,0,0,0,0,0,0,0,0,1
+os-basic,oe_test_disk_schedule_specific,2022-12-29-13:39:07.log,"invalid argument
+",0,0,0,0,0,0,0,0,0,1
+lvm2,oe_test_service_lvmlockd,2022-12-29-17:57:10.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+lvm2,oe_test_service_lvmlocks,2022-12-29-17:58:09.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+systemd,oe_test_service_systemd-journal-remote,2022-12-30-11:51:45.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+systemd,oe_test_service_systemd-journal-upload,2022-12-30-11:52:46.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+corosync,oe_test_service_spausedd,2023-01-06-01_52_42.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+nagios,oe_test_service_nagios,2022-12-29-01:00:09.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+openvswitch,oe_test_service_ovn-northd,2022-12-29-02:34:42.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+openvswitch,oe_test_service_openvswitch-ipsec,2022-12-29-02:36:20.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+openvswitch,oe_test_service_ovn-controller-vtep,2022-12-29-02:35:30.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+openvswitch,oe_test_service_ovn-controller,2022-12-29-02:34:14.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+pcp,oe_test_service_pmmgr,2022-12-29-05:16:30.log,"pkg not found
+file missing
+systemd unit restart failure
+systemd unit runtime error
+",0,1,0,0,1,1,1,0,0,0
+systemd,oe_test_socket_systemd-journal-remote,2022-12-30-12:18:27.log,"pkg not found
+file missing
+",0,1,0,0,1,0,0,0,0,0
+easymock,oe_test_easymock_spring,2023-01-06-03_24_30.log,"pkg not found
+",0,1,0,0,0,0,0,0,0,0
 hostname,oe_test_service_nis-domainname,2022-12-29-17:40:31.log,"preinstall absent
 systemd unit restart failure
 systemd unit runtime error
@@ -836,10 +987,6 @@ kexec-tools,oe_test_service_kdump,2023-01-06-13:26:54.log,"preinstall absent
 systemd unit restart failure
 systemd unit runtime error
 ",0,0,1,0,0,1,1,0,0,0
-systemd,oe_test_service_systemd-fsck-root,2022-12-30-11:44:50.log,"systemd unit runtime error
-",0,0,0,0,0,0,1,0,0,0
-clevis,oe_test_service_clevis-luks-askpass,2023-01-05-23_51_50.log,"systemd unit runtime error
-",0,0,0,0,0,0,1,0,0,0
 systemd,oe_test_service_systemd-network-generator,2022-12-30-11:58:18.log,"preinstall absent
 systemd unit runtime error
 systemd unit enable failure
@@ -851,151 +998,6 @@ systemd unit enable failure
 systemd,oe_test_service_initrd-switch-root,2022-12-30-11:33:23.log,"preinstall absent
 systemd unit runtime error
 ",0,0,1,0,0,0,1,0,0,0
-crontabs,oe_test_crontabs,2022-12-29-17:28:54.log,,0,0,0,0,0,0,0,0,0,0
-osc,oe_test_osc_04,2022-12-29-18:45:12.log,,0,0,0,0,0,0,0,0,0,0
-systemd,oe_test_target_initrd-switch-root,2022-12-30-12:30:18.log,,0,0,0,0,0,0,0,0,0,0
-ansible,oe_test_ansible_01,2023-01-05-20_18_20.log,,0,0,0,0,0,0,0,0,0,0
-ansible,oe_test_ansible_03,2023-01-05-20_48_48.log,,0,0,0,0,0,0,0,0,0,0
-ansible,oe_test_ansible_04,2023-01-05-20_55_53.log,,0,0,0,0,0,0,0,0,0,0
-auter,oe_test_auter,2023-01-05-21_18_28.log,,0,0,0,0,0,0,0,0,0,0
-dejagnu,oe_test_dejagnu_runtest_02,2023-01-06-02_23_10.log,,0,0,0,0,0,0,0,0,0,0
-mpg123,oe_test_mpg123,2022-12-29-00:47:50.log,,0,0,0,0,0,0,0,0,0,0
-nftables,oe_test_iptables_to_nftables,2022-12-29-01:16:57.log,,0,0,0,0,0,0,0,0,0,0
-nss_wrapper,oe_test_nss_wrapper,2022-12-29-01:35:30.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_lowntfs-3g_02,2022-12-29-02:10:08.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfsls,2022-12-29-01:49:05.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfsundelete_02,2022-12-29-02:01:48.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfssecaudit,2022-12-29-01:58:01.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfsundelete_01,2022-12-29-02:00:29.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_lowntfs-3g_03,2022-12-29-02:11:59.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfs-3g_02,2022-12-29-02:04:44.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfscp,2022-12-29-01:38:43.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfsmove,2022-12-29-01:56:34.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfscluster,2022-12-29-01:55:22.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_lowntfs-3g_01,2022-12-29-02:08:37.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfs-3g_03,2022-12-29-02:06:51.log,,0,0,0,0,0,0,0,0,0,0
-ntfs-3g,oe_test_ntfs-3g_ntfs-3g_01,2022-12-29-02:03:04.log,,0,0,0,0,0,0,0,0,0,0
-pcp-system-tools,oe_test_pcp-iostat,2022-12-29-04:42:38.log,,0,0,0,0,0,0,0,0,0,0
-pcp-system-tools,oe_test_pcp-mpstat_pcp-numastat,2022-12-29-04:48:58.log,,0,0,0,0,0,0,0,0,0,0
-pcp-system-tools,oe_test_pcp-pidstat_02_pcp-ipcs,2022-12-29-04:36:50.log,,0,0,0,0,0,0,0,0,0,0
-pcp,oe_test_pmlogger_daily_01,2022-12-29-04:21:00.log,,0,0,0,0,0,0,0,0,0,0
-pcp,oe_test_pmhostname_pmlock_pmlogger_check,2022-12-29-04:17:02.log,,0,0,0,0,0,0,0,0,0,0
-procinfo,oe_test_procinfo_01,2022-12-29-05:24:09.log,,0,0,0,0,0,0,0,0,0,0
-psacct,oe_test_psacct,2022-12-29-05:31:14.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_18,2022-12-29-05:25:51.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_28,2022-12-29-05:33:32.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_18,2022-12-29-06:17:35.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_19,2022-12-29-06:18:16.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_02,2022-12-29-05:35:07.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_27,2022-12-29-05:32:56.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_11,2022-12-29-06:11:49.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_10,2022-12-29-05:19:37.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_20,2022-12-29-06:19:11.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_26,2022-12-29-06:23:49.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_14,2022-12-29-06:14:14.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_13,2022-12-29-06:13:26.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_02,2022-12-29-04:32:46.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_25,2022-12-29-06:23:02.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_11,2022-12-29-05:20:24.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_14,2022-12-29-05:22:47.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_22,2022-12-29-05:28:50.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_10,2022-12-29-06:11:00.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_12,2022-12-29-05:21:09.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_13,2022-12-29-05:21:59.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_17,2022-12-29-06:16:44.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_23,2022-12-29-06:21:21.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_19,2022-12-29-05:26:38.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_28,2022-12-29-06:25:15.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_23,2022-12-29-05:29:44.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_20,2022-12-29-05:27:23.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_12,2022-12-29-06:12:36.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_22,2022-12-29-06:20:33.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_24,2022-12-29-05:30:27.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_17,2022-12-29-05:25:11.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_27,2022-12-29-06:24:33.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_25,2022-12-29-05:31:20.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_26,2022-12-29-05:32:07.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_21,2022-12-29-05:27:55.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_24,2022-12-29-06:22:05.log,,0,0,0,0,0,0,0,0,0,0
-podman,oe_test_podman_DK_21,2022-12-29-06:19:44.log,,0,0,0,0,0,0,0,0,0,0
-qt5-qttools,oe_test_qt5-qttools_qdoc_02,2023-01-05-13:14:24.log,,0,0,0,0,0,0,0,0,0,0
-qt5-qttools,oe_test_qt5-qttools_qdoc_03,2023-01-05-13:17:52.log,,0,0,0,0,0,0,0,0,0,0
-qt5-qttools,oe_test_qt5-qttools_qdbus-qt5,2023-01-05-13:08:21.log,,0,0,0,0,0,0,0,0,0,0
-rabbitmq-server,oe_test_rabbitmq-plugins,2022-12-29-07:29:18.log,,0,0,0,0,0,0,0,0,0,0
-rabbitmq-server,oe_test_rabbitmqctl_user,2022-12-29-07:15:06.log,,0,0,0,0,0,0,0,0,0,0
-rabbitmq-server,oe_test_rabbitmqctl_policy,2022-12-29-07:01:32.log,,0,0,0,0,0,0,0,0,0,0
-rabbitmq-server,oe_test_rabbitmqctl_access,2022-12-29-06:32:59.log,,0,0,0,0,0,0,0,0,0,0
-rabbitmq-server,oe_test_rabbitmqctl_parameter,2022-12-29-06:52:38.log,,0,0,0,0,0,0,0,0,0,0
-rabbitmq-server,oe_test_rabbitmqctl_app,2022-12-29-06:38:35.log,,0,0,0,0,0,0,0,0,0,0
-rabbitmq-server,oe_test_rabbitmqctl_status,2022-12-29-07:08:05.log,,0,0,0,0,0,0,0,0,0,0
-ruby,oe_test_irb_01,2022-12-29-08:11:18.log,,0,0,0,0,0,0,0,0,0,0
-rust,oe_test_cargo_02,2022-12-29-08:55:32.log,,0,0,0,0,0,0,0,0,0,0
-sos,oe_test_sosreport_04,2022-12-29-10:14:34.log,,0,0,0,0,0,0,0,0,0,0
-targetcli,oe_test_targetcli_02,2022-12-29-10:32:50.log,,0,0,0,0,0,0,0,0,0,0
-targetcli,oe_test_targetcli_01,2022-12-29-10:30:41.log,,0,0,0,0,0,0,0,0,0,0
-webbench,oe_test_webbench,2022-12-29-11:10:24.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_awk,2022-12-29-11:49:39.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_server_httpd_restart,2022-12-29-12:56:46.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_server_squid_blacklist,2022-12-29-12:03:22.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_who,2022-12-29-11:49:05.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_power_powertop2tuned_optimize,2022-12-29-13:14:13.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_nmcli_set_team,2022-12-29-15:03:59.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_server_openssh_secure,2022-12-29-12:08:22.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_server_httpd_checkfirewall,2022-12-29-13:08:38.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_server_squid_ip,2022-12-29-12:00:24.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_server_httpd_tls,2022-12-29-12:52:06.log,,0,0,0,0,0,0,0,0,0,0
-os-basic,oe_test_system_monitor_share_total,2022-12-29-15:02:45.log,,0,0,0,0,0,0,0,0,0,0
-freeradius,oe_test_freeradius_freeradius-utils_radclient2,2023-01-06-11:37:51.log,,0,0,0,0,0,0,0,0,0,0
-gradle,oe_test_gradle_04,2023-01-06-12:35:11.log,,0,0,0,0,0,0,0,0,0,0
-ladspa,oe_test_ladspa_analyseplugin,2023-01-06-13:58:36.log,,0,0,0,0,0,0,0,0,0,0
-ladspa,oe_test_ladspa_applyplugin,2023-01-06-13:59:48.log,,0,0,0,0,0,0,0,0,0,0
-java-1.8.0-openjdk,oe_test_openjdk_appletviewer_clhsdb,2023-01-06-12:38:48.log,,0,0,0,0,0,0,0,0,0,0
-libreswan,oe_test_libreswan_ipsec_whack_1,2023-01-06-14:36:24.log,,0,0,0,0,0,0,0,0,0,0
-libreswan,oe_test_libreswan_ipsec_01,2023-01-06-14:22:45.log,,0,0,0,0,0,0,0,0,0,0
-libreswan,oe_test_libreswan_ipsec_whack_2,2023-01-06-14:38:12.log,,0,0,0,0,0,0,0,0,0,0
-libreswan,oe_test_libreswan_ipsec_whack_3,2023-01-06-14:40:00.log,,0,0,0,0,0,0,0,0,0,0
-libreswan,oe_test_libreswan_ipsec_03,2023-01-06-14:26:26.log,,0,0,0,0,0,0,0,0,0,0
-libreswan,oe_test_libreswan_ipsec_whack_4,2023-01-06-14:41:39.log,,0,0,0,0,0,0,0,0,0,0
-ansible,oe_test_ansible_02,2023-01-05-20_42_30.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-cmake,oe_test_ccmake,2023-01-06-00_30_01.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-cmake,oe_test_ccmake3,2023-01-06-00_32_26.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-openvpn,oe_test_openvpn,2022-12-29-02:18:17.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-opensp,oe_test_opensp_osgmlnorm,2022-12-29-02:20:11.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-qperf,oe_test_qperf_01,2022-12-29-05:46:13.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-podman,oe_test_podman_DK_07,2022-12-29-05:39:12.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-podman,oe_test_podman_07,2022-12-29-04:44:32.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-redis,oe_test_redis_02,2022-12-29-07:04:26.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-redis5,oe_test_redis5_02,2022-12-29-07:11:24.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-redis6,oe_test_redis6_02,2022-12-29-07:11:11.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-rabbitmq-server,oe_test_rabbitmq-plugins_list,2022-12-29-07:21:07.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-rpmdevtools,oe_test_rpmdevtools_rpmargs,2022-12-29-07:32:33.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-rsyslog,oe_test_rsyslog_abnormal_template,2022-12-29-07:49:27.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-rsyslog,oe_test_rsyslog_function_httpd,2022-12-29-07:53:55.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-sos,oe_test_sosreport_02,2022-12-29-09:44:54.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-wireshark,oe_test_tshark_03,2022-12-29-14:50:49.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-freeradius,oe_test_freeradius_freeradius-utils_radeapclient,2023-01-06-11:47:23.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-libreswan,oe_test_libreswan_ipsec_setup,2023-01-06-14:33:10.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
-libreswan,oe_test_libreswan_ipsec_systemctl,2023-01-06-14:34:48.log,"timeout
-",0,0,0,0,0,0,0,0,1,0
 openssh,oe_test_openssh_port,2022-12-30-11:25:19.log,"preinstall absent
 timeout
 ",0,0,1,0,0,0,0,0,1,0
@@ -1105,22 +1107,20 @@ os-basic,oe_test_disk_schedule_udev,2022-12-29-13:39:24.log,"preinstall absent
 ",0,0,1,0,0,0,0,0,0,0
 iprutils,oe_test_target_iprutils,2023-01-06-12:26:03.log,"preinstall absent
 ",0,0,1,0,0,0,0,0,0,0
-easymock,oe_test_easymock_spring,2023-01-06-03_24_30.log,"pkg not found
-",0,1,0,0,0,0,0,0,0,0
+nvmetcli,oe_test_service_nvmet,2022-12-29-01:42:23.log,"kernel module absent
+file missing
+systemd unit restart failure
+systemd unit runtime error
+systemd unit enable failure
+",0,0,0,1,1,1,1,1,0,0
+ipmitool,oe_test_service_ipmievd,2023-01-06-12:25:44.log,"kernel module absent
+file missing
+systemd unit restart failure
+systemd unit runtime error
+systemd unit enable failure
+",0,0,0,1,1,1,1,1,0,0
 os-basic,oe_test_kernel_module_operation,2022-12-29-14:58:06.log,"kernel module absent
 ",0,0,0,1,0,0,0,0,0,0
-nbdkit,oe_test_nbdkit_02,2022-12-29-01:05:02.log,"invalid argument
-",0,0,0,0,0,0,0,0,0,1
-procinfo,oe_test_procinfo_02,2022-12-29-05:25:28.log,"invalid argument
-",0,0,0,0,0,0,0,0,0,1
-os-basic,oe_test_disk_schedule_specific,2022-12-29-13:39:07.log,"invalid argument
-",0,0,0,0,0,0,0,0,0,1
-openmpi,oe_test_openmpi_cluster,2022-12-29-02:02:39.log,"Broken testcase
-timeout
-",1,0,0,0,0,0,0,0,1,0
-rpmdevtools,oe_test_rpmdevtools_rpmdev-wipetree,2022-12-29-07:38:29.log,"Broken testcase
-timeout
-",1,0,0,0,0,0,0,0,1,0
 lm_sensors,oe_test_service_fancontrol,2022-12-29-00:07:19.log,"Broken testcase
 kernel module absent
 ",1,0,0,1,0,0,0,0,0,0
