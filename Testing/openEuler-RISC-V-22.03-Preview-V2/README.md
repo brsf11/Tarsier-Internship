@@ -42,8 +42,8 @@
 ### 测试结果文件结构  
 - [logs文件夹](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/openEuler-RISC-V-22.03-Preview-V2/logs)：所有测试用例的日志文件  
 - [logs_failed文件夹](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/openEuler-RISC-V-22.03-Preview-V2/logs_failed)：所有未通过测试用例的日志文件  
-- [result.csv](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/openEuler-RISC-V-22.03-Preview-V2/result.csv):测试结果的详细数据统计  
-- [failureCause.csv](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/openEuler-RISC-V-22.03-Preview-V2/failureCause.csv)：测试未通过原因的初步分析和归类  
+- [result.csv](https://github.com/brsf11/Tarsier-Internship/blob/main/Testing/openEuler-RISC-V-22.03-Preview-V2/result.csv):测试结果的详细数据统计  
+- [failureCause.csv](https://github.com/brsf11/Tarsier-Internship/blob/main/Testing/openEuler-RISC-V-22.03-Preview-V2/failureCause.csv)：测试未通过原因的初步分析和归类  
 ### 测试日志说明  
 - 测试日志中包含测试运行时执行的命令和命令的打印信息，以+（一个或多个）开头的行为执行的命令，不以+开头的行为命令的打印信息  
 - 例如假设fio/oe_test_fio_002日志67~87行  
@@ -82,7 +82,7 @@
 ### 测试结果说明  
 - 相对此前的oE自动化测试，本次测试扩展了测试范围，测试了范围内测试套中所有测试用例（不包括描述文件中指定需要多机/网卡资源的用例），导致未通过用例比例比此前几次测试大。  
 ### 测试未通过原因分析和归类说明  
-- 初步的测试未通过原因分析和归类结果在[failureCause.csv](https://github.com/brsf11/Tarsier-Internship/tree/main/Testing/openEuler-RISC-V-22.03-Preview-V2/failureCause.csv)文件中  
+- 由于未通过测试较多，我们对测试结果进行了初步的分类和归因，具体结果在[failureCause.csv](https://github.com/brsf11/Tarsier-Internship/blob/main/Testing/openEuler-RISC-V-22.03-Preview-V2/failureCause.csv)文件中  
 - 测试未通过原因分析和归类由自动化程序完成，基本的原理为对log文件进行字符串匹配  
 - 本次测试中，测试未通过原因或者用例未通过原因有以下类型：  
     - 测试用例不能（完全）执行: broken testcase  
