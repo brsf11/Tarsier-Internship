@@ -1,0 +1,16 @@
+{
+    "workingDir":"/run/media/brsf11/94cde5b3-bfec-4945-87a7-fefed219c6d6/VirtualMachines/RISCVoE2303_20230331", 
+    "bios":"fw_payload_oe_uboot_2304.bin",
+    "drive":"mugen_ready.qcow2",
+    "user":"root",
+    "password":"openEuler12#$",
+    "threads":3,
+    "cores":4,
+    "memory":4,
+    "mugenNative":1,
+    "detailed":1,
+    "addDisk":1,
+    "mugenDir":"/root/mugen/",
+    "listFile":"lists/list_test",
+    "generate":1
+}
