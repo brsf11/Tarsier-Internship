@@ -1,0 +1,86 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_shadow_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_shadow_test_001
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start shadow preparation.'
++ message='Start shadow preparation.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start shadow preparation.'
+Sat Apr 29 03:32:12 2023 - INFO  - Start shadow preparation.
++ sed -i 's/build_path=.*$/build_path=$(dirname $(readlink -f \"$PWD\"))\/..\//g' ./tmp_test/tests/common/config.sh
+sed: can't read ./tmp_test/tests/common/config.sh: No such file or directory
++ pushd ./tmp_test/tests
+oe_test_shadow_test_001.sh: line 26: pushd: ./tmp_test/tests: No such file or directory
+++ find ./ -name '*.exp'
++ allExp=
+++ find ./su/02 -name '*.exp'
+find: ‘./su/02’: No such file or directory
++ allExp=
++ popd
+oe_test_shadow_test_001.sh: line 37: popd: directory stack empty
++ LOG_INFO 'End of shadow preparation!'
++ message='End of shadow preparation!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End of shadow preparation!'
+Sat Apr 29 03:32:13 2023 - INFO  - End of shadow preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run shadow test.'
++ message='Start to run shadow test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run shadow test.'
+Sat Apr 29 03:32:13 2023 - INFO  - Start to run shadow test.
++ pushd ./tmp_test/tests
+oe_test_shadow_test_001.sh: line 46: pushd: ./tmp_test/tests: No such file or directory
++ chmod +x run_embedded
++ ./run_embedded
+./run_embedded: line 8: common/config.sh: No such file or directory
+oe_test_shadow_test_001.sh: line 43: testsuite.log: No such file or directory
++ popd
+oe_test_shadow_test_001.sh: line 55: popd: directory stack empty
++ LOG_INFO 'End to run shadow test.'
++ message='End to run shadow test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run shadow test.'
+Sat Apr 29 03:32:14 2023 - INFO  - End to run shadow test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Sat Apr 29 03:32:15 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_shadow_test_001.sh post_test'
++ message='oe_test_shadow_test_001.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_shadow_test_001.sh post_test'
+Sat Apr 29 03:32:16 2023 - INFO  - oe_test_shadow_test_001.sh post_test

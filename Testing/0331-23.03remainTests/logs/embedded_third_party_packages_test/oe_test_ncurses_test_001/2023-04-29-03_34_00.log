@@ -1,0 +1,219 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_ncurses_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_ncurses_test_001
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n '' ']'
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 03:34:03 2023 - INFO  - Start to run test.
++ pushd ./tmp_test/test
+oe_test_ncurses_test_001.sh: line 25: pushd: ./tmp_test/test: No such file or directory
++ chmod 777 ./Makefile ./oe_test_ncurses_test_001.sh
++ runList=("demo_termcap" "demo_terminfo" "keynames" "railroad" "test_arrays" "test_tparm")
++ for onetest in ${runList[@]}
++ echo 'Run test demo_termcap'
+Run test demo_termcap
++ ./demo_termcap
+oe_test_ncurses_test_001.sh: line 32: ./demo_termcap: No such file or directory
++ CHECK_RESULT 127 0 0 'run ncurses testcase demo_termcap fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run ncurses testcase demo_termcap fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run ncurses testcase demo_termcap fail'
++ LOG_ERROR 'run ncurses testcase demo_termcap fail'
++ message='run ncurses testcase demo_termcap fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run ncurses testcase demo_termcap fail'
+Sat Apr 29 03:34:04 2023 - ERROR - run ncurses testcase demo_termcap fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ncurses_test_001.sh line 33'
++ message='oe_test_ncurses_test_001.sh line 33'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_ncurses_test_001.sh line 33'
+Sat Apr 29 03:34:05 2023 - ERROR - oe_test_ncurses_test_001.sh line 33
++ '[' 0 -eq 1 ']'
++ return 0
++ for onetest in ${runList[@]}
++ echo 'Run test demo_terminfo'
+Run test demo_terminfo
++ ./demo_terminfo
+oe_test_ncurses_test_001.sh: line 32: ./demo_terminfo: No such file or directory
++ CHECK_RESULT 127 0 0 'run ncurses testcase demo_terminfo fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run ncurses testcase demo_terminfo fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run ncurses testcase demo_terminfo fail'
++ LOG_ERROR 'run ncurses testcase demo_terminfo fail'
++ message='run ncurses testcase demo_terminfo fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run ncurses testcase demo_terminfo fail'
+Sat Apr 29 03:34:06 2023 - ERROR - run ncurses testcase demo_terminfo fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ncurses_test_001.sh line 33'
++ message='oe_test_ncurses_test_001.sh line 33'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_ncurses_test_001.sh line 33'
+Sat Apr 29 03:34:07 2023 - ERROR - oe_test_ncurses_test_001.sh line 33
++ '[' 0 -eq 1 ']'
++ return 0
++ for onetest in ${runList[@]}
++ echo 'Run test keynames'
+Run test keynames
++ ./keynames
+oe_test_ncurses_test_001.sh: line 32: ./keynames: No such file or directory
++ CHECK_RESULT 127 0 0 'run ncurses testcase keynames fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run ncurses testcase keynames fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run ncurses testcase keynames fail'
++ LOG_ERROR 'run ncurses testcase keynames fail'
++ message='run ncurses testcase keynames fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run ncurses testcase keynames fail'
+Sat Apr 29 03:34:08 2023 - ERROR - run ncurses testcase keynames fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ncurses_test_001.sh line 33'
++ message='oe_test_ncurses_test_001.sh line 33'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_ncurses_test_001.sh line 33'
+Sat Apr 29 03:34:08 2023 - ERROR - oe_test_ncurses_test_001.sh line 33
++ '[' 0 -eq 1 ']'
++ return 0
++ for onetest in ${runList[@]}
++ echo 'Run test railroad'
+Run test railroad
++ ./railroad
+oe_test_ncurses_test_001.sh: line 32: ./railroad: No such file or directory
++ CHECK_RESULT 127 0 0 'run ncurses testcase railroad fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run ncurses testcase railroad fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run ncurses testcase railroad fail'
++ LOG_ERROR 'run ncurses testcase railroad fail'
++ message='run ncurses testcase railroad fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run ncurses testcase railroad fail'
+Sat Apr 29 03:34:09 2023 - ERROR - run ncurses testcase railroad fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ncurses_test_001.sh line 33'
++ message='oe_test_ncurses_test_001.sh line 33'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_ncurses_test_001.sh line 33'
+Sat Apr 29 03:34:10 2023 - ERROR - oe_test_ncurses_test_001.sh line 33
++ '[' 0 -eq 1 ']'
++ return 0
++ for onetest in ${runList[@]}
++ echo 'Run test test_arrays'
+Run test test_arrays
++ ./test_arrays
+oe_test_ncurses_test_001.sh: line 32: ./test_arrays: No such file or directory
++ CHECK_RESULT 127 0 0 'run ncurses testcase test_arrays fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run ncurses testcase test_arrays fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run ncurses testcase test_arrays fail'
++ LOG_ERROR 'run ncurses testcase test_arrays fail'
++ message='run ncurses testcase test_arrays fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run ncurses testcase test_arrays fail'
+Sat Apr 29 03:34:11 2023 - ERROR - run ncurses testcase test_arrays fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ncurses_test_001.sh line 33'
++ message='oe_test_ncurses_test_001.sh line 33'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_ncurses_test_001.sh line 33'
+Sat Apr 29 03:34:12 2023 - ERROR - oe_test_ncurses_test_001.sh line 33
++ '[' 0 -eq 1 ']'
++ return 0
++ for onetest in ${runList[@]}
++ echo 'Run test test_tparm'
+Run test test_tparm
++ ./test_tparm
+oe_test_ncurses_test_001.sh: line 32: ./test_tparm: No such file or directory
++ CHECK_RESULT 127 0 0 'run ncurses testcase test_tparm fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run ncurses testcase test_tparm fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run ncurses testcase test_tparm fail'
++ LOG_ERROR 'run ncurses testcase test_tparm fail'
++ message='run ncurses testcase test_tparm fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run ncurses testcase test_tparm fail'
+Sat Apr 29 03:34:13 2023 - ERROR - run ncurses testcase test_tparm fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_ncurses_test_001.sh line 33'
++ message='oe_test_ncurses_test_001.sh line 33'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_ncurses_test_001.sh line 33'
+Sat Apr 29 03:34:13 2023 - ERROR - oe_test_ncurses_test_001.sh line 33
++ '[' 0 -eq 1 ']'
++ return 0
++ popd
+oe_test_ncurses_test_001.sh: line 36: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Apr 29 03:34:14 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 6
++ test 6 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Apr 29 03:34:15 2023 - ERROR - failed to execute the case.
++ exit 6
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_ncurses_test_001.sh post_test'
++ message='oe_test_ncurses_test_001.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_ncurses_test_001.sh post_test'
+Sat Apr 29 03:34:16 2023 - INFO  - oe_test_ncurses_test_001.sh post_test

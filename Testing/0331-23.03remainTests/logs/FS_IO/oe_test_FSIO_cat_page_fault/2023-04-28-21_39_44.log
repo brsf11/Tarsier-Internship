@@ -1,0 +1,80 @@
++ source /root/mugen/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the database config.'
++ message='Start to prepare the database config.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the database config.'
+Fri Apr 28 21:39:48 2023 - INFO  - Start to prepare the database config.
+++ ps -ef
+++ grep systemd
+++ awk '{print $2}'
+++ head -n 1
++ pid=221
++ LOG_INFO 'End to prepare the database config.'
++ message='End to prepare the database config.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the database config.'
+Fri Apr 28 21:39:49 2023 - INFO  - End to prepare the database config.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Apr 28 21:39:50 2023 - INFO  - Start to run test.
++ cat /proc/221/stat
+221 (systemd-journal) S 1 221 221 0 -1 4194560 2380 0 105 0 96 190 0 0 20 0 1 0 505 32292864 3732 18446744073709551615 48038397013442560 48038397013582856 72057592984882192 0 0 0 18946 4096 64 1 0 0 17 7 0 0 0 0 0 48038397013587008 48038397013592504 48038397013594112 72057592984882747 72057592984882781 72057592984882781 72057592984883158 0
++ CHECK_RESULT 0 0 0 'Check page for 221 failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Check page for 221 failed.'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ ps -o majflt,minflt -C bash
+MAJFLT MINFLT
+     0   1122
+     0    677
++ CHECK_RESULT 0 0 0 'Verify page for bash failed.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='Verify page for bash failed.'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Apr 28 21:39:51 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Fri Apr 28 21:39:51 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_FSIO_cat_page_fault.sh post_test'
++ message='oe_test_FSIO_cat_page_fault.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_FSIO_cat_page_fault.sh post_test'
+Fri Apr 28 21:39:52 2023 - INFO  - oe_test_FSIO_cat_page_fault.sh post_test

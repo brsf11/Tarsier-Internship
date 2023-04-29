@@ -1,0 +1,173 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_logrotate_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_logrotate_test_001
+++ date '+%Y-%m-%d %H:%M:%S'
++ CUR_DATE='2023-04-29 02:59:44'
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Apr 29 02:59:47 2023 - INFO  - Start to prepare the test environment.
++ pushd ./tmp_test/
+oe_test_logrotate_test_001.sh: line 27: pushd: ./tmp_test/: No such file or directory
+++ stat -c %Y test/test-driver
+stat: cannot statx 'test/test-driver': No such file or directory
++ timestap=
+++ date '+%Y-%m-%d %H:%M:%S' -d @
+date: invalid date ‘@’
++ formart_date=
++ date -s ''
+Sat Apr 29 12:00:00 AM CST 2023
++ popd
+oe_test_logrotate_test_001.sh: line 32: popd: directory stack empty
++ export LOGROTATE=/usr/sbin/logrotate
++ LOGROTATE=/usr/sbin/logrotate
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Apr 29 02:59:48 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 02:59:48 2023 - INFO  - Start to run test.
++ declare -A ignoreFail
++ getCasesFromFile ignoreFail ignore.txt
++ declare -n array=ignoreFail
++ filename=ignore.txt
++ read line
++ [[ # logrotate ignore casename[#reason] =~ ^#.* ]]
++ continue
++ read line
++ [[ test-0054.sh            # date: invalid date '60 day ago' =~ ^#.* ]]
++ [[ -z test-0054.sh            # date: invalid date '60 day ago' ]]
++ [[ test-0054.sh            # date: invalid date '60 day ago' =~ # ]]
++ casename='test-0054.sh            '
+++ echo test-0054.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test-0054.sh
++ array[$casename]=1
++ read line
++ [[ test-0055.sh            # date: invalid date '60 hour ago' =~ ^#.* ]]
++ [[ -z test-0055.sh            # date: invalid date '60 hour ago' ]]
++ [[ test-0055.sh            # date: invalid date '60 hour ago' =~ # ]]
++ casename='test-0055.sh            '
+++ echo test-0055.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test-0055.sh
++ array[$casename]=1
++ read line
++ [[ test-0056.sh            # date: invalid date '60 day ago' =~ ^#.* ]]
++ [[ -z test-0056.sh            # date: invalid date '60 day ago' ]]
++ [[ test-0056.sh            # date: invalid date '60 day ago' =~ # ]]
++ casename='test-0056.sh            '
+++ echo test-0056.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test-0056.sh
++ array[$casename]=1
++ read line
++ [[ #test-0058.sh           # error: error opening /root/tmp_test/test/test-0058/test.log.tmp: No such file or directory =~ ^#.* ]]
++ continue
++ read line
++ [[ test-0066.sh            # date: invalid date '1 day ago' =~ ^#.* ]]
++ [[ -z test-0066.sh            # date: invalid date '1 day ago' ]]
++ [[ test-0066.sh            # date: invalid date '1 day ago' =~ # ]]
++ casename='test-0066.sh            '
+++ echo test-0066.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test-0066.sh
++ array[$casename]=1
++ read line
++ [[ test-0071.sh            # touch: invalid option -- 't' =~ ^#.* ]]
++ [[ -z test-0071.sh            # touch: invalid option -- 't' ]]
++ [[ test-0071.sh            # touch: invalid option -- 't' =~ # ]]
++ casename='test-0071.sh            '
+++ echo test-0071.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test-0071.sh
++ array[$casename]=1
++ read line
++ [[ test-0085.sh            # touch: invalid option -- 't' =~ ^#.* ]]
++ [[ -z test-0085.sh            # touch: invalid option -- 't' ]]
++ [[ test-0085.sh            # touch: invalid option -- 't' =~ # ]]
++ casename='test-0085.sh            '
+++ echo test-0085.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test-0085.sh
++ array[$casename]=1
++ read line
++ [[ test-0086.sh            # touch: invalid option -- 't' =~ ^#.* ]]
++ [[ -z test-0086.sh            # touch: invalid option -- 't' ]]
++ [[ test-0086.sh            # touch: invalid option -- 't' =~ # ]]
++ casename='test-0086.sh            '
+++ echo test-0086.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test-0086.sh
++ array[$casename]=1
++ read line
++ [[ -n '' ]]
++ pushd ./tmp_test/test
+oe_test_logrotate_test_001.sh: line 46: pushd: ./tmp_test/test: No such file or directory
++ chmod 777 ./ignore.txt ./Makefile ./oe_test_logrotate_test_001.sh
+++ find ./ -name 'test-0*.sh'
+++ sort
++ runList=
++ failTitles=("XPASS" "ERROR" "FAIL")
++ popd
+oe_test_logrotate_test_001.sh: line 67: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Apr 29 02:59:50 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Sat Apr 29 02:59:51 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sat Apr 29 02:59:52 2023 - INFO  - Start to restore the test environment.
++ date -s '2023-04-29 02:59:44'
+Sat Apr 29 02:59:44 AM CST 2023
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sat Apr 29 02:59:52 2023 - INFO  - End to restore the test environment.

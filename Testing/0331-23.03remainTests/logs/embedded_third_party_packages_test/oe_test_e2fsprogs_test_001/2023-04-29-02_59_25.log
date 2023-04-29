@@ -1,0 +1,289 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_e2fsprogs_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_e2fsprogs_test_001
+++ date '+%Y-%m-%d %H:%M:%S'
++ CUR_DATE='2023-04-29 02:59:26'
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Apr 29 02:59:29 2023 - INFO  - Start to prepare the test environment.
++ pushd ./tmp_test/
+oe_test_e2fsprogs_test_001.sh: line 26: pushd: ./tmp_test/: No such file or directory
+++ stat -c %Y tests/test_config
+stat: cannot statx 'tests/test_config': No such file or directory
++ timestap=
+++ date '+%Y-%m-%d %H:%M:%S' -d @
+date: invalid date ‘@’
++ formart_date=
++ date -s ''
+Sat Apr 29 12:00:00 AM CST 2023
++ mkdir -p e2fsck
+++ which e2fsck
++ fsck=/usr/sbin/e2fsck
++ ln -s /usr/sbin/e2fsck e2fsck
++ popd
+oe_test_e2fsprogs_test_001.sh: line 36: popd: directory stack empty
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Apr 29 02:59:30 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 02:59:31 2023 - INFO  - Start to run test.
++ declare -A ignoreFail
++ getCasesFromFile ignoreFail ignore.txt
++ declare -n array=ignoreFail
++ filename=ignore.txt
++ read line
++ [[ # e2fsprogs ignore casename[#reason] =~ ^#.* ]]
++ continue
++ read line
++ [[ d_xattr_sorting                 # perl: command not found =~ ^#.* ]]
++ [[ -z d_xattr_sorting                 # perl: command not found ]]
++ [[ d_xattr_sorting                 # perl: command not found =~ # ]]
++ casename='d_xattr_sorting                 '
+++ echo d_xattr_sorting
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=d_xattr_sorting
++ array[$casename]=1
++ read line
++ [[ f_boundscheck                   # bzip2: command not found =~ ^#.* ]]
++ [[ -z f_boundscheck                   # bzip2: command not found ]]
++ [[ f_boundscheck                   # bzip2: command not found =~ # ]]
++ casename='f_boundscheck                   '
+++ echo f_boundscheck
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=f_boundscheck
++ array[$casename]=1
++ read line
++ [[ f_create_symlinks               # perl: command not found =~ ^#.* ]]
++ [[ -z f_create_symlinks               # perl: command not found ]]
++ [[ f_create_symlinks               # perl: command not found =~ # ]]
++ casename='f_create_symlinks               '
+++ echo f_create_symlinks
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=f_create_symlinks
++ array[$casename]=1
++ read line
++ [[ f_del_dup_quota                 # bzip2: command not found =~ ^#.* ]]
++ [[ -z f_del_dup_quota                 # bzip2: command not found ]]
++ [[ f_del_dup_quota                 # bzip2: command not found =~ # ]]
++ casename='f_del_dup_quota                 '
+++ echo f_del_dup_quota
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=f_del_dup_quota
++ array[$casename]=1
++ read line
++ [[ f_detect_junk                   # bzip2: command not found =~ ^#.* ]]
++ [[ -z f_detect_junk                   # bzip2: command not found ]]
++ [[ f_detect_junk                   # bzip2: command not found =~ # ]]
++ casename='f_detect_junk                   '
+++ echo f_detect_junk
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=f_detect_junk
++ array[$casename]=1
++ read line
++ [[ f_detect_xfs                    # bzip2: command not found =~ ^#.* ]]
++ [[ -z f_detect_xfs                    # bzip2: command not found ]]
++ [[ f_detect_xfs                    # bzip2: command not found =~ # ]]
++ casename='f_detect_xfs                    '
+++ echo f_detect_xfs
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=f_detect_xfs
++ array[$casename]=1
++ read line
++ [[ f_orphquot                      # bzip2: command not found =~ ^#.* ]]
++ [[ -z f_orphquot                      # bzip2: command not found ]]
++ [[ f_orphquot                      # bzip2: command not found =~ # ]]
++ casename='f_orphquot                      '
+++ echo f_orphquot
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=f_orphquot
++ array[$casename]=1
++ read line
++ [[ f_super_bad_csum                # bzip2: command not found =~ ^#.* ]]
++ [[ -z f_super_bad_csum                # bzip2: command not found ]]
++ [[ f_super_bad_csum                # bzip2: command not found =~ # ]]
++ casename='f_super_bad_csum                '
+++ echo f_super_bad_csum
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=f_super_bad_csum
++ array[$casename]=1
++ read line
++ [[ i_bitmaps                       # bzip2: command not found =~ ^#.* ]]
++ [[ -z i_bitmaps                       # bzip2: command not found ]]
++ [[ i_bitmaps                       # bzip2: command not found =~ # ]]
++ casename='i_bitmaps                       '
+++ echo i_bitmaps
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=i_bitmaps
++ array[$casename]=1
++ read line
++ [[ j_corrupt_ext_jnl_sb_block      # bzip2: command not found =~ ^#.* ]]
++ [[ -z j_corrupt_ext_jnl_sb_block      # bzip2: command not found ]]
++ [[ j_corrupt_ext_jnl_sb_block      # bzip2: command not found =~ # ]]
++ casename='j_corrupt_ext_jnl_sb_block      '
+++ echo j_corrupt_ext_jnl_sb_block
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=j_corrupt_ext_jnl_sb_block
++ array[$casename]=1
++ read line
++ [[ j_corrupt_ext_jnl_sb_csum       # bzip2: command not found =~ ^#.* ]]
++ [[ -z j_corrupt_ext_jnl_sb_csum       # bzip2: command not found ]]
++ [[ j_corrupt_ext_jnl_sb_csum       # bzip2: command not found =~ # ]]
++ casename='j_corrupt_ext_jnl_sb_csum       '
+++ echo j_corrupt_ext_jnl_sb_csum
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=j_corrupt_ext_jnl_sb_csum
++ array[$casename]=1
++ read line
++ [[ j_recover_csum2_32bit           # bzip2: command not found =~ ^#.* ]]
++ [[ -z j_recover_csum2_32bit           # bzip2: command not found ]]
++ [[ j_recover_csum2_32bit           # bzip2: command not found =~ # ]]
++ casename='j_recover_csum2_32bit           '
+++ echo j_recover_csum2_32bit
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=j_recover_csum2_32bit
++ array[$casename]=1
++ read line
++ [[ j_recover_csum2_64bit           # bzip2: command not found =~ ^#.* ]]
++ [[ -z j_recover_csum2_64bit           # bzip2: command not found ]]
++ [[ j_recover_csum2_64bit           # bzip2: command not found =~ # ]]
++ casename='j_recover_csum2_64bit           '
+++ echo j_recover_csum2_64bit
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=j_recover_csum2_64bit
++ array[$casename]=1
++ read line
++ [[ j_recover_csum3_64bit           # bzip2: command not found =~ ^#.* ]]
++ [[ -z j_recover_csum3_64bit           # bzip2: command not found ]]
++ [[ j_recover_csum3_64bit           # bzip2: command not found =~ # ]]
++ casename='j_recover_csum3_64bit           '
+++ echo j_recover_csum3_64bit
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=j_recover_csum3_64bit
++ array[$casename]=1
++ read line
++ [[ -n '' ]]
++ pushd ./tmp_test/tests
+oe_test_e2fsprogs_test_001.sh: line 48: pushd: ./tmp_test/tests: No such file or directory
++ chmod 777 ./test_config
++ source ./test_config
+++ unset LANG LANGUAGE LC_ADDRESS LC_ALL LC_COLLATE LC_CTYPE LC_IDENTIFICATION LC_MEASUREMENT LC_MESSAGES LC_MONETARY LC_NAME LC_NUMERIC LC_PAPER LC_TELEPHONE LC_TIME PAGER
+++ FSCK=' ../e2fsck/e2fsck'
+++ MKE2FS=' mke2fs'
+++ DUMPE2FS=' dumpe2fs'
+++ TUNE2FS=' tune2fs'
+++ CHATTR=' chattr'
+++ LSATTR=' lsattr'
+++ E2IMAGE=' e2image'
+++ E2IMAGE_EXE=e2image
+++ DEBUGFS=' debugfs'
+++ DEBUGFS_EXE=/sbin/debugfs
+++ TEST_BITS=test_data.tmp
+++ RESIZE2FS_EXE=/sbin/resize2fs
+++ RESIZE2FS=' /sbin/resize2fs'
+++ E2UNDO_EXE=e2undo
+++ E2UNDO=' e2undo'
+++ E2MMPSTATUS=' dumpe2fs -m'
+++ TEST_REL=../tests/progs/test_rel
+++ TEST_ICOUNT=../tests/progs/test_icount
+++ CRCSUM=../tests/progs/crcsum
+++ CLEAN_OUTPUT='sed -f /filter.sed'
+++ TZ=GMT0
+++ export TZ
+++ LC_ALL=C
+++ export LC_ALL
+++ E2FSCK_CONFIG=/dev/null
+++ export E2FSCK_CONFIG
+++ MKE2FS_CONFIG=./mke2fs.conf
+++ export MKE2FS_CONFIG
+++ BLKID_FILE=/dev/null
+++ export BLKID_FILE
+++ unset MKE2FS_FIRST_META_BG
+++ E2FSPROGS_SKIP_PROGRESS=yes
+++ export E2FSPROGS_SKIP_PROGRESS
+++ EXT2FS_NO_MTAB_OK=yes
+++ export EXT2FS_NO_MTAB_OK
+++ RESIZE2FS_FORCE_LAZY_ITABLE_INIT=yes
+++ export RESIZE2FS_FORCE_LAZY_ITABLE_INIT
+++ E2FSPROGS_LIBMAGIC_SUPPRESS=yes
+++ export E2FSPROGS_LIBMAGIC_SUPPRESS
++ SKIP_SLOW_TESTS=yes
++ ./test_script
++ read line
++ [[ oe_test_e2fsprogs_test_001.sh: line 54: ./test_script: No such file or directory =~ : ]]
++ resultTitle=oe_test_e2fsprogs_test_001.sh
++ resultTail=' No such file or directory'
+++ echo oe_test_e2fsprogs_test_001.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ testcase=oe_test_e2fsprogs_test_001.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo No such file or directory
++ resultTail='No such file or directory'
++ [[ '' -eq 1 ]]
++ [[ No such file or directory == \f\a\i\l\e\d ]]
++ read line
++ [[ -n '' ]]
++ popd
+oe_test_e2fsprogs_test_001.sh: line 70: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Apr 28 18:59:33 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Fri Apr 28 18:59:34 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Apr 28 18:59:35 2023 - INFO  - Start to restore the test environment.
++ rm -rf '/var/volatile/tmp/*e2fsprogs*'
++ date -s '2023-04-29 02:59:26'
+Sat Apr 29 02:59:26 GMT 2023
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Apr 28 18:59:36 2023 - INFO  - End to restore the test environment.

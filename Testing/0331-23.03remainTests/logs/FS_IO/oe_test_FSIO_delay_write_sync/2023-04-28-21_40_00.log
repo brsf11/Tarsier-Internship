@@ -1,0 +1,111 @@
++ source /root/mugen/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n '' ']'
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Apr 28 21:40:03 2023 - INFO  - Start to run test.
++ dd if=/dev/zero of=test_sync_file1 bs=51200000 count=1
+1+0 records in
+1+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 1.92099 s, 26.7 MB/s
+++ awk '{print $2}'
+++ grep Dirty /proc/meminfo
++ dirty1=50260
++ sync
+++ grep Dirty /proc/meminfo
+++ awk '{print $2}'
++ dirty2=76
++ [[ 50260 -gt 76 ]]
++ CHECK_RESULT 0 0 0 'The page data doesn'\''t sync by sync.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='The page data doesn'\''t sync by sync.'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ dd if=/dev/zero of=test_sync_file2 bs=51200000 count=1
+1+0 records in
+1+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 2.03876 s, 25.1 MB/s
+++ grep Dirty /proc/meminfo
+++ awk '{print $2}'
++ dirty1=50004
++ sync -d test_sync_file2
+++ grep Dirty /proc/meminfo
+++ awk '{print $2}'
++ dirty2=32
++ [[ 50004 -gt 32 ]]
++ CHECK_RESULT 0 0 0 'The page data doesn'\''t sync by fdatasync.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='The page data doesn'\''t sync by fdatasync.'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ dd if=/dev/zero of=test_sync_file3 bs=51200000 count=1
+1+0 records in
+1+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 1.93348 s, 26.5 MB/s
+++ grep Dirty /proc/meminfo
+++ awk '{print $2}'
++ dirty1=49960
++ sync test_sync_file3
+++ grep Dirty /proc/meminfo
+++ awk '{print $2}'
++ dirty2=32
++ [[ 49960 -gt 32 ]]
++ CHECK_RESULT 0 0 0 'The page data doesn'\''t sync by fsync.'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='The page data doesn'\''t sync by fsync.'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Apr 28 21:40:12 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Fri Apr 28 21:40:13 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Apr 28 21:40:13 2023 - INFO  - Start to restore the test environment.
++ rm -f test_sync_file1 test_sync_file2 test_sync_file3
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Apr 28 21:40:14 2023 - INFO  - End to restore the test environment.

@@ -1,0 +1,102 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_nfs-utils_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_nfs-utils_test_001
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start shadow preparation.'
++ message='Start shadow preparation.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start shadow preparation.'
+Sat Apr 29 03:00:03 2023 - INFO  - Start shadow preparation.
++ rpcbind
+oe_test_nfs-utils_test_001.sh: line 25: rpcbind: command not found
++ LOG_INFO 'End of shadow preparation!'
++ message='End of shadow preparation!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End of shadow preparation!'
+Sat Apr 29 03:00:04 2023 - INFO  - End of shadow preparation!
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 03:00:05 2023 - INFO  - Start to run test.
++ pushd ./tmp_test/tests
+oe_test_nfs-utils_test_001.sh: line 34: pushd: ./tmp_test/tests: No such file or directory
++ sh ./t0001-statd-basic-mon-unmon.sh
+sh: ./t0001-statd-basic-mon-unmon.sh: No such file or directory
++ CHECK_RESULT 127 0 0 'run nfs-util testcase t0001-statd-basic-mon-unmon fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run nfs-util testcase t0001-statd-basic-mon-unmon fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run nfs-util testcase t0001-statd-basic-mon-unmon fail'
++ LOG_ERROR 'run nfs-util testcase t0001-statd-basic-mon-unmon fail'
++ message='run nfs-util testcase t0001-statd-basic-mon-unmon fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run nfs-util testcase t0001-statd-basic-mon-unmon fail'
+Sat Apr 29 03:00:06 2023 - ERROR - run nfs-util testcase t0001-statd-basic-mon-unmon fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_nfs-utils_test_001.sh line 37'
++ message='oe_test_nfs-utils_test_001.sh line 37'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_nfs-utils_test_001.sh line 37'
+Sat Apr 29 03:00:07 2023 - ERROR - oe_test_nfs-utils_test_001.sh line 37
++ '[' 0 -eq 1 ']'
++ return 0
++ popd
+oe_test_nfs-utils_test_001.sh: line 39: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Apr 29 03:00:07 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 1
++ test 1 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Apr 29 03:00:08 2023 - ERROR - failed to execute the case.
++ exit 1
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sat Apr 29 03:00:09 2023 - INFO  - Start to restore the test environment.
+++ pgrep -f rpcbind
++ kill -9
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sat Apr 29 03:00:10 2023 - INFO  - End to restore the test environment.

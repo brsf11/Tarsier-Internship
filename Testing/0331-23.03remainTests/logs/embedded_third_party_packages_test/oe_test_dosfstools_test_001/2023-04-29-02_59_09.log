@@ -1,0 +1,96 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_dosfstools_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_dosfstools_test_001
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Apr 29 02:59:13 2023 - INFO  - Start to prepare the test environment.
++ export XXD_FOUND=yes
++ XXD_FOUND=yes
++++ dirname oe_test_dosfstools_test_001.sh
+++ cd .
+++ pwd
++ nowPwd=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_dosfstools_test_001
++ export srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_dosfstools_test_001/tmp_test/tests
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_dosfstools_test_001/tmp_test/tests
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Apr 29 02:59:14 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 02:59:14 2023 - INFO  - Start to run test.
++ pushd ./tmp_test/tests
+oe_test_dosfstools_test_001.sh: line 37: pushd: ./tmp_test/tests: No such file or directory
++ chmod 777 './test-*'
+chmod: cannot access './test-*': No such file or directory
+++ find ./ -name '*.mkfs'
++ runList=
++ needFail=("./check-huge.fsck")
+++ find ./ -name '*.fsck'
++ runList=
+++ find ./ -name '*.label'
++ runList=
++ popd
+oe_test_dosfstools_test_001.sh: line 65: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Apr 29 02:59:15 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Sat Apr 29 02:59:16 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Sat Apr 29 02:59:17 2023 - INFO  - Start to restore the test environment.
++ export XXD_FOUND=
++ XXD_FOUND=
++ export srcdir=
++ srcdir=
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Sat Apr 29 02:59:18 2023 - INFO  - End to restore the test environment.

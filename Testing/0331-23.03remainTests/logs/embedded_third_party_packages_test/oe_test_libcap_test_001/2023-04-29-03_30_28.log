@@ -1,0 +1,309 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_libcap_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_libcap_test_001
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n '' ']'
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run libcap test.'
++ message='Start to run libcap test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run libcap test.'
+Sat Apr 29 03:30:32 2023 - INFO  - Start to run libcap test.
++ pushd ./tmp_test
+oe_test_libcap_test_001.sh: line 26: pushd: ./tmp_test: No such file or directory
++ chmod +x cap_test
+chmod: cannot access 'cap_test': No such file or directory
++ ./cap_test
+oe_test_libcap_test_001.sh: line 29: ./cap_test: No such file or directory
++ CHECK_RESULT 127 0 0 'run cap_test failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run cap_test failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run cap_test failed!'
++ LOG_ERROR 'run cap_test failed!'
++ message='run cap_test failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run cap_test failed!'
+Sat Apr 29 03:30:33 2023 - ERROR - run cap_test failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libcap_test_001.sh line 30'
++ message='oe_test_libcap_test_001.sh line 30'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libcap_test_001.sh line 30'
+Sat Apr 29 03:30:34 2023 - ERROR - oe_test_libcap_test_001.sh line 30
++ '[' 0 -eq 1 ']'
++ return 0
++ CAPLIBNAME=($(find / -name "*libcap.so*"))
+++ find / -name '*libcap.so*'
+find: ‘/proc/9269’: No such file or directory
++ PSXLIBNAME=($(find / -name "*libpsx.so*"))
+++ find / -name '*libpsx.so*'
+find: ‘/proc/9378’: No such file or directory
++ /usr/lib64/libcap.so.2
+/usr/lib64/libcap.so.2 is the shared library version: libcap-2.66.
+See the License file for distribution information.
+More information on this library is available from:
+
+    https://sites.google.com/site/fullycapable/
++ CHECK_RESULT 0 0 0 'run /usr/lib64/libcap.so.2 failed!'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='run /usr/lib64/libcap.so.2 failed!'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ /usr/lib64/libcap.so.2 --usage
+/usr/lib64/libcap.so.2 is the shared library version: libcap-2.66.
+See the License file for distribution information.
+More information on this library is available from:
+
+    https://sites.google.com/site/fullycapable/
+
+usage: libcap.so [--help|--usage|--summary]
++ CHECK_RESULT 0 0 0 'run /usr/lib64/libcap.so.2 --usage failed!'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='run /usr/lib64/libcap.so.2 --usage failed!'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ /usr/lib64/libcap.so.2 --help
+/usr/lib64/libcap.so.2 is the shared library version: libcap-2.66.
+See the License file for distribution information.
+More information on this library is available from:
+
+    https://sites.google.com/site/fullycapable/
+
+usage: libcap.so [--help|--usage|--summary]
++ CHECK_RESULT 0 0 0 'run /usr/lib64/libcap.so.2 --help failed!'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='run /usr/lib64/libcap.so.2 --help failed!'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ /usr/lib64/libcap.so.2 --summary
+/usr/lib64/libcap.so.2 is the shared library version: libcap-2.66.
+See the License file for distribution information.
+More information on this library is available from:
+
+    https://sites.google.com/site/fullycapable/
+
+Current mode: HYBRID
+Number of cap values known to: this libcap=41, running kernel=41
+
++ CHECK_RESULT 0 0 0 'run /usr/lib64/libcap.so.2 --summary failed!'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='run /usr/lib64/libcap.so.2 --summary failed!'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ /usr/lib64/libpsx.so.2.66
+/usr/lib64/libpsx.so.2.66 is the shared library version: libpsx-2.66.
+See the License file for distribution information.
+More information on this library is available from:
+
+    https://sites.google.com/site/fullycapable/
++ CHECK_RESULT 0 0 0 'run /usr/lib64/libpsx.so.2.66 failed!'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='run /usr/lib64/libpsx.so.2.66 failed!'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ chmod +x test_pam_cap
+chmod: cannot access 'test_pam_cap': No such file or directory
++ ./test_pam_cap
+oe_test_libcap_test_001.sh: line 52: ./test_pam_cap: No such file or directory
++ CHECK_RESULT 127 0 0 'run test_pam_cap failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run test_pam_cap failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run test_pam_cap failed!'
++ LOG_ERROR 'run test_pam_cap failed!'
++ message='run test_pam_cap failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run test_pam_cap failed!'
+Sat Apr 29 03:31:31 2023 - ERROR - run test_pam_cap failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libcap_test_001.sh line 53'
++ message='oe_test_libcap_test_001.sh line 53'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libcap_test_001.sh line 53'
+Sat Apr 29 03:31:32 2023 - ERROR - oe_test_libcap_test_001.sh line 53
++ '[' 0 -eq 1 ']'
++ return 0
++ PAMCAPNAME=($(find / -name "pam_cap.so"))
+++ find / -name pam_cap.so
+find: ‘/proc/9488’: No such file or directory
++ /usr/lib64/security/pam_cap.so
+/usr/lib64/security/pam_cap.so (version libcap-2.66) is a PAM module to specify
+inheritable (IAB) capabilities via the libpam authentication
+abstraction. See the libcap License file for licensing information.
+
+Release notes and feature documentation for libcap and pam_cap.so
+can be found at:
+
+    https://sites.google.com/site/fullycapable/
++ CHECK_RESULT 0 0 0 'run /usr/lib64/security/pam_cap.so failed!'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='run /usr/lib64/security/pam_cap.so failed!'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ /usr/lib64/security/pam_cap.so --help
+/usr/lib64/security/pam_cap.so (version libcap-2.66) is a PAM module to specify
+inheritable (IAB) capabilities via the libpam authentication
+abstraction. See the libcap License file for licensing information.
+
+Release notes and feature documentation for libcap and pam_cap.so
+can be found at:
+
+    https://sites.google.com/site/fullycapable/
+
+/usr/lib64/security/pam_cap.so supports the following module arguments:
+
+debug         - verbose logging (ignored for now)
+config=<file> - override the default config with file
+keepcaps      - workaround for apps that setuid without this
+autoauth      - pam_cap.so to always succeed for the 'auth' phase
+default=<iab> - fallback IAB value if there is no '*' rule
+defer         - apply IAB value at pam_exit (not via setcred)
++ CHECK_RESULT 0 0 0 'run /usr/lib64/security/pam_cap.so --help failed!'
++ actual_result=0
++ expect_result=0
++ mode=0
++ error_log='run /usr/lib64/security/pam_cap.so --help failed!'
++ exit_mode=0
++ '[' -z 0 ']'
++ '[' 0 -eq 0 ']'
++ test 0x '!=' 0x
++ return 0
++ popd
+oe_test_libcap_test_001.sh: line 62: popd: directory stack empty
++ pushd ./tmp_test/tests
+oe_test_libcap_test_001.sh: line 64: pushd: ./tmp_test/tests: No such file or directory
++ chmod +x psx_test
+chmod: cannot access 'psx_test': No such file or directory
++ ./psx_test
+oe_test_libcap_test_001.sh: line 67: ./psx_test: No such file or directory
++ CHECK_RESULT 127 0 0 'run psx_test failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run psx_test failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run psx_test failed!'
++ LOG_ERROR 'run psx_test failed!'
++ message='run psx_test failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run psx_test failed!'
+Sat Apr 29 03:31:55 2023 - ERROR - run psx_test failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libcap_test_001.sh line 68'
++ message='oe_test_libcap_test_001.sh line 68'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libcap_test_001.sh line 68'
+Sat Apr 29 03:31:56 2023 - ERROR - oe_test_libcap_test_001.sh line 68
++ '[' 0 -eq 1 ']'
++ return 0
++ chmod +x libcap_psx_test
+chmod: cannot access 'libcap_psx_test': No such file or directory
++ ./libcap_psx_test
+oe_test_libcap_test_001.sh: line 71: ./libcap_psx_test: No such file or directory
++ CHECK_RESULT 127 0 0 'run libcap_psx_test failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run libcap_psx_test failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run libcap_psx_test failed!'
++ LOG_ERROR 'run libcap_psx_test failed!'
++ message='run libcap_psx_test failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run libcap_psx_test failed!'
+Sat Apr 29 03:31:57 2023 - ERROR - run libcap_psx_test failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libcap_test_001.sh line 72'
++ message='oe_test_libcap_test_001.sh line 72'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libcap_test_001.sh line 72'
+Sat Apr 29 03:31:58 2023 - ERROR - oe_test_libcap_test_001.sh line 72
++ '[' 0 -eq 1 ']'
++ return 0
++ popd
+oe_test_libcap_test_001.sh: line 74: popd: directory stack empty
++ LOG_INFO 'End to run libcap test.'
++ message='End to run libcap test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run libcap test.'
+Sat Apr 29 03:31:58 2023 - INFO  - End to run libcap test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 4
++ test 4 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Apr 29 03:31:59 2023 - ERROR - failed to execute the case.
++ exit 4
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_libcap_test_001.sh post_test'
++ message='oe_test_libcap_test_001.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_libcap_test_001.sh post_test'
+Sat Apr 29 03:32:00 2023 - INFO  - oe_test_libcap_test_001.sh post_test

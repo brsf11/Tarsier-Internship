@@ -1,0 +1,93 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_procps_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_procps_test_001
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Apr 29 03:33:47 2023 - INFO  - Start to prepare the test environment.
++ pushd ./tmp_test/ps
+oe_test_procps_test_001.sh: line 24: pushd: ./tmp_test/ps: No such file or directory
++ rm -f pscommand
++ cp .libs/pscommand pscommand
+cp: cannot stat '.libs/pscommand': No such file or directory
++ chmod +x pscommand
+chmod: cannot access 'pscommand': No such file or directory
++ popd
+oe_test_procps_test_001.sh: line 29: popd: directory stack empty
++ pushd ./tmp_test/testsuite
+oe_test_procps_test_001.sh: line 31: pushd: ./tmp_test/testsuite: No such file or directory
+++ pwd
++ cur=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_procps_test_001
++ sed -i 's\set objdir .*$\set objdir /root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_procps_test_001\g' site.exp
+sed: can't read site.exp: No such file or directory
++ sed -i 's/min(\[ exec \/usr\/bin\/getconf ARG_MAX \], 104857)/104857/g' config/unix.exp
+sed: can't read config/unix.exp: No such file or directory
++ popd
+oe_test_procps_test_001.sh: line 38: popd: directory stack empty
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Apr 29 03:33:48 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 03:33:49 2023 - INFO  - Start to run test.
++ pushd ./tmp_test/testsuite
+oe_test_procps_test_001.sh: line 46: pushd: ./tmp_test/testsuite: No such file or directory
+++ ls '*.test' -d
+ls: cannot access '*.test': No such file or directory
++ suites=
++ popd
+oe_test_procps_test_001.sh: line 59: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Apr 29 03:33:50 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Sat Apr 29 03:33:51 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_procps_test_001.sh post_test'
++ message='oe_test_procps_test_001.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_procps_test_001.sh post_test'
+Sat Apr 29 03:33:52 2023 - INFO  - oe_test_procps_test_001.sh post_test

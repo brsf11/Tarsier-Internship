@@ -1,0 +1,350 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_libpcap_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_libpcap_test_001
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ grep expect
++ rpm -qa
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n '' ']'
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run libpcap test.'
++ message='Start to run libpcap test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run libpcap test.'
+Sat Apr 29 03:34:28 2023 - INFO  - Start to run libpcap test.
++ pushd ./tmp_test/testprogs
+oe_test_libpcap_test_001.sh: line 25: pushd: ./tmp_test/testprogs: No such file or directory
++ PROGS_0=(reactivatetest can_set_rfmon_test findalldevstest-perf findalldevstest)
++ for prog in ${PROGS_0[@]}
++ ./reactivatetest --help
+oe_test_libpcap_test_001.sh: line 29: ./reactivatetest: No such file or directory
++ CHECK_RESULT 127 0 0 'run reactivatetest --help failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run reactivatetest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run reactivatetest --help failed!'
++ LOG_ERROR 'run reactivatetest --help failed!'
++ message='run reactivatetest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run reactivatetest --help failed!'
+Sat Apr 29 03:34:29 2023 - ERROR - run reactivatetest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 30'
++ message='oe_test_libpcap_test_001.sh line 30'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 30'
+Sat Apr 29 03:34:29 2023 - ERROR - oe_test_libpcap_test_001.sh line 30
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_0[@]}
++ ./can_set_rfmon_test --help
+oe_test_libpcap_test_001.sh: line 29: ./can_set_rfmon_test: No such file or directory
++ CHECK_RESULT 127 0 0 'run can_set_rfmon_test --help failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run can_set_rfmon_test --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run can_set_rfmon_test --help failed!'
++ LOG_ERROR 'run can_set_rfmon_test --help failed!'
++ message='run can_set_rfmon_test --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run can_set_rfmon_test --help failed!'
+Sat Apr 29 03:34:30 2023 - ERROR - run can_set_rfmon_test --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 30'
++ message='oe_test_libpcap_test_001.sh line 30'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 30'
+Sat Apr 29 03:34:31 2023 - ERROR - oe_test_libpcap_test_001.sh line 30
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_0[@]}
++ ./findalldevstest-perf --help
+oe_test_libpcap_test_001.sh: line 29: ./findalldevstest-perf: No such file or directory
++ CHECK_RESULT 127 0 0 'run findalldevstest-perf --help failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run findalldevstest-perf --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run findalldevstest-perf --help failed!'
++ LOG_ERROR 'run findalldevstest-perf --help failed!'
++ message='run findalldevstest-perf --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run findalldevstest-perf --help failed!'
+Sat Apr 29 03:34:32 2023 - ERROR - run findalldevstest-perf --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 30'
++ message='oe_test_libpcap_test_001.sh line 30'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 30'
+Sat Apr 29 03:34:33 2023 - ERROR - oe_test_libpcap_test_001.sh line 30
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_0[@]}
++ ./findalldevstest --help
+oe_test_libpcap_test_001.sh: line 29: ./findalldevstest: No such file or directory
++ CHECK_RESULT 127 0 0 'run findalldevstest --help failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run findalldevstest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run findalldevstest --help failed!'
++ LOG_ERROR 'run findalldevstest --help failed!'
++ message='run findalldevstest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run findalldevstest --help failed!'
+Sat Apr 29 03:34:34 2023 - ERROR - run findalldevstest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 30'
++ message='oe_test_libpcap_test_001.sh line 30'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 30'
+Sat Apr 29 03:34:35 2023 - ERROR - oe_test_libpcap_test_001.sh line 30
++ '[' 0 -eq 1 ']'
++ return 0
++ PROGS_1=(selpolltest writecaptest opentest filtertest valgrindtest threadsignaltest capturetest)
++ for prog in ${PROGS_1[@]}
++ ./selpolltest --help
+oe_test_libpcap_test_001.sh: line 35: ./selpolltest: No such file or directory
++ CHECK_RESULT 127 1 0 'run selpolltest --help failed!'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='run selpolltest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'run selpolltest --help failed!'
++ LOG_ERROR 'run selpolltest --help failed!'
++ message='run selpolltest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run selpolltest --help failed!'
+Sat Apr 29 03:34:35 2023 - ERROR - run selpolltest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 36'
++ message='oe_test_libpcap_test_001.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 36'
+Sat Apr 29 03:34:36 2023 - ERROR - oe_test_libpcap_test_001.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_1[@]}
++ ./writecaptest --help
+oe_test_libpcap_test_001.sh: line 35: ./writecaptest: No such file or directory
++ CHECK_RESULT 127 1 0 'run writecaptest --help failed!'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='run writecaptest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'run writecaptest --help failed!'
++ LOG_ERROR 'run writecaptest --help failed!'
++ message='run writecaptest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run writecaptest --help failed!'
+Sat Apr 29 03:34:37 2023 - ERROR - run writecaptest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 36'
++ message='oe_test_libpcap_test_001.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 36'
+Sat Apr 29 03:34:38 2023 - ERROR - oe_test_libpcap_test_001.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_1[@]}
++ ./opentest --help
+oe_test_libpcap_test_001.sh: line 35: ./opentest: No such file or directory
++ CHECK_RESULT 127 1 0 'run opentest --help failed!'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='run opentest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'run opentest --help failed!'
++ LOG_ERROR 'run opentest --help failed!'
++ message='run opentest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run opentest --help failed!'
+Sat Apr 29 03:34:39 2023 - ERROR - run opentest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 36'
++ message='oe_test_libpcap_test_001.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 36'
+Sat Apr 29 03:34:39 2023 - ERROR - oe_test_libpcap_test_001.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_1[@]}
++ ./filtertest --help
+oe_test_libpcap_test_001.sh: line 35: ./filtertest: No such file or directory
++ CHECK_RESULT 127 1 0 'run filtertest --help failed!'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='run filtertest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'run filtertest --help failed!'
++ LOG_ERROR 'run filtertest --help failed!'
++ message='run filtertest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run filtertest --help failed!'
+Sat Apr 29 03:34:40 2023 - ERROR - run filtertest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 36'
++ message='oe_test_libpcap_test_001.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 36'
+Sat Apr 29 03:34:41 2023 - ERROR - oe_test_libpcap_test_001.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_1[@]}
++ ./valgrindtest --help
+oe_test_libpcap_test_001.sh: line 35: ./valgrindtest: No such file or directory
++ CHECK_RESULT 127 1 0 'run valgrindtest --help failed!'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='run valgrindtest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'run valgrindtest --help failed!'
++ LOG_ERROR 'run valgrindtest --help failed!'
++ message='run valgrindtest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run valgrindtest --help failed!'
+Sat Apr 29 03:34:42 2023 - ERROR - run valgrindtest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 36'
++ message='oe_test_libpcap_test_001.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 36'
+Sat Apr 29 03:34:43 2023 - ERROR - oe_test_libpcap_test_001.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_1[@]}
++ ./threadsignaltest --help
+oe_test_libpcap_test_001.sh: line 35: ./threadsignaltest: No such file or directory
++ CHECK_RESULT 127 1 0 'run threadsignaltest --help failed!'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='run threadsignaltest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'run threadsignaltest --help failed!'
++ LOG_ERROR 'run threadsignaltest --help failed!'
++ message='run threadsignaltest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run threadsignaltest --help failed!'
+Sat Apr 29 03:34:44 2023 - ERROR - run threadsignaltest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 36'
++ message='oe_test_libpcap_test_001.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 36'
+Sat Apr 29 03:34:45 2023 - ERROR - oe_test_libpcap_test_001.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ for prog in ${PROGS_1[@]}
++ ./capturetest --help
+oe_test_libpcap_test_001.sh: line 35: ./capturetest: No such file or directory
++ CHECK_RESULT 127 1 0 'run capturetest --help failed!'
++ actual_result=127
++ expect_result=1
++ mode=0
++ error_log='run capturetest --help failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 1x
++ test -n 'run capturetest --help failed!'
++ LOG_ERROR 'run capturetest --help failed!'
++ message='run capturetest --help failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run capturetest --help failed!'
+Sat Apr 29 03:34:45 2023 - ERROR - run capturetest --help failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 36'
++ message='oe_test_libpcap_test_001.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 36'
+Sat Apr 29 03:34:46 2023 - ERROR - oe_test_libpcap_test_001.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ ./opentest
+oe_test_libpcap_test_001.sh: line 39: ./opentest: No such file or directory
++ CHECK_RESULT 127 0 0 'run opentest failed!'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run opentest failed!'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run opentest failed!'
++ LOG_ERROR 'run opentest failed!'
++ message='run opentest failed!'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run opentest failed!'
+Sat Apr 29 03:34:47 2023 - ERROR - run opentest failed!
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_libpcap_test_001.sh line 40'
++ message='oe_test_libpcap_test_001.sh line 40'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_libpcap_test_001.sh line 40'
+Sat Apr 29 03:34:48 2023 - ERROR - oe_test_libpcap_test_001.sh line 40
++ '[' 0 -eq 1 ']'
++ return 0
++ popd
+oe_test_libpcap_test_001.sh: line 42: popd: directory stack empty
++ LOG_INFO 'End to run libcap test.'
++ message='End to run libcap test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run libcap test.'
+Sat Apr 29 03:34:49 2023 - INFO  - End to run libcap test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 12
++ test 12 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Apr 29 03:34:50 2023 - ERROR - failed to execute the case.
++ exit 12
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_libpcap_test_001.sh post_test'
++ message='oe_test_libpcap_test_001.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_libpcap_test_001.sh post_test'
+Sat Apr 29 03:34:51 2023 - INFO  - oe_test_libpcap_test_001.sh post_test

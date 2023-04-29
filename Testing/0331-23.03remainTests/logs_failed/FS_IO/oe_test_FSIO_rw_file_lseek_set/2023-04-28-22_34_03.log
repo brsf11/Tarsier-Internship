@@ -1,0 +1,161 @@
++ source /root/mugen/libs/locallibs/common_lib.sh
+++ python3 --version
+++ '[' 0 -eq 0 ']'
+++ source /root/mugen/libs/locallibs/common_lib_python.sh
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the database config.'
++ message='Start to prepare the database config.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the database config.'
+Fri Apr 28 22:34:07 2023 - INFO  - Start to prepare the database config.
++ DNF_INSTALL gcc
++ pkgs=gcc
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen/libs/locallibs/rpm_manage.py install --pkgs gcc --node 1 --tempfile ''
+Fri Apr 28 22:34:17 2023 - INFO  - pkgs:(gcc) is already installed
++ tmpfile2=
++ '[' -z '' ']'
++ tmpfile=
++ [[ ! -f ./rw_lseek_set_file ]]
++ make
+In file included from /usr/include/errno.h:28,
+                 from rw_lseek_set_file.c:8:
+/usr/include/bits/errno.h:26:11: fatal error: linux/errno.h: No such file or directory
+   26 | # include <linux/errno.h>
+      |           ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:4: default] Error 1
++ echo test
+++ ls -l test_lseek_set_file
+++ awk '{print $5}'
++ ori_byte=5
++ LOG_INFO 'End to prepare the database config.'
++ message='End to prepare the database config.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the database config.'
+Fri Apr 28 22:34:19 2023 - INFO  - End to prepare the database config.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Apr 28 22:34:20 2023 - INFO  - Start to run test.
++ echo test_lseek_set_file
++ ./rw_lseek_set_file
+oe_test_FSIO_rw_file_lseek_set.sh: line 34: ./rw_lseek_set_file: No such file or directory
++ grep 'offset = 0' test_byte_lseek_set
++ CHECK_RESULT 1 0 0 'The lseek offset is not 0.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='The lseek offset is not 0.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'The lseek offset is not 0.'
++ LOG_ERROR 'The lseek offset is not 0.'
++ message='The lseek offset is not 0.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'The lseek offset is not 0.'
+Fri Apr 28 22:34:21 2023 - ERROR - The lseek offset is not 0.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_rw_file_lseek_set.sh line 36'
++ message='oe_test_FSIO_rw_file_lseek_set.sh line 36'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_rw_file_lseek_set.sh line 36'
+Fri Apr 28 22:34:22 2023 - ERROR - oe_test_FSIO_rw_file_lseek_set.sh line 36
++ '[' 0 -eq 1 ']'
++ return 0
++ grep 'readset = 5' test_byte_lseek_set
++ CHECK_RESULT 1 0 0 'The read set is not 5.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='The read set is not 5.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'The read set is not 5.'
++ LOG_ERROR 'The read set is not 5.'
++ message='The read set is not 5.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'The read set is not 5.'
+Fri Apr 28 22:34:23 2023 - ERROR - The read set is not 5.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_rw_file_lseek_set.sh line 38'
++ message='oe_test_FSIO_rw_file_lseek_set.sh line 38'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_rw_file_lseek_set.sh line 38'
+Fri Apr 28 22:34:23 2023 - ERROR - oe_test_FSIO_rw_file_lseek_set.sh line 38
++ '[' 0 -eq 1 ']'
++ return 0
+++ ls -l test_lseek_set_file
+++ awk '{print $5}'
++ cur_byte=5
++ actual=0
++ grep 'writeset = 0' test_byte_lseek_set
++ CHECK_RESULT 1 0 0 'The write set is not 0.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='The write set is not 0.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'The write set is not 0.'
++ LOG_ERROR 'The write set is not 0.'
++ message='The write set is not 0.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'The write set is not 0.'
+Fri Apr 28 22:34:24 2023 - ERROR - The write set is not 0.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_rw_file_lseek_set.sh line 42'
++ message='oe_test_FSIO_rw_file_lseek_set.sh line 42'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_rw_file_lseek_set.sh line 42'
+Fri Apr 28 22:34:25 2023 - ERROR - oe_test_FSIO_rw_file_lseek_set.sh line 42
++ '[' 0 -eq 1 ']'
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Apr 28 22:34:26 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 3
++ test 3 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Fri Apr 28 22:34:27 2023 - ERROR - failed to execute the case.
++ exit 3
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Apr 28 22:34:28 2023 - INFO  - Start to restore the test environment.
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z '' ]]
++ [[ -z '' ]]
++ LOG_WARN 'no thing to do.'
++ message='no thing to do.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level warn --message 'no thing to do.'
+Fri Apr 28 22:34:29 2023 - WARN  - no thing to do.
++ return 0
++ rm -f test_lseek_set_file test_byte_lseek_set
++ make clean
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Apr 28 22:34:30 2023 - INFO  - End to restore the test environment.

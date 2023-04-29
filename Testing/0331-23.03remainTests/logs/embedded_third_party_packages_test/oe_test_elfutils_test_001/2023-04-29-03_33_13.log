@@ -1,0 +1,1624 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_elfutils_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_elfutils_test_001
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Apr 29 03:33:16 2023 - INFO  - Start to prepare the test environment.
+++ cd ..
+++ pwd
++ MAKEDIR=/root/mugen/testcases/embedded-test/third_party_packages_test
++ chmod 777 /root/mugen/testcases/embedded-test/third_party_packages_test/make
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/make': No such file or directory
++ MAKE=/root/mugen/testcases/embedded-test/third_party_packages_test/make
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Apr 29 03:33:17 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 03:33:18 2023 - INFO  - Start to run test.
++ declare -A ignoreFail
++ getCasesFromFile ignoreFail ignore.txt
++ declare -n array=ignoreFail
++ filename=ignore.txt
++ read line
++ [[ # elfutils ignore casename[#reason] =~ ^#.* ]]
++ continue
++ read line
++ [[ run-show-die-info.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-show-die-info.sh            # bunzip2: command not found ]]
++ [[ run-show-die-info.sh            # bunzip2: command not found =~ # ]]
++ casename='run-show-die-info.sh            '
+++ echo run-show-die-info.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-show-die-info.sh
++ array[$casename]=1
++ read line
++ [[ run-get-files.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-get-files.sh                # bunzip2: command not found ]]
++ [[ run-get-files.sh                # bunzip2: command not found =~ # ]]
++ casename='run-get-files.sh                '
+++ echo run-get-files.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-get-files.sh
++ array[$casename]=1
++ read line
++ [[ run-get-lines.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-get-lines.sh                # bunzip2: command not found ]]
++ [[ run-get-lines.sh                # bunzip2: command not found =~ # ]]
++ casename='run-get-lines.sh                '
+++ echo run-get-lines.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-get-lines.sh
++ array[$casename]=1
++ read line
++ [[ run-next-files.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-next-files.sh               # bunzip2: command not found ]]
++ [[ run-next-files.sh               # bunzip2: command not found =~ # ]]
++ casename='run-next-files.sh               '
+++ echo run-next-files.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-next-files.sh
++ array[$casename]=1
++ read line
++ [[ run-next-lines.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-next-lines.sh               # bunzip2: command not found ]]
++ [[ run-next-lines.sh               # bunzip2: command not found =~ # ]]
++ casename='run-next-lines.sh               '
+++ echo run-next-lines.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-next-lines.sh
++ array[$casename]=1
++ read line
++ [[ run-get-pubnames.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-get-pubnames.sh             # bunzip2: command not found ]]
++ [[ run-get-pubnames.sh             # bunzip2: command not found =~ # ]]
++ casename='run-get-pubnames.sh             '
+++ echo run-get-pubnames.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-get-pubnames.sh
++ array[$casename]=1
++ read line
++ [[ run-get-aranges.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-get-aranges.sh              # bunzip2: command not found ]]
++ [[ run-get-aranges.sh              # bunzip2: command not found =~ # ]]
++ casename='run-get-aranges.sh              '
+++ echo run-get-aranges.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-get-aranges.sh
++ array[$casename]=1
++ read line
++ [[ run-allfcts.sh                  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-allfcts.sh                  # bunzip2: command not found ]]
++ [[ run-allfcts.sh                  # bunzip2: command not found =~ # ]]
++ casename='run-allfcts.sh                  '
+++ echo run-allfcts.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-allfcts.sh
++ array[$casename]=1
++ read line
++ [[ run-show-abbrev.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-show-abbrev.sh              # bunzip2: command not found ]]
++ [[ run-show-abbrev.sh              # bunzip2: command not found =~ # ]]
++ casename='run-show-abbrev.sh              '
+++ echo run-show-abbrev.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-show-abbrev.sh
++ array[$casename]=1
++ read line
++ [[ run-line2addr.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-line2addr.sh                # bunzip2: command not found ]]
++ [[ run-line2addr.sh                # bunzip2: command not found =~ # ]]
++ casename='run-line2addr.sh                '
+++ echo run-line2addr.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-line2addr.sh
++ array[$casename]=1
++ read line
++ [[ run-large-elf-file.sh           # getconf: command not found =~ ^#.* ]]
++ [[ -z run-large-elf-file.sh           # getconf: command not found ]]
++ [[ run-large-elf-file.sh           # getconf: command not found =~ # ]]
++ casename='run-large-elf-file.sh           '
+++ echo run-large-elf-file.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-large-elf-file.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test.sh               # bunzip2: command not found ]]
++ [[ run-strip-test.sh               # bunzip2: command not found =~ # ]]
++ casename='run-strip-test.sh               '
+++ echo run-strip-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test2.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test2.sh              # bunzip2: command not found ]]
++ [[ run-strip-test2.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test2.sh              '
+++ echo run-strip-test2.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test2.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test3.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test3.sh              # bunzip2: command not found ]]
++ [[ run-strip-test3.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test3.sh              '
+++ echo run-strip-test3.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test3.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test4.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test4.sh              # bunzip2: command not found ]]
++ [[ run-strip-test4.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test4.sh              '
+++ echo run-strip-test4.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test4.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test5.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test5.sh              # bunzip2: command not found ]]
++ [[ run-strip-test5.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test5.sh              '
+++ echo run-strip-test5.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test5.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test6.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test6.sh              # bunzip2: command not found ]]
++ [[ run-strip-test6.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test6.sh              '
+++ echo run-strip-test6.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test6.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test7.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test7.sh              # bunzip2: command not found ]]
++ [[ run-strip-test7.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test7.sh              '
+++ echo run-strip-test7.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test7.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test8.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test8.sh              # bunzip2: command not found ]]
++ [[ run-strip-test8.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test8.sh              '
+++ echo run-strip-test8.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test8.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test9.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test9.sh              # bunzip2: command not found ]]
++ [[ run-strip-test9.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-test9.sh              '
+++ echo run-strip-test9.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test9.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test10.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test10.sh             # bunzip2: command not found ]]
++ [[ run-strip-test10.sh             # bunzip2: command not found =~ # ]]
++ casename='run-strip-test10.sh             '
+++ echo run-strip-test10.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test10.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test11.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test11.sh             # bunzip2: command not found ]]
++ [[ run-strip-test11.sh             # bunzip2: command not found =~ # ]]
++ casename='run-strip-test11.sh             '
+++ echo run-strip-test11.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test11.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test12.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test12.sh             # bunzip2: command not found ]]
++ [[ run-strip-test12.sh             # bunzip2: command not found =~ # ]]
++ casename='run-strip-test12.sh             '
+++ echo run-strip-test12.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test12.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-nothing.sh            # gcc: command not found =~ ^#.* ]]
++ [[ -z run-strip-nothing.sh            # gcc: command not found ]]
++ [[ run-strip-nothing.sh            # gcc: command not found =~ # ]]
++ casename='run-strip-nothing.sh            '
+++ echo run-strip-nothing.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-nothing.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-g.sh                  # gcc: command not found =~ ^#.* ]]
++ [[ -z run-strip-g.sh                  # gcc: command not found ]]
++ [[ run-strip-g.sh                  # gcc: command not found =~ # ]]
++ casename='run-strip-g.sh                  '
+++ echo run-strip-g.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-g.sh
++ array[$casename]=1
++ read line
++ [[ run-annobingroup.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-annobingroup.sh             # bunzip2: command not found ]]
++ [[ run-annobingroup.sh             # bunzip2: command not found =~ # ]]
++ casename='run-annobingroup.sh             '
+++ echo run-annobingroup.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-annobingroup.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-groups.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-groups.sh             # bunzip2: command not found ]]
++ [[ run-strip-groups.sh             # bunzip2: command not found =~ # ]]
++ casename='run-strip-groups.sh             '
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo run-strip-groups.sh
++ casename=run-strip-groups.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-reloc.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-reloc.sh              # bunzip2: command not found ]]
++ [[ run-strip-reloc.sh              # bunzip2: command not found =~ # ]]
++ casename='run-strip-reloc.sh              '
+++ echo run-strip-reloc.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-reloc.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-nobitsalign.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-nobitsalign.sh        # bunzip2: command not found ]]
++ [[ run-strip-nobitsalign.sh        # bunzip2: command not found =~ # ]]
++ casename='run-strip-nobitsalign.sh        '
+++ echo run-strip-nobitsalign.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-nobitsalign.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-remove-keep.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-remove-keep.sh        # bunzip2: command not found ]]
++ [[ run-strip-remove-keep.sh        # bunzip2: command not found =~ # ]]
++ casename='run-strip-remove-keep.sh        '
+++ echo run-strip-remove-keep.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-remove-keep.sh
++ array[$casename]=1
++ read line
++ [[ run-unstrip-test.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-unstrip-test.sh             # bunzip2: command not found ]]
++ [[ run-unstrip-test.sh             # bunzip2: command not found =~ # ]]
++ casename='run-unstrip-test.sh             '
+++ echo run-unstrip-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-unstrip-test.sh
++ array[$casename]=1
++ read line
++ [[ run-unstrip-test2.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-unstrip-test2.sh            # bunzip2: command not found ]]
++ [[ run-unstrip-test2.sh            # bunzip2: command not found =~ # ]]
++ casename='run-unstrip-test2.sh            '
+++ echo run-unstrip-test2.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-unstrip-test2.sh
++ array[$casename]=1
++ read line
++ [[ run-unstrip-test3.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-unstrip-test3.sh            # bunzip2: command not found ]]
++ [[ run-unstrip-test3.sh            # bunzip2: command not found =~ # ]]
++ casename='run-unstrip-test3.sh            '
+++ echo run-unstrip-test3.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-unstrip-test3.sh
++ array[$casename]=1
++ read line
++ [[ run-unstrip-test4.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-unstrip-test4.sh            # bunzip2: command not found ]]
++ [[ run-unstrip-test4.sh            # bunzip2: command not found =~ # ]]
++ casename='run-unstrip-test4.sh            '
+++ echo run-unstrip-test4.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-unstrip-test4.sh
++ array[$casename]=1
++ read line
++ [[ run-elfstrmerge-test.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-elfstrmerge-test.sh         # bunzip2: command not found ]]
++ [[ run-elfstrmerge-test.sh         # bunzip2: command not found =~ # ]]
++ casename='run-elfstrmerge-test.sh         '
+++ echo run-elfstrmerge-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-elfstrmerge-test.sh
++ array[$casename]=1
++ read line
++ [[ run-ecp-test.sh                 # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-ecp-test.sh                 # bunzip2: command not found ]]
++ [[ run-ecp-test.sh                 # bunzip2: command not found =~ # ]]
++ casename='run-ecp-test.sh                 '
+++ echo run-ecp-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-ecp-test.sh
++ array[$casename]=1
++ read line
++ [[ run-ecp-test2.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-ecp-test2.sh                # bunzip2: command not found ]]
++ [[ run-ecp-test2.sh                # bunzip2: command not found =~ # ]]
++ casename='run-ecp-test2.sh                '
+++ echo run-ecp-test2.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-ecp-test2.sh
++ array[$casename]=1
++ read line
++ [[ run-elflint-test.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-elflint-test.sh             # bunzip2: command not found ]]
++ [[ run-elflint-test.sh             # bunzip2: command not found =~ # ]]
++ casename='run-elflint-test.sh             '
+++ echo run-elflint-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-elflint-test.sh
++ array[$casename]=1
++ read line
++ [[ run-ranlib-test2.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-ranlib-test2.sh             # bunzip2: command not found ]]
++ [[ run-ranlib-test2.sh             # bunzip2: command not found =~ # ]]
++ casename='run-ranlib-test2.sh             '
+++ echo run-ranlib-test2.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-ranlib-test2.sh
++ array[$casename]=1
++ read line
++ [[ run-ranlib-test3.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-ranlib-test3.sh             # bunzip2: command not found ]]
++ [[ run-ranlib-test3.sh             # bunzip2: command not found =~ # ]]
++ casename='run-ranlib-test3.sh             '
+++ echo run-ranlib-test3.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-ranlib-test3.sh
++ array[$casename]=1
++ read line
++ [[ run-ranlib-test4.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-ranlib-test4.sh             # bunzip2: command not found ]]
++ [[ run-ranlib-test4.sh             # bunzip2: command not found =~ # ]]
++ casename='run-ranlib-test4.sh             '
+++ echo run-ranlib-test4.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-ranlib-test4.sh
++ array[$casename]=1
++ read line
++ [[ run-addrscopes.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addrscopes.sh               # bunzip2: command not found ]]
++ [[ run-addrscopes.sh               # bunzip2: command not found =~ # ]]
++ casename='run-addrscopes.sh               '
+++ echo run-addrscopes.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addrscopes.sh
++ array[$casename]=1
++ read line
++ [[ run-strings-test.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strings-test.sh             # bunzip2: command not found ]]
++ [[ run-strings-test.sh             # bunzip2: command not found =~ # ]]
++ casename='run-strings-test.sh             '
+++ echo run-strings-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strings-test.sh
++ array[$casename]=1
++ read line
++ [[ run-funcscopes.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-funcscopes.sh               # bunzip2: command not found ]]
++ [[ run-funcscopes.sh               # bunzip2: command not found =~ # ]]
++ casename='run-funcscopes.sh               '
+++ echo run-funcscopes.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-funcscopes.sh
++ array[$casename]=1
++ read line
++ [[ run-find-prologues.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-find-prologues.sh           # bunzip2: command not found ]]
++ [[ run-find-prologues.sh           # bunzip2: command not found =~ # ]]
++ casename='run-find-prologues.sh           '
+++ echo run-find-prologues.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-find-prologues.sh
++ array[$casename]=1
++ read line
++ [[ run-allregs.sh                  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-allregs.sh                  # bunzip2: command not found ]]
++ [[ run-allregs.sh                  # bunzip2: command not found =~ # ]]
++ casename='run-allregs.sh                  '
+++ echo run-allregs.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-allregs.sh
++ array[$casename]=1
++ read line
++ [[ run-addrcfi.sh                  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addrcfi.sh                  # bunzip2: command not found ]]
++ [[ run-addrcfi.sh                  # bunzip2: command not found =~ # ]]
++ casename='run-addrcfi.sh                  '
+++ echo run-addrcfi.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addrcfi.sh
++ array[$casename]=1
++ read line
++ [[ run-dwarfcfi.sh                 # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwarfcfi.sh                 # bunzip2: command not found ]]
++ [[ run-dwarfcfi.sh                 # bunzip2: command not found =~ # ]]
++ casename='run-dwarfcfi.sh                 '
+++ echo run-dwarfcfi.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwarfcfi.sh
++ array[$casename]=1
++ read line
++ [[ run-nm-syms.sh                  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-nm-syms.sh                  # bunzip2: command not found ]]
++ [[ run-nm-syms.sh                  # bunzip2: command not found =~ # ]]
++ casename='run-nm-syms.sh                  '
+++ echo run-nm-syms.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-nm-syms.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-info-plus.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-info-plus.sh        # bunzip2: command not found ]]
++ [[ run-readelf-info-plus.sh        # bunzip2: command not found =~ # ]]
++ casename='run-readelf-info-plus.sh        '
+++ echo run-readelf-info-plus.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-info-plus.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-const-values.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-const-values.sh     # bunzip2: command not found ]]
++ [[ run-readelf-const-values.sh     # bunzip2: command not found =~ # ]]
++ casename='run-readelf-const-values.sh     '
+++ echo run-readelf-const-values.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-const-values.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-test1.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-test1.sh            # bunzip2: command not found ]]
++ [[ run-readelf-test1.sh            # bunzip2: command not found =~ # ]]
++ casename='run-readelf-test1.sh            '
+++ echo run-readelf-test1.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-test1.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-test2.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-test2.sh            # bunzip2: command not found ]]
++ [[ run-readelf-test2.sh            # bunzip2: command not found =~ # ]]
++ casename='run-readelf-test2.sh            '
+++ echo run-readelf-test2.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-test2.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-test3.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-test3.sh            # bunzip2: command not found ]]
++ [[ run-readelf-test3.sh            # bunzip2: command not found =~ # ]]
++ casename='run-readelf-test3.sh            '
+++ echo run-readelf-test3.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-test3.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-test4.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-test4.sh            # bunzip2: command not found ]]
++ [[ run-readelf-test4.sh            # bunzip2: command not found =~ # ]]
++ casename='run-readelf-test4.sh            '
+++ echo run-readelf-test4.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-test4.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-twofiles.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-twofiles.sh         # bunzip2: command not found ]]
++ [[ run-readelf-twofiles.sh         # bunzip2: command not found =~ # ]]
++ casename='run-readelf-twofiles.sh         '
+++ echo run-readelf-twofiles.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-twofiles.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-macro.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-macro.sh            # bunzip2: command not found ]]
++ [[ run-readelf-macro.sh            # bunzip2: command not found =~ # ]]
++ casename='run-readelf-macro.sh            '
+++ echo run-readelf-macro.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-macro.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-loc.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-loc.sh              # bunzip2: command not found ]]
++ [[ run-readelf-loc.sh              # bunzip2: command not found =~ # ]]
++ casename='run-readelf-loc.sh              '
+++ echo run-readelf-loc.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-loc.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-ranges.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-ranges.sh           # bunzip2: command not found ]]
++ [[ run-readelf-ranges.sh           # bunzip2: command not found =~ # ]]
++ casename='run-readelf-ranges.sh           '
+++ echo run-readelf-ranges.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-ranges.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-aranges.sh          # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-aranges.sh          # bunzip2: command not found ]]
++ [[ run-readelf-aranges.sh          # bunzip2: command not found =~ # ]]
++ casename='run-readelf-aranges.sh          '
+++ echo run-readelf-aranges.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-aranges.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-line.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-line.sh             # bunzip2: command not found ]]
++ [[ run-readelf-line.sh             # bunzip2: command not found =~ # ]]
++ casename='run-readelf-line.sh             '
+++ echo run-readelf-line.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-line.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-z.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-z.sh                # bunzip2: command not found ]]
++ [[ run-readelf-z.sh                # bunzip2: command not found =~ # ]]
++ casename='run-readelf-z.sh                '
+++ echo run-readelf-z.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-z.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-frames.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-frames.sh           # bunzip2: command not found ]]
++ [[ run-readelf-frames.sh           # bunzip2: command not found =~ # ]]
++ casename='run-readelf-frames.sh           '
+++ echo run-readelf-frames.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-frames.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-n.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-n.sh                # bunzip2: command not found ]]
++ [[ run-readelf-n.sh                # bunzip2: command not found =~ # ]]
++ casename='run-readelf-n.sh                '
+++ echo run-readelf-n.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-n.sh
++ array[$casename]=1
++ read line
++ [[ run-retain.sh                   # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-retain.sh                   # bunzip2: command not found ]]
++ [[ run-retain.sh                   # bunzip2: command not found =~ # ]]
++ casename='run-retain.sh                   '
+++ echo run-retain.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-retain.sh
++ array[$casename]=1
++ read line
++ [[ run-bug1-test.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-bug1-test.sh                # bunzip2: command not found ]]
++ [[ run-bug1-test.sh                # bunzip2: command not found =~ # ]]
++ casename='run-bug1-test.sh                '
+++ echo run-bug1-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-bug1-test.sh
++ array[$casename]=1
++ read line
++ [[ run-debuglink.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-debuglink.sh                # bunzip2: command not found ]]
++ [[ run-debuglink.sh                # bunzip2: command not found =~ # ]]
++ casename='run-debuglink.sh                '
+++ echo run-debuglink.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-debuglink.sh
++ array[$casename]=1
++ read line
++ [[ run-debugaltlink.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-debugaltlink.sh             # bunzip2: command not found ]]
++ [[ run-debugaltlink.sh             # bunzip2: command not found =~ # ]]
++ casename='run-debugaltlink.sh             '
+++ echo run-debugaltlink.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-debugaltlink.sh
++ array[$casename]=1
++ read line
++ [[ run-buildid.sh                  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-buildid.sh                  # bunzip2: command not found ]]
++ [[ run-buildid.sh                  # bunzip2: command not found =~ # ]]
++ casename='run-buildid.sh                  '
+++ echo run-buildid.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-buildid.sh
++ array[$casename]=1
++ read line
++ [[ run-addrname-test.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addrname-test.sh            # bunzip2: command not found ]]
++ [[ run-addrname-test.sh            # bunzip2: command not found =~ # ]]
++ casename='run-addrname-test.sh            '
+++ echo run-addrname-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addrname-test.sh
++ array[$casename]=1
++ read line
++ [[ run-dwfl-bug-offline-rel.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwfl-bug-offline-rel.sh     # bunzip2: command not found ]]
++ [[ run-dwfl-bug-offline-rel.sh     # bunzip2: command not found =~ # ]]
++ casename='run-dwfl-bug-offline-rel.sh     '
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo run-dwfl-bug-offline-rel.sh
++ casename=run-dwfl-bug-offline-rel.sh
++ array[$casename]=1
++ read line
++ [[ run-dwfl-addr-sect.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwfl-addr-sect.sh           # bunzip2: command not found ]]
++ [[ run-dwfl-addr-sect.sh           # bunzip2: command not found =~ # ]]
++ casename='run-dwfl-addr-sect.sh           '
+++ echo run-dwfl-addr-sect.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwfl-addr-sect.sh
++ array[$casename]=1
++ read line
++ [[ run-early-offscn.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-early-offscn.sh             # bunzip2: command not found ]]
++ [[ run-early-offscn.sh             # bunzip2: command not found =~ # ]]
++ casename='run-early-offscn.sh             '
+++ echo run-early-offscn.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-early-offscn.sh
++ array[$casename]=1
++ read line
++ [[ run-dwarf-getmacros.sh          # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwarf-getmacros.sh          # bunzip2: command not found ]]
++ [[ run-dwarf-getmacros.sh          # bunzip2: command not found =~ # ]]
++ casename='run-dwarf-getmacros.sh          '
+++ echo run-dwarf-getmacros.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwarf-getmacros.sh
++ array[$casename]=1
++ read line
++ [[ run-dwarf-ranges.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwarf-ranges.sh             # bunzip2: command not found ]]
++ [[ run-dwarf-ranges.sh             # bunzip2: command not found =~ # ]]
++ casename='run-dwarf-ranges.sh             '
+++ echo run-dwarf-ranges.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwarf-ranges.sh
++ array[$casename]=1
++ read line
++ [[ run-test-flag-nobits.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-test-flag-nobits.sh         # bunzip2: command not found ]]
++ [[ run-test-flag-nobits.sh         # bunzip2: command not found =~ # ]]
++ casename='run-test-flag-nobits.sh         '
+++ echo run-test-flag-nobits.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-test-flag-nobits.sh
++ array[$casename]=1
++ read line
++ [[ run-prelink-addr-test.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-prelink-addr-test.sh        # bunzip2: command not found ]]
++ [[ run-prelink-addr-test.sh        # bunzip2: command not found =~ # ]]
++ casename='run-prelink-addr-test.sh        '
+++ echo run-prelink-addr-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-prelink-addr-test.sh
++ array[$casename]=1
++ read line
++ [[ run-dwarf-getstring.sh          # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwarf-getstring.sh          # bunzip2: command not found ]]
++ [[ run-dwarf-getstring.sh          # bunzip2: command not found =~ # ]]
++ casename='run-dwarf-getstring.sh          '
+++ echo run-dwarf-getstring.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwarf-getstring.sh
++ array[$casename]=1
++ read line
++ [[ run-rerequest_tag.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-rerequest_tag.sh            # bunzip2: command not found ]]
++ [[ run-rerequest_tag.sh            # bunzip2: command not found =~ # ]]
++ casename='run-rerequest_tag.sh            '
+++ echo run-rerequest_tag.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-rerequest_tag.sh
++ array[$casename]=1
++ read line
++ [[ run-typeiter.sh                 # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-typeiter.sh                 # bunzip2: command not found ]]
++ [[ run-typeiter.sh                 # bunzip2: command not found =~ # ]]
++ casename='run-typeiter.sh                 '
+++ echo run-typeiter.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-typeiter.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-d.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-d.sh                # bunzip2: command not found ]]
++ [[ run-readelf-d.sh                # bunzip2: command not found =~ # ]]
++ casename='run-readelf-d.sh                '
+++ echo run-readelf-d.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-d.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-gdb_index.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-gdb_index.sh        # bunzip2: command not found ]]
++ [[ run-readelf-gdb_index.sh        # bunzip2: command not found =~ # ]]
++ casename='run-readelf-gdb_index.sh        '
+++ echo run-readelf-gdb_index.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-gdb_index.sh
++ array[$casename]=1
++ read line
++ [[ run-unstrip-n.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-unstrip-n.sh                # bunzip2: command not found ]]
++ [[ run-unstrip-n.sh                # bunzip2: command not found =~ # ]]
++ casename='run-unstrip-n.sh                '
+++ echo run-unstrip-n.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-unstrip-n.sh
++ array[$casename]=1
++ read line
++ [[ run-low_high_pc.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-low_high_pc.sh              # bunzip2: command not found ]]
++ [[ run-low_high_pc.sh              # bunzip2: command not found =~ # ]]
++ casename='run-low_high_pc.sh              '
+++ echo run-low_high_pc.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-low_high_pc.sh
++ array[$casename]=1
++ read line
++ [[ run-macro-test.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-macro-test.sh               # bunzip2: command not found ]]
++ [[ run-macro-test.sh               # bunzip2: command not found =~ # ]]
++ casename='run-macro-test.sh               '
+++ echo run-macro-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-macro-test.sh
++ array[$casename]=1
++ read line
++ [[ run-test-archive64.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-test-archive64.sh           # bunzip2: command not found ]]
++ [[ run-test-archive64.sh           # bunzip2: command not found =~ # ]]
++ casename='run-test-archive64.sh           '
+++ echo run-test-archive64.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-test-archive64.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-vmcoreinfo.sh       # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-vmcoreinfo.sh       # bunzip2: command not found ]]
++ [[ run-readelf-vmcoreinfo.sh       # bunzip2: command not found =~ # ]]
++ casename='run-readelf-vmcoreinfo.sh       '
+++ echo run-readelf-vmcoreinfo.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-vmcoreinfo.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-mixed-corenote.sh   # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-mixed-corenote.sh   # bunzip2: command not found ]]
++ [[ run-readelf-mixed-corenote.sh   # bunzip2: command not found =~ # ]]
++ casename='run-readelf-mixed-corenote.sh   '
+++ echo run-readelf-mixed-corenote.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-mixed-corenote.sh
++ array[$casename]=1
++ read line
++ [[ run-dwfllines.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwfllines.sh                # bunzip2: command not found ]]
++ [[ run-dwfllines.sh                # bunzip2: command not found =~ # ]]
++ casename='run-dwfllines.sh                '
+++ echo run-dwfllines.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwfllines.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-variant.sh          # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-variant.sh          # bunzip2: command not found ]]
++ [[ run-readelf-variant.sh          # bunzip2: command not found =~ # ]]
++ casename='run-readelf-variant.sh          '
+++ echo run-readelf-variant.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-variant.sh
++ array[$casename]=1
++ read line
++ [[ run-dwfl-report-elf-align.sh    # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwfl-report-elf-align.sh    # bunzip2: command not found ]]
++ [[ run-dwfl-report-elf-align.sh    # bunzip2: command not found =~ # ]]
++ casename='run-dwfl-report-elf-align.sh    '
+++ echo run-dwfl-report-elf-align.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwfl-report-elf-align.sh
++ array[$casename]=1
++ read line
++ [[ run-addr2line-test.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addr2line-test.sh           # bunzip2: command not found ]]
++ [[ run-addr2line-test.sh           # bunzip2: command not found =~ # ]]
++ casename='run-addr2line-test.sh           '
+++ echo run-addr2line-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addr2line-test.sh
++ array[$casename]=1
++ read line
++ [[ run-addr2line-i-test.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addr2line-i-test.sh         # bunzip2: command not found ]]
++ [[ run-addr2line-i-test.sh         # bunzip2: command not found =~ # ]]
++ casename='run-addr2line-i-test.sh         '
+++ echo run-addr2line-i-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addr2line-i-test.sh
++ array[$casename]=1
++ read line
++ [[ run-addr2line-i-lex-test.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addr2line-i-lex-test.sh     # bunzip2: command not found ]]
++ [[ run-addr2line-i-lex-test.sh     # bunzip2: command not found =~ # ]]
++ casename='run-addr2line-i-lex-test.sh     '
+++ echo run-addr2line-i-lex-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addr2line-i-lex-test.sh
++ array[$casename]=1
++ read line
++ [[ run-addr2line-i-demangle-test.sh    # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addr2line-i-demangle-test.sh    # bunzip2: command not found ]]
++ [[ run-addr2line-i-demangle-test.sh    # bunzip2: command not found =~ # ]]
++ casename='run-addr2line-i-demangle-test.sh    '
+++ echo run-addr2line-i-demangle-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addr2line-i-demangle-test.sh
++ array[$casename]=1
++ read line
++ [[ run-addr2line-alt-debugpath.sh  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-addr2line-alt-debugpath.sh  # bunzip2: command not found ]]
++ [[ run-addr2line-alt-debugpath.sh  # bunzip2: command not found =~ # ]]
++ casename='run-addr2line-alt-debugpath.sh  '
+++ echo run-addr2line-alt-debugpath.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-addr2line-alt-debugpath.sh
++ array[$casename]=1
++ read line
++ [[ run-varlocs.sh                  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-varlocs.sh                  # bunzip2: command not found ]]
++ [[ run-varlocs.sh                  # bunzip2: command not found =~ # ]]
++ casename='run-varlocs.sh                  '
+++ echo run-varlocs.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-varlocs.sh
++ array[$casename]=1
++ read line
++ [[ run-exprlocs.sh                 # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-exprlocs.sh                 # bunzip2: command not found ]]
++ [[ run-exprlocs.sh                 # bunzip2: command not found =~ # ]]
++ casename='run-exprlocs.sh                 '
+++ echo run-exprlocs.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-exprlocs.sh
++ array[$casename]=1
++ read line
++ [[ run-funcretval.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-funcretval.sh               # bunzip2: command not found ]]
++ [[ run-funcretval.sh               # bunzip2: command not found =~ # ]]
++ casename='run-funcretval.sh               '
+++ echo run-funcretval.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-funcretval.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-x86_64.sh    # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-x86_64.sh    # bunzip2: command not found ]]
++ [[ run-backtrace-core-x86_64.sh    # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-x86_64.sh    '
+++ echo run-backtrace-core-x86_64.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-x86_64.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-fp-core-x86_64.sh # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-fp-core-x86_64.sh # bunzip2: command not found ]]
++ [[ run-backtrace-fp-core-x86_64.sh # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-fp-core-x86_64.sh '
+++ echo run-backtrace-fp-core-x86_64.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-fp-core-x86_64.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-fp-core-aarch64.sh    # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-fp-core-aarch64.sh    # bunzip2: command not found ]]
++ [[ run-backtrace-fp-core-aarch64.sh    # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-fp-core-aarch64.sh    '
+++ echo run-backtrace-fp-core-aarch64.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-fp-core-aarch64.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-fp-core-ppc64le.sh    # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-fp-core-ppc64le.sh    # bunzip2: command not found ]]
++ [[ run-backtrace-fp-core-ppc64le.sh    # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-fp-core-ppc64le.sh    '
+++ echo run-backtrace-fp-core-ppc64le.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-fp-core-ppc64le.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-x32.sh       # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-x32.sh       # bunzip2: command not found ]]
++ [[ run-backtrace-core-x32.sh       # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-x32.sh       '
+++ echo run-backtrace-core-x32.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-x32.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-i386.sh      # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-i386.sh      # bunzip2: command not found ]]
++ [[ run-backtrace-core-i386.sh      # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-i386.sh      '
+++ echo run-backtrace-core-i386.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-i386.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-fp-core-i386.sh   # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-fp-core-i386.sh   # bunzip2: command not found ]]
++ [[ run-backtrace-fp-core-i386.sh   # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-fp-core-i386.sh   '
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo run-backtrace-fp-core-i386.sh
++ casename=run-backtrace-fp-core-i386.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-ppc.sh       # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-ppc.sh       # bunzip2: command not found ]]
++ [[ run-backtrace-core-ppc.sh       # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-ppc.sh       '
+++ echo run-backtrace-core-ppc.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-ppc.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-s390x.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-s390x.sh     # bunzip2: command not found ]]
++ [[ run-backtrace-core-s390x.sh     # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-s390x.sh     '
+++ echo run-backtrace-core-s390x.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-s390x.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-s390.sh      # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-s390.sh      # bunzip2: command not found ]]
++ [[ run-backtrace-core-s390.sh      # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-s390.sh      '
+++ echo run-backtrace-core-s390.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-s390.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-aarch64.sh   # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-aarch64.sh   # bunzip2: command not found ]]
++ [[ run-backtrace-core-aarch64.sh   # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-aarch64.sh   '
+++ echo run-backtrace-core-aarch64.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-aarch64.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-core-sparc.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-core-sparc.sh     # bunzip2: command not found ]]
++ [[ run-backtrace-core-sparc.sh     # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-core-sparc.sh     '
+++ echo run-backtrace-core-sparc.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-core-sparc.sh
++ array[$casename]=1
++ read line
++ [[ run-backtrace-demangle.sh       # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-backtrace-demangle.sh       # bunzip2: command not found ]]
++ [[ run-backtrace-demangle.sh       # bunzip2: command not found =~ # ]]
++ casename='run-backtrace-demangle.sh       '
+++ echo run-backtrace-demangle.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-demangle.sh
++ array[$casename]=1
++ read line
++ [[ run-stack-d-test.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-stack-d-test.sh             # bunzip2: command not found ]]
++ [[ run-stack-d-test.sh             # bunzip2: command not found =~ # ]]
++ casename='run-stack-d-test.sh             '
+++ echo run-stack-d-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-stack-d-test.sh
++ array[$casename]=1
++ read line
++ [[ run-stack-i-test.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-stack-i-test.sh             # bunzip2: command not found ]]
++ [[ run-stack-i-test.sh             # bunzip2: command not found =~ # ]]
++ casename='run-stack-i-test.sh             '
+++ echo run-stack-i-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-stack-i-test.sh
++ array[$casename]=1
++ read line
++ [[ run-stack-demangled-test.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-stack-demangled-test.sh     # bunzip2: command not found ]]
++ [[ run-stack-demangled-test.sh     # bunzip2: command not found =~ # ]]
++ casename='run-stack-demangled-test.sh     '
+++ echo run-stack-demangled-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-stack-demangled-test.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-zx.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-zx.sh               # bunzip2: command not found ]]
++ [[ run-readelf-zx.sh               # bunzip2: command not found =~ # ]]
++ casename='run-readelf-zx.sh               '
+++ echo run-readelf-zx.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-zx.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-zp.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-zp.sh               # bunzip2: command not found ]]
++ [[ run-readelf-zp.sh               # bunzip2: command not found =~ # ]]
++ casename='run-readelf-zp.sh               '
+++ echo run-readelf-zp.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-zp.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-addr.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-addr.sh             # bunzip2: command not found ]]
++ [[ run-readelf-addr.sh             # bunzip2: command not found =~ # ]]
++ casename='run-readelf-addr.sh             '
+++ echo run-readelf-addr.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-addr.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-str.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-str.sh              # bunzip2: command not found ]]
++ [[ run-readelf-str.sh              # bunzip2: command not found =~ # ]]
++ casename='run-readelf-str.sh              '
+++ echo run-readelf-str.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-str.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-types.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-types.sh            # bunzip2: command not found ]]
++ [[ run-readelf-types.sh            # bunzip2: command not found =~ # ]]
++ casename='run-readelf-types.sh            '
+++ echo run-readelf-types.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-types.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-dwz-multi.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-dwz-multi.sh        # bunzip2: command not found ]]
++ [[ run-readelf-dwz-multi.sh        # bunzip2: command not found =~ # ]]
++ casename='run-readelf-dwz-multi.sh        '
+++ echo run-readelf-dwz-multi.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-dwz-multi.sh
++ array[$casename]=1
++ read line
++ [[ run-allfcts-multi.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-allfcts-multi.sh            # bunzip2: command not found ]]
++ [[ run-allfcts-multi.sh            # bunzip2: command not found =~ # ]]
++ casename='run-allfcts-multi.sh            '
+++ echo run-allfcts-multi.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-allfcts-multi.sh
++ array[$casename]=1
++ read line
++ [[ run-linkmap-cut.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-linkmap-cut.sh              # bunzip2: command not found ]]
++ [[ run-linkmap-cut.sh              # bunzip2: command not found =~ # ]]
++ casename='run-linkmap-cut.sh              '
+++ echo run-linkmap-cut.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-linkmap-cut.sh
++ array[$casename]=1
++ read line
++ [[ run-aggregate-size.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-aggregate-size.sh           # bunzip2: command not found ]]
++ [[ run-aggregate-size.sh           # bunzip2: command not found =~ # ]]
++ casename='run-aggregate-size.sh           '
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo run-aggregate-size.sh
++ casename=run-aggregate-size.sh
++ array[$casename]=1
++ read line
++ [[ run-peel-type.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-peel-type.sh                # bunzip2: command not found ]]
++ [[ run-peel-type.sh                # bunzip2: command not found =~ # ]]
++ casename='run-peel-type.sh                '
+++ echo run-peel-type.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-peel-type.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-A.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-A.sh                # bunzip2: command not found ]]
++ [[ run-readelf-A.sh                # bunzip2: command not found =~ # ]]
++ casename='run-readelf-A.sh                '
+++ echo run-readelf-A.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-A.sh
++ array[$casename]=1
++ read line
++ [[ run-getsrc-die.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-getsrc-die.sh               # bunzip2: command not found ]]
++ [[ run-getsrc-die.sh               # bunzip2: command not found =~ # ]]
++ casename='run-getsrc-die.sh               '
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo run-getsrc-die.sh
++ casename=run-getsrc-die.sh
++ array[$casename]=1
++ read line
++ [[ run-strptr.sh                   # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strptr.sh                   # bunzip2: command not found ]]
++ [[ run-strptr.sh                   # bunzip2: command not found =~ # ]]
++ casename='run-strptr.sh                   '
+++ echo run-strptr.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strptr.sh
++ array[$casename]=1
++ read line
++ [[ run-dwelfgnucompressed.sh       # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwelfgnucompressed.sh       # bunzip2: command not found ]]
++ [[ run-dwelfgnucompressed.sh       # bunzip2: command not found =~ # ]]
++ casename='run-dwelfgnucompressed.sh       '
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo run-dwelfgnucompressed.sh
++ casename=run-dwelfgnucompressed.sh
++ array[$casename]=1
++ read line
++ [[ run-elfgetchdr.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-elfgetchdr.sh               # bunzip2: command not found ]]
++ [[ run-elfgetchdr.sh               # bunzip2: command not found =~ # ]]
++ casename='run-elfgetchdr.sh               '
+++ echo run-elfgetchdr.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-elfgetchdr.sh
++ array[$casename]=1
++ read line
++ [[ run-elfgetzdata.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-elfgetzdata.sh              # bunzip2: command not found ]]
++ [[ run-elfgetzdata.sh              # bunzip2: command not found =~ # ]]
++ casename='run-elfgetzdata.sh              '
+++ echo run-elfgetzdata.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-elfgetzdata.sh
++ array[$casename]=1
++ read line
++ [[ run-elfputzdata.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-elfputzdata.sh              # bunzip2: command not found ]]
++ [[ run-elfputzdata.sh              # bunzip2: command not found =~ # ]]
++ casename='run-elfputzdata.sh              '
+++ echo run-elfputzdata.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-elfputzdata.sh
++ array[$casename]=1
++ read line
++ [[ run-zstrptr.sh                  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-zstrptr.sh                  # bunzip2: command not found ]]
++ [[ run-zstrptr.sh                  # bunzip2: command not found =~ # ]]
++ casename='run-zstrptr.sh                  '
+++ echo run-zstrptr.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-zstrptr.sh
++ array[$casename]=1
++ read line
++ [[ run-compress-test.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-compress-test.sh            # bunzip2: command not found ]]
++ [[ run-compress-test.sh            # bunzip2: command not found =~ # ]]
++ casename='run-compress-test.sh            '
+++ echo run-compress-test.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-compress-test.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-zdebug.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-zdebug.sh           # bunzip2: command not found ]]
++ [[ run-readelf-zdebug.sh           # bunzip2: command not found =~ # ]]
++ casename='run-readelf-zdebug.sh           '
+++ echo run-readelf-zdebug.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-zdebug.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-zdebug-rel.sh       # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-zdebug-rel.sh       # bunzip2: command not found ]]
++ [[ run-readelf-zdebug-rel.sh       # bunzip2: command not found =~ # ]]
++ casename='run-readelf-zdebug-rel.sh       '
+++ echo run-readelf-zdebug-rel.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-zdebug-rel.sh
++ array[$casename]=1
++ read line
++ [[ run-dwarf-die-addr-die.sh       # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-dwarf-die-addr-die.sh       # bunzip2: command not found ]]
++ [[ run-dwarf-die-addr-die.sh       # bunzip2: command not found =~ # ]]
++ casename='run-dwarf-die-addr-die.sh       '
+++ echo run-dwarf-die-addr-die.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-dwarf-die-addr-die.sh
++ array[$casename]=1
++ read line
++ [[ run-get-units-invalid.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-get-units-invalid.sh        # bunzip2: command not found ]]
++ [[ run-get-units-invalid.sh        # bunzip2: command not found =~ # ]]
++ casename='run-get-units-invalid.sh        '
+++ echo run-get-units-invalid.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-get-units-invalid.sh
++ array[$casename]=1
++ read line
++ [[ run-get-units-split.sh          # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-get-units-split.sh          # bunzip2: command not found ]]
++ [[ run-get-units-split.sh          # bunzip2: command not found =~ # ]]
++ casename='run-get-units-split.sh          '
+++ echo run-get-units-split.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-get-units-split.sh
++ array[$casename]=1
++ read line
++ [[ run-attr-integrate-skel.sh      # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-attr-integrate-skel.sh      # bunzip2: command not found ]]
++ [[ run-attr-integrate-skel.sh      # bunzip2: command not found =~ # ]]
++ casename='run-attr-integrate-skel.sh      '
+++ echo run-attr-integrate-skel.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-attr-integrate-skel.sh
++ array[$casename]=1
++ read line
++ [[ run-all-dwarf-ranges.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-all-dwarf-ranges.sh         # bunzip2: command not found ]]
++ [[ run-all-dwarf-ranges.sh         # bunzip2: command not found =~ # ]]
++ casename='run-all-dwarf-ranges.sh         '
+++ echo run-all-dwarf-ranges.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-all-dwarf-ranges.sh
++ array[$casename]=1
++ read line
++ [[ run-unit-info.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-unit-info.sh                # bunzip2: command not found ]]
++ [[ run-unit-info.sh                # bunzip2: command not found =~ # ]]
++ casename='run-unit-info.sh                '
+++ echo run-unit-info.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-unit-info.sh
++ array[$casename]=1
++ read line
++ [[ run-reloc-bpf.sh                # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-reloc-bpf.sh                # bunzip2: command not found ]]
++ [[ run-reloc-bpf.sh                # bunzip2: command not found =~ # ]]
++ casename='run-reloc-bpf.sh                '
+++ echo run-reloc-bpf.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-reloc-bpf.sh
++ array[$casename]=1
++ read line
++ [[ run-next-cfi.sh                 # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-next-cfi.sh                 # bunzip2: command not found ]]
++ [[ run-next-cfi.sh                 # bunzip2: command not found =~ # ]]
++ casename='run-next-cfi.sh                 '
+++ echo run-next-cfi.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-next-cfi.sh
++ array[$casename]=1
++ read line
++ [[ run-reverse-sections.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-reverse-sections.sh         # bunzip2: command not found ]]
++ [[ run-reverse-sections.sh         # bunzip2: command not found =~ # ]]
++ casename='run-reverse-sections.sh         '
+++ echo run-reverse-sections.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-reverse-sections.sh
++ array[$casename]=1
++ read line
++ [[ run-copyadd-sections.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-copyadd-sections.sh         # bunzip2: command not found ]]
++ [[ run-copyadd-sections.sh         # bunzip2: command not found =~ # ]]
++ casename='run-copyadd-sections.sh         '
+++ echo run-copyadd-sections.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-copyadd-sections.sh
++ array[$casename]=1
++ read line
++ [[ run-copymany-sections.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-copymany-sections.sh        # bunzip2: command not found ]]
++ [[ run-copymany-sections.sh        # bunzip2: command not found =~ # ]]
++ casename='run-copymany-sections.sh        '
+++ echo run-copymany-sections.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-copymany-sections.sh
++ array[$casename]=1
++ read line
++ [[ run-typeiter-many.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-typeiter-many.sh            # bunzip2: command not found ]]
++ [[ run-typeiter-many.sh            # bunzip2: command not found =~ # ]]
++ casename='run-typeiter-many.sh            '
+++ echo run-typeiter-many.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-typeiter-many.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-test-many.sh          # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-test-many.sh          # bunzip2: command not found ]]
++ [[ run-strip-test-many.sh          # bunzip2: command not found =~ # ]]
++ casename='run-strip-test-many.sh          '
+++ echo run-strip-test-many.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-test-many.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-version.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-version.sh            # bunzip2: command not found ]]
++ [[ run-strip-version.sh            # bunzip2: command not found =~ # ]]
++ casename='run-strip-version.sh            '
+++ echo run-strip-version.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-version.sh
++ array[$casename]=1
++ read line
++ [[ run-xlate-note.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-xlate-note.sh               # bunzip2: command not found ]]
++ [[ run-xlate-note.sh               # bunzip2: command not found =~ # ]]
++ casename='run-xlate-note.sh               '
+++ echo run-xlate-note.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-xlate-note.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-discr.sh            # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-discr.sh            # bunzip2: command not found ]]
++ [[ run-readelf-discr.sh            # bunzip2: command not found =~ # ]]
++ casename='run-readelf-discr.sh            '
+++ echo run-readelf-discr.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-discr.sh
++ array[$casename]=1
++ read line
++ [[ run-elfclassify.sh              # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-elfclassify.sh              # bunzip2: command not found ]]
++ [[ run-elfclassify.sh              # bunzip2: command not found =~ # ]]
++ casename='run-elfclassify.sh              '
+++ echo run-elfclassify.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-elfclassify.sh
++ array[$casename]=1
++ read line
++ [[ run-disasm-riscv64.sh           # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-disasm-riscv64.sh           # bunzip2: command not found ]]
++ [[ run-disasm-riscv64.sh           # bunzip2: command not found =~ # ]]
++ casename='run-disasm-riscv64.sh           '
+++ echo run-disasm-riscv64.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-disasm-riscv64.sh
++ array[$casename]=1
++ read line
++ [[ run-pt_gnu_prop-tests.sh        # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-pt_gnu_prop-tests.sh        # bunzip2: command not found ]]
++ [[ run-pt_gnu_prop-tests.sh        # bunzip2: command not found =~ # ]]
++ casename='run-pt_gnu_prop-tests.sh        '
+++ echo run-pt_gnu_prop-tests.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-pt_gnu_prop-tests.sh
++ array[$casename]=1
++ read line
++ [[ run-getphdrnum.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-getphdrnum.sh               # bunzip2: command not found ]]
++ [[ run-getphdrnum.sh               # bunzip2: command not found =~ # ]]
++ casename='run-getphdrnum.sh               '
+++ echo run-getphdrnum.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-getphdrnum.sh
++ array[$casename]=1
++ read line
++ [[ run-test-includes.sh            # gcc: command not found =~ ^#.* ]]
++ [[ -z run-test-includes.sh            # gcc: command not found ]]
++ [[ run-test-includes.sh            # gcc: command not found =~ # ]]
++ casename='run-test-includes.sh            '
+++ echo run-test-includes.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-test-includes.sh
++ array[$casename]=1
++ read line
++ [[ run-disasm-bpf.sh               # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-disasm-bpf.sh               # bunzip2: command not found ]]
++ [[ run-disasm-bpf.sh               # bunzip2: command not found =~ # ]]
++ casename='run-disasm-bpf.sh               '
+++ echo run-disasm-bpf.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-disasm-bpf.sh
++ array[$casename]=1
++ read line
++ [[ run-low_high_pc-dw-form-indirect.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-low_high_pc-dw-form-indirect.sh     # bunzip2: command not found ]]
++ [[ run-low_high_pc-dw-form-indirect.sh     # bunzip2: command not found =~ # ]]
++ casename='run-low_high_pc-dw-form-indirect.sh     '
+++ echo run-low_high_pc-dw-form-indirect.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-low_high_pc-dw-form-indirect.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-dw-form-indirect.sh # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-dw-form-indirect.sh # bunzip2: command not found ]]
++ [[ run-readelf-dw-form-indirect.sh # bunzip2: command not found =~ # ]]
++ casename='run-readelf-dw-form-indirect.sh '
+++ echo run-readelf-dw-form-indirect.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-dw-form-indirect.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-fat-lto.sh          # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-fat-lto.sh          # bunzip2: command not found ]]
++ [[ run-readelf-fat-lto.sh          # bunzip2: command not found =~ # ]]
++ casename='run-readelf-fat-lto.sh          '
+++ echo run-readelf-fat-lto.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-fat-lto.sh
++ array[$casename]=1
++ read line
++ [[ run-varlocs-vars.sh             # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-varlocs-vars.sh             # bunzip2: command not found ]]
++ [[ run-varlocs-vars.sh             # bunzip2: command not found =~ # ]]
++ casename='run-varlocs-vars.sh             '
+++ echo run-varlocs-vars.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-varlocs-vars.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-multi-noline.sh     # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-multi-noline.sh     # bunzip2: command not found ]]
++ [[ run-readelf-multi-noline.sh     # bunzip2: command not found =~ # ]]
++ casename='run-readelf-multi-noline.sh     '
+++ echo run-readelf-multi-noline.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-multi-noline.sh
++ array[$casename]=1
++ read line
++ [[ run-nvidia-extended-linemap-libdw.sh    # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-nvidia-extended-linemap-libdw.sh    # bunzip2: command not found ]]
++ [[ run-nvidia-extended-linemap-libdw.sh    # bunzip2: command not found =~ # ]]
++ casename='run-nvidia-extended-linemap-libdw.sh    '
+++ echo run-nvidia-extended-linemap-libdw.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-nvidia-extended-linemap-libdw.sh
++ array[$casename]=1
++ read line
++ [[ run-nvidia-extended-linemap-readelf.sh  # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-nvidia-extended-linemap-readelf.sh  # bunzip2: command not found ]]
++ [[ run-nvidia-extended-linemap-readelf.sh  # bunzip2: command not found =~ # ]]
++ casename='run-nvidia-extended-linemap-readelf.sh  '
+++ echo run-nvidia-extended-linemap-readelf.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-nvidia-extended-linemap-readelf.sh
++ array[$casename]=1
++ read line
++ [[ run-readelf-dw-form-indirect.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-readelf-dw-form-indirect.sh         # bunzip2: command not found ]]
++ [[ run-readelf-dw-form-indirect.sh         # bunzip2: command not found =~ # ]]
++ casename='run-readelf-dw-form-indirect.sh         '
+++ echo run-readelf-dw-form-indirect.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-readelf-dw-form-indirect.sh
++ array[$casename]=1
++ read line
++ [[ run-strip-largealign.sh         # bunzip2: command not found =~ ^#.* ]]
++ [[ -z run-strip-largealign.sh         # bunzip2: command not found ]]
++ [[ run-strip-largealign.sh         # bunzip2: command not found =~ # ]]
++ casename='run-strip-largealign.sh         '
+++ echo run-strip-largealign.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-strip-largealign.sh
++ array[$casename]=1
++ read line
++ [[ run-arsymtest.sh                # aarch64-openeuler-linux-nm: command not found =~ ^#.* ]]
++ [[ -z run-arsymtest.sh                # aarch64-openeuler-linux-nm: command not found ]]
++ [[ run-arsymtest.sh                # aarch64-openeuler-linux-nm: command not found =~ # ]]
++ casename='run-arsymtest.sh                '
+++ echo run-arsymtest.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-arsymtest.sh
++ array[$casename]=1
++ read line
++ [[ -n run-backtrace-native.sh         # expected symname 'raise' got '(null)' ]]
++ [[ run-backtrace-native.sh         # expected symname 'raise' got '(null)' =~ ^#.* ]]
++ [[ -z run-backtrace-native.sh         # expected symname 'raise' got '(null)' ]]
++ [[ run-backtrace-native.sh         # expected symname 'raise' got '(null)' =~ # ]]
++ casename='run-backtrace-native.sh         '
+++ echo run-backtrace-native.sh
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=run-backtrace-native.sh
++ array[$casename]=1
++ read line
++ [[ -n '' ]]
++ chmod -R 777 './tmp_test/*'
+chmod: cannot access './tmp_test/*': No such file or directory
++ pushd ./tmp_test/tests
+oe_test_elfutils_test_001.sh: line 41: pushd: ./tmp_test/tests: No such file or directory
++ /root/mugen/testcases/embedded-test/third_party_packages_test/make -k installcheck-local CC=gcc abs_srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_elfutils_test_001 abs_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_elfutils_test_001 srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_elfutils_test_001 top_srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_elfutils_test_001/../ abs_top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_elfutils_test_001/../ libdir=/usr/lib64 elfutils_testrun=installed elfutils_tests_rpath=no 'program_transform_name=s,^,eu-,'
++ failTitles=("XPASS" "ERROR" "FAIL")
++ read line
++ [[ oe_test_elfutils_test_001.sh: line 43: /root/mugen/testcases/embedded-test/third_party_packages_test/make: No such file or directory =~ ^make.* ]]
++ [[ oe_test_elfutils_test_001.sh: line 43: /root/mugen/testcases/embedded-test/third_party_packages_test/make: No such file or directory =~ ^cd.* ]]
++ [[ oe_test_elfutils_test_001.sh: line 43: /root/mugen/testcases/embedded-test/third_party_packages_test/make: No such file or directory =~ : ]]
++ resultTitle=oe_test_elfutils_test_001.sh
++ resultTail=' No such file or directory'
+++ echo No such file or directory
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ testcase='No such file or directory'
++ [[ '' -eq 1 ]]
++ [[ XPASS ERROR FAIL =~ oe_test_elfutils_test_001\.sh ]]
++ read line
++ popd
+oe_test_elfutils_test_001.sh: line 61: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Apr 29 03:33:34 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z ''
++ test 0 -eq 0
++ LOG_INFO 'succeed to execute the case.'
++ message='succeed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'succeed to execute the case.'
+Sat Apr 29 03:33:35 2023 - INFO  - succeed to execute the case.
++ exec_result=
++ exit 0
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_elfutils_test_001.sh post_test'
++ message='oe_test_elfutils_test_001.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_elfutils_test_001.sh post_test'
+Sat Apr 29 03:33:36 2023 - INFO  - oe_test_elfutils_test_001.sh post_test

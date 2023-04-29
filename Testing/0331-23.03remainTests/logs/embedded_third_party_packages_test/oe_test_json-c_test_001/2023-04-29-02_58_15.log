@@ -1,0 +1,854 @@
++ source ../comm_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ tar -xf tmp_test.tar
+tar: tmp_test.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ pushd ../
+~/mugen/testcases/embedded-test/third_party_packages_test ~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
+++ [[ -z '' ]]
++++ pwd
+++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test
+++ tar -xf dejagnu.tar
+tar: dejagnu.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+++ RUNTEST=/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+++ chmod +x /root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest
+chmod: cannot access '/root/mugen/testcases/embedded-test/third_party_packages_test/dejagnu/bin/runtest': No such file or directory
+++ export RUNTEST
+++ popd
+~/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ main
+++ type -t post_test
++ '[' -n '' ']'
++ trap POST_TEST_DEFAULT EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the test environment.'
++ message='Start to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the test environment.'
+Sat Apr 29 02:58:19 2023 - INFO  - Start to prepare the test environment.
++ export USE_VALGRIND=0
++ USE_VALGRIND=0
++ LOG_INFO 'End to prepare the test environment.'
++ message='End to prepare the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the test environment.'
+Sat Apr 29 02:58:19 2023 - INFO  - End to prepare the test environment.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Sat Apr 29 02:58:20 2023 - INFO  - Start to run test.
++ declare -A allTests
++ getCasesFromFile allTests testcases.txt
++ declare -n array=allTests
++ filename=testcases.txt
++ read line
++ [[ # from tests/CMakeLists.txt =~ ^#.* ]]
++ continue
++ read line
++ [[ test1 =~ ^#.* ]]
++ [[ -z test1 ]]
++ [[ test1 =~ # ]]
++ casename=test1
+++ echo test1
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test1
++ array[$casename]=1
++ read line
++ [[ test2 =~ ^#.* ]]
++ [[ -z test2 ]]
++ [[ test2 =~ # ]]
++ casename=test2
+++ echo test2
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test2
++ array[$casename]=1
++ read line
++ [[ test4 =~ ^#.* ]]
++ [[ -z test4 ]]
++ [[ test4 =~ # ]]
++ casename=test4
+++ echo test4
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test4
++ array[$casename]=1
++ read line
++ [[ testReplaceExisting =~ ^#.* ]]
++ [[ -z testReplaceExisting ]]
++ [[ testReplaceExisting =~ # ]]
++ casename=testReplaceExisting
+++ echo testReplaceExisting
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=testReplaceExisting
++ array[$casename]=1
++ read line
++ [[ test_cast =~ ^#.* ]]
++ [[ -z test_cast ]]
++ [[ test_cast =~ # ]]
++ casename=test_cast
+++ echo test_cast
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_cast
++ array[$casename]=1
++ read line
++ [[ test_charcase =~ ^#.* ]]
++ [[ -z test_charcase ]]
++ [[ test_charcase =~ # ]]
++ casename=test_charcase
+++ echo test_charcase
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_charcase
++ array[$casename]=1
++ read line
++ [[ test_compare =~ ^#.* ]]
++ [[ -z test_compare ]]
++ [[ test_compare =~ # ]]
++ casename=test_compare
+++ echo test_compare
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_compare
++ array[$casename]=1
++ read line
++ [[ test_deep_copy =~ ^#.* ]]
++ [[ -z test_deep_copy ]]
++ [[ test_deep_copy =~ # ]]
++ casename=test_deep_copy
+++ echo test_deep_copy
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_deep_copy
++ array[$casename]=1
++ read line
++ [[ test_double_serializer =~ ^#.* ]]
++ [[ -z test_double_serializer ]]
++ [[ test_double_serializer =~ # ]]
++ casename=test_double_serializer
+++ echo test_double_serializer
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_double_serializer
++ array[$casename]=1
++ read line
++ [[ test_float =~ ^#.* ]]
++ [[ -z test_float ]]
++ [[ test_float =~ # ]]
++ casename=test_float
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
+++ echo test_float
++ casename=test_float
++ array[$casename]=1
++ read line
++ [[ test_int_add =~ ^#.* ]]
++ [[ -z test_int_add ]]
++ [[ test_int_add =~ # ]]
++ casename=test_int_add
+++ echo test_int_add
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_int_add
++ array[$casename]=1
++ read line
++ [[ test_json_pointer =~ ^#.* ]]
++ [[ -z test_json_pointer ]]
++ [[ test_json_pointer =~ # ]]
++ casename=test_json_pointer
+++ echo test_json_pointer
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_json_pointer
++ array[$casename]=1
++ read line
++ [[ test_locale =~ ^#.* ]]
++ [[ -z test_locale ]]
++ [[ test_locale =~ # ]]
++ casename=test_locale
+++ echo test_locale
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_locale
++ array[$casename]=1
++ read line
++ [[ test_null =~ ^#.* ]]
++ [[ -z test_null ]]
++ [[ test_null =~ # ]]
++ casename=test_null
+++ echo test_null
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_null
++ array[$casename]=1
++ read line
++ [[ test_parse =~ ^#.* ]]
++ [[ -z test_parse ]]
++ [[ test_parse =~ # ]]
++ casename=test_parse
+++ echo test_parse
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_parse
++ array[$casename]=1
++ read line
++ [[ test_parse_int64 =~ ^#.* ]]
++ [[ -z test_parse_int64 ]]
++ [[ test_parse_int64 =~ # ]]
++ casename=test_parse_int64
+++ echo test_parse_int64
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_parse_int64
++ array[$casename]=1
++ read line
++ [[ test_printbuf =~ ^#.* ]]
++ [[ -z test_printbuf ]]
++ [[ test_printbuf =~ # ]]
++ casename=test_printbuf
+++ echo test_printbuf
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_printbuf
++ array[$casename]=1
++ read line
++ [[ test_set_serializer =~ ^#.* ]]
++ [[ -z test_set_serializer ]]
++ [[ test_set_serializer =~ # ]]
++ casename=test_set_serializer
+++ echo test_set_serializer
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_set_serializer
++ array[$casename]=1
++ read line
++ [[ test_set_value =~ ^#.* ]]
++ [[ -z test_set_value ]]
++ [[ test_set_value =~ # ]]
++ casename=test_set_value
+++ echo test_set_value
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_set_value
++ array[$casename]=1
++ read line
++ [[ test_util_file =~ ^#.* ]]
++ [[ -z test_util_file ]]
++ [[ test_util_file =~ # ]]
++ casename=test_util_file
+++ echo test_util_file
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_util_file
++ array[$casename]=1
++ read line
++ [[ test_visit =~ ^#.* ]]
++ [[ -z test_visit ]]
++ [[ test_visit =~ # ]]
++ casename=test_visit
+++ echo test_visit
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_visit
++ array[$casename]=1
++ read line
++ [[ test_object_iterator =~ ^#.* ]]
++ [[ -z test_object_iterator ]]
++ [[ test_object_iterator =~ # ]]
++ casename=test_object_iterator
+++ echo test_object_iterator
+++ sed -e 's/^[ \t]//g' -e 's/[ \t]*$//g'
++ casename=test_object_iterator
++ array[$casename]=1
++ read line
++ [[ -n '' ]]
++ pushd ./tmp_test/tests
+oe_test_json-c_test_001.sh: line 37: pushd: ./tmp_test/tests: No such file or directory
+++ pwd
++ CUR=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ chmod -R 777 ./Makefile ./oe_test_json-c_test_001.sh ./testcases.txt
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_deep_copy.test
+sh: test_deep_copy.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_deep_copy fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_deep_copy fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_deep_copy fail'
++ LOG_ERROR 'run json-c test test_deep_copy fail'
++ message='run json-c test test_deep_copy fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_deep_copy fail'
+Sat Apr 29 02:58:23 2023 - ERROR - run json-c test test_deep_copy fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:24 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_set_serializer.test
+sh: test_set_serializer.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_set_serializer fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_set_serializer fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_set_serializer fail'
++ LOG_ERROR 'run json-c test test_set_serializer fail'
++ message='run json-c test test_set_serializer fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_set_serializer fail'
+Sat Apr 29 02:58:25 2023 - ERROR - run json-c test test_set_serializer fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:26 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_json_pointer.test
+sh: test_json_pointer.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_json_pointer fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_json_pointer fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_json_pointer fail'
++ LOG_ERROR 'run json-c test test_json_pointer fail'
++ message='run json-c test test_json_pointer fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_json_pointer fail'
+Sat Apr 29 02:58:26 2023 - ERROR - run json-c test test_json_pointer fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:27 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_int_add.test
+sh: test_int_add.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_int_add fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_int_add fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_int_add fail'
++ LOG_ERROR 'run json-c test test_int_add fail'
++ message='run json-c test test_int_add fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_int_add fail'
+Sat Apr 29 02:58:28 2023 - ERROR - run json-c test test_int_add fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:29 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_parse.test
+sh: test_parse.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_parse fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_parse fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_parse fail'
++ LOG_ERROR 'run json-c test test_parse fail'
++ message='run json-c test test_parse fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_parse fail'
+Sat Apr 29 02:58:30 2023 - ERROR - run json-c test test_parse fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:31 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_compare.test
+sh: test_compare.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_compare fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_compare fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_compare fail'
++ LOG_ERROR 'run json-c test test_compare fail'
++ message='run json-c test test_compare fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_compare fail'
+Sat Apr 29 02:58:31 2023 - ERROR - run json-c test test_compare fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:32 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_printbuf.test
+sh: test_printbuf.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_printbuf fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_printbuf fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_printbuf fail'
++ LOG_ERROR 'run json-c test test_printbuf fail'
++ message='run json-c test test_printbuf fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_printbuf fail'
+Sat Apr 29 02:58:33 2023 - ERROR - run json-c test test_printbuf fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:34 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_float.test
+sh: test_float.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_float fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_float fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_float fail'
++ LOG_ERROR 'run json-c test test_float fail'
++ message='run json-c test test_float fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_float fail'
+Sat Apr 29 02:58:35 2023 - ERROR - run json-c test test_float fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:36 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_locale.test
+sh: test_locale.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_locale fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_locale fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_locale fail'
++ LOG_ERROR 'run json-c test test_locale fail'
++ message='run json-c test test_locale fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_locale fail'
+Sat Apr 29 02:58:36 2023 - ERROR - run json-c test test_locale fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:37 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_double_serializer.test
+sh: test_double_serializer.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_double_serializer fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_double_serializer fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_double_serializer fail'
++ LOG_ERROR 'run json-c test test_double_serializer fail'
++ message='run json-c test test_double_serializer fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_double_serializer fail'
+Sat Apr 29 02:58:38 2023 - ERROR - run json-c test test_double_serializer fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:39 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_null.test
+sh: test_null.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_null fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_null fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_null fail'
++ LOG_ERROR 'run json-c test test_null fail'
++ message='run json-c test test_null fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_null fail'
+Sat Apr 29 02:58:40 2023 - ERROR - run json-c test test_null fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:40 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_util_file.test
+sh: test_util_file.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_util_file fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_util_file fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_util_file fail'
++ LOG_ERROR 'run json-c test test_util_file fail'
++ message='run json-c test test_util_file fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_util_file fail'
+Sat Apr 29 02:58:41 2023 - ERROR - run json-c test test_util_file fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:42 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_set_value.test
+sh: test_set_value.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_set_value fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_set_value fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_set_value fail'
++ LOG_ERROR 'run json-c test test_set_value fail'
++ message='run json-c test test_set_value fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_set_value fail'
+Sat Apr 29 02:58:43 2023 - ERROR - run json-c test test_set_value fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:44 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_visit.test
+sh: test_visit.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_visit fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_visit fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_visit fail'
++ LOG_ERROR 'run json-c test test_visit fail'
++ message='run json-c test test_visit fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_visit fail'
+Sat Apr 29 02:58:45 2023 - ERROR - run json-c test test_visit fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:46 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh testReplaceExisting.test
+sh: testReplaceExisting.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test testReplaceExisting fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test testReplaceExisting fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test testReplaceExisting fail'
++ LOG_ERROR 'run json-c test testReplaceExisting fail'
++ message='run json-c test testReplaceExisting fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test testReplaceExisting fail'
+Sat Apr 29 02:58:46 2023 - ERROR - run json-c test testReplaceExisting fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:47 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_cast.test
+sh: test_cast.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_cast fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_cast fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_cast fail'
++ LOG_ERROR 'run json-c test test_cast fail'
++ message='run json-c test test_cast fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_cast fail'
+Sat Apr 29 02:58:48 2023 - ERROR - run json-c test test_cast fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:49 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_charcase.test
+sh: test_charcase.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_charcase fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_charcase fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_charcase fail'
++ LOG_ERROR 'run json-c test test_charcase fail'
++ message='run json-c test test_charcase fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_charcase fail'
+Sat Apr 29 02:58:50 2023 - ERROR - run json-c test test_charcase fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:51 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_object_iterator.test
+sh: test_object_iterator.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_object_iterator fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_object_iterator fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_object_iterator fail'
++ LOG_ERROR 'run json-c test test_object_iterator fail'
++ message='run json-c test test_object_iterator fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_object_iterator fail'
+Sat Apr 29 02:58:51 2023 - ERROR - run json-c test test_object_iterator fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:52 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test_parse_int64.test
+sh: test_parse_int64.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test_parse_int64 fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test_parse_int64 fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test_parse_int64 fail'
++ LOG_ERROR 'run json-c test test_parse_int64 fail'
++ message='run json-c test test_parse_int64 fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test_parse_int64 fail'
+Sat Apr 29 02:58:53 2023 - ERROR - run json-c test test_parse_int64 fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:54 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test2.test
+sh: test2.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test2 fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test2 fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test2 fail'
++ LOG_ERROR 'run json-c test test2 fail'
++ message='run json-c test test2 fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test2 fail'
+Sat Apr 29 02:58:55 2023 - ERROR - run json-c test test2 fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:56 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test1.test
+sh: test1.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test1 fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test1 fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test1 fail'
++ LOG_ERROR 'run json-c test test1 fail'
++ message='run json-c test test1 fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test1 fail'
+Sat Apr 29 02:58:57 2023 - ERROR - run json-c test test1 fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:57 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ for case in ${!allTests[@]}
++ srcdir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001
++ top_builddir=/root/mugen/testcases/embedded-test/third_party_packages_test/oe_test_json-c_test_001/../
++ sh test4.test
+sh: test4.test: No such file or directory
++ CHECK_RESULT 127 0 0 'run json-c test test4 fail'
++ actual_result=127
++ expect_result=0
++ mode=0
++ error_log='run json-c test test4 fail'
++ exit_mode=0
++ '[' -z 127 ']'
++ '[' 0 -eq 0 ']'
++ test 127x '!=' 0x
++ test -n 'run json-c test test4 fail'
++ LOG_ERROR 'run json-c test test4 fail'
++ message='run json-c test test4 fail'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'run json-c test test4 fail'
+Sat Apr 29 02:58:58 2023 - ERROR - run json-c test test4 fail
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_json-c_test_001.sh line 45'
++ message='oe_test_json-c_test_001.sh line 45'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_json-c_test_001.sh line 45'
+Sat Apr 29 02:58:59 2023 - ERROR - oe_test_json-c_test_001.sh line 45
++ '[' 0 -eq 1 ']'
++ return 0
++ popd
+oe_test_json-c_test_001.sh: line 48: popd: directory stack empty
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Sat Apr 29 02:59:00 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 22
++ test 22 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Sat Apr 29 02:59:01 2023 - ERROR - failed to execute the case.
++ exit 22
++ POST_TEST_DEFAULT
++ LOG_INFO 'oe_test_json-c_test_001.sh post_test'
++ message='oe_test_json-c_test_001.sh post_test'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'oe_test_json-c_test_001.sh post_test'
+Sat Apr 29 02:59:01 2023 - INFO  - oe_test_json-c_test_001.sh post_test

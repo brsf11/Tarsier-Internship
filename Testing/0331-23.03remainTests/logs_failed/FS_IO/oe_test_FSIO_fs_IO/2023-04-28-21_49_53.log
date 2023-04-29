@@ -1,0 +1,408 @@
++ source ../common_lib/fsio_lib.sh
+++ source /root/mugen/libs/locallibs/common_lib.sh
++++ python3 --version
++++ '[' 0 -eq 0 ']'
++++ source /root/mugen/libs/locallibs/common_lib_python.sh
+++ export 'FS_TYPE=ext3 ext4 xfs'
+++ FS_TYPE='ext3 ext4 xfs'
+++ export LANG=en_US.UTF-8
+++ LANG=en_US.UTF-8
+++ REMOVE_VG
+++ vggroup=
+++ [[ '' != '' ]]
++++ df -T
++++ grep test_vggroup
++++ awk '{print $7}'
+++ mounted=
+++ [[ '' != '' ]]
+++ lsblk
+++ grep test_vggroup
+++ [[ 1 -eq 0 ]]
+++ rm -rf '/tmp/point*'
++ main
+++ type -t post_test
++ '[' -n function ']'
++ trap post_test EXIT INT HUP TERM
++ rpm -qa
++ grep expect
+++ type -t config_params
++ '[' -n '' ']'
+++ type -t pre_test
++ '[' -n function ']'
++ pre_test
++ LOG_INFO 'Start to prepare the database config.'
++ message='Start to prepare the database config.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to prepare the database config.'
+Fri Apr 28 21:49:57 2023 - INFO  - Start to prepare the database config.
++ DNF_INSTALL sysstat
++ pkgs=sysstat
++ node=1
++ '[' -z '' ']'
++ tmpfile=
+++ python3 /root/mugen/libs/locallibs/rpm_manage.py install --pkgs sysstat --node 1 --tempfile ''
++ tmpfile2=/tmp/tmpdr_4zekn
++ '[' -z '' ']'
++ tmpfile=/tmp/tmpdr_4zekn
++ point_list=($(CREATE_FS))
+++ CREATE_FS
+++ fs_type='ext3 ext4 xfs'
++++ date +%Y%m%d%H%M%S
+++ cur_date=20230428215043
++++ CREATE_VG
+++++ date +%Y%m%d%H%M%S
++++ cur_date=20230428215043
+++++ lsblk
+++++ grep disk
+++++ awk '{print $1}'
+++++ tail -n 1
++++ free_disk=vdt
++++ disk_name=/dev/vdt
++++ pvcreate /dev/vdt -f
++++ [[ 0 -eq 0 ]]
++++ vggroup=test_vggroup20230428215043
++++ vgcreate test_vggroup20230428215043 /dev/vdt
++++ printf test_vggroup20230428215043
+++ vggroup=test_vggroup20230428215043
+++ count=1
+++ msg='test_vggroup20230428215043 '
+++ for fs in ${fs_type[@]}
+++ lvname=test_lv120230428215043
+++ point=/tmp/point120230428215043
+++ lvcreate -n test_lv120230428215043 -L 512M test_vggroup20230428215043 -y
+  Volume group "test_vggroup20230428215043" has insufficient free space (124 extents): 128 required.
+++ mkfs -t ext3 /dev/test_vggroup20230428215043/test_lv120230428215043
+mke2fs 1.46.5 (30-Dec-2021)
+The file /dev/test_vggroup20230428215043/test_lv120230428215043 does not exist and no size was specified.
+++ mkdir /tmp/point120230428215043
+++ mount /dev/test_vggroup20230428215043/test_lv120230428215043 /tmp/point120230428215043
+mount: /tmp/point120230428215043: special device /dev/test_vggroup20230428215043/test_lv120230428215043 does not exist.
+++ msg='test_vggroup20230428215043 /tmp/point120230428215043 '
+++ count=2
+++ for fs in ${fs_type[@]}
+++ lvname=test_lv220230428215043
+++ point=/tmp/point220230428215043
+++ lvcreate -n test_lv220230428215043 -L 512M test_vggroup20230428215043 -y
+  Volume group "test_vggroup20230428215043" has insufficient free space (124 extents): 128 required.
+++ mkfs -t ext4 /dev/test_vggroup20230428215043/test_lv220230428215043
+mke2fs 1.46.5 (30-Dec-2021)
+The file /dev/test_vggroup20230428215043/test_lv220230428215043 does not exist and no size was specified.
+++ mkdir /tmp/point220230428215043
+++ mount /dev/test_vggroup20230428215043/test_lv220230428215043 /tmp/point220230428215043
+mount: /tmp/point220230428215043: special device /dev/test_vggroup20230428215043/test_lv220230428215043 does not exist.
+++ msg='test_vggroup20230428215043 /tmp/point120230428215043 /tmp/point220230428215043 '
+++ count=3
+++ for fs in ${fs_type[@]}
+++ lvname=test_lv320230428215043
+++ point=/tmp/point320230428215043
+++ lvcreate -n test_lv320230428215043 -L 512M test_vggroup20230428215043 -y
+  Volume group "test_vggroup20230428215043" has insufficient free space (124 extents): 128 required.
+++ mkfs -t xfs /dev/test_vggroup20230428215043/test_lv320230428215043
+mkfs: failed to execute mkfs.xfs: No such file or directory
+++ mkdir /tmp/point320230428215043
+++ mount /dev/test_vggroup20230428215043/test_lv320230428215043 /tmp/point320230428215043
+mount: /tmp/point320230428215043: special device /dev/test_vggroup20230428215043/test_lv320230428215043 does not exist.
+++ msg='test_vggroup20230428215043 /tmp/point120230428215043 /tmp/point220230428215043 /tmp/point320230428215043 '
+++ count=4
+++ echo test_vggroup20230428215043 /tmp/point120230428215043 /tmp/point220230428215043 /tmp/point320230428215043
++ LOG_INFO 'End to prepare the database config.'
++ message='End to prepare the database config.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to prepare the database config.'
+Fri Apr 28 21:50:48 2023 - INFO  - End to prepare the database config.
+++ type -t run_test
++ '[' -n function ']'
++ run_test
++ LOG_INFO 'Start to run test.'
++ message='Start to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to run test.'
+Fri Apr 28 21:50:49 2023 - INFO  - Start to run test.
+++ seq 1 3
++ for i in $(seq 1 $((${#point_list[@]} - 1)))
++ mnt_point=/tmp/point120230428215043
+++ df -T
+++ grep /tmp/point120230428215043
+++ awk '{print $1}'
++ lv=
+++ ls -l
+++ awk '{print $11}'
+++ cut -d / -f 2
++ dm=
++ dd if=/dev/zero of=/tmp/point120230428215043/testfile1 bs=512000 count=100
+++ iostat
+++ grep
+++ awk '{print $6}'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ wr=
++ [[ '' -ge 3000 ]]
++ CHECK_RESULT 1 0 0 'read speed slow.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='read speed slow.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'read speed slow.'
++ LOG_ERROR 'read speed slow.'
++ message='read speed slow.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'read speed slow.'
+Fri Apr 28 21:50:50 2023 - ERROR - read speed slow.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_fs_IO.sh line 37'
++ message='oe_test_FSIO_fs_IO.sh line 37'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_fs_IO.sh line 37'
+100+0 records in
+100+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 0.943705 s, 54.3 MB/s
+Fri Apr 28 21:50:51 2023 - ERROR - oe_test_FSIO_fs_IO.sh line 37
++ '[' 0 -eq 1 ']'
++ return 0
++ dd if=/tmp/point120230428215043/testfile1 of=/tmp/point120230428215043/testfile2 bs=512000 count=100
+++ iostat
+++ awk '{print $7}'
+++ grep
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ ar=
++ [[ '' -ge 6000 ]]
++ CHECK_RESULT 1 0 0 'write speed slow.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='write speed slow.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'write speed slow.'
++ LOG_ERROR 'write speed slow.'
++ message='write speed slow.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'write speed slow.'
+Fri Apr 28 21:50:52 2023 - ERROR - write speed slow.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_fs_IO.sh line 41'
++ message='oe_test_FSIO_fs_IO.sh line 41'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_fs_IO.sh line 41'
+100+0 records in
+100+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 1.03269 s, 49.6 MB/s
+Fri Apr 28 21:50:53 2023 - ERROR - oe_test_FSIO_fs_IO.sh line 41
++ '[' 0 -eq 1 ']'
++ return 0
++ for i in $(seq 1 $((${#point_list[@]} - 1)))
++ mnt_point=/tmp/point220230428215043
+++ df -T
+++ grep /tmp/point220230428215043
+++ awk '{print $1}'
++ lv=
+++ ls -l
+++ awk '{print $11}'
+++ cut -d / -f 2
++ dm=
++ dd if=/dev/zero of=/tmp/point220230428215043/testfile1 bs=512000 count=100
+++ iostat
+++ grep
+++ awk '{print $6}'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ wr=
++ [[ '' -ge 3000 ]]
++ CHECK_RESULT 1 0 0 'read speed slow.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='read speed slow.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'read speed slow.'
++ LOG_ERROR 'read speed slow.'
++ message='read speed slow.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'read speed slow.'
+Fri Apr 28 21:50:54 2023 - ERROR - read speed slow.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_fs_IO.sh line 37'
++ message='oe_test_FSIO_fs_IO.sh line 37'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_fs_IO.sh line 37'
+100+0 records in
+100+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 0.934337 s, 54.8 MB/s
+Fri Apr 28 21:50:55 2023 - ERROR - oe_test_FSIO_fs_IO.sh line 37
++ '[' 0 -eq 1 ']'
++ return 0
++ dd if=/tmp/point220230428215043/testfile1 of=/tmp/point220230428215043/testfile2 bs=512000 count=100
+++ iostat
+++ grep
+++ awk '{print $7}'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ ar=
++ [[ '' -ge 6000 ]]
++ CHECK_RESULT 1 0 0 'write speed slow.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='write speed slow.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'write speed slow.'
++ LOG_ERROR 'write speed slow.'
++ message='write speed slow.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'write speed slow.'
+Fri Apr 28 21:50:56 2023 - ERROR - write speed slow.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_fs_IO.sh line 41'
++ message='oe_test_FSIO_fs_IO.sh line 41'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_fs_IO.sh line 41'
+100+0 records in
+100+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 1.04873 s, 48.8 MB/s
+Fri Apr 28 21:50:57 2023 - ERROR - oe_test_FSIO_fs_IO.sh line 41
++ '[' 0 -eq 1 ']'
++ return 0
++ for i in $(seq 1 $((${#point_list[@]} - 1)))
++ mnt_point=/tmp/point320230428215043
+++ df -T
+++ grep /tmp/point320230428215043
+++ awk '{print $1}'
++ lv=
+++ ls -l
+++ awk '{print $11}'
+++ cut -d / -f 2
++ dm=
++ dd if=/dev/zero of=/tmp/point320230428215043/testfile1 bs=512000 count=100
+++ iostat
+++ grep
+++ awk '{print $6}'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ wr=
++ [[ '' -ge 3000 ]]
++ CHECK_RESULT 1 0 0 'read speed slow.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='read speed slow.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'read speed slow.'
++ LOG_ERROR 'read speed slow.'
++ message='read speed slow.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'read speed slow.'
+Fri Apr 28 21:50:58 2023 - ERROR - read speed slow.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_fs_IO.sh line 37'
++ message='oe_test_FSIO_fs_IO.sh line 37'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_fs_IO.sh line 37'
+100+0 records in
+100+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 0.9419 s, 54.4 MB/s
+Fri Apr 28 21:50:59 2023 - ERROR - oe_test_FSIO_fs_IO.sh line 37
++ '[' 0 -eq 1 ']'
++ return 0
++ dd if=/tmp/point320230428215043/testfile1 of=/tmp/point320230428215043/testfile2 bs=512000 count=100
+++ iostat
+++ grep
+++ awk '{print $7}'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
++ ar=
++ [[ '' -ge 6000 ]]
++ CHECK_RESULT 1 0 0 'write speed slow.'
++ actual_result=1
++ expect_result=0
++ mode=0
++ error_log='write speed slow.'
++ exit_mode=0
++ '[' -z 1 ']'
++ '[' 0 -eq 0 ']'
++ test 1x '!=' 0x
++ test -n 'write speed slow.'
++ LOG_ERROR 'write speed slow.'
++ message='write speed slow.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'write speed slow.'
+Fri Apr 28 21:51:00 2023 - ERROR - write speed slow.
++ (( exec_result++ ))
++ LOG_ERROR 'oe_test_FSIO_fs_IO.sh line 41'
++ message='oe_test_FSIO_fs_IO.sh line 41'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'oe_test_FSIO_fs_IO.sh line 41'
+100+0 records in
+100+0 records out
+51200000 bytes (51 MB, 49 MiB) copied, 1.02045 s, 50.2 MB/s
+Fri Apr 28 21:51:01 2023 - ERROR - oe_test_FSIO_fs_IO.sh line 41
++ '[' 0 -eq 1 ']'
++ return 0
++ LOG_INFO 'End to run test.'
++ message='End to run test.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to run test.'
+Fri Apr 28 21:51:02 2023 - INFO  - End to run test.
++ CASE_RESULT 0
++ case_re=0
++ test -z 6
++ test 6 -gt 0
++ LOG_ERROR 'failed to execute the case.'
++ message='failed to execute the case.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level error --message 'failed to execute the case.'
+Fri Apr 28 21:51:02 2023 - ERROR - failed to execute the case.
++ exit 6
++ post_test
++ LOG_INFO 'Start to restore the test environment.'
++ message='Start to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'Start to restore the test environment.'
+Fri Apr 28 21:51:03 2023 - INFO  - Start to restore the test environment.
+++ echo test_vggroup20230428215043 /tmp/point120230428215043 /tmp/point220230428215043 /tmp/point320230428215043
++ list='test_vggroup20230428215043 /tmp/point120230428215043 /tmp/point220230428215043 /tmp/point320230428215043'
++ REMOVE_FS 'test_vggroup20230428215043 /tmp/point120230428215043 /tmp/point220230428215043 /tmp/point320230428215043'
++ point_list=($1)
+++ seq 0 3
++ for i in $(seq 0 $((${#point_list[@]} - 1)))
++ tmp=test_vggroup20230428215043
+++ df -T
+++ grep test_vggroup20230428215043
+++ awk '{print $1}'
++ lv=
++ [[ '' == '' ]]
++ continue
++ for i in $(seq 0 $((${#point_list[@]} - 1)))
++ tmp=/tmp/point120230428215043
+++ df -T
+++ grep /tmp/point120230428215043
+++ awk '{print $1}'
++ lv=
++ [[ '' == '' ]]
++ continue
++ for i in $(seq 0 $((${#point_list[@]} - 1)))
++ tmp=/tmp/point220230428215043
+++ df -T
+++ grep /tmp/point220230428215043
+++ awk '{print $1}'
++ lv=
++ [[ '' == '' ]]
++ continue
++ for i in $(seq 0 $((${#point_list[@]} - 1)))
++ tmp=/tmp/point320230428215043
+++ df -T
+++ grep /tmp/point320230428215043
+++ awk '{print $1}'
++ lv=
++ [[ '' == '' ]]
++ continue
++ DNF_REMOVE
++ node=1
++ pkg_list=
++ mode=0
++ [[ -z /tmp/tmpdr_4zekn ]]
++ '[' 0 -ne 0 ']'
++ '[' 1 == 0 ']'
++ python3 /root/mugen/libs/locallibs/rpm_manage.py remove --node 1 --pkgs '' --tempfile /tmp/tmpdr_4zekn
++ '[' 0 -ne 0 ']'
++ LOG_INFO 'End to restore the test environment.'
++ message='End to restore the test environment.'
++ python3 /root/mugen/libs/locallibs/mugen_log.py --level info --message 'End to restore the test environment.'
+Fri Apr 28 21:51:25 2023 - INFO  - End to restore the test environment.
