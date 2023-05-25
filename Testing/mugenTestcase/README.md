@@ -1,5 +1,6 @@
 # mugen测试用例整理工作说明
 ## 测试要求
+- 从cli*.txt中自选一个进行测试  
 - 在riscv镜像上运行测试后，将未通过的测试在X86镜像上再进行一次测试。
 - 将结果整理形成表格，格式参考[用例结果整理issue](https://gitee.com/openeuler/RISC-V/issues/I77F5M?from=project-issue)中附件csv
 - riscv上测试通过的状态记为success/原因记为None，riscv和X86上均未通过状态和原因记为x86 fail，其余（riscv未通过，x86通过）状态记为fail，具体未通过原因需要逐个进行分析（可选）
