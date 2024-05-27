@@ -33,7 +33,7 @@
 ### 编程语言与脚本语言熟练度
 
 - **编程语言:**
-  - 能够熟练使用C完成较复杂程序开发。我在一个[个人项目](https://github.com/brsf11/sprite-compressor)中使用C编写了一个类Deflate解压算法（常用于PNG、ZIP等格式）程序。
+  - 能够熟练使用C完成较复杂程序开发。我在一个[个人项目](https://github.com/brsf11/sprite-compressor)中使用C编写了一个类Deflate解压算法(src/lzb.c src/main.c)（常用于PNG、ZIP等格式）程序。
   - 在Python方面，我能够编写复杂的自动化脚本，并且在实际项目中得到了充分验证。
 
 - **脚本语言:**
